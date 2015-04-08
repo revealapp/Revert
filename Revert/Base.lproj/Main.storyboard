@@ -114,7 +114,7 @@
                         <sections>
                             <tableViewSection headerTitle="Collections" id="bsy-4q-y5z">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD" userLabel="CollectionViewController Cell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
@@ -135,7 +135,7 @@
                                             <segue destination="lRp-dE-mbB" kind="showDetail" id="kpA-gr-dfg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="wek-uk-kam" style="IBUITableViewCellStyleDefault" id="9bZ-pI-6TW">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="wek-uk-kam" style="IBUITableViewCellStyleDefault" id="9bZ-pI-6TW" userLabel="TableViewController Cell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9bZ-pI-6TW" id="lzj-bu-cAN">
@@ -154,6 +154,27 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="O9S-s4-ZME" kind="showDetail" id="n5p-Aj-v5u"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="zlo-fJ-EzC" style="IBUITableViewCellStyleDefault" id="otN-73-9jG" userLabel="PageViewController Cell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="otN-73-9jG" id="mJB-Po-GJw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="UIPageViewController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zlo-fJ-EzC">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="cNV-Xt-tfg" kind="show" id="5Nf-Kh-0vk"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -244,6 +265,25 @@
             </objects>
             <point key="canvasLocation" x="2438" y="-630"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="qoY-l3-4HK">
+            <objects>
+                <viewController id="cju-aV-eWX" customClass="PageViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjc-ZU-php"/>
+                        <viewControllerLayoutGuide type="bottom" id="oMf-Yt-5zg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WyM-1h-rS0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DB8-8K-SjE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InX-pU-U1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="129"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Fd-xl-OGd">
             <objects>
@@ -261,6 +301,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0b-cW-Op2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="-630"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Q9-66-2Lm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNV-Xt-tfg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tLc-X1-qit">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cju-aV-eWX" kind="relationship" relationship="rootViewController" id="hfa-zq-ZiN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyY-MX-RLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="129"/>
         </scene>
     </scenes>
 </document>

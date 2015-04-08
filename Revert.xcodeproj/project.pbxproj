@@ -14,6 +14,9 @@
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */; };
 		9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */; };
+		9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */; };
+		9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */; };
+		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
@@ -41,6 +44,9 @@
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Revert/Sources/TableViewController.swift; sourceTree = "<group>"; };
 		9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = Revert/Sources/PageViewController.swift; sourceTree = "<group>"; };
+		9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Revert.swift"; path = "Revert/Sources/UIViewController+Revert.swift"; sourceTree = "<group>"; };
+		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
@@ -128,9 +134,19 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		9A9F59A91AD4C17400A8CB4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */,
+				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9A9F59A91AD4C17400A8CB4B /* Extensions */,
 				9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 				9ABEBA161AD4AEC900E3D998 /* Misc */,
@@ -145,6 +161,7 @@
 				9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */,
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */,
+				9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -261,8 +278,11 @@
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
+				9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */,
+				9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
+				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
