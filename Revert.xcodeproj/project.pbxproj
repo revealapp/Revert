@@ -12,6 +12,8 @@
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
 		9A6850D61AD4A20E00ACCE29 /* RevertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
+		9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */; };
+		9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
@@ -37,6 +39,8 @@
 		9A6850D41AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTests.swift; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
+		9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Revert/Sources/TableViewController.swift; sourceTree = "<group>"; };
+		9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
+				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
 			);
 			name = Resources;
 			path = Revert;
@@ -139,6 +144,7 @@
 			children = (
 				9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */,
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
+				9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
 			);
@@ -254,6 +261,7 @@
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
+				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
