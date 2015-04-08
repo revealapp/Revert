@@ -10,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     self.dynamicType.configureSplitViewController(self.window!.rootViewController as! UISplitViewController, delegate: self)
+    self.dynamicType.configureAppearance(self.window!)
     return true
   }
   
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     let navigationController = splitViewController.viewControllers.last as! UINavigationController
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     splitViewController.delegate = delegate
+  }
+  
+  private class func configureAppearance(window: UIWindow) {
+    window.tintColor = UIColor.alizarinColor()
   }
 }
 
