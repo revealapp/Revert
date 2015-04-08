@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>longitude</key>
+		<real>144.9631</real>
+		<key>latitude</key>
+		<real>-37.8136</real>
+		<key>title</key>
+		<string>Melbourne</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>115.8589</real>
+		<key>latitude</key>
+		<real>-31.9522</real>
+		<key>title</key>
+		<string>Perth</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>130.8333</real>
+		<key>latitude</key>
+		<real>-12.45</real>
+		<key>title</key>
+		<string>Darwin</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+</array>
+</plist>

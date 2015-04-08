@@ -17,6 +17,8 @@
 		9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */; };
 		9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
+		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
+		9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
@@ -47,6 +49,8 @@
 		9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = Revert/Sources/PageViewController.swift; sourceTree = "<group>"; };
 		9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Revert.swift"; path = "Revert/Sources/UIViewController+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
+		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
+		9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
 				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
+				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
 			);
 			name = Resources;
 			path = Revert;
@@ -162,6 +167,7 @@
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */,
 				9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */,
+				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 				9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
+				9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
 				9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */,
+				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
