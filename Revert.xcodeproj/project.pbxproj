@@ -11,7 +11,10 @@
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
 		9A6850D61AD4A20E00ACCE29 /* RevertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */; };
+		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
+		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
+		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,10 @@
 		9A6850CF1AD4A20E00ACCE29 /* RevertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850D41AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTests.swift; sourceTree = "<group>"; };
+		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
+		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +116,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */,
+				9A9F599D1AD4B33C00A8CB4B /* Views */,
+				9ABEBA161AD4AEC900E3D998 /* Misc */,
 				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
 			);
 			name = Sources;
@@ -122,8 +137,18 @@
 		9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */,
+				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
+				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
+				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +379,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = Revert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +391,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = Revert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
