@@ -305,7 +305,7 @@
             </objects>
             <point key="canvasLocation" x="2438" y="129"/>
         </scene>
-        <!--Second-->
+        <!--View Controller-->
         <scene sceneID="lFv-Bh-DKe">
             <objects>
                 <viewController id="Ywh-iM-I59" sceneMemberID="viewController">
@@ -318,13 +318,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" id="TSD-tZ-stW"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="TSD-tZ-stW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cys-fw-lyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3269" y="1408"/>
         </scene>
-        <!--First-->
+        <!--View Controller-->
         <scene sceneID="nR6-QU-Tje">
             <objects>
                 <viewController id="0xN-KN-huP" sceneMemberID="viewController">
@@ -337,7 +337,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" id="Uhd-iD-17m"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Uhd-iD-17m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fm7-36-4cm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,7 +416,7 @@
             </objects>
             <point key="canvasLocation" x="1626" y="129"/>
         </scene>
-        <!--Third-->
+        <!--View Controller-->
         <scene sceneID="SjU-j1-g2h">
             <objects>
                 <viewController id="CZu-KZ-Pk7" sceneMemberID="viewController">
@@ -429,7 +429,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" id="R1a-1w-vMu"/>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="R1a-1w-vMu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1C-2q-TdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
