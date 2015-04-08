@@ -6,19 +6,21 @@ import UIKit
 
 class PageViewController: UIViewController {
   
-  private var pageViewController: UIPageViewController
-  private lazy var pages: [UIViewController] = {
-    let firstViewController = UIViewController(backgroundColor: UIColor.peterRiverColor())
-    let secondViewController = UIViewController(backgroundColor: UIColor.wetAsphaltColor())
-    let thirdViewController = UIViewController(backgroundColor: UIColor.alizarinColor())
-    
-    return [firstViewController, secondViewController, thirdViewController]
-  }()
+  private let pageViewController: UIPageViewController
+  private let pages: [UIViewController]
   
   required init(coder aDecoder: NSCoder) {
     self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+    self.pages = [
+      UIViewController(backgroundColor: UIColor.peterRiverColor()),
+      UIViewController(backgroundColor: UIColor.wetAsphaltColor()),
+      UIViewController(backgroundColor: UIColor.alizarinColor())
+    ]
 
     super.init(coder: aDecoder)
+
+    self.addChildViewController(self.pageViewController)
+    self.pageViewController.didMoveToParentViewController(self)
   }
   
   override func viewDidLoad() {
@@ -28,11 +30,8 @@ class PageViewController: UIViewController {
   }
   
   private func configurePageViewController() {
-    self.addChildViewController(self.pageViewController)
-
     self.pageViewController.dataSource = self
     self.pageViewController.setViewControllers([self.pages.first!], direction: .Forward, animated: false, completion: nil)
-    self.pageViewController.didMoveToParentViewController(self)
    
     let constraints = [
       NSLayoutConstraint(item: self.view, attribute: .Left, relatedBy: .Equal, toItem: self.pageViewController.view, attribute: .Left, multiplier: 1.0, constant: 0.0),
@@ -52,14 +51,16 @@ extension PageViewController: UIPageViewControllerDataSource {
   func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
     if let index = find(self.pages, viewController) {
       return index > 0 ? self.pages[index - 1] : nil
+    } else {
+      fatalError("View Controller should always be present in pages array")
     }
-    fatalError("View Controller should always be present in pages array")
   }
   
   func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
     if let index = find(self.pages, viewController) {
       return index < self.pages.count - 1 ? self.pages[index + 1] : nil
+    } else {
+      fatalError("View Controller should always be present in pages array")
     }
-    fatalError("View Controller should always be present in pages array")
   }
 }
