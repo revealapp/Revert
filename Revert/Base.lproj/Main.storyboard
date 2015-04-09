@@ -648,7 +648,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ghost" width="20" height="24"/>
+        <image name="Spaceship" width="394" height="347"/>
     </resources>
     <color key="tintColor" red="1" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
