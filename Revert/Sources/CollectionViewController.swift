@@ -8,13 +8,11 @@ class CollectionViewController: UICollectionViewController {
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
+}
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
-  
-  // MARK: UICollectionViewDataSource
-  
+// MARK: UICollectionViewDataSource
+
+extension CollectionViewController: UICollectionViewDataSource {
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -25,7 +23,21 @@ class CollectionViewController: UICollectionViewController {
   
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.CollectionViewController, forIndexPath: indexPath) as! UICollectionViewCell
+    
+    cell.contentView.backgroundColor = cell.selected ? UIColor.wetAsphaltColor() : UIColor.alizarinColor()
     return cell
+  }
+}
+
+// MARK: UICollectionViewDelegate
+
+extension CollectionViewController: UICollectionViewDelegate {
+  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    self.collectionView!.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.wetAsphaltColor()
+  }
+  
+  override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    self.collectionView!.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.alizarinColor()
   }
 }
 
@@ -33,6 +45,6 @@ class CollectionViewController: UICollectionViewController {
 
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    return CGSize(width: self.view.bounds.width, height: self.collectionViewFlowLayout.itemSize.height)
+    return CGSize(width: floor((self.view.bounds.width - 1) / 2.0), height: self.collectionViewFlowLayout.itemSize.height)
   }
 }
