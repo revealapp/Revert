@@ -5,7 +5,7 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-  private let collection = MasterItemCollection()
+  private let collection = GrouppedCollection<MasterItem>(resourceFileName: "MasterItems")
   private let cellConfigurator = MasterCellConfigurator()
   
   private func transitionToViewControllerForItem(item: MasterItem) {

@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct MasterItem {
+struct MasterItem: Collectable {
   internal let title: String
   internal let subtitle: String
   internal let iconName: String
@@ -17,30 +17,5 @@ struct MasterItem {
     self.iconName = dictionary["iconName"] as! String
     self.storyboardIdentifier = dictionary["storyboardIdentifier"] as! String
     self.isPush = dictionary["isPush"] as! Bool
-  }
-}
-
-struct MasterItemCollection {
-  internal let groups: [[MasterItem]]
-  
-  init() {
-    self.groups = self.dynamicType.loadItems()
-  }
-  
-  var countOfGroups: Int {
-    return self.groups.count
-  }
-  
-  func countOfItemsInGroup(section: Int) -> Int {
-    return self.groups[section].count
-  }
-  
-  func itemAtIndexPath(indexPath: NSIndexPath) -> MasterItem {
-    return self.groups[indexPath.section][indexPath.row]
-  }
-
-  private static func loadItems() -> [[MasterItem]] {
-    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("MasterItems", ofType: "plist")!) as! [[[String: AnyObject]]]
-    return items.map({$0.map({MasterItem(dictionary: $0)})})
   }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrouppedCollection.swift; path = Revert/Sources/GrouppedCollection.swift; sourceTree = "<group>"; };
 		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850BC1AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A28739D1AD76E8E006466BE /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9A28739D1AD76E8E006466BE /* Adapters */,
 				9AE718E71AD7513D00DD7FFC /* CellConfigurators */,
 				9A94E3F41AD63F040005BA44 /* Models */,
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
@@ -309,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
+				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
