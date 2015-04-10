@@ -6,5 +6,6 @@ struct SB {
   struct Cell {
     static let CollectionViewController = "CollectionViewControllerCell"
     static let TableViewController = "TableViewControllerCell"
+    static let Master = "MasterCell"
   }
 }

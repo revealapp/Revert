@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Table View</string>
+			<key>subtitle</key>
+			<string>UITableView</string>
+			<key>iconName</key>
+			<string>orange_icon</string>
+			<key>storyboardIdentifier</key>
+			<string>TableViewController</string>
+			<key>isPush</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Collection View</string>
+			<key>subtitle</key>
+			<string>UICollectionView</string>
+			<key>iconName</key>
+			<string>blue_icon</string>
+			<key>storyboardIdentifier</key>
+			<string>CollectionViewController</string>
+			<key>isPush</key>
+			<true/>
+		</dict>
+	</array>
+</array>
+</plist>

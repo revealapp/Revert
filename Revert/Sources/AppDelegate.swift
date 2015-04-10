@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   }
   
   private class func configureAppearance(window: UIWindow) {
-    window.tintColor = UIColor.alizarinColor()
+    window.tintColor = UIColor.whiteColor()
   }
 }
 
