@@ -11,8 +11,8 @@ class MasterViewController: UITableViewController {
   private func transitionToViewControllerForItem(item: MasterItem) {
     let destinationViewController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UIViewController
     
-    if let splitViewController = self.splitViewController {
-      splitViewController.viewControllers[1] = destinationViewController
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      self.splitViewController!.viewControllers[1] = destinationViewController
     } else if item.isPush {
       self.navigationController!.pushViewController(destinationViewController, animated: true)
     } else {
