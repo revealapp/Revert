@@ -16,4 +16,8 @@ extension UIColor {
   class func alizarinColor() -> UIColor {
     return UIColor(red: 231.0 / 255.0, green: 76.0 / 255.0, blue: 60.0 / 255.0, alpha: 1.0)
   }
+
+  class func revertGreenColor() -> UIColor {
+    return UIColor(red: 46.0 / 255.0, green: 213.0 / 255.0, blue: 195.0 / 255.0, alpha: 1.0)
+  }
 }

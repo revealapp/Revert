@@ -2,8 +2,18 @@
   Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
 */
 
+// Common
+"cancel" = "Cancel";
+"ok" = "Ok";
+"delete" = "Delete";
+
 // TableViewController
 "tableviewcontroller.footer" = "%ld Countries";
 
 // SpriteKitViewController
 "spritekitviewcontroller.label.helloworld" = "Hello World";
+
+// AlertsViewController
+
+"alertviewcontroller.alert.title" = "This is a test controller";
+"alertviewcontroller.alert.message" = "Do you like this message?";

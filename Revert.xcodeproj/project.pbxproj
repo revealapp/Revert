@@ -13,6 +13,7 @@
 		9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */; };
 		9A2873A31AD79AFF006466BE /* String+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A21AD79AFF006466BE /* String+Revert.swift */; };
 		9A2873A71AD7A5D8006466BE /* Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* Revert.swift */; };
+		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
@@ -50,6 +51,7 @@
 		9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrouppedCollection.swift; path = Revert/Sources/GrouppedCollection.swift; sourceTree = "<group>"; };
 		9A2873A21AD79AFF006466BE /* String+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Revert.swift"; path = "Revert/Sources/String+Revert.swift"; sourceTree = "<group>"; };
 		9A2873A61AD7A5D8006466BE /* Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Revert.swift; path = Revert/Sources/Revert.swift; sourceTree = "<group>"; };
+		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850BC1AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
 				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
 				9A2873A61AD7A5D8006466BE /* Revert.swift */,
+				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
+				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
@@ -478,6 +482,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = Revert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -490,6 +495,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = Revert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

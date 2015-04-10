@@ -101,6 +101,18 @@
 			<key>isPush</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>Alert View</string>
+			<key>subtitle</key>
+			<string>Alert samples</string>
+			<key>iconName</key>
+			<string>green_icon</string>
+			<key>storyboardIdentifier</key>
+			<string>AlertsViewController</string>
+			<key>isPush</key>
+			<true/>
+		</dict>
 	</array>
 </array>
 </plist>
