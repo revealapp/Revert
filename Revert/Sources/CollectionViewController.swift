@@ -8,6 +8,12 @@ class CollectionViewController: UICollectionViewController {
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    self.collectionView!.flashScrollIndicators()
+  }
 }
 
 // MARK: UICollectionViewDataSource

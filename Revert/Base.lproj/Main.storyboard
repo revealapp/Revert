@@ -331,7 +331,7 @@
         <!--ScrollView-->
         <scene sceneID="btv-V6-pFl">
             <objects>
-                <viewController id="e6c-PC-ss8" sceneMemberID="viewController">
+                <viewController id="e6c-PC-ss8" customClass="ScrollViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D5f-xu-F5y"/>
                         <viewControllerLayoutGuide type="bottom" id="16M-Fu-qLY"/>
@@ -370,6 +370,9 @@
                     <navigationItem key="navigationItem" title="ScrollView" id="ZZz-EV-PI5">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="NVF-q4-g9g"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="4ke-og-Tnc" id="BTe-ai-54D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMM-IG-esE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
