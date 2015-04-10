@@ -88,7 +88,9 @@
                             <outlet property="delegate" destination="V4s-a2-462" id="TIJ-Rx-q29"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Collection View" id="NEq-LZ-dnr"/>
+                    <navigationItem key="navigationItem" title="Collection View" id="NEq-LZ-dnr">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="seo-wV-GyD"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0le-8r-gvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,6 +210,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GiB-kp-XyO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -253,13 +260,15 @@
                             <outlet property="delegate" destination="1Hy-ss-Q90" id="Way-Ar-Udn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Table View" id="uea-ly-xFc"/>
+                    <navigationItem key="navigationItem" title="Table View" id="uea-ly-xFc">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="7oA-Fr-ws3"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7f-JG-d74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2438" y="-1790"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map View-->
         <scene sceneID="Vd8-iN-gNO">
             <objects>
                 <viewController id="OzG-CK-fgG" customClass="MapViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,7 +295,9 @@
                             <constraint firstItem="2U2-Tm-AjW" firstAttribute="top" secondItem="LtO-Cz-6mw" secondAttribute="bottom" id="iHl-YV-zw2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ru1-BN-P8N"/>
+                    <navigationItem key="navigationItem" title="Map View" id="ru1-BN-P8N">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="2U2-Tm-AjW" id="2Av-d6-PLW"/>
                     </connections>
@@ -302,6 +313,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uO-93-O5k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="e6c-PC-ss8" kind="relationship" relationship="rootViewController" id="xnG-MM-Sey"/>
@@ -311,7 +327,7 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-233"/>
         </scene>
-        <!--View Controller-->
+        <!--ScrollView-->
         <scene sceneID="btv-V6-pFl">
             <objects>
                 <viewController id="e6c-PC-ss8" sceneMemberID="viewController">
@@ -350,11 +366,55 @@
                             <constraint firstItem="4ke-og-Tnc" firstAttribute="leading" secondItem="O8l-dy-Hd4" secondAttribute="leading" id="wIe-NW-zYw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZZz-EV-PI5"/>
+                    <navigationItem key="navigationItem" title="ScrollView" id="ZZz-EV-PI5">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NVF-q4-g9g"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMM-IG-esE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2438" y="-233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="et8-Sk-QZ1">
+            <objects>
+                <navigationController storyboardIdentifier="DefaultViewsViewController" id="Qsf-lL-H8g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VJu-op-gqe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SWU-tG-a26" kind="relationship" relationship="rootViewController" id="DAB-jB-TsU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dY-57-CK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="454"/>
+        </scene>
+        <!--Default Views-->
+        <scene sceneID="3v7-cy-SfI">
+            <objects>
+                <viewController id="SWU-tG-a26" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yB0-gY-QLM"/>
+                        <viewControllerLayoutGuide type="bottom" id="AVb-uR-04W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V9U-pf-jAD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Default Views" id="OJz-Q1-Wz7">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="s5V-c9-nYg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uH-Lh-c3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lVD-Tc-Rsr">
@@ -363,6 +423,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y5g-MM-hCF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="OzG-CK-fgG" kind="relationship" relationship="rootViewController" id="BeI-FJ-cN7"/>
@@ -380,6 +445,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4h9-69-WZX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -390,32 +460,18 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-1790"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SjU-j1-g2h">
-            <objects>
-                <viewController id="CZu-KZ-Pk7" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6PS-cv-x0i"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qbc-uc-PbZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YbF-In-aal">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="R1a-1w-vMu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X1C-2q-TdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4627" y="-391"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0we-gd-nKN">
             <objects>
-                <navigationController id="Q46-4J-2QX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BarsViewController" id="Q46-4J-2QX" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oeg-bk-0J2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="x1M-y8-05C" kind="relationship" relationship="rootViewController" id="Zgw-Kt-gGn"/>
@@ -423,12 +479,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS0-Fd-X6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626" y="1888"/>
+            <point key="canvasLocation" x="1621" y="2556"/>
         </scene>
-        <!--Sprite Kit View Controller-->
+        <!--Bars-->
         <scene sceneID="RJM-RM-iAP">
             <objects>
-                <viewController id="x1M-y8-05C" customClass="SpriteKitViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x1M-y8-05C" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f8C-g2-K2j"/>
                         <viewControllerLayoutGuide type="bottom" id="fjQ-WL-RjA"/>
@@ -438,15 +494,100 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Q2D-wq-eOE"/>
+                    <navigationItem key="navigationItem" title="Bars" id="Q2D-wq-eOE">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZXE-Oy-IpO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giT-vW-hBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="1888"/>
+            <point key="canvasLocation" x="2438" y="2556"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Of-3v-L2G">
+            <objects>
+                <navigationController storyboardIdentifier="ControlsViewController" id="0zK-FW-Cx0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aNJ-Nj-NG3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B2g-ya-8m2" kind="relationship" relationship="rootViewController" id="Vml-NU-Zed"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtd-DZ-Xuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="1866"/>
+        </scene>
+        <!--Controls-->
+        <scene sceneID="3z1-xp-1F5">
+            <objects>
+                <viewController id="B2g-ya-8m2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0oM-IW-hRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="KNV-qM-ubD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uRO-sw-Vtp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Controls" id="1Gf-Lb-5ek">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="GOU-We-BUa"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BmU-JL-WbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="1866"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DIq-ju-BXP">
+            <objects>
+                <navigationController storyboardIdentifier="SpriteKitViewController" id="1Ba-AQ-DC9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G6u-ih-vz3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Uqe-ND-9f1" kind="relationship" relationship="rootViewController" id="ZGY-kf-rOG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYc-H0-gev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="3247"/>
+        </scene>
+        <!--SpriteKit-->
+        <scene sceneID="4yb-Yk-wBT">
+            <objects>
+                <viewController id="Uqe-ND-9f1" customClass="SpriteKitViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6OW-ll-rbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q2B-yi-kEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sfw-ny-D9J" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SpriteKit" id="zIB-ZQ-VFH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUn-hx-Zag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="3247"/>
         </scene>
     </scenes>
     <resources>
         <image name="Spaceship" width="394" height="347"/>
+        <image name="info_icon" width="22" height="22"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
