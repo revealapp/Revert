@@ -14,8 +14,6 @@
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */; };
 		9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */; };
-		9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */; };
-		9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
 		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
 		9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */; };
@@ -47,8 +45,6 @@
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Revert/Sources/TableViewController.swift; sourceTree = "<group>"; };
 		9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = Revert/Sources/PageViewController.swift; sourceTree = "<group>"; };
-		9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Revert.swift"; path = "Revert/Sources/UIViewController+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
 		9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
@@ -144,7 +140,6 @@
 		9A9F59A91AD4C17400A8CB4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9A9F59AA1AD4C18B00A8CB4B /* UIViewController+Revert.swift */,
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 			);
 			name = Extensions;
@@ -168,7 +163,6 @@
 				9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */,
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */,
-				9A9F59A71AD4C07200A8CB4B /* PageViewController.swift */,
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
 				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
 			);
@@ -288,9 +282,7 @@
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
-				9A9F59AB1AD4C18B00A8CB4B /* UIViewController+Revert.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
-				9A9F59A81AD4C07200A8CB4B /* PageViewController.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
