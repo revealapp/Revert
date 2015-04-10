@@ -16,16 +16,20 @@ struct GrouppedCollection<T: Collectable> {
     self.groups = self.dynamicType.loadItems(resourceFileName)
   }
   
+  subscript(i: Int) -> [T] {
+    return self.groups[i]
+  }
+  
   var countOfGroups: Int {
     return self.groups.count
   }
   
   func countOfItemsInGroup(section: Int) -> Int {
-    return self.groups[section].count
+    return self[section].count
   }
   
   func itemAtIndexPath(indexPath: NSIndexPath) -> T {
-    return self.groups[indexPath.section][indexPath.row]
+    return self[indexPath.section][indexPath.row]
   }
   
   private static func loadItems(resourceFileName: String) -> [[T]] {
