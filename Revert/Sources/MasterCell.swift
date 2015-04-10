@@ -23,9 +23,8 @@ class MasterCell: UITableViewCell {
       toItem: self.subtitleLabel,
       attribute: .Baseline,
       multiplier: 1.0,
-      constant: 1.0)
+      constant: 0.0)
 
     self.addConstraint(subtitleBaselineConstraint)
   }
-  
 }

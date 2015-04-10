@@ -27,6 +27,30 @@
 			<key>isPush</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>Scroll View</string>
+			<key>subtitle</key>
+			<string>UIScrollView</string>
+			<key>iconName</key>
+			<string>green_icon</string>
+			<key>storyboardIdentifier</key>
+			<string>ScrollViewController</string>
+			<key>isPush</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Map View</string>
+			<key>subtitle</key>
+			<string>MKMapView</string>
+			<key>iconName</key>
+			<string>orange_icon</string>
+			<key>storyboardIdentifier</key>
+			<string>MapViewController</string>
+			<key>isPush</key>
+			<true/>
+		</dict>
 	</array>
 </array>
 </plist>
