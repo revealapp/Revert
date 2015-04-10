@@ -19,6 +19,17 @@ class MasterViewController: UITableViewController {
     }
   }
   
+  private func deselectSelectedRowIfNeeded() {
+    if let selectedIndexPath = self.tableView.indexPathForSelectedRow() {
+      self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+    }
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    self.deselectSelectedRowIfNeeded()
+  }
 }
 
 // MARK: UITableViewDataSource
