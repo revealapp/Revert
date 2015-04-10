@@ -5,7 +5,6 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-  
   private let collection = MasterItemCollection()
   private let cellConfigurator = MasterCellConfigurator()
   
@@ -37,7 +36,6 @@ class MasterViewController: UITableViewController {
 // MARK: UITableViewDataSource
 
 extension MasterViewController: UITableViewDataSource {
-  
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return self.collection.countOfGroups
   }
@@ -53,16 +51,13 @@ extension MasterViewController: UITableViewDataSource {
     self.cellConfigurator.configureCell(cell, withItem: item)
     return cell
   }
-  
 }
 
 // MARK: UITableViewDelegate
 
 extension MasterViewController: UITableViewDelegate {
-
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection.itemAtIndexPath(indexPath)
     self.transitionToViewControllerForItem(item)
   }
-  
 }

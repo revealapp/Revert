@@ -6,7 +6,6 @@ import UIKit
 import MapKit
 
 class MapAnnotation: NSObject, MKAnnotation {
-  
   init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
     self.coordinate = coordinate
     self.title = title
@@ -32,7 +31,6 @@ class MapAnnotation: NSObject, MKAnnotation {
 }
 
 class MapViewController: UIViewController {
-  
   @IBOutlet weak var mapView: MKMapView!
   
   override func viewDidLoad() {
@@ -54,7 +52,6 @@ class MapViewController: UIViewController {
 
 // MARK: MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
-  
   func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
     if (overlay is MKPolyline) {
       var pr = MKPolylineRenderer(overlay: overlay)

@@ -6,7 +6,6 @@ import UIKit
 import SpriteKit
 
 class IBAScene: SKScene {
-  
   private lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "Chalkduster")
     
@@ -47,7 +46,6 @@ class IBAScene: SKScene {
 }
 
 class SpriteKitViewController: UIViewController {
-  
   private var skView: SKView {
     return self.view as! SKView
   }
