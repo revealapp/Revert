@@ -39,11 +39,11 @@ extension CollectionViewController: UICollectionViewDataSource {
 
 extension CollectionViewController: UICollectionViewDelegate {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    self.collectionView!.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.wetAsphaltColor()
+    collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.wetAsphaltColor()
   }
   
   override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-    self.collectionView!.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.alizarinColor()
+    collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.alizarinColor()
   }
 }
 
