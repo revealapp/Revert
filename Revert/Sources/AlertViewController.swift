@@ -27,7 +27,6 @@ extension AlertViewController {
       preferredStyle: style
     )
     
-    alertViewController.view.tintColor = UIColor.revertGreenColor()
     alertViewController.addAction(UIAlertAction(
       title: NSLocalizedString("ok", comment: "Alert Ok button title"),
       style: .Default,
