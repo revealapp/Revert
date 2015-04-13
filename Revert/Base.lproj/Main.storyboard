@@ -48,9 +48,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pUE-29-GpP" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="egw-Zv-sWA"/>
+                            <constraint firstAttribute="centerX" secondItem="pUE-29-GpP" secondAttribute="centerX" id="CKW-9D-bR1"/>
+                            <constraint firstItem="pUE-29-GpP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="egw-Zv-sWA"/>
                             <constraint firstAttribute="centerY" secondItem="pUE-29-GpP" secondAttribute="centerY" constant="0.5" id="idk-qg-NMh"/>
-                            <constraint firstItem="pUE-29-GpP" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="wIc-tK-Ugf"/>
+                            <constraint firstItem="pUE-29-GpP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="wIc-tK-Ugf"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
