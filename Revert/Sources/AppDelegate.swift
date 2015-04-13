@@ -12,7 +12,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     if let splitViewController = self.window?.rootViewController as? UISplitViewController {
       self.dynamicType.configureSplitViewController(splitViewController, delegate: self)
     }
-    self.dynamicType.configureAppearance(self.window!)
     return true
   }
   
@@ -23,10 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     splitViewController.delegate = delegate
   }
-  
-  private class func configureAppearance(window: UIWindow) {
-    window.tintColor = UIColor.whiteColor()
-  }
 }
 
 // MARK: - UISplitViewControllerDelegate
@@ -36,4 +31,3 @@ extension AppDelegate: UISplitViewControllerDelegate {
     return secondaryViewController as? UINavigationController != nil;
   }
 }
-
