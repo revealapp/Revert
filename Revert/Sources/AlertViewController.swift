@@ -20,7 +20,7 @@ class AlertViewController: UITableViewController {
 // MARK: Presenters
 
 extension AlertViewController {
-  private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle) {
+  private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
       message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
@@ -43,6 +43,8 @@ extension AlertViewController {
       style: .Destructive,
       handler: nil)
     )
+    
+    alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
   
@@ -56,27 +58,28 @@ extension AlertViewController {
       NSLocalizedString("delete", comment: "Alert Delete button title")).show()
   }
   
-  private func displayActionSheet() {
-    UIActionSheet(
+  private func displayActionSheetFromView(fromView: UIView) {
+    let actionSheet = UIActionSheet(
       title: NSLocalizedString("alertviewcontroller.actionsheet.title", comment: "Alert title"),
       delegate: nil,
       cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      destructiveButtonTitle: NSLocalizedString("delete", comment: "Alert Delete button title")).showInView(self.view)
+      destructiveButtonTitle: NSLocalizedString("delete", comment: "Alert Delete button title"))
+
+    actionSheet.showInView(fromView)
   }
   
-  private func displayCorrespondingAlertForSection(section: Sections, row: Rows) {
+  private func displayCorrespondingAlertForSection(section: Sections, row: Rows, fromView: UIView) {
     switch section {
-      
     case .AlertView where row == .AlertView:
       self.displayAlertView()
       break;
       
     case .AlertView where row == .ActionSheet:
-      self.displayActionSheet()
+      self.displayActionSheetFromView(fromView)
       break;
       
     default:
-      self.displayAlertControllerForWithStyle(row == .AlertView ? .Alert : .ActionSheet)
+      self.displayAlertControllerForWithStyle(row == .AlertView ? .Alert : .ActionSheet, fromView: fromView)
     }
   }
 }
@@ -85,7 +88,8 @@ extension AlertViewController {
 
 extension AlertViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    self.displayCorrespondingAlertForSection(Sections(rawValue: indexPath.section)!, row: Rows(rawValue: indexPath.row)!)
+    let cell = tableView.cellForRowAtIndexPath(indexPath)!
+    self.displayCorrespondingAlertForSection(Sections(rawValue: indexPath.section)!, row: Rows(rawValue: indexPath.row)!, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }
