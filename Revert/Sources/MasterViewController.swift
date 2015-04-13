@@ -5,7 +5,7 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-  private let collection = GrouppedCollection<MasterItem>(resourceFileName: "MasterItems")
+  private let collection = CollectableCollection<MasterItem>(resourceFileName: "MasterItems")
   private let cellConfigurator = MasterCellConfigurator()
   
   private func transitionToViewControllerForItem(item: MasterItem) {
@@ -41,7 +41,7 @@ extension MasterViewController: UITableViewDataSource {
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.collection.countOfItemsInGroup(section)
+    return self.collection[section].countOfRows
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

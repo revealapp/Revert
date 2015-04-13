@@ -8,15 +8,32 @@ protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 
-struct GrouppedCollection<T: Collectable> {
+struct CollectableGroup<T: Collectable> {
+  internal let rows: [T]
+  internal let title: String?
   
-  internal let groups: [[T]]
-  
-  init(resourceFileName: String) {
-    self.groups = self.dynamicType.loadItems(resourceFileName)
+  init(dictionary: [String: AnyObject]) {
+    self.title = dictionary["title"] as? String
+    self.rows = (dictionary["rows"] as! [[String: AnyObject]]).map({T(dictionary: $0)})
   }
   
-  subscript(i: Int) -> [T] {
+  subscript(i: Int) -> T {
+    return self.rows[i]
+  }
+  
+  var countOfRows: Int {
+    return self.rows.count
+  }
+}
+
+struct CollectableCollection<T: Collectable> {
+  internal let groups: [CollectableGroup<T>]
+  
+  init(resourceFileName: String) {
+    self.groups = self.dynamicType.collectableItemsFromRessource(resourceFileName)
+  }
+  
+  subscript(i: Int) -> CollectableGroup<T> {
     return self.groups[i]
   }
   
@@ -24,16 +41,12 @@ struct GrouppedCollection<T: Collectable> {
     return self.groups.count
   }
   
-  func countOfItemsInGroup(section: Int) -> Int {
-    return self[section].count
-  }
-  
   func itemAtIndexPath(indexPath: NSIndexPath) -> T {
     return self[indexPath.section][indexPath.row]
   }
   
-  private static func loadItems(resourceFileName: String) -> [[T]] {
-    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFileName, ofType: "plist")!) as! [[[String: AnyObject]]]
-    return items.map({$0.map({T(dictionary: $0)})})
+  private static func collectableItemsFromRessource(resourceFileName: String) -> [CollectableGroup<T>] {
+    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFileName, ofType: "plist")!) as! [[String: AnyObject]]
+    return items.map({CollectableGroup<T>(dictionary: $0)})
   }
 }

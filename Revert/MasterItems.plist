@@ -2,117 +2,123 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<array>
-		<dict>
-			<key>title</key>
-			<string>Table View</string>
-			<key>subtitle</key>
-			<string>UITableView</string>
-			<key>iconName</key>
-			<string>orange_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>TableViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Collection View</string>
-			<key>subtitle</key>
-			<string>UICollectionView</string>
-			<key>iconName</key>
-			<string>blue_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>CollectionViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Scroll View</string>
-			<key>subtitle</key>
-			<string>UIScrollView</string>
-			<key>iconName</key>
-			<string>green_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>ScrollViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Map View</string>
-			<key>subtitle</key>
-			<string>MKMapView</string>
-			<key>iconName</key>
-			<string>orange_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>MapViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Default Views</string>
-			<key>subtitle</key>
-			<string>A selection of iOS stock items</string>
-			<key>iconName</key>
-			<string>blue_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>DefaultViewsViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>title</key>
-			<string>Controls</string>
-			<key>subtitle</key>
-			<string>A selection of iOS stock items</string>
-			<key>iconName</key>
-			<string>green_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>ControlsViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Bars</string>
-			<key>subtitle</key>
-			<string>A selection of stock iOS bars</string>
-			<key>iconName</key>
-			<string>orange_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>BarsViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>SpriteKit</string>
-			<key>subtitle</key>
-			<string>A SpriteKit example</string>
-			<key>iconName</key>
-			<string>blue_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>SpriteKitViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Alert View</string>
-			<key>subtitle</key>
-			<string>Alert samples</string>
-			<key>iconName</key>
-			<string>green_icon</string>
-			<key>storyboardIdentifier</key>
-			<string>AlertsViewController</string>
-			<key>isPush</key>
-			<true/>
-		</dict>
-	</array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Table View</string>
+				<key>subtitle</key>
+				<string>UITableView</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>TableViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Collection View</string>
+				<key>subtitle</key>
+				<string>UICollectionView</string>
+				<key>iconName</key>
+				<string>blue_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>CollectionViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Scroll View</string>
+				<key>subtitle</key>
+				<string>UIScrollView</string>
+				<key>iconName</key>
+				<string>green_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>ScrollViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Map View</string>
+				<key>subtitle</key>
+				<string>MKMapView</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>MapViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Default Views</string>
+				<key>subtitle</key>
+				<string>A selection of iOS stock items</string>
+				<key>iconName</key>
+				<string>blue_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>DefaultViewsViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Controls</string>
+				<key>subtitle</key>
+				<string>A selection of iOS stock items</string>
+				<key>iconName</key>
+				<string>green_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>ControlsViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bars</string>
+				<key>subtitle</key>
+				<string>A selection of stock iOS bars</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>BarsViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>SpriteKit</string>
+				<key>subtitle</key>
+				<string>A SpriteKit example</string>
+				<key>iconName</key>
+				<string>blue_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>SpriteKitViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Alert View</string>
+				<key>subtitle</key>
+				<string>Alert samples</string>
+				<key>iconName</key>
+				<string>green_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>AlertsViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
