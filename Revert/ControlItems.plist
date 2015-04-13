@@ -44,21 +44,27 @@
 		<array>
 			<dict>
 				<key>cellIdentifier</key>
-				<string>ButtonCell</string>
+				<string>SystemButtonCell</string>
 				<key>title</key>
-				<string>Button</string>
+				<string>System Button</string>
 			</dict>
 			<dict>
 				<key>cellIdentifier</key>
-				<string>ButtonCell</string>
+				<string>CustomButtonCell</string>
 				<key>title</key>
-				<string>Button</string>
+				<string>Custom Button</string>
 			</dict>
 			<dict>
 				<key>cellIdentifier</key>
-				<string>ButtonCell</string>
+				<string>DetailDisclosureButtonCell</string>
 				<key>title</key>
-				<string>Button</string>
+				<string>Detail Disclosure Button</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Add Contact Button</string>
+				<key>cellIdentifier</key>
+				<string>AddContactButtonCell</string>
 			</dict>
 		</array>
 		<key>title</key>
@@ -71,19 +77,25 @@
 				<key>cellIdentifier</key>
 				<string>TextFieldCell</string>
 				<key>title</key>
-				<string>TextField</string>
+				<string>No Border TextField</string>
 			</dict>
 			<dict>
 				<key>cellIdentifier</key>
-				<string>TextFieldCell</string>
+				<string>RoundedTextFieldCell</string>
 				<key>title</key>
-				<string>TextField</string>
+				<string>Rounded Rect TextField</string>
 			</dict>
 			<dict>
 				<key>cellIdentifier</key>
-				<string>TextFieldCell</string>
+				<string>LineTextFieldCell</string>
 				<key>title</key>
-				<string>TextField</string>
+				<string>Line TextField</string>
+			</dict>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>BezelTextFieldCell</string>
+				<key>title</key>
+				<string>Bezel TextField</string>
 			</dict>
 		</array>
 		<key>title</key>
