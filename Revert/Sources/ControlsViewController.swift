@@ -7,21 +7,37 @@ import UIKit
 class ControlsViewController: UICollectionViewController {
   private let collection = CollectableCollection<Control>(resourceFileName: "ControlItems")
   
+  private var collectionViewFlowLayout: UICollectionViewFlowLayout {
+    return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+  }
+  
   deinit {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillShowNotification, object: nil)
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+   
+    self.registerNotifications()
+
+    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
+    self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
+  }
+  
+  func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
+    self.collectionView!.endEditing(true)
   }
 }
 
 // MARK: Notifications
 
 extension ControlsViewController {
+  
+  private func registerNotifications() {
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillShowNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+  }
+  
   func keyboardWillShowHideNotification(notification: NSNotification) {
     let animationDuration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
     let animationCurve = UIViewAnimationCurve(rawValue: notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! Int)!
@@ -41,14 +57,6 @@ extension ControlsViewController {
       self.collectionView!.contentInset = contentInsets
       self.collectionView!.scrollIndicatorInsets = scrollIndicatorInsets
     }, completion: nil)
-  }
-}
-
-// MARK: UICollectionViewDelegate
-
-extension ControlsViewController: UICollectionViewDelegate {
-  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.endEditing(true)
   }
 }
 
@@ -73,8 +81,24 @@ extension ControlsViewController: UICollectionViewDataSource {
 // MARK: UICollectionViewDelegateFlowLayout
 
 extension ControlsViewController: UICollectionViewDelegateFlowLayout {
+  private func isLastSection(section: Int) -> Bool {
+    return section == self.collection.countOfGroups - 1
+  }
+  
+  private var noOfItemsInRow: Int {
+    // TOOD: Determine # of horizontal items properly depending on device.
+    return self.view.bounds.width > self.view.bounds.height ? 3 : 2
+  }
+  
+  private var itemWidth: CGFloat {
+    return floor(self.collectionView!.bounds.width / CGFloat(self.noOfItemsInRow) - (CGFloat(self.noOfItemsInRow) - 1.0))
+  }
+
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    let size = floor((self.view.bounds.width - 1) / 2.0)
-    return CGSize(width:size , height: size)
+    return CGSize(width: self.itemWidth, height: self.itemWidth)
+  }
+  
+  func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    return self.isLastSection(section) ? UIEdgeInsetsZero : self.collectionViewFlowLayout.sectionInset
   }
 }
