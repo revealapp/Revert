@@ -9,14 +9,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   var window: UIWindow?
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    self.dynamicType.configureSplitViewController(self.window!.rootViewController as! UISplitViewController, delegate: self)
+    if let splitViewController = self.window?.rootViewController as? UISplitViewController {
+      self.dynamicType.configureSplitViewController(splitViewController, delegate: self)
+    }
     self.dynamicType.configureAppearance(self.window!)
     return true
   }
   
   private class func configureSplitViewController(splitViewController: UISplitViewController, delegate: UISplitViewControllerDelegate) {
     let navigationController = splitViewController.viewControllers.last as! UINavigationController
-    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+    if splitViewController.respondsToSelector("displayModeButtonItem") {
+      navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+    }
     splitViewController.delegate = delegate
   }
   

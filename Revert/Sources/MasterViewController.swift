@@ -9,12 +9,12 @@ class MasterViewController: UITableViewController {
   private let cellConfigurator = MasterCellConfigurator()
   
   private func transitionToViewControllerForItem(item: MasterItem) {
-    let destinationViewController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UIViewController
+    let destinationViewController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UINavigationController
     
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
       self.splitViewController!.viewControllers[1] = destinationViewController
     } else if item.isPush {
-      self.navigationController!.pushViewController(destinationViewController, animated: true)
+      self.navigationController!.pushViewController(destinationViewController.topViewController, animated: true)
     } else {
       self.presentViewController(destinationViewController, animated: true, completion: nil)
     }
