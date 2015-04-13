@@ -51,6 +51,7 @@ class MapViewController: UIViewController {
 }
 
 // MARK: MKMapViewDelegate
+
 extension MapViewController: MKMapViewDelegate {
   func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
     if (overlay is MKPolyline) {
