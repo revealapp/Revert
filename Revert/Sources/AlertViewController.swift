@@ -15,7 +15,11 @@ class AlertViewController: UITableViewController {
     case AlertView
     case ActionSheet
   }
-  
+}
+
+// MARK: Presenters
+
+extension AlertViewController {
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle) {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
@@ -44,7 +48,7 @@ class AlertViewController: UITableViewController {
   
   private func displayAlertView() {
     UIAlertView(
-      title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
+      title: NSLocalizedString("alertviewcontroller.alertview.title", comment: "Alert title"),
       message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
       delegate: nil,
       cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
@@ -54,7 +58,7 @@ class AlertViewController: UITableViewController {
   
   private func displayActionSheet() {
     UIActionSheet(
-      title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
+      title: NSLocalizedString("alertviewcontroller.actionsheet.title", comment: "Alert title"),
       delegate: nil,
       cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
       destructiveButtonTitle: NSLocalizedString("delete", comment: "Alert Delete button title")).showInView(self.view)
@@ -62,7 +66,7 @@ class AlertViewController: UITableViewController {
   
   private func displayCorrespondingAlertForSection(section: Sections, row: Rows) {
     switch section {
-
+      
     case .AlertView where row == .AlertView:
       self.displayAlertView()
       break;
@@ -70,7 +74,7 @@ class AlertViewController: UITableViewController {
     case .AlertView where row == .ActionSheet:
       self.displayActionSheet()
       break;
-
+      
     default:
       self.displayAlertControllerForWithStyle(row == .AlertView ? .Alert : .ActionSheet)
     }
