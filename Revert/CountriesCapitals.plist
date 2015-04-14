@@ -54,8 +54,6 @@
 				<string>Anguilla</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>Antarctica</string>
 			</dict>
@@ -175,8 +173,6 @@
 				<string>Bolivia</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>Bonaire, Saint Eustatius and Saba </string>
 			</dict>
@@ -193,8 +189,6 @@
 				<string>Botswana</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>Bouvet Island</string>
 			</dict>
@@ -631,8 +625,6 @@
 				<string>Haiti</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>Heard Island and McDonald Islands</string>
 			</dict>
@@ -1495,8 +1487,6 @@
 				<string>Togo</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>Tokelau</string>
 			</dict>
@@ -1586,8 +1576,6 @@
 				<string>United States</string>
 			</dict>
 			<dict>
-				<key>capital</key>
-				<string></string>
 				<key>name</key>
 				<string>United States Minor Outlying Islands</string>
 			</dict>
