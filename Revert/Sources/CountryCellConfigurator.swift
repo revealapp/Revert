@@ -5,8 +5,8 @@
 import UIKit
 
 class CountryCellConfigurator {
-  func configureCell(cell: UITableViewCell, withCountry country: Country) {
-    cell.textLabel!.text = country.name
-    cell.detailTextLabel!.text = country.capital
+  func configureCell(cell: CountryCell, withCountry country: Country) {
+    cell.titleLabel.text = country.name
+    cell.subtitleLabel.text = country.capital
   }
 }
