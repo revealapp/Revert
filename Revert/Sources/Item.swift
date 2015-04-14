@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Control: Collectable {
+class Item: Collectable {
   let title: String
   let cellIdentifier: String
   

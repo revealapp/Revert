@@ -5,9 +5,9 @@
 import UIKit
 
 class CollectableCollectionViewDataSource: NSObject, UICollectionViewDataSource {
-  private let collection: CollectableCollection<Control>
+  private let collection: CollectableCollection<Item>
   
-  required init(collection: CollectableCollection<Control>) {
+  required init(collection: CollectableCollection<Item>) {
     self.collection = collection
   }
   

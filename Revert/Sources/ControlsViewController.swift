@@ -5,7 +5,7 @@
 import UIKit
 
 class ControlsViewController: UICollectionViewController {
-  private let collection = CollectableCollection<Control>(resourceFileName: "ControlItems")
+  private let collection = CollectableCollection<Item>(resourceFileName: "ControlItems")
   private let dataSource: CollectableCollectionViewDataSource
   private let keyboardHandler = KeyboardHandler()
   
