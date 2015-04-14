@@ -26,11 +26,14 @@ class ControlsViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    // Setup Keyboard Handler
     self.keyboardHandler.scrollView = self.collectionView
     self.keyboardHandler.viewController = self
     
+    // Setup Data Source
     self.collectionView!.dataSource = self.dataSource
     
+    // Setup Dismiss Tap Gesture
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
   }
