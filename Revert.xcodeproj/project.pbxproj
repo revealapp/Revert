@@ -14,6 +14,7 @@
 		9A2873A31AD79AFF006466BE /* String+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A21AD79AFF006466BE /* String+Revert.swift */; };
 		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
+		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
 		9A535C4D1ADB56A00082778A /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A535C4C1ADB56A00082778A /* ControlItems.plist */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		9A2873A21AD79AFF006466BE /* String+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Revert.swift"; path = "Revert/Sources/String+Revert.swift"; sourceTree = "<group>"; };
 		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
+		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A535C481ADB563B0082778A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Revert/Sources/ControlsViewController.swift; sourceTree = "<group>"; };
 		9A535C4C1ADB56A00082778A /* ControlItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ControlItems.plist; sourceTree = "<group>"; };
 		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 				9A2873951AD767B0006466BE /* CountriesCapitals.plist */,
 				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
 				9ADAA3C31ADC8C00008CC87B /* BarItems.plist */,
+				9A463AF31ADCCE1A00350E3C /* ViewItems.plist */,
 			);
 			name = Resources;
 			path = Revert;
@@ -359,6 +362,7 @@
 				9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */,
+				9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
 				9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */,
 				9A2873961AD767B0006466BE /* CountriesCapitals.plist in Resources */,
