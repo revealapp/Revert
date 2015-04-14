@@ -34,7 +34,7 @@ class BarsViewController: UICollectionViewController {
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
   }
   
-  func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
+  internal func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView!.endEditing(true)
   }
 }
@@ -42,7 +42,7 @@ class BarsViewController: UICollectionViewController {
 // MARK: UICollectionViewDelegateFlowLayout
 
 extension BarsViewController: UICollectionViewDelegateFlowLayout {
-  func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+  internal func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
     return CGSize(width: collectionView.bounds.width, height: self.collectionViewFlowLayout.itemSize.height)
   }
 }

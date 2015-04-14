@@ -11,15 +11,15 @@ class CollectableCollectionViewDataSource: NSObject, UICollectionViewDataSource 
     self.collection = collection
   }
   
-  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+  internal func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return self.collection.countOfGroups
   }
   
-  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  internal func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return self.collection[section].countOfRows
   }
   
-  func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+  internal func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let item = self.collection.itemAtIndexPath(indexPath)
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier(item.cellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
     return cell

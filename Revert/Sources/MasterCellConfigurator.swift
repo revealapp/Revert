@@ -5,7 +5,7 @@
 import UIKit
 
 class MasterCellConfigurator {
-  func configureCell(cell: MasterCell, withItem item: MasterItem) {
+  internal func configureCell(cell: MasterCell, withItem item: MasterItem) {
     cell.titleLabel.text = item.title
     cell.subtitleLabel.text = item.subtitle
     cell.iconImageView.image = UIImage(named: item.iconName)

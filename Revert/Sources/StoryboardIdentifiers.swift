@@ -4,8 +4,8 @@
 
 struct SB {
   struct Cell {
-    static let CollectionViewController = "CollectionViewControllerCell"
-    static let TableViewController = "TableViewControllerCell"
-    static let Master = "MasterCell"
+    internal static let CollectionViewController = "CollectionViewControllerCell"
+    internal static let TableViewController = "TableViewControllerCell"
+    internal static let Master = "MasterCell"
   }
 }

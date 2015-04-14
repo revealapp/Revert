@@ -17,11 +17,11 @@ struct CollectableGroup<T: Collectable> {
     self.rows = (dictionary["rows"] as! [[String: AnyObject]]).map({T(dictionary: $0)})
   }
   
-  subscript(i: Int) -> T {
+  internal subscript(i: Int) -> T {
     return self.rows[i]
   }
   
-  var countOfRows: Int {
+  internal var countOfRows: Int {
     return self.rows.count
   }
 }
@@ -33,15 +33,15 @@ struct CollectableCollection<T: Collectable> {
     self.groups = self.dynamicType.collectableItemsFromRessource(resourceFilename)
   }
   
-  subscript(i: Int) -> CollectableGroup<T> {
+  internal subscript(i: Int) -> CollectableGroup<T> {
     return self.groups[i]
   }
   
-  var countOfGroups: Int {
+  internal var countOfGroups: Int {
     return self.groups.count
   }
   
-  func itemAtIndexPath(indexPath: NSIndexPath) -> T {
+  internal func itemAtIndexPath(indexPath: NSIndexPath) -> T {
     return self[indexPath.section][indexPath.row]
   }
   

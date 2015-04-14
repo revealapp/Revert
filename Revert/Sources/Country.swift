@@ -5,8 +5,8 @@
 import Foundation
 
 struct Country: Collectable {
-  let name: String
-  let capital: String?
+  internal let name: String
+  internal let capital: String?
   
   init(dictionary: [String: AnyObject]) {
     self.name = dictionary["name"] as! String

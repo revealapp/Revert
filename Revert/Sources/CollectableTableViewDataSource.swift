@@ -15,15 +15,15 @@ class CollectableTableViewDataSource: NSObject, UITableViewDataSource {
     super.init()
   }
   
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  internal func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return self.collection.countOfGroups
   }
   
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.collection[section].countOfRows
   }
   
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+  internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Master, forIndexPath: indexPath) as! MasterCell
     let item = self.collection.itemAtIndexPath(indexPath)
     

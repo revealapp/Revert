@@ -24,7 +24,7 @@ class MapAnnotation: NSObject, MKAnnotation {
     super.init()
   }
   
-  var coordinate: CLLocationCoordinate2D
-  var title: String
-  var subtitle: String
+  internal var coordinate: CLLocationCoordinate2D
+  internal var title: String
+  internal var subtitle: String
 }

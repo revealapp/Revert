@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
 // MARK: MKMapViewDelegate
 
 extension MapViewController: MKMapViewDelegate {
-  func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+  internal func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
     if (overlay is MKPolyline) {
       var pr = MKPolylineRenderer(overlay: overlay)
       pr.strokeColor = UIColor.alizarinColor().colorWithAlphaComponent(0.5)

@@ -23,7 +23,7 @@ class KeyboardHandler: NSObject {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
   }
   
-  func keyboardWillShowHideNotification(notification: NSNotification) {
+  internal func keyboardWillShowHideNotification(notification: NSNotification) {
     if let scrollView = self.scrollView {
       let animationDuration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
       let animationCurve = UIViewAnimationCurve(rawValue: notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! Int)!
