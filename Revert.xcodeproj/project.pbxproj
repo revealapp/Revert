@@ -21,6 +21,7 @@
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
 		9A6850D61AD4A20E00ACCE29 /* RevertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
+		9A87FA781ADC953C00290F7A /* CollectableTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* MasterCell.swift */; };
 		9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* MasterItems.plist */; };
 		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
@@ -69,6 +70,7 @@
 		9A6850D41AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTests.swift; sourceTree = "<group>"; };
 		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHandler.swift; path = Revert/Sources/KeyboardHandler.swift; sourceTree = "<group>"; };
+		9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableTableViewDataSource.swift; path = Revert/Sources/CollectableTableViewDataSource.swift; sourceTree = "<group>"; };
 		9A94E3F01AD63BFD0005BA44 /* MasterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCell.swift; path = Revert/Sources/MasterCell.swift; sourceTree = "<group>"; };
 		9A94E3F21AD63E610005BA44 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MasterItems.plist; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */,
+				9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				9A94E3F11AD63BFD0005BA44 /* MasterCell.swift in Sources */,
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
 				9A2873A71AD7A5D8006466BE /* Revert.swift in Sources */,
+				9A87FA781ADC953C00290F7A /* CollectableTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
