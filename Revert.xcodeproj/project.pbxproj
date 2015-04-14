@@ -33,6 +33,7 @@
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
+		9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */; };
 		9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */; };
 		9AEE22AB1ADB77BE0033DAA2 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Control.swift */; };
 		9AEE22B01ADBA6960033DAA2 /* TextFieldControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* TextFieldControlCell.swift */; };
@@ -80,6 +81,7 @@
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
+		9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollectionViewDataSource.swift; path = Revert/Sources/CollectableCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCellConfigurator.swift; path = Revert/Sources/MasterCellConfigurator.swift; sourceTree = "<group>"; };
 		9AEE22AA1ADB77BE0033DAA2 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Control.swift; path = Revert/Sources/Control.swift; sourceTree = "<group>"; };
 		9AEE22AF1ADBA6960033DAA2 /* TextFieldControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldControlCell.swift; path = Revert/Sources/TextFieldControlCell.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9ADAA3C51ADC8D1F008CC87B /* DataSource */,
 				9A28739D1AD76E8E006466BE /* Adapters */,
 				9AE718E71AD7513D00DD7FFC /* CellConfigurators */,
 				9A94E3F41AD63F040005BA44 /* Models */,
@@ -238,6 +241,14 @@
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 			);
 			name = Misc;
+			sourceTree = "<group>";
+		};
+		9ADAA3C51ADC8D1F008CC87B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 		9AE718E71AD7513D00DD7FFC /* CellConfigurators */ = {
@@ -354,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */,
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
