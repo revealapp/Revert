@@ -13,10 +13,6 @@ class ControlsViewController: UICollectionViewController {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
   
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   required init(coder aDecoder: NSCoder) {
     self.dataSource = CollectableCollectionViewDataSource(collection: self.collection)
     

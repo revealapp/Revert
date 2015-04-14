@@ -19,10 +19,6 @@ class BarsViewController: UICollectionViewController {
     super.init(coder: aDecoder)
   }
   
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
