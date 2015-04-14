@@ -18,4 +18,4 @@
 "alertviewcontroller.alert.title" = "This is an UIAlertController";
 "alertviewcontroller.alertview.title" = "This is an UIAlertView";
 "alertviewcontroller.actionsheet.title" = "This is an UIActionSheet";
-"alertviewcontroller.alert.message" = "How do you feel today?";
+"alertviewcontroller.alert.message" = "How are you feeling today?";

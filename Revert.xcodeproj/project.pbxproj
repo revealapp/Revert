@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A2873961AD767B0006466BE /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A2873951AD767B0006466BE /* CountriesCapitals.plist */; };
 		9A28739A1AD76863006466BE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
 		9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
 		9A2873951AD767B0006466BE /* CountriesCapitals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountriesCapitals.plist; sourceTree = "<group>"; };
 		9A2873991AD76863006466BE /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Revert/Sources/Country.swift; sourceTree = "<group>"; };
 		9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryCellConfigurator.swift; path = Revert/Sources/CountryCellConfigurator.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
+				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */,
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
+				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */,

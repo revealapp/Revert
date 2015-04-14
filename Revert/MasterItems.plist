@@ -122,6 +122,18 @@
 				<key>isPush</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Picker View</string>
+				<key>subtitle</key>
+				<string>DatePicker &amp; Regular Picker</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>PickerViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
 		</array>
 	</dict>
 </array>
