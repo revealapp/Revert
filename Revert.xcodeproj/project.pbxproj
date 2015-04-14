@@ -12,7 +12,7 @@
 		9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */; };
 		9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */; };
 		9A2873A31AD79AFF006466BE /* String+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A21AD79AFF006466BE /* String+Revert.swift */; };
-		9A2873A71AD7A5D8006466BE /* Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* Revert.swift */; };
+		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
 		9A535C4D1ADB56A00082778A /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A535C4C1ADB56A00082778A /* ControlItems.plist */; };
@@ -60,7 +60,7 @@
 		9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryCellConfigurator.swift; path = Revert/Sources/CountryCellConfigurator.swift; sourceTree = "<group>"; };
 		9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrouppedCollection.swift; path = Revert/Sources/GrouppedCollection.swift; sourceTree = "<group>"; };
 		9A2873A21AD79AFF006466BE /* String+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Revert.swift"; path = "Revert/Sources/String+Revert.swift"; sourceTree = "<group>"; };
-		9A2873A61AD7A5D8006466BE /* Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Revert.swift; path = Revert/Sources/Revert.swift; sourceTree = "<group>"; };
+		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A535C481ADB563B0082778A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Revert/Sources/ControlsViewController.swift; sourceTree = "<group>"; };
 		9A535C4C1ADB56A00082778A /* ControlItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ControlItems.plist; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
 				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
-				9A2873A61AD7A5D8006466BE /* Revert.swift */,
+				9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */,
 				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
@@ -401,7 +401,7 @@
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
 				9A94E3F11AD63BFD0005BA44 /* MasterCell.swift in Sources */,
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
-				9A2873A71AD7A5D8006466BE /* Revert.swift in Sources */,
+				9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */,
 				9A87FA781ADC953C00290F7A /* CollectableTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
