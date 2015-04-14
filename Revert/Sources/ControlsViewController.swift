@@ -69,6 +69,6 @@ extension ControlsViewController: UICollectionViewDelegateFlowLayout {
   }
   
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-    return self.isLastSection(section) ? UIEdgeInsetsZero : self.collectionViewFlowLayout.sectionInset
+    return UIEdgeInsets(top: 0.0, left: 1.0, bottom: self.isLastSection(section) ? 0.0 : 35.0, right: 1.0)
   }
 }
