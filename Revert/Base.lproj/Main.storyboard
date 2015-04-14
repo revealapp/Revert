@@ -1574,6 +1574,41 @@
             </objects>
             <point key="canvasLocation" x="2443" y="454"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EQA-va-EfF">
+            <objects>
+                <navigationController storyboardIdentifier="WebViewController" id="gX7-Yl-LVe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rEL-kE-Bd2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zbC-XF-QPg" kind="relationship" relationship="rootViewController" id="ou0-7R-7oB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1y0-LI-6MP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="4762"/>
+        </scene>
+        <!--Web View-->
+        <scene sceneID="hhK-5P-fIh">
+            <objects>
+                <viewController id="zbC-XF-QPg" customClass="WebViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RT8-lc-X3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="WrG-Rz-40G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEQ-7w-QE3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web View" id="h0T-dt-WNG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-rF-vMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="4762"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Spaceship" width="394" height="347"/>

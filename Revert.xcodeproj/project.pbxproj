@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
+		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
+		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
 		9A2873961AD767B0006466BE /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A2873951AD767B0006466BE /* CountriesCapitals.plist */; };
 		9A28739A1AD76863006466BE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
 		9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */; };
 		9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */; };
-		9A2873A31AD79AFF006466BE /* String+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A21AD79AFF006466BE /* String+Revert.swift */; };
 		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
@@ -48,11 +49,12 @@
 
 /* Begin PBXFileReference section */
 		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
+		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
+		9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9A2873951AD767B0006466BE /* CountriesCapitals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountriesCapitals.plist; sourceTree = "<group>"; };
 		9A2873991AD76863006466BE /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Revert/Sources/Country.swift; sourceTree = "<group>"; };
 		9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryCellConfigurator.swift; path = Revert/Sources/CountryCellConfigurator.swift; sourceTree = "<group>"; };
 		9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrouppedCollection.swift; path = Revert/Sources/GrouppedCollection.swift; sourceTree = "<group>"; };
-		9A2873A21AD79AFF006466BE /* String+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Revert.swift"; path = "Revert/Sources/String+Revert.swift"; sourceTree = "<group>"; };
 		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
@@ -93,12 +95,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A28739D1AD76E8E006466BE /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,7 @@
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
+				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
 				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
 				9A6850BA1AD4A20E00ACCE29 /* Resources */,
 				9A6850B91AD4A20E00ACCE29 /* Products */,
@@ -131,13 +143,6 @@
 				9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
-				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
-				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
-				9A94E3F21AD63E610005BA44 /* MasterItems.plist */,
-				9A2873951AD767B0006466BE /* CountriesCapitals.plist */,
-				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
-				9ADAA3C31ADC8C00008CC87B /* BarItems.plist */,
-				9A463AF31ADCCE1A00350E3C /* ViewItems.plist */,
 			);
 			name = Resources;
 			path = Revert;
@@ -146,6 +151,13 @@
 		9A6850BB1AD4A20E00ACCE29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
+				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
+				9A94E3F21AD63E610005BA44 /* MasterItems.plist */,
+				9A2873951AD767B0006466BE /* CountriesCapitals.plist */,
+				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
+				9ADAA3C31ADC8C00008CC87B /* BarItems.plist */,
+				9A463AF31ADCCE1A00350E3C /* ViewItems.plist */,
 				9A6850BC1AD4A20E00ACCE29 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -174,7 +186,6 @@
 		9A9F59A91AD4C17400A8CB4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9A2873A21AD79AFF006466BE /* String+Revert.swift */,
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 			);
 			name = Extensions;
@@ -210,6 +221,7 @@
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
 				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
+				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -329,6 +341,7 @@
 				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
 				9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
+				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
@@ -338,7 +351,6 @@
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
-				9A2873A31AD79AFF006466BE /* String+Revert.swift in Sources */,
 				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
 				9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */,

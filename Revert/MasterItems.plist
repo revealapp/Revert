@@ -129,6 +129,18 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Web View</string>
+				<key>subtitle</key>
+				<string>WKWebView</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>WebViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>SpriteKit</string>
 				<key>subtitle</key>
 				<string>A SpriteKit example</string>
