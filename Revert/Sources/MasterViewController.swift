@@ -5,19 +5,24 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-  private let collection = CollectableCollection<MasterItem>(resourceFileName: "MasterItems")
+  private let collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
   private let cellConfigurator = MasterCellConfigurator()
   private let dataSource: CollectableTableViewDataSource
   
   private func transitionToViewControllerForItem(item: MasterItem) {
-    let destinationViewController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UINavigationController
+    let destinationNavigationController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UINavigationController
+    let destinationViewController = destinationNavigationController.topViewController
+
+    if let destinationViewController = destinationViewController as? ControlsViewController {
+      destinationViewController.resourceFilename = item.resourceFilename
+    }
     
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      self.splitViewController!.viewControllers[1] = destinationViewController
+      self.splitViewController!.viewControllers[1] = destinationNavigationController
     } else if item.isPush {
-      self.navigationController!.pushViewController(destinationViewController.topViewController, animated: true)
+      self.navigationController!.pushViewController(destinationViewController, animated: true)
     } else {
-      self.presentViewController(destinationViewController, animated: true, completion: nil)
+      self.presentViewController(destinationNavigationController, animated: true, completion: nil)
     }
   }
   

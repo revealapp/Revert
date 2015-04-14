@@ -10,12 +10,14 @@ struct MasterItem: Collectable {
   internal let iconName: String
   internal let storyboardIdentifier: String
   internal let isPush: Bool
+  internal let resourceFilename: String?
   
   init(dictionary: [String: AnyObject]) {
     self.title = dictionary["title"] as! String
     self.subtitle = dictionary["subtitle"] as! String
     self.iconName = dictionary["iconName"] as! String
     self.storyboardIdentifier = dictionary["storyboardIdentifier"] as! String
+    self.resourceFilename = dictionary["resourceFilename"] as? String
     self.isPush = dictionary["isPush"] as! Bool
   }
 }

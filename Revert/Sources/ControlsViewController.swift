@@ -5,22 +5,31 @@
 import UIKit
 
 class ControlsViewController: UICollectionViewController {
-  private let collection = CollectableCollection<Item>(resourceFileName: "ControlItems")
-  private let dataSource: CollectableCollectionViewDataSource
-  private let keyboardHandler = KeyboardHandler()
+  internal var resourceFilename: String? {
+    didSet {
+      if let resourceFilename = self.resourceFilename {
+        let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)
+        self.dataSource = CollectableCollectionViewDataSource(collection: collection)
+        self.collection = collection
+      } else {
+        self.collection = nil
+        self.dataSource = nil
+      }
+    }
+  }
   
+  private var collection: CollectableCollection<Item>?
+  private var dataSource: CollectableCollectionViewDataSource?
+  private let keyboardHandler = KeyboardHandler()
+
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
   
-  required init(coder aDecoder: NSCoder) {
-    self.dataSource = CollectableCollectionViewDataSource(collection: self.collection)
-    
-    super.init(coder: aDecoder)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    assert(self.resourceFilename != nil, "Resource file name should be set before viewDidLoad:")
 
     // Setup Keyboard Handler
     self.keyboardHandler.scrollView = self.collectionView
@@ -43,7 +52,7 @@ class ControlsViewController: UICollectionViewController {
 
 extension ControlsViewController: UICollectionViewDelegateFlowLayout {
   private func isLastSection(section: Int) -> Bool {
-    return section == self.collection.countOfGroups - 1
+    return section == self.collection!.countOfGroups - 1
   }
   
   private var noOfItemsInRow: Int {

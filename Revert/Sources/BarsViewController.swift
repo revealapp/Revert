@@ -5,7 +5,7 @@
 import UIKit
 
 class BarsViewController: UICollectionViewController {
-  private let collection = CollectableCollection<Item>(resourceFileName: "BarItems")
+  private let collection = CollectableCollection<Item>(resourceFilename: "BarItems")
   private let dataSource: CollectableCollectionViewDataSource
   private let keyboardHandler = KeyboardHandler()
   

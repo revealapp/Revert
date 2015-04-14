@@ -54,6 +54,8 @@
 				<true/>
 			</dict>
 			<dict>
+				<key>resourceFilename</key>
+				<string>ViewItems</string>
 				<key>title</key>
 				<string>Default Views</string>
 				<key>subtitle</key>
@@ -61,7 +63,7 @@
 				<key>iconName</key>
 				<string>blue_icon</string>
 				<key>storyboardIdentifier</key>
-				<string>DefaultViewsViewController</string>
+				<string>DefaultViewController</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -71,6 +73,8 @@
 		<key>rows</key>
 		<array>
 			<dict>
+				<key>resourceFilename</key>
+				<string>ControlItems</string>
 				<key>title</key>
 				<string>Controls</string>
 				<key>subtitle</key>

@@ -5,7 +5,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-  private let collection = CollectableCollection<Country>(resourceFileName: "CountriesCapitals")
+  private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountryDataSource
   
