@@ -6,6 +6,7 @@ import UIKit
 
 class ControlsViewController: UICollectionViewController {
   private let collection = CollectableCollection<Control>(resourceFileName: "ControlItems")
+  private let keyboardHandler = KeyboardHandler()
   
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
@@ -17,46 +18,16 @@ class ControlsViewController: UICollectionViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-   
-    self.registerNotifications()
 
+    self.keyboardHandler.scrollView = self.collectionView
+    self.keyboardHandler.viewController = self
+    
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView!.endEditing(true)
-  }
-}
-
-// MARK: Notifications
-
-extension ControlsViewController {
-  
-  private func registerNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillShowNotification, object: nil)
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
-  }
-  
-  func keyboardWillShowHideNotification(notification: NSNotification) {
-    let animationDuration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
-    let animationCurve = UIViewAnimationCurve(rawValue: notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! Int)!
-    let keyboardFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-
-    let keyboardFrameInView = self.collectionView!.superview!.convertRect(keyboardFrame, fromView: nil)
-    let bottomInset = max(self.collectionView!.frame.maxY - keyboardFrameInView.minY, self.bottomLayoutGuide.length)
-    let animationOptions = UIViewAnimationOptions(rawValue: UInt(animationCurve.rawValue) << 16)
-    
-    var contentInsets = self.collectionView!.contentInset
-    var scrollIndicatorInsets = self.collectionView!.scrollIndicatorInsets
-    
-    contentInsets.bottom = bottomInset
-    scrollIndicatorInsets.bottom = bottomInset
-
-    UIView.animateWithDuration(animationDuration, delay: 0.0, options: animationOptions, animations: {
-      self.collectionView!.contentInset = contentInsets
-      self.collectionView!.scrollIndicatorInsets = scrollIndicatorInsets
-    }, completion: nil)
   }
 }
 

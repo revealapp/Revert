@@ -20,6 +20,7 @@
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */; };
 		9A6850D61AD4A20E00ACCE29 /* RevertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */; };
+		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* MasterCell.swift */; };
 		9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* MasterItems.plist */; };
 		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
@@ -66,6 +67,7 @@
 		9A6850CF1AD4A20E00ACCE29 /* RevertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850D41AD4A20E00ACCE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6850D51AD4A20E00ACCE29 /* RevertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertTests.swift; sourceTree = "<group>"; };
+		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHandler.swift; path = Revert/Sources/KeyboardHandler.swift; sourceTree = "<group>"; };
 		9A94E3F01AD63BFD0005BA44 /* MasterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCell.swift; path = Revert/Sources/MasterCell.swift; sourceTree = "<group>"; };
 		9A94E3F21AD63E610005BA44 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MasterItems.plist; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 				9ABEBA161AD4AEC900E3D998 /* Misc */,
 				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
+				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
+				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
