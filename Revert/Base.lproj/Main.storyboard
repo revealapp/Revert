@@ -357,11 +357,11 @@
                         <viewControllerLayoutGuide type="bottom" id="16M-Fu-qLY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O8l-dy-Hd4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-og-Tnc">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-vH-kVU">
                                         <rect key="frame" x="0.0" y="0.0" width="1900" height="1800"/>
@@ -369,21 +369,27 @@
                                             <constraint firstAttribute="width" constant="1900" id="9f6-Lu-5u1"/>
                                             <constraint firstAttribute="height" constant="1800" id="AEX-Gm-5jB"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Su6-vH-kVU" secondAttribute="trailing" id="J7p-ul-zSj"/>
+                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="top" id="dqq-oP-3Ii"/>
                                     <constraint firstAttribute="bottom" secondItem="Su6-vH-kVU" secondAttribute="bottom" id="fXC-XB-XEn"/>
                                     <constraint firstItem="Su6-vH-kVU" firstAttribute="leading" secondItem="4ke-og-Tnc" secondAttribute="leading" id="ofx-qX-Wcy"/>
-                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="top" id="t6h-R3-O3V"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4ke-og-Tnc" secondAttribute="trailing" id="NxB-9q-NIG"/>
                             <constraint firstItem="16M-Fu-qLY" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="bottom" id="QxM-jF-zeL"/>
-                            <constraint firstItem="4ke-og-Tnc" firstAttribute="top" secondItem="D5f-xu-F5y" secondAttribute="bottom" id="uqB-Mv-ycn"/>
+                            <constraint firstItem="4ke-og-Tnc" firstAttribute="top" secondItem="O8l-dy-Hd4" secondAttribute="top" id="i0y-uz-iJ9"/>
                             <constraint firstItem="4ke-og-Tnc" firstAttribute="leading" secondItem="O8l-dy-Hd4" secondAttribute="leading" id="wIe-NW-zYw"/>
                         </constraints>
                     </view>
