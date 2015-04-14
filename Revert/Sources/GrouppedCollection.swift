@@ -29,8 +29,8 @@ struct CollectableGroup<T: Collectable> {
 struct CollectableCollection<T: Collectable> {
   internal let groups: [CollectableGroup<T>]
   
-  init(resourceFileName: String) {
-    self.groups = self.dynamicType.collectableItemsFromRessource(resourceFileName)
+  init(resourceFilename: String) {
+    self.groups = self.dynamicType.collectableItemsFromRessource(resourceFilename)
   }
   
   subscript(i: Int) -> CollectableGroup<T> {
@@ -45,8 +45,8 @@ struct CollectableCollection<T: Collectable> {
     return self[indexPath.section][indexPath.row]
   }
   
-  private static func collectableItemsFromRessource(resourceFileName: String) -> [CollectableGroup<T>] {
-    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFileName, ofType: "plist")!) as! [[String: AnyObject]]
+  private static func collectableItemsFromRessource(resourceFilename: String) -> [CollectableGroup<T>] {
+    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFilename, ofType: "plist")!) as! [[String: AnyObject]]
     return items.map({CollectableGroup<T>(dictionary: $0)})
   }
 }
