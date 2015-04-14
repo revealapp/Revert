@@ -8,34 +8,40 @@
 		<key>rows</key>
 		<array>
 			<dict>
-				<key>cellIdentifier</key>
-				<string>SegmentedControlCell</string>
 				<key>title</key>
 				<string>Segmented Control</string>
+				<key>cellIdentifier</key>
+				<string>SegmentedControlTitleCell</string>
 			</dict>
 			<dict>
+				<key>title</key>
+				<string>Segmented Control</string>
 				<key>cellIdentifier</key>
-				<string>StepperCell</string>
+				<string>SegmentedControlImageCell</string>
+			</dict>
+			<dict>
 				<key>title</key>
 				<string>Stepper</string>
+				<key>cellIdentifier</key>
+				<string>StepperCell</string>
 			</dict>
 			<dict>
-				<key>cellIdentifier</key>
-				<string>SwitchCell</string>
 				<key>title</key>
 				<string>Switch</string>
+				<key>cellIdentifier</key>
+				<string>SwitchCell</string>
 			</dict>
 			<dict>
-				<key>cellIdentifier</key>
-				<string>SliderCell</string>
 				<key>title</key>
 				<string>Slider</string>
+				<key>cellIdentifier</key>
+				<string>SliderCell</string>
 			</dict>
 			<dict>
-				<key>cellIdentifier</key>
-				<string>PageControlCell</string>
 				<key>title</key>
 				<string>Page Control</string>
+				<key>cellIdentifier</key>
+				<string>PageControlCell</string>
 			</dict>
 		</array>
 	</dict>

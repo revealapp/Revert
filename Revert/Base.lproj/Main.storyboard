@@ -552,7 +552,7 @@
                             <inset key="sectionInset" minX="0.0" minY="1" maxX="0.0" maxY="35"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlCell" id="wsb-4D-NCp">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlTitleCell" id="wsb-4D-NCp">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -560,31 +560,82 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="ThI-Ia-sbg">
-                                            <rect key="frame" x="105" y="169" width="88" height="39"/>
+                                            <rect key="frame" x="105" y="159" width="88" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Y-RX-PHy">
-                                            <rect key="frame" x="85" y="126" width="130" height="29"/>
+                                            <rect key="frame" x="85" y="116" width="130" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="Eui-KS-TfQ"/>
                                             </constraints>
                                             <segments>
                                                 <segment title="Title"/>
-                                                <segment title="" image="info_icon"/>
+                                                <segment title="Title"/>
                                             </segments>
                                         </segmentedControl>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="enc-4k-2ZM">
+                                            <rect key="frame" x="136" y="206" width="28" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ThI-Ia-sbg" firstAttribute="width" relation="lessThanOrEqual" secondItem="Z8Y-RX-PHy" secondAttribute="width" id="Lh1-qf-47Y"/>
-                                    <constraint firstAttribute="centerY" secondItem="Z8Y-RX-PHy" secondAttribute="centerY" constant="10" id="R1e-Jm-x7J"/>
+                                    <constraint firstAttribute="centerY" secondItem="Z8Y-RX-PHy" secondAttribute="centerY" constant="20" id="R1e-Jm-x7J"/>
+                                    <constraint firstItem="enc-4k-2ZM" firstAttribute="top" secondItem="ThI-Ia-sbg" secondAttribute="bottom" constant="8" id="U6y-GR-Y8a"/>
+                                    <constraint firstAttribute="centerX" secondItem="enc-4k-2ZM" secondAttribute="centerX" id="laz-fP-OuE"/>
                                     <constraint firstAttribute="centerX" secondItem="ThI-Ia-sbg" secondAttribute="centerX" constant="0.5" id="mER-RQ-0Mj"/>
                                     <constraint firstItem="ThI-Ia-sbg" firstAttribute="top" secondItem="Z8Y-RX-PHy" secondAttribute="bottom" constant="15" id="pis-2O-6mo"/>
                                     <constraint firstAttribute="centerX" secondItem="Z8Y-RX-PHy" secondAttribute="centerX" id="zlX-tp-7bZ"/>
+                                </constraints>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlImageCell" id="sh4-bE-1pX">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="299" height="299"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="tUG-q2-Eg8">
+                                            <rect key="frame" x="105" y="159" width="88" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="heg-qq-qKB">
+                                            <rect key="frame" x="85" y="116" width="130" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="415-FC-akf"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="" image="info_icon"/>
+                                                <segment title="" image="info_icon"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-WB-1WZ">
+                                            <rect key="frame" x="130" y="206" width="40" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tUG-q2-Eg8" firstAttribute="width" relation="lessThanOrEqual" secondItem="heg-qq-qKB" secondAttribute="width" id="0w8-eq-4VH"/>
+                                    <constraint firstAttribute="centerX" secondItem="Asf-WB-1WZ" secondAttribute="centerX" id="3jK-aN-8cG"/>
+                                    <constraint firstAttribute="centerY" secondItem="heg-qq-qKB" secondAttribute="centerY" constant="20" id="82q-Ub-v8L"/>
+                                    <constraint firstAttribute="centerX" secondItem="tUG-q2-Eg8" secondAttribute="centerX" constant="0.5" id="CYJ-9S-QvW"/>
+                                    <constraint firstItem="tUG-q2-Eg8" firstAttribute="top" secondItem="heg-qq-qKB" secondAttribute="bottom" constant="15" id="DDI-Yt-Ok2"/>
+                                    <constraint firstItem="Asf-WB-1WZ" firstAttribute="top" secondItem="tUG-q2-Eg8" secondAttribute="bottom" constant="8" id="H6c-4p-8th"/>
+                                    <constraint firstAttribute="centerX" secondItem="heg-qq-qKB" secondAttribute="centerX" id="dhf-d2-Kgl"/>
                                 </constraints>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StepperCell" id="Q2F-hV-JRH">
