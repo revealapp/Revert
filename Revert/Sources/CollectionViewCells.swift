@@ -9,3 +9,13 @@ class TextFieldControlCell: UICollectionViewCell {
     sender.resignFirstResponder()
   }
 }
+
+class TabBarCell: UICollectionViewCell {
+  @IBOutlet weak var tabBar: UITabBar!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.tabBar.selectedItem = self.tabBar.items!.first! as? UITabBarItem
+  }
+}

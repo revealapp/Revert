@@ -495,71 +495,6 @@
             </objects>
             <point key="canvasLocation" x="1626" y="1892"/>
         </scene>
-        <!--Bars-->
-        <scene sceneID="RJM-RM-iAP">
-            <objects>
-                <viewController id="x1M-y8-05C" customClass="BarsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f8C-g2-K2j"/>
-                        <viewControllerLayoutGuide type="bottom" id="fjQ-WL-RjA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YTv-BX-Bgh" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Filter by name" translatesAutoresizingMaskIntoConstraints="NO" id="m38-JA-X2B">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Scope 1</string>
-                                    <string>Scope 2</string>
-                                </scopeButtonTitles>
-                            </searchBar>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uw-hj-LoQ">
-                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="PJr-Wh-1G7"/>
-                                    <tabBarItem systemItem="more" id="9AG-Pf-sFp"/>
-                                </items>
-                            </tabBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-Jq-wGH">
-                                <rect key="frame" x="0.0" y="278" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="add" id="SWF-sr-dD0"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JeM-Y3-FoX"/>
-                                    <barButtonItem systemItem="search" id="LHp-2u-cRL"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ANG-Iu-a2M"/>
-                                    <barButtonItem systemItem="refresh" id="kZq-0L-vaL"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TDm-NI-2nJ"/>
-                                    <barButtonItem systemItem="compose" id="Kgw-1h-EKP"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="m38-JA-X2B" secondAttribute="trailing" id="5BN-ev-0yl"/>
-                            <constraint firstAttribute="trailing" secondItem="6Uw-hj-LoQ" secondAttribute="trailing" id="B7Y-oH-lEf"/>
-                            <constraint firstAttribute="centerY" secondItem="Wgj-Jq-wGH" secondAttribute="centerY" id="C4M-y9-dq2"/>
-                            <constraint firstItem="6Uw-hj-LoQ" firstAttribute="leading" secondItem="YTv-BX-Bgh" secondAttribute="leading" id="JjZ-wR-wl8"/>
-                            <constraint firstItem="Wgj-Jq-wGH" firstAttribute="leading" secondItem="YTv-BX-Bgh" secondAttribute="leading" id="g3r-a7-qdw"/>
-                            <constraint firstItem="fjQ-WL-RjA" firstAttribute="top" secondItem="6Uw-hj-LoQ" secondAttribute="bottom" id="ltg-Tr-Dfc"/>
-                            <constraint firstAttribute="trailing" secondItem="Wgj-Jq-wGH" secondAttribute="trailing" id="qi7-MU-bUu"/>
-                            <constraint firstItem="m38-JA-X2B" firstAttribute="top" secondItem="f8C-g2-K2j" secondAttribute="bottom" id="qtM-6f-VW5"/>
-                            <constraint firstItem="m38-JA-X2B" firstAttribute="leading" secondItem="YTv-BX-Bgh" secondAttribute="leading" id="zaC-20-EXc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Bars" id="Q2D-wq-eOE">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZXE-Oy-IpO"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tabBar" destination="6Uw-hj-LoQ" id="5R0-JF-M9k"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="giT-vW-hBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3284" y="1892"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Of-3v-L2G">
             <objects>
@@ -1089,11 +1024,11 @@
             </objects>
             <point key="canvasLocation" x="1626" y="2583"/>
         </scene>
-        <!--Bars View Controller-->
+        <!--Bars-->
         <scene sceneID="Qpn-DD-Iap">
             <objects>
                 <collectionViewController id="vcJ-Bg-6F9" customClass="BarsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HV6-5C-VTB">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="HV6-5C-VTB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -1111,7 +1046,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="B7A-I5-U3t">
+                                        <searchBar contentMode="redraw" placeholder="Filter by name" translatesAutoresizingMaskIntoConstraints="NO" id="B7A-I5-U3t">
                                             <rect key="frame" x="15" y="38" width="570" height="44"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
@@ -1170,7 +1105,7 @@
                                     <constraint firstAttribute="centerY" secondItem="Am5-es-KwN" secondAttribute="centerY" constant="10" id="wBk-I3-gG8"/>
                                 </constraints>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabBarCell" id="tAd-oE-1IC">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabBarCell" id="tAd-oE-1IC" customClass="TabBarCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1202,6 +1137,9 @@
                                     <constraint firstItem="gcb-m9-3ip" firstAttribute="leading" secondItem="tAd-oE-1IC" secondAttribute="leading" constant="15" id="Pc3-ia-Bgb"/>
                                     <constraint firstAttribute="centerY" secondItem="gcb-m9-3ip" secondAttribute="centerY" constant="10" id="msm-PU-UBz"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="tabBar" destination="gcb-m9-3ip" id="F57-I9-FoR"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1209,7 +1147,9 @@
                             <outlet property="delegate" destination="vcJ-Bg-6F9" id="8jV-X4-fb3"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="WW0-8o-E1V"/>
+                    <navigationItem key="navigationItem" title="Bars" id="WW0-8o-E1V">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Dln-8w-zpS"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ojj-AN-YXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
