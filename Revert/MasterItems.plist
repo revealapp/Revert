@@ -7,18 +7,6 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Table View</string>
-				<key>subtitle</key>
-				<string>UITableView</string>
-				<key>iconName</key>
-				<string>orange_icon</string>
-				<key>storyboardIdentifier</key>
-				<string>TableViewController</string>
-				<key>isPush</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>title</key>
 				<string>Collection View</string>
 				<key>subtitle</key>
 				<string>UICollectionView</string>
@@ -26,6 +14,18 @@
 				<string>blue_icon</string>
 				<key>storyboardIdentifier</key>
 				<string>CollectionViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Table View</string>
+				<key>subtitle</key>
+				<string>UITableView</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>TableViewController</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -41,18 +41,11 @@
 				<key>isPush</key>
 				<true/>
 			</dict>
-			<dict>
-				<key>title</key>
-				<string>Map View</string>
-				<key>subtitle</key>
-				<string>MKMapView</string>
-				<key>iconName</key>
-				<string>orange_icon</string>
-				<key>storyboardIdentifier</key>
-				<string>MapViewController</string>
-				<key>isPush</key>
-				<true/>
-			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
 			<dict>
 				<key>resourceFilename</key>
 				<string>ViewItems</string>
@@ -67,11 +60,6 @@
 				<key>isPush</key>
 				<true/>
 			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>rows</key>
-		<array>
 			<dict>
 				<key>resourceFilename</key>
 				<string>ControlItems</string>
@@ -100,18 +88,6 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>SpriteKit</string>
-				<key>subtitle</key>
-				<string>A SpriteKit example</string>
-				<key>iconName</key>
-				<string>blue_icon</string>
-				<key>storyboardIdentifier</key>
-				<string>SpriteKitViewController</string>
-				<key>isPush</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>title</key>
 				<string>Alert View</string>
 				<key>subtitle</key>
 				<string>Alert samples</string>
@@ -131,6 +107,35 @@
 				<string>orange_icon</string>
 				<key>storyboardIdentifier</key>
 				<string>PickerViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Map View</string>
+				<key>subtitle</key>
+				<string>MKMapView</string>
+				<key>iconName</key>
+				<string>orange_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>MapViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>SpriteKit</string>
+				<key>subtitle</key>
+				<string>A SpriteKit example</string>
+				<key>iconName</key>
+				<string>blue_icon</string>
+				<key>storyboardIdentifier</key>
+				<string>SpriteKitViewController</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
