@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -363,11 +365,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-og-Tnc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-vH-kVU">
-                                        <rect key="frame" x="0.0" y="0.0" width="1900" height="1800"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-vH-kVU">
+                                        <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="1900" id="9f6-Lu-5u1"/>
-                                            <constraint firstAttribute="height" constant="1800" id="AEX-Gm-5jB"/>
+                                            <constraint firstAttribute="width" secondItem="Su6-vH-kVU" secondAttribute="height" multiplier="1:1" id="5w1-hD-yTi"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
@@ -375,10 +376,11 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Su6-vH-kVU" secondAttribute="trailing" id="J7p-ul-zSj"/>
-                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="top" id="dqq-oP-3Ii"/>
-                                    <constraint firstAttribute="bottom" secondItem="Su6-vH-kVU" secondAttribute="bottom" id="fXC-XB-XEn"/>
-                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="leading" secondItem="4ke-og-Tnc" secondAttribute="leading" id="ofx-qX-Wcy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Su6-vH-kVU" secondAttribute="trailing" id="QLc-Ef-wz1"/>
+                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="top" id="VIU-bZ-yih"/>
+                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="leading" secondItem="4ke-og-Tnc" secondAttribute="leading" id="lI5-q2-lF2"/>
+                                    <constraint firstAttribute="bottom" secondItem="Su6-vH-kVU" secondAttribute="bottom" id="lPc-md-rD5"/>
+                                    <constraint firstItem="Su6-vH-kVU" firstAttribute="height" secondItem="4ke-og-Tnc" secondAttribute="height" multiplier="2" id="tKI-uH-DdA"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
@@ -1576,5 +1578,6 @@
     <resources>
         <image name="Spaceship" width="394" height="347"/>
         <image name="info_icon" width="22" height="22"/>
+        <image name="reveal_pretty.jpg" width="22" height="22"/>
     </resources>
 </document>
