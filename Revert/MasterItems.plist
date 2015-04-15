@@ -7,25 +7,25 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Collection View</string>
+				<string>Table View</string>
 				<key>subtitle</key>
-				<string>UICollectionView</string>
+				<string>UITableView</string>
 				<key>iconName</key>
-				<string>blue_icon</string>
+				<string>icon_TableView</string>
 				<key>storyboardIdentifier</key>
-				<string>CollectionViewController</string>
+				<string>TableViewController</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Table View</string>
+				<string>Collection View</string>
 				<key>subtitle</key>
-				<string>UITableView</string>
+				<string>UICollectionView</string>
 				<key>iconName</key>
-				<string>orange_icon</string>
+				<string>icon_CollectionView</string>
 				<key>storyboardIdentifier</key>
-				<string>TableViewController</string>
+				<string>CollectionViewController</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -35,7 +35,7 @@
 				<key>subtitle</key>
 				<string>UIScrollView</string>
 				<key>iconName</key>
-				<string>green_icon</string>
+				<string>icon_ScrollView</string>
 				<key>storyboardIdentifier</key>
 				<string>ScrollViewController</string>
 				<key>isPush</key>
@@ -54,7 +54,7 @@
 				<key>subtitle</key>
 				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
-				<string>blue_icon</string>
+				<string>icon_DefaultView</string>
 				<key>storyboardIdentifier</key>
 				<string>DefaultViewController</string>
 				<key>isPush</key>
@@ -68,7 +68,7 @@
 				<key>subtitle</key>
 				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
-				<string>green_icon</string>
+				<string>icon_Controls</string>
 				<key>storyboardIdentifier</key>
 				<string>ControlsViewController</string>
 				<key>isPush</key>
@@ -80,7 +80,7 @@
 				<key>subtitle</key>
 				<string>A selection of stock iOS bars</string>
 				<key>iconName</key>
-				<string>orange_icon</string>
+				<string>icon_Bars</string>
 				<key>storyboardIdentifier</key>
 				<string>BarsViewController</string>
 				<key>isPush</key>
@@ -92,7 +92,7 @@
 				<key>subtitle</key>
 				<string>Alert samples</string>
 				<key>iconName</key>
-				<string>green_icon</string>
+				<string>icon_AlertView</string>
 				<key>storyboardIdentifier</key>
 				<string>AlertsViewController</string>
 				<key>isPush</key>
@@ -121,7 +121,7 @@
 				<key>subtitle</key>
 				<string>MKMapView</string>
 				<key>iconName</key>
-				<string>orange_icon</string>
+				<string>icon_MapView</string>
 				<key>storyboardIdentifier</key>
 				<string>MapViewController</string>
 				<key>isPush</key>
@@ -133,7 +133,7 @@
 				<key>subtitle</key>
 				<string>A SpriteKit example</string>
 				<key>iconName</key>
-				<string>blue_icon</string>
+				<string>icon_SpriteKit</string>
 				<key>storyboardIdentifier</key>
 				<string>SpriteKitViewController</string>
 				<key>isPush</key>
