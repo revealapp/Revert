@@ -104,7 +104,7 @@
 				<key>subtitle</key>
 				<string>DatePicker &amp; Regular Picker</string>
 				<key>iconName</key>
-				<string>orange_icon</string>
+				<string>icon_Picker</string>
 				<key>storyboardIdentifier</key>
 				<string>PickerViewController</string>
 				<key>isPush</key>
@@ -133,7 +133,7 @@
 				<key>subtitle</key>
 				<string>WKWebView</string>
 				<key>iconName</key>
-				<string>orange_icon</string>
+				<string>icon_WebView</string>
 				<key>storyboardIdentifier</key>
 				<string>WebViewController</string>
 				<key>isPush</key>
