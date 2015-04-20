@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
 		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Revert/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A07D8DD1AE4B8260099C4CB /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
 		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +201,8 @@
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9ADAA3C51ADC8D1F008CC87B /* DataSource */,
+				9A07D8DD1AE4B8260099C4CB /* Layouts */,
+				9ADAA3C51ADC8D1F008CC87B /* DataSources */,
 				9A28739D1AD76E8E006466BE /* Adapters */,
 				9AE718E71AD7513D00DD7FFC /* CellConfigurators */,
 				9A94E3F41AD63F040005BA44 /* Models */,
@@ -231,14 +242,14 @@
 			name = Misc;
 			sourceTree = "<group>";
 		};
-		9ADAA3C51ADC8D1F008CC87B /* DataSource */ = {
+		9ADAA3C51ADC8D1F008CC87B /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
 				9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */,
 				9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */,
 				9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */,
 			);
-			name = DataSource;
+			name = DataSources;
 			sourceTree = "<group>";
 		};
 		9AE718E71AD7513D00DD7FFC /* CellConfigurators */ = {
@@ -330,6 +341,7 @@
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
+				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */,

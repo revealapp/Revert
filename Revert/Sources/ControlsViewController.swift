@@ -46,6 +46,14 @@ class ControlsViewController: UICollectionViewController {
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView!.endEditing(true)
   }
+  
+  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    
+    coordinator.animateAlongsideTransition({ (_) in
+      self.collectionViewFlowLayout.invalidateLayout()
+    }, completion: nil)
+  }
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
@@ -55,20 +63,7 @@ extension ControlsViewController: UICollectionViewDelegateFlowLayout {
     return section == self.collection!.countOfGroups - 1
   }
   
-  private var noOfItemsInRow: Int {
-    // TOOD: Determine # of horizontal items properly depending on device.
-    return self.view.bounds.width > self.view.bounds.height ? 3 : 2
-  }
-  
-  private var itemWidth: CGFloat {
-    return floor(self.collectionView!.bounds.width / CGFloat(self.noOfItemsInRow) - (CGFloat(self.noOfItemsInRow) - 1.0))
-  }
-
-  internal func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    return CGSize(width: self.itemWidth, height: self.itemWidth)
-  }
-  
   internal func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-    return UIEdgeInsets(top: 0.0, left: 1.0, bottom: self.isLastSection(section) ? 0.0 : 35.0, right: 1.0)
+    return self.isLastSection(section) ? UIEdgeInsets(top: 0.0, left: 1.0, bottom: 0.0, right: 1.0) : self.collectionViewFlowLayout.sectionInset
   }
 }

@@ -14,6 +14,14 @@ class CollectionViewController: UICollectionViewController {
     
     self.collectionView!.flashScrollIndicators()
   }
+  
+  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    
+    coordinator.animateAlongsideTransition({ (_) in
+      self.collectionViewFlowLayout.invalidateLayout()
+    }, completion: nil)
+  }
 }
 
 // MARK: UICollectionViewDataSource
