@@ -1438,16 +1438,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0U-4X-ubM">
-                                            <rect key="frame" x="103" y="177" width="93" height="20"/>
+                                            <rect key="frame" x="103" y="169" width="93" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aij-OQ-kEa" customClass="MPVolumeView">
-                                            <rect key="frame" x="84" y="108" width="130" height="54"/>
+                                            <rect key="frame" x="84" y="126" width="130" height="28"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="54" id="kNH-pk-wMJ"/>
+                                                <constraint firstAttribute="height" constant="28" id="kNH-pk-wMJ"/>
                                                 <constraint firstAttribute="width" constant="130" id="qrH-Ht-lQn"/>
                                             </constraints>
                                         </view>
@@ -1458,7 +1458,7 @@
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="aij-OQ-kEa" secondAttribute="centerX" id="EuT-Z2-2Yn"/>
                                     <constraint firstAttribute="centerX" secondItem="Y0U-4X-ubM" secondAttribute="centerX" id="JDV-c7-9MF"/>
-                                    <constraint firstAttribute="centerY" secondItem="aij-OQ-kEa" secondAttribute="centerY" constant="15" id="Mvr-lD-WMd"/>
+                                    <constraint firstAttribute="centerY" secondItem="aij-OQ-kEa" secondAttribute="centerY" constant="10" id="Mvr-lD-WMd"/>
                                     <constraint firstItem="Y0U-4X-ubM" firstAttribute="top" secondItem="aij-OQ-kEa" secondAttribute="bottom" constant="15" id="w3v-BS-TO5"/>
                                 </constraints>
                             </collectionViewCell>
