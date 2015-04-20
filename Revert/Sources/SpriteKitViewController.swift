@@ -7,16 +7,16 @@ import SpriteKit
 
 class IBAScene: SKScene {
   private lazy var helloWorldLabel: SKLabelNode = {
-    let label = SKLabelNode(fontNamed: "Chalkduster")
+    let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
     
     label.text = NSLocalizedString("spritekitviewcontroller.label.helloworld", comment: "SpriteKitViewController background label")
-    label.fontSize = 30
+    label.fontSize = 28
     label.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
     return label
     }()
   
   private func addSpaceshipAtLocation(location: CGPoint) {
-    let spaceShip = SKSpriteNode(imageNamed: "Spaceship")
+    let spaceShip = SKSpriteNode(imageNamed: "spritekit_reveal")
     let action = SKAction.rotateByAngle(CGFloat(M_PI), duration: 1.0)
     
     spaceShip.position = location
