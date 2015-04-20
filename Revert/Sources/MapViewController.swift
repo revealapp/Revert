@@ -18,10 +18,9 @@ class MapViewController: UIViewController {
     let locations = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("MapLocations", ofType: "plist")!) as! [[String: AnyObject]]
     let annotations = locations.map({MapAnnotation(dictionary: $0)})
     var coordinates = annotations.map({$0.coordinate}) + [annotations.first!.coordinate]
-    var polyline = MKPolyline(coordinates: &coordinates, count: coordinates.count)
     
     self.mapView.addAnnotations(annotations)
-    self.mapView.addOverlay(polyline)
+    self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
   }
 }
 
@@ -29,9 +28,10 @@ class MapViewController: UIViewController {
 
 extension MapViewController: MKMapViewDelegate {
   internal func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
-    if (overlay is MKPolyline) {
-      var pr = MKPolylineRenderer(overlay: overlay)
+    if (overlay is MKPolygon) {
+      let pr = MKPolygonRenderer(overlay: overlay)
       pr.strokeColor = UIColor.alizarinColor().colorWithAlphaComponent(0.5)
+      pr.fillColor = UIColor.awesgreenColor().colorWithAlphaComponent(0.5)
       pr.lineWidth = 2.0
       return pr
     }
