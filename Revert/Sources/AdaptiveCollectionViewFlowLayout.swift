@@ -14,11 +14,15 @@ class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
     return true
   }
+
+  private var horizontalSectionInsets: CGFloat {
+    return self.sectionInset.left + self.sectionInset.right
+  }
   
   private var itemWidth: CGFloat {
-    let widthWithSpacing = self.collectionView!.bounds.width / CGFloat(self.noOfItemsInRow)
-    let widthTotalSpacing = (CGFloat(self.noOfItemsInRow - 1) * self.minimumInteritemSpacing)
-    return floor(widthWithSpacing - widthTotalSpacing)
+    let itemsWidth = self.collectionView!.bounds.width - self.horizontalSectionInsets
+    let separatorsWidth = (CGFloat(self.noOfItemsInRow - 1) * self.minimumInteritemSpacing)
+    return floor((itemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
   }
   
   override var itemSize: CGSize {
@@ -32,10 +36,9 @@ class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   
   override var minimumLineSpacing: CGFloat {
     get {
-      let horizontalSectionInsets = self.sectionInset.left + self.sectionInset.right
-      let horizontalItemSizes = self.collectionView!.bounds.width - (self.itemWidth * CGFloat(self.noOfItemsInRow))
-      let noOfSeparators = CGFloat(self.noOfItemsInRow - 1)
-      return floor((horizontalItemSizes - horizontalSectionInsets) / noOfSeparators)
+      // Minimum Line Spacing must be equal to the real interItemSpacing.
+      let separatorsWidth = self.collectionView!.bounds.width - (self.itemWidth * CGFloat(self.noOfItemsInRow)) - self.horizontalSectionInsets
+      return floor(separatorsWidth / CGFloat(self.noOfItemsInRow - 1))
     }
     set {
       super.minimumLineSpacing = newValue
