@@ -595,8 +595,8 @@
                                                 <constraint firstAttribute="width" constant="130" id="415-FC-akf"/>
                                             </constraints>
                                             <segments>
-                                                <segment title="" image="info_icon"/>
-                                                <segment title="" image="info_icon"/>
+                                                <segment title="" image="x-wing"/>
+                                                <segment title="" image="delorian"/>
                                             </segments>
                                         </segmentedControl>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-WB-1WZ">
@@ -1612,7 +1612,9 @@
     </scenes>
     <resources>
         <image name="default_reveal" width="130" height="110"/>
+        <image name="delorian" width="45" height="16"/>
         <image name="info_icon" width="22" height="22"/>
         <image name="reveal_pretty.jpg" width="22" height="22"/>
+        <image name="x-wing" width="45" height="16"/>
     </resources>
 </document>

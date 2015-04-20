@@ -11,7 +11,7 @@
 "tableviewcontroller.footer" = "%ld Countries";
 
 // SpriteKitViewController
-"spritekitviewcontroller.label.helloworld" = "Hello World";
+"spritekitviewcontroller.label.helloworld" = "Tap to add sprite";
 
 // AlertsViewController
 
