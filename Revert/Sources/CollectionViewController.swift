@@ -59,6 +59,7 @@ extension CollectionViewController: UICollectionViewDelegate {
 
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    return CGSize(width: floor((self.view.bounds.width - 1) / 2.0), height: self.collectionViewFlowLayout.itemSize.height)
+    let itemWidth = floor((self.view.bounds.width - self.collectionViewFlowLayout.minimumInteritemSpacing) / 2.0)
+    return CGSize(width: itemWidth, height: self.collectionViewFlowLayout.itemSize.height)
   }
 }
