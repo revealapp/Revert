@@ -4,11 +4,11 @@
 
 import Foundation
 
-class Item: Collectable {
+struct Item: Collectable {
   internal let title: String
   internal let cellIdentifier: String
   
-  required init(dictionary: [String : AnyObject]) {
+  init(dictionary: [String : AnyObject]) {
     self.title = dictionary["title"] as! String
     self.cellIdentifier = dictionary["cellIdentifier"] as! String
   }
