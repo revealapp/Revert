@@ -181,6 +181,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Revert" id="Zdf-7t-Un8">
                         <barButtonItem key="backBarButtonItem" title="Back" id="dRH-nN-Ckz"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="9Wx-Fo-Qtw"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
