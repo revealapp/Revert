@@ -140,13 +140,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Mm-0qQ">
-                                            <rect key="frame" x="59" y="7" width="526" height="19"/>
+                                            <rect key="frame" x="59" y="11" width="526" height="17"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTQ-dG-i1A">
-                                            <rect key="frame" x="59" y="26" width="526" height="18"/>
+                                            <rect key="frame" x="59" y="28" width="526" height="16"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" red="0.55700033903121948" green="0.55635666847229004" blue="0.57699871063232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,14 +155,14 @@
                                     <constraints>
                                         <constraint firstItem="eTQ-dG-i1A" firstAttribute="leading" secondItem="IkL-qf-2rL" secondAttribute="trailing" constant="15" id="2SN-LH-Fui"/>
                                         <constraint firstItem="eTQ-dG-i1A" firstAttribute="top" secondItem="SW6-Mm-0qQ" secondAttribute="bottom" id="7fY-Ck-Z7v"/>
-                                        <constraint firstAttribute="centerY" secondItem="IkL-qf-2rL" secondAttribute="centerY" id="DCU-mi-JWh"/>
                                         <constraint firstItem="IkL-qf-2rL" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" constant="15" id="Lzm-cp-vhc"/>
-                                        <constraint firstItem="SW6-Mm-0qQ" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" constant="7" id="THJ-O6-di5"/>
+                                        <constraint firstItem="SW6-Mm-0qQ" firstAttribute="top" secondItem="IkL-qf-2rL" secondAttribute="top" id="VXA-XV-qRP"/>
                                         <constraint firstAttribute="bottom" secondItem="eTQ-dG-i1A" secondAttribute="bottom" constant="7" placeholder="YES" id="W7p-eo-d9v"/>
                                         <constraint firstItem="SW6-Mm-0qQ" firstAttribute="leading" secondItem="IkL-qf-2rL" secondAttribute="trailing" constant="15" id="WK2-Zp-7Ee"/>
                                         <constraint firstAttribute="trailing" secondItem="SW6-Mm-0qQ" secondAttribute="trailing" constant="15" id="bhh-zJ-zjC"/>
                                         <constraint firstAttribute="trailing" secondItem="eTQ-dG-i1A" secondAttribute="trailing" constant="15" id="jLv-ma-1vr"/>
                                         <constraint firstItem="SW6-Mm-0qQ" firstAttribute="height" secondItem="eTQ-dG-i1A" secondAttribute="height" id="vgw-1y-2pU"/>
+                                        <constraint firstAttribute="centerY" secondItem="IkL-qf-2rL" secondAttribute="centerY" id="xkc-0E-sWk"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
