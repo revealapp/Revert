@@ -47,6 +47,7 @@
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
 		9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
 		9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* MasterCell.xib */; };
+		9AF1B3201AE609F200BB626B /* UIView+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
 		9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Revert/Sources/SpriteKitViewController.swift; sourceTree = "<group>"; };
 		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MasterCell.xib; sourceTree = "<group>"; };
+		9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Revert.swift"; path = "Revert/Sources/UIView+Revert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
+				9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
+				9AF1B3201AE609F200BB626B /* UIView+Revert.swift in Sources */,
 				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
 				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
