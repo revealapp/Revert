@@ -64,6 +64,49 @@
             </objects>
             <point key="canvasLocation" x="-13" y="-1229"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ydX-UF-sGG">
+            <objects>
+                <navigationController id="yFx-FN-ibI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ie9-9N-8cb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TC2-p2-DN9" kind="relationship" relationship="rootViewController" id="fPK-dx-MMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdd-55-e36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-3295"/>
+        </scene>
+        <!--Views-->
+        <scene sceneID="5P7-68-gkb">
+            <objects>
+                <viewController id="TC2-p2-DN9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ErB-La-4G3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uxt-hp-ALN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sOb-pY-U43">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Views" id="1vV-de-qJx">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="4zM-9w-eXL"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oP-c2-3mK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-3295"/>
+        </scene>
         <!--Collection View-->
         <scene sceneID="D4X-ca-JVA">
             <objects>
@@ -1169,6 +1212,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Z9-em-hbZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
@@ -1503,6 +1547,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rEL-kE-Bd2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
@@ -1599,10 +1644,195 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ExampleItems"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
+                        <segue destination="ml1-R4-Rye" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
+                        <segue destination="SQ0-JK-GIi" kind="showDetail" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Vh9-0V-Cxg"/>
+                        <segue destination="EYK-kX-1qH" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
+                        <segue destination="AcI-lZ-yPg" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="-3295"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l8s-8R-D1H">
+            <objects>
+                <navigationController id="ml1-R4-Rye" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OyK-9W-Q4r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ae9-a4-dBl" kind="relationship" relationship="rootViewController" id="5rB-uA-8A1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukX-hJ-Cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-4009"/>
+        </scene>
+        <!--Auto Layout-->
+        <scene sceneID="K1c-e7-lit">
+            <objects>
+                <viewController id="Ae9-a4-dBl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kkf-X6-llX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Xj-bo-Bd6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e2E-bh-HFh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Auto Layout" id="IBB-fa-tPC">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="rfj-DI-bjb"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKf-VH-X0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-4009"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ybY-fk-kpa">
+            <objects>
+                <navigationController id="SQ0-JK-GIi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="syw-HQ-YFA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AT1-f1-sr1" kind="relationship" relationship="rootViewController" id="fZo-Lx-8EV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1f-Yd-9NB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-4726"/>
+        </scene>
+        <!--Auto Layout Alignments-->
+        <scene sceneID="6ot-VI-ZcG">
+            <objects>
+                <viewController id="AT1-f1-sr1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GM6-T8-He3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout Alignments" id="UMb-kM-Bd1">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-S5-dcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-4726"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QAy-Z2-ulk">
+            <objects>
+                <navigationController id="EYK-kX-1qH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KUi-eU-8pn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CrR-c1-A5E" kind="relationship" relationship="rootViewController" id="iQN-Ue-owK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nus-Ob-aSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-5436"/>
+        </scene>
+        <!--Auto Layout Margins-->
+        <scene sceneID="ET9-ag-1Ke">
+            <objects>
+                <viewController id="CrR-c1-A5E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nhe-Iu-BvR"/>
+                        <viewControllerLayoutGuide type="bottom" id="p6M-it-JEr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aSC-yw-Uum">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Auto Layout Margins" id="ncH-10-iZF">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="WY2-n3-XRk"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lee-AE-XhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-5436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hKB-BQ-5eM">
+            <objects>
+                <navigationController id="AcI-lZ-yPg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="26P-QD-9SJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6aA-pS-GGk" kind="relationship" relationship="rootViewController" id="fqD-n8-Tcq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEm-hl-j6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-6142"/>
+        </scene>
+        <!--Autoresizing Masks-->
+        <scene sceneID="xgI-cv-kN2">
+            <objects>
+                <viewController id="6aA-pS-GGk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nCn-Qh-UB2"/>
+                        <viewControllerLayoutGuide type="bottom" id="JGO-5Q-n72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aCQ-F8-eg0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Autoresizing Masks" id="naJ-ge-Ydo">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNu-TD-OCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-6142"/>
         </scene>
     </scenes>
     <resources>
