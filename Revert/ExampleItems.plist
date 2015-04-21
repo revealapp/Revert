@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Views</string>
+				<key>subtitle</key>
+				<string>A selection of UIViews</string>
+				<key>iconName</key>
+				<string>icon_TableView</string>
+				<key>storyboardIdentifier</key>
+				<string>ViewsController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout</string>
+				<key>subtitle</key>
+				<string>Basic pinning, ratio and centering</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>storyboardIdentifier</key>
+				<string>AutoLayoutViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Alignment</string>
+				<key>subtitle</key>
+				<string>Alignments, alignment rect</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>storyboardIdentifier</key>
+				<string>AutoLayoutAlignmentViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Margins</string>
+				<key>subtitle</key>
+				<string>Fun with margins</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>storyboardIdentifier</key>
+				<string>AutoLayoutMarginsViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Resizing Masks</string>
+				<key>subtitle</key>
+				<string>None, All, Width, Height, Top, Bottom</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>storyboardIdentifier</key>
+				<string>AutoResizingViewController</string>
+				<key>isPush</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

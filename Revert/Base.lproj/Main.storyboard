@@ -1579,6 +1579,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="jDh-uz-YpJ"/>
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="sCU-eZ-mhU"/>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ExampleItems"/>
+                    </userDefinedRuntimeAttributes>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
             </objects>
