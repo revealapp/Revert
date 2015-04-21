@@ -36,7 +36,6 @@
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
 		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
 		9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */; };
-		9AB235F61AE5D01C00BA8B30 /* MasterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB235F51AE5D01C00BA8B30 /* MasterCell.xib */; };
 		9AB235F81AE5D53200BA8B30 /* ExampleItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AB235F71AE5D53200BA8B30 /* ExampleItems.plist */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
@@ -47,6 +46,7 @@
 		9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
 		9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
+		9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* MasterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,6 @@
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
 		9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
-		9AB235F51AE5D01C00BA8B30 /* MasterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterCell.xib; sourceTree = "<group>"; };
 		9AB235F71AE5D53200BA8B30 /* ExampleItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExampleItems.plist; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCells.swift; path = Revert/Sources/CollectionViewCells.swift; sourceTree = "<group>"; };
 		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
 		9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Revert/Sources/SpriteKitViewController.swift; sourceTree = "<group>"; };
+		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MasterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +153,9 @@
 			children = (
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */,
+				9AF1B3171AE5EBE400BB626B /* MasterCell.xib */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
-				9AB235F51AE5D01C00BA8B30 /* MasterCell.xib */,
 			);
 			name = Resources;
 			path = Revert;
@@ -164,8 +164,8 @@
 		9A6850BB1AD4A20E00ACCE29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9AB235F71AE5D53200BA8B30 /* ExampleItems.plist */,
 				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
+				9AB235F71AE5D53200BA8B30 /* ExampleItems.plist */,
 				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
 				9A94E3F21AD63E610005BA44 /* StockItems.plist */,
 				9A2873951AD767B0006466BE /* CountriesCapitals.plist */,
@@ -329,9 +329,9 @@
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A94E3F31AD63E610005BA44 /* StockItems.plist in Resources */,
 				9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */,
-				9AB235F61AE5D01C00BA8B30 /* MasterCell.xib in Resources */,
 				9AB235F81AE5D53200BA8B30 /* ExampleItems.plist in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
+				9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */,
 				9A9F59B61AD4D75900A8CB4B /* MapLocations.plist in Resources */,
 				9A2873961AD767B0006466BE /* CountriesCapitals.plist in Resources */,
 				9A535C4D1ADB56A00082778A /* ControlItems.plist in Resources */,
@@ -393,6 +393,14 @@
 				9A6850C91AD4A20E00ACCE29 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		9AF1B3171AE5EBE400BB626B /* MasterCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AF1B3181AE5EBE400BB626B /* Base */,
+			);
+			name = MasterCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
