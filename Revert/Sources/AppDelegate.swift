@@ -12,6 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     if let splitViewController = self.window?.rootViewController as? UISplitViewController {
       self.dynamicType.configureSplitViewController(splitViewController, delegate: self)
     }
+    
+    self.dynamicType.configureAppearance()
     return true
   }
   
@@ -21,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     }
     splitViewController.delegate = delegate
+  }
+  
+  private class func configureAppearance() {
+    UITabBar.appearance().tintColor = UIColor.awesgreenColor()
   }
 }
 
