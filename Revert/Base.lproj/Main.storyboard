@@ -356,10 +356,10 @@
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4ke-og-Tnc" secondAttribute="bottom" id="BZI-uJ-Bh6"/>
                             <constraint firstAttribute="trailing" secondItem="4ke-og-Tnc" secondAttribute="trailing" id="NxB-9q-NIG"/>
-                            <constraint firstItem="16M-Fu-qLY" firstAttribute="top" secondItem="4ke-og-Tnc" secondAttribute="bottom" id="QxM-jF-zeL"/>
                             <constraint firstItem="4ke-og-Tnc" firstAttribute="top" secondItem="O8l-dy-Hd4" secondAttribute="top" id="i0y-uz-iJ9"/>
                             <constraint firstItem="4ke-og-Tnc" firstAttribute="leading" secondItem="O8l-dy-Hd4" secondAttribute="leading" id="wIe-NW-zYw"/>
                         </constraints>
@@ -460,10 +460,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-cY-InN">
-                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-02-jzJ">
-                                        <rect key="frame" x="15" y="40" width="570" height="353"/>
+                                        <rect key="frame" x="15" y="40" width="570" height="402"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-zU-juz">
                                                 <rect key="frame" x="0.0" y="0.0" width="570" height="44"/>
@@ -494,25 +494,14 @@
                                     <constraint firstAttribute="bottom" secondItem="bUw-02-jzJ" secondAttribute="bottom" constant="50" id="ggJ-ra-KSU"/>
                                 </constraints>
                             </view>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIg-KL-fga">
-                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="mey-T9-NzG"/>
-                                    <tabBarItem systemItem="more" id="arV-c8-a6O"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Xwu-cY-InN" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="19M-JV-379"/>
-                            <constraint firstAttribute="trailing" secondItem="nIg-KL-fga" secondAttribute="trailing" id="2cb-1d-6CG"/>
                             <constraint firstAttribute="trailing" secondItem="Xwu-cY-InN" secondAttribute="trailing" id="6fk-OQ-UoQ"/>
-                            <constraint firstItem="nIg-KL-fga" firstAttribute="top" secondItem="Xwu-cY-InN" secondAttribute="bottom" id="IFn-K9-V8Q"/>
-                            <constraint firstItem="nIg-KL-fga" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="RmO-wy-8nO"/>
+                            <constraint firstItem="Pgp-LK-lBc" firstAttribute="top" secondItem="Xwu-cY-InN" secondAttribute="bottom" id="IHe-cn-Kyk"/>
                             <constraint firstItem="6jK-ik-p74" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="SCr-e8-nwE"/>
                             <constraint firstItem="Xwu-cY-InN" firstAttribute="top" secondItem="6jK-ik-p74" secondAttribute="bottom" id="Wyb-na-e3L"/>
-                            <constraint firstItem="Pgp-LK-lBc" firstAttribute="top" secondItem="nIg-KL-fga" secondAttribute="bottom" id="aHV-5E-Bqy"/>
                             <constraint firstItem="6jK-ik-p74" firstAttribute="top" secondItem="Uoj-Fd-V2E" secondAttribute="bottom" id="eJn-iH-WfS"/>
                             <constraint firstAttribute="trailing" secondItem="6jK-ik-p74" secondAttribute="trailing" id="pYL-Gh-xP2"/>
                         </constraints>
@@ -521,7 +510,6 @@
                     <connections>
                         <outlet property="dismissContainerView" destination="Xwu-cY-InN" id="LAS-ka-pSF"/>
                         <outlet property="searchBar" destination="6jK-ik-p74" id="LNB-iL-sUK"/>
-                        <outlet property="tabBar" destination="nIg-KL-fga" id="IQA-5h-wPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-3v-C0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
