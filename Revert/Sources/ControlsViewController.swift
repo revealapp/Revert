@@ -5,7 +5,7 @@
 import UIKit
 
 class ControlsViewController: UICollectionViewController {
-  internal var resourceFilename: String? {
+  @IBInspectable internal var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename {
         let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)

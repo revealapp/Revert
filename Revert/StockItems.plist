@@ -12,8 +12,8 @@
 				<string>UITableView</string>
 				<key>iconName</key>
 				<string>icon_TableView</string>
-				<key>storyboardIdentifier</key>
-				<string>TableViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowTableViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -24,8 +24,8 @@
 				<string>UICollectionView</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
-				<key>storyboardIdentifier</key>
-				<string>CollectionViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowCollectionViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -36,8 +36,8 @@
 				<string>UIScrollView</string>
 				<key>iconName</key>
 				<string>icon_ScrollView</string>
-				<key>storyboardIdentifier</key>
-				<string>ScrollViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowScrollViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -55,8 +55,8 @@
 				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
 				<string>icon_DefaultView</string>
-				<key>storyboardIdentifier</key>
-				<string>DefaultViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowDefaultsControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -69,8 +69,8 @@
 				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
 				<string>icon_Controls</string>
-				<key>storyboardIdentifier</key>
-				<string>ControlsViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowControlsControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -81,8 +81,8 @@
 				<string>A selection of stock iOS bars</string>
 				<key>iconName</key>
 				<string>icon_Bars</string>
-				<key>storyboardIdentifier</key>
-				<string>BarsViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowBarsViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -93,8 +93,8 @@
 				<string>Alert samples</string>
 				<key>iconName</key>
 				<string>icon_AlertView</string>
-				<key>storyboardIdentifier</key>
-				<string>AlertsViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowAlertViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -105,8 +105,8 @@
 				<string>DatePicker &amp; Regular Picker</string>
 				<key>iconName</key>
 				<string>icon_Picker</string>
-				<key>storyboardIdentifier</key>
-				<string>PickerViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowPickerViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -122,8 +122,8 @@
 				<string>MKMapView</string>
 				<key>iconName</key>
 				<string>icon_MapView</string>
-				<key>storyboardIdentifier</key>
-				<string>MapViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowMapViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -134,8 +134,8 @@
 				<string>WKWebView</string>
 				<key>iconName</key>
 				<string>icon_WebView</string>
-				<key>storyboardIdentifier</key>
-				<string>WebViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowWebViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>
@@ -146,8 +146,8 @@
 				<string>A SpriteKit example</string>
 				<key>iconName</key>
 				<string>icon_SpriteKit</string>
-				<key>storyboardIdentifier</key>
-				<string>SpriteKitViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowSpriteKitViewControllerSegue</string>
 				<key>isPush</key>
 				<true/>
 			</dict>

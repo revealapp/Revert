@@ -28,7 +28,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="-1643"/>
+            <point key="canvasLocation" x="124" y="-2355"/>
         </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-233"/>
+            <point key="canvasLocation" x="-13" y="-1229"/>
         </scene>
         <!--Collection View-->
         <scene sceneID="D4X-ca-JVA">
@@ -108,13 +108,13 @@
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
-                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
-                        <segue destination="OIu-cQ-6Vg" kind="relationship" relationship="masterViewController" id="phC-A6-QEz"/>
+                        <segue destination="O9S-s4-ZME" kind="relationship" relationship="detailViewController" id="VfP-Jr-5Bl"/>
+                        <segue destination="OIu-cQ-6Vg" kind="relationship" relationship="masterViewController" id="YvW-oi-M4O"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1656" y="-233"/>
+            <point key="canvasLocation" x="-1684" y="-1673"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -138,10 +138,23 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="StockItems"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="O9S-s4-ZME" kind="showDetail" identifier="ShowTableViewControllerSegue" id="u6c-Af-462"/>
+                        <segue destination="lRp-dE-mbB" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
+                        <segue destination="JqW-0C-HaP" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
+                        <segue destination="Qsf-lL-H8g" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ddl-66-5sP"/>
+                        <segue destination="0zK-FW-Cx0" kind="showDetail" identifier="ShowControlsControllerSegue" id="vub-Ix-iiq"/>
+                        <segue destination="ivy-GA-fkp" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="gI8-Qe-nLe"/>
+                        <segue destination="1Ba-AQ-DC9" kind="showDetail" identifier="ShowSpriteKitViewControllerSegue" id="Jzs-pC-ZOB"/>
+                        <segue destination="Q46-4J-2QX" kind="showDetail" identifier="ShowBarsViewControllerSegue" id="jaS-C4-ZP8"/>
+                        <segue destination="SEz-lg-6Yy" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
+                        <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
+                        <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-1643"/>
+            <point key="canvasLocation" x="871" y="-2355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -162,7 +175,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="-233"/>
+            <point key="canvasLocation" x="-760" y="-1229"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXf-1A-70U">
@@ -1090,6 +1103,9 @@
                     <navigationItem key="navigationItem" title="Controls" id="5ho-et-l7Q">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="JUC-Wo-agP"/>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ControlItems"/>
+                    </userDefinedRuntimeAttributes>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1F-65-DtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1484,6 +1500,9 @@
                     <navigationItem key="navigationItem" title="Views" id="8I7-db-1uV">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="Ntl-a6-LHj"/>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ViewItems"/>
+                    </userDefinedRuntimeAttributes>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTJ-xG-yrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1546,7 +1565,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IrP-bu-iOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-824" y="-1255"/>
+            <point key="canvasLocation" x="-740" y="-2847"/>
         </scene>
         <!--Master-->
         <scene sceneID="0gy-8T-nxI">
@@ -1568,7 +1587,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FsL-9f-aCg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="-947"/>
+            <point key="canvasLocation" x="124" y="-3295"/>
         </scene>
         <!--Master-->
         <scene sceneID="Qzv-sJ-S6S">
@@ -1595,7 +1614,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-947"/>
+            <point key="canvasLocation" x="871" y="-3295"/>
         </scene>
     </scenes>
     <resources>
@@ -1605,4 +1624,7 @@
         <image name="reveal_pretty.jpg" width="22" height="22"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VfP-Jr-5Bl"/>
+    </inferredMetricsTieBreakers>
 </document>

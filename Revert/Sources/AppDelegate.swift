@@ -30,4 +30,14 @@ extension AppDelegate: UISplitViewControllerDelegate {
   func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
     return secondaryViewController as? UINavigationController != nil;
   }
+  
+  func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
+    if let tabBarController = splitViewController.viewControllers.first as? UITabBarController,
+      selectedNavigationController = tabBarController.selectedViewController as? UINavigationController
+      where splitViewController.collapsed {
+        selectedNavigationController.showViewController(vc, sender: sender)
+        return true
+    }
+    return false
+  }
 }

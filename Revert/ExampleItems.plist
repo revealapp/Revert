@@ -12,7 +12,7 @@
 				<string>A selection of UIViews</string>
 				<key>iconName</key>
 				<string>icon_TableView</string>
-				<key>storyboardIdentifier</key>
+				<key>segueIdentifier</key>
 				<string>ViewsController</string>
 				<key>isPush</key>
 				<true/>
@@ -24,7 +24,7 @@
 				<string>Basic pinning, ratio and centering</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
-				<key>storyboardIdentifier</key>
+				<key>segueIdentifier</key>
 				<string>AutoLayoutViewController</string>
 				<key>isPush</key>
 				<true/>
@@ -36,7 +36,7 @@
 				<string>Alignments, alignment rect</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
-				<key>storyboardIdentifier</key>
+				<key>segueIdentifier</key>
 				<string>AutoLayoutAlignmentViewController</string>
 				<key>isPush</key>
 				<true/>
@@ -48,7 +48,7 @@
 				<string>Fun with margins</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
-				<key>storyboardIdentifier</key>
+				<key>segueIdentifier</key>
 				<string>AutoLayoutMarginsViewController</string>
 				<key>isPush</key>
 				<true/>
@@ -60,7 +60,7 @@
 				<string>None, All, Width, Height, Top, Bottom</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
-				<key>storyboardIdentifier</key>
+				<key>segueIdentifier</key>
 				<string>AutoResizingViewController</string>
 				<key>isPush</key>
 				<true/>
