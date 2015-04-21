@@ -31,6 +31,8 @@ class MasterViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    assert(self.resourceFilename != nil, "Resource file name should be set before viewDidLoad:")
+
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: SB.Cell.Master, bundle: nil), forCellReuseIdentifier: SB.Cell.Master)
   }
