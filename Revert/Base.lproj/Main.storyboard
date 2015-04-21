@@ -549,7 +549,9 @@
                             <constraint firstAttribute="trailing" secondItem="6jK-ik-p74" secondAttribute="trailing" id="pYL-Gh-xP2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bars" id="AOo-sw-j24"/>
+                    <navigationItem key="navigationItem" title="Bars" id="AOo-sw-j24">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="DRG-Gs-3WK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dismissContainerView" destination="Xwu-cY-InN" id="LAS-ka-pSF"/>
                         <outlet property="searchBar" destination="6jK-ik-p74" id="LNB-iL-sUK"/>
@@ -1177,7 +1179,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpriteKit" id="zIB-ZQ-VFH"/>
+                    <navigationItem key="navigationItem" title="SpriteKit" id="zIB-ZQ-VFH">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="3g8-b8-Ppg"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUn-hx-Zag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1353,7 +1357,9 @@
                             <constraint firstItem="97n-vh-KYK" firstAttribute="top" secondItem="RLO-wz-rfy" secondAttribute="bottom" id="rI9-gX-WfP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Picker View" id="lpq-IL-9NC"/>
+                    <navigationItem key="navigationItem" title="Picker View" id="lpq-IL-9NC">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZME-da-cea"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWL-AT-WvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1575,7 +1581,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Web View" id="h0T-dt-WNG"/>
+                    <navigationItem key="navigationItem" title="Web View" id="h0T-dt-WNG">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-rF-vMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
