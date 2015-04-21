@@ -55,15 +55,3 @@ class ControlsViewController: UICollectionViewController {
     }, completion: nil)
   }
 }
-
-// MARK: UICollectionViewDelegateFlowLayout
-
-extension ControlsViewController: UICollectionViewDelegateFlowLayout {
-  private func isLastSection(section: Int) -> Bool {
-    return section == self.collection!.countOfGroups - 1
-  }
-  
-  internal func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-    return self.isLastSection(section) ? UIEdgeInsets(top: 0.0, left: 1.0, bottom: 0.0, right: 1.0) : self.collectionViewFlowLayout.sectionInset
-  }
-}
