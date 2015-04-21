@@ -5,9 +5,23 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-  private let collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
+  
+  @IBInspectable var resourceFilename: String? {
+    didSet {
+      if let resourceFilename = self.resourceFilename {
+        let collection = CollectableCollection<MasterItem>(resourceFilename: resourceFilename)
+        self.dataSource = CollectableTableViewDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
+        self.collection = collection
+      } else {
+        self.collection = nil
+        self.dataSource = nil
+      }
+    }
+  }
+  
   private let cellConfigurator = MasterCellConfigurator()
-  private let dataSource: CollectableTableViewDataSource
+  private var collection: CollectableCollection<MasterItem>?
+  private var dataSource: CollectableTableViewDataSource?
   
   private func transitionToViewControllerForItem(item: MasterItem) {
     let destinationNavigationController = self.storyboard!.instantiateViewControllerWithIdentifier(item.storyboardIdentifier) as! UINavigationController
@@ -32,16 +46,11 @@ class MasterViewController: UITableViewController {
     }
   }
   
-  required init!(coder aDecoder: NSCoder!) {
-    self.dataSource = CollectableTableViewDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
-    super.init(coder: aDecoder)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
+    self.tableView.registerNib(UINib(nibName: SB.Cell.Master, bundle: nil), forCellReuseIdentifier: SB.Cell.Master)
   }
   
   override func viewWillAppear(animated: Bool) {
@@ -55,7 +64,8 @@ class MasterViewController: UITableViewController {
 
 extension MasterViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let item = self.collection.itemAtIndexPath(indexPath)
-    self.transitionToViewControllerForItem(item)
+    if let collection = self.collection {
+      self.transitionToViewControllerForItem(collection.itemAtIndexPath(indexPath))
+    }
   }
 }
