@@ -2476,7 +2476,7 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-4726"/>
         </scene>
-        <!--Auto Layout Alignments-->
+        <!--Auto Layout Margins-->
         <scene sceneID="6ot-VI-ZcG">
             <objects>
                 <viewController id="AT1-f1-sr1" customClass="AutoLayoutMarginsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
@@ -2574,7 +2574,7 @@
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="centerY" secondItem="i1S-l0-cJP" secondAttribute="centerYWithinMargins" id="wgy-ar-r8T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Auto Layout Alignments" id="UMb-kM-Bd1">
+                    <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe"/>
                     </navigationItem>
                     <connections>
@@ -2608,7 +2608,7 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-5436"/>
         </scene>
-        <!--Auto Layout Margins-->
+        <!--Auto Layout Alignments-->
         <scene sceneID="ET9-ag-1Ke">
             <objects>
                 <viewController id="CrR-c1-A5E" sceneMemberID="viewController">
@@ -2622,7 +2622,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Auto Layout Margins" id="ncH-10-iZF">
+                    <navigationItem key="navigationItem" title="Auto Layout Alignments" id="ncH-10-iZF">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="WY2-n3-XRk"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
