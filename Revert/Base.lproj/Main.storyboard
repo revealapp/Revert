@@ -2322,6 +2322,7 @@
                         <segue destination="SQ0-JK-GIi" kind="showDetail" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Vh9-0V-Cxg"/>
                         <segue destination="EYK-kX-1qH" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
                         <segue destination="AcI-lZ-yPg" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
+                        <segue destination="yLp-2G-q9G" kind="showDetail" identifier="ShowTransformLayersViewControllerSegue" id="Rgn-Ca-Pye"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -2675,6 +2676,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNu-TD-OCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2443" y="-6142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DDk-k4-Vxa">
+            <objects>
+                <navigationController id="yLp-2G-q9G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VQ2-Hu-rtg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="emN-Y6-Z2K" kind="relationship" relationship="rootViewController" id="lbf-St-dZJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeI-Xz-0KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-7581"/>
+        </scene>
+        <!--Transform Layers-->
+        <scene sceneID="dGn-fW-arV">
+            <objects>
+                <viewController id="emN-Y6-Z2K" customClass="TransformLayersViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4nO-BS-O9H"/>
+                        <viewControllerLayoutGuide type="bottom" id="coC-tA-1cY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TiM-gJ-rcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Transform Layers" id="GhJ-LU-zJP">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NqG-fd-bSe"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kml-4J-1TS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-7581"/>
         </scene>
     </scenes>
     <resources>
