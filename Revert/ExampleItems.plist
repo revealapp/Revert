@@ -14,8 +14,6 @@
 				<string>icon_TableView</string>
 				<key>segueIdentifier</key>
 				<string>ShowViewsViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -26,8 +24,6 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -38,8 +34,6 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -50,8 +44,6 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -62,8 +54,6 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoResizingMasksViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 		</array>
 	</dict>

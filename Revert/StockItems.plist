@@ -14,8 +14,6 @@
 				<string>icon_TableView</string>
 				<key>segueIdentifier</key>
 				<string>ShowTableViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -26,8 +24,6 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowCollectionViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -38,8 +34,6 @@
 				<string>icon_ScrollView</string>
 				<key>segueIdentifier</key>
 				<string>ShowScrollViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 		</array>
 	</dict>
@@ -57,8 +51,6 @@
 				<string>icon_DefaultView</string>
 				<key>segueIdentifier</key>
 				<string>ShowDefaultsControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>resourceFilename</key>
@@ -71,8 +63,6 @@
 				<string>icon_Controls</string>
 				<key>segueIdentifier</key>
 				<string>ShowControlsControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -83,8 +73,6 @@
 				<string>icon_Bars</string>
 				<key>segueIdentifier</key>
 				<string>ShowBarsViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -95,8 +83,6 @@
 				<string>icon_AlertView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAlertViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -107,8 +93,6 @@
 				<string>icon_Picker</string>
 				<key>segueIdentifier</key>
 				<string>ShowPickerViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 		</array>
 	</dict>
@@ -124,8 +108,6 @@
 				<string>icon_MapView</string>
 				<key>segueIdentifier</key>
 				<string>ShowMapViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -136,8 +118,6 @@
 				<string>icon_WebView</string>
 				<key>segueIdentifier</key>
 				<string>ShowWebViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -148,8 +128,6 @@
 				<string>icon_SpriteKit</string>
 				<key>segueIdentifier</key>
 				<string>ShowSpriteKitViewControllerSegue</string>
-				<key>isPush</key>
-				<true/>
 			</dict>
 		</array>
 	</dict>
