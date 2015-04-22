@@ -10,7 +10,7 @@ class TransformViewsViewController: UIViewController {
   @IBOutlet weak var rotateView: UIView!
   @IBOutlet weak var scaleView: UIView!
   
-  private var hasAnimated = true
+  private var hasAnimated = false
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
@@ -19,13 +19,13 @@ class TransformViewsViewController: UIViewController {
   }
   
   private func animateViewsIfNecessary() {
-    if hasAnimated {
-      UIView.animateWithDuration(1.0, animations: { () -> Void in
+    if hasAnimated == false {
+      UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseInOut, animations: { () -> Void in
         self.translateView.transform = CGAffineTransformMakeTranslation(-20.0, 20.0)
         self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15.0 * M_PI / 180.0))
         self.scaleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
-      })
-      self.hasAnimated = false
+      }, completion: nil)
+      self.hasAnimated = true
     }
   }
 }
