@@ -2493,10 +2493,15 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
                                         <rect key="frame" x="8" y="8" width="64" height="64"/>
-                                        <color key="backgroundColor" red="0.91158169507980347" green="0.30303579568862915" blue="0.22114640474319458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95564013719558716" green="0.62022560834884644" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Center View"/>
                                 <constraints>
                                     <constraint firstItem="ebx-85-dhz" firstAttribute="top" secondItem="ml3-CY-mgV" secondAttribute="topMargin" id="56t-fJ-sbi"/>
@@ -2506,45 +2511,43 @@
                                     <constraint firstAttribute="width" constant="80" id="XrW-jo-WTa"/>
                                     <constraint firstAttribute="height" constant="80" id="pvg-eY-kMj"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="156" y="268" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.61394625902175903" green="0.33275306224822998" blue="0.7206263542175293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Left View"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="sMv-CG-cng"/>
-                                    <constraint firstAttribute="width" constant="80" id="wba-Zp-B87"/>
-                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="364" y="252" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.20364692807197571" green="0.28350117802619934" blue="0.37111669778823853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99945300817489624" green="0.66625046730041504" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Right View"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="d6T-pu-BFS"/>
                                     <constraint firstAttribute="width" constant="80" id="iHP-Gf-FIV"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="252" y="156" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.20179075002670288" green="0.5862274169921875" blue="0.86623513698577881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Top View"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="1vZ-B0-DKY"/>
-                                    <constraint firstAttribute="height" constant="80" id="t8S-ot-hUY"/>
-                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="268" y="364" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.12072662264108658" green="0.80620002746582031" blue="0.42964980006217957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Bottom View"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="HZu-Cy-VVy"/>
                                     <constraint firstAttribute="height" constant="80" id="bno-is-EuX"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-yh-cBq">
                                 <rect key="frame" x="253" y="551" width="94" height="29"/>
+                                <color key="tintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="stepperChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="8LD-Mo-B1s"/>
                                 </connections>
@@ -2552,11 +2555,39 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center view margin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brx-E7-Jp9">
                                 <rect key="frame" x="226" y="522" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                <rect key="frame" x="156" y="268" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Left View"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sMv-CG-cng"/>
+                                    <constraint firstAttribute="width" constant="80" id="wba-Zp-B87"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                <rect key="frame" x="253" y="156" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Top View"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1vZ-B0-DKY"/>
+                                    <constraint firstAttribute="height" constant="80" id="t8S-ot-hUY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.15567031502723694" green="0.15570440888404846" blue="0.15566816926002502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
                             <constraint firstAttribute="centerX" secondItem="Brx-E7-Jp9" secondAttribute="centerX" id="149-BY-aaO"/>
