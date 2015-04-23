@@ -5,7 +5,16 @@
 import UIKit
 
 class StressTestViewController: UIViewController {
-  private func setupPyramidSubviews() {
+
+  private var wasSetup = false
+
+  private func setupPyramidSubviewsIfNecessary() {
+    // Only perform this action once
+    if self.wasSetup {
+      return
+    }
+    self.wasSetup = true
+    
     let spacing: CGFloat = 5.0
     let doubleSpacing = spacing * 2.0
     var currentView = self.view
@@ -37,14 +46,9 @@ class StressTestViewController: UIViewController {
     self.view.layoutIfNeeded()
   }
   
-  private var isFirstAppear = true
-  
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    
-    if self.isFirstAppear {
-      self.isFirstAppear = false
-      self.setupPyramidSubviews()
-    }
+
+    self.setupPyramidSubviewsIfNecessary()
   }
 }

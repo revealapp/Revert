@@ -10,13 +10,21 @@ class TransformViewsViewController: UIViewController {
   @IBOutlet weak var rotateView: UIView!
   @IBOutlet weak var scaleView: UIView!
   
+  private var wasAnimated = false
+  
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    self.animateViews()
+    self.animateViewsIfNecessary()
   }
   
-  private func animateViews() {
+  private func animateViewsIfNecessary() {
+    // Only perform this action once
+    if self.wasAnimated {
+      return
+    }
+    self.wasAnimated = true
+
     UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseInOut, animations: { () -> Void in
       self.translateView.transform = CGAffineTransformMakeTranslation(-20.0, 20.0)
       self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15.0 * M_PI / 180.0))
