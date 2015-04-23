@@ -5,18 +5,17 @@
 import UIKit
 
 class StressTestViewController: UIViewController {
-  @IBOutlet weak var containerView: UIView!
-  
-  private func setupSubviews() {
-    let spacing: CGFloat = 2.0
+  private func setupPyramidSubviews() {
+    let spacing: CGFloat = 5.0
     let doubleSpacing = spacing * 2.0
-    var currentView = self.containerView
+    var currentView = self.view
+    var width = min(currentView.bounds.height, currentView.bounds.width) - self.topLayoutGuide.length - self.bottomLayoutGuide.length
     
-    for var i = min(self.view.bounds.height, self.view.bounds.width); i > doubleSpacing; i -= doubleSpacing {
+    while width > doubleSpacing {
       let subView = UIView()
       let bindingViews = ["subView": subView]
       
-      subView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(doubleSpacing / (i - doubleSpacing))
+      subView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(doubleSpacing / (width - doubleSpacing))
       subView.setTranslatesAutoresizingMaskIntoConstraints(false)
       currentView.addSubview(subView)
       
@@ -33,13 +32,19 @@ class StressTestViewController: UIViewController {
       
       currentView.addConstraints(horizontalConstraints + verticalConstraints)
       currentView = subView
+      width -= doubleSpacing
     }
     self.view.layoutIfNeeded()
   }
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  
+  private var isFirstAppear = true
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
     
-    self.setupSubviews()
+    if self.isFirstAppear {
+      self.isFirstAppear = false
+      self.setupPyramidSubviews()
+    }
   }
 }
