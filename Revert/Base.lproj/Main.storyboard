@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-n9-7js" userLabel="Samples">
-                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <rect key="frame" x="140" y="132" width="320" height="320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-sa-tWo" userLabel="Center View">
                                         <rect key="frame" x="85" y="85" width="150" height="150"/>
@@ -251,7 +251,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.15567031502723694" green="0.15570440888404846" blue="0.15566816926002502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="eWE-n9-7js" secondAttribute="centerY" id="YLA-zl-3dB"/>
+                            <constraint firstAttribute="centerY" secondItem="eWE-n9-7js" secondAttribute="centerY" constant="8" id="YLA-zl-3dB"/>
                             <constraint firstAttribute="centerX" secondItem="eWE-n9-7js" secondAttribute="centerX" id="hJF-l1-5rp"/>
                         </constraints>
                     </view>
