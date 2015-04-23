@@ -75,6 +75,16 @@
 				<key>segueIdentifier</key>
 				<string>ShowStressTestViewControllerSegue</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Transform Layers</string>
+				<key>subtitle</key>
+				<string>Translation, Rotation, Scaling of CALayers</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>segueIdentifier</key>
+				<string>ShowTransformLayersViewControllerSegue</string>
+			</dict>
 		</array>
 	</dict>
 </array>
