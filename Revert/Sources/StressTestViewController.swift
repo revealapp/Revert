@@ -16,7 +16,7 @@ class StressTestViewController: UIViewController {
       let subView = UIView()
       let bindingViews = ["subView": subView]
       
-      subView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.5)
+      subView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(doubleSpacing / (i - doubleSpacing))
       subView.setTranslatesAutoresizingMaskIntoConstraints(false)
       currentView.addSubview(subView)
       
