@@ -4,55 +4,42 @@
 
 import UIKit
 
-class StressTestViewController: UICollectionViewController {
-  private var collectionViewFlowLayout: UICollectionViewFlowLayout {
-    return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
-  }
+class StressTestViewController: UIViewController {
+  @IBOutlet weak var containerView: UIView!
   
-  override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
+  private func setupSubviews() {
+    let spacing: CGFloat = 2.0
+    let doubleSpacing = spacing * 2.0
+    var currentView = self.containerView
     
-    self.collectionView!.flashScrollIndicators()
+    for var i = min(self.view.bounds.height, self.view.bounds.width); i > doubleSpacing; i -= doubleSpacing {
+      let subView = UIView()
+      let bindingViews = ["subView": subView]
+      
+      subView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.5)
+      subView.setTranslatesAutoresizingMaskIntoConstraints(false)
+      currentView.addSubview(subView)
+      
+      let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
+        "H:|-\(spacing)-[subView]-\(spacing)-|",
+        options: NSLayoutFormatOptions(0),
+        metrics: nil,
+        views: bindingViews) as! [NSLayoutConstraint]
+      let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
+        "V:|-\(spacing)-[subView]-\(spacing)-|",
+        options: NSLayoutFormatOptions(0),
+        metrics: nil,
+        views: bindingViews) as! [NSLayoutConstraint]
+      
+      currentView.addConstraints(horizontalConstraints + verticalConstraints)
+      currentView = subView
+    }
+    self.view.layoutIfNeeded()
   }
-  
-  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    coordinator.animateAlongsideTransition({ (_) in
-      self.collectionViewFlowLayout.invalidateLayout()
-      }, completion: nil)
-  }
-}
-
-// MARK: UICollectionViewDataSource
-
-extension StressTestViewController: UICollectionViewDataSource {
-  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-    return 1
-  }
-  
-  override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return self.noOfColumns * self.noOfRows
-  }
-  
-  override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    return collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath) as! UICollectionViewCell
-  }
-}
-
-// MARK: UICollectionViewDelegateFlowLayout
-
-extension StressTestViewController: UICollectionViewDelegateFlowLayout {
-  
-  private var noOfColumns: Int {
-    return Int(self.view.bounds.width / self.collectionViewFlowLayout.itemSize.width)
-  }
-  
-  private var noOfRows: Int {
-    return Int((self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / self.collectionViewFlowLayout.itemSize.height)
-  }
-  
-  private var spacerWidth: CGFloat {
-    return floor(self.view.bounds.width - CGFloat(self.noOfColumns) * self.collectionViewFlowLayout.itemSize.width) / CGFloat(self.noOfColumns - 1)
+    self.setupSubviews()
   }
 }
