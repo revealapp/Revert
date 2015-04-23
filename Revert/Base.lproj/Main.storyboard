@@ -2810,7 +2810,7 @@
                                             <constraint firstAttribute="height" constant="150" id="yH0-6b-NHn"/>
                                         </constraints>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciW-OG-CaL" userLabel="Front View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciW-OG-CaL" userLabel="Front View">
                                         <rect key="frame" x="225" y="96" width="150" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04H-Dj-S5s">
@@ -2878,8 +2878,8 @@
                         <outlet property="cubeFrontView" destination="ciW-OG-CaL" id="dd3-ib-ZC2"/>
                         <outlet property="cubeRightView" destination="OHf-Wp-RwR" id="lMS-Qs-Izx"/>
                         <outlet property="cubeTopView" destination="MNr-2a-05E" id="jJB-Ns-QCb"/>
-                        <outlet property="xRotateView" destination="nyq-aL-kBI" id="h2y-E2-5qf"/>
-                        <outlet property="yRotateView" destination="Kps-i5-5Mk" id="PKe-Hg-hyM"/>
+                        <outlet property="xRotateView" destination="bqp-d2-Lob" id="73V-2z-cDZ"/>
+                        <outlet property="yRotateView" destination="W99-4Q-Ptm" id="lGm-GL-z0a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kml-4J-1TS" userLabel="First Responder" sceneMemberID="firstResponder"/>
