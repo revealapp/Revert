@@ -50,6 +50,7 @@
 		9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
 		9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* MasterCell.xib */; };
 		9AF1B3201AE609F200BB626B /* UIView+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */; };
+		9AFE6EBC1AE7672B00BB64F4 /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE6EBB1AE7672B00BB64F4 /* StressTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Revert/Sources/SpriteKitViewController.swift; sourceTree = "<group>"; };
 		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MasterCell.xib; sourceTree = "<group>"; };
 		9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Revert.swift"; path = "Revert/Sources/UIView+Revert.swift"; sourceTree = "<group>"; };
+		9AFE6EBB1AE7672B00BB64F4 /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
 				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
+				9AFE6EBB1AE7672B00BB64F4 /* StressTestViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
+				9AFE6EBC1AE7672B00BB64F4 /* StressTestViewController.swift in Sources */,
 				9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,

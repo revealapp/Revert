@@ -65,6 +65,16 @@
 				<key>segueIdentifier</key>
 				<string>ShowTransformViewsViewControllerSegue</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stress Test</string>
+				<key>subtitle</key>
+				<string>Embeded UIViews forming pyramids</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>segueIdentifier</key>
+				<string>ShowStressTestViewControllerSegue</string>
+			</dict>
 		</array>
 	</dict>
 </array>
