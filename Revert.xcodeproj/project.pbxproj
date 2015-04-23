@@ -43,6 +43,7 @@
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */; };
 		9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */; };
+		9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */; };
 		9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
 		9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
@@ -90,6 +91,7 @@
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollectionViewDataSource.swift; path = Revert/Sources/CollectableCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCellConfigurator.swift; path = Revert/Sources/MasterCellConfigurator.swift; sourceTree = "<group>"; };
+		9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformViewsViewController.swift; path = Revert/Sources/TransformViewsViewController.swift; sourceTree = "<group>"; };
 		9AEE22AA1ADB77BE0033DAA2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Revert/Sources/Item.swift; sourceTree = "<group>"; };
 		9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCells.swift; path = Revert/Sources/CollectionViewCells.swift; sourceTree = "<group>"; };
 		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
+				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
 				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
+				9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				9A28739C1AD76A88006466BE /* CountryCellConfigurator.swift in Sources */,
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
