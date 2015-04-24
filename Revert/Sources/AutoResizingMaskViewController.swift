@@ -54,7 +54,7 @@ class AutoResizingMaskViewController: UIViewController {
     leftFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleRightMargin
     flexibleWidthHeightView.addSubview(leftFlexibleTopBottomView)
     
-    // Left: Flexible Top / Bottom View
+    // Right: Flexible Top / Bottom View
     let rightFlexibleTopBottomOrigin = CGPoint(x: flexibleHeightLeftRightView.frame.midX + flexibleHeightLeftRightSize.width / 2.0 + padding, y: flexibleHeightLeftRightView.frame.midY - flexibleTopBottomSize.height / 2.0)
     let rightFlexibleTopBottomView = UIView(frame: CGRect(origin: rightFlexibleTopBottomOrigin, size: flexibleTopBottomSize))
     
