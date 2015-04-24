@@ -8,6 +8,7 @@ class TableViewController: UITableViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountryDataSource
+  private var refreshTimer: NSTimer?
   
   required init!(coder aDecoder: NSCoder!) {
     self.dataSource = CountryDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
@@ -19,6 +20,20 @@ class TableViewController: UITableViewController {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
+    
+    self.refreshControl = UIRefreshControl()
+    self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
+  }
+  
+  func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
+    self.refreshTimer?.invalidate()
+
+    // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
+    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
+  }
+  
+  func didLoadDummyData(timer: NSTimer) {
+    self.refreshControl!.endRefreshing()
   }
 }
 
