@@ -104,7 +104,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-sa-tWo" userLabel="Center View">
                                         <rect key="frame" x="85" y="85" width="150" height="150"/>
-                                        <color key="backgroundColor" red="0.0" green="0.64362317323684692" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="2"/>
@@ -113,7 +113,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-9q-W9e" userLabel="Bottom View">
                                         <rect key="frame" x="27" y="243" width="266" height="50"/>
-                                        <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.4071236849" green="0.76479762790000005" blue="0.99791806940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="2"/>
@@ -170,7 +170,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLX-bX-2HL" userLabel="Top View">
                                         <rect key="frame" x="27" y="27" width="266" height="50"/>
-                                        <color key="backgroundColor" red="0.21725654602050781" green="0.37238520383834839" blue="1" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.21725654602050781" green="0.37238520383834839" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="266" id="Jw4-Vu-qX7"/>
                                         </constraints>
@@ -182,7 +182,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRZ-Wf-s5d" userLabel="Right View">
                                         <rect key="frame" x="243" y="85" width="50" height="150"/>
-                                        <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
@@ -191,7 +191,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-N1-HDr" userLabel="Left View">
                                         <rect key="frame" x="27" y="85" width="50" height="150"/>
-                                        <color key="backgroundColor" red="0.99945300817489624" green="0.66625046730041504" blue="0.0" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99945300817489624" green="0.66625046730041504" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
