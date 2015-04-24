@@ -11,7 +11,7 @@ class AutoResizingMaskViewController: UIViewController {
   private var viewsWereSetup = false
   
   private func addSubViewsIfNeeded() {
-    
+    // Only perform this action once
     if self.viewsWereSetup {
       return
     }
@@ -81,7 +81,7 @@ class AutoResizingMaskViewController: UIViewController {
     rightFlexibleTopBottomView.cornerRadius = cornerRadius
     rightFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleLeftMargin
     flexibleWidthHeightView.addSubview(rightFlexibleTopBottomView)
-}
+  }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
