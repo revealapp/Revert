@@ -20,7 +20,7 @@ class StressTestViewController: UIViewController {
     return UIColor.whiteColor()
   }
   
-  private var maximumLayoutSizeForAnyOrientation: CGFloat {
+  private var maxTopBottomLayoutLength: CGFloat {
     return self.tabBarController!.tabBar.bounds.height * 2.0
   }
 
@@ -33,7 +33,7 @@ class StressTestViewController: UIViewController {
     
     let spacing: CGFloat = 5.0
     var currentView = self.containerView
-    var width = min(self.view.bounds.height, self.view.bounds.width) - self.maximumLayoutSizeForAnyOrientation
+    var width = min(self.view.bounds.height, self.view.bounds.width) - self.maxTopBottomLayoutLength
     
     for var i = 0; width > 2.0 * spacing; width -= spacing + spacing {
       let subView = UIView()
