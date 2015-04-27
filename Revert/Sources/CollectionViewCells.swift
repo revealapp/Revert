@@ -5,7 +5,50 @@
 import UIKit
 
 class TextFieldControlCell: UICollectionViewCell {
+  @IBOutlet weak var textField: UITextField!
+  
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
     sender.resignFirstResponder()
+  }
+}
+
+class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.textField.inputView = self.textFieldInputView
+    self.textField.inputAccessoryView = self.textFieldInputAccessoryView
+  }
+  
+  private var textFieldInputView: UIDatePicker {
+    let picker = UIDatePicker()
+    
+    picker.datePickerMode = .Date
+    picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
+    picker.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+    return picker
+  }
+
+  private var textFieldInputAccessoryView: UIView {
+    let size = CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 44.0)
+    let toolBar = UIToolbar(frame: CGRect(origin: CGPointZero, size: size))
+    let doneBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "doneButtonTapped:")
+    let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+
+    doneBarButtonItem.tintColor = UIColor.awesgreenColor()
+    toolBar.items = [
+      flexibleBarButtonItem,
+      doneBarButtonItem
+    ]
+    return toolBar
+  }
+  
+  func doneButtonTapped(sender: UIBarButtonItem) {
+    self.textField.resignFirstResponder()
+  }
+  
+  func datePickerChanged(datePicker: UIDatePicker) {
+    self.textField.text = Static.DateFormatter.ddmmyy.stringFromDate(datePicker.date)
   }
 }

@@ -995,13 +995,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Border TextField" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFo-tw-1ix">
-                                            <rect key="frame" x="109" y="169" width="80" height="39"/>
+                                            <rect key="frame" x="109" y="152" width="80" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUE-jY-zbU">
-                                            <rect key="frame" x="84" y="124" width="130" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUE-jY-zbU">
+                                            <rect key="frame" x="84" y="107" width="130" height="30"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="4Hj-kc-uHZ"/>
@@ -1022,8 +1022,11 @@
                                     <constraint firstAttribute="centerX" secondItem="qFo-tw-1ix" secondAttribute="centerX" constant="0.5" id="Ov3-dF-BTz"/>
                                     <constraint firstAttribute="centerX" secondItem="cUE-jY-zbU" secondAttribute="centerX" id="Sgp-94-N0g"/>
                                     <constraint firstItem="qFo-tw-1ix" firstAttribute="width" relation="lessThanOrEqual" secondItem="cUE-jY-zbU" secondAttribute="width" id="VEu-hR-Pa8"/>
-                                    <constraint firstAttribute="centerY" secondItem="cUE-jY-zbU" secondAttribute="centerY" constant="10" id="xc8-Xg-AG7"/>
+                                    <constraint firstAttribute="centerY" secondItem="cUE-jY-zbU" secondAttribute="centerY" constant="27" id="xc8-Xg-AG7"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="textField" destination="cUE-jY-zbU" id="qPa-2w-g5Z"/>
+                                </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundedTextFieldCell" id="N4E-8r-ew4" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1033,13 +1036,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounded Rect TextField" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-Rl-JVj">
-                                            <rect key="frame" x="94" y="169" width="110" height="39"/>
+                                            <rect key="frame" x="94" y="152" width="110" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjE-NI-Faf">
-                                            <rect key="frame" x="84" y="124" width="130" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjE-NI-Faf">
+                                            <rect key="frame" x="84" y="107" width="130" height="30"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="giZ-VO-bXR"/>
@@ -1057,12 +1060,15 @@
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="FjE-NI-Faf" secondAttribute="centerX" id="G7t-mf-huo"/>
                                     <constraint firstItem="DNb-Rl-JVj" firstAttribute="top" secondItem="FjE-NI-Faf" secondAttribute="bottom" constant="15" id="QVd-x5-l1O"/>
-                                    <constraint firstAttribute="centerY" secondItem="FjE-NI-Faf" secondAttribute="centerY" constant="10" id="XB1-Ps-jjr"/>
+                                    <constraint firstAttribute="centerY" secondItem="FjE-NI-Faf" secondAttribute="centerY" constant="27" id="XB1-Ps-jjr"/>
                                     <constraint firstItem="DNb-Rl-JVj" firstAttribute="width" relation="lessThanOrEqual" secondItem="FjE-NI-Faf" secondAttribute="width" id="dhS-Db-KRU"/>
                                     <constraint firstAttribute="centerX" secondItem="DNb-Rl-JVj" secondAttribute="centerX" constant="0.5" id="iQv-r1-NJt"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="textField" destination="FjE-NI-Faf" id="mNy-CQ-6ov"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LineTextFieldCell" id="e93-eP-990" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LineTextFieldCell" id="e93-eP-990" customClass="TextFieldControlCustomInputCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="299" height="299"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1070,13 +1076,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line TextField" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKc-Ht-mza">
-                                            <rect key="frame" x="99" y="169" width="100" height="20"/>
+                                            <rect key="frame" x="99" y="140" width="100" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bQ-fp-AV3">
-                                            <rect key="frame" x="84" y="124" width="130" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Placeholder" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bQ-fp-AV3">
+                                            <rect key="frame" x="84" y="95" width="130" height="30"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="ID5-gG-ZLg"/>
@@ -1088,6 +1094,12 @@
                                                 <action selector="textFieldDidEndOnExit:" destination="e93-eP-990" eventType="editingDidEndOnExit" id="wL9-OR-CsU"/>
                                             </connections>
                                         </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-48-m72">
+                                            <rect key="frame" x="88" y="168" width="122" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -1095,11 +1107,16 @@
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="tKc-Ht-mza" secondAttribute="centerX" constant="0.5" id="DsF-26-LFz"/>
                                     <constraint firstAttribute="centerX" secondItem="6bQ-fp-AV3" secondAttribute="centerX" id="NUJ-C2-WIM"/>
-                                    <constraint firstAttribute="centerY" secondItem="6bQ-fp-AV3" secondAttribute="centerY" constant="10" id="aJe-9w-V3B"/>
+                                    <constraint firstAttribute="centerY" secondItem="6bQ-fp-AV3" secondAttribute="centerY" constant="39" id="aJe-9w-V3B"/>
+                                    <constraint firstItem="KIC-48-m72" firstAttribute="top" secondItem="tKc-Ht-mza" secondAttribute="bottom" constant="8" symbolic="YES" id="gfI-pb-38O"/>
                                     <constraint firstItem="tKc-Ht-mza" firstAttribute="top" secondItem="6bQ-fp-AV3" secondAttribute="bottom" constant="15" id="gq5-0y-ncK"/>
+                                    <constraint firstAttribute="centerX" secondItem="KIC-48-m72" secondAttribute="centerX" id="taS-6l-XDQ"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="textField" destination="6bQ-fp-AV3" id="lfC-zr-6E3"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BezelTextFieldCell" id="8ut-OK-HZV" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BezelTextFieldCell" id="8ut-OK-HZV" customClass="TextFieldControlCustomInputCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="299" height="299"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1107,13 +1124,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bezel TextField" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-OU-Igi">
-                                            <rect key="frame" x="94" y="169" width="110" height="20"/>
+                                            <rect key="frame" x="94" y="140" width="110" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-Er-Aak">
-                                            <rect key="frame" x="84" y="124" width="130" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Placeholder" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-Er-Aak">
+                                            <rect key="frame" x="84" y="95" width="130" height="30"/>
                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="5Ha-UB-gzK"/>
@@ -1125,16 +1142,27 @@
                                                 <action selector="textFieldDidEndOnExit:" destination="8ut-OK-HZV" eventType="editingDidEndOnExit" id="VAr-9H-dL2"/>
                                             </connections>
                                         </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-Rx-xYi">
+                                            <rect key="frame" x="88" y="168" width="122" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="Nzg-Er-Aak" secondAttribute="centerY" constant="10" id="4Tv-aE-a9C"/>
+                                    <constraint firstAttribute="centerY" secondItem="Nzg-Er-Aak" secondAttribute="centerY" constant="39" id="4Tv-aE-a9C"/>
                                     <constraint firstAttribute="centerX" secondItem="uaX-OU-Igi" secondAttribute="centerX" constant="0.5" id="FOk-rF-94f"/>
+                                    <constraint firstAttribute="centerX" secondItem="PzV-Rx-xYi" secondAttribute="centerX" id="SDR-vS-fFB"/>
                                     <constraint firstItem="uaX-OU-Igi" firstAttribute="top" secondItem="Nzg-Er-Aak" secondAttribute="bottom" constant="15" id="UUN-8P-Mcd"/>
                                     <constraint firstAttribute="centerX" secondItem="Nzg-Er-Aak" secondAttribute="centerX" id="rjO-Pm-KEq"/>
+                                    <constraint firstItem="PzV-Rx-xYi" firstAttribute="top" secondItem="uaX-OU-Igi" secondAttribute="bottom" constant="8" symbolic="YES" id="thN-ny-kju"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="textField" destination="Nzg-Er-Aak" id="1TN-Fz-LJ3"/>
+                                </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SystemButtonCell" id="xkW-8D-F8s">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1254,7 +1282,7 @@
                                     <constraint firstAttribute="centerY" secondItem="o4g-6O-2Da" secondAttribute="centerY" constant="10" id="ixm-vT-HtS"/>
                                 </constraints>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
