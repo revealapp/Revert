@@ -13,7 +13,11 @@
         <scene sceneID="pY4-Hu-kfo">
             <objects>
                 <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Views" image="tab_views" selectedImage="tab_views_selected" id="DJH-Wa-veE"/>
+                    <tabBarItem key="tabBarItem" title="Views" image="tab_views" id="DJH-Wa-veE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="tab_views_selected"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1826,7 +1830,11 @@
         <scene sceneID="0gy-8T-nxI">
             <objects>
                 <navigationController title="Master" id="aVj-m9-L3U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scenes" image="tab_scenes" selectedImage="tab_scenes_selected" id="Rua-k9-jNv"/>
+                    <tabBarItem key="tabBarItem" title="Scenes" image="tab_scenes" id="Rua-k9-jNv">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="tab_scenes_selected"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VlX-im-uuz">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
