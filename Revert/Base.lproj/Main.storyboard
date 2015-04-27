@@ -124,7 +124,7 @@
                                         <rect key="frame" x="27" y="301" width="266" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej"/>
+                                            <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -136,7 +136,7 @@
                                         <rect key="frame" x="27" y="18" width="266" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="pvI-5g-07b"/>
+                                            <constraint firstAttribute="height" constant="1" id="pvI-5g-07b" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -148,7 +148,7 @@
                                         <rect key="frame" x="18" y="27" width="1" height="266"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq"/>
+                                            <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -160,7 +160,7 @@
                                         <rect key="frame" x="301" y="27" width="1" height="266"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="I18-iO-8UK"/>
+                                            <constraint firstAttribute="width" constant="1" id="I18-iO-8UK" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -171,9 +171,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLX-bX-2HL" userLabel="Top View">
                                         <rect key="frame" x="27" y="27" width="266" height="50"/>
                                         <color key="backgroundColor" red="0.21725654602050781" green="0.37238520383834839" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="266" id="Jw4-Vu-qX7"/>
-                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="2"/>

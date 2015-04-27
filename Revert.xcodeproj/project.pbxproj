@@ -17,6 +17,7 @@
 		9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */; };
 		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
+		9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
 		9A48E1991AEA1F7D00CDFEAD /* AirlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */; };
@@ -69,6 +70,7 @@
 		9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrouppedCollection.swift; path = Revert/Sources/GrouppedCollection.swift; sourceTree = "<group>"; };
 		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
+		9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineConstraint.swift; path = Revert/Sources/AirlineConstraint.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
 		9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineBorderView.swift; path = Revert/Sources/AirlineBorderView.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */,
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
 			);
@@ -394,6 +397,7 @@
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
+				9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9AFE6EBC1AE7672B00BB64F4 /* StressTestViewController.swift in Sources */,
 				9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */,
