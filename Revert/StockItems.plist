@@ -153,6 +153,8 @@
 				<string>icon_MapView</string>
 				<key>segueIdentifier</key>
 				<string>ShowModalViewController</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
