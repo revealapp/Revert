@@ -85,15 +85,20 @@
 				<key>segueIdentifier</key>
 				<string>ShowAnchorBoundsViewControllerSegue</string>
 			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
 			<dict>
 				<key>title</key>
-				<string>Stress Test</string>
+				<string>Super Deep</string>
 				<key>subtitle</key>
-				<string>Embeded UIViews forming pyramids</string>
+				<string>Collection of stacked views</string>
 				<key>iconName</key>
 				<string>icon_StressTest</string>
 				<key>segueIdentifier</key>
-				<string>ShowStressTestViewControllerSegue</string>
+				<string>ShowSuperDeepViewControllerSegue</string>
 			</dict>
 		</array>
 	</dict>

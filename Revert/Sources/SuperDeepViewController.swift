@@ -4,7 +4,7 @@
 
 import UIKit
 
-class StressTestViewController: UIViewController {
+class SuperDeepViewController: UIViewController {
 
   @IBOutlet weak var containerView: UIView!
   
