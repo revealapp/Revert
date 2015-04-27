@@ -135,7 +135,7 @@
 				<key>subtitle</key>
 				<string>GLKViewController</string>
 				<key>iconName</key>
-				<string>icon_SpriteKit</string>
+				<string>icon_GLkit</string>
 				<key>segueIdentifier</key>
 				<string>ShowGLKViewControllerSegue</string>
 			</dict>
@@ -150,7 +150,7 @@
 				<key>subtitle</key>
 				<string>Modal presentation</string>
 				<key>iconName</key>
-				<string>icon_MapView</string>
+				<string>icon_Modal</string>
 				<key>segueIdentifier</key>
 				<string>ShowModalViewController</string>
 				<key>isPush</key>

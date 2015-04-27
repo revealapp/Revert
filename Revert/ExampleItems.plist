@@ -11,7 +11,7 @@
 				<key>subtitle</key>
 				<string>A selection of UIViews</string>
 				<key>iconName</key>
-				<string>icon_TableView</string>
+				<string>icon_Views</string>
 				<key>segueIdentifier</key>
 				<string>ShowViewsViewControllerSegue</string>
 			</dict>
@@ -21,7 +21,7 @@
 				<key>subtitle</key>
 				<string>Basic pinning, ratio and centering</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_Autolayout</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutViewControllerSegue</string>
 			</dict>
@@ -31,7 +31,7 @@
 				<key>subtitle</key>
 				<string>Alignments, alignment rect</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_AutolayoutAlignment</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
 			</dict>
@@ -41,7 +41,7 @@
 				<key>subtitle</key>
 				<string>Fun with margins</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_AutolayoutMargin</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
 			</dict>
@@ -51,7 +51,7 @@
 				<key>subtitle</key>
 				<string>None, All, Width, Height, Top, Bottom</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_AutoResizing</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoResizingMasksViewControllerSegue</string>
 			</dict>
@@ -61,19 +61,9 @@
 				<key>subtitle</key>
 				<string>Translation, Rotation, Scaling of UIViews</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_TransformViews</string>
 				<key>segueIdentifier</key>
 				<string>ShowTransformViewsViewControllerSegue</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Stress Test</string>
-				<key>subtitle</key>
-				<string>Embeded UIViews forming pyramids</string>
-				<key>iconName</key>
-				<string>icon_CollectionView</string>
-				<key>segueIdentifier</key>
-				<string>ShowStressTestViewControllerSegue</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -81,7 +71,7 @@
 				<key>subtitle</key>
 				<string>Translation, Rotation, Scaling of CALayers</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_TransformLayers</string>
 				<key>segueIdentifier</key>
 				<string>ShowTransformLayersViewControllerSegue</string>
 			</dict>
@@ -91,9 +81,19 @@
 				<key>subtitle</key>
 				<string>Examples</string>
 				<key>iconName</key>
-				<string>icon_CollectionView</string>
+				<string>icon_Squares</string>
 				<key>segueIdentifier</key>
 				<string>ShowAnchorBoundsViewControllerSegue</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stress Test</string>
+				<key>subtitle</key>
+				<string>Embeded UIViews forming pyramids</string>
+				<key>iconName</key>
+				<string>icon_StressTest</string>
+				<key>segueIdentifier</key>
+				<string>ShowStressTestViewControllerSegue</string>
 			</dict>
 		</array>
 	</dict>
