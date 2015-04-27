@@ -141,5 +141,20 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Modal View</string>
+				<key>subtitle</key>
+				<string>Modal presentation</string>
+				<key>iconName</key>
+				<string>icon_MapView</string>
+				<key>segueIdentifier</key>
+				<string>ShowModalViewController</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
