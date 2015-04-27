@@ -85,6 +85,16 @@
 				<key>segueIdentifier</key>
 				<string>ShowTransformLayersViewControllerSegue</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bounds Change &amp; Anchor Point</string>
+				<key>subtitle</key>
+				<string>Examples</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>segueIdentifier</key>
+				<string>ShowAnchorBoundsViewControllerSegue</string>
+			</dict>
 		</array>
 	</dict>
 </array>
