@@ -6,6 +6,7 @@
 "cancel" = "Cancel";
 "ok" = "Ok";
 "delete" = "Delete";
+"error" = "Error";
 
 // TableViewController
 "tableviewcontroller.footer" = "%ld Countries";
@@ -19,3 +20,6 @@
 "alertviewcontroller.alertview.title" = "This is an UIAlertView";
 "alertviewcontroller.actionsheet.title" = "This is an UIActionSheet";
 "alertviewcontroller.alert.message" = "How are you feeling today?";
+
+// WebViewController
+"webviewcontroller.alert.message" = "Failed to load content. Make sure you're connected to the internet an try again.";
