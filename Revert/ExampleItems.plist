@@ -100,6 +100,16 @@
 				<key>segueIdentifier</key>
 				<string>ShowSuperDeepViewControllerSegue</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stress Test</string>
+				<key>subtitle</key>
+				<string>Embeded UIViews forming pyramids</string>
+				<key>iconName</key>
+				<string>icon_StressTest</string>
+				<key>segueIdentifier</key>
+				<string>ShowStressTestViewControllerSegue</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

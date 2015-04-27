@@ -19,6 +19,7 @@
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
+		9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
 		9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
@@ -34,7 +35,7 @@
 		9A87FA781ADC953C00290F7A /* CollectableTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */; };
 		9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
 		9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */; };
-		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
+		9A94E3F11AD63BFD0005BA44 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* Cells.swift */; };
 		9A94E3F31AD63E610005BA44 /* StockItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* StockItems.plist */; };
 		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
@@ -76,6 +77,7 @@
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = Revert/Sources/ModalViewController.swift; sourceTree = "<group>"; };
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
+		9A2C24031AEE110C007B17CE /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
 		9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineConstraint.swift; path = Revert/Sources/AirlineConstraint.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 		9A87FA771ADC953C00290F7A /* CollectableTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableTableViewDataSource.swift; path = Revert/Sources/CollectableTableViewDataSource.swift; sourceTree = "<group>"; };
 		9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Revert/Sources/MapAnnotationView.swift; sourceTree = "<group>"; };
 		9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryDataSource.swift; path = Revert/Sources/CountryDataSource.swift; sourceTree = "<group>"; };
-		9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Revert/Sources/TableViewCells.swift; sourceTree = "<group>"; };
+		9A94E3F01AD63BFD0005BA44 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cells.swift; path = Revert/Sources/Cells.swift; sourceTree = "<group>"; };
 		9A94E3F21AD63E610005BA44 /* StockItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StockItems.plist; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
@@ -217,7 +219,7 @@
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */,
+				9A94E3F01AD63BFD0005BA44 /* Cells.swift */,
 				9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */,
 				9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */,
 				9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */,
@@ -276,6 +278,7 @@
 				9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
+				9A2C24031AEE110C007B17CE /* StressTestViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
+				9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */,
 				9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9AFE6EBC1AE7672B00BB64F4 /* SuperDeepViewController.swift in Sources */,
@@ -425,7 +429,7 @@
 				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
 				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
-				9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */,
+				9A94E3F11AD63BFD0005BA44 /* Cells.swift in Sources */,
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
 				9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */,
 				9A87FA781ADC953C00290F7A /* CollectableTableViewDataSource.swift in Sources */,
