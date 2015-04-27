@@ -18,6 +18,7 @@
 		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
 		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
+		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
 		9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
@@ -74,6 +75,7 @@
 		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
 		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = Revert/Sources/ModalViewController.swift; sourceTree = "<group>"; };
+		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineConstraint.swift; path = Revert/Sources/AirlineConstraint.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */,
 				9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
+				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */,
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
+				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
 				9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */,
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
 				9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */,

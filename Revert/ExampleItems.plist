@@ -97,5 +97,20 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Not Serializable</string>
+				<key>subtitle</key>
+				<string>This will crash upon modifying the slider.</string>
+				<key>iconName</key>
+				<string>icon_TableView</string>
+				<key>segueIdentifier</key>
+				<string>ShowNotSerializableViewControllerSegue</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

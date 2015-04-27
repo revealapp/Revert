@@ -1876,6 +1876,7 @@
                         <segue destination="edO-42-jjt" kind="showDetail" identifier="ShowStressTestViewControllerSegue" id="IuR-jS-hlr"/>
                         <segue destination="yLp-2G-q9G" kind="showDetail" identifier="ShowTransformLayersViewControllerSegue" id="Rgn-Ca-Pye"/>
                         <segue destination="v7R-et-9QB" kind="showDetail" identifier="ShowAnchorBoundsViewControllerSegue" id="B3M-Og-WFH"/>
+                        <segue destination="9ht-xt-K6r" kind="showDetail" identifier="ShowNotSerializableViewControllerSegue" id="PWF-de-G9N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -3400,6 +3401,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xb-f6-5HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2443" y="-9025"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CJ3-jq-1n6">
+            <objects>
+                <navigationController id="9ht-xt-K6r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jhg-AA-cBb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tHf-fw-MlU" kind="relationship" relationship="rootViewController" id="Vlh-Cd-Cxk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddz-S4-noZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-9750"/>
+        </scene>
+        <!--Not Serializable-->
+        <scene sceneID="EBD-yQ-eaG">
+            <objects>
+                <viewController id="tHf-fw-MlU" customClass="NonSerializableViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V5g-gb-I8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="V43-2n-Xvu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sQ2-of-hqm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QO4-8o-dl4">
+                                <rect key="frame" x="0.0" y="170" width="600" height="260"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YM5-Nn-K2H">
+                                        <rect key="frame" x="16" y="18" width="568" height="2"/>
+                                    </progressView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IWv-Ws-oTi">
+                                        <rect key="frame" x="14" y="37" width="572" height="31"/>
+                                    </slider>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-ox-Vuz">
+                                        <rect key="frame" x="16" y="92" width="568" height="150"/>
+                                        <color key="backgroundColor" red="0.95564013719558716" green="0.62022560834884644" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="IDU-uR-5Qp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9bM-ox-Vuz" secondAttribute="bottom" constant="18" id="6K5-wz-mPc"/>
+                                    <constraint firstAttribute="height" constant="260" id="JJp-yo-4EV"/>
+                                    <constraint firstItem="9bM-ox-Vuz" firstAttribute="top" secondItem="IWv-Ws-oTi" secondAttribute="bottom" constant="25" id="N45-AP-S74"/>
+                                    <constraint firstItem="IWv-Ws-oTi" firstAttribute="top" secondItem="YM5-Nn-K2H" secondAttribute="bottom" constant="17" id="dqb-Vi-6d1"/>
+                                    <constraint firstItem="YM5-Nn-K2H" firstAttribute="top" secondItem="QO4-8o-dl4" secondAttribute="top" constant="18" id="q3d-CF-eCX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QO4-8o-dl4" firstAttribute="trailing" secondItem="9bM-ox-Vuz" secondAttribute="trailing" constant="16" id="3eg-cP-1uz"/>
+                            <constraint firstAttribute="centerY" secondItem="QO4-8o-dl4" secondAttribute="centerY" id="Dov-3h-hDt"/>
+                            <constraint firstItem="QO4-8o-dl4" firstAttribute="trailing" secondItem="IWv-Ws-oTi" secondAttribute="trailing" constant="16" id="KTv-fI-UvA"/>
+                            <constraint firstItem="QO4-8o-dl4" firstAttribute="leading" secondItem="sQ2-of-hqm" secondAttribute="leading" id="Nz8-3J-Uf9"/>
+                            <constraint firstItem="QO4-8o-dl4" firstAttribute="trailing" secondItem="YM5-Nn-K2H" secondAttribute="trailing" constant="16" id="QDn-tj-QKL"/>
+                            <constraint firstItem="9bM-ox-Vuz" firstAttribute="leading" secondItem="QO4-8o-dl4" secondAttribute="leading" constant="16" id="XDr-om-NYL"/>
+                            <constraint firstItem="IWv-Ws-oTi" firstAttribute="leading" secondItem="QO4-8o-dl4" secondAttribute="leading" constant="16" id="ZGa-3g-M70"/>
+                            <constraint firstAttribute="trailing" secondItem="QO4-8o-dl4" secondAttribute="trailing" id="bFi-JZ-1Jr"/>
+                            <constraint firstItem="YM5-Nn-K2H" firstAttribute="leading" secondItem="QO4-8o-dl4" secondAttribute="leading" constant="16" id="kd3-nq-eEr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Not Serializable" id="5Ja-8p-JrW">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="2Pq-Jz-Y0y"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="progressView" destination="YM5-Nn-K2H" id="a9q-bm-E1z"/>
+                        <outlet property="slider" destination="IWv-Ws-oTi" id="kIc-nL-NbL"/>
+                        <outlet property="subView" destination="9bM-ox-Vuz" id="9SM-r3-crM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glU-WP-qud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="-9750"/>
         </scene>
     </scenes>
     <resources>
