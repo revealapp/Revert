@@ -349,6 +349,7 @@
                         <segue destination="SEz-lg-6Yy" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
                         <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
                         <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
+                        <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -1753,6 +1754,27 @@
             </objects>
             <point key="canvasLocation" x="2443" y="4762"/>
         </scene>
+        <!--GLKViewController-->
+        <scene sceneID="UUJ-Kb-thv">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="LSN-ba-Xso" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TYz-of-kML"/>
+                        <viewControllerLayoutGuide type="bottom" id="SJd-Pw-aXu"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Vmc-Uv-Zvg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="LSN-ba-Xso" id="Df1-kY-4bb"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" title="GLKViewController" id="mzt-zU-Sc6"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbe-YU-fS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="5520"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YI1-Lf-mwC">
             <objects>
@@ -3053,6 +3075,28 @@
             </objects>
             <point key="canvasLocation" x="2443" y="-7581"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rsh-NM-axn">
+            <objects>
+                <navigationController storyboardIdentifier="GLKViewController" id="8lC-6o-1R7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDd-Mg-9sy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LSN-ba-Xso" kind="relationship" relationship="rootViewController" id="dvc-Lj-LBF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcT-Fo-jUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="5520"/>
+        </scene>
     </scenes>
     <resources>
         <image name="default_reveal" width="130" height="110"/>
@@ -3062,6 +3106,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VfP-Jr-5Bl"/>
+        <segue reference="u6c-Af-462"/>
     </inferredMetricsTieBreakers>
 </document>

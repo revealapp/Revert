@@ -129,6 +129,16 @@
 				<key>segueIdentifier</key>
 				<string>ShowSpriteKitViewControllerSegue</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>OpenGL</string>
+				<key>subtitle</key>
+				<string>GLKViewController</string>
+				<key>iconName</key>
+				<string>icon_SpriteKit</string>
+				<key>segueIdentifier</key>
+				<string>ShowGLKViewControllerSegue</string>
+			</dict>
 		</array>
 	</dict>
 </array>
