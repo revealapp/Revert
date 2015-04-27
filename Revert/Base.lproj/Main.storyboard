@@ -13,7 +13,7 @@
         <scene sceneID="pY4-Hu-kfo">
             <objects>
                 <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="DJH-Wa-veE"/>
+                    <tabBarItem key="tabBarItem" title="Views" image="tab_views" selectedImage="tab_views_selected" id="DJH-Wa-veE"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1826,7 +1826,7 @@
         <scene sceneID="0gy-8T-nxI">
             <objects>
                 <navigationController title="Master" id="aVj-m9-L3U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Rua-k9-jNv"/>
+                    <tabBarItem key="tabBarItem" title="Scenes" image="tab_scenes" selectedImage="tab_scenes_selected" id="Rua-k9-jNv"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VlX-im-uuz">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3407,6 +3407,10 @@
         <image name="delorian" width="45" height="16"/>
         <image name="info_icon" width="22" height="22"/>
         <image name="reveal_pretty.jpg" width="22" height="22"/>
+        <image name="tab_scenes" width="26" height="26"/>
+        <image name="tab_scenes_selected" width="26" height="26"/>
+        <image name="tab_views" width="26" height="26"/>
+        <image name="tab_views_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
