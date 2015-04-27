@@ -2231,19 +2231,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-Yf-pFc">
-                                <rect key="frame" x="16" y="448" width="393" height="100"/>
-                                <color key="backgroundColor" red="0.20784313725490197" green="0.78823529411764703" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Dyh-Yt-GO9"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0i-XL-vZn">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0i-XL-vZn" userLabel="Top View">
                                 <rect key="frame" x="16" y="72" width="100" height="239"/>
                                 <color key="backgroundColor" red="0.99945300820000005" green="0.66625046730000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2255,7 +2243,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVr-RD-GnT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVr-RD-GnT" userLabel="Middle Left View">
                                 <rect key="frame" x="16" y="319" width="60" height="121"/>
                                 <color key="backgroundColor" red="0.4071236849" green="0.76479762790000005" blue="0.99791806940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2268,7 +2256,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-Na-HCf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-Na-HCf" userLabel="Middle Right View">
                                 <rect key="frame" x="84" y="319" width="32" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -2277,7 +2265,59 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-h5-Lq5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-Yf-pFc" userLabel="Bottom Left View">
+                                <rect key="frame" x="16" y="448" width="393" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-r7-88x" customClass="AlignmentInsetView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="171" y="25" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="aTr-X9-n41"/>
+                                            <constraint firstAttribute="height" constant="50" id="gsh-h1-kim"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-GI-TLs" userLabel="Left View">
+                                        <rect key="frame" x="0.0" y="40" width="171" height="20"/>
+                                        <color key="backgroundColor" red="0.73725490196078436" green="0.40392156862745099" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Dvb-J1-L0d"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvC-ya-xq5" userLabel="Right View">
+                                        <rect key="frame" x="221" y="40" width="172" height="20"/>
+                                        <color key="backgroundColor" red="0.73725490196078436" green="0.40392156862745099" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="FnJ-HR-onk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20784313725490197" green="0.78823529411764703" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="fTZ-r7-88x" secondAttribute="centerY" id="0Pz-NM-AYH"/>
+                                    <constraint firstItem="fTZ-r7-88x" firstAttribute="leading" secondItem="S7P-GI-TLs" secondAttribute="trailing" id="2zf-RK-cZU"/>
+                                    <constraint firstAttribute="centerY" secondItem="S7P-GI-TLs" secondAttribute="centerY" id="5v6-Y6-s41"/>
+                                    <constraint firstItem="CvC-ya-xq5" firstAttribute="leading" secondItem="fTZ-r7-88x" secondAttribute="trailing" id="9Fz-lz-jO4"/>
+                                    <constraint firstAttribute="height" constant="100" id="Dyh-Yt-GO9"/>
+                                    <constraint firstAttribute="centerY" secondItem="CvC-ya-xq5" secondAttribute="centerY" id="Npz-pz-atV"/>
+                                    <constraint firstAttribute="trailing" secondItem="CvC-ya-xq5" secondAttribute="trailing" id="TiG-Le-LRJ"/>
+                                    <constraint firstItem="S7P-GI-TLs" firstAttribute="leading" secondItem="ZXn-Yf-pFc" secondAttribute="leading" id="nUc-jj-3Yw"/>
+                                    <constraint firstAttribute="centerX" secondItem="fTZ-r7-88x" secondAttribute="centerX" constant="0.5" id="pl8-im-EX3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-h5-Lq5" userLabel="Bottom Top Right">
                                 <rect key="frame" x="417" y="448" width="167" height="60"/>
                                 <color key="backgroundColor" red="0.21725654599999999" green="0.37238520380000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2290,7 +2330,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXA-WG-emP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXA-WG-emP" userLabel="Bottom Bottom Right">
                                 <rect key="frame" x="417" y="516" width="167" height="32"/>
                                 <color key="backgroundColor" red="0.99945300820000005" green="0.66625046730000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
