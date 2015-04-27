@@ -1770,7 +1770,7 @@
                     <view key="view" contentMode="scaleToFill" id="WEQ-7w-QE3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Web View" id="h0T-dt-WNG">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu"/>
@@ -1780,7 +1780,7 @@
             </objects>
             <point key="canvasLocation" x="2443" y="4762"/>
         </scene>
-        <!--GLKViewController-->
+        <!--OpenGL-->
         <scene sceneID="UUJ-Kb-thv">
             <objects>
                 <glkViewController preferredFramesPerSecond="30" id="LSN-ba-Xso" sceneMemberID="viewController">
@@ -1795,7 +1795,9 @@
                             <outlet property="delegate" destination="LSN-ba-Xso" id="Df1-kY-4bb"/>
                         </connections>
                     </glkView>
-                    <navigationItem key="navigationItem" title="GLKViewController" id="mzt-zU-Sc6"/>
+                    <navigationItem key="navigationItem" title="OpenGL" id="mzt-zU-Sc6">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="9CI-ol-vJk"/>
+                    </navigationItem>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbe-YU-fS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2696,6 +2698,9 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.99989503622055054" green="1" blue="0.99987143278121948" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
@@ -2758,6 +2763,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UxT-Ub-4Jx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="cKD-ZG-JZw" kind="relationship" relationship="rootViewController" id="ctv-fm-3Dp"/>
@@ -2792,7 +2802,9 @@
                             <constraint firstItem="tf9-FK-G90" firstAttribute="top" secondItem="gFt-rV-fjz" secondAttribute="bottom" id="itc-SK-fzc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stress Test" id="XNb-0V-PfJ"/>
+                    <navigationItem key="navigationItem" title="Stress Test" id="XNb-0V-PfJ">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="MTR-rf-mdw"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="gFt-rV-fjz" id="UaT-G3-PhM"/>
                     </connections>
@@ -3150,7 +3162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3219,6 +3231,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CKf-Ox-t3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="NyI-qR-3G7" kind="relationship" relationship="rootViewController" id="Xut-Q5-tqD"/>
