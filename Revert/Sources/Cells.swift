@@ -4,36 +4,18 @@
 
 import UIKit
 
-class MasterCell: UITableViewCell {
+final class MasterCell: UITableViewCell {
   @IBOutlet weak var iconImageView: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var subtitleLabel: UILabel!
-
-  override func awakeFromNib() {
-    super.awakeFromNib()
-
-    // Programatically adding subtitleLabel.baseline = iconView.bottom as these
-    // constraints cannot be added from IB
-    
-    let subtitleBaselineConstraint = NSLayoutConstraint(
-      item: self.iconImageView,
-      attribute: .Bottom,
-      relatedBy: .Equal,
-      toItem: self.subtitleLabel,
-      attribute: .Baseline,
-      multiplier: 1.0,
-      constant: 0.0)
-
-    self.addConstraint(subtitleBaselineConstraint)
-  }
 }
 
-class CountryCell: UITableViewCell {
+final class CountryCell: UITableViewCell {
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var titleLabel: UILabel!
 }
 
-class StressCell: UICollectionViewCell {
+final class StressCell: UICollectionViewCell {
   private func setupSubviews() {
     var currentView: UIView = self
     

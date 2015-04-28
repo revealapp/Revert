@@ -21,29 +21,28 @@
                             <constraint firstAttribute="height" constant="29" id="YYW-KZ-gae"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gad-o9-hIY">
+                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" verticalCompressionResistancePriority="751" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gad-o9-hIY">
                         <rect key="frame" x="59" y="11" width="493" height="17"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" red="0.21958050130000001" green="0.21962401270000001" blue="0.21957439179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKt-QA-R6o">
-                        <rect key="frame" x="59" y="28" width="493" height="16"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <rect key="frame" x="59" y="28" width="493" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                         <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="centerY" secondItem="nqM-EP-bnt" secondAttribute="centerY" id="1T4-wC-UQ8"/>
-                    <constraint firstItem="KKt-QA-R6o" firstAttribute="top" secondItem="gad-o9-hIY" secondAttribute="bottom" id="6gO-xg-iaY"/>
+                    <constraint firstItem="KKt-QA-R6o" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gad-o9-hIY" secondAttribute="bottom" id="6gO-xg-iaY"/>
                     <constraint firstItem="gad-o9-hIY" firstAttribute="top" secondItem="nqM-EP-bnt" secondAttribute="top" id="C2x-bS-mFJ"/>
+                    <constraint firstItem="nqM-EP-bnt" firstAttribute="bottom" secondItem="KKt-QA-R6o" secondAttribute="bottom" id="FjN-7K-mVl"/>
                     <constraint firstItem="KKt-QA-R6o" firstAttribute="leading" secondItem="nqM-EP-bnt" secondAttribute="trailing" constant="15" id="M0a-BY-SBZ"/>
                     <constraint firstItem="gad-o9-hIY" firstAttribute="leading" secondItem="nqM-EP-bnt" secondAttribute="trailing" constant="15" id="ZNO-k1-kaZ"/>
                     <constraint firstItem="nqM-EP-bnt" firstAttribute="leading" secondItem="3dl-oU-csQ" secondAttribute="leading" constant="15" id="bR7-of-rlt"/>
-                    <constraint firstItem="gad-o9-hIY" firstAttribute="height" secondItem="KKt-QA-R6o" secondAttribute="height" id="hrL-8l-JyE"/>
                     <constraint firstAttribute="trailing" secondItem="KKt-QA-R6o" secondAttribute="trailing" constant="15" id="j9c-Si-y5U"/>
-                    <constraint firstAttribute="bottom" secondItem="KKt-QA-R6o" secondAttribute="bottom" constant="7" placeholder="YES" id="oYM-DJ-P8C"/>
                     <constraint firstAttribute="trailing" secondItem="gad-o9-hIY" secondAttribute="trailing" constant="15" id="uf3-LR-FrW"/>
                 </constraints>
             </tableViewCellContentView>
