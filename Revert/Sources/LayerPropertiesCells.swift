@@ -100,6 +100,10 @@ class CAScrollLayerCell: UICollectionViewCell {
   
   private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
+    scrollLayer.backgroundColor = UIColor.revertBlueColor().CGColor
+    scrollLayer.cornerRadius = 5.0
+    scrollLayer.borderWidth = 2.0
+    scrollLayer.borderColor = UIColor.revertLightBlackColor().CGColor
   }
 }
 
