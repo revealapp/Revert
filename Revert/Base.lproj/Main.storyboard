@@ -2230,7 +2230,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-r7-88x" customClass="AlignmentInsetView" customModule="Revert" customModuleProvider="target">
                                         <rect key="frame" x="171" y="25" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="aTr-X9-n41"/>
                                             <constraint firstAttribute="height" constant="50" id="gsh-h1-kim"/>
@@ -2240,20 +2240,23 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-GI-TLs" userLabel="Left View">
                                         <rect key="frame" x="0.0" y="40" width="171" height="20"/>
-                                        <color key="backgroundColor" red="0.73725490196078436" green="0.40392156862745099" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Dvb-J1-L0d"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvC-ya-xq5" userLabel="Right View">
                                         <rect key="frame" x="221" y="40" width="172" height="20"/>
-                                        <color key="backgroundColor" red="0.73725490196078436" green="0.40392156862745099" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="FnJ-HR-onk"/>
                                         </constraints>
