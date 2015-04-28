@@ -140,13 +140,22 @@ final class CAGradientLayerCell: UICollectionViewCell {
   
   private class func configureGradientLayer(gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
-    gradientLayer.locations = [0.0, 0.5, 1.0]
-    gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.2)
-    gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.8)
+    gradientLayer.locations = [0.0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1.0]
+    gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+    gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
+    gradientLayer.cornerRadius = 5.0
     gradientLayer.colors = [
-      UIColor.blackColor().CGColor,
-      UIColor.redColor().CGColor,
-      UIColor.whiteColor().CGColor
+      UIColor(red: 0.003, green: 0.043, blue: 0.341, alpha: 1.0).CGColor,
+      UIColor(red: 0.333, green: 0.000, blue: 0.533, alpha: 1.0).CGColor,
+      UIColor(red: 0.611, green: 0.305, blue: 0.572, alpha: 1.0).CGColor,
+      UIColor(red: 0.894, green: 0.611, blue: 0.611, alpha: 1.0).CGColor,
+      UIColor(red: 1.000, green: 0.733, blue: 0.619, alpha: 1.0).CGColor,
+      UIColor(red: 1.000, green: 0.866, blue: 0.517, alpha: 1.0).CGColor,
+      UIColor.whiteColor().CGColor,
+      UIColor(red: 0.894, green: 1.000, blue: 0.996, alpha: 1.0).CGColor,
+      UIColor(red: 0.784, green: 1.000, blue: 0.996, alpha: 1.0).CGColor,
+      UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1.0).CGColor,
+      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1.0).CGColor
     ]
     configureLayer(gradientLayer)
   }
