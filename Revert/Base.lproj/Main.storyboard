@@ -58,7 +58,7 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="pUE-29-GpP" secondAttribute="centerX" id="CKW-9D-bR1"/>
                             <constraint firstItem="pUE-29-GpP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="egw-Zv-sWA"/>
-                            <constraint firstAttribute="centerY" secondItem="pUE-29-GpP" secondAttribute="centerY" constant="0.5" id="idk-qg-NMh"/>
+                            <constraint firstAttribute="centerY" secondItem="pUE-29-GpP" secondAttribute="centerY" id="idk-qg-NMh"/>
                             <constraint firstItem="pUE-29-GpP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="wIc-tK-Ugf"/>
                         </constraints>
                     </view>
@@ -825,7 +825,7 @@
                                     <constraint firstAttribute="centerY" secondItem="Z8Y-RX-PHy" secondAttribute="centerY" constant="20" id="R1e-Jm-x7J"/>
                                     <constraint firstItem="enc-4k-2ZM" firstAttribute="top" secondItem="ThI-Ia-sbg" secondAttribute="bottom" constant="8" id="U6y-GR-Y8a"/>
                                     <constraint firstAttribute="centerX" secondItem="enc-4k-2ZM" secondAttribute="centerX" id="laz-fP-OuE"/>
-                                    <constraint firstAttribute="centerX" secondItem="ThI-Ia-sbg" secondAttribute="centerX" constant="0.5" id="mER-RQ-0Mj"/>
+                                    <constraint firstAttribute="centerX" secondItem="ThI-Ia-sbg" secondAttribute="centerX" id="mER-RQ-0Mj"/>
                                     <constraint firstItem="ThI-Ia-sbg" firstAttribute="top" secondItem="Z8Y-RX-PHy" secondAttribute="bottom" constant="15" id="pis-2O-6mo"/>
                                     <constraint firstAttribute="centerX" secondItem="Z8Y-RX-PHy" secondAttribute="centerX" id="zlX-tp-7bZ"/>
                                 </constraints>
@@ -867,7 +867,7 @@
                                     <constraint firstItem="tUG-q2-Eg8" firstAttribute="width" relation="lessThanOrEqual" secondItem="heg-qq-qKB" secondAttribute="width" id="0w8-eq-4VH"/>
                                     <constraint firstAttribute="centerX" secondItem="Asf-WB-1WZ" secondAttribute="centerX" id="3jK-aN-8cG"/>
                                     <constraint firstAttribute="centerY" secondItem="heg-qq-qKB" secondAttribute="centerY" constant="20" id="82q-Ub-v8L"/>
-                                    <constraint firstAttribute="centerX" secondItem="tUG-q2-Eg8" secondAttribute="centerX" constant="0.5" id="CYJ-9S-QvW"/>
+                                    <constraint firstAttribute="centerX" secondItem="tUG-q2-Eg8" secondAttribute="centerX" id="CYJ-9S-QvW"/>
                                     <constraint firstItem="tUG-q2-Eg8" firstAttribute="top" secondItem="heg-qq-qKB" secondAttribute="bottom" constant="15" id="DDI-Yt-Ok2"/>
                                     <constraint firstItem="Asf-WB-1WZ" firstAttribute="top" secondItem="tUG-q2-Eg8" secondAttribute="bottom" constant="8" id="H6c-4p-8th"/>
                                     <constraint firstAttribute="centerX" secondItem="heg-qq-qKB" secondAttribute="centerX" id="dhf-d2-Kgl"/>
@@ -921,7 +921,7 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="6ls-lH-dE2" secondAttribute="centerX" constant="0.5" id="HSS-9O-vTE"/>
+                                    <constraint firstAttribute="centerX" secondItem="6ls-lH-dE2" secondAttribute="centerX" id="HSS-9O-vTE"/>
                                     <constraint firstItem="6ls-lH-dE2" firstAttribute="top" secondItem="CzM-RP-Hd7" secondAttribute="bottom" constant="15" id="MUz-6T-EHM"/>
                                     <constraint firstAttribute="centerX" secondItem="CzM-RP-Hd7" secondAttribute="centerX" id="e9F-ME-WLr"/>
                                     <constraint firstAttribute="centerY" secondItem="CzM-RP-Hd7" secondAttribute="centerY" constant="10" id="weA-U6-dhe"/>
@@ -983,7 +983,7 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="tqy-3i-FJs" secondAttribute="centerX" constant="0.5" id="7Gh-2F-WYx"/>
+                                    <constraint firstAttribute="centerX" secondItem="tqy-3i-FJs" secondAttribute="centerX" id="7Gh-2F-WYx"/>
                                     <constraint firstAttribute="centerX" secondItem="Xq7-N2-37T" secondAttribute="centerX" id="ISV-zS-FGS"/>
                                     <constraint firstItem="tqy-3i-FJs" firstAttribute="top" secondItem="Xq7-N2-37T" secondAttribute="bottom" constant="15" id="Qbp-Vw-rVd"/>
                                     <constraint firstAttribute="centerY" secondItem="Xq7-N2-37T" secondAttribute="centerY" constant="10" id="t8T-0k-wGk"/>
@@ -1021,7 +1021,7 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="qFo-tw-1ix" firstAttribute="top" secondItem="cUE-jY-zbU" secondAttribute="bottom" constant="15" id="0gJ-U5-93Z"/>
-                                    <constraint firstAttribute="centerX" secondItem="qFo-tw-1ix" secondAttribute="centerX" constant="0.5" id="Ov3-dF-BTz"/>
+                                    <constraint firstAttribute="centerX" secondItem="qFo-tw-1ix" secondAttribute="centerX" id="Ov3-dF-BTz"/>
                                     <constraint firstAttribute="centerX" secondItem="cUE-jY-zbU" secondAttribute="centerX" id="Sgp-94-N0g"/>
                                     <constraint firstItem="qFo-tw-1ix" firstAttribute="width" relation="lessThanOrEqual" secondItem="cUE-jY-zbU" secondAttribute="width" id="VEu-hR-Pa8"/>
                                     <constraint firstAttribute="centerY" secondItem="cUE-jY-zbU" secondAttribute="centerY" constant="27" id="xc8-Xg-AG7"/>
@@ -1064,7 +1064,7 @@
                                     <constraint firstItem="DNb-Rl-JVj" firstAttribute="top" secondItem="FjE-NI-Faf" secondAttribute="bottom" constant="15" id="QVd-x5-l1O"/>
                                     <constraint firstAttribute="centerY" secondItem="FjE-NI-Faf" secondAttribute="centerY" constant="27" id="XB1-Ps-jjr"/>
                                     <constraint firstItem="DNb-Rl-JVj" firstAttribute="width" relation="lessThanOrEqual" secondItem="FjE-NI-Faf" secondAttribute="width" id="dhS-Db-KRU"/>
-                                    <constraint firstAttribute="centerX" secondItem="DNb-Rl-JVj" secondAttribute="centerX" constant="0.5" id="iQv-r1-NJt"/>
+                                    <constraint firstAttribute="centerX" secondItem="DNb-Rl-JVj" secondAttribute="centerX" id="iQv-r1-NJt"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="textField" destination="FjE-NI-Faf" id="mNy-CQ-6ov"/>
@@ -1107,7 +1107,7 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="tKc-Ht-mza" secondAttribute="centerX" constant="0.5" id="DsF-26-LFz"/>
+                                    <constraint firstAttribute="centerX" secondItem="tKc-Ht-mza" secondAttribute="centerX" id="DsF-26-LFz"/>
                                     <constraint firstAttribute="centerX" secondItem="6bQ-fp-AV3" secondAttribute="centerX" id="NUJ-C2-WIM"/>
                                     <constraint firstAttribute="centerY" secondItem="6bQ-fp-AV3" secondAttribute="centerY" constant="39" id="aJe-9w-V3B"/>
                                     <constraint firstItem="KIC-48-m72" firstAttribute="top" secondItem="tKc-Ht-mza" secondAttribute="bottom" constant="8" symbolic="YES" id="gfI-pb-38O"/>
@@ -1156,7 +1156,7 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="Nzg-Er-Aak" secondAttribute="centerY" constant="39" id="4Tv-aE-a9C"/>
-                                    <constraint firstAttribute="centerX" secondItem="uaX-OU-Igi" secondAttribute="centerX" constant="0.5" id="FOk-rF-94f"/>
+                                    <constraint firstAttribute="centerX" secondItem="uaX-OU-Igi" secondAttribute="centerX" id="FOk-rF-94f"/>
                                     <constraint firstAttribute="centerX" secondItem="PzV-Rx-xYi" secondAttribute="centerX" id="SDR-vS-fFB"/>
                                     <constraint firstItem="uaX-OU-Igi" firstAttribute="top" secondItem="Nzg-Er-Aak" secondAttribute="bottom" constant="15" id="UUN-8P-Mcd"/>
                                     <constraint firstAttribute="centerX" secondItem="Nzg-Er-Aak" secondAttribute="centerX" id="rjO-Pm-KEq"/>
@@ -1197,7 +1197,7 @@
                                     <constraint firstAttribute="centerY" secondItem="jJr-n5-gJt" secondAttribute="centerY" constant="10" id="WUV-Ph-frO"/>
                                     <constraint firstItem="G2i-Ox-JmM" firstAttribute="top" secondItem="jJr-n5-gJt" secondAttribute="bottom" constant="15" id="dnV-yU-xgX"/>
                                     <constraint firstAttribute="centerX" secondItem="G2i-Ox-JmM" secondAttribute="centerX" id="nLw-ww-0vL"/>
-                                    <constraint firstAttribute="centerX" secondItem="jJr-n5-gJt" secondAttribute="centerX" constant="0.5" id="tpR-Fa-sq5"/>
+                                    <constraint firstAttribute="centerX" secondItem="jJr-n5-gJt" secondAttribute="centerX" id="tpR-Fa-sq5"/>
                                 </constraints>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomButtonCell" id="HgL-qC-W9P">
@@ -1635,8 +1635,8 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="1u0-zS-ka0" firstAttribute="top" secondItem="ELS-fX-hZL" secondAttribute="bottom" constant="15" id="1Bq-bx-74F"/>
-                                    <constraint firstAttribute="centerX" secondItem="ELS-fX-hZL" secondAttribute="centerX" constant="0.5" id="bvP-jh-6RL"/>
-                                    <constraint firstAttribute="centerX" secondItem="1u0-zS-ka0" secondAttribute="centerX" constant="0.5" id="peP-LP-kWZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="ELS-fX-hZL" secondAttribute="centerX" id="bvP-jh-6RL"/>
+                                    <constraint firstAttribute="centerX" secondItem="1u0-zS-ka0" secondAttribute="centerX" id="peP-LP-kWZ"/>
                                     <constraint firstAttribute="centerY" secondItem="ELS-fX-hZL" secondAttribute="centerY" constant="15" id="qEt-0Q-ObG"/>
                                 </constraints>
                             </collectionViewCell>
@@ -1696,8 +1696,8 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="M2k-Mv-jjy" secondAttribute="centerX" constant="0.5" id="7pr-DC-8rC"/>
-                                    <constraint firstAttribute="centerX" secondItem="p6c-xT-UEd" secondAttribute="centerX" constant="0.5" id="Axt-0T-aUZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="M2k-Mv-jjy" secondAttribute="centerX" id="7pr-DC-8rC"/>
+                                    <constraint firstAttribute="centerX" secondItem="p6c-xT-UEd" secondAttribute="centerX" id="Axt-0T-aUZ"/>
                                     <constraint firstAttribute="centerY" secondItem="M2k-Mv-jjy" secondAttribute="centerY" constant="15" id="vZj-zG-O9L"/>
                                     <constraint firstItem="p6c-xT-UEd" firstAttribute="top" secondItem="M2k-Mv-jjy" secondAttribute="bottom" constant="15" id="zQX-Ab-gGM"/>
                                 </constraints>
@@ -2323,7 +2323,7 @@
                                     <constraint firstAttribute="centerY" secondItem="CvC-ya-xq5" secondAttribute="centerY" id="Npz-pz-atV"/>
                                     <constraint firstAttribute="trailing" secondItem="CvC-ya-xq5" secondAttribute="trailing" id="TiG-Le-LRJ"/>
                                     <constraint firstItem="S7P-GI-TLs" firstAttribute="leading" secondItem="ZXn-Yf-pFc" secondAttribute="leading" id="nUc-jj-3Yw"/>
-                                    <constraint firstAttribute="centerX" secondItem="fTZ-r7-88x" secondAttribute="centerX" constant="0.5" id="pl8-im-EX3"/>
+                                    <constraint firstAttribute="centerX" secondItem="fTZ-r7-88x" secondAttribute="centerX" id="pl8-im-EX3"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2753,7 +2753,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="qRY-fh-LSR" secondAttribute="centerX" constant="-0.5" id="21e-k9-V1B"/>
+                                            <constraint firstAttribute="centerX" secondItem="qRY-fh-LSR" secondAttribute="centerX" id="21e-k9-V1B"/>
                                             <constraint firstAttribute="height" constant="150" id="4ss-BH-u8k"/>
                                             <constraint firstItem="ptE-TK-GaT" firstAttribute="top" secondItem="qRY-fh-LSR" secondAttribute="bottom" constant="20" id="9qU-uN-I0N"/>
                                             <constraint firstItem="ptE-TK-GaT" firstAttribute="leading" secondItem="4vw-H5-Jt0" secondAttribute="leading" constant="50" id="M9P-wS-L0q"/>
