@@ -165,6 +165,16 @@ class CAReplicatorLayerCell: UICollectionViewCell {
 class CAEAGLLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var aegLayerView: CAEAGLLayerView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureAeglLayer(self.aegLayerView.aeglLayer)
+  }
+  
+  private class func configureAeglLayer(aeglLayer: CAEAGLLayer) {
+    // TODO: Implement?
+  }
 }
 
 
