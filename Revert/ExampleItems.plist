@@ -7,7 +7,7 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Views</string>
+				<string>Arranged Views</string>
 				<key>subtitle</key>
 				<string>A selection of UIViews</string>
 				<key>iconName</key>
