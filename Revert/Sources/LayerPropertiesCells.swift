@@ -72,8 +72,7 @@ final class CAShapeLayerCell: UICollectionViewCell {
   }
   
   private class func configureShapeLayer(shapeLayer: CAShapeLayer) {
-    let bezierPath = UIBezierPath(ovalInRect: shapeLayer.frame)
-    shapeLayer.path = bezierPath.CGPath
+    shapeLayer.path = UIBezierPath(ovalInRect: shapeLayer.frame).CGPath
     shapeLayer.fillColor = UIColor.revertOrangeColor().CGColor
     shapeLayer.strokeColor = UIColor.revertLightBlackColor().CGColor
     shapeLayer.strokeStart = 0.0
