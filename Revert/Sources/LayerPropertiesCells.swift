@@ -102,6 +102,18 @@ class CAScrollLayerCell: UICollectionViewCell {
 class CATiledLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var tiledLayerView: CATiledLayerView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureTiledLayer(self.tiledLayerView.tiledLayer)
+  }
+  
+  private class func configureTiledLayer(tiledLayer: CATiledLayer) {
+    tiledLayer.levelsOfDetail = 10
+    tiledLayer.levelsOfDetailBias = 10
+    tiledLayer.tileSize = CGSize(width: 512, height: 512)
+  }
 }
 
 class CAGradientLayerCell: UICollectionViewCell {
