@@ -119,6 +119,24 @@ class CATiledLayerCell: UICollectionViewCell {
 class CAGradientLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var gradientLayerView: CAGradientLayerView!
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureGradientLayer(self.gradientLayerView.gradientLayer)
+  }
+  
+  private class func configureGradientLayer(gradientLayer: CAGradientLayer) {
+    gradientLayer.type = kCAGradientLayerAxial
+    gradientLayer.locations = [0.0, 0.5, 1.0]
+    gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.2)
+    gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.8)
+    gradientLayer.colors = [
+      UIColor.blackColor().CGColor,
+      UIColor.redColor().CGColor,
+      UIColor.whiteColor().CGColor
+    ]
+  }
 }
 
 class CAReplicatorLayerCell: UICollectionViewCell {
