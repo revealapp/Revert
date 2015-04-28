@@ -1199,7 +1199,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Disclosure Button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQl-A9-LUI">
-                                            <rect key="frame" x="86" y="176" width="127" height="39"/>
+                                            <rect key="frame" x="86" y="166" width="127" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="0Qa-Sd-W2J"/>
                                             </constraints>
@@ -1208,7 +1208,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-6O-2Da">
-                                            <rect key="frame" x="127" y="117" width="44" height="44"/>
+                                            <rect key="frame" x="127" y="107" width="44" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="5U5-HJ-Xyj"/>
                                                 <constraint firstAttribute="width" constant="44" id="KEl-1F-6Dt"/>
@@ -1226,7 +1226,7 @@
                                     <constraint firstAttribute="centerX" secondItem="BQl-A9-LUI" secondAttribute="centerX" id="BZy-vD-uWH"/>
                                     <constraint firstAttribute="centerX" secondItem="o4g-6O-2Da" secondAttribute="centerX" id="NFN-tC-Uuq"/>
                                     <constraint firstItem="BQl-A9-LUI" firstAttribute="top" secondItem="o4g-6O-2Da" secondAttribute="bottom" constant="15" id="Oyo-KO-JlA"/>
-                                    <constraint firstAttribute="centerY" secondItem="o4g-6O-2Da" secondAttribute="centerY" constant="10" id="ixm-vT-HtS"/>
+                                    <constraint firstAttribute="centerY" secondItem="o4g-6O-2Da" secondAttribute="centerY" constant="20" id="ixm-vT-HtS"/>
                                 </constraints>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq">
@@ -1237,7 +1237,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Contact Button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCp-d2-xE0">
-                                            <rect key="frame" x="101" y="176" width="97" height="39"/>
+                                            <rect key="frame" x="101" y="166" width="97" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="SOf-ua-xGK"/>
                                             </constraints>
@@ -1246,7 +1246,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSB-Hw-sQd">
-                                            <rect key="frame" x="127" y="117" width="44" height="44"/>
+                                            <rect key="frame" x="127" y="107" width="44" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="L1o-yJ-7kp"/>
                                                 <constraint firstAttribute="width" constant="44" id="gMQ-L9-77t"/>
@@ -1262,7 +1262,7 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="UCp-d2-xE0" firstAttribute="top" secondItem="dSB-Hw-sQd" secondAttribute="bottom" constant="15" id="BPU-4P-wwS"/>
-                                    <constraint firstAttribute="centerY" secondItem="dSB-Hw-sQd" secondAttribute="centerY" constant="10" id="Q1a-HP-a3W"/>
+                                    <constraint firstAttribute="centerY" secondItem="dSB-Hw-sQd" secondAttribute="centerY" constant="20" id="Q1a-HP-a3W"/>
                                     <constraint firstAttribute="centerX" secondItem="dSB-Hw-sQd" secondAttribute="centerX" id="aTb-PJ-GBQ"/>
                                     <constraint firstAttribute="centerX" secondItem="UCp-d2-xE0" secondAttribute="centerX" id="dgg-NW-RAP"/>
                                 </constraints>
