@@ -21,7 +21,10 @@ class SuperDeepViewController: UIViewController {
   }
   
   private var maxTopBottomLayoutLength: CGFloat {
-    return self.tabBarController!.tabBar.bounds.height * 2.0
+    if let tabBarHeight = self.tabBarController?.tabBar.bounds.height {
+      return tabBarHeight
+    }
+    return self.navigationController?.navigationBar.bounds.height ?? 0.0
   }
 
   private func setupPyramidSubviewsIfNecessary() {
