@@ -3350,7 +3350,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.1559789776802063" green="0.15601241588592529" blue="0.15597429871559143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="qkP-s4-nhQ" firstAttribute="top" secondItem="2Kr-Nn-w4C" secondAttribute="top" constant="20" id="84G-bT-L7g"/>
                                             <constraint firstAttribute="centerX" secondItem="qkP-s4-nhQ" secondAttribute="centerX" id="Gq6-Jr-viI"/>
@@ -3607,7 +3607,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-8S-yME" customClass="CAEmitterLayerView" customModule="Revert" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="1p1-T6-knh"/>
                                                         <constraint firstAttribute="width" constant="130" id="SiN-di-G6C"/>
@@ -3623,7 +3623,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="lSK-G4-lkD" secondAttribute="bottom" id="m7k-sa-FdA"/>
                                                 <constraint firstAttribute="trailing" secondItem="TPD-8S-yME" secondAttribute="trailing" id="oQU-cs-beP"/>

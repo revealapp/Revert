@@ -31,29 +31,32 @@ class CAEmitterLayerCell: UICollectionViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    self.dynamicType.configureTextLayer(self.emitterLayerView.emitterLayer)
+    self.dynamicType.configureEmitterLayer(self.emitterLayerView.emitterLayer)
   }
   
-  private class func configureTextLayer(emitterLayer: CAEmitterLayer) {
-    emitterLayer.emitterCells = [self.emitterCell]
-    emitterLayer.birthRate = 100.0
+  private class func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
+    emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
+    emitterLayer.emitterZPosition = 5.0
     emitterLayer.emitterSize = CGSize(width: 1.0, height: 1.0)
+    emitterLayer.emitterShape = kCAEmitterLayerSphere
     emitterLayer.emitterDepth = 1.9
     emitterLayer.emitterShape = kCAEmitterLayerPoint
     emitterLayer.emitterMode = kCAEmitterLayerPoints
     emitterLayer.renderMode = kCAEmitterLayerAdditive
-    emitterLayer.preservesDepth = true
-    emitterLayer.velocity = 1.5
-    emitterLayer.scale = 1.1
-    emitterLayer.spin = 2.1
-    emitterLayer.seed = 424242
+    emitterLayer.emitterCells = [self.emitterCell]
   }
   
   private static var emitterCell: CAEmitterCell {
     let emitterCell = CAEmitterCell()
-    emitterCell.birthRate = 7000
-    emitterCell.lifetime = 3.5
-    emitterCell.color = UIColor.redColor().CGColor
+    emitterCell.scale = 0.05
+    emitterCell.scaleRange = 0.02
+    emitterCell.emissionRange = CGFloat(2 * M_PI)
+    emitterCell.lifetime = 10
+    emitterCell.birthRate = 5
+    emitterCell.velocity = 50
+    emitterCell.velocityRange = 20
+    emitterCell.yAcceleration = 250
+    emitterCell.contents = UIImage(named: "spritekit_reveal")!.CGImage
     return emitterCell
   }
 }
