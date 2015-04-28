@@ -185,7 +185,6 @@ final class CAReplicatorLayerCell: UICollectionViewCell {
     replicatorLayer.instanceBlueOffset = 0.1
     replicatorLayer.instanceAlphaOffset = 0.2
     replicatorLayer.addSublayer(circleLayer)
-    replicatorLayer.cornerRadius = 5.0
   }
 }
 
