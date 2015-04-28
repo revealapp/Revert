@@ -4,7 +4,7 @@
 
 import UIKit
 
-class CATextLayerCell: UICollectionViewCell {
+final class CATextLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var textLayerView: CATextLayerView!
   
@@ -24,7 +24,7 @@ class CATextLayerCell: UICollectionViewCell {
   }
 }
 
-class CAEmitterLayerCell: UICollectionViewCell {
+final class CAEmitterLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var emitterLayerView: CAEmitterLayerView!
   
@@ -61,7 +61,7 @@ class CAEmitterLayerCell: UICollectionViewCell {
   }
 }
 
-class CAShapeLayerCell: UICollectionViewCell {
+final class CAShapeLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var shapeLayerView: CAShapeLayerView!
   
@@ -88,7 +88,7 @@ class CAShapeLayerCell: UICollectionViewCell {
   }
 }
 
-class CAScrollLayerCell: UICollectionViewCell {
+final class CAScrollLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var scrollLayerView: CAScrollLayerView!
   
@@ -107,7 +107,7 @@ class CAScrollLayerCell: UICollectionViewCell {
   }
 }
 
-class CATiledLayerCell: UICollectionViewCell {
+final class CATiledLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var tiledLayerView: CATiledLayerView!
   
@@ -124,7 +124,7 @@ class CATiledLayerCell: UICollectionViewCell {
   }
 }
 
-class CAGradientLayerCell: UICollectionViewCell {
+final class CAGradientLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var gradientLayerView: CAGradientLayerView!
 
@@ -150,7 +150,7 @@ class CAGradientLayerCell: UICollectionViewCell {
   }
 }
 
-class CAReplicatorLayerCell: UICollectionViewCell {
+final class CAReplicatorLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
 
@@ -173,7 +173,7 @@ class CAReplicatorLayerCell: UICollectionViewCell {
   }
 }
 
-class CAEAGLLayerCell: UICollectionViewCell {
+final class CAEAGLLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var aegLayerView: CAEAGLLayerView!
   

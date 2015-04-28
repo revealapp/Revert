@@ -4,7 +4,7 @@
 
 import UIKit
 
-class CATextLayerView: UIView {
+final class CATextLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CATextLayer.self
   }
@@ -14,7 +14,7 @@ class CATextLayerView: UIView {
   }
 }
 
-class CAScrollLayerView: UIView {
+final class CAScrollLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAScrollLayer.self
   }
@@ -24,7 +24,7 @@ class CAScrollLayerView: UIView {
   }
 }
 
-class CAEmitterLayerView: UIView {
+final class CAEmitterLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAEmitterLayer.self
   }
@@ -34,7 +34,7 @@ class CAEmitterLayerView: UIView {
   }
 }
 
-class CAShapeLayerView: UIView {
+final class CAShapeLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAShapeLayer.self
   }
@@ -44,7 +44,7 @@ class CAShapeLayerView: UIView {
   }
 }
 
-class CATiledLayerView: UIView {
+final class CATiledLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CATiledLayer.self
   }
@@ -54,7 +54,7 @@ class CATiledLayerView: UIView {
   }
 }
 
-class CAGradientLayerView: UIView {
+final class CAGradientLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAGradientLayer.self
   }
@@ -64,7 +64,7 @@ class CAGradientLayerView: UIView {
   }
 }
 
-class CAReplicatorLayerView: UIView {
+final class CAReplicatorLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAReplicatorLayer.self
   }
@@ -74,7 +74,7 @@ class CAReplicatorLayerView: UIView {
   }
 }
 
-class CAEAGLLayerView: UIView {
+final class CAEAGLLayerView: UIView {
   override class func layerClass() -> AnyClass {
     return CAEAGLLayer.self
   }
