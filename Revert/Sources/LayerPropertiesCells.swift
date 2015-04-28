@@ -69,11 +69,12 @@ class CAShapeLayerCell: UICollectionViewCell {
   }
   
   private class func configureShapeLayer(shapeLayer: CAShapeLayer) {
-    shapeLayer.path = UIBezierPath(rect: CGRect(x: 5.0, y: 5.0, width: 30.0, height: 30.0)).CGPath
+    let bezierPath = UIBezierPath(ovalInRect: CGRect(x: 0.0, y: 0.0, width: 130.0, height: 130.0))
+    shapeLayer.path = bezierPath.CGPath
     shapeLayer.fillColor = UIColor.magentaColor().CGColor
     shapeLayer.strokeColor = UIColor.yellowColor().CGColor
-    shapeLayer.strokeStart = 0.2
-    shapeLayer.strokeEnd = 0.8
+    shapeLayer.strokeStart = 0.0
+    shapeLayer.strokeEnd = 1.0
     shapeLayer.fillRule = kCAFillRuleEvenOdd
     shapeLayer.lineWidth = 3.0
     shapeLayer.miterLimit = 5.0
