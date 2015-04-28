@@ -15,7 +15,7 @@ class CATextLayerCell: UICollectionViewCell {
   }
   
   private class func configureTextLayer(textLayer: CATextLayer) {
-    textLayer.string = "I am a CATextLayer string. I'm quite long and wordy."
+    textLayer.string = "I am a quite long and wordy CATextLayer string."
     textLayer.fontSize = 20.0
     textLayer.foregroundColor = UIColor.lightGrayColor().CGColor
     textLayer.alignmentMode = kCAAlignmentCenter
