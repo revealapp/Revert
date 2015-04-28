@@ -142,6 +142,24 @@ class CAGradientLayerCell: UICollectionViewCell {
 class CAReplicatorLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureReplicatorLayer(self.replicatorLayerView.replicatorLayer)
+  }
+  
+  private class func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
+    replicatorLayer.instanceCount = 5
+    replicatorLayer.preservesDepth = true
+    replicatorLayer.instanceDelay = 1.0
+    replicatorLayer.instanceTransform = CATransform3DIdentity
+    replicatorLayer.instanceColor = UIColor.redColor().CGColor
+    replicatorLayer.instanceRedOffset = 0.2
+    replicatorLayer.instanceGreenOffset = 0.3
+    replicatorLayer.instanceBlueOffset = 0.1
+    replicatorLayer.instanceAlphaOffset = 0.2
+  }
 }
 
 class CAEAGLLayerCell: UICollectionViewCell {
