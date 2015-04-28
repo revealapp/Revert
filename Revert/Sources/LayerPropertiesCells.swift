@@ -87,6 +87,16 @@ class CAShapeLayerCell: UICollectionViewCell {
 class CAScrollLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var scrollLayerView: CAScrollLayerView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureScrollLayer(self.scrollLayerView.scrollLayer)
+  }
+  
+  private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
+    scrollLayer.scrollMode = kCAScrollHorizontally
+  }
 }
 
 class CATiledLayerCell: UICollectionViewCell {
