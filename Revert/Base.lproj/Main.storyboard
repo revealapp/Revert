@@ -2059,7 +2059,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="364" y="252" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.99945300817489624" green="0.66625046730041504" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Right View"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="d6T-pu-BFS"/>
@@ -2114,7 +2114,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="252" y="156" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42200243473052979" green="0.76358240842819214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Top View"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1vZ-B0-DKY"/>
@@ -2230,7 +2230,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-r7-88x" customClass="AlignmentInsetView" customModule="Revert" customModuleProvider="target">
                                         <rect key="frame" x="171" y="25" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="aTr-X9-n41"/>
                                             <constraint firstAttribute="height" constant="50" id="gsh-h1-kim"/>
@@ -2240,7 +2240,7 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="value" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="25"/>
