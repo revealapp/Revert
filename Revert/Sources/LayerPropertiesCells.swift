@@ -164,15 +164,25 @@ final class CAReplicatorLayerCell: UICollectionViewCell {
   }
   
   private class func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
+    let circleWidth: CGFloat = 20.0
+    let circlePadding: CGFloat = 10.0
+    let circleRect = CGRect(x: circlePadding / 2.0, y: replicatorLayer.bounds.midY - circleWidth / 2.0, width: circleWidth, height: circleWidth)
+    let circleLayer = CAShapeLayer()
+    
+    circleLayer.path = UIBezierPath(ovalInRect: circleRect).CGPath
+    circleLayer.fillColor = UIColor.revertOrangeColor().CGColor
+    
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
     replicatorLayer.instanceDelay = 1.0
-    replicatorLayer.instanceTransform = CATransform3DIdentity
+    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(circleWidth + circlePadding / 2.0, 0.0, 0.0)
     replicatorLayer.instanceColor = UIColor.redColor().CGColor
     replicatorLayer.instanceRedOffset = 0.2
     replicatorLayer.instanceGreenOffset = 0.3
     replicatorLayer.instanceBlueOffset = 0.1
     replicatorLayer.instanceAlphaOffset = 0.2
+    replicatorLayer.addSublayer(circleLayer)
+    configureLayer(replicatorLayer.superlayer)
   }
 }
 

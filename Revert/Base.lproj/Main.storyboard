@@ -3855,12 +3855,26 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-aH-FW6">
                                             <rect key="frame" x="81" y="70" width="137" height="158"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bww-Ka-Xbv" customClass="CAReplicatorLayerView" customModule="Revert" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bww-Ka-Xbv">
                                                     <rect key="frame" x="4" y="0.0" width="130" height="130"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9t-hX-9ja" customClass="CAReplicatorLayerView" customModule="Revert" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="130" id="dNe-lq-fBP"/>
+                                                                <constraint firstAttribute="height" constant="130" id="ev8-Jf-N3H"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="1hK-mM-n8K"/>
+                                                        <constraint firstItem="U9t-hX-9ja" firstAttribute="top" secondItem="bww-Ka-Xbv" secondAttribute="top" id="8dI-cU-JF7"/>
                                                         <constraint firstAttribute="width" constant="130" id="Vk3-aj-6F3"/>
+                                                        <constraint firstItem="U9t-hX-9ja" firstAttribute="leading" secondItem="bww-Ka-Xbv" secondAttribute="leading" id="YIk-xr-iKP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="U9t-hX-9ja" secondAttribute="trailing" id="bVL-l9-Nu5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="U9t-hX-9ja" secondAttribute="bottom" id="hCV-GL-Ep6"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAReplicatorLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xej-lp-Nvb">
@@ -3892,7 +3906,7 @@
                                     <constraint firstAttribute="centerY" secondItem="0dg-aH-FW6" secondAttribute="centerY" id="jbW-Yb-gvW"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="replicatorLayerView" destination="bww-Ka-Xbv" id="jaK-Qp-wEZ"/>
+                                    <outlet property="replicatorLayerView" destination="U9t-hX-9ja" id="AZB-wW-ge5"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAEAGLLayerCell" customModule="Revert" customModuleProvider="target">
