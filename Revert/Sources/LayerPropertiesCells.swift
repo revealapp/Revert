@@ -143,14 +143,12 @@ final class CAGradientLayerCell: UICollectionViewCell {
     gradientLayer.locations = [0.0, 0.5, 1.0]
     gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.2)
     gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.8)
-    gradientLayer.cornerRadius = 5.0
-    gradientLayer.borderWidth = 2.0
-    gradientLayer.borderColor = UIColor.revertLightBlackColor().CGColor
     gradientLayer.colors = [
       UIColor.blackColor().CGColor,
       UIColor.redColor().CGColor,
       UIColor.whiteColor().CGColor
     ]
+    configureLayer(gradientLayer)
   }
 }
 
