@@ -2085,13 +2085,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-yh-cBq">
-                                <rect key="frame" x="253" y="551" width="94" height="29"/>
-                                <color key="tintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="stepperChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="8LD-Mo-B1s"/>
-                                </connections>
-                            </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center view margin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brx-E7-Jp9">
                                 <rect key="frame" x="226" y="522" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2126,18 +2119,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
+                                <rect key="frame" x="200" y="551" width="200" height="31"/>
+                                <color key="tintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
                             <constraint firstAttribute="centerX" secondItem="Brx-E7-Jp9" secondAttribute="centerX" id="149-BY-aaO"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Ajm-yh-cBq" secondAttribute="bottom" constant="20" id="39a-YX-I0W"/>
-                            <constraint firstItem="Ajm-yh-cBq" firstAttribute="top" secondItem="Brx-E7-Jp9" secondAttribute="bottom" constant="8" id="3jg-Ip-Wxk"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
+                            <constraint firstItem="rfO-2Q-Zto" firstAttribute="top" secondItem="Brx-E7-Jp9" secondAttribute="bottom" constant="8" id="OWM-YD-0x2"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstAttribute="centerX" secondItem="Ajm-yh-cBq" secondAttribute="centerX" id="e4w-d8-kMx"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="centerX" secondItem="i1S-l0-cJP" secondAttribute="centerXWithinMargins" id="fRI-JH-YWM"/>
+                            <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" id="kfj-w6-O4e"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="19" id="mdo-IU-xvc"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="leadingMargin" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" constant="40" id="tTn-xT-ReG"/>
@@ -2150,7 +2153,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="centerView" destination="ml3-CY-mgV" id="Xg1-va-yTB"/>
-                        <outlet property="stepper" destination="Ajm-yh-cBq" id="t46-jH-2hw"/>
+                        <outlet property="slider" destination="rfO-2Q-Zto" id="jfc-Kf-F0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-S5-dcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
