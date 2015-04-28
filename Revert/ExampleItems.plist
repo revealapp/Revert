@@ -96,7 +96,7 @@
 				<key>subtitle</key>
 				<string>Collection of stacked views</string>
 				<key>iconName</key>
-				<string>icon_StressTest</string>
+				<string>icon_Superdeep</string>
 				<key>segueIdentifier</key>
 				<string>ShowSuperDeepViewControllerSegue</string>
 			</dict>
@@ -121,7 +121,7 @@
 				<key>subtitle</key>
 				<string>This will crash upon modifying the slider.</string>
 				<key>iconName</key>
-				<string>icon_TableView</string>
+				<string>icon_Serialize</string>
 				<key>segueIdentifier</key>
 				<string>ShowNotSerializableViewControllerSegue</string>
 			</dict>
