@@ -77,6 +77,16 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Layer Properties</string>
+				<key>subtitle</key>
+				<string>CATextLayer, CAScrollLayer...</string>
+				<key>iconName</key>
+				<string>icon_TransformLayers</string>
+				<key>segueIdentifier</key>
+				<string>ShowLayerPropertiesViewControllerSegue</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Bounds Change &amp; Anchor Point</string>
 				<key>subtitle</key>
 				<string>Examples</string>
