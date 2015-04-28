@@ -81,7 +81,7 @@
 				<key>subtitle</key>
 				<string>CATextLayer, CAScrollLayer...</string>
 				<key>iconName</key>
-				<string>icon_TransformLayers</string>
+				<string>icon_Layerproperties</string>
 				<key>segueIdentifier</key>
 				<string>ShowLayerPropertiesViewControllerSegue</string>
 			</dict>
