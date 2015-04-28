@@ -9,6 +9,6 @@ class MasterCellConfigurator {
     cell.titleLabel.text = item.title
     cell.subtitleLabel.text = item.subtitle
     cell.iconImageView.image = UIImage(named: item.iconName)
-    cell.accessoryType = item.isPush ? .DisclosureIndicator : .None
+    cell.accessoryType = item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone ? .DisclosureIndicator : .None
   }
 }

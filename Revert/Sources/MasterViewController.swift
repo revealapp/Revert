@@ -23,8 +23,25 @@ class MasterViewController: UITableViewController {
   private var dataSource: CollectableTableViewDataSource?
   
   private func deselectSelectedRowIfNeeded() {
-    if let selectedIndexPath = self.tableView.indexPathForSelectedRow() {
+    if let selectedIndexPath = self.tableView.indexPathForSelectedRow() where
+      UIDevice.currentDevice().userInterfaceIdiom == .Phone {
       self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+    }
+  }
+
+  private var wasInitiallySelected = false
+  
+  private func selectInitialRowIfNeeded() {
+    if self.wasInitiallySelected {
+      return
+    }
+    self.wasInitiallySelected = true
+    
+    // Select first row of tableView if this viewController is the first tab of the tabBarController and
+    // we're running on an Pad type of device.
+    if self.tabBarController?.viewControllers?.first as? UINavigationController == self.navigationController &&
+      UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+        self.tableView.selectRowAtIndexPath(NSIndexPath(forItem: 0, inSection: 0), animated: false, scrollPosition: .None)
     }
   }
   
@@ -41,6 +58,7 @@ class MasterViewController: UITableViewController {
     super.viewWillAppear(animated)
     
     self.deselectSelectedRowIfNeeded()
+    self.selectInitialRowIfNeeded()
   }
 }
 
