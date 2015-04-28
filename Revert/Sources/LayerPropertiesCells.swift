@@ -4,12 +4,6 @@
 
 import UIKit
 
-private func configureLayer(layer: CALayer) {
-  layer.cornerRadius = 5.0
-  layer.borderWidth = 2.0
-  layer.borderColor = UIColor.revertLightBlackColor().CGColor
-}
-
 final class CATextLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var textLayerView: CATextLayerView!
@@ -106,7 +100,7 @@ final class CAScrollLayerCell: UICollectionViewCell {
   private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertBlueColor().CGColor
-    configureLayer(scrollLayer)
+    scrollLayer.cornerRadius = 5.0
   }
 }
 
@@ -124,7 +118,9 @@ final class CATiledLayerCell: UICollectionViewCell {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
     tiledLayer.tileSize = tiledLayer.bounds.size
-    configureLayer(tiledLayer)
+    tiledLayer.cornerRadius = 5.0
+    tiledLayer.borderWidth = 1.0
+    tiledLayer.borderColor = UIColor.revertLightBlackColor().CGColor
   }
 }
 
@@ -157,7 +153,6 @@ final class CAGradientLayerCell: UICollectionViewCell {
       UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1.0).CGColor,
       UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1.0).CGColor
     ]
-    configureLayer(gradientLayer)
   }
 }
 
@@ -190,7 +185,7 @@ final class CAReplicatorLayerCell: UICollectionViewCell {
     replicatorLayer.instanceBlueOffset = 0.1
     replicatorLayer.instanceAlphaOffset = 0.2
     replicatorLayer.addSublayer(circleLayer)
-    configureLayer(replicatorLayer.superlayer)
+    replicatorLayer.cornerRadius = 5.0
   }
 }
 
@@ -205,10 +200,8 @@ final class CAEAGLLayerCell: UICollectionViewCell {
   }
   
   private class func configureAeglLayer(aeglLayer: CAEAGLLayer) {
-    // TODO: Implement?
-    configureLayer(aeglLayer)
+    aeglLayer.cornerRadius = 5.0
+    aeglLayer.borderWidth = 1.0
+    aeglLayer.borderColor = UIColor.revertLightBlackColor().CGColor
   }
 }
-
-
-
