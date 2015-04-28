@@ -27,6 +27,35 @@ class CATextLayerCell: UICollectionViewCell {
 class CAEmitterLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var emitterLayerView: CAEmitterLayerView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureTextLayer(self.emitterLayerView.emitterLayer)
+  }
+  
+  private class func configureTextLayer(emitterLayer: CAEmitterLayer) {
+    emitterLayer.emitterCells = [self.emitterCell]
+    emitterLayer.birthRate = 100.0
+    emitterLayer.emitterSize = CGSize(width: 1.0, height: 1.0)
+    emitterLayer.emitterDepth = 1.9
+    emitterLayer.emitterShape = kCAEmitterLayerPoint
+    emitterLayer.emitterMode = kCAEmitterLayerPoints
+    emitterLayer.renderMode = kCAEmitterLayerAdditive
+    emitterLayer.preservesDepth = true
+    emitterLayer.velocity = 1.5
+    emitterLayer.scale = 1.1
+    emitterLayer.spin = 2.1
+    emitterLayer.seed = 424242
+  }
+  
+  private static var emitterCell: CAEmitterCell {
+    let emitterCell = CAEmitterCell()
+    emitterCell.birthRate = 7000
+    emitterCell.lifetime = 3.5
+    emitterCell.color = UIColor.redColor().CGColor
+    return emitterCell
+  }
 }
 
 class CAShapeLayerCell: UICollectionViewCell {
