@@ -4,6 +4,12 @@
 
 import UIKit
 
+private func configureLayer(layer: CALayer) {
+  layer.cornerRadius = 5.0
+  layer.borderWidth = 2.0
+  layer.borderColor = UIColor.revertLightBlackColor().CGColor
+}
+
 final class CATextLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var textLayerView: CATextLayerView!
@@ -100,9 +106,7 @@ final class CAScrollLayerCell: UICollectionViewCell {
   private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertBlueColor().CGColor
-    scrollLayer.cornerRadius = 5.0
-    scrollLayer.borderWidth = 2.0
-    scrollLayer.borderColor = UIColor.revertLightBlackColor().CGColor
+    configureLayer(scrollLayer)
   }
 }
 
