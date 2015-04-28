@@ -40,4 +40,8 @@ extension UIColor {
   class func revertDarkblueColor() -> UIColor {
     return UIColor(red:0.217, green:0.372, blue:1.0, alpha:1.0)
   }
+  
+  class func revertLightBlackColor() -> UIColor {
+    return UIColor(red:0.156, green:0.156, blue:0.156, alpha:1)
+  }
 }
