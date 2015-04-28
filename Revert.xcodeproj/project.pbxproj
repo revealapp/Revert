@@ -52,6 +52,9 @@
 		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */; };
+		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
+		9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
+		9AE300241AEF0F0500E81377 /* LayerPropertiesItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AE300231AEF0F0500E81377 /* LayerPropertiesItems.plist */; };
 		9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */; };
 		9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */; };
 		9AE87D451AE7401900213E7D /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */; };
@@ -112,6 +115,9 @@
 		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollectionViewDataSource.swift; path = Revert/Sources/CollectableCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Revert/Sources/LayerPropertiesCells.swift; sourceTree = "<group>"; };
+		9AE300211AEF09AA00E81377 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Revert/Sources/LayerViews.swift; sourceTree = "<group>"; };
+		9AE300231AEF0F0500E81377 /* LayerPropertiesItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LayerPropertiesItems.plist; sourceTree = "<group>"; };
 		9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCellConfigurator.swift; path = Revert/Sources/MasterCellConfigurator.swift; sourceTree = "<group>"; };
 		9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformViewsViewController.swift; path = Revert/Sources/TransformViewsViewController.swift; sourceTree = "<group>"; };
 		9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformLayersViewController.swift; path = Revert/Sources/TransformLayersViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
 				9A463AF31ADCCE1A00350E3C /* ViewItems.plist */,
 				9A6850BC1AD4A20E00ACCE29 /* Info.plist */,
+				9AE300231AEF0F0500E81377 /* LayerPropertiesItems.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +231,8 @@
 				9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */,
 				9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */,
 				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
+				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
+				9AE300211AEF09AA00E81377 /* LayerViews.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A94E3F31AD63E610005BA44 /* StockItems.plist in Resources */,
+				9AE300241AEF0F0500E81377 /* LayerPropertiesItems.plist in Resources */,
 				9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */,
 				9AB235F81AE5D53200BA8B30 /* ExampleItems.plist in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
@@ -396,6 +406,7 @@
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
 				9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */,
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
+				9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */,
 				9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */,
 				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
@@ -420,6 +431,7 @@
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9AFE6EBC1AE7672B00BB64F4 /* SuperDeepViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
+				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
 				9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,
