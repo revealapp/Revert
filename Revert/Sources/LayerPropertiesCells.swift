@@ -123,7 +123,8 @@ final class CATiledLayerCell: UICollectionViewCell {
   private class func configureTiledLayer(tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
-    tiledLayer.tileSize = CGSize(width: 512, height: 512)
+    tiledLayer.tileSize = tiledLayer.bounds.size
+    configureLayer(tiledLayer)
   }
 }
 
@@ -198,6 +199,7 @@ final class CAEAGLLayerCell: UICollectionViewCell {
   
   private class func configureAeglLayer(aeglLayer: CAEAGLLayer) {
     // TODO: Implement?
+    configureLayer(aeglLayer)
   }
 }
 
