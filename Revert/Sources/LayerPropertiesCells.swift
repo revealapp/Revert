@@ -61,6 +61,27 @@ class CAEmitterLayerCell: UICollectionViewCell {
 class CAShapeLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var shapeLayerView: CAShapeLayerView!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    self.dynamicType.configureShapeLayer(self.shapeLayerView.shapeLayer)
+  }
+  
+  private class func configureShapeLayer(shapeLayer: CAShapeLayer) {
+    shapeLayer.path = UIBezierPath(rect: CGRect(x: 5.0, y: 5.0, width: 30.0, height: 30.0)).CGPath
+    shapeLayer.fillColor = UIColor.magentaColor().CGColor
+    shapeLayer.strokeColor = UIColor.yellowColor().CGColor
+    shapeLayer.strokeStart = 0.2
+    shapeLayer.strokeEnd = 0.8
+    shapeLayer.fillRule = kCAFillRuleEvenOdd
+    shapeLayer.lineWidth = 3.0
+    shapeLayer.miterLimit = 5.0
+    shapeLayer.lineCap = kCALineCapRound
+    shapeLayer.lineJoin = kCALineCapRound
+    shapeLayer.lineDashPhase = 2.0
+    shapeLayer.lineDashPattern = [1, 3, 4, 2]
+  }
 }
 
 class CAScrollLayerCell: UICollectionViewCell {
