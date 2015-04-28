@@ -3545,7 +3545,7 @@
                             <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="35"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextLayerCell" id="Fya-ne-N0M">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextLayerCell" id="Fya-ne-N0M" customClass="CATextLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3591,8 +3591,11 @@
                                     <constraint firstAttribute="centerX" secondItem="qCc-ht-ivH" secondAttribute="centerX" id="B8b-07-ybQ"/>
                                     <constraint firstAttribute="centerY" secondItem="qCc-ht-ivH" secondAttribute="centerY" id="sga-1r-J7S"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="textLayerView" destination="j0I-0T-ibi" id="Dpe-rp-fS5"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmitterLayerCell" id="rsU-Mc-V1F">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmitterLayerCell" id="rsU-Mc-V1F" customClass="CAEmitterLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3638,8 +3641,11 @@
                                     <constraint firstAttribute="centerX" secondItem="d9g-zX-7wv" secondAttribute="centerX" id="3zE-Wr-UYn"/>
                                     <constraint firstAttribute="centerY" secondItem="d9g-zX-7wv" secondAttribute="centerY" id="Qhe-di-mUW"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="emitterLayerView" destination="TPD-8S-yME" id="xwb-Dn-6vj"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShapeLayerCell" id="TrP-g7-0OG">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShapeLayerCell" id="TrP-g7-0OG" customClass="CAShapeLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3685,8 +3691,11 @@
                                     <constraint firstAttribute="centerX" secondItem="R1u-90-vgW" secondAttribute="centerX" id="PCI-VH-Wqc"/>
                                     <constraint firstAttribute="centerY" secondItem="R1u-90-vgW" secondAttribute="centerY" id="voo-3T-GaX"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="shapeLayerView" destination="kKm-jM-3tL" id="mgK-2i-bat"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollLayerCell" id="Eb1-op-wWO">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollLayerCell" id="Eb1-op-wWO" customClass="CAScrollLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3732,8 +3741,11 @@
                                     <constraint firstAttribute="centerY" secondItem="eab-3q-B81" secondAttribute="centerY" id="4na-lr-J5X"/>
                                     <constraint firstAttribute="centerX" secondItem="eab-3q-B81" secondAttribute="centerX" id="ink-Tx-ZFm"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="scrollLayerView" destination="5sr-T0-NYI" id="9sx-pa-El1"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TiledLayerCell" id="SfN-Ln-8Qo">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TiledLayerCell" id="SfN-Ln-8Qo" customClass="CATiledLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3779,8 +3791,11 @@
                                     <constraint firstAttribute="centerX" secondItem="dy1-Ri-IN2" secondAttribute="centerX" id="JGq-8V-7AP"/>
                                     <constraint firstAttribute="centerY" secondItem="dy1-Ri-IN2" secondAttribute="centerY" id="qQj-Kw-Asg"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="tiledLayerView" destination="gOl-vR-iRN" id="CN3-Se-9mG"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GradientLayerCell" id="lgk-gX-L9A">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GradientLayerCell" id="lgk-gX-L9A" customClass="CAGradientLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3826,8 +3841,11 @@
                                     <constraint firstAttribute="centerX" secondItem="P1u-Xy-Ezd" secondAttribute="centerX" id="Red-gO-EwU"/>
                                     <constraint firstAttribute="centerY" secondItem="P1u-Xy-Ezd" secondAttribute="centerY" id="s4v-Ho-GHX"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="gradientLayerView" destination="x4b-qn-XFZ" id="D2o-l3-wRs"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReplicatorLayerCell" id="toT-IZ-yEO">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReplicatorLayerCell" id="toT-IZ-yEO" customClass="CAReplicatorLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3873,8 +3891,11 @@
                                     <constraint firstAttribute="centerX" secondItem="0dg-aH-FW6" secondAttribute="centerX" id="8RT-hU-cQK"/>
                                     <constraint firstAttribute="centerY" secondItem="0dg-aH-FW6" secondAttribute="centerY" id="jbW-Yb-gvW"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="replicatorLayerView" destination="bww-Ka-Xbv" id="jaK-Qp-wEZ"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAAEGLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3920,6 +3941,9 @@
                                     <constraint firstAttribute="centerY" secondItem="Pax-2t-c5g" secondAttribute="centerY" id="AFA-iT-txG"/>
                                     <constraint firstAttribute="centerX" secondItem="Pax-2t-c5g" secondAttribute="centerX" id="t6W-KM-Ld5"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="aegLayerCell" destination="vyJ-Cz-PkQ" id="DMH-bH-rRD"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
