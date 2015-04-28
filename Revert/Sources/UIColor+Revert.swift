@@ -44,4 +44,8 @@ extension UIColor {
   class func revertLightBlackColor() -> UIColor {
     return UIColor(red:0.156, green:0.156, blue:0.156, alpha:1)
   }
+  
+  class func revertCountrySectionFooterColor() -> UIColor {
+    return UIColor(red: 0.917, green: 0.917, blue: 0.925, alpha: 1.0)
+  }
 }

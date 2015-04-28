@@ -4,7 +4,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+final class TableViewController: UITableViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountryDataSource
@@ -42,5 +42,15 @@ class TableViewController: UITableViewController {
 extension TableViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+  
+  override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    let label = UILabel()
+    
+    label.backgroundColor = UIColor.revertCountrySectionFooterColor()
+    label.text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
+    label.font = UIFont.systemFontOfSize(12.0)
+    label.textAlignment = .Center
+    return label
   }
 }
