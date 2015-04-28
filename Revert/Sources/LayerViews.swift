@@ -74,12 +74,12 @@ class CAReplicatorLayerView: UIView {
   }
 }
 
-class CAAEGLayerView: UIView {
+class CAEAGLLayerView: UIView {
   override class func layerClass() -> AnyClass {
-    return CATextLayer.self
+    return CAEAGLLayer.self
   }
   
-  var textLayer: CATextLayer {
-    return self.layer as! CATextLayer
+  var aeglLayer: CAEAGLLayer {
+    return self.layer as! CAEAGLLayer
   }
 }

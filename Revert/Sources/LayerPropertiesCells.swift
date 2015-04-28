@@ -39,9 +39,9 @@ class CAReplicatorLayerCell: UICollectionViewCell {
   @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
 }
 
-class CAAEGLayerCell: UICollectionViewCell {
+class CAEAGLLayerCell: UICollectionViewCell {
   
-  @IBOutlet weak var aegLayerCell: CAAEGLayerView!
+  @IBOutlet weak var aegLayerView: CAEAGLLayerView!
 }
 
 

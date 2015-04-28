@@ -3895,7 +3895,7 @@
                                     <outlet property="replicatorLayerView" destination="bww-Ka-Xbv" id="jaK-Qp-wEZ"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAAEGLayerCell" customModule="Revert" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAEAGLLayerCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3905,7 +3905,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pax-2t-c5g">
                                             <rect key="frame" x="84" y="70" width="130" height="158"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-Cz-PkQ" customClass="CAAEGLayerView" customModule="Revert" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-Cz-PkQ" customClass="CAEAGLLayerView" customModule="Revert" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -3942,7 +3942,7 @@
                                     <constraint firstAttribute="centerX" secondItem="Pax-2t-c5g" secondAttribute="centerX" id="t6W-KM-Ld5"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="aegLayerCell" destination="vyJ-Cz-PkQ" id="DMH-bH-rRD"/>
+                                    <outlet property="aegLayerView" destination="vyJ-Cz-PkQ" id="553-bk-mfT"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
