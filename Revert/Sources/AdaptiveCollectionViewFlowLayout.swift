@@ -7,8 +7,12 @@ import UIKit
 class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
  
   private var noOfItemsInRow: Int {
-    // TOOD: Determine # of horizontal items properly depending on device.
-    return self.collectionView!.bounds.width > self.collectionView!.bounds.height ? 3 : 2
+    switch UIApplication.sharedApplication().statusBarOrientation {
+    case .Portrait, .PortraitUpsideDown:
+      return 2
+    default:
+      return 3
+    }
   }
   
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
