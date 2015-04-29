@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   }
   
   private class func configureAppearance() {
-    UITabBar.appearance().tintColor = UIColor.awesgreenColor()
+    UITabBar.appearance().tintColor = UIColor.darkergreenColor()
   }
 }
 
