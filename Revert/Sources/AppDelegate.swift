@@ -18,10 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   }
   
   private class func configureSplitViewController(splitViewController: UISplitViewController, delegate: UISplitViewControllerDelegate) {
-    let navigationController = splitViewController.viewControllers.last as! UINavigationController
-    if splitViewController.respondsToSelector("displayModeButtonItem") {
-      navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-    }
+    splitViewController.preferredDisplayMode = .AllVisible
     splitViewController.delegate = delegate
   }
   
@@ -34,13 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
 extension AppDelegate: UISplitViewControllerDelegate {
   func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
-    return secondaryViewController as? UINavigationController != nil;
+    return false
   }
-  
+
   func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
     if let tabBarController = splitViewController.viewControllers.first as? UITabBarController,
       selectedNavigationController = tabBarController.selectedViewController as? UINavigationController
       where splitViewController.collapsed {
+        // Required because master view controller is a tabbar, hence the the detailed view controller
+        // needs to manually be pushed in the selected navigation controller.
         selectedNavigationController.showViewController(vc, sender: sender)
         return true
     }
