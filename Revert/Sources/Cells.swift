@@ -7,7 +7,6 @@ import UIKit
 final class MasterCell: UITableViewCell {
   @IBOutlet weak var iconImageView: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subtitleLabel: UILabel!
 }
 
 final class CountryCell: UITableViewCell {

@@ -8,8 +8,6 @@
 			<dict>
 				<key>title</key>
 				<string>Table View</string>
-				<key>subtitle</key>
-				<string>UITableView</string>
 				<key>iconName</key>
 				<string>icon_TableView</string>
 				<key>segueIdentifier</key>
@@ -18,8 +16,6 @@
 			<dict>
 				<key>title</key>
 				<string>Collection View</string>
-				<key>subtitle</key>
-				<string>UICollectionView</string>
 				<key>iconName</key>
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
@@ -28,8 +24,6 @@
 			<dict>
 				<key>title</key>
 				<string>Scroll View</string>
-				<key>subtitle</key>
-				<string>UIScrollView</string>
 				<key>iconName</key>
 				<string>icon_ScrollView</string>
 				<key>segueIdentifier</key>
@@ -45,8 +39,6 @@
 				<string>ViewItems</string>
 				<key>title</key>
 				<string>Default Views</string>
-				<key>subtitle</key>
-				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
 				<string>icon_DefaultView</string>
 				<key>segueIdentifier</key>
@@ -57,8 +49,6 @@
 				<string>ControlItems</string>
 				<key>title</key>
 				<string>Controls</string>
-				<key>subtitle</key>
-				<string>A selection of iOS stock items</string>
 				<key>iconName</key>
 				<string>icon_Controls</string>
 				<key>segueIdentifier</key>
@@ -67,8 +57,6 @@
 			<dict>
 				<key>title</key>
 				<string>Bars</string>
-				<key>subtitle</key>
-				<string>A selection of stock iOS bars</string>
 				<key>iconName</key>
 				<string>icon_Bars</string>
 				<key>segueIdentifier</key>
@@ -77,8 +65,6 @@
 			<dict>
 				<key>title</key>
 				<string>Alert View</string>
-				<key>subtitle</key>
-				<string>Alert samples</string>
 				<key>iconName</key>
 				<string>icon_AlertView</string>
 				<key>segueIdentifier</key>
@@ -87,8 +73,6 @@
 			<dict>
 				<key>title</key>
 				<string>Picker View</string>
-				<key>subtitle</key>
-				<string>DatePicker &amp; Regular Picker</string>
 				<key>iconName</key>
 				<string>icon_Picker</string>
 				<key>segueIdentifier</key>
@@ -102,8 +86,6 @@
 			<dict>
 				<key>title</key>
 				<string>Map View</string>
-				<key>subtitle</key>
-				<string>MKMapView</string>
 				<key>iconName</key>
 				<string>icon_MapView</string>
 				<key>segueIdentifier</key>
@@ -112,8 +94,6 @@
 			<dict>
 				<key>title</key>
 				<string>Web View</string>
-				<key>subtitle</key>
-				<string>WKWebView</string>
 				<key>iconName</key>
 				<string>icon_WebView</string>
 				<key>segueIdentifier</key>
@@ -122,8 +102,6 @@
 			<dict>
 				<key>title</key>
 				<string>SpriteKit</string>
-				<key>subtitle</key>
-				<string>A SpriteKit example</string>
 				<key>iconName</key>
 				<string>icon_SpriteKit</string>
 				<key>segueIdentifier</key>
@@ -132,8 +110,6 @@
 			<dict>
 				<key>title</key>
 				<string>OpenGL</string>
-				<key>subtitle</key>
-				<string>GLKViewController</string>
 				<key>iconName</key>
 				<string>icon_GLkit</string>
 				<key>segueIdentifier</key>
@@ -147,8 +123,6 @@
 			<dict>
 				<key>title</key>
 				<string>Modal View</string>
-				<key>subtitle</key>
-				<string>Modal presentation</string>
 				<key>iconName</key>
 				<string>icon_Modal</string>
 				<key>segueIdentifier</key>

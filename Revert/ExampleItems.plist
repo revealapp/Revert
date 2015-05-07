@@ -8,8 +8,6 @@
 			<dict>
 				<key>title</key>
 				<string>Arranged Views</string>
-				<key>subtitle</key>
-				<string>A selection of UIViews</string>
 				<key>iconName</key>
 				<string>icon_Views</string>
 				<key>segueIdentifier</key>
@@ -18,8 +16,6 @@
 			<dict>
 				<key>title</key>
 				<string>Auto Layout</string>
-				<key>subtitle</key>
-				<string>Basic pinning, ratio and centering</string>
 				<key>iconName</key>
 				<string>icon_Autolayout</string>
 				<key>segueIdentifier</key>
@@ -28,8 +24,6 @@
 			<dict>
 				<key>title</key>
 				<string>Auto Layout Alignments</string>
-				<key>subtitle</key>
-				<string>Alignments, alignment rect</string>
 				<key>iconName</key>
 				<string>icon_AutolayoutAlignment</string>
 				<key>segueIdentifier</key>
@@ -38,8 +32,6 @@
 			<dict>
 				<key>title</key>
 				<string>Auto Layout Margins</string>
-				<key>subtitle</key>
-				<string>Fun with margins</string>
 				<key>iconName</key>
 				<string>icon_AutolayoutMargin</string>
 				<key>segueIdentifier</key>
@@ -48,8 +40,6 @@
 			<dict>
 				<key>title</key>
 				<string>Auto Resizing Masks</string>
-				<key>subtitle</key>
-				<string>None, All, Width, Height, Top, Bottom</string>
 				<key>iconName</key>
 				<string>icon_AutoResizing</string>
 				<key>segueIdentifier</key>
@@ -58,8 +48,6 @@
 			<dict>
 				<key>title</key>
 				<string>Transform Views</string>
-				<key>subtitle</key>
-				<string>Translation, Rotation, Scaling of UIViews</string>
 				<key>iconName</key>
 				<string>icon_TransformViews</string>
 				<key>segueIdentifier</key>
@@ -68,8 +56,6 @@
 			<dict>
 				<key>title</key>
 				<string>Transform Layers</string>
-				<key>subtitle</key>
-				<string>Translation, Rotation, Scaling of CALayers</string>
 				<key>iconName</key>
 				<string>icon_TransformLayers</string>
 				<key>segueIdentifier</key>
@@ -78,8 +64,6 @@
 			<dict>
 				<key>title</key>
 				<string>Layer Properties</string>
-				<key>subtitle</key>
-				<string>CATextLayer, CAScrollLayer...</string>
 				<key>iconName</key>
 				<string>icon_Layerproperties</string>
 				<key>segueIdentifier</key>
@@ -88,8 +72,6 @@
 			<dict>
 				<key>title</key>
 				<string>Bounds Change &amp; Anchor Point</string>
-				<key>subtitle</key>
-				<string>Examples</string>
 				<key>iconName</key>
 				<string>icon_Squares</string>
 				<key>segueIdentifier</key>
@@ -103,8 +85,6 @@
 			<dict>
 				<key>title</key>
 				<string>Super Deep</string>
-				<key>subtitle</key>
-				<string>Collection of stacked views</string>
 				<key>iconName</key>
 				<string>icon_Superdeep</string>
 				<key>segueIdentifier</key>
@@ -113,8 +93,6 @@
 			<dict>
 				<key>title</key>
 				<string>Stress Test</string>
-				<key>subtitle</key>
-				<string>Embeded UIViews forming pyramids</string>
 				<key>iconName</key>
 				<string>icon_StressTest</string>
 				<key>segueIdentifier</key>
@@ -128,8 +106,6 @@
 			<dict>
 				<key>title</key>
 				<string>Not Serializable</string>
-				<key>subtitle</key>
-				<string>This will crash upon modifying the slider.</string>
 				<key>iconName</key>
 				<string>icon_Serialize</string>
 				<key>segueIdentifier</key>
