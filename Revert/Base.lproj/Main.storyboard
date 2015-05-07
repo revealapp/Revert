@@ -249,12 +249,12 @@
                     <toolbarItems/>
                     <connections>
                         <segue destination="aVj-m9-L3U" kind="relationship" relationship="masterViewController" id="ZKo-rw-eki"/>
-                        <segue destination="yFx-FN-ibI" kind="relationship" relationship="detailViewController" id="PGY-4M-K7i"/>
+                        <segue destination="O9S-s4-ZME" kind="relationship" relationship="detailViewController" id="46P-Dq-yAk"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-828" y="-3295"/>
+            <point key="canvasLocation" x="-920" y="-2399"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXf-1A-70U">
@@ -3918,6 +3918,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tHE-5V-EJW"/>
+        <segue reference="46P-Dq-yAk"/>
     </inferredMetricsTieBreakers>
 </document>
