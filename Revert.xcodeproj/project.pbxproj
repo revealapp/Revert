@@ -36,7 +36,7 @@
 		9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
 		9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* Cells.swift */; };
-		9A94E3F31AD63E610005BA44 /* StockItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* StockItems.plist */; };
+		9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* MasterItems.plist */; };
 		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */; };
@@ -98,7 +98,7 @@
 		9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Revert/Sources/MapAnnotationView.swift; sourceTree = "<group>"; };
 		9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryDataSource.swift; path = Revert/Sources/CountryDataSource.swift; sourceTree = "<group>"; };
 		9A94E3F01AD63BFD0005BA44 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cells.swift; path = Revert/Sources/Cells.swift; sourceTree = "<group>"; };
-		9A94E3F21AD63E610005BA44 /* StockItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StockItems.plist; sourceTree = "<group>"; };
+		9A94E3F21AD63E610005BA44 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MasterItems.plist; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Revert/Sources/TableViewController.swift; sourceTree = "<group>"; };
@@ -199,13 +199,13 @@
 			isa = PBXGroup;
 			children = (
 				9A9F59A51AD4BD0800A8CB4B /* Localizable.strings */,
-				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
-				9A94E3F21AD63E610005BA44 /* StockItems.plist */,
+				9A94E3F21AD63E610005BA44 /* MasterItems.plist */,
 				9A2873951AD767B0006466BE /* CountriesCapitals.plist */,
-				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
+				9A9F59B51AD4D75900A8CB4B /* MapLocations.plist */,
 				9A463AF31ADCCE1A00350E3C /* ViewItems.plist */,
-				9A6850BC1AD4A20E00ACCE29 /* Info.plist */,
+				9A535C4C1ADB56A00082778A /* ControlItems.plist */,
 				9AE300231AEF0F0500E81377 /* LayerPropertiesItems.plist */,
+				9A6850BC1AD4A20E00ACCE29 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
 				9A9F59A61AD4BD0800A8CB4B /* Localizable.strings in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
-				9A94E3F31AD63E610005BA44 /* StockItems.plist in Resources */,
+				9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */,
 				9AE300241AEF0F0500E81377 /* LayerPropertiesItems.plist in Resources */,
 				9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,

@@ -288,7 +288,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.68914401531219482" blue="0.94865745306015015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="zZi-sn-xOK" customClass="CountryCell" customModule="Revert" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -470,7 +470,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.69762527942657471" blue="0.94051539897918701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.68914401531219482" blue="0.94865745306015015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1442,7 +1442,7 @@
             <objects>
                 <collectionViewController id="QJe-hX-WOf" customClass="ControlsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="nX5-EI-u4O">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="NKL-MB-wn0" customClass="AdaptiveCollectionViewFlowLayout" customModule="Revert" customModuleProvider="target">
@@ -1696,7 +1696,7 @@
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VlX-im-uuz">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.69762527942657471" blue="0.94051539897918701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.68914401531219482" blue="0.94865745306015015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1729,9 +1729,6 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="jDh-uz-YpJ"/>
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="sCU-eZ-mhU"/>
                     </navigationItem>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="StockItems"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
                         <segue destination="ml1-R4-Rye" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
@@ -3921,6 +3918,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PGY-4M-K7i"/>
+        <segue reference="tHE-5V-EJW"/>
     </inferredMetricsTieBreakers>
 </document>
