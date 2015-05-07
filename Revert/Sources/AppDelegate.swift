@@ -5,7 +5,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -18,31 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
   }
   
   private class func configureSplitViewController(splitViewController: UISplitViewController, delegate: UISplitViewControllerDelegate) {
+    splitViewController.preferredDisplayMode = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? .AllVisible : .PrimaryHidden
     splitViewController.preferredDisplayMode = .AllVisible
     splitViewController.delegate = delegate
   }
   
   private class func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.darkergreenColor()
+    UINavigationBar.appearance().barTintColor = UIColor.revertBlueColor()
   }
 }
 
-// MARK: - UISplitViewControllerDelegate
-
 extension AppDelegate: UISplitViewControllerDelegate {
-  func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
-    return false
-  }
-
-  func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
-    if let tabBarController = splitViewController.viewControllers.first as? UITabBarController,
-      selectedNavigationController = tabBarController.selectedViewController as? UINavigationController
-      where splitViewController.collapsed {
-        // Required because master view controller is a tabbar, hence the the detailed view controller
-        // needs to manually be pushed in the selected navigation controller.
-        selectedNavigationController.showViewController(vc, sender: sender)
-        return true
-    }
-    return false
-  }
 }

@@ -1,40 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Master-->
-        <scene sceneID="pY4-Hu-kfo">
-            <objects>
-                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Views" image="tab_views" id="DJH-Wa-veE">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="tab_views_selected"/>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.69762527942657471" blue="0.94051539897918701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="124" y="-2355"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ydX-UF-sGG">
             <objects>
@@ -274,55 +248,13 @@
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
-                        <segue destination="O9S-s4-ZME" kind="relationship" relationship="detailViewController" id="VfP-Jr-5Bl"/>
-                        <segue destination="OIu-cQ-6Vg" kind="relationship" relationship="masterViewController" id="YvW-oi-M4O"/>
+                        <segue destination="aVj-m9-L3U" kind="relationship" relationship="masterViewController" id="ZKo-rw-eki"/>
+                        <segue destination="yFx-FN-ibI" kind="relationship" relationship="detailViewController" id="PGY-4M-K7i"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1648" y="-1653"/>
-        </scene>
-        <!--Master-->
-        <scene sceneID="smW-Zh-WAh">
-            <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="52" sectionHeaderHeight="10" sectionFooterHeight="10" id="r7i-6Z-zg0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <inset key="separatorInset" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
-                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Revert" id="Zdf-7t-Un8">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="dRH-nN-Ckz"/>
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="9Wx-Fo-Qtw"/>
-                    </navigationItem>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="StockItems"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="O9S-s4-ZME" kind="showDetail" identifier="ShowTableViewControllerSegue" id="u6c-Af-462"/>
-                        <segue destination="lRp-dE-mbB" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
-                        <segue destination="JqW-0C-HaP" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
-                        <segue destination="Qsf-lL-H8g" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ddl-66-5sP"/>
-                        <segue destination="0zK-FW-Cx0" kind="showDetail" identifier="ShowControlsControllerSegue" id="vub-Ix-iiq"/>
-                        <segue destination="ivy-GA-fkp" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="gI8-Qe-nLe"/>
-                        <segue destination="1Ba-AQ-DC9" kind="showDetail" identifier="ShowSpriteKitViewControllerSegue" id="Jzs-pC-ZOB"/>
-                        <segue destination="Q46-4J-2QX" kind="showDetail" identifier="ShowBarsViewControllerSegue" id="jaS-C4-ZP8"/>
-                        <segue destination="SEz-lg-6Yy" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
-                        <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
-                        <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
-                        <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
-                        <segue destination="qoI-UI-fcj" kind="presentation" identifier="ShowModalViewController" id="iQy-xs-7nv"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="871" y="-2355"/>
+            <point key="canvasLocation" x="-828" y="-3295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXf-1A-70U">
@@ -1752,25 +1684,6 @@
             </objects>
             <point key="canvasLocation" x="4070" y="484"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="YI1-Lf-mwC">
-            <objects>
-                <tabBarController id="OIu-cQ-6Vg" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="3NZ-UX-fvZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="viewControllers" id="all-W9-m2J"/>
-                        <segue destination="aVj-m9-L3U" kind="relationship" relationship="viewControllers" id="b1l-2b-clF"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IrP-bu-iOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-740" y="-2847"/>
-        </scene>
         <!--Master-->
         <scene sceneID="0gy-8T-nxI">
             <objects>
@@ -1817,7 +1730,7 @@
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="sCU-eZ-mhU"/>
                     </navigationItem>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ExampleItems"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="StockItems"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
@@ -1832,6 +1745,19 @@
                         <segue destination="9ht-xt-K6r" kind="showDetail" identifier="ShowNotSerializableViewControllerSegue" id="PWF-de-G9N"/>
                         <segue destination="aaM-VV-efK" kind="showDetail" identifier="ShowStressTestViewControllerSegue" id="mFf-pG-CRr"/>
                         <segue destination="eRJ-LK-nEw" kind="showDetail" identifier="ShowLayerPropertiesViewControllerSegue" id="27i-Wb-Una"/>
+                        <segue destination="O9S-s4-ZME" kind="showDetail" identifier="ShowTableViewControllerSegue" id="u6c-Af-462"/>
+                        <segue destination="lRp-dE-mbB" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
+                        <segue destination="JqW-0C-HaP" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
+                        <segue destination="Qsf-lL-H8g" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ddl-66-5sP"/>
+                        <segue destination="0zK-FW-Cx0" kind="showDetail" identifier="ShowControlsControllerSegue" id="vub-Ix-iiq"/>
+                        <segue destination="ivy-GA-fkp" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="gI8-Qe-nLe"/>
+                        <segue destination="1Ba-AQ-DC9" kind="showDetail" identifier="ShowSpriteKitViewControllerSegue" id="Jzs-pC-ZOB"/>
+                        <segue destination="Q46-4J-2QX" kind="showDetail" identifier="ShowBarsViewControllerSegue" id="jaS-C4-ZP8"/>
+                        <segue destination="SEz-lg-6Yy" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
+                        <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
+                        <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
+                        <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
+                        <segue destination="qoI-UI-fcj" kind="presentation" identifier="ShowModalViewController" id="iQy-xs-7nv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -3992,11 +3918,9 @@
         <image name="reveal_pretty.jpg" width="22" height="22"/>
         <image name="tab_scenes" width="26" height="26"/>
         <image name="tab_scenes_selected" width="26" height="26"/>
-        <image name="tab_views" width="26" height="26"/>
-        <image name="tab_views_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VfP-Jr-5Bl"/>
+        <segue reference="PGY-4M-K7i"/>
     </inferredMetricsTieBreakers>
 </document>
