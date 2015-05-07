@@ -25,9 +25,9 @@ extension UIColor {
     return UIColor(red: 46.0 / 255.0, green: 213.0 / 255.0, blue: 195.0 / 255.0, alpha: 1.0)
   }
   
-    class func darkergreenColor() -> UIColor {
-        return UIColor(red:0, green:0.706, blue:0.935, alpha:1)
-    }
+  class func darkergreenColor() -> UIColor {
+    return UIColor(red:0, green:0.706, blue:0.935, alpha:1)
+  }
   
   class func revertBlueColor() -> UIColor {
     return UIColor(red: 0.231, green: 0.396, blue: 1.000, alpha: 1.0)
@@ -54,6 +54,6 @@ extension UIColor {
   }
   
   class func revertTintColor() -> UIColor {
-    return UIColor(red: 0, green: 0.698039216, blue: 0.941176471, alpha: 1.0)
+    return UIColor(red: 0, green: 0.70211714506149292, blue: 0.94534832239151001, alpha: 1.0)
   }
 }

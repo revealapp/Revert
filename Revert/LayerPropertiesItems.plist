@@ -41,12 +41,12 @@
 				<key>cellIdentifier</key>
 				<string>ReplicatorLayerCell</string>
 			</dict>
-      <dict>
-        <key>title</key>
-        <string>CATiledLayer</string>
-        <key>cellIdentifier</key>
-        <string>TiledLayerCell</string>
-      </dict>
+			<dict>
+				<key>title</key>
+				<string>CATiledLayer</string>
+				<key>cellIdentifier</key>
+				<string>TiledLayerCell</string>
+			</dict>
 			<dict>
 				<key>title</key>
 				<string>CAAEGLayer</string>
