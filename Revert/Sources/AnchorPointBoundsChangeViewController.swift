@@ -5,8 +5,8 @@
 import UIKit
 
 class AnchorPointBoundsChangeViewController: UIViewController {
-  @IBOutlet weak var boundsChangeView: AirlineBorderView!
-  @IBOutlet weak var anchorPointView: AirlineBorderView!
+  @IBOutlet weak var boundsChangeView: HairlineBorderView!
+  @IBOutlet weak var anchorPointView: HairlineBorderView!
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)

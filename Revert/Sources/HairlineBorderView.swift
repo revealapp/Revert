@@ -4,7 +4,7 @@
 
 import UIKit
 
-class AirlineBorderView: UIView {
+class HairlineBorderView: UIView {
   
   override func awakeFromNib() {
     super.awakeFromNib()

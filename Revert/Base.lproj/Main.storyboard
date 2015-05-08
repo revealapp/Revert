@@ -2469,7 +2469,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-vP-6mx" userLabel="Original Transform View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-vP-6mx" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2484,7 +2484,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMF-zP-KRW" userLabel="Transformed View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMF-zP-KRW" userLabel="Transformed View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformed Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prt-Ma-bjP">
@@ -2534,7 +2534,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-rw-ZVs" userLabel="Original Scale View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-rw-ZVs" userLabel="Original Scale View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="67" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2549,7 +2549,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck4-Sp-cNQ" userLabel="Scaled View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck4-Sp-cNQ" userLabel="Scaled View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="67" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scaled Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7Yr-Cp-wdl">
@@ -2600,7 +2600,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-TK-GaT" userLabel="Original Rotate View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-TK-GaT" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2615,7 +2615,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-oo-oIk" userLabel="Rotated View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-oo-oIk" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scK-ju-dcJ">
@@ -2799,7 +2799,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W99-4Q-Ptm" userLabel="Original Rotate View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W99-4Q-Ptm" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2814,7 +2814,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I4-iT-AYg" userLabel="Rotated View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I4-iT-AYg" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-xi-rJl">
@@ -2864,7 +2864,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-d2-Lob" userLabel="Original Rotate View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-d2-Lob" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2879,7 +2879,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNk-Sj-PpA" userLabel="Rotated View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNk-Sj-PpA" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-zl-Ybn">
@@ -2929,7 +2929,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9n-gr-EkR" userLabel="Original Rotate View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9n-gr-EkR" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2944,7 +2944,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBL-0A-Pri" userLabel="Rotated View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBL-0A-Pri" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mo8-cB-Obc">
@@ -2994,7 +2994,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-pR-OcN" userLabel="Original Rotate View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-pR-OcN" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3009,7 +3009,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-3s-Dae" userLabel="Rotated View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-3s-Dae" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="57" width="500" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-Hg-ZQb">
@@ -3210,7 +3210,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-yV-R09" userLabel="Original Transform View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-yV-R09" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="57" width="100" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3226,7 +3226,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-NB-yCf" userLabel="Transform View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-NB-yCf" userLabel="Transform View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="57" width="100" height="100"/>
                                                 <color key="backgroundColor" red="0.81829309459999999" green="0.28785437349999998" blue="1" alpha="0.85098039219999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3263,10 +3263,10 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-Nd-PMc" userLabel="Bounds Change View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-Nd-PMc" userLabel="Bounds Change View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                 <rect key="frame" x="250" y="57" width="100" height="100"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-Fy-VL2" userLabel="Transform View" customClass="AirlineBorderView" customModule="Revert" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-Fy-VL2" userLabel="Transform View" customClass="HairlineBorderView" customModule="Revert" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <color key="backgroundColor" red="0.81829309459999999" green="0.28785437349999998" blue="1" alpha="0.85098039219999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <userDefinedRuntimeAttributes>

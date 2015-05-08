@@ -23,7 +23,7 @@
 		9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
-		9A48E1991AEA1F7D00CDFEAD /* AirlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */; };
+		9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */; };
 		9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */; };
 		9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */; };
 		9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
@@ -84,7 +84,7 @@
 		9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineConstraint.swift; path = Revert/Sources/AirlineConstraint.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
-		9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineBorderView.swift; path = Revert/Sources/AirlineBorderView.swift; sourceTree = "<group>"; };
+		9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineBorderView.swift; path = Revert/Sources/HairlineBorderView.swift; sourceTree = "<group>"; };
 		9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlignmentInsetView.swift; path = Revert/Sources/AlignmentInsetView.swift; sourceTree = "<group>"; };
 		9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Revert/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = "<group>"; };
 		9A535C481ADB563B0082778A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Revert/Sources/ControlsViewController.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 				9A94E3F01AD63BFD0005BA44 /* Cells.swift */,
 				9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */,
 				9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */,
-				9A48E1981AEA1F7D00CDFEAD /* AirlineBorderView.swift */,
+				9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */,
 				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
 				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
 				9AE300211AEF09AA00E81377 /* LayerViews.swift */,
@@ -417,7 +417,7 @@
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */,
 				9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */,
-				9A48E1991AEA1F7D00CDFEAD /* AirlineBorderView.swift in Sources */,
+				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
 				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
 				9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */,
