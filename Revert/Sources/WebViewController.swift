@@ -8,8 +8,6 @@ import WebKit
 class WebViewController: UIViewController {
   
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
-
-  
   @IBOutlet weak var segmentedControl: UISegmentedControl!
   
   private lazy var uiWebView: UIWebView = {
@@ -33,21 +31,7 @@ class WebViewController: UIViewController {
     case WKWebView = 1
   }
   
-  private class func constraintsForWebView(webView: UIView) -> [NSLayoutConstraint] {
-    let bindingViews = ["webView": webView]
-    let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
-      "H:|[webView]|",
-      options: NSLayoutFormatOptions(0),
-      metrics: nil,
-      views: bindingViews) as! [NSLayoutConstraint]
-    let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
-      "V:|[webView]|",
-      options: NSLayoutFormatOptions(0),
-      metrics: nil,
-      views: bindingViews) as! [NSLayoutConstraint]
-    
-    return horizontalConstraints + verticalConstraints
-  }
+  private var topConstraint: NSLayoutConstraint?
   
   private func showFailAlert() {
     UIAlertView(
@@ -69,11 +53,26 @@ class WebViewController: UIViewController {
     self.setupWebView(self.uiWebView)
   }
   
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    
+    if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) {
+      self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
+    }
+  }
+  
   private func setupWebView(webView: UIView) {
-    self.currentWebView = webView
     webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+
+    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
+    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0.0)
+    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1.0, constant: 0.0)
+    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
+
+    self.currentWebView = webView
     self.view.addSubview(webView)
-    self.view.addConstraints(self.dynamicType.constraintsForWebView(webView))
+    self.view.addConstraints([leftConstraint, rightConstraint, topConstraint, bottomConstraint])
+    self.topConstraint = topConstraint
   }
   
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
