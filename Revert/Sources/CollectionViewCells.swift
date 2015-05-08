@@ -36,7 +36,7 @@ class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegat
     let doneBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "doneButtonTapped:")
     let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
 
-    doneBarButtonItem.tintColor = UIColor.awesgreenColor()
+    doneBarButtonItem.tintColor = UIColor.revertTintColor()
     toolBar.items = [
       flexibleBarButtonItem,
       doneBarButtonItem
