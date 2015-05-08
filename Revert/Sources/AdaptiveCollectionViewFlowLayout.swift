@@ -10,6 +10,12 @@ class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     switch UIApplication.sharedApplication().statusBarOrientation {
     case .Portrait, .PortraitUpsideDown:
       return 2
+      
+    case .LandscapeRight, .LandscapeLeft where UIScreen.mainScreen().scale > 2.9:
+      // Scale is important here as size-classes cannot be used for iOS 7+ project. Scale will be @3x
+      // only on iPhone 6+ if and only if the device is not in scaled mode - which is exactly what we want.
+      return 2
+
     default:
       return 3
     }
