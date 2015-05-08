@@ -38,7 +38,7 @@
 				<key>resourceFilename</key>
 				<string>ViewItems</string>
 				<key>title</key>
-				<string>Default Views</string>
+				<string>Views</string>
 				<key>iconName</key>
 				<string>icon_DefaultView</string>
 				<key>segueIdentifier</key>
