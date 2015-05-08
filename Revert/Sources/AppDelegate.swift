@@ -10,7 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   private var splitViewControllerDelegate = SplitViewControllerDelegate()
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    self.splitViewControllerDelegate.configureSplitViewController(self.window!.rootViewController as! UISplitViewController)
+
+    if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) || UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      self.splitViewControllerDelegate.configureSplitViewController(self.window!.rootViewController as! UISplitViewController)
+    }
+
     self.dynamicType.configureAppearance()
     return true
   }

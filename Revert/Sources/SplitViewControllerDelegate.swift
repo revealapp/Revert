@@ -14,7 +14,9 @@ class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
   
   func configureSplitViewController(splitViewController: UISplitViewController) {
     splitViewController.delegate = self
-    splitViewController.preferredDisplayMode = .AllVisible
+    if splitViewController.respondsToSelector("preferredDisplayMode") {
+      splitViewController.preferredDisplayMode = .AllVisible
+    }
   }
 
   func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
@@ -24,5 +26,9 @@ class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
   
   func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
     return self.didShowDetailViewController == false
+  }
+  
+  func splitViewController(svc: UISplitViewController, shouldHideViewController vc: UIViewController, inOrientation orientation: UIInterfaceOrientation) -> Bool {
+    return false
   }
 }
