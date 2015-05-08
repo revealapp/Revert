@@ -7,20 +7,31 @@ import WebKit
 
 class WebViewController: UIViewController {
   
-  private lazy var webView: UIView = {
-    let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
-    if let _ = NSClassFromString("WKWebView") {
-      let webView = WKWebView()
-      webView.loadRequest(req)
-      webView.navigationDelegate = self
-      return webView
-    } else {
-      let webView = UIWebView()
-      webView.loadRequest(req)
-      webView.delegate = self
-      return webView
-    }
+  private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
+
+  
+  @IBOutlet weak var segmentedControl: UISegmentedControl!
+  
+  private lazy var uiWebView: UIWebView = {
+    let webView = UIWebView()
+    webView.delegate = self
+    webView.loadRequest(self.req)
+    return webView
+    }()
+  
+  private lazy var wkWebView: WKWebView = {
+    let webView = WKWebView()
+    webView.navigationDelegate = self
+    webView.loadRequest(self.req)
+    return webView
   }()
+  
+  private var currentWebView: UIView?
+  
+  private enum WebView: Int {
+    case UIWebView = 0
+    case WKWebView = 1
+  }
   
   private class func constraintsForWebView(webView: UIView) -> [NSLayoutConstraint] {
     let bindingViews = ["webView": webView]
@@ -34,7 +45,7 @@ class WebViewController: UIViewController {
       options: NSLayoutFormatOptions(0),
       metrics: nil,
       views: bindingViews) as! [NSLayoutConstraint]
-
+    
     return horizontalConstraints + verticalConstraints
   }
   
@@ -44,15 +55,31 @@ class WebViewController: UIViewController {
       message: NSLocalizedString("webviewcontroller.alert.message", comment: "Alert message on content failed loading"),
       delegate: nil,
       cancelButtonTitle: NSLocalizedString("ok", comment: "Alert dismiss button on content failed loading")
-    ).show()
+      ).show()
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    if NSClassFromString("WKWebView") == nil {
+      self.navigationItem.titleView = nil
+      self.navigationItem.title = NSLocalizedString("WebView", comment: "WebView title")
+    }
     
-    self.webView.setTranslatesAutoresizingMaskIntoConstraints(false)
-    self.view.addSubview(self.webView)
-    self.view.addConstraints(self.dynamicType.constraintsForWebView(self.webView))
+    self.setupWebView(self.uiWebView)
+  }
+  
+  private func setupWebView(webView: UIView) {
+    self.currentWebView = webView
+    webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    self.view.addSubview(webView)
+    self.view.addConstraints(self.dynamicType.constraintsForWebView(webView))
+  }
+  
+  @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
+    let nextWebView = sender.selectedSegmentIndex == WebView.UIWebView.rawValue ? self.uiWebView : self.wkWebView
+    self.currentWebView!.removeFromSuperview()
+    self.setupWebView(nextWebView)
   }
 }
 

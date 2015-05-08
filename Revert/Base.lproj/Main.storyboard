@@ -1640,7 +1640,7 @@
             </objects>
             <point key="canvasLocation" x="3250" y="-233"/>
         </scene>
-        <!--Web View-->
+        <!--Web View Controller-->
         <scene sceneID="hhK-5P-fIh">
             <objects>
                 <viewController id="zbC-XF-QPg" customClass="WebViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
@@ -1653,9 +1653,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Web View" id="h0T-dt-WNG">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="h0T-dt-WNG">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="LBF-J0-iUK">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="UIWebView"/>
+                                <segment title="WKWebView"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlValueChanged:" destination="zbC-XF-QPg" eventType="valueChanged" id="ow7-zQ-7YY"/>
+                            </connections>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="LBF-J0-iUK" id="Wi1-eR-hbF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-rF-vMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
