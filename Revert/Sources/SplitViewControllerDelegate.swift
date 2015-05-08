@@ -10,18 +10,19 @@ import UIKit
 
 class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
 
-  private var didPushDetail = false
+  private var didShowDetailViewController = false
+  
+  func configureSplitViewController(splitViewController: UISplitViewController) {
+    splitViewController.delegate = self
+    splitViewController.preferredDisplayMode = .AllVisible
+  }
 
   func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
-    self.didPushDetail = true
+    self.didShowDetailViewController = true
     return false
   }
   
   func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
-    return self.didPushDetail == false
-  }
-  
-  func targetDisplayModeForActionInSplitViewController(svc: UISplitViewController) -> UISplitViewControllerDisplayMode {
-    return UIDevice.currentDevice().userInterfaceIdiom == .Pad ? .AllVisible : .PrimaryHidden
+    return self.didShowDetailViewController == false
   }
 }

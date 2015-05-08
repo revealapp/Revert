@@ -10,8 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   private var splitViewControllerDelegate = SplitViewControllerDelegate()
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    (self.window!.rootViewController as! UISplitViewController).delegate = self.splitViewControllerDelegate
-    
+    self.splitViewControllerDelegate.configureSplitViewController(self.window!.rootViewController as! UISplitViewController)
     self.dynamicType.configureAppearance()
     return true
   }
