@@ -3744,18 +3744,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCc-ht-ivH">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0I-0T-ibi" customClass="CATextLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="AQ7-t0-sBX"/>
-                                                        <constraint firstAttribute="height" constant="130" id="ae4-c1-9Sj"/>
+                                                        <constraint firstAttribute="height" constant="102" id="UVi-3v-b8d"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATextLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-yM-owq">
-                                                    <rect key="frame" x="20" y="138" width="91" height="20"/>
+                                                    <rect key="frame" x="20" y="110" width="91" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="lb7-go-yPn"/>
                                                     </constraints>
@@ -3794,18 +3794,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-zX-7wv">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-8S-yME" customClass="CAEmitterLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="1p1-T6-knh"/>
+                                                        <constraint firstAttribute="height" constant="102" id="1p1-T6-knh"/>
                                                         <constraint firstAttribute="width" constant="130" id="SiN-di-G6C"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAEmitterLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSK-G4-lkD">
-                                                    <rect key="frame" x="8" y="138" width="114" height="20"/>
+                                                    <rect key="frame" x="8" y="110" width="114" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="KYa-Wv-PV1"/>
                                                     </constraints>
@@ -3844,18 +3844,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-90-vgW">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKm-jM-3tL" customClass="CAShapeLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="8rQ-Wx-bo3"/>
-                                                        <constraint firstAttribute="height" constant="130" id="aRD-x9-DlW"/>
+                                                        <constraint firstAttribute="height" constant="102" id="aRD-x9-DlW"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAShapeLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-39-EsZ">
-                                                    <rect key="frame" x="11" y="138" width="109" height="20"/>
+                                                    <rect key="frame" x="11" y="110" width="109" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="0Qh-tp-c8q"/>
                                                     </constraints>
@@ -3894,18 +3894,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eab-3q-B81">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sr-T0-NYI" customClass="CAScrollLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="neg-TS-Fxr"/>
-                                                        <constraint firstAttribute="height" constant="130" id="r09-hB-Img"/>
+                                                        <constraint firstAttribute="height" constant="102" id="r09-hB-Img"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAScrollLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-Li-Boc">
-                                                    <rect key="frame" x="13" y="138" width="104" height="20"/>
+                                                    <rect key="frame" x="13" y="110" width="104" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="LKT-sr-avh"/>
                                                     </constraints>
@@ -3944,18 +3944,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dy1-Ri-IN2">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOl-vR-iRN" customClass="CATiledLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="GPH-pC-FFC"/>
+                                                        <constraint firstAttribute="height" constant="102" id="GPH-pC-FFC"/>
                                                         <constraint firstAttribute="width" constant="130" id="cps-cx-wOg"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATiledLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-KC-iw6">
-                                                    <rect key="frame" x="17" y="138" width="96" height="20"/>
+                                                    <rect key="frame" x="17" y="110" width="96" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="Lqa-P2-324"/>
                                                     </constraints>
@@ -3994,18 +3994,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1u-Xy-Ezd">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-qn-XFZ" customClass="CAGradientLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="NYz-eg-3dS"/>
-                                                        <constraint firstAttribute="height" constant="130" id="j4L-uS-cFN"/>
+                                                        <constraint firstAttribute="height" constant="102" id="j4L-uS-cFN"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAGradientLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeM-sd-5Vm">
-                                                    <rect key="frame" x="3" y="138" width="125" height="20"/>
+                                                    <rect key="frame" x="3" y="110" width="125" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="DmV-w6-suG"/>
                                                     </constraints>
@@ -4043,33 +4043,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-aH-FW6">
-                                            <rect key="frame" x="81" y="70" width="137" height="158"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bww-Ka-Xbv">
+                                            <rect key="frame" x="80" y="84" width="137" height="130"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bww-Ka-Xbv">
-                                                    <rect key="frame" x="4" y="0.0" width="130" height="130"/>
-                                                    <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9t-hX-9ja" customClass="CAReplicatorLayerView" customModule="Revert" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="130" id="dNe-lq-fBP"/>
-                                                                <constraint firstAttribute="height" constant="130" id="ev8-Jf-N3H"/>
-                                                            </constraints>
-                                                        </view>
-                                                    </subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9t-hX-9ja" customClass="CAReplicatorLayerView" customModule="Revert" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="1hK-mM-n8K"/>
-                                                        <constraint firstItem="U9t-hX-9ja" firstAttribute="top" secondItem="bww-Ka-Xbv" secondAttribute="top" id="8dI-cU-JF7"/>
-                                                        <constraint firstAttribute="width" constant="130" id="Vk3-aj-6F3"/>
-                                                        <constraint firstItem="U9t-hX-9ja" firstAttribute="leading" secondItem="bww-Ka-Xbv" secondAttribute="leading" id="YIk-xr-iKP"/>
-                                                        <constraint firstAttribute="trailing" secondItem="U9t-hX-9ja" secondAttribute="trailing" id="bVL-l9-Nu5"/>
-                                                        <constraint firstAttribute="bottom" secondItem="U9t-hX-9ja" secondAttribute="bottom" id="hCV-GL-Ep6"/>
+                                                        <constraint firstAttribute="height" constant="102" id="F3N-0f-vV3"/>
+                                                        <constraint firstAttribute="width" constant="130" id="S1P-3q-hBf"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAReplicatorLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xej-lp-Nvb">
-                                                    <rect key="frame" x="0.0" y="138" width="137" height="20"/>
+                                                    <rect key="frame" x="0.0" y="110" width="137" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.21958050130000001" green="0.21962401270000001" blue="0.21957439179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -4077,15 +4063,12 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="bww-Ka-Xbv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0dg-aH-FW6" secondAttribute="leading" id="6PO-Q7-R8R"/>
-                                                <constraint firstAttribute="centerX" secondItem="xej-lp-Nvb" secondAttribute="centerX" id="IEP-6u-jj1"/>
-                                                <constraint firstItem="bww-Ka-Xbv" firstAttribute="top" secondItem="0dg-aH-FW6" secondAttribute="top" id="Nd0-T4-GaX"/>
-                                                <constraint firstItem="xej-lp-Nvb" firstAttribute="leading" secondItem="0dg-aH-FW6" secondAttribute="leading" id="SXW-o8-hy0"/>
-                                                <constraint firstAttribute="centerX" secondItem="bww-Ka-Xbv" secondAttribute="centerX" id="bUc-Hd-QCs"/>
-                                                <constraint firstAttribute="trailing" secondItem="xej-lp-Nvb" secondAttribute="trailing" id="d7Y-Dt-CGq"/>
-                                                <constraint firstAttribute="bottom" secondItem="xej-lp-Nvb" secondAttribute="bottom" id="kB8-da-3os"/>
-                                                <constraint firstItem="xej-lp-Nvb" firstAttribute="top" secondItem="bww-Ka-Xbv" secondAttribute="bottom" constant="8" id="kdF-hy-MS5"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bww-Ka-Xbv" secondAttribute="trailing" id="yCb-E1-RzW"/>
+                                                <constraint firstAttribute="bottom" secondItem="xej-lp-Nvb" secondAttribute="bottom" id="JfE-BB-QsK"/>
+                                                <constraint firstItem="xej-lp-Nvb" firstAttribute="leading" secondItem="bww-Ka-Xbv" secondAttribute="leading" id="QBc-Lx-eXa"/>
+                                                <constraint firstAttribute="trailing" secondItem="xej-lp-Nvb" secondAttribute="trailing" id="S22-yz-kMU"/>
+                                                <constraint firstAttribute="centerX" secondItem="U9t-hX-9ja" secondAttribute="centerX" id="aeS-C0-KgE"/>
+                                                <constraint firstItem="xej-lp-Nvb" firstAttribute="top" secondItem="U9t-hX-9ja" secondAttribute="bottom" constant="8" id="eYX-Hn-dvJ"/>
+                                                <constraint firstItem="U9t-hX-9ja" firstAttribute="top" secondItem="bww-Ka-Xbv" secondAttribute="top" id="h71-jo-TxE"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -4093,8 +4076,8 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="0dg-aH-FW6" secondAttribute="centerX" id="8RT-hU-cQK"/>
-                                    <constraint firstAttribute="centerY" secondItem="0dg-aH-FW6" secondAttribute="centerY" id="jbW-Yb-gvW"/>
+                                    <constraint firstAttribute="centerX" secondItem="bww-Ka-Xbv" secondAttribute="centerX" id="ExY-z2-mpX"/>
+                                    <constraint firstAttribute="centerY" secondItem="bww-Ka-Xbv" secondAttribute="centerY" id="Gum-li-Pgr"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="replicatorLayerView" destination="U9t-hX-9ja" id="AZB-wW-ge5"/>
@@ -4108,18 +4091,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pax-2t-c5g">
-                                            <rect key="frame" x="84" y="70" width="130" height="158"/>
+                                            <rect key="frame" x="84" y="84" width="130" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-Cz-PkQ" customClass="CAEAGLLayerView" customModule="Revert" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="102"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="MgH-yp-Y51"/>
-                                                        <constraint firstAttribute="height" constant="130" id="hQM-gN-VM0"/>
+                                                        <constraint firstAttribute="height" constant="102" id="hQM-gN-VM0"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAAEGLayer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXE-cs-rAE">
-                                                    <rect key="frame" x="0.0" y="138" width="130" height="20"/>
+                                                    <rect key="frame" x="0.0" y="110" width="130" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.21958050130000001" green="0.21962401270000001" blue="0.21957439179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
