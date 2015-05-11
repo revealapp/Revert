@@ -21,7 +21,8 @@ class AutoResizingMaskViewController: UIViewController {
     let cornerRadius:CGFloat = 2.0
     let borderWidth:CGFloat = 1.0
     let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.15)
-    let defaultViewSideLength: CGFloat = 50.0
+    let defaultViewSideLength: CGFloat = 50
+    let leftRightWidth: CGFloat = 80
     
     // Back: Flexible Height / Width View
     let origin = CGPoint(x: padding, y: padding)
@@ -60,7 +61,7 @@ class AutoResizingMaskViewController: UIViewController {
     flexibleWidthHeightView.addSubview(flexibleHeightLeftRightView)
     
     // Left: Flexible Top / Bottom View
-    let flexibleTopBottomSize = CGSize(width: (flexibleWidthHeightSize.width - flexibleHeightLeftRightSize.width) / 2.0 - (2.0 * padding), height: defaultViewSideLength)
+    let flexibleTopBottomSize = CGSize(width: leftRightWidth, height: defaultViewSideLength)
     let leftFlexibleTopBottomOrigin = CGPoint(x: padding, y: flexibleHeightLeftRightView.frame.midY - flexibleTopBottomSize.height / 2.0)
     let leftFlexibleTopBottomView = UIView(frame: CGRect(origin: leftFlexibleTopBottomOrigin, size: flexibleTopBottomSize))
     
@@ -72,7 +73,7 @@ class AutoResizingMaskViewController: UIViewController {
     flexibleWidthHeightView.addSubview(leftFlexibleTopBottomView)
     
     // Right: Flexible Top / Bottom View
-    let rightFlexibleTopBottomOrigin = CGPoint(x: flexibleHeightLeftRightView.frame.midX + flexibleHeightLeftRightSize.width / 2.0 + padding, y: flexibleHeightLeftRightView.frame.midY - flexibleTopBottomSize.height / 2.0)
+    let rightFlexibleTopBottomOrigin = CGPoint(x: flexibleWidthHeightView.bounds.width - padding - leftRightWidth, y: flexibleHeightLeftRightView.frame.midY - flexibleTopBottomSize.height / 2.0)
     let rightFlexibleTopBottomView = UIView(frame: CGRect(origin: rightFlexibleTopBottomOrigin, size: flexibleTopBottomSize))
     
     rightFlexibleTopBottomView.backgroundColor = UIColor.revertPinkColor()
