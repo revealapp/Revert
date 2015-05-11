@@ -9,6 +9,6 @@ class HairlineBorderView: UIView {
   override func awakeFromNib() {
     super.awakeFromNib()
     
-    self.layer.borderWidth = 1.0 / UIScreen.mainScreen().nativeScale
+    self.layer.borderWidth = 1.0 / UIScreen.mainScreen().scale
   }
 }
