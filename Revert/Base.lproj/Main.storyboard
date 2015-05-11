@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1984,124 +1984,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
-                                        <rect key="frame" x="8" y="8" width="64" height="64"/>
-                                        <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="208" width="120" height="120"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
+                                                <rect key="frame" x="8" y="8" width="104" height="104"/>
+                                                <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Center View"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="2Bq-yh-a8A"/>
+                                            <constraint firstItem="ebx-85-dhz" firstAttribute="top" secondItem="ml3-CY-mgV" secondAttribute="topMargin" id="56t-fJ-sbi"/>
+                                            <constraint firstItem="ebx-85-dhz" firstAttribute="leading" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" id="CMK-lM-LAv"/>
+                                            <constraint firstAttribute="width" secondItem="ml3-CY-mgV" secondAttribute="height" multiplier="1:1" id="Ce5-60-ts5"/>
+                                            <constraint firstItem="ebx-85-dhz" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="Jny-xE-9qn"/>
+                                            <constraint firstItem="ebx-85-dhz" firstAttribute="trailing" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" id="Pbd-wk-hdn"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="384" y="200" width="120" height="120"/>
+                                        <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Right View"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="height" multiplier="1:1" id="SyP-sB-2uK"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="248" y="352" width="120" height="120"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Bottom View"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="height" multiplier="1:1" id="Mz1-QH-5yE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="216" width="120" height="120"/>
+                                        <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Left View"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="height" multiplier="1:1" id="Vhs-ob-anv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
+                                        <rect key="frame" x="232" y="64" width="120" height="120"/>
+                                        <color key="backgroundColor" red="0.42200243473052979" green="0.76358240842819214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Top View"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="height" multiplier="1:1" id="b75-0L-bm5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
+                                        <rect key="frame" x="208" y="498" width="200" height="31"/>
+                                        <color key="tintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
-                                <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Center View"/>
+                                <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ebx-85-dhz" firstAttribute="top" secondItem="ml3-CY-mgV" secondAttribute="topMargin" id="56t-fJ-sbi"/>
-                                    <constraint firstItem="ebx-85-dhz" firstAttribute="leading" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" id="CMK-lM-LAv"/>
-                                    <constraint firstItem="ebx-85-dhz" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="Jny-xE-9qn"/>
-                                    <constraint firstItem="ebx-85-dhz" firstAttribute="trailing" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" id="Pbd-wk-hdn"/>
-                                    <constraint firstAttribute="width" constant="80" id="XrW-jo-WTa"/>
-                                    <constraint firstAttribute="height" constant="80" id="pvg-eY-kMj"/>
+                                    <constraint firstAttribute="centerY" secondItem="ml3-CY-mgV" secondAttribute="centerY" id="67p-Qk-XfP"/>
+                                    <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
+                                    <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" constant="-8" id="hIa-C0-7r6"/>
+                                    <constraint firstAttribute="bottom" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="8" id="u2L-8k-eXJ"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="364" y="252" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Right View"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="d6T-pu-BFS"/>
-                                    <constraint firstAttribute="width" constant="80" id="iHP-Gf-FIV"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="268" y="364" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Bottom View"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="HZu-Cy-VVy"/>
-                                    <constraint firstAttribute="height" constant="80" id="bno-is-EuX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center view margin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brx-E7-Jp9">
-                                <rect key="frame" x="226" y="522" width="148" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="156" y="268" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Left View"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="sMv-CG-cng"/>
-                                    <constraint firstAttribute="width" constant="80" id="wba-Zp-B87"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                <rect key="frame" x="252" y="156" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.42200243473052979" green="0.76358240842819214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Top View"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="1vZ-B0-DKY"/>
-                                    <constraint firstAttribute="height" constant="80" id="t8S-ot-hUY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
-                                <rect key="frame" x="200" y="551" width="200" height="31"/>
-                                <color key="tintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
-                            <constraint firstAttribute="centerX" secondItem="Brx-E7-Jp9" secondAttribute="centerX" id="149-BY-aaO"/>
+                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
-                            <constraint firstItem="rfO-2Q-Zto" firstAttribute="top" secondItem="Brx-E7-Jp9" secondAttribute="bottom" constant="8" id="OWM-YD-0x2"/>
+                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="Yk3-Jv-ONN"/>
+                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="centerX" secondItem="i1S-l0-cJP" secondAttribute="centerXWithinMargins" id="fRI-JH-YWM"/>
-                            <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" id="kfj-w6-O4e"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="19" id="mdo-IU-xvc"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
+                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
+                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
+                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="leadingMargin" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" constant="40" id="tTn-xT-ReG"/>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="bottomMargin" secondItem="ml3-CY-mgV" secondAttribute="topMargin" constant="-40" id="vQh-Fy-wXe"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="centerY" secondItem="i1S-l0-cJP" secondAttribute="centerYWithinMargins" id="wgy-ar-r8T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1">
@@ -2109,6 +2113,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="centerView" destination="ml3-CY-mgV" id="Xg1-va-yTB"/>
+                        <outlet property="centerViewWidthConstraint" destination="2Bq-yh-a8A" id="vlf-Cz-osf"/>
+                        <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
                         <outlet property="slider" destination="rfO-2Q-Zto" id="jfc-Kf-F0d"/>
                     </connections>
                 </viewController>
