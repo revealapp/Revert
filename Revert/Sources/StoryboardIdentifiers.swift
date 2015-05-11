@@ -9,4 +9,8 @@ struct SB {
     internal static let Master = "MasterCell"
     internal static let Stress = "StressCell"
   }
+  
+  struct VC {
+    internal static let Help = "HelpViewController"
+  }
 }

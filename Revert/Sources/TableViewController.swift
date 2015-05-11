@@ -35,6 +35,9 @@ final class TableViewController: UITableViewController {
   func didLoadDummyData(timer: NSTimer) {
     self.refreshControl!.endRefreshing()
   }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+  }
 }
 
 // MARK : UITableViewDelegate
