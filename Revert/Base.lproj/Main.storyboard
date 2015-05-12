@@ -622,7 +622,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bars" id="AOo-sw-j24">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="DRG-Gs-3WK"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="DRG-Gs-3WK">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="vVt-7j-5QX" id="rFq-WS-adG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dismissContainerView" destination="Xwu-cY-InN" id="LAS-ka-pSF"/>
