@@ -1928,12 +1928,13 @@
                                 <action selector="segmentedControlValueChanged:" destination="zbC-XF-QPg" eventType="valueChanged" id="ow7-zQ-7YY"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="zbC-XF-QPg" id="cMd-Jr-CJ5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="segmentedControl" destination="LBF-J0-iUK" id="Wi1-eR-hbF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-rF-vMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

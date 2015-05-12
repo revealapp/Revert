@@ -5,10 +5,10 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
-  
+final internal class WebViewController: UIViewController, SettableMasterItem {
+  var item: MasterItem?
+
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
-  @IBOutlet weak var segmentedControl: UISegmentedControl!
   
   private lazy var uiWebView: UIWebView = {
     let webView = UIWebView()
@@ -24,14 +24,11 @@ class WebViewController: UIViewController {
     return webView
   }()
   
-  private var currentWebView: UIView?
   
-  private enum WebView: Int {
+  private enum Type: Int {
     case UIWebView = 0
     case WKWebView = 1
   }
-  
-  private var topConstraint: NSLayoutConstraint?
   
   private func showFailAlert() {
     UIAlertView(
@@ -42,8 +39,27 @@ class WebViewController: UIViewController {
       ).show()
   }
   
+  private var currentWebView: UIView?
+  private var topConstraint: NSLayoutConstraint?
+  
+  private func setupWebView(webView: UIView) {
+    webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    
+    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
+    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0.0)
+    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1.0, constant: 0.0)
+    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
+    
+    self.currentWebView = webView
+    self.view.addSubview(webView)
+    self.view.addConstraints([leftConstraint, rightConstraint, topConstraint, bottomConstraint])
+    self.topConstraint = topConstraint
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
 
     if NSClassFromString("WKWebView") == nil {
       self.navigationItem.titleView = nil
@@ -61,24 +77,14 @@ class WebViewController: UIViewController {
     }
   }
   
-  private func setupWebView(webView: UIView) {
-    webView.setTranslatesAutoresizingMaskIntoConstraints(false)
-
-    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
-    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0.0)
-    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1.0, constant: 0.0)
-    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-
-    self.currentWebView = webView
-    self.view.addSubview(webView)
-    self.view.addConstraints([leftConstraint, rightConstraint, topConstraint, bottomConstraint])
-    self.topConstraint = topConstraint
-  }
-  
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
-    let nextWebView = sender.selectedSegmentIndex == WebView.UIWebView.rawValue ? self.uiWebView : self.wkWebView
+    let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView!.removeFromSuperview()
     self.setupWebView(nextWebView)
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 
