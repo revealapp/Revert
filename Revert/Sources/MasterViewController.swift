@@ -10,6 +10,9 @@ class MasterViewController: UITableViewController {
   private var dataSource: CollectableTableViewDataSource
   
   private func deselectSelectedRowIfNeeded() {
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      return
+    }
     if let selectedIndexPath = self.tableView.indexPathForSelectedRow() {
       self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
     }
