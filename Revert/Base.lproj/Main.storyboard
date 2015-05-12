@@ -585,11 +585,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-cY-InN">
                                 <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-02-jzJ">
-                                        <rect key="frame" x="15" y="40" width="570" height="402"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-02-jzJ" userLabel="ToolBar Container">
+                                        <rect key="frame" x="15" y="40" width="570" height="352"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-zU-juz">
-                                                <rect key="frame" x="0.0" y="0.0" width="570" height="44"/>
+                                                <rect key="frame" x="0.0" y="308" width="570" height="44"/>
                                                 <items>
                                                     <barButtonItem systemItem="add" id="SX2-Ne-GXU"/>
                                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="s2C-rw-0DX"/>
@@ -603,18 +603,29 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1cQ-zU-juz" secondAttribute="bottom" id="3h8-zL-IdK"/>
                                             <constraint firstItem="1cQ-zU-juz" firstAttribute="leading" secondItem="bUw-02-jzJ" secondAttribute="leading" id="SdA-Fj-3FV"/>
-                                            <constraint firstItem="1cQ-zU-juz" firstAttribute="top" secondItem="bUw-02-jzJ" secondAttribute="top" id="bJi-9E-p5H"/>
                                             <constraint firstAttribute="trailing" secondItem="1cQ-zU-juz" secondAttribute="trailing" id="sF6-Dt-DP2"/>
                                         </constraints>
                                     </view>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-al-unb">
+                                        <rect key="frame" x="0.0" y="443" width="600" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <items>
+                                            <tabBarItem systemItem="favorites" id="YQG-oH-vVZ"/>
+                                            <tabBarItem systemItem="more" id="4cq-QO-GdK"/>
+                                        </items>
+                                    </tabBar>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="bUw-02-jzJ" firstAttribute="top" secondItem="Xwu-cY-InN" secondAttribute="top" constant="40" id="DiY-oq-ocX"/>
+                                    <constraint firstAttribute="trailing" secondItem="XyU-al-unb" secondAttribute="trailing" id="PNb-WB-oBM"/>
                                     <constraint firstItem="bUw-02-jzJ" firstAttribute="leading" secondItem="Xwu-cY-InN" secondAttribute="leading" constant="15" id="SZc-60-ejQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="XyU-al-unb" secondAttribute="bottom" id="TG7-ta-BQD"/>
                                     <constraint firstAttribute="trailing" secondItem="bUw-02-jzJ" secondAttribute="trailing" constant="15" id="acS-WE-9S5"/>
-                                    <constraint firstAttribute="bottom" secondItem="bUw-02-jzJ" secondAttribute="bottom" constant="50" id="ggJ-ra-KSU"/>
+                                    <constraint firstAttribute="bottom" secondItem="bUw-02-jzJ" secondAttribute="bottom" constant="100" id="ggJ-ra-KSU"/>
+                                    <constraint firstItem="XyU-al-unb" firstAttribute="leading" secondItem="Xwu-cY-InN" secondAttribute="leading" id="rkr-Qk-7sU"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -639,6 +650,7 @@
                     <connections>
                         <outlet property="dismissContainerView" destination="Xwu-cY-InN" id="LAS-ka-pSF"/>
                         <outlet property="searchBar" destination="6jK-ik-p74" id="LNB-iL-sUK"/>
+                        <outlet property="tabBar" destination="XyU-al-unb" id="FFS-g1-ybt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-3v-C0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
