@@ -29,7 +29,7 @@ class ControlsViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    assert(self.resourceFilename != nil, "Resource file name should be set before viewDidLoad:")
+    assert(self.resourceFilename != nil, "Resource file name should be set before viewDidLoad")
 
     // Setup Keyboard Handler
     self.keyboardHandler.scrollView = self.collectionView
