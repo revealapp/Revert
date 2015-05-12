@@ -1,8 +1,4 @@
 //
-//  SplitViewControllerDelegate.swift
-//  Revert
-//
-//  Created by Hugo Cuvillier on 8/05/2015.
 //  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
 //
 
