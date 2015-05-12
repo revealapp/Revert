@@ -4,7 +4,8 @@
 
 import UIKit
 
-class AlertViewController: UITableViewController {
+final internal class AlertViewController: UITableViewController, SettableMasterItem {
+  var item: MasterItem?
   
   private enum Sections: Int {
     case AlertView
@@ -14,6 +15,16 @@ class AlertViewController: UITableViewController {
   private enum Rows: Int {
     case AlertView
     case ActionSheet
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 

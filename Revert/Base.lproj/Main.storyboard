@@ -1592,7 +1592,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Alert View" id="kDE-Ri-dPl">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="7LL-HU-5QN"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="7LL-HU-5QN">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="gLA-bY-UPx" id="BlT-HU-uoM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVu-nX-7FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
