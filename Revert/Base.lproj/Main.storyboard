@@ -1111,7 +1111,7 @@
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-48-m72">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-48-m72">
                                                     <rect key="frame" x="4" y="73" width="122" height="36"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1138,7 +1138,9 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="my4-h1-TQu" secondAttribute="centerX" id="CQZ-O0-uSD"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="my4-h1-TQu" secondAttribute="bottom" constant="8" id="JDv-53-Uwc"/>
                                     <constraint firstAttribute="centerY" secondItem="my4-h1-TQu" secondAttribute="centerY" id="tiH-bK-Ng4"/>
+                                    <constraint firstItem="my4-h1-TQu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e93-eP-990" secondAttribute="top" constant="8" id="zmd-01-CDL"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="textField" destination="6bQ-fp-AV3" id="lfC-zr-6E3"/>
@@ -1173,7 +1175,7 @@
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-Rx-xYi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-Rx-xYi">
                                                     <rect key="frame" x="4" y="73" width="122" height="36"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1200,7 +1202,9 @@
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="oah-Ws-5UP" secondAttribute="centerX" id="CaX-cQ-bnc"/>
+                                    <constraint firstItem="oah-Ws-5UP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8ut-OK-HZV" secondAttribute="top" constant="8" id="EZM-nW-GfH"/>
                                     <constraint firstAttribute="centerY" secondItem="oah-Ws-5UP" secondAttribute="centerY" id="Xsr-7x-IO8"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oah-Ws-5UP" secondAttribute="bottom" constant="8" id="pk4-iO-yxq"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="textField" destination="Nzg-Er-Aak" id="1TN-Fz-LJ3"/>
