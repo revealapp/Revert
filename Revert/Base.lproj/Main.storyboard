@@ -2049,7 +2049,7 @@
                         <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
                         <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
                         <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
-                        <segue destination="qoI-UI-fcj" kind="presentation" identifier="ShowModalViewController" id="iQy-xs-7nv"/>
+                        <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -3506,54 +3506,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NcT-Fo-jUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3247" y="484"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="aAf-R4-IHQ">
-            <objects>
-                <navigationController id="qoI-UI-fcj" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q2M-g4-0Yi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.20023062825202942" green="0.67298656702041626" blue="0.93640762567520142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="AAE-ZC-NCS" kind="relationship" relationship="rootViewController" id="0QB-yZ-4a3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yK9-0y-7cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3247" y="1202"/>
-        </scene>
-        <!--Modal-->
-        <scene sceneID="ddH-VN-DSx">
-            <objects>
-                <viewController id="AAE-ZC-NCS" customClass="ModalViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SgF-HC-1dj"/>
-                        <viewControllerLayoutGuide type="bottom" id="OCp-em-MBh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0ao-cX-XZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Modal" id="A9D-SX-Rmb">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="oRE-yM-BIZ">
-                            <connections>
-                                <action selector="doneButtonTapped:" destination="AAE-ZC-NCS" id="x8H-2f-6sv"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="mBr-YH-nfh"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ndM-HM-q75" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4070" y="1202"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S6V-Gv-rPu">
