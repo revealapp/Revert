@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class CATextLayerCell: UICollectionViewCell {
+final internal class CATextLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var textLayerView: CATextLayerView!
   
@@ -24,7 +24,7 @@ final class CATextLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAEmitterLayerCell: UICollectionViewCell {
+final internal class CAEmitterLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var emitterLayerView: CAEmitterLayerView!
   
@@ -61,7 +61,7 @@ final class CAEmitterLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAShapeLayerCell: UICollectionViewCell {
+final internal class CAShapeLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var shapeLayerView: CAShapeLayerView!
   
@@ -87,7 +87,7 @@ final class CAShapeLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAScrollLayerCell: UICollectionViewCell {
+final internal class CAScrollLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var scrollLayerView: CAScrollLayerView!
   
@@ -104,7 +104,7 @@ final class CAScrollLayerCell: UICollectionViewCell {
   }
 }
 
-final class CATiledLayerCell: UICollectionViewCell {
+final internal class CATiledLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var tiledLayerView: CATiledLayerView!
   
@@ -124,7 +124,7 @@ final class CATiledLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAGradientLayerCell: UICollectionViewCell {
+final internal class CAGradientLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var gradientLayerView: CAGradientLayerView!
 
@@ -156,7 +156,7 @@ final class CAGradientLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAReplicatorLayerCell: UICollectionViewCell {
+final internal class CAReplicatorLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
 
@@ -188,7 +188,7 @@ final class CAReplicatorLayerCell: UICollectionViewCell {
   }
 }
 
-final class CAEAGLLayerCell: UICollectionViewCell {
+final internal class CAEAGLLayerCell: UICollectionViewCell {
   
   @IBOutlet weak var aegLayerView: CAEAGLLayerView!
   
