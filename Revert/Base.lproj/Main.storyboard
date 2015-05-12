@@ -476,7 +476,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Scroll View" id="ZZz-EV-PI5">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NVF-q4-g9g"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NVF-q4-g9g">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="e6c-PC-ss8" id="woP-au-I8A"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="4ke-og-Tnc" id="BTe-ai-54D"/>
