@@ -2379,7 +2379,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="AT1-f1-sr1" id="uKw-DL-Vmr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="centerView" destination="ml3-CY-mgV" id="Xg1-va-yTB"/>
