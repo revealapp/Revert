@@ -4,7 +4,8 @@
 
 import UIKit
 
-class ControlsViewController: UICollectionViewController {
+class ControlsViewController: UICollectionViewController, SettableMasterItem {
+  var item: MasterItem?
   @IBInspectable internal var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename {
@@ -29,8 +30,9 @@ class ControlsViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    assert(self.resourceFilename != nil, "Resource file name should be set before viewDidLoad")
-
+    assert(self.resourceFilename != nil, "Resource file name should be set before `viewDidLoad`")
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    
     // Setup Keyboard Handler
     self.keyboardHandler.scrollView = self.collectionView
     self.keyboardHandler.viewController = self
@@ -45,6 +47,10 @@ class ControlsViewController: UICollectionViewController {
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView!.endEditing(true)
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
   
   override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {

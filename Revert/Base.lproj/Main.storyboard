@@ -1406,7 +1406,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Controls" id="5ho-et-l7Q">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="JUC-Wo-agP"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="JUC-Wo-agP">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="mzs-Le-LGO" id="XJP-Vk-uSP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ControlItems"/>
@@ -1857,7 +1861,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Views" id="8I7-db-1uV">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Ntl-a6-LHj"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Ntl-a6-LHj">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="QJe-hX-WOf" id="kV2-4N-Qq4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="ViewItems"/>
@@ -4259,7 +4267,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Layer Properties" id="tmc-tZ-2n3">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="xvP-EE-Ell"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="xvP-EE-Ell">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="sz2-FY-SQT" id="bgl-14-t1I"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="resourceFilename" value="LayerPropertiesItems"/>
