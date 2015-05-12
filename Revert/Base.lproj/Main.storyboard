@@ -3985,6 +3985,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="textLayerView" destination="j0I-0T-ibi" id="Dpe-rp-fS5"/>
+                                    <outlet property="titleLabel" destination="LWr-yM-owq" id="Vy8-fn-G50"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmitterLayerCell" id="rsU-Mc-V1F" customClass="CAEmitterLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4035,6 +4036,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="emitterLayerView" destination="TPD-8S-yME" id="xwb-Dn-6vj"/>
+                                    <outlet property="titleLabel" destination="lSK-G4-lkD" id="0cb-6u-dTe"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShapeLayerCell" id="TrP-g7-0OG" customClass="CAShapeLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4085,6 +4087,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="shapeLayerView" destination="kKm-jM-3tL" id="mgK-2i-bat"/>
+                                    <outlet property="titleLabel" destination="1e2-39-EsZ" id="GaO-Oa-AsL"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollLayerCell" id="Eb1-op-wWO" customClass="CAScrollLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4135,6 +4138,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="scrollLayerView" destination="5sr-T0-NYI" id="9sx-pa-El1"/>
+                                    <outlet property="titleLabel" destination="3NR-Li-Boc" id="UFg-De-dHd"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TiledLayerCell" id="SfN-Ln-8Qo" customClass="CATiledLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4185,6 +4189,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="tiledLayerView" destination="gOl-vR-iRN" id="CN3-Se-9mG"/>
+                                    <outlet property="titleLabel" destination="Ght-KC-iw6" id="XjK-jc-65P"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GradientLayerCell" id="lgk-gX-L9A" customClass="CAGradientLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4235,6 +4240,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="gradientLayerView" destination="x4b-qn-XFZ" id="D2o-l3-wRs"/>
+                                    <outlet property="titleLabel" destination="MeM-sd-5Vm" id="iLl-si-66f"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReplicatorLayerCell" id="toT-IZ-yEO" customClass="CAReplicatorLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4284,6 +4290,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="replicatorLayerView" destination="U9t-hX-9ja" id="AZB-wW-ge5"/>
+                                    <outlet property="titleLabel" destination="xej-lp-Nvb" id="pHn-IW-zXa"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAEAGLLayerCell" customModule="Revert" customModuleProvider="target">
@@ -4334,6 +4341,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="aegLayerView" destination="vyJ-Cz-PkQ" id="553-bk-mfT"/>
+                                    <outlet property="titleLabel" destination="jXE-cs-rAE" id="W9e-F2-qkI"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

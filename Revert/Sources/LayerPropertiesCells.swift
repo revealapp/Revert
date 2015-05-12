@@ -4,7 +4,7 @@
 
 import UIKit
 
-final internal class CATextLayerCell: UICollectionViewCell {
+final internal class CATextLayerCell: CollectionViewCell {
   
   @IBOutlet weak var textLayerView: CATextLayerView!
   
@@ -15,7 +15,7 @@ final internal class CATextLayerCell: UICollectionViewCell {
   }
   
   private class func configureTextLayer(textLayer: CATextLayer) {
-    textLayer.string = "I am a quite long and wordy CATextLayer string."
+    textLayer.string = "I am a quite long CATextLayer string."
     textLayer.fontSize = 20.0
     textLayer.foregroundColor = UIColor.lightGrayColor().CGColor
     textLayer.alignmentMode = kCAAlignmentCenter
@@ -24,7 +24,7 @@ final internal class CATextLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAEmitterLayerCell: UICollectionViewCell {
+final internal class CAEmitterLayerCell: CollectionViewCell {
   
   @IBOutlet weak var emitterLayerView: CAEmitterLayerView!
   
@@ -61,7 +61,7 @@ final internal class CAEmitterLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAShapeLayerCell: UICollectionViewCell {
+final internal class CAShapeLayerCell: CollectionViewCell {
   
   @IBOutlet weak var shapeLayerView: CAShapeLayerView!
   
@@ -72,7 +72,10 @@ final internal class CAShapeLayerCell: UICollectionViewCell {
   }
   
   private class func configureShapeLayer(shapeLayer: CAShapeLayer) {
-    shapeLayer.path = UIBezierPath(ovalInRect: shapeLayer.frame).CGPath
+    let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
+    let origin = CGPointMake((shapeLayer.bounds.width - minLength) / 2, 0)
+    let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
+    shapeLayer.path = UIBezierPath(ovalInRect: rect).CGPath
     shapeLayer.fillColor = UIColor.revertOrangeColor().CGColor
     shapeLayer.strokeColor = UIColor.revertLightBlackColor().CGColor
     shapeLayer.strokeStart = 0.0
@@ -87,7 +90,7 @@ final internal class CAShapeLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAScrollLayerCell: UICollectionViewCell {
+final internal class CAScrollLayerCell: CollectionViewCell {
   
   @IBOutlet weak var scrollLayerView: CAScrollLayerView!
   
@@ -104,7 +107,7 @@ final internal class CAScrollLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CATiledLayerCell: UICollectionViewCell {
+final internal class CATiledLayerCell: CollectionViewCell {
   
   @IBOutlet weak var tiledLayerView: CATiledLayerView!
   
@@ -124,7 +127,7 @@ final internal class CATiledLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAGradientLayerCell: UICollectionViewCell {
+final internal class CAGradientLayerCell: CollectionViewCell {
   
   @IBOutlet weak var gradientLayerView: CAGradientLayerView!
 
@@ -156,7 +159,7 @@ final internal class CAGradientLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAReplicatorLayerCell: UICollectionViewCell {
+final internal class CAReplicatorLayerCell: CollectionViewCell {
   
   @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
 
@@ -188,7 +191,7 @@ final internal class CAReplicatorLayerCell: UICollectionViewCell {
   }
 }
 
-final internal class CAEAGLLayerCell: UICollectionViewCell {
+final internal class CAEAGLLayerCell: CollectionViewCell {
   
   @IBOutlet weak var aegLayerView: CAEAGLLayerView!
   
