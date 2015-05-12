@@ -4,8 +4,8 @@
 
 import UIKit
 
-class SuperDeepViewController: UIViewController {
-
+class SuperDeepViewController: UIViewController, SettableMasterItem {
+  var item: MasterItem?
   @IBOutlet weak var containerView: UIView!
   
   private var wasSetup = false
@@ -69,9 +69,19 @@ class SuperDeepViewController: UIViewController {
     return horizontalConstraints + verticalConstraints
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
 
     self.setupPyramidSubviewsIfNecessary()
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }

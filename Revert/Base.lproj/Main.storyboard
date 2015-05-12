@@ -3158,7 +3158,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Super Deep" id="XNb-0V-PfJ">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="MTR-rf-mdw"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="MTR-rf-mdw">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="cKD-ZG-JZw" id="hR3-zd-HlU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="gFt-rV-fjz" id="UaT-G3-PhM"/>
