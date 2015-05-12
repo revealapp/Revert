@@ -2085,7 +2085,7 @@
         <!--Auto Layout-->
         <scene sceneID="K1c-e7-lit">
             <objects>
-                <viewController id="Ae9-a4-dBl" sceneMemberID="viewController">
+                <viewController id="Ae9-a4-dBl" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kkf-X6-llX"/>
                         <viewControllerLayoutGuide type="bottom" id="7Xj-bo-Bd6"/>
@@ -2208,7 +2208,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Auto Layout" id="IBB-fa-tPC">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="rfj-DI-bjb"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="rfj-DI-bjb">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="Ae9-a4-dBl" id="qUB-rR-5pk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
