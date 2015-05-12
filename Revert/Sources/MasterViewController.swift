@@ -22,11 +22,17 @@ class MasterViewController: UITableViewController {
     super.init(coder: aDecoder)
   }
   
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: SB.Cell.Master, bundle: nil), forCellReuseIdentifier: SB.Cell.Master)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   override func viewWillAppear(animated: Bool) {
@@ -43,6 +49,10 @@ class MasterViewController: UITableViewController {
       indexPath = sender as? NSIndexPath {
         destinationViewController.item = self.collection.itemAtIndexPath(indexPath)
     }
+  }
+  
+  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    self.tableView.reloadData()
   }
 }
 
