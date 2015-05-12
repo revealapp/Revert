@@ -64,9 +64,10 @@ extension TableViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     let label = UILabel()
     
-    label.backgroundColor = UIColor.revertCountrySectionFooterColor()
+    label.backgroundColor = UIColor.whiteColor()
     label.text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
     label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
+    label.textColor = UIColor.revertLightBlackColor()
     label.textAlignment = .Center
     return label
   }
