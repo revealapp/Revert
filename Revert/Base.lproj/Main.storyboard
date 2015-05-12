@@ -3097,7 +3097,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Transform Views" id="kra-xZ-4xS">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="puW-qw-uTx"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="puW-qw-uTx">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="34u-gx-HPd" id="bA0-z0-Tv1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
