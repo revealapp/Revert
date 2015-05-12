@@ -34,6 +34,16 @@
 	</dict>
 	<dict>
 		<key>longitude</key>
+		<real>151.773509</real>
+		<key>latitude</key>
+		<real>-32.926788</real>
+		<key>title</key>
+		<string>Newcastle</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
 		<real>174.765219</real>
 		<key>latitude</key>
 		<real>-36.855881</real>
