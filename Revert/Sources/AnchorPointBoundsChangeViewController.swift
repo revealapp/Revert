@@ -4,16 +4,11 @@
 
 import UIKit
 
-class AnchorPointBoundsChangeViewController: UIViewController {
+final internal class AnchorPointBoundsChangeViewController: UIViewController, SettableMasterItem {
   @IBOutlet weak var boundsChangeView: HairlineBorderView!
   @IBOutlet weak var anchorPointView: HairlineBorderView!
-  
-  override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
-    
-    self.animateIfNecessary()
-  }
-  
+  var item: MasterItem?
+
   private var wasAnimated = false
   
   private func animateIfNecessary() {
@@ -26,7 +21,7 @@ class AnchorPointBoundsChangeViewController: UIViewController {
     let offset: CGFloat = -25.0
     UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseInOut, animations: { () -> Void in
       self.boundsChangeView.bounds = CGRectOffset(self.boundsChangeView.bounds, offset, offset)
-    }, completion: nil)
+      }, completion: nil)
     
     // Anchor Point Testing
     let toValue = CGPoint(x: 0.25, y: 0.25)
@@ -37,5 +32,21 @@ class AnchorPointBoundsChangeViewController: UIViewController {
     basicAnimation.toValue = NSValue(CGPoint: toValue)
     self.anchorPointView.layer.addAnimation(basicAnimation, forKey: "anchorPoint")
     self.anchorPointView.layer.anchorPoint = toValue
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    self.animateIfNecessary()
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }

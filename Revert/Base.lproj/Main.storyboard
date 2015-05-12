@@ -3697,7 +3697,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Bounds Change &amp; Anchor Point" id="zNg-50-Ys6">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="58N-hx-h9a"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="58N-hx-h9a">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="NyI-qR-3G7" id="zj1-bq-3tZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
