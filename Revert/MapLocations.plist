@@ -4,6 +4,46 @@
 <array>
 	<dict>
 		<key>longitude</key>
+		<real>2.335967</real>
+		<key>title</key>
+		<string>Paris</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+		<key>latitude</key>
+		<real>48.862655</real>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>37.618762</real>
+		<key>latitude</key>
+		<real>55.754429</real>
+		<key>title</key>
+		<string>Moscow</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>126.977877</real>
+		<key>latitude</key>
+		<real>37.564828</real>
+		<key>title</key>
+		<string>Seoul</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>174.765219</real>
+		<key>latitude</key>
+		<real>-36.855881</real>
+		<key>title</key>
+		<string>Auckland</string>
+		<key>subtitle</key>
+		<string>Is the city</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
 		<real>144.9631</real>
 		<key>latitude</key>
 		<real>-37.8136</real>
@@ -14,21 +54,11 @@
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>115.8589</real>
+		<real>138.596212</real>
 		<key>latitude</key>
-		<real>-31.9522</real>
+		<real>-34.939822</real>
 		<key>title</key>
-		<string>Perth</string>
-		<key>subtitle</key>
-		<string>Is the city</string>
-	</dict>
-	<dict>
-		<key>longitude</key>
-		<real>130.8333</real>
-		<key>latitude</key>
-		<real>-12.45</real>
-		<key>title</key>
-		<string>Darwin</string>
+		<string>Adelaide</string>
 		<key>subtitle</key>
 		<string>Is the city</string>
 	</dict>
