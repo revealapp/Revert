@@ -1638,7 +1638,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Picker View" id="lpq-IL-9NC">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZME-da-cea"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZME-da-cea">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="T6q-5N-cqU" id="cUA-oM-ixM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWL-AT-WvH" userLabel="First Responder" sceneMemberID="firstResponder"/>

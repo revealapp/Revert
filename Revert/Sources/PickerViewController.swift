@@ -4,8 +4,19 @@
 
 import UIKit
 
-class PickerViewController: UIViewController {
+final internal class PickerViewController: UIViewController, SettableMasterItem {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
+  var item: MasterItem?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
+  }
 }
 
 // MARK: UIPickerViewDataSource
