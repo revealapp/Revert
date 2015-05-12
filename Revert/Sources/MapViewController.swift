@@ -5,12 +5,14 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, SettableMasterItem {
   @IBOutlet weak var mapView: MKMapView!
+  var item: MasterItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
     self.addAnnotations()
   }
   
@@ -21,6 +23,10 @@ class MapViewController: UIViewController {
     
     self.mapView.addAnnotations(annotations)
     self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 

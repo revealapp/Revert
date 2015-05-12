@@ -398,7 +398,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map View" id="ru1-BN-P8N">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="OzG-CK-fgG" id="RXM-pO-Nrm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="2U2-Tm-AjW" id="2Av-d6-PLW"/>
