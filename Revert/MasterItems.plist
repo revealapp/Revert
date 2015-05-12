@@ -12,6 +12,8 @@
 				<string>icon_TableView</string>
 				<key>segueIdentifier</key>
 				<string>ShowTableViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -20,6 +22,8 @@
 				<string>icon_CollectionView</string>
 				<key>segueIdentifier</key>
 				<string>ShowCollectionViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -28,6 +32,8 @@
 				<string>icon_ScrollView</string>
 				<key>segueIdentifier</key>
 				<string>ShowScrollViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -43,6 +49,8 @@
 				<string>icon_DefaultView</string>
 				<key>segueIdentifier</key>
 				<string>ShowDefaultsControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>resourceFilename</key>
@@ -53,6 +61,8 @@
 				<string>icon_Controls</string>
 				<key>segueIdentifier</key>
 				<string>ShowControlsControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -61,6 +71,8 @@
 				<string>icon_Bars</string>
 				<key>segueIdentifier</key>
 				<string>ShowBarsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -69,6 +81,8 @@
 				<string>icon_AlertView</string>
 				<key>segueIdentifier</key>
 				<string>ShowAlertViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -77,6 +91,8 @@
 				<string>icon_Picker</string>
 				<key>segueIdentifier</key>
 				<string>ShowPickerViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -90,6 +106,8 @@
 				<string>icon_MapView</string>
 				<key>segueIdentifier</key>
 				<string>ShowMapViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -98,6 +116,8 @@
 				<string>icon_WebView</string>
 				<key>segueIdentifier</key>
 				<string>ShowWebViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -106,6 +126,8 @@
 				<string>icon_SpriteKit</string>
 				<key>segueIdentifier</key>
 				<string>ShowSpriteKitViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -114,6 +136,8 @@
 				<string>icon_GLkit</string>
 				<key>segueIdentifier</key>
 				<string>ShowGLKViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -129,6 +153,8 @@
 				<string>ShowModalViewController</string>
 				<key>isPush</key>
 				<false/>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -142,6 +168,8 @@
 				<string>icon_Views</string>
 				<key>segueIdentifier</key>
 				<string>ShowViewsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -150,6 +178,8 @@
 				<string>icon_Autolayout</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -158,6 +188,8 @@
 				<string>icon_AutolayoutAlignment</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -166,6 +198,8 @@
 				<string>icon_AutolayoutMargin</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -174,6 +208,8 @@
 				<string>icon_AutoResizing</string>
 				<key>segueIdentifier</key>
 				<string>ShowAutoResizingMasksViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -182,6 +218,8 @@
 				<string>icon_TransformViews</string>
 				<key>segueIdentifier</key>
 				<string>ShowTransformViewsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -190,6 +228,8 @@
 				<string>icon_TransformLayers</string>
 				<key>segueIdentifier</key>
 				<string>ShowTransformLayersViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -198,6 +238,8 @@
 				<string>icon_Layerproperties</string>
 				<key>segueIdentifier</key>
 				<string>ShowLayerPropertiesViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -206,6 +248,8 @@
 				<string>icon_Squares</string>
 				<key>segueIdentifier</key>
 				<string>ShowAnchorBoundsViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -219,6 +263,8 @@
 				<string>icon_Superdeep</string>
 				<key>segueIdentifier</key>
 				<string>ShowSuperDeepViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -227,6 +273,8 @@
 				<string>icon_StressTest</string>
 				<key>segueIdentifier</key>
 				<string>ShowStressTestViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -240,6 +288,8 @@
 				<string>icon_Serialize</string>
 				<key>segueIdentifier</key>
 				<string>ShowNotSerializableViewControllerSegue</string>
+				<key>info</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>

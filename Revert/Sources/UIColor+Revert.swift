@@ -44,4 +44,8 @@ extension UIColor {
   class func revertTintColor() -> UIColor {
     return UIColor(red: 0, green: 0.70211714506149292, blue: 0.94534832239151001, alpha: 1.0)
   }
+  
+  class func revertNavigationBarBlueColor() -> UIColor {
+    return UIColor(red: 82 / 255, green: 118 / 255, blue: 249 / 255, alpha: 1)
+  }
 }

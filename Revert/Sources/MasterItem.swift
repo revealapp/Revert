@@ -4,14 +4,16 @@
 
 import Foundation
 
-struct MasterItem: Collectable {
-  internal let title: String
-  internal let iconName: String
-  internal let segueIdentifier: String
-  internal let isPush: Bool
+internal struct MasterItem: Collectable {
+  let title: String
+  let info: String
+  let iconName: String
+  let segueIdentifier: String
+  let isPush: Bool
   
   init(dictionary: [String: AnyObject]) {
     self.title = dictionary["title"] as! String
+    self.info = dictionary["info"] as! String
     self.iconName = dictionary["iconName"] as! String
     self.segueIdentifier = dictionary["segueIdentifier"] as! String
     self.isPush = dictionary["isPush"] as? Bool ?? true

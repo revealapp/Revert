@@ -14,10 +14,20 @@ class InfoViewController: UIViewController {
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var titleLabel: UILabel!
   
+  internal var item: MasterItem?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.textView.textContainerInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
+    
+    if let item = self.item {
+      self.textView.text = item.info
+      self.imageView.image = UIImage(named: item.iconName)
+      self.titleLabel.text = item.title
+    } else {
+      fatalError("Item should be set before viewDidLoad")
+    }
   }
   
   @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
