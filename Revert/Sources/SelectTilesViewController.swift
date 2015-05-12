@@ -4,18 +4,9 @@
 
 import UIKit
 
-final internal class CollectionViewController: UICollectionViewController, SettableMasterItem {
-
-  var item: MasterItem?
-  
+final class SelectTilesViewController: CollectionViewController {
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -31,15 +22,10 @@ final internal class CollectionViewController: UICollectionViewController, Setta
       self.collectionViewFlowLayout.invalidateLayout()
     }, completion: nil)
   }
-
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
 }
 
 // MARK: UICollectionViewDataSource
-
-extension CollectionViewController: UICollectionViewDataSource {
+extension SelectTilesViewController: UICollectionViewDataSource {
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -57,8 +43,7 @@ extension CollectionViewController: UICollectionViewDataSource {
 }
 
 // MARK: UICollectionViewDelegate
-
-extension CollectionViewController: UICollectionViewDelegate {
+extension SelectTilesViewController: UICollectionViewDelegate {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.revertTintColor()
   }
@@ -69,8 +54,7 @@ extension CollectionViewController: UICollectionViewDelegate {
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
-
-extension CollectionViewController: UICollectionViewDelegateFlowLayout {
+extension SelectTilesViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
     let itemWidth = floor((self.view.bounds.width - self.collectionViewFlowLayout.minimumInteritemSpacing) / 2.0)
     return CGSize(width: itemWidth, height: self.collectionViewFlowLayout.itemSize.height)

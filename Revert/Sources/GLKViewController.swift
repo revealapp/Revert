@@ -6,8 +6,7 @@ import UIKit
 import OpenGLES
 import GLKit
 
-class OpenGLViewController: GLKViewController {
-  
+final class OpenGLViewController: OGLViewController {
   private let context = EAGLContext(API: EAGLRenderingAPI.OpenGLES2)
   
   private var glView: GLKView {

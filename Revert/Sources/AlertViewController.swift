@@ -4,9 +4,7 @@
 
 import UIKit
 
-final internal class AlertViewController: UITableViewController, SettableMasterItem {
-  var item: MasterItem?
-  
+final class AlertViewController: TableViewController {
   private enum Sections: Int {
     case AlertView
     case AlertController
@@ -15,16 +13,6 @@ final internal class AlertViewController: UITableViewController, SettableMasterI
   private enum Rows: Int {
     case AlertView
     case ActionSheet
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 
@@ -95,7 +83,6 @@ extension AlertViewController {
 }
 
 // MARK: UITableViewDelegate
-
 extension AlertViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
@@ -105,7 +92,6 @@ extension AlertViewController: UITableViewDelegate {
 }
 
 // MARK: UITableViewDataSource
-
 extension AlertViewController: UITableViewDataSource {
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return NSClassFromString("UIAlertController") != nil ? 2 : 1

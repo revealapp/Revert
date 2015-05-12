@@ -4,15 +4,13 @@
 
 import UIKit
 
-final internal class TransformViewsViewController: UIViewController, SettableMasterItem {
-  
+final class TransformViewsViewController: ViewController {
   @IBOutlet weak var translateView: UIView!
   @IBOutlet weak var rotateView: UIView!
   @IBOutlet weak var scaleView: UIView!
   
   private var wasAnimated = false
-  var item: MasterItem?
-  
+
   private func animateViewsIfNecessary() {
     // Only perform this action once
     if self.wasAnimated {
@@ -32,14 +30,5 @@ final internal class TransformViewsViewController: UIViewController, SettableMas
     
     self.animateViewsIfNecessary()
   }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
 }
+

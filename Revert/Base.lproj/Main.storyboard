@@ -34,7 +34,7 @@
         <!--Arranged Views-->
         <scene sceneID="5P7-68-gkb">
             <objects>
-                <viewController id="TC2-p2-DN9" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TC2-p2-DN9" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ErB-La-4G3"/>
                         <viewControllerLayoutGuide type="bottom" id="Uxt-hp-ALN"/>
@@ -215,7 +215,7 @@
                     <navigationItem key="navigationItem" title="Arranged Views" id="1vV-de-qJx">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="4zM-9w-eXL">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="TC2-p2-DN9" id="Am2-hD-6zI"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="Ksc-TD-41L"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -227,7 +227,7 @@
         <!--Collection View-->
         <scene sceneID="D4X-ca-JVA">
             <objects>
-                <collectionViewController id="V4s-a2-462" customClass="CollectionViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="V4s-a2-462" customClass="SelectTilesViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7bY-VM-wmY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +257,7 @@
                     <navigationItem key="navigationItem" title="Collection View" id="NEq-LZ-dnr">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="seo-wV-GyD">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="V4s-a2-462" id="jsK-SB-34V"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="uRU-Kc-gHf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -278,7 +278,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1554" y="-2881"/>
+            <point key="canvasLocation" x="-1158" y="-3161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXf-1A-70U">
@@ -307,7 +307,7 @@
         <!--Table View-->
         <scene sceneID="SSy-q8-ncv">
             <objects>
-                <tableViewController id="1Hy-ss-Q90" customClass="TableViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1Hy-ss-Q90" customClass="CountriesViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pUr-dH-r7C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,7 +365,7 @@
                     <navigationItem key="navigationItem" title="Table View" id="uea-ly-xFc">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="7oA-Fr-ws3">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="1Hy-ss-Q90" id="vDJ-2o-1YD"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="IpZ-pg-9Nm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -404,7 +404,7 @@
                     <navigationItem key="navigationItem" title="Map View" id="ru1-BN-P8N">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="OzG-CK-fgG" id="RXM-pO-Nrm"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="our-SB-UtA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -486,7 +486,7 @@
                     <navigationItem key="navigationItem" title="Scroll View" id="ZZz-EV-PI5">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="NVF-q4-g9g">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="e6c-PC-ss8" id="woP-au-I8A"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="U7X-9a-vKX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -643,7 +643,7 @@
                     <navigationItem key="navigationItem" title="Bars" id="AOo-sw-j24">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="DRG-Gs-3WK">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="vVt-7j-5QX" id="rFq-WS-adG"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="mpH-Ny-qJv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1475,7 +1475,7 @@
                     <navigationItem key="navigationItem" title="Controls" id="5ho-et-l7Q">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="JUC-Wo-agP">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="mzs-Le-LGO" id="XJP-Vk-uSP"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="uaK-Ao-sI1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1525,7 +1525,7 @@
                     <navigationItem key="navigationItem" title="SpriteKit" id="zIB-ZQ-VFH">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="3g8-b8-Ppg">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="Uqe-ND-9f1" id="Dd8-aY-9Gh"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="4JA-Dr-7WI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1661,7 +1661,7 @@
                     <navigationItem key="navigationItem" title="Alert View" id="kDE-Ri-dPl">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="7LL-HU-5QN">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="gLA-bY-UPx" id="BlT-HU-uoM"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="67G-2a-8iB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1711,7 +1711,7 @@
                     <navigationItem key="navigationItem" title="Picker View" id="lpq-IL-9NC">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="ZME-da-cea">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="T6q-5N-cqU" id="cUA-oM-ixM"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="U0Q-Og-cwg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1956,7 +1956,7 @@
                     <navigationItem key="navigationItem" title="Views" id="8I7-db-1uV">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="Ntl-a6-LHj">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="QJe-hX-WOf" id="kV2-4N-Qq4"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="inZ-Rs-UxF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2019,7 +2019,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="zbC-XF-QPg" id="cMd-Jr-CJ5"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="OwL-GG-XTi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2045,7 +2045,11 @@
                         </connections>
                     </glkView>
                     <navigationItem key="navigationItem" title="OpenGL" id="mzt-zU-Sc6">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="9CI-ol-vJk"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="9CI-ol-vJk">
+                            <connections>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="dsA-dJ-D7e"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbe-YU-fS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2076,7 +2080,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FsL-9f-aCg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406" y="-3295"/>
+            <point key="canvasLocation" x="-305" y="-3167"/>
         </scene>
         <!--Master-->
         <scene sceneID="Qzv-sJ-S6S">
@@ -2127,7 +2131,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="-3295"/>
+            <point key="canvasLocation" x="575" y="-3167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l8s-8R-D1H">
@@ -2154,7 +2158,7 @@
         <!--Auto Layout-->
         <scene sceneID="K1c-e7-lit">
             <objects>
-                <viewController id="Ae9-a4-dBl" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ae9-a4-dBl" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kkf-X6-llX"/>
                         <viewControllerLayoutGuide type="bottom" id="7Xj-bo-Bd6"/>
@@ -2279,7 +2283,7 @@
                     <navigationItem key="navigationItem" title="Auto Layout" id="IBB-fa-tPC">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="rfj-DI-bjb">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="Ae9-a4-dBl" id="qUB-rR-5pk"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="hh8-91-upr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2450,7 +2454,7 @@
                     <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="AT1-f1-sr1" id="uKw-DL-Vmr"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="KGq-sa-9db"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2490,7 +2494,7 @@
         <!--Auto Layout Alignments-->
         <scene sceneID="ET9-ag-1Ke">
             <objects>
-                <viewController id="CrR-c1-A5E" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CrR-c1-A5E" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nhe-Iu-BvR"/>
                         <viewControllerLayoutGuide type="bottom" id="p6M-it-JEr"/>
@@ -2685,7 +2689,7 @@
                     <navigationItem key="navigationItem" title="Auto Layout Alignments" id="ncH-10-iZF">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="WY2-n3-XRk">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="CrR-c1-A5E" id="Rhy-S7-9mZ"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="yKn-kh-YUx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2737,7 +2741,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jk-pb-1Du" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626" y="-7654"/>
+            <point key="canvasLocation" x="5370" y="-3286"/>
         </scene>
         <!--Info-->
         <scene sceneID="41J-PG-blc">
@@ -2751,7 +2755,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTa-Ci-YGO">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iTa-Ci-YGO">
                                 <rect key="frame" x="0.0" y="64" width="600" height="52"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EmY-Sj-7S5">
@@ -2778,14 +2782,14 @@
                                     <constraint firstAttribute="trailing" secondItem="V0n-jW-TuY" secondAttribute="trailing" constant="13" id="ir5-EF-qzR"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Th-weH">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-Th-weH">
                                 <rect key="frame" x="0.0" y="116" width="600" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="1Cw-ik-Jaw" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCQ-UJ-lzL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCQ-UJ-lzL">
                                 <rect key="frame" x="0.0" y="117" width="600" height="483"/>
                                 <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. </string>
@@ -2808,7 +2812,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="t1g-of-3zj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Ncf-bX-mOM">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Ncf-bX-mOM">
                             <connections>
                                 <action selector="doneButtonTapped:" destination="4Px-36-ahp" id="QsH-M1-jFw"/>
                             </connections>
@@ -2822,7 +2826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekb-JT-57A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2443" y="-7654"/>
+            <point key="canvasLocation" x="6187" y="-3286"/>
         </scene>
         <!--Stress Test-->
         <scene sceneID="tKJ-hz-Uwn">
@@ -2856,7 +2860,7 @@
                     <navigationItem key="navigationItem" title="Stress Test" id="pOH-s1-h0z">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="Avg-6R-8pf">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="gwo-YA-zzL" id="TCd-ZA-0Fh"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="Htw-9L-l4S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2894,7 +2898,7 @@
                     <navigationItem key="navigationItem" title="Autoresizing Masks" id="naJ-ge-Ydo">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="6aA-pS-GGk" id="c97-Wd-PZO"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="t6f-hh-cmW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3168,7 +3172,7 @@
                     <navigationItem key="navigationItem" title="Transform Views" id="kra-xZ-4xS">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="puW-qw-uTx">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="34u-gx-HPd" id="bA0-z0-Tv1"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="aJQ-lc-aaA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3233,7 +3237,7 @@
                     <navigationItem key="navigationItem" title="Super Deep" id="XNb-0V-PfJ">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="MTR-rf-mdw">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="cKD-ZG-JZw" id="hR3-zd-HlU"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="fLm-bI-Y1l"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3574,7 +3578,7 @@
                     <navigationItem key="navigationItem" title="Transform Layers" id="GhJ-LU-zJP">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="NqG-fd-bSe">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="emN-Y6-Z2K" id="wkc-X0-1Wg"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="yzB-dm-YrZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3780,7 +3784,7 @@
                     <navigationItem key="navigationItem" title="Bounds Change &amp; Anchor Point" id="zNg-50-Ys6">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="58N-hx-h9a">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="NyI-qR-3G7" id="zj1-bq-3tZ"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="bOh-3j-R0P"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3876,7 +3880,7 @@
                     <navigationItem key="navigationItem" title="Not Serializable" id="5Ja-8p-JrW">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="2Pq-Jz-Y0y">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="tHf-fw-MlU" id="Nht-0b-yCo"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="ExW-pc-vTz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -4365,7 +4369,7 @@
                     <navigationItem key="navigationItem" title="Layer Properties" id="tmc-tZ-2n3">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="xvP-EE-Ell">
                             <connections>
-                                <action selector="infoButtonTapped:" destination="sz2-FY-SQT" id="bgl-14-t1I"/>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="Eyj-FJ-a1a"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -4397,7 +4401,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IyE-UL-peU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406" y="-2355"/>
+            <point key="canvasLocation" x="-1158" y="-2355"/>
         </scene>
         <!--Home-->
         <scene sceneID="yyc-w7-1uo">
@@ -4416,7 +4420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1U-hl-rEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="-2355"/>
+            <point key="canvasLocation" x="-305" y="-2347"/>
         </scene>
     </scenes>
     <resources>
@@ -4428,4 +4432,7 @@
         <image name="tab_scenes_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yKn-kh-YUx"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -4,12 +4,11 @@
 
 import UIKit
 
-final internal class TableViewController: UITableViewController, SettableMasterItem {
+final class CountriesViewController: TableViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountryDataSource
   private var refreshTimer: NSTimer?
-  var item: MasterItem?
   
   required init!(coder aDecoder: NSCoder!) {
     self.dataSource = CountryDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
@@ -23,8 +22,6 @@ final internal class TableViewController: UITableViewController, SettableMasterI
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
     
     self.tableView.dataSource = self.dataSource
     
@@ -48,15 +45,10 @@ final internal class TableViewController: UITableViewController, SettableMasterI
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     self.tableView?.reloadData()
   }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
 }
 
 // MARK : UITableViewDelegate
-
-extension TableViewController: UITableViewDelegate {
+extension CountriesViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }

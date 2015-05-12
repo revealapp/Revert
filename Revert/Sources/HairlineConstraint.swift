@@ -4,7 +4,7 @@
 
 import UIKit
 
-class HairlineConstraint: NSLayoutConstraint {
+final class HairlineConstraint: NSLayoutConstraint {
   override func awakeFromNib() {
     super.awakeFromNib()
     

@@ -4,12 +4,11 @@
 
 import UIKit
 
-final internal class TransformLayersViewController: UIViewController, SettableMasterItem {
+final class TransformLayersViewController: ViewController {
   @IBOutlet weak var yRotateView: UIView!
   @IBOutlet weak var xRotateView: UIView!
   @IBOutlet weak var zRotateView: UIView!
   @IBOutlet weak var xyRotateView: UIView!
-  var item: MasterItem?
 
   private func degreesToRadians(degrees: CGFloat) -> CGFloat {
     return degrees * CGFloat(M_PI) / 180.0
@@ -34,20 +33,11 @@ final internal class TransformLayersViewController: UIViewController, SettableMa
       self.xyRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 0.5, 0.5, 0.0)
     }, completion: nil)
   }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-  }
-  
+
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
    
     self.animateViewsIfNecessarry()
   }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
 }
+

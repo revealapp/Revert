@@ -4,7 +4,7 @@
 
 import Foundation
 
-internal struct MasterItem: Collectable {
+struct MasterItem: Collectable {
   let title: String
   let info: String
   let iconName: String

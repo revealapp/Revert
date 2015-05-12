@@ -4,8 +4,7 @@
 
 import UIKit
 
-class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
-
+final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
   private var didShowDetailViewController = false
   
   func configureSplitViewController(splitViewController: UISplitViewController) {

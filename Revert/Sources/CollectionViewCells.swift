@@ -4,12 +4,12 @@
 
 import UIKit
 
-internal class CollectionViewCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var subheadLabel: UILabel!
 }
 
-internal class TextFieldControlCell: CollectionViewCell {
+class TextFieldControlCell: CollectionViewCell {
   @IBOutlet weak var textField: UITextField!
   
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
@@ -17,8 +17,7 @@ internal class TextFieldControlCell: CollectionViewCell {
   }
 }
 
-final internal class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
-  
+final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
   override func awakeFromNib() {
     super.awakeFromNib()
     

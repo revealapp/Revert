@@ -4,9 +4,9 @@
 
 import UIKit
 
-class KeyboardHandler: NSObject {
-  internal weak var scrollView: UIScrollView?
-  internal weak var viewController: UIViewController?
+final class KeyboardHandler: NSObject {
+  weak var scrollView: UIScrollView?
+  weak var viewController: UIViewController?
   
   deinit {
     NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -23,7 +23,7 @@ class KeyboardHandler: NSObject {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
   }
   
-  internal func keyboardWillShowHideNotification(notification: NSNotification) {
+  func keyboardWillShowHideNotification(notification: NSNotification) {
     if let scrollView = self.scrollView {
       let animationDuration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
       let animationCurve = UIViewAnimationCurve(rawValue: notification.userInfo![UIKeyboardAnimationCurveUserInfoKey] as! Int)!

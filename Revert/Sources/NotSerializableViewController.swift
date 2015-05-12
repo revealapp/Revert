@@ -4,17 +4,13 @@
 
 import UIKit
 
-class NonSerializableViewController: UIViewController, SettableMasterItem {
-  var item: MasterItem?
-
+final class NonSerializableViewController: ViewController {
   @IBOutlet weak var progressView: UIProgressView!
   @IBOutlet weak var subView: UIView!
   @IBOutlet weak var slider: UISlider!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
     
     // inf
     self.slider.maximumValue = 1.0 / 0.0
@@ -25,8 +21,5 @@ class NonSerializableViewController: UIViewController, SettableMasterItem {
     // - inf
     self.subView.contentScaleFactor = -1.0 / 0.0
   }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
 }
+

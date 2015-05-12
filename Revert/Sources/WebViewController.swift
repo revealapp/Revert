@@ -5,9 +5,7 @@
 import UIKit
 import WebKit
 
-final internal class WebViewController: UIViewController, SettableMasterItem {
-  var item: MasterItem?
-
+final class WebViewController: ViewController {
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
   
   private lazy var uiWebView: UIWebView = {
@@ -59,8 +57,6 @@ final internal class WebViewController: UIViewController, SettableMasterItem {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-
     if NSClassFromString("WKWebView") == nil {
       self.navigationItem.titleView = nil
       self.navigationItem.title = NSLocalizedString("WebView", comment: "WebView title")
@@ -87,10 +83,6 @@ final internal class WebViewController: UIViewController, SettableMasterItem {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView!.removeFromSuperview()
     self.setupWebView(nextWebView)
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 

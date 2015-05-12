@@ -4,7 +4,7 @@
 
 import UIKit
 
-class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
+final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
  
   private var noOfItemsInRow: Int {
     switch UIApplication.sharedApplication().statusBarOrientation {

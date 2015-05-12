@@ -4,8 +4,7 @@
 
 import UIKit
 
-final internal class InfoViewController: UIViewController, SettableMasterItem {
-  
+final class InfoViewController: UIViewController, SettableMasterItem {
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var titleLabel: UILabel!

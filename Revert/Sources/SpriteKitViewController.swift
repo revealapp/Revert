@@ -45,17 +45,14 @@ final private class IBAScene: SKScene {
   }
 }
 
-final internal class SpriteKitViewController: UIViewController, SettableMasterItem {
-  var item: MasterItem?
+final class SpriteKitViewController: ViewController {
   private var skView: SKView {
     return self.view as! SKView
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-    
+
     // Configure the view
     self.skView.showsFPS = true
     self.skView.showsNodeCount = true
@@ -65,9 +62,5 @@ final internal class SpriteKitViewController: UIViewController, SettableMasterIt
     scene.scaleMode = .AspectFill
     
     self.skView.presentScene(scene)
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
   }
 }

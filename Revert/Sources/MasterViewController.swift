@@ -4,7 +4,7 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+final class MasterViewController: UITableViewController {
   private let cellConfigurator = MasterCellConfigurator()
   private var collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
   private var dataSource: CollectableTableViewDataSource
@@ -60,7 +60,6 @@ class MasterViewController: UITableViewController {
 }
 
 // MARK: UITableViewDelegate
-    
 extension MasterViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection.itemAtIndexPath(indexPath)

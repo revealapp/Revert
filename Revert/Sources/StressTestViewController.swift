@@ -4,19 +4,7 @@
 
 import UIKit
 
-internal final class StressTestViewController: UICollectionViewController, SettableMasterItem {
-  var item: MasterItem?
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
-  }
-}
+final class StressTestViewController: CollectionViewController { }
 
 // MARK: UICollectionViewDataSource
 extension StressTestViewController: UICollectionViewDataSource {

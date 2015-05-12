@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ModalViewController: UIViewController {
+final class ModalViewController: ViewController {
   @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
     self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
   }

@@ -4,7 +4,7 @@
 
 import MapKit
 
-class MapAnnotation: NSObject, MKAnnotation {
+final class MapAnnotation: NSObject, MKAnnotation {
   init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
     self.coordinate = coordinate
     self.title = title
@@ -24,7 +24,7 @@ class MapAnnotation: NSObject, MKAnnotation {
     super.init()
   }
   
-  internal var coordinate: CLLocationCoordinate2D
-  internal var title: String
-  internal var subtitle: String
+  let coordinate: CLLocationCoordinate2D
+  let title: String
+  let subtitle: String
 }

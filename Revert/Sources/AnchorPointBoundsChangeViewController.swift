@@ -4,10 +4,9 @@
 
 import UIKit
 
-final internal class AnchorPointBoundsChangeViewController: UIViewController, SettableMasterItem {
+final class AnchorPointBoundsChangeViewController: ViewController {
   @IBOutlet weak var boundsChangeView: HairlineBorderView!
   @IBOutlet weak var anchorPointView: HairlineBorderView!
-  var item: MasterItem?
 
   private var wasAnimated = false
   
@@ -34,19 +33,9 @@ final internal class AnchorPointBoundsChangeViewController: UIViewController, Se
     self.anchorPointView.layer.anchorPoint = toValue
   }
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    assert(self.item != nil, "Item must be set before `viewDidLoad`")
-  }
-  
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
     self.animateIfNecessary()
-  }
-  
-  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
-    self.presentInfoViewControllerWithItem(self.item!)
   }
 }

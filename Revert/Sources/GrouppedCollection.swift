@@ -4,44 +4,44 @@
 
 import Foundation
 
-protocol Collectable {
+internal protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 
 struct CollectableGroup<T: Collectable> {
-  internal let rows: [T]
-  internal let title: String?
+  let rows: [T]
+  let title: String?
   
   init(dictionary: [String: AnyObject]) {
     self.title = dictionary["title"] as? String
     self.rows = (dictionary["rows"] as! [[String: AnyObject]]).map({T(dictionary: $0)})
   }
   
-  internal subscript(i: Int) -> T {
+  subscript(i: Int) -> T {
     return self.rows[i]
   }
   
-  internal var countOfRows: Int {
+  var countOfRows: Int {
     return self.rows.count
   }
 }
 
 struct CollectableCollection<T: Collectable> {
-  internal let groups: [CollectableGroup<T>]
+  let groups: [CollectableGroup<T>]
   
   init(resourceFilename: String) {
     self.groups = self.dynamicType.collectableItemsFromRessource(resourceFilename)
   }
   
-  internal subscript(i: Int) -> CollectableGroup<T> {
+  subscript(i: Int) -> CollectableGroup<T> {
     return self.groups[i]
   }
   
-  internal var countOfGroups: Int {
+  var countOfGroups: Int {
     return self.groups.count
   }
   
-  internal func itemAtIndexPath(indexPath: NSIndexPath) -> T {
+  func itemAtIndexPath(indexPath: NSIndexPath) -> T {
     return self[indexPath.section][indexPath.row]
   }
   

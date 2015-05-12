@@ -4,7 +4,7 @@
 
 import UIKit
 
-class CollectableTableViewDataSource: NSObject, UITableViewDataSource {
+final class CollectableTableViewDataSource: NSObject, UITableViewDataSource {
   private let collection: CollectableCollection<MasterItem>
   private let cellConfigurator: MasterCellConfigurator
   
@@ -15,15 +15,15 @@ class CollectableTableViewDataSource: NSObject, UITableViewDataSource {
     super.init()
   }
   
-  internal func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return self.collection.countOfGroups
   }
   
-  internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.collection[section].countOfRows
   }
   
-  internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Master, forIndexPath: indexPath) as! MasterCell
     let item = self.collection.itemAtIndexPath(indexPath)
     
