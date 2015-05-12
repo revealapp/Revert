@@ -3499,7 +3499,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Transform Layers" id="GhJ-LU-zJP">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NqG-fd-bSe"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="NqG-fd-bSe">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="emN-Y6-Z2K" id="wkc-X0-1Wg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
