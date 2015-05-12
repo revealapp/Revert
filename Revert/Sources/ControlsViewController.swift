@@ -10,7 +10,7 @@ class ControlsViewController: UICollectionViewController, SettableMasterItem {
     didSet {
       if let resourceFilename = self.resourceFilename {
         let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)
-        self.dataSource = CollectableCollectionViewDataSource(collection: collection)
+        self.dataSource = CollectableCollectionViewDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
         self.collection = collection
       } else {
         self.collection = nil
@@ -21,12 +21,25 @@ class ControlsViewController: UICollectionViewController, SettableMasterItem {
   
   private var collection: CollectableCollection<Item>?
   private var dataSource: CollectableCollectionViewDataSource?
+  private let cellConfigurator = CollectionViewCellConfigurator()
   private let keyboardHandler = KeyboardHandler()
 
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
   
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+  
+  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    
+    coordinator.animateAlongsideTransition({ (_) in
+      self.collectionViewFlowLayout.invalidateLayout()
+      }, completion: nil)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -43,6 +56,8 @@ class ControlsViewController: UICollectionViewController, SettableMasterItem {
     // Setup Dismiss Tap Gesture
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
@@ -53,11 +68,7 @@ class ControlsViewController: UICollectionViewController, SettableMasterItem {
     self.presentInfoViewControllerWithItem(self.item!)
   }
   
-  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-    
-    coordinator.animateAlongsideTransition({ (_) in
-      self.collectionViewFlowLayout.invalidateLayout()
-    }, completion: nil)
+  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    self.collectionView?.reloadData()
   }
 }

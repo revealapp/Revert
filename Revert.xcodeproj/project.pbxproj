@@ -38,6 +38,7 @@
 		9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */; };
 		9A93ED601B017CDD00CFA5BD /* ViewController+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED5F1B017CDD00CFA5BD /* ViewController+Revert.swift */; };
 		9A93ED661B018F4A00CFA5BD /* ArrangedViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED651B018F4A00CFA5BD /* ArrangedViewsViewController.swift */; };
+		9A93ED6A1B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* Cells.swift */; };
 		9A94E3F31AD63E610005BA44 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E3F21AD63E610005BA44 /* MasterItems.plist */; };
 		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
@@ -104,6 +105,7 @@
 		9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryDataSource.swift; path = Revert/Sources/CountryDataSource.swift; sourceTree = "<group>"; };
 		9A93ED5F1B017CDD00CFA5BD /* ViewController+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Revert.swift"; path = "Revert/Sources/ViewController+Revert.swift"; sourceTree = "<group>"; };
 		9A93ED651B018F4A00CFA5BD /* ArrangedViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrangedViewsViewController.swift; path = Revert/ArrangedViewsViewController.swift; sourceTree = "<group>"; };
+		9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCellConfigurator.swift; path = Revert/Sources/CollectionViewCellConfigurator.swift; sourceTree = "<group>"; };
 		9A94E3F01AD63BFD0005BA44 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cells.swift; path = Revert/Sources/Cells.swift; sourceTree = "<group>"; };
 		9A94E3F21AD63E610005BA44 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MasterItems.plist; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */,
 				9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */,
+				9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */,
 			);
 			name = CellConfigurators;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */,
 				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
+				9A93ED6A1B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
 				9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */,

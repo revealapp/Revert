@@ -704,7 +704,7 @@
                             <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="35"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlTitleCell" id="wsb-4D-NCp">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlTitleCell" id="wsb-4D-NCp" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -758,8 +758,12 @@
                                     <constraint firstAttribute="centerY" secondItem="KGt-kw-jOb" secondAttribute="centerY" id="0RG-vV-l0h"/>
                                     <constraint firstAttribute="centerX" secondItem="KGt-kw-jOb" secondAttribute="centerX" id="Ekb-O8-Peh"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="subheadLabel" destination="enc-4k-2ZM" id="4TU-0W-9nx"/>
+                                    <outlet property="titleLabel" destination="ThI-Ia-sbg" id="rb4-PC-Vud"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlImageCell" id="sh4-bE-1pX">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlImageCell" id="sh4-bE-1pX" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -812,8 +816,12 @@
                                     <constraint firstAttribute="centerX" secondItem="rai-Od-S4x" secondAttribute="centerX" id="5zh-bW-l2A"/>
                                     <constraint firstAttribute="centerY" secondItem="rai-Od-S4x" secondAttribute="centerY" id="zF8-7T-Ibf"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="subheadLabel" destination="Asf-WB-1WZ" id="Gej-yz-c9x"/>
+                                    <outlet property="titleLabel" destination="tUG-q2-Eg8" id="39v-on-CSV"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StepperCell" id="Q2F-hV-JRH">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StepperCell" id="Q2F-hV-JRH" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -851,8 +859,11 @@
                                     <constraint firstAttribute="centerY" secondItem="fhV-Hn-eMD" secondAttribute="centerY" id="8dA-Dd-syk"/>
                                     <constraint firstAttribute="centerX" secondItem="fhV-Hn-eMD" secondAttribute="centerX" id="jOs-yq-yB9"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="yw5-SN-FZL" id="Ee0-FW-QRO"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SwitchCell" id="s1l-Fu-khN">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SwitchCell" id="s1l-Fu-khN" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -890,8 +901,11 @@
                                     <constraint firstAttribute="centerY" secondItem="lqb-fi-OSE" secondAttribute="centerY" id="n3f-FI-ftM"/>
                                     <constraint firstAttribute="centerX" secondItem="lqb-fi-OSE" secondAttribute="centerX" id="rW3-G3-FDp"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="6ls-lH-dE2" id="aKq-mn-UkO"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCell" id="eA1-Vs-lgr">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCell" id="eA1-Vs-lgr" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -932,8 +946,11 @@
                                     <constraint firstAttribute="centerX" secondItem="F88-yE-Vgw" secondAttribute="centerX" id="fah-LI-qOz"/>
                                     <constraint firstAttribute="centerY" secondItem="F88-yE-Vgw" secondAttribute="centerY" id="u6F-J1-Rzh"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="DoD-yq-9M9" id="Yhj-4Y-QIz"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageControlCell" id="Kni-Pw-ESJ">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageControlCell" id="Kni-Pw-ESJ" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -976,6 +993,9 @@
                                     <constraint firstAttribute="centerY" secondItem="tlj-53-Wpx" secondAttribute="centerY" id="0NA-De-hqL"/>
                                     <constraint firstAttribute="centerX" secondItem="tlj-53-Wpx" secondAttribute="centerX" id="xSR-9f-PXT"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="tqy-3i-FJs" id="gNm-5w-cQ8"/>
+                                </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextFieldCell" id="Dta-Xx-PQg" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1028,6 +1048,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="textField" destination="cUE-jY-zbU" id="qPa-2w-g5Z"/>
+                                    <outlet property="titleLabel" destination="qFo-tw-1ix" id="JAo-ek-ZLh"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundedTextFieldCell" id="N4E-8r-ew4" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
@@ -1080,6 +1101,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="textField" destination="FjE-NI-Faf" id="mNy-CQ-6ov"/>
+                                    <outlet property="titleLabel" destination="DNb-Rl-JVj" id="2YJ-VF-Zhx"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LineTextFieldCell" id="e93-eP-990" customClass="TextFieldControlCustomInputCell" customModule="Revert" customModuleProvider="target">
@@ -1143,7 +1165,9 @@
                                     <constraint firstItem="my4-h1-TQu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e93-eP-990" secondAttribute="top" constant="8" id="zmd-01-CDL"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="subheadLabel" destination="KIC-48-m72" id="Olr-aJ-Se0"/>
                                     <outlet property="textField" destination="6bQ-fp-AV3" id="lfC-zr-6E3"/>
+                                    <outlet property="titleLabel" destination="tKc-Ht-mza" id="SIi-8y-BEB"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BezelTextFieldCell" id="8ut-OK-HZV" customClass="TextFieldControlCustomInputCell" customModule="Revert" customModuleProvider="target">
@@ -1207,10 +1231,12 @@
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oah-Ws-5UP" secondAttribute="bottom" constant="8" id="pk4-iO-yxq"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="subheadLabel" destination="PzV-Rx-xYi" id="TZ6-Ki-nhu"/>
                                     <outlet property="textField" destination="Nzg-Er-Aak" id="1TN-Fz-LJ3"/>
+                                    <outlet property="titleLabel" destination="uaX-OU-Igi" id="2v3-Po-Lgt"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SystemButtonCell" id="xkW-8D-F8s">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SystemButtonCell" id="xkW-8D-F8s" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1255,8 +1281,11 @@
                                     <constraint firstAttribute="centerX" secondItem="pbU-XA-UWy" secondAttribute="centerX" id="5Nf-pP-wrP"/>
                                     <constraint firstAttribute="centerY" secondItem="pbU-XA-UWy" secondAttribute="centerY" id="8ad-jS-Q24"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="G2i-Ox-JmM" id="DUi-hQ-KAI"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomButtonCell" id="HgL-qC-W9P">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomButtonCell" id="HgL-qC-W9P" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1313,8 +1342,11 @@
                                     <constraint firstAttribute="centerY" secondItem="b88-Cy-baC" secondAttribute="centerY" id="jvK-Vi-nyl"/>
                                     <constraint firstAttribute="centerX" secondItem="b88-Cy-baC" secondAttribute="centerX" id="lH4-Z3-23O"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="JdO-yd-zbM" id="bpS-ty-Zkf"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailDisclosureButtonCell" id="BI1-da-OkD">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailDisclosureButtonCell" id="BI1-da-OkD" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1364,8 +1396,11 @@
                                     <constraint firstAttribute="centerY" secondItem="zfF-Tk-oT9" secondAttribute="centerY" id="5Fv-in-iic"/>
                                     <constraint firstAttribute="centerX" secondItem="zfF-Tk-oT9" secondAttribute="centerX" id="ozd-cF-3wv"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="BQl-A9-LUI" id="vdT-EY-nWu"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1414,6 +1449,9 @@
                                     <constraint firstAttribute="centerY" secondItem="5ko-7m-dJ5" secondAttribute="centerY" id="7tz-yx-5wc"/>
                                     <constraint firstAttribute="centerX" secondItem="5ko-7m-dJ5" secondAttribute="centerX" id="rtd-Ei-pK3"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="UCp-d2-xE0" id="e0K-2G-sP2"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1684,7 +1722,7 @@
                             <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="35"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextViewCell" id="oI0-lu-9AY">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextViewCell" id="oI0-lu-9AY" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1729,8 +1767,11 @@
                                     <constraint firstAttribute="centerY" secondItem="GWO-dW-5DH" secondAttribute="centerY" id="QvF-pN-pGX"/>
                                     <constraint firstAttribute="centerX" secondItem="GWO-dW-5DH" secondAttribute="centerX" id="d96-Yu-Bcp"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="KFu-q2-Ysj" id="PJQ-bx-FBH"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageViewCell" id="p9e-dp-KgB">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageViewCell" id="p9e-dp-KgB" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1772,8 +1813,11 @@
                                     <constraint firstAttribute="centerYWithinMargins" secondItem="jg8-Cp-3dU" secondAttribute="centerYWithinMargins" id="fM2-9F-1Oo"/>
                                     <constraint firstAttribute="centerXWithinMargins" secondItem="jg8-Cp-3dU" secondAttribute="centerXWithinMargins" id="nTG-AV-p2i"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="1u0-zS-ka0" id="VPr-AL-C8b"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VolumeViewCell" id="Hxt-gh-lbA">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VolumeViewCell" id="Hxt-gh-lbA" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1817,8 +1861,11 @@
                                     <constraint firstAttribute="centerY" secondItem="6aM-FL-ocG" secondAttribute="centerY" id="41W-Bf-wZY"/>
                                     <constraint firstAttribute="centerX" secondItem="6aM-FL-ocG" secondAttribute="centerX" id="p9p-SB-BjY"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="Y0U-4X-ubM" id="DAo-ah-iaP"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProgressViewCell" id="I0A-fB-ZHW">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProgressViewCell" id="I0A-fB-ZHW" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1859,8 +1906,11 @@
                                     <constraint firstAttribute="centerX" secondItem="4lA-me-DXZ" secondAttribute="centerX" id="lcT-Rd-Qt6"/>
                                     <constraint firstAttribute="centerY" secondItem="4lA-me-DXZ" secondAttribute="centerY" constant="0.5" id="o99-O0-pvE"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="p6c-xT-UEd" id="dgn-ZO-2qe"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="VeB-xG-1vG" customClass="TextFieldControlCell" customModule="Revert" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="VeB-xG-1vG" customClass="CollectionViewCell" customModule="Revert" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1881,6 +1931,9 @@
                                     <constraint firstAttribute="centerX" secondItem="2Gf-dK-rmb" secondAttribute="centerX" id="Loo-3A-87p"/>
                                     <constraint firstAttribute="centerY" secondItem="2Gf-dK-rmb" secondAttribute="centerY" id="iPr-BG-fe5"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="2Gf-dK-rmb" id="5Ek-pK-jIG"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
