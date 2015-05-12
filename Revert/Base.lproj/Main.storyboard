@@ -2417,7 +2417,7 @@
         <!--Auto Layout Alignments-->
         <scene sceneID="ET9-ag-1Ke">
             <objects>
-                <viewController id="CrR-c1-A5E" sceneMemberID="viewController">
+                <viewController id="CrR-c1-A5E" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nhe-Iu-BvR"/>
                         <viewControllerLayoutGuide type="bottom" id="p6M-it-JEr"/>
@@ -2610,7 +2610,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Auto Layout Alignments" id="ncH-10-iZF">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="WY2-n3-XRk"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="WY2-n3-XRk">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="CrR-c1-A5E" id="Rhy-S7-9mZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
