@@ -273,7 +273,6 @@
                     <toolbarItems/>
                     <connections>
                         <segue destination="aVj-m9-L3U" kind="relationship" relationship="masterViewController" id="ZKo-rw-eki"/>
-                        <segue destination="O9S-s4-ZME" kind="relationship" relationship="detailViewController" id="46P-Dq-yAk"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
@@ -506,7 +505,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.20023062825202942" green="0.67298656702041626" blue="0.93640762567520142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4387,7 +4386,4 @@
         <image name="tab_scenes_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="u6c-Af-462"/>
-    </inferredMetricsTieBreakers>
 </document>

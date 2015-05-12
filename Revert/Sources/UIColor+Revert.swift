@@ -34,6 +34,6 @@ extension UIColor {
   }
   
   class func revertTintColor() -> UIColor {
-    return UIColor(red: 82 / 255, green: 118 / 255, blue: 249 / 255, alpha: 1)
+    return UIColor(red: 53 / 255, green: 174 / 255, blue: 237 / 255, alpha: 1)
   }
 }
