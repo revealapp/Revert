@@ -2409,7 +2409,7 @@
                                     </view>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
                                         <rect key="frame" x="208" y="498" width="200" height="31"/>
-                                        <color key="tintColor" red="0.13186517357826233" green="0.83629834651947021" blue="0.76457172632217407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
                                         </constraints>
