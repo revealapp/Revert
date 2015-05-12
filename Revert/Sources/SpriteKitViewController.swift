@@ -5,7 +5,7 @@
 import UIKit
 import SpriteKit
 
-class IBAScene: SKScene {
+final private class IBAScene: SKScene {
   private lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
     
@@ -45,7 +45,8 @@ class IBAScene: SKScene {
   }
 }
 
-class SpriteKitViewController: UIViewController {
+final internal class SpriteKitViewController: UIViewController, SettableMasterItem {
+  var item: MasterItem?
   private var skView: SKView {
     return self.view as! SKView
   }
@@ -53,15 +54,20 @@ class SpriteKitViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    
     // Configure the view
     self.skView.showsFPS = true
     self.skView.showsNodeCount = true
-    
     
     // Create and configure the scene
     let scene = IBAScene(size: self.skView.bounds.size)
     scene.scaleMode = .AspectFill
     
     self.skView.presentScene(scene)
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }

@@ -1460,7 +1460,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SpriteKit" id="zIB-ZQ-VFH">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="3g8-b8-Ppg"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="3g8-b8-Ppg">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="Uqe-ND-9f1" id="Dd8-aY-9Gh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUn-hx-Zag" userLabel="First Responder" sceneMemberID="firstResponder"/>
