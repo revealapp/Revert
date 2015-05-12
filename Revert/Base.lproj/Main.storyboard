@@ -2785,7 +2785,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Stress Test" id="pOH-s1-h0z">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Avg-6R-8pf"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Avg-6R-8pf">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="gwo-YA-zzL" id="TCd-ZA-0Fh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJs-Dr-WVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
