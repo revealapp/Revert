@@ -4,9 +4,18 @@
 
 import UIKit
 
-class CollectionViewController: UICollectionViewController {
+final internal class CollectionViewController: UICollectionViewController, SettableMasterItem {
+
+  var item: MasterItem?
+  
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -21,6 +30,10 @@ class CollectionViewController: UICollectionViewController {
     coordinator.animateAlongsideTransition({ (_) in
       self.collectionViewFlowLayout.invalidateLayout()
     }, completion: nil)
+  }
+
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
 
