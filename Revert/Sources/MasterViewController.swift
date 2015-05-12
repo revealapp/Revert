@@ -52,7 +52,7 @@ class MasterViewController: UITableViewController {
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    self.tableView.reloadData()
+    self.tableView?.reloadData()
   }
 }
 

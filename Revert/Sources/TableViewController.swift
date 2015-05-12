@@ -46,7 +46,7 @@ final internal class TableViewController: UITableViewController, SettableMasterI
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    self.tableView.reloadData()
+    self.tableView?.reloadData()
   }
   
   @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
