@@ -34,7 +34,7 @@
         <!--Arranged Views-->
         <scene sceneID="5P7-68-gkb">
             <objects>
-                <viewController id="TC2-p2-DN9" sceneMemberID="viewController">
+                <viewController id="TC2-p2-DN9" customClass="BasicViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ErB-La-4G3"/>
                         <viewControllerLayoutGuide type="bottom" id="Uxt-hp-ALN"/>
@@ -213,7 +213,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Arranged Views" id="1vV-de-qJx">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="4zM-9w-eXL"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="4zM-9w-eXL">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="TC2-p2-DN9" id="Am2-hD-6zI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oP-c2-3mK" userLabel="First Responder" sceneMemberID="firstResponder"/>
