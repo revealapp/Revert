@@ -15,7 +15,7 @@ final internal class WebViewController: UIViewController, SettableMasterItem {
     webView.delegate = self
     webView.loadRequest(self.req)
     return webView
-    }()
+  }()
   
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
@@ -71,6 +71,7 @@ final internal class WebViewController: UIViewController, SettableMasterItem {
   
   override func viewDidDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
+    
     UIApplication.sharedApplication().networkActivityIndicatorVisible = false
   }
   
