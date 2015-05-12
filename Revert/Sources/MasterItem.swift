@@ -19,3 +19,7 @@ internal struct MasterItem: Collectable {
     self.isPush = dictionary["isPush"] as? Bool ?? true
   }
 }
+
+protocol SettableMasterItem: class {
+  var item: MasterItem? { get set }
+}

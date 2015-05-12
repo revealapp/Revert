@@ -34,6 +34,16 @@ class MasterViewController: UITableViewController {
 
     self.deselectSelectedRowIfNeeded()
   }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
+    
+    if let destinationNavigationController = segue.destinationViewController as? UINavigationController,
+      destinationViewController = destinationNavigationController.topViewController as? SettableMasterItem,
+      indexPath = sender as? NSIndexPath {
+        destinationViewController.item = self.collection.itemAtIndexPath(indexPath)
+    }
+  }
 }
 
 // MARK: UITableViewDelegate
@@ -41,8 +51,6 @@ class MasterViewController: UITableViewController {
 extension MasterViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection.itemAtIndexPath(indexPath)
-    if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-      self.performSegueWithIdentifier(item.segueIdentifier, sender: cell)
-    }
+    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
   }
 }
