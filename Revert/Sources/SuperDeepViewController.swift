@@ -10,7 +10,7 @@ class SuperDeepViewController: UIViewController, SettableMasterItem {
   
   private var wasSetup = false
   private var colors: [UIColor] {
-    return [UIColor.revertBlueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()]
+    return [UIColor.revertDarkblueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()]
   }
   
   private func colorForIndex(index: Int) -> UIColor {

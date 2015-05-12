@@ -17,7 +17,7 @@ extension UIViewController {
 
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
       let popover = UIPopoverController(contentViewController: infoNavigationController)
-      popover.backgroundColor = UIColor.revertNavigationBarBlueColor()
+      popover.backgroundColor = UIColor.revertTintColor()
       popover.presentPopoverFromBarButtonItem(self.navigationItem.rightBarButtonItem!, permittedArrowDirections: .Up, animated: true)
     } else {
       self.presentViewController(infoNavigationController, animated: true, completion: nil)

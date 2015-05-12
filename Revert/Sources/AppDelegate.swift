@@ -21,6 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   private class func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
-    UINavigationBar.appearance().barTintColor = UIColor.revertBlueColor()
+    UINavigationBar.appearance().barTintColor = UIColor.revertTintColor()
   }
 }

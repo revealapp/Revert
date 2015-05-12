@@ -36,9 +36,9 @@ extension MapViewController: MKMapViewDelegate {
   internal func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
     if (overlay is MKPolygon) {
       let pr = MKPolygonRenderer(overlay: overlay)
-      pr.strokeColor = UIColor.revertBlueColor().colorWithAlphaComponent(0.5)
+      pr.strokeColor = UIColor.revertDarkblueColor()
       pr.fillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)
-      pr.lineWidth = 2.0
+      pr.lineWidth = 3.0
       return pr
     }
     return nil
