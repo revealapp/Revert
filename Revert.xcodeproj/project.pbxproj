@@ -20,7 +20,7 @@
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
 		9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
-		9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */; };
+		9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */; };
 		9A463AF41ADCCE1A00350E3C /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A463AF31ADCCE1A00350E3C /* ViewItems.plist */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
 		9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */; };
@@ -84,7 +84,7 @@
 		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = Revert/Sources/ModalViewController.swift; sourceTree = "<group>"; };
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		9A2C24031AEE110C007B17CE /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
-		9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineConstraint.swift; path = Revert/Sources/AirlineConstraint.swift; sourceTree = "<group>"; };
+		9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Revert/Sources/HairlineConstraint.swift; sourceTree = "<group>"; };
 		9A463AF31ADCCE1A00350E3C /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewItems.plist; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
 		9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineBorderView.swift; path = Revert/Sources/HairlineBorderView.swift; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				9A34799A1AEDD217002103C0 /* AirlineConstraint.swift */,
+				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
 				9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */,
@@ -438,7 +438,7 @@
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
 				9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */,
-				9A34799B1AEDD217002103C0 /* AirlineConstraint.swift in Sources */,
+				9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9AFE6EBC1AE7672B00BB64F4 /* SuperDeepViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,

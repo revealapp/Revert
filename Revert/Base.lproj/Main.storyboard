@@ -71,7 +71,7 @@
                                                 <rect key="frame" x="27" y="477" width="442" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
+                                                    <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -83,7 +83,7 @@
                                                 <rect key="frame" x="27" y="18" width="442" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="pvI-5g-07b" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
+                                                    <constraint firstAttribute="height" constant="1" id="pvI-5g-07b" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -95,7 +95,7 @@
                                                 <rect key="frame" x="18" y="27" width="1" height="442"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
+                                                    <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -107,7 +107,7 @@
                                                 <rect key="frame" x="477" y="27" width="1" height="442"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1" id="I18-iO-8UK" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
+                                                    <constraint firstAttribute="width" constant="1" id="I18-iO-8UK" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2709,7 +2709,7 @@
                                 <rect key="frame" x="0.0" y="116" width="600" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="1Cw-ik-Jaw" customClass="AirlineConstraint" customModule="Revert" customModuleProvider="target"/>
+                                    <constraint firstAttribute="height" constant="1" id="1Cw-ik-Jaw" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCQ-UJ-lzL">
