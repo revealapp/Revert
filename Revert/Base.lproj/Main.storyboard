@@ -3789,7 +3789,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Not Serializable" id="5Ja-8p-JrW">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="2Pq-Jz-Y0y"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="2Pq-Jz-Y0y">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="tHf-fw-MlU" id="Nht-0b-yCo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="progressView" destination="YM5-Nn-K2H" id="a9q-bm-E1z"/>
