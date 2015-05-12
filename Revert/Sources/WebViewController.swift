@@ -69,6 +69,11 @@ final internal class WebViewController: UIViewController, SettableMasterItem {
     self.setupWebView(self.uiWebView)
   }
   
+  override func viewDidDisappear(animated: Bool) {
+    super.viewDidDisappear(animated)
+    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+  }
+  
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     
