@@ -28,6 +28,7 @@ final internal class BarsViewController: UIViewController, SettableMasterItem {
   }
   
   @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.searchBar.resignFirstResponder()
     self.presentInfoViewControllerWithItem(self.item!)
   }
 }
