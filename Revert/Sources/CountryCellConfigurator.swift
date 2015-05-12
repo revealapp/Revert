@@ -6,7 +6,10 @@ import UIKit
 
 final internal class CountryCellConfigurator {
   func configureCell(cell: CountryCell, withCountry country: Country) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = country.name
+
+    cell.subtitleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     cell.subtitleLabel.text = country.capital
   }
 }

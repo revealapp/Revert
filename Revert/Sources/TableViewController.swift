@@ -17,6 +17,10 @@ final internal class TableViewController: UITableViewController, SettableMasterI
     super.init(coder: aDecoder)
   }
   
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -26,6 +30,8 @@ final internal class TableViewController: UITableViewController, SettableMasterI
     
     self.refreshControl = UIRefreshControl()
     self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
@@ -37,6 +43,10 @@ final internal class TableViewController: UITableViewController, SettableMasterI
   
   func didLoadDummyData(timer: NSTimer) {
     self.refreshControl!.endRefreshing()
+  }
+  
+  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    self.tableView.reloadData()
   }
   
   @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
@@ -56,7 +66,7 @@ extension TableViewController: UITableViewDelegate {
     
     label.backgroundColor = UIColor.revertCountrySectionFooterColor()
     label.text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
-    label.font = UIFont.systemFontOfSize(12.0)
+    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
     label.textAlignment = .Center
     return label
   }
