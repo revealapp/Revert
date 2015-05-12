@@ -2819,7 +2819,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Autoresizing Masks" id="naJ-ge-Ydo">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="6aA-pS-GGk" id="c97-Wd-PZO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

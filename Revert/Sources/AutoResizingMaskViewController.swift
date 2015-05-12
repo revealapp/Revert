@@ -4,8 +4,8 @@
 
 import UIKit
 
-class AutoResizingMaskViewController: UIViewController {
-  
+final internal class AutoResizingMaskViewController: UIViewController, SettableMasterItem {
+  var item: MasterItem?
   @IBOutlet weak var outterView: UIView!
   
   private var viewsWereSetup = false
@@ -84,9 +84,19 @@ class AutoResizingMaskViewController: UIViewController {
     flexibleWidthHeightView.addSubview(rightFlexibleTopBottomView)
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
     self.addSubViewsIfNeeded()
+  }
+  
+  @IBAction func infoButtonTapped(sender: UIBarButtonItem) {
+    self.presentInfoViewControllerWithItem(self.item!)
   }
 }
