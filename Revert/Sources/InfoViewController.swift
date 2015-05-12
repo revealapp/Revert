@@ -8,13 +8,13 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+final internal class InfoViewController: UIViewController, SettableMasterItem {
   
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var titleLabel: UILabel!
   
-  internal var item: MasterItem?
+  var item: MasterItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
