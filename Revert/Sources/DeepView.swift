@@ -29,7 +29,7 @@ final class DeepView: UIView {
     return horizontalConstraints + verticalConstraints
   }
   
-  private class func recursiveSubviewsUpdate(view: UIView, length: CGFloat, constant: CGFloat, depth: CGFloat = 0) {
+  private class func updateSubviewsRecursively(view: UIView, length: CGFloat, constant: CGFloat, depth: CGFloat = 0) {
     if length > 2 * constant {
       // Enough space for subviews
       if view.subviews.count == 0 {
@@ -44,7 +44,7 @@ final class DeepView: UIView {
         let constraints = self.constraintsForSubview(subview, constant: constant, priority: priority)
         view.addConstraints(constraints)
       }
-      self.recursiveSubviewsUpdate(view.subviews.first as! UIView, length: length - 2 * constant, constant: constant, depth: depth + 1)
+      self.updateSubviewsRecursively(view.subviews.first as! UIView, length: length - 2 * constant, constant: constant, depth: depth + 1)
     } else if let subview = view.subviews.first as? UIView {
       subview.removeFromSuperview()
     }
@@ -68,6 +68,6 @@ final class DeepView: UIView {
 
   private func updateSubViews() {
     let length = min(self.bounds.size.width, self.bounds.size.height)
-    self.dynamicType.recursiveSubviewsUpdate(self, length: length, constant: self.subviewSpacing)
+    self.dynamicType.updateSubviewsRecursively(self, length: length, constant: self.subviewSpacing)
   }
 }
