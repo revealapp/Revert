@@ -15,6 +15,7 @@
 		9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C11B02EA7F00477E60 /* MapLocations.plist */; };
 		9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */; };
 		9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C31B02EA7F00477E60 /* ViewItems.plist */; };
+		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
@@ -81,6 +82,7 @@
 		9A0416C11B02EA7F00477E60 /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocations.plist; path = Resources/MapLocations.plist; sourceTree = "<group>"; };
 		9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LayerPropertiesItems.plist; path = Resources/LayerPropertiesItems.plist; sourceTree = "<group>"; };
 		9A0416C31B02EA7F00477E60 /* ViewItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ViewItems.plist; path = Resources/ViewItems.plist; sourceTree = "<group>"; };
+		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Revert/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				9A0416C11B02EA7F00477E60 /* MapLocations.plist */,
 				9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */,
 				9A0416C31B02EA7F00477E60 /* ViewItems.plist */,
+				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */,
 				9A6850CA1AD4A20E00ACCE29 /* LaunchScreen.xib in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
+				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */,
 				9A0416C81B02EA7F00477E60 /* Info.plist in Resources */,
@@ -475,6 +479,14 @@
 				9A0416BC1B02EA7F00477E60 /* Base */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A0416CD1B02EAB300477E60 /* Base */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 		9A6850C31AD4A20E00ACCE29 /* Main.storyboard */ = {

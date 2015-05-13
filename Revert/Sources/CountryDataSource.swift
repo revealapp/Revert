@@ -37,7 +37,7 @@ final class CountryDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
     let count = self.collection[section].countOfRows
-    return NSString(format: NSLocalizedString("tableviewcontroller.footer", comment: "TableViewController footer title"), count) as String
+    return NSString(format: NSLocalizedString("%lu Countries", comment: ""), count) as String
   }
   
   func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
