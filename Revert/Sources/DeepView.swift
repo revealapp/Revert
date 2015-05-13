@@ -49,12 +49,6 @@ final class DeepView: UIView {
       subview.removeFromSuperview()
     }
   }
-
-  override func didMoveToSuperview() {
-    super.didMoveToSuperview()
-    
-    self.updateSubViews()
-  }
   
   override func layoutSubviews() {
     super.layoutSubviews()
