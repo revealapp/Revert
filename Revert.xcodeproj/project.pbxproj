@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BB1B02EA7F00477E60 /* Localizable.strings */; };
 		9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */; };
 		9A0416C61B02EA7F00477E60 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* MasterItems.plist */; };
@@ -74,6 +75,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
 		9A0416BC1B02EA7F00477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CountriesCapitals.plist; path = Resources/CountriesCapitals.plist; sourceTree = "<group>"; };
 		9A0416BE1B02EA7F00477E60 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MasterItems.plist; path = Resources/MasterItems.plist; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
 				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
 				9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */,
+				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,
+				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				9AF1B3201AE609F200BB626B /* UIView+Revert.swift in Sources */,

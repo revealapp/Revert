@@ -1840,7 +1840,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aM-FL-ocG">
                                             <rect key="frame" x="84" y="123" width="130" height="53"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-Bd-8eQ" customClass="MPVolumeView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-Bd-8eQ" customClass="VolumeView" customModule="Revert" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="31"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -4433,6 +4433,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yKn-kh-YUx"/>
+        <segue reference="inZ-Rs-UxF"/>
     </inferredMetricsTieBreakers>
 </document>
