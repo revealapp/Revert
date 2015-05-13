@@ -5,7 +5,7 @@
 import UIKit
 
 final class DeepView: UIView {
-  private let subviewSpacing: CGFloat = 1
+  private let subviewSpacing: CGFloat = 5
   
   private class func colorForIndex(index: Int) -> UIColor {
     if index % 5 == 0 {
