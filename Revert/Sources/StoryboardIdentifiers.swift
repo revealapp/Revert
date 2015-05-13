@@ -4,17 +4,17 @@
 
 struct SB {
   struct Cell {
-    internal static let CollectionViewController = "CollectionViewControllerCell"
-    internal static let TableViewController = "TableViewControllerCell"
-    internal static let Master = "MasterCell"
-    internal static let Stress = "StressCell"
+    static let CollectionViewController = "CollectionViewControllerCell"
+    static let TableViewController = "TableViewControllerCell"
+    static let Master = "MasterCell"
+    static let Stress = "StressCell"
   }
   
   struct Segue {
-    internal static let Info = "ShowInfoViewControllerSegue"
+    static let Info = "ShowInfoViewControllerSegue"
   }
   
   struct VC {
-    internal static let Help = "HelpViewController"
+    static let Help = "HelpViewController"
   }
 }
