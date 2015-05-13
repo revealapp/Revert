@@ -12,7 +12,6 @@
 		9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */; };
 		9A0416C61B02EA7F00477E60 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* MasterItems.plist */; };
 		9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BF1B02EA7F00477E60 /* ControlItems.plist */; };
-		9A0416C81B02EA7F00477E60 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C01B02EA7F00477E60 /* Info.plist */; };
 		9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C11B02EA7F00477E60 /* MapLocations.plist */; };
 		9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */; };
 		9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C31B02EA7F00477E60 /* ViewItems.plist */; };
@@ -363,7 +362,7 @@
 		9A6850B01AD4A20E00ACCE29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
@@ -405,7 +404,6 @@
 				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */,
-				9A0416C81B02EA7F00477E60 /* Info.plist in Resources */,
 				9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
