@@ -6,7 +6,7 @@ import UIKit
 
 final class CustomIntrinsicContentSizeView: UIView {
   override func intrinsicContentSize() -> CGSize {
-    return CGSize(width: 80.0, height: 80.0)
+    return CGSize(width: 80, height: 80)
   }
 }
 
@@ -15,34 +15,45 @@ final class AutoLayoutMarginsViewController: ViewController {
   @IBOutlet weak var slider: UISlider!
   @IBOutlet weak var centerViewWidthConstraint: NSLayoutConstraint!
   @IBOutlet weak var containerView: UIView!
-
-  private let interSquareSpacing: CGFloat = 40
+  @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     if self.centerView.respondsToSelector("layoutMargins") {
-      self.slider.minimumValue = Float(self.centerView.layoutMargins.top)
-      self.slider.value = self.slider.minimumValue
-      self.slider.maximumValue = self.slider.minimumValue + 100.0
+      self.slider.value = 0
+      self.slider.minimumValue = 0
+      self.slider.maximumValue = 100
+      self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    } else {
+      self.slider.hidden = true
+      self.containerViewBottomConstraint.constant = 0
     }
   }
   
+  private var lastUpdateSquaresWidthSize: CGSize?
+
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
-    let spacingWidth = (min(self.containerView.frame.width, self.containerView.frame.height) - (2 * self.interSquareSpacing)) / 3
-    self.centerViewWidthConstraint.constant = spacingWidth
+    if self.containerView.bounds.size != self.lastUpdateSquaresWidthSize {
+      self.updateSquareWidths()
+      self.lastUpdateSquaresWidthSize = self.containerView.bounds.size
+    }
   }
   
-  private var hasDisplayedHelp = false
+  private let interSquareSpacing: CGFloat = 20
+
+  private func updateSquareWidths() {
+    let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
+    let centerWidth = (minDistance - (4 * self.interSquareSpacing)) / 3
+    self.centerViewWidthConstraint.constant = centerWidth
+  }
   
   @IBAction func sliderValueChanged(sender: UISlider) {
     if self.centerView.respondsToSelector("layoutMargins") {
       let margin = CGFloat(sender.value)
       self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
-    } else if self.hasDisplayedHelp == false {
-      self.hasDisplayedHelp = true
     }
   }
 }

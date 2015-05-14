@@ -2328,13 +2328,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="490"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                        <rect key="frame" x="240" y="208" width="120" height="120"/>
+                                        <rect key="frame" x="260" y="205" width="80" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
-                                                <rect key="frame" x="8" y="8" width="104" height="104"/>
+                                                <rect key="frame" x="8" y="8" width="64" height="64"/>
                                                 <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2346,8 +2346,8 @@
                                         <color key="backgroundColor" red="0.8279539942741394" green="1" blue="0.29803842306137085" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Center View"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="2Bq-yh-a8A"/>
                                             <constraint firstItem="ebx-85-dhz" firstAttribute="top" secondItem="ml3-CY-mgV" secondAttribute="topMargin" id="56t-fJ-sbi"/>
+                                            <constraint firstAttribute="width" constant="80" id="7h9-Sy-hh0"/>
                                             <constraint firstItem="ebx-85-dhz" firstAttribute="leading" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" id="CMK-lM-LAv"/>
                                             <constraint firstAttribute="width" secondItem="ml3-CY-mgV" secondAttribute="height" multiplier="1:1" id="Ce5-60-ts5"/>
                                             <constraint firstItem="ebx-85-dhz" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="Jny-xE-9qn"/>
@@ -2360,7 +2360,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                        <rect key="frame" x="384" y="200" width="120" height="120"/>
+                                        <rect key="frame" x="364" y="197" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Right View"/>
                                         <constraints>
@@ -2373,7 +2373,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                        <rect key="frame" x="248" y="352" width="120" height="120"/>
+                                        <rect key="frame" x="268" y="309" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Bottom View"/>
                                         <constraints>
@@ -2386,7 +2386,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                        <rect key="frame" x="96" y="216" width="120" height="120"/>
+                                        <rect key="frame" x="156" y="213" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Left View"/>
                                         <constraints>
@@ -2399,7 +2399,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert" customModuleProvider="target">
-                                        <rect key="frame" x="232" y="64" width="120" height="120"/>
+                                        <rect key="frame" x="252" y="101" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.42200243473052979" green="0.76358240842819214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Top View"/>
                                         <constraints>
@@ -2411,39 +2411,39 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
-                                        <rect key="frame" x="208" y="498" width="200" height="31"/>
-                                        <color key="tintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
-                                        </constraints>
-                                        <connections>
-                                            <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
-                                        </connections>
-                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="ml3-CY-mgV" secondAttribute="centerY" id="67p-Qk-XfP"/>
                                     <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
-                                    <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" constant="-8" id="hIa-C0-7r6"/>
-                                    <constraint firstAttribute="bottom" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="8" id="u2L-8k-eXJ"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
+                                <rect key="frame" x="200" y="562" width="200" height="31"/>
+                                <color key="tintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="46" id="3uA-BM-GyP"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="Yk3-Jv-ONN"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="8" id="iA7-FF-0LT"/>
                             <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
+                            <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" id="nPs-kx-9uS"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
@@ -2459,9 +2459,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="centerView" destination="ml3-CY-mgV" id="Xg1-va-yTB"/>
-                        <outlet property="centerViewWidthConstraint" destination="2Bq-yh-a8A" id="vlf-Cz-osf"/>
+                        <outlet property="centerView" destination="ml3-CY-mgV" id="sST-GT-cHJ"/>
+                        <outlet property="centerViewWidthConstraint" destination="7h9-Sy-hh0" id="JGP-RS-YsJ"/>
                         <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
+                        <outlet property="containerViewBottomConstraint" destination="3uA-BM-GyP" id="P9P-E0-cGD"/>
                         <outlet property="slider" destination="rfO-2Q-Zto" id="jfc-Kf-F0d"/>
                     </connections>
                 </viewController>
@@ -4443,6 +4444,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Htw-9L-l4S"/>
+        <segue reference="KGq-sa-9db"/>
     </inferredMetricsTieBreakers>
 </document>
