@@ -8,11 +8,15 @@ final class MasterViewController: UITableViewController {
   private let cellConfigurator = MasterCellConfigurator()
   private var collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
   private var dataSource: CollectableTableViewDataSource
+  private var currentDetailIndexPath: NSIndexPath?
   
   private func deselectSelectedRowIfNeeded() {
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
       return
     }
+    
+    // Deselects the selected cell on phones to fix the selection state when interactively panning
+    // from the edge of the screen.
     if let selectedIndexPath = self.tableView.indexPathForSelectedRow() {
       self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
     }
@@ -35,6 +39,7 @@ final class MasterViewController: UITableViewController {
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: SB.Cell.Master, bundle: nil), forCellReuseIdentifier: SB.Cell.Master)
     
+    // Setup dynamic type notifications.
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
@@ -47,6 +52,7 @@ final class MasterViewController: UITableViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
     
+    // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
     if let destinationNavigationController = segue.destinationViewController as? UINavigationController,
       destinationViewController = destinationNavigationController.topViewController as? SettableMasterItem,
       indexPath = sender as? NSIndexPath {
@@ -55,6 +61,7 @@ final class MasterViewController: UITableViewController {
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    // Reload tableview to update the cell font sizes.
     self.tableView?.reloadData()
   }
 }
@@ -63,6 +70,16 @@ final class MasterViewController: UITableViewController {
 extension MasterViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection.itemAtIndexPath(indexPath)
-    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+    
+    // Only perform segue if the selected item isn't the one currently selected.
+    if indexPath != self.currentDetailIndexPath {
+      self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+      
+      // The current detailed screen should only be saved for iPads as the splitview controller
+      // behaves differently on phones.
+      if UIDevice.currentDevice().userInterfaceIdiom == .Pad && item.isPush {
+        self.currentDetailIndexPath = indexPath
+      }
+    }
   }
 }
