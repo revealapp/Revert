@@ -45,7 +45,7 @@ extension SelectTilesViewController: UICollectionViewDataSource {
 // MARK: UICollectionViewDelegate
 extension SelectTilesViewController: UICollectionViewDelegate {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.revertTintColor()
+    collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.graySelectionColor()
   }
   
   override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
