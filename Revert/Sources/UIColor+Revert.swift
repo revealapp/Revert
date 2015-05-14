@@ -6,23 +6,23 @@ import UIKit
 
 extension UIColor {
   class func whitesmokeColor() -> UIColor {
-    return UIColor(red: 254.0 / 255.0, green: 254.0 / 255.0, blue: 254.0 / 255.0, alpha: 1.0)
+    return UIColor(red: 254 / 255, green: 254 / 255, blue: 254 / 255, alpha: 1)
   }
   
   class func awesgreenColor() -> UIColor {
-    return UIColor(red: 46.0 / 255.0, green: 213.0 / 255.0, blue: 195.0 / 255.0, alpha: 1.0)
+    return UIColor(red: 46 / 255, green: 213 / 255, blue: 195 / 255, alpha: 1)
   }
   
   class func revertOrangeColor() -> UIColor {
-    return UIColor(red: 0.992, green: 0.663, blue: 0.161, alpha: 1.0)
+    return UIColor(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
   }
   
   class func revertPinkColor() -> UIColor {
-    return UIColor(red:0.81, green:0.325, blue:1.0, alpha:1.0)
+    return UIColor(red:0.81, green:0.325, blue:1, alpha:1)
   }
 
   class func revertDarkblueColor() -> UIColor {
-    return UIColor(red:0.217, green:0.372, blue:1.0, alpha:1.0)
+    return UIColor(red:0.217, green:0.372, blue:1, alpha:1)
   }
   
   class func revertLightBlackColor() -> UIColor {
@@ -30,7 +30,7 @@ extension UIColor {
   }
   
   class func revertCountrySectionFooterColor() -> UIColor {
-    return UIColor(red: 0.917, green: 0.917, blue: 0.925, alpha: 1.0)
+    return UIColor(red: 0.917, green: 0.917, blue: 0.925, alpha: 1)
   }
   
   class func revertTintColor() -> UIColor {
