@@ -12,6 +12,6 @@ final class HairlineConstraint: NSLayoutConstraint {
   }
   
   private class var constantValue: CGFloat {
-    return 1.0 / UIScreen.mainScreen().scale
+    return 1 / UIScreen.mainScreen().scale
   }
 }

@@ -13,13 +13,13 @@ final class NonSerializableViewController: ViewController {
     super.viewDidLoad()
     
     // inf
-    self.slider.maximumValue = 1.0 / 0.0
+    self.slider.maximumValue = 1 / 0
     
     // nan
-    self.progressView.contentScaleFactor = 0.0 / 0.0
+    self.progressView.contentScaleFactor = 0 / 0
     
     // - inf
-    self.subView.contentScaleFactor = -1.0 / 0.0
+    self.subView.contentScaleFactor = -1 / 0
   }
 }
 

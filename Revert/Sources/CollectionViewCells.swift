@@ -35,7 +35,7 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
   }
 
   private var textFieldInputAccessoryView: UIView {
-    let size = CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 44.0)
+    let size = CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 44)
     let toolBar = UIToolbar(frame: CGRect(origin: CGPointZero, size: size))
     let doneBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "doneButtonTapped:")
     let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)

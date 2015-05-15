@@ -39,7 +39,7 @@ final class KeyboardHandler: NSObject {
       contentInsets.bottom = bottomInset
       scrollIndicatorInsets.bottom = bottomInset
       
-      UIView.animateWithDuration(animationDuration, delay: 0.0, options: animationOptions, animations: {
+      UIView.animateWithDuration(animationDuration, delay: 0, options: animationOptions, animations: {
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = scrollIndicatorInsets
         }, completion: nil)

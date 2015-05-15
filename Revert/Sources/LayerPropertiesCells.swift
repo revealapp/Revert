@@ -15,7 +15,7 @@ final class CATextLayerCell: CollectionViewCell {
   
   private class func configureTextLayer(textLayer: CATextLayer) {
     textLayer.string = "I am a quite long CATextLayer string."
-    textLayer.fontSize = 20.0
+    textLayer.fontSize = 20
     textLayer.foregroundColor = UIColor.lightGrayColor().CGColor
     textLayer.alignmentMode = kCAAlignmentCenter
     textLayer.truncationMode = kCATruncationMiddle
@@ -34,8 +34,8 @@ final class CAEmitterLayerCell: CollectionViewCell {
   
   private class func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
-    emitterLayer.emitterZPosition = 5.0
-    emitterLayer.emitterSize = CGSize(width: 1.0, height: 1.0)
+    emitterLayer.emitterZPosition = 5
+    emitterLayer.emitterSize = CGSize(width: 1, height: 1)
     emitterLayer.emitterShape = kCAEmitterLayerSphere
     emitterLayer.emitterDepth = 1.9
     emitterLayer.emitterShape = kCAEmitterLayerPoint
@@ -75,14 +75,14 @@ final class CAShapeLayerCell: CollectionViewCell {
     shapeLayer.path = UIBezierPath(ovalInRect: rect).CGPath
     shapeLayer.fillColor = UIColor.revertOrangeColor().CGColor
     shapeLayer.strokeColor = UIColor.revertLightBlackColor().CGColor
-    shapeLayer.strokeStart = 0.0
-    shapeLayer.strokeEnd = 1.0
+    shapeLayer.strokeStart = 0
+    shapeLayer.strokeEnd = 1
     shapeLayer.fillRule = kCAFillRuleEvenOdd
-    shapeLayer.lineWidth = 2.0
-    shapeLayer.miterLimit = 5.0
+    shapeLayer.lineWidth = 2
+    shapeLayer.miterLimit = 5
     shapeLayer.lineCap = kCALineCapRound
     shapeLayer.lineJoin = kCALineCapRound
-    shapeLayer.lineDashPhase = 1.0
+    shapeLayer.lineDashPhase = 1
     shapeLayer.lineDashPattern = [1, 3, 4, 2]
   }
 }
@@ -99,7 +99,7 @@ final class CAScrollLayerCell: CollectionViewCell {
   private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertDarkblueColor().CGColor
-    scrollLayer.cornerRadius = 5.0
+    scrollLayer.cornerRadius = 5
   }
 }
 
@@ -116,8 +116,8 @@ final class CATiledLayerCell: CollectionViewCell {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
     tiledLayer.tileSize = tiledLayer.bounds.size
-    tiledLayer.cornerRadius = 5.0
-    tiledLayer.borderWidth = 1.0
+    tiledLayer.cornerRadius = 5
+    tiledLayer.borderWidth = 1
     tiledLayer.borderColor = UIColor.revertLightBlackColor().CGColor
   }
 }
@@ -133,22 +133,22 @@ final class CAGradientLayerCell: CollectionViewCell {
   
   private class func configureGradientLayer(gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
-    gradientLayer.locations = [0.0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1.0]
-    gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-    gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
-    gradientLayer.cornerRadius = 5.0
+    gradientLayer.locations = [0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1]
+    gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+    gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+    gradientLayer.cornerRadius = 5
     gradientLayer.colors = [
-      UIColor(red: 0.003, green: 0.043, blue: 0.341, alpha: 1.0).CGColor,
-      UIColor(red: 0.333, green: 0.000, blue: 0.533, alpha: 1.0).CGColor,
-      UIColor(red: 0.611, green: 0.305, blue: 0.572, alpha: 1.0).CGColor,
-      UIColor(red: 0.894, green: 0.611, blue: 0.611, alpha: 1.0).CGColor,
-      UIColor(red: 1.000, green: 0.733, blue: 0.619, alpha: 1.0).CGColor,
-      UIColor(red: 1.000, green: 0.866, blue: 0.517, alpha: 1.0).CGColor,
+      UIColor(red: 0.003, green: 0.043, blue: 0.341, alpha: 1).CGColor,
+      UIColor(red: 0.333, green: 0.000, blue: 0.533, alpha: 1).CGColor,
+      UIColor(red: 0.611, green: 0.305, blue: 0.572, alpha: 1).CGColor,
+      UIColor(red: 0.894, green: 0.611, blue: 0.611, alpha: 1).CGColor,
+      UIColor(red: 1.000, green: 0.733, blue: 0.619, alpha: 1).CGColor,
+      UIColor(red: 1.000, green: 0.866, blue: 0.517, alpha: 1).CGColor,
       UIColor.whiteColor().CGColor,
-      UIColor(red: 0.894, green: 1.000, blue: 0.996, alpha: 1.0).CGColor,
-      UIColor(red: 0.784, green: 1.000, blue: 0.996, alpha: 1.0).CGColor,
-      UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1.0).CGColor,
-      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1.0).CGColor
+      UIColor(red: 0.894, green: 1.000, blue: 0.996, alpha: 1).CGColor,
+      UIColor(red: 0.784, green: 1.000, blue: 0.996, alpha: 1).CGColor,
+      UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1).CGColor,
+      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1).CGColor
     ]
   }
 }
@@ -163,9 +163,9 @@ final class CAReplicatorLayerCell: CollectionViewCell {
   }
   
   private class func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
-    let circleWidth: CGFloat = 20.0
-    let circlePadding: CGFloat = 10.0
-    let circleRect = CGRect(x: circlePadding / 2.0, y: replicatorLayer.bounds.midY - circleWidth / 2.0, width: circleWidth, height: circleWidth)
+    let circleWidth: CGFloat = 20
+    let circlePadding: CGFloat = 10
+    let circleRect = CGRect(x: circlePadding / 2, y: replicatorLayer.bounds.midY - circleWidth / 2, width: circleWidth, height: circleWidth)
     let circleLayer = CAShapeLayer()
     
     circleLayer.path = UIBezierPath(ovalInRect: circleRect).CGPath
@@ -173,8 +173,8 @@ final class CAReplicatorLayerCell: CollectionViewCell {
     
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
-    replicatorLayer.instanceDelay = 1.0
-    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(circleWidth + circlePadding / 2.0, 0.0, 0.0)
+    replicatorLayer.instanceDelay = 1
+    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(circleWidth + circlePadding / 2, 0, 0)
     replicatorLayer.instanceColor = UIColor.redColor().CGColor
     replicatorLayer.instanceRedOffset = 0.2
     replicatorLayer.instanceGreenOffset = 0.3
@@ -194,8 +194,8 @@ final class CAEAGLLayerCell: CollectionViewCell {
   }
   
   private class func configureAeglLayer(aeglLayer: CAEAGLLayer) {
-    aeglLayer.cornerRadius = 5.0
-    aeglLayer.borderWidth = 1.0
+    aeglLayer.cornerRadius = 5
+    aeglLayer.borderWidth = 1
     aeglLayer.borderColor = UIColor.revertLightBlackColor().CGColor
   }
 }

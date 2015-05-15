@@ -17,7 +17,7 @@ final private class IBAScene: SKScene {
   
   private func addSpaceshipAtLocation(location: CGPoint) {
     let spaceShip = SKSpriteNode(imageNamed: "spritekit_reveal")
-    let action = SKAction.rotateByAngle(CGFloat(M_PI), duration: 1.0)
+    let action = SKAction.rotateByAngle(CGFloat(M_PI), duration: 1)
     
     spaceShip.position = location
     spaceShip.runAction(SKAction.repeatActionForever(action))

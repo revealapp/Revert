@@ -35,7 +35,7 @@ final class CountriesViewController: TableViewController {
     self.refreshTimer?.invalidate()
 
     // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
-    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
+    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
   }
   
   func didLoadDummyData(timer: NSTimer) {

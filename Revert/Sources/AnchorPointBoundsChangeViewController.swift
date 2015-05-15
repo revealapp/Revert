@@ -17,15 +17,15 @@ final class AnchorPointBoundsChangeViewController: ViewController {
     self.wasAnimated = true
     
     // Bounds Change testing
-    let offset: CGFloat = -25.0
-    UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseInOut, animations: { () -> Void in
+    let offset: CGFloat = -25
+    UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
       self.boundsChangeView.bounds = CGRectOffset(self.boundsChangeView.bounds, offset, offset)
-      }, completion: nil)
+    }, completion: nil)
     
     // Anchor Point Testing
     let toValue = CGPoint(x: 0.25, y: 0.25)
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
-    basicAnimation.duration = 1.0
+    basicAnimation.duration = 1
     basicAnimation.fromValue = NSValue(CGPoint: self.anchorPointView.layer.anchorPoint)
     basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
     basicAnimation.toValue = NSValue(CGPoint: toValue)

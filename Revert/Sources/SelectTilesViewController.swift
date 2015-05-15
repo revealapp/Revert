@@ -56,7 +56,7 @@ extension SelectTilesViewController: UICollectionViewDelegate {
 // MARK: UICollectionViewDelegateFlowLayout
 extension SelectTilesViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    let itemWidth = floor((self.view.bounds.width - self.collectionViewFlowLayout.minimumInteritemSpacing) / 2.0)
+    let itemWidth = floor((self.view.bounds.width - self.collectionViewFlowLayout.minimumInteritemSpacing) / 2)
     return CGSize(width: itemWidth, height: self.collectionViewFlowLayout.itemSize.height)
   }
 }

@@ -6,6 +6,6 @@ import UIKit
 
 final class AlignmentInsetView: UIView {
   override func alignmentRectInsets() -> UIEdgeInsets {
-    return UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
   }
 }

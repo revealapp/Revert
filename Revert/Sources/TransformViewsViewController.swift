@@ -18,9 +18,9 @@ final class TransformViewsViewController: ViewController {
     }
     self.wasAnimated = true
     
-    UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseInOut, animations: { () -> Void in
-      self.translateView.transform = CGAffineTransformMakeTranslation(-20.0, 20.0)
-      self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15.0 * M_PI / 180.0))
+    UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
+      self.translateView.transform = CGAffineTransformMakeTranslation(-20, 20)
+      self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15 * M_PI / 180))
       self.scaleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
       }, completion: nil)
   }
