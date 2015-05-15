@@ -11,9 +11,11 @@ final class MasterCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
 
-    self.backgroundView = UIView()
-    self.selectedBackgroundView = UIView()
-    self.selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      self.backgroundView = UIView()
+      self.selectedBackgroundView = UIView()
+      self.selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
+    }
   }
 }
 
