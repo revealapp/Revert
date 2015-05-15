@@ -4,8 +4,21 @@
 
 import UIKit
 
+
+final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
+  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+    return true
+  }
+  
+  override func prepareLayout() {
+    super.prepareLayout()
+    
+    let itemWidth = floor((self.collectionView!.bounds.width - self.minimumInteritemSpacing) / 2)
+    self.itemSize = CGSize(width: itemWidth, height: self.itemSize.height)
+  }
+}
+
 final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
- 
   private var noOfItemsInRow: Int {
     switch UIApplication.sharedApplication().statusBarOrientation {
     case .Portrait, .PortraitUpsideDown, .Unknown:
@@ -17,10 +30,6 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
   }
   
-  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
-    return true
-  }
-
   private var horizontalSectionInsets: CGFloat {
     return self.sectionInset.left + self.sectionInset.right
   }
@@ -31,23 +40,11 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     return floor((itemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
   }
   
-  override var itemSize: CGSize {
-    get {
-      return CGSize(width: self.itemWidth, height: self.itemWidth)
-    }
-    set {
-      super.itemSize = newValue
-    }
-  }
-  
-  override var minimumLineSpacing: CGFloat {
-    get {
-      // Minimum Line Spacing must be equal to the real interItemSpacing.
-      let separatorsWidth = self.collectionView!.bounds.width - (self.itemWidth * CGFloat(self.noOfItemsInRow)) - self.horizontalSectionInsets
-      return floor(separatorsWidth / CGFloat(self.noOfItemsInRow - 1))
-    }
-    set {
-      super.minimumLineSpacing = newValue
-    }
+  override func prepareLayout() {
+    super.prepareLayout()
+
+    self.itemSize = CGSize(width: self.itemWidth, height: self.itemWidth)
+    let separatorsWidth = self.collectionView!.bounds.width - (self.itemWidth * CGFloat(self.noOfItemsInRow)) - self.horizontalSectionInsets
+    self.minimumLineSpacing = floor(separatorsWidth / CGFloat(self.noOfItemsInRow - 1))
   }
 }

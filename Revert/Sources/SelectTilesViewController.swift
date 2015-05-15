@@ -14,14 +14,6 @@ final class SelectTilesViewController: CollectionViewController {
     
     self.collectionView!.flashScrollIndicators()
   }
-  
-  override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
-    super.willRotateToInterfaceOrientation(toInterfaceOrientation, duration: duration)
-    
-    UIView.animateWithDuration(duration) {
-      self.collectionViewFlowLayout.invalidateLayout()
-    }
-  }
 }
 
 // MARK: UICollectionViewDataSource
@@ -50,13 +42,5 @@ extension SelectTilesViewController: UICollectionViewDelegate {
   
   override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
     collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.whitesmokeColor()
-  }
-}
-
-// MARK: UICollectionViewDelegateFlowLayout
-extension SelectTilesViewController: UICollectionViewDelegateFlowLayout {
-  func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    let itemWidth = floor((self.view.bounds.width - self.collectionViewFlowLayout.minimumInteritemSpacing) / 2)
-    return CGSize(width: itemWidth, height: self.collectionViewFlowLayout.itemSize.height)
   }
 }

@@ -31,14 +31,6 @@ final class ControlsViewController: CollectionViewController {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
   
-  override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
-    super.willRotateToInterfaceOrientation(toInterfaceOrientation, duration: duration)
-    
-    UIView.animateWithDuration(duration) {
-      self.collectionViewFlowLayout.invalidateLayout()
-    }
-  }
-
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -59,7 +51,7 @@ final class ControlsViewController: CollectionViewController {
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView!.endEditing(true)
+    self.collectionView?.endEditing(true)
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
