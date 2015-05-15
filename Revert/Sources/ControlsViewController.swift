@@ -31,12 +31,12 @@ final class ControlsViewController: CollectionViewController {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
   
-  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-    super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+  override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+    super.willRotateToInterfaceOrientation(toInterfaceOrientation, duration: duration)
     
-    coordinator.animateAlongsideTransition({ (_) in
+    UIView.animateWithDuration(duration) {
       self.collectionViewFlowLayout.invalidateLayout()
-      }, completion: nil)
+    }
   }
 
   override func viewDidLoad() {
