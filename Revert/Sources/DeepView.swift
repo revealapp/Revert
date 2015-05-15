@@ -51,9 +51,9 @@ final class DeepView: UIView {
   }
   
   override func layoutSubviews() {
-    super.layoutSubviews()
-    
     self.updateSubViews()
+
+    super.layoutSubviews()
   }
   
   override class func requiresConstraintBasedLayout() -> Bool {

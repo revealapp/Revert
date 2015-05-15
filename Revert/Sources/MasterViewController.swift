@@ -53,8 +53,7 @@ final class MasterViewController: UITableViewController {
     super.prepareForSegue(segue, sender: sender)
     
     // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
-    if let destinationNavigationController = segue.destinationViewController as? UINavigationController,
-      destinationViewController = destinationNavigationController.topViewController as? SettableMasterItem,
+    if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableMasterItem,
       indexPath = sender as? NSIndexPath {
         destinationViewController.item = self.collection.itemAtIndexPath(indexPath)
     }

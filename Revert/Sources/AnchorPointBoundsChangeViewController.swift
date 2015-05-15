@@ -40,8 +40,8 @@ final class AnchorPointBoundsChangeViewController: ViewController {
     self.animateIfNecessary()
   }
   
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
     
     let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 2
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 200)

@@ -32,8 +32,8 @@ final class TransformViewsViewController: ViewController {
     self.animateViewsIfNecessary()
   }
   
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
 
     let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 3
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 150)
