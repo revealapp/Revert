@@ -8,6 +8,7 @@ struct SB {
     static let TableViewController = "TableViewControllerCell"
     static let Master = "MasterCell"
     static let Stress = "StressCell"
+    static let Alert = "AlertCell"
   }
   
   struct Segue {

@@ -5,7 +5,7 @@
 import UIKit
 
 final class CountryCellConfigurator {
-  func configureCell(cell: CountryCell, withCountry country: Country) {
+  func configureCell(cell: BasicCell, withCountry country: Country) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = country.name
 

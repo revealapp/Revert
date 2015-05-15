@@ -5,14 +5,37 @@
 import UIKit
 
 final class AlertViewController: TableViewController {
-  private enum Sections: Int {
-    case AlertView
-    case AlertController
+  private var collection = CollectableCollection<Item>(resourceFilename: "AlertItems")
+  private var dataSource: AlertDataSource
+  private let cellConfigurator = BasicCellConfigurator()
+
+  private enum Identifier: String {
+    case AlertView = "alertview"
+    case ActionSheet = "actionsheet"
+    case AlertController = "alertcontroller"
+    case ActionController = "actioncontroller"
   }
   
-  private enum Rows: Int {
-    case AlertView
-    case ActionSheet
+  required init!(coder aDecoder: NSCoder!) {
+    self.dataSource = AlertDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    
+    super.init(coder: aDecoder)
+  }
+  
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    self.tableView.dataSource = self.dataSource
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+  }
+
+  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    self.tableView?.reloadData()
   }
 }
 
@@ -66,18 +89,18 @@ extension AlertViewController {
     actionSheet.showInView(fromView)
   }
   
-  private func displayCorrespondingAlertForSection(section: Sections, row: Rows, fromView: UIView) {
-    switch section {
-    case .AlertView where row == .AlertView:
+  private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
+    switch identifier {
+    case .AlertView:
       self.displayAlertView()
       break;
       
-    case .AlertView where row == .ActionSheet:
+    case .ActionSheet:
       self.displayActionSheetFromView(fromView)
       break;
       
     default:
-      self.displayAlertControllerForWithStyle(row == .AlertView ? .Alert : .ActionSheet, fromView: fromView)
+      self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
     }
   }
 }
@@ -86,15 +109,9 @@ extension AlertViewController {
 extension AlertViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
-    self.displayCorrespondingAlertForSection(Sections(rawValue: indexPath.section)!, row: Rows(rawValue: indexPath.row)!, fromView: cell)
+    let item = self.collection.itemAtIndexPath(indexPath)
+    self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
+    
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }
-
-// MARK: UITableViewDataSource
-extension AlertViewController: UITableViewDataSource {
-  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return NSClassFromString("UIAlertController") != nil ? 2 : 1
-  }
-}
-

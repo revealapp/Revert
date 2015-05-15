@@ -19,7 +19,7 @@ final class MasterCell: UITableViewCell {
   }
 }
 
-final class CountryCell: UITableViewCell {
-  @IBOutlet weak var subtitleLabel: UILabel!
+final class BasicCell: UITableViewCell {
   @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var subtitleLabel: UILabel!
 }
