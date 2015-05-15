@@ -607,6 +607,11 @@
                                             <constraint firstItem="1cQ-zU-juz" firstAttribute="leading" secondItem="bUw-02-jzJ" secondAttribute="leading" id="SdA-Fj-3FV"/>
                                             <constraint firstAttribute="trailing" secondItem="1cQ-zU-juz" secondAttribute="trailing" id="sF6-Dt-DP2"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
