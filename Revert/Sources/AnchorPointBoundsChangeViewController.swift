@@ -7,6 +7,7 @@ import UIKit
 final class AnchorPointBoundsChangeViewController: ViewController {
   @IBOutlet weak var boundsChangeView: HairlineBorderView!
   @IBOutlet weak var anchorPointView: HairlineBorderView!
+  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
 
   private var wasAnimated = false
   
@@ -37,5 +38,12 @@ final class AnchorPointBoundsChangeViewController: ViewController {
     super.viewDidAppear(animated)
     
     self.animateIfNecessary()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 2
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 200)
   }
 }

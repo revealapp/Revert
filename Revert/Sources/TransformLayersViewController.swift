@@ -9,6 +9,7 @@ final class TransformLayersViewController: ViewController {
   @IBOutlet weak var xRotateView: UIView!
   @IBOutlet weak var zRotateView: UIView!
   @IBOutlet weak var xyRotateView: UIView!
+  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
 
   private func degreesToRadians(degrees: CGFloat) -> CGFloat {
     return degrees * CGFloat(M_PI) / 180
@@ -38,6 +39,13 @@ final class TransformLayersViewController: ViewController {
     super.viewDidAppear(animated)
    
     self.animateViewsIfNecessarry()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 4
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 150)
   }
 }
 

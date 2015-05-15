@@ -8,6 +8,7 @@ final class TransformViewsViewController: ViewController {
   @IBOutlet weak var translateView: UIView!
   @IBOutlet weak var rotateView: UIView!
   @IBOutlet weak var scaleView: UIView!
+  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
   
   private var wasAnimated = false
 
@@ -29,6 +30,13 @@ final class TransformViewsViewController: ViewController {
     super.viewDidAppear(animated)
     
     self.animateViewsIfNecessary()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+
+    let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 3
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 150)
   }
 }
 
