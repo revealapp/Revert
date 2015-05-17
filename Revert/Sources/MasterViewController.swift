@@ -7,7 +7,7 @@ import UIKit
 final class MasterViewController: UITableViewController {
   private let cellConfigurator = MasterCellConfigurator()
   private var collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
-  private var dataSource: CollectableTableViewDataSource
+  private var dataSource: HomeDataSource
   private var currentDetailIndexPath: NSIndexPath?
   
   private func deselectSelectedRowIfNeeded() {
@@ -25,7 +25,7 @@ final class MasterViewController: UITableViewController {
   private var wasInitiallySelected = false
   
   required init!(coder aDecoder: NSCoder!) {
-    self.dataSource = CollectableTableViewDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    self.dataSource = HomeDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     super.init(coder: aDecoder)
   }
   

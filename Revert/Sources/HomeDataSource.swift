@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class CollectableTableViewDataSource: NSObject, UITableViewDataSource {
+final class HomeDataSource: NSObject, UITableViewDataSource {
   private let collection: CollectableCollection<MasterItem>
   private let cellConfigurator: MasterCellConfigurator
   
