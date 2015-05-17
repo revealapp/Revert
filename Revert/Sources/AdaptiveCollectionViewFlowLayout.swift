@@ -9,7 +9,7 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
     return true
   }
 
-  private var noOfItemsInRow = 2
+  private let noOfItemsInRow = 2
   
   override func prepareLayout() {
     super.prepareLayout()
@@ -25,7 +25,7 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     case .Portrait, .PortraitUpsideDown, .Unknown:
       return 2
     case .LandscapeRight, .LandscapeLeft:
-      // Scale is important here as size-classes cannot be used project compatible with iOS 7. Scale will be @3x
+      // Scale is important here as size-classes cannot be used in projects compatible with iOS 7. Scale will be @3x
       // only on iPhone 6+ if and only if the device is not in scaled mode - which is exactly what we want.
       return UIScreen.mainScreen().scale > 2 ? 2 : 3
     }
