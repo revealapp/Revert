@@ -8,7 +8,7 @@
 		<key>title</key>
 		<string>Paris</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Hugo</string>
 		<key>latitude</key>
 		<real>48.862655</real>
 	</dict>
@@ -20,7 +20,7 @@
 		<key>title</key>
 		<string>Moscow</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Vlas</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
@@ -30,7 +30,17 @@
 		<key>title</key>
 		<string>Seoul</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Jinju</string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>121.49451</real>
+		<key>latitude</key>
+		<real>31.200187</real>
+		<key>title</key>
+		<string>Shangai</string>
+		<key>subtitle</key>
+		<string>Longs</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
@@ -40,7 +50,7 @@
 		<key>title</key>
 		<string>Newcastle</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Tony</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
@@ -50,7 +60,7 @@
 		<key>title</key>
 		<string>Auckland</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Oliver</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
@@ -60,7 +70,7 @@
 		<key>title</key>
 		<string>Melbourne</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Sean, Amanda, Pete</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
@@ -70,7 +80,7 @@
 		<key>title</key>
 		<string>Adelaide</string>
 		<key>subtitle</key>
-		<string>Is the city</string>
+		<string>Matt</string>
 	</dict>
 </array>
 </plist>
