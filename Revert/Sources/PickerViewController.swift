@@ -6,6 +6,23 @@ import UIKit
 
 final class PickerViewController: RevertViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
+  
+  @IBOutlet weak var pickerHeightConstraint: NSLayoutConstraint!
+  @IBOutlet weak var containerView: UIView!
+  
+  private static let minimumSpacingHeight: CGFloat = 5 * 3
+  private static let maxPickerHeight: CGFloat = 200
+  
+  private var pickerHeight: CGFloat {
+    let pickersHeight = (self.containerView.bounds.height - self.dynamicType.minimumSpacingHeight) / 2
+    return min(pickersHeight, self.dynamicType.maxPickerHeight)
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    
+    self.pickerHeightConstraint.constant = self.pickerHeight
+  }
 }
 
 
