@@ -34,7 +34,7 @@
         <!--Arranged Views-->
         <scene sceneID="5P7-68-gkb">
             <objects>
-                <viewController id="TC2-p2-DN9" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TC2-p2-DN9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ErB-La-4G3"/>
                         <viewControllerLayoutGuide type="bottom" id="Uxt-hp-ALN"/>
@@ -227,7 +227,7 @@
         <!--Collection View-->
         <scene sceneID="D4X-ca-JVA">
             <objects>
-                <collectionViewController id="V4s-a2-462" customClass="SelectTilesViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="V4s-a2-462" customClass="CollectionViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7bY-VM-wmY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2210,7 +2210,7 @@
         <!--Auto Layout-->
         <scene sceneID="K1c-e7-lit">
             <objects>
-                <viewController id="Ae9-a4-dBl" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ae9-a4-dBl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kkf-X6-llX"/>
                         <viewControllerLayoutGuide type="bottom" id="7Xj-bo-Bd6"/>
@@ -2547,7 +2547,7 @@
         <!--Auto Layout Alignments-->
         <scene sceneID="ET9-ag-1Ke">
             <objects>
-                <viewController id="CrR-c1-A5E" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CrR-c1-A5E" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nhe-Iu-BvR"/>
                         <viewControllerLayoutGuide type="bottom" id="p6M-it-JEr"/>
@@ -3279,7 +3279,7 @@
         <!--Super Deep-->
         <scene sceneID="ndd-MQ-fT5">
             <objects>
-                <viewController id="cKD-ZG-JZw" customClass="ViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cKD-ZG-JZw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lIb-EX-hHx"/>
                         <viewControllerLayoutGuide type="bottom" id="tf9-FK-G90"/>
@@ -4499,6 +4499,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gSb-RG-pTo"/>
+        <segue reference="4JA-Dr-7WI"/>
     </inferredMetricsTieBreakers>
 </document>

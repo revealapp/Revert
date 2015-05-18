@@ -4,10 +4,10 @@
 
 import UIKit
 
-final class AlertViewController: TableViewController {
+final class AlertViewController: RevertTableViewController {
   private var collection = CollectableCollection<Item>(resourceFilename: "AlertItems")
-  private var dataSource: AlertDataSource
-  private let cellConfigurator = BasicCellConfigurator()
+  private var dataSource: AlertsDataSource
+  private let cellConfigurator = AlertCellConfigurator()
 
   private enum Identifier: String {
     case AlertView = "alertview"
@@ -17,7 +17,7 @@ final class AlertViewController: TableViewController {
   }
   
   required init!(coder aDecoder: NSCoder!) {
-    self.dataSource = AlertDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)
   }

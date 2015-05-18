@@ -6,7 +6,7 @@ import UIKit
 import OpenGLES
 import GLKit
 
-final class OpenGLViewController: OGLViewController {
+final class OpenGLViewController: RevertGLKViewController {
   private let context = EAGLContext(API: EAGLRenderingAPI.OpenGLES2)
   
   private var glView: GLKView {

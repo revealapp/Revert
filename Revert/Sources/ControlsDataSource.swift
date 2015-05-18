@@ -6,9 +6,9 @@ import UIKit
 
 final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   private let collection: CollectableCollection<Item>
-  private let cellConfigurator: CollectionViewCellConfigurator
+  private let cellConfigurator: ControlCellConfigurator
   
-  required init(collection: CollectableCollection<Item>, cellConfigurator: CollectionViewCellConfigurator) {
+  required init(collection: CollectableCollection<Item>, cellConfigurator: ControlCellConfigurator) {
     self.collection = collection
     self.cellConfigurator = cellConfigurator
 

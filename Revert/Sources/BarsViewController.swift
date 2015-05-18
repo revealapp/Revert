@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class BarsViewController: ViewController {
+final class BarsViewController: RevertViewController {
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var dismissContainerView: UIView!
   @IBOutlet weak var tabBar: UITabBar!

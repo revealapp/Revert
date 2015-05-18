@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class ControlsViewController: CollectionViewController {
+final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable internal var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename {
@@ -20,7 +20,7 @@ final class ControlsViewController: CollectionViewController {
   
   private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
-  private let cellConfigurator = CollectionViewCellConfigurator()
+  private let cellConfigurator = ControlCellConfigurator()
   private let keyboardHandler = KeyboardHandler()
 
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {

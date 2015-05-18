@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class BasicCellConfigurator {
+final class AlertCellConfigurator {
   func configureCell(cell: BasicCell, item: Item) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = item.title

@@ -4,14 +4,14 @@
 
 import UIKit
 
-final class CountriesViewController: TableViewController {
+final class CountriesViewController: RevertTableViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
   private let cellConfigurator = CountryCellConfigurator()
-  private let dataSource: CountryDataSource
+  private let dataSource: CountriesDataSource
   private var refreshTimer: NSTimer?
   
   required init!(coder aDecoder: NSCoder!) {
-    self.dataSource = CountryDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    self.dataSource = CountriesDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)
   }

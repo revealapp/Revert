@@ -4,14 +4,14 @@
 
 import UIKit
 
-final class SelectTilesViewController: CollectionViewController {
+final class CollectionViewController: RevertCollectionViewController {
   private var collectionViewFlowLayout: UICollectionViewFlowLayout {
     return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
   }
 }
 
 // MARK: UICollectionViewDataSource
-extension SelectTilesViewController: UICollectionViewDataSource {
+extension CollectionViewController: UICollectionViewDataSource {
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -29,7 +29,7 @@ extension SelectTilesViewController: UICollectionViewDataSource {
 }
 
 // MARK: UICollectionViewDelegate
-extension SelectTilesViewController: UICollectionViewDelegate {
+extension CollectionViewController: UICollectionViewDelegate {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.graySelectionColor()
   }

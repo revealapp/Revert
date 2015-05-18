@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class NonSerializableViewController: ViewController {
+final class NonSerializableViewController: RevertViewController {
   @IBOutlet weak var progressView: UIProgressView!
   @IBOutlet weak var subView: UIView!
   @IBOutlet weak var slider: UISlider!

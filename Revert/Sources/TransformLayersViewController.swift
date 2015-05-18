@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class TransformLayersViewController: ViewController {
+final class TransformLayersViewController: RevertViewController {
   @IBOutlet weak var yRotateView: UIView!
   @IBOutlet weak var xRotateView: UIView!
   @IBOutlet weak var zRotateView: UIView!

@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class AutoResizingMaskViewController: ViewController {
+final class AutoResizingMaskViewController: RevertViewController {
 
   @IBOutlet weak var outterView: UIView!
   

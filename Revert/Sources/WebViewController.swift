@@ -5,7 +5,7 @@
 import UIKit
 import WebKit
 
-final class WebViewController: ViewController {
+final class WebViewController: RevertViewController {
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
   
   private lazy var uiWebView: UIWebView = {

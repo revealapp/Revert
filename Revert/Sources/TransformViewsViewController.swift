@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class TransformViewsViewController: ViewController {
+final class TransformViewsViewController: RevertViewController {
   @IBOutlet weak var translateView: UIView!
   @IBOutlet weak var rotateView: UIView!
   @IBOutlet weak var scaleView: UIView!

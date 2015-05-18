@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class CollectionViewCellConfigurator {
+final class ControlCellConfigurator {
   func configureCell(cell: CollectionViewCell) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)

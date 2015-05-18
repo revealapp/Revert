@@ -10,7 +10,7 @@ final class CustomIntrinsicContentSizeView: UIView {
   }
 }
 
-final class AutoLayoutMarginsViewController: ViewController {
+final class AutoLayoutMarginsViewController: RevertViewController {
   @IBOutlet weak var centerView: UIView!
   @IBOutlet weak var slider: UISlider!
   @IBOutlet weak var centerViewWidthConstraint: NSLayoutConstraint!

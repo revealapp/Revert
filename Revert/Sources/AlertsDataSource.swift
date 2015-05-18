@@ -4,11 +4,11 @@
 
 import UIKit
 
-final class AlertDataSource: NSObject, UITableViewDataSource {
+final class AlertsDataSource: NSObject, UITableViewDataSource {
   private let collection: CollectableCollection<Item>
-  private let cellConfigurator: BasicCellConfigurator
+  private let cellConfigurator: AlertCellConfigurator
   
-  required init(collection: CollectableCollection<Item>, cellConfigurator: BasicCellConfigurator) {
+  required init(collection: CollectableCollection<Item>, cellConfigurator: AlertCellConfigurator) {
     self.collection = collection
     self.cellConfigurator = cellConfigurator
     

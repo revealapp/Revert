@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class CountryDataSource: NSObject, UITableViewDataSource {
+final class CountriesDataSource: NSObject, UITableViewDataSource {
   private let collection: CollectableCollection<Country>
   private let cellConfigurator: CountryCellConfigurator
   

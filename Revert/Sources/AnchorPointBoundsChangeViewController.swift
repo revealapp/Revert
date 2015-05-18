@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class AnchorPointBoundsChangeViewController: ViewController {
+final class AnchorPointBoundsChangeViewController: RevertViewController {
   @IBOutlet weak var boundsChangeView: HairlineBorderView!
   @IBOutlet weak var anchorPointView: HairlineBorderView!
   @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!

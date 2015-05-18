@@ -5,7 +5,7 @@
 import UIKit
 import MapKit
 
-final class MapViewController: ViewController {
+final class MapViewController: RevertViewController {
   @IBOutlet weak var mapView: MKMapView!
 
   override func viewDidLoad() {

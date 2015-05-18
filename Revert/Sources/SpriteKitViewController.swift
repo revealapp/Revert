@@ -45,7 +45,7 @@ final private class IBAScene: SKScene {
   }
 }
 
-final class SpriteKitViewController: ViewController {
+final class SpriteKitViewController: RevertViewController {
   private var skView: SKView {
     return self.view as! SKView
   }

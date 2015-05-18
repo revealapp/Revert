@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class PickerViewController: ViewController {
+final class PickerViewController: RevertViewController {
   private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
 }
 
