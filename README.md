@@ -1,7 +1,9 @@
 **Revert**
 ==========
 
-Revert is a sample iOS app destined to be inspected through @reveal_app.
+Revert is a Universal iOS 7+ application destined to be inspected through @reveal_app.
+
+It supports dynamic type.
 
 Architecture
 -----------
