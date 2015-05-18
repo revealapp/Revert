@@ -19,6 +19,7 @@
 		9A0416D21B03048B00477E60 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
 		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
 		9A1742391B09CCA100BEDFAB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9A1742381B09CCA100BEDFAB /* README.md */; };
+		9A17423E1B09CFE000BEDFAB /* INFO.md in Sources */ = {isa = PBXBuildFile; fileRef = 9A17423D1B09CFE000BEDFAB /* INFO.md */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
 		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
@@ -88,7 +89,8 @@
 		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416D11B03048B00477E60 /* DeepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepView.swift; path = Revert/Sources/DeepView.swift; sourceTree = "<group>"; };
 		9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Revert/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9A17423D1B09CFE000BEDFAB /* INFO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = INFO.md; sourceTree = SOURCE_ROOT; };
 		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -166,6 +168,33 @@
 			name = Layouts;
 			sourceTree = "<group>";
 		};
+		9A17423A1B09CF8600BEDFAB /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				9A17423D1B09CFE000BEDFAB /* INFO.md */,
+				9A1742381B09CCA100BEDFAB /* README.md */,
+			);
+			name = Doc;
+			sourceTree = "<group>";
+		};
+		9A17423B1B09CF9C00BEDFAB /* SB/XIB */ = {
+			isa = PBXGroup;
+			children = (
+				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
+				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
+			);
+			name = SB/XIB;
+			sourceTree = "<group>";
+		};
+		9A17423C1B09CFAC00BEDFAB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
+				9A0416BB1B02EA7F00477E60 /* Localizable.strings */,
+			);
+			name = Strings;
+			sourceTree = "<group>";
+		};
 		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,21 +232,20 @@
 		9A6850BA1AD4A20E00ACCE29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
-				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
+				9A17423C1B09CFAC00BEDFAB /* Strings */,
+				9A17423B1B09CF9C00BEDFAB /* SB/XIB */,
+				9A6850BB1AD4A20E00ACCE29 /* Data */,
+				9A17423A1B09CF8600BEDFAB /* Doc */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
-				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
+				9A0416C01B02EA7F00477E60 /* Info.plist */,
 			);
 			name = Resources;
 			path = Revert;
 			sourceTree = "<group>";
 		};
-		9A6850BB1AD4A20E00ACCE29 /* Supporting Files */ = {
+		9A6850BB1AD4A20E00ACCE29 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				9A0416C01B02EA7F00477E60 /* Info.plist */,
-				9A0416BB1B02EA7F00477E60 /* Localizable.strings */,
-				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
 				9AC3C3BC1B05D9100059776E /* AlertItems.plist */,
 				9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */,
 				9A0416BE1B02EA7F00477E60 /* HomeItems.plist */,
@@ -226,7 +254,7 @@
 				9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */,
 				9A0416C31B02EA7F00477E60 /* ViewItems.plist */,
 			);
-			name = "Supporting Files";
+			name = Data;
 			sourceTree = "<group>";
 		};
 		9A94E3F41AD63F040005BA44 /* Models */ = {
@@ -312,7 +340,6 @@
 		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				9A1742381B09CCA100BEDFAB /* README.md */,
 				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
@@ -466,6 +493,7 @@
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */,
+				9A17423E1B09CFE000BEDFAB /* INFO.md in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
