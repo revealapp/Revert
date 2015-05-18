@@ -4,7 +4,7 @@
 
 import Foundation
 
-internal protocol Collectable {
+protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 

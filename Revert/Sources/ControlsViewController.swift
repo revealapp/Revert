@@ -5,7 +5,7 @@
 import UIKit
 
 final class ControlsViewController: RevertCollectionViewController {
-  @IBInspectable internal var resourceFilename: String? {
+  @IBInspectable var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename {
         let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)

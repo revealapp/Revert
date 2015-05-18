@@ -5,8 +5,8 @@
 import Foundation
 
 struct Item: Collectable {
-  internal let title: String
-  internal let cellIdentifier: String
+  let title: String
+  let cellIdentifier: String
   
   init(dictionary: [String : AnyObject]) {
     self.title = dictionary["title"] as! String
