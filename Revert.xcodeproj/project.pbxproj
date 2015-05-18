@@ -10,7 +10,7 @@
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BB1B02EA7F00477E60 /* Localizable.strings */; };
 		9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */; };
-		9A0416C61B02EA7F00477E60 /* MasterItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* MasterItems.plist */; };
+		9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* HomeItems.plist */; };
 		9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BF1B02EA7F00477E60 /* ControlItems.plist */; };
 		9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C11B02EA7F00477E60 /* MapLocations.plist */; };
 		9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */; };
@@ -46,7 +46,7 @@
 		9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */; };
 		9A93ED6A1B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
-		9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* MasterItem.swift */; };
+		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
@@ -55,7 +55,7 @@
 		9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */; };
 		9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
-		9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */; };
+		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* SelectTilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* SelectTilesViewController.swift */; };
 		9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BC1B05D9100059776E /* AlertItems.plist */; };
 		9AC3C3BF1B05DCD80059776E /* AlertDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BE1B05DCD80059776E /* AlertDataSource.swift */; };
@@ -63,14 +63,14 @@
 		9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
 		9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
-		9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */; };
+		9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* HomeCellConfigurator.swift */; };
 		9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */; };
 		9AE87D451AE7401900213E7D /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */; };
 		9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
 		9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
 		9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
-		9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* MasterCell.xib */; };
+		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AF1B3201AE609F200BB626B /* UIView+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,7 +79,7 @@
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
 		9A0416BC1B02EA7F00477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CountriesCapitals.plist; path = Resources/CountriesCapitals.plist; sourceTree = "<group>"; };
-		9A0416BE1B02EA7F00477E60 /* MasterItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MasterItems.plist; path = Resources/MasterItems.plist; sourceTree = "<group>"; };
+		9A0416BE1B02EA7F00477E60 /* HomeItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HomeItems.plist; path = Resources/HomeItems.plist; sourceTree = "<group>"; };
 		9A0416BF1B02EA7F00477E60 /* ControlItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ControlItems.plist; path = Resources/ControlItems.plist; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		9A0416C11B02EA7F00477E60 /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapLocations.plist; path = Resources/MapLocations.plist; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryDataSource.swift; path = Revert/Sources/CountryDataSource.swift; sourceTree = "<group>"; };
 		9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCellConfigurator.swift; path = Revert/Sources/CollectionViewCellConfigurator.swift; sourceTree = "<group>"; };
 		9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Revert/Sources/TableViewCells.swift; sourceTree = "<group>"; };
-		9A94E3F51AD63F160005BA44 /* MasterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterItem.swift; path = Revert/Sources/MasterItem.swift; sourceTree = "<group>"; };
+		9A94E3F51AD63F160005BA44 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Revert/Sources/HomeItem.swift; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GLKViewController.swift; path = Revert/Sources/GLKViewController.swift; sourceTree = "<group>"; };
 		9AAB0D0E1AEDCBC700F74ABB /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Revert/Sources/Static.swift; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
-		9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Revert/Sources/MasterViewController.swift; sourceTree = "<group>"; };
+		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* SelectTilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTilesViewController.swift; path = Revert/Sources/SelectTilesViewController.swift; sourceTree = "<group>"; };
 		9AC3C3BC1B05D9100059776E /* AlertItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AlertItems.plist; path = Resources/AlertItems.plist; sourceTree = "<group>"; };
 		9AC3C3BE1B05DCD80059776E /* AlertDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertDataSource.swift; path = Revert/Sources/AlertDataSource.swift; sourceTree = "<group>"; };
@@ -134,14 +134,14 @@
 		9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollectionViewDataSource.swift; path = Revert/Sources/CollectableCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Revert/Sources/LayerPropertiesCells.swift; sourceTree = "<group>"; };
 		9AE300211AEF09AA00E81377 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Revert/Sources/LayerViews.swift; sourceTree = "<group>"; };
-		9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterCellConfigurator.swift; path = Revert/Sources/MasterCellConfigurator.swift; sourceTree = "<group>"; };
+		9AE718E81AD7515500DD7FFC /* HomeCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCellConfigurator.swift; path = Revert/Sources/HomeCellConfigurator.swift; sourceTree = "<group>"; };
 		9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformViewsViewController.swift; path = Revert/Sources/TransformViewsViewController.swift; sourceTree = "<group>"; };
 		9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformLayersViewController.swift; path = Revert/Sources/TransformLayersViewController.swift; sourceTree = "<group>"; };
 		9AEE22AA1ADB77BE0033DAA2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Revert/Sources/Item.swift; sourceTree = "<group>"; };
 		9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCells.swift; path = Revert/Sources/CollectionViewCells.swift; sourceTree = "<group>"; };
 		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
 		9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Revert/Sources/SpriteKitViewController.swift; sourceTree = "<group>"; };
-		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MasterCell.xib; sourceTree = "<group>"; };
+		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
 		9AF1B31F1AE609F200BB626B /* UIView+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Revert.swift"; path = "Revert/Sources/UIView+Revert.swift"; sourceTree = "<group>"; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,7 @@
 			children = (
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				9A6850C81AD4A20E00ACCE29 /* LaunchScreen.xib */,
-				9AF1B3171AE5EBE400BB626B /* MasterCell.xib */,
+				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6850BB1AD4A20E00ACCE29 /* Supporting Files */,
 			);
@@ -219,7 +219,7 @@
 				9AC3C3BC1B05D9100059776E /* AlertItems.plist */,
 				9A0416BB1B02EA7F00477E60 /* Localizable.strings */,
 				9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */,
-				9A0416BE1B02EA7F00477E60 /* MasterItems.plist */,
+				9A0416BE1B02EA7F00477E60 /* HomeItems.plist */,
 				9A0416BF1B02EA7F00477E60 /* ControlItems.plist */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A0416C11B02EA7F00477E60 /* MapLocations.plist */,
@@ -233,7 +233,7 @@
 		9A94E3F41AD63F040005BA44 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9A94E3F51AD63F160005BA44 /* MasterItem.swift */,
+				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
 				9A2873991AD76863006466BE /* Country.swift */,
 				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
 			);
@@ -284,7 +284,7 @@
 		9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9ABEBA121AD4ACA800E3D998 /* MasterViewController.swift */,
+				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
 				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
 				9ABEBA141AD4ADF100E3D998 /* SelectTilesViewController.swift */,
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
@@ -337,7 +337,7 @@
 		9AE718E71AD7513D00DD7FFC /* CellConfigurators */ = {
 			isa = PBXGroup;
 			children = (
-				9AE718E81AD7515500DD7FFC /* MasterCellConfigurator.swift */,
+				9AE718E81AD7515500DD7FFC /* HomeCellConfigurator.swift */,
 				9A28739B1AD76A88006466BE /* CountryCellConfigurator.swift */,
 				9A93ED691B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift */,
 				9AC3C3C01B05DF8E0059776E /* BasicCellConfigurator.swift */,
@@ -403,7 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
-				9A0416C61B02EA7F00477E60 /* MasterItems.plist in Resources */,
+				9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */,
 				9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */,
 				9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */,
 				9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */,
@@ -413,7 +413,7 @@
 				9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */,
 				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
-				9AF1B3191AE5EBE400BB626B /* MasterCell.xib in Resources */,
+				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,9 +448,9 @@
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
 				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
 				9A0416D21B03048B00477E60 /* DeepView.swift in Sources */,
-				9A94E3F61AD63F160005BA44 /* MasterItem.swift in Sources */,
+				9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */,
 				9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */,
-				9ABEBA131AD4ACA800E3D998 /* MasterViewController.swift in Sources */,
+				9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
 				9A93ED6A1B01B06F00CFA5BD /* CollectionViewCellConfigurator.swift in Sources */,
 				9AC3C3BF1B05DCD80059776E /* AlertDataSource.swift in Sources */,
@@ -465,7 +465,7 @@
 				9A87FA7C1ADCA16500290F7A /* CountryDataSource.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
-				9AE718E91AD7515500DD7FFC /* MasterCellConfigurator.swift in Sources */,
+				9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
@@ -515,12 +515,12 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		9AF1B3171AE5EBE400BB626B /* MasterCell.xib */ = {
+		9AF1B3171AE5EBE400BB626B /* HomeCell.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9AF1B3181AE5EBE400BB626B /* Base */,
 			);
-			name = MasterCell.xib;
+			name = HomeCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

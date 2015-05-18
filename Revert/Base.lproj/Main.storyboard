@@ -2108,10 +2108,10 @@
             </objects>
             <point key="canvasLocation" x="4070" y="484"/>
         </scene>
-        <!--Master-->
+        <!--Scenes-->
         <scene sceneID="0gy-8T-nxI">
             <objects>
-                <navigationController title="Master" id="aVj-m9-L3U" sceneMemberID="viewController">
+                <navigationController id="aVj-m9-L3U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scenes" image="tab_scenes" id="Rua-k9-jNv">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="tab_scenes_selected"/>
@@ -2134,10 +2134,10 @@
             </objects>
             <point key="canvasLocation" x="-305" y="-3167"/>
         </scene>
-        <!--Master-->
+        <!--Revert-->
         <scene sceneID="Qzv-sJ-S6S">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="Utk-Aw-BAf" customClass="MasterViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Utk-Aw-BAf" customClass="HomeViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="52" sectionHeaderHeight="10" sectionFooterHeight="10" id="BmS-bf-dbI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4499,6 +4499,6 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="67G-2a-8iB"/>
+        <segue reference="gSb-RG-pTo"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class MasterCell: UITableViewCell {
+final class HomeCell: UITableViewCell {
   @IBOutlet weak var iconImageView: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
   

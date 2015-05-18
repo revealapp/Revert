@@ -6,15 +6,15 @@ import UIKit
 import GLKit
 
 private extension UIViewController {
-  func prepareForInfoSegue(segue: UIStoryboardSegue, item: MasterItem) {
+  func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem) {
     let destinationNavigationController = segue.destinationViewController as! UINavigationController
-    let destinationViewController = destinationNavigationController.topViewController as! SettableMasterItem
+    let destinationViewController = destinationNavigationController.topViewController as! SettableHomeItem
     destinationViewController.item = item
   }
 }
 
-class ViewController: UIViewController, SettableMasterItem {
-  var item: MasterItem?
+class ViewController: UIViewController, SettableHomeItem {
+  var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,8 +31,8 @@ class ViewController: UIViewController, SettableMasterItem {
   }
 }
 
-class TableViewController: UITableViewController, SettableMasterItem {
-  var item: MasterItem?
+class TableViewController: UITableViewController, SettableHomeItem {
+  var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,8 +49,8 @@ class TableViewController: UITableViewController, SettableMasterItem {
   }
 }
 
-class CollectionViewController: UICollectionViewController, SettableMasterItem {
-  var item: MasterItem?
+class CollectionViewController: UICollectionViewController, SettableHomeItem {
+  var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -67,8 +67,8 @@ class CollectionViewController: UICollectionViewController, SettableMasterItem {
   }
 }
 
-class OGLViewController: GLKViewController, SettableMasterItem {
-  var item: MasterItem?
+class OGLViewController: GLKViewController, SettableHomeItem {
+  var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()

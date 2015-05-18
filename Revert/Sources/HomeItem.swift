@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct MasterItem: Collectable {
+struct HomeItem: Collectable {
   let title: String
   let info: String
   let iconName: String
@@ -20,6 +20,6 @@ struct MasterItem: Collectable {
   }
 }
 
-protocol SettableMasterItem: class {
-  var item: MasterItem? { get set }
+protocol SettableHomeItem: class {
+  var item: HomeItem? { get set }
 }

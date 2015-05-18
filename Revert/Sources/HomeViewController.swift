@@ -4,9 +4,9 @@
 
 import UIKit
 
-final class MasterViewController: UITableViewController {
-  private let cellConfigurator = MasterCellConfigurator()
-  private var collection = CollectableCollection<MasterItem>(resourceFilename: "MasterItems")
+final class HomeViewController: UITableViewController {
+  private let cellConfigurator = HomeCellConfigurator()
+  private var collection = CollectableCollection<HomeItem>(resourceFilename: "HomeItems")
   private var dataSource: HomeDataSource
   private var currentDetailIndexPath: NSIndexPath?
   
@@ -37,7 +37,7 @@ final class MasterViewController: UITableViewController {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
-    self.tableView.registerNib(UINib(nibName: SB.Cell.Master, bundle: nil), forCellReuseIdentifier: SB.Cell.Master)
+    self.tableView.registerNib(UINib(nibName: SB.Cell.Home, bundle: nil), forCellReuseIdentifier: SB.Cell.Home)
     
     // Setup dynamic type notifications.
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
@@ -53,7 +53,7 @@ final class MasterViewController: UITableViewController {
     super.prepareForSegue(segue, sender: sender)
     
     // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
-    if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableMasterItem,
+    if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableHomeItem,
       indexPath = sender as? NSIndexPath {
         destinationViewController.item = self.collection.itemAtIndexPath(indexPath)
     }
@@ -66,7 +66,7 @@ final class MasterViewController: UITableViewController {
 }
 
 // MARK: UITableViewDelegate
-extension MasterViewController: UITableViewDelegate {
+extension HomeViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection.itemAtIndexPath(indexPath)
     

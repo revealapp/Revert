@@ -5,10 +5,10 @@
 import UIKit
 
 final class HomeDataSource: NSObject, UITableViewDataSource {
-  private let collection: CollectableCollection<MasterItem>
-  private let cellConfigurator: MasterCellConfigurator
+  private let collection: CollectableCollection<HomeItem>
+  private let cellConfigurator: HomeCellConfigurator
   
-  required init(collection: CollectableCollection<MasterItem>, cellConfigurator: MasterCellConfigurator) {
+  required init(collection: CollectableCollection<HomeItem>, cellConfigurator: HomeCellConfigurator) {
     self.collection = collection
     self.cellConfigurator = cellConfigurator
     
@@ -24,7 +24,7 @@ final class HomeDataSource: NSObject, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Master, forIndexPath: indexPath) as! MasterCell
+    let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Home, forIndexPath: indexPath) as! HomeCell
     let item = self.collection.itemAtIndexPath(indexPath)
     
     self.cellConfigurator.configureCell(cell, withItem: item)

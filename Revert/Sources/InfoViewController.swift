@@ -4,12 +4,12 @@
 
 import UIKit
 
-final class InfoViewController: UIViewController, SettableMasterItem {
+final class InfoViewController: UIViewController, SettableHomeItem {
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var titleLabel: UILabel!
   
-  var item: MasterItem?
+  var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()

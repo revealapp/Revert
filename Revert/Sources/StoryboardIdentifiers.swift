@@ -6,7 +6,7 @@ struct SB {
   struct Cell {
     static let CollectionViewController = "CollectionViewControllerCell"
     static let TableViewController = "TableViewControllerCell"
-    static let Master = "MasterCell"
+    static let Home = "HomeCell"
     static let Stress = "StressCell"
     static let Alert = "AlertCell"
   }

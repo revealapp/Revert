@@ -4,8 +4,8 @@
 
 import UIKit
 
-final class MasterCellConfigurator {
-  func configureCell(cell: MasterCell, withItem item: MasterItem) {
+final class HomeCellConfigurator {
+  func configureCell(cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = item.title
     
