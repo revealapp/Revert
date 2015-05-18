@@ -14,7 +14,7 @@ private extension UIViewController {
 }
 
 class RevertViewController: UIViewController, SettableHomeItem {
-  var item: HomeItem?
+  final var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,7 +32,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
 }
 
 class RevertTableViewController: UITableViewController, SettableHomeItem {
-  var item: HomeItem?
+  final var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -50,7 +50,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
 }
 
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
-  var item: HomeItem?
+  final var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -68,7 +68,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
 }
 
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
-  var item: HomeItem?
+  final var item: HomeItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
