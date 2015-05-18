@@ -22,7 +22,7 @@ All the `plist` files are deserialised and mapped into objects via the `Collecta
 
 ## View Controllers
 
-All view controllers apartfrom `HomeViewController` and `InfoViewController` inherit from either one of the following custom view controllers:
+All view controllers apart from `HomeViewController` and `InfoViewController` inherit from either one of the following custom view controllers:
 
 - `RevertViewController`
 - `RevertTableViewController`
