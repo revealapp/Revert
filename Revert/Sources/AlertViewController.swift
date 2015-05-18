@@ -65,7 +65,7 @@ extension AlertViewController {
       handler: nil)
     )
     
-    alertViewController.popoverPresentationController!.sourceView = fromView
+    alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
   
