@@ -43,7 +43,7 @@ final class CountriesViewController: RevertTableViewController {
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    self.tableView?.reloadData()
+    self.tableView!.reloadData()
   }
 }
 

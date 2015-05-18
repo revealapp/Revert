@@ -35,7 +35,7 @@ final class AlertViewController: RevertTableViewController {
   }
 
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    self.tableView?.reloadData()
+    self.tableView!.reloadData()
   }
 }
 
@@ -65,7 +65,7 @@ extension AlertViewController {
       handler: nil)
     )
     
-    alertViewController.popoverPresentationController?.sourceView = fromView
+    alertViewController.popoverPresentationController!.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
   

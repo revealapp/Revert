@@ -61,7 +61,7 @@ final class HomeViewController: UITableViewController {
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView?.reloadData()
+    self.tableView!.reloadData()
   }
 }
 

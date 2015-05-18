@@ -51,10 +51,10 @@ final class ControlsViewController: RevertCollectionViewController {
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView?.endEditing(true)
+    self.collectionView!.endEditing(true)
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    self.collectionView?.reloadData()
+    self.collectionView!.reloadData()
   }
 }
