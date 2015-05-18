@@ -18,8 +18,6 @@
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A0416D21B03048B00477E60 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
 		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
-		9A1742391B09CCA100BEDFAB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9A1742381B09CCA100BEDFAB /* README.md */; };
-		9A17423E1B09CFE000BEDFAB /* INFO.md in Sources */ = {isa = PBXBuildFile; fileRef = 9A17423D1B09CFE000BEDFAB /* INFO.md */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
 		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
@@ -455,7 +453,6 @@
 				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */,
-				9A1742391B09CCA100BEDFAB /* README.md in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				9AE87D451AE7401900213E7D /* TransformLayersViewController.swift in Sources */,
 				9A3B4BC21B0230B300F6117D /* RevertViewController.swift in Sources */,
@@ -485,7 +482,6 @@
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */,
-				9A17423E1B09CFE000BEDFAB /* INFO.md in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
