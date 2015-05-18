@@ -9,7 +9,7 @@ final class ControlsViewController: CollectionViewController {
     didSet {
       if let resourceFilename = self.resourceFilename {
         let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)
-        self.dataSource = CollectableCollectionViewDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
+        self.dataSource = ControlsDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
         self.collection = collection
       } else {
         self.collection = nil
@@ -19,7 +19,7 @@ final class ControlsViewController: CollectionViewController {
   }
   
   private var collection: CollectableCollection<Item>?
-  private var dataSource: CollectableCollectionViewDataSource?
+  private var dataSource: ControlsDataSource?
   private let cellConfigurator = CollectionViewCellConfigurator()
   private let keyboardHandler = KeyboardHandler()
 

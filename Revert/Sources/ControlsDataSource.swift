@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class CollectableCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   private let collection: CollectableCollection<Item>
   private let cellConfigurator: CollectionViewCellConfigurator
   

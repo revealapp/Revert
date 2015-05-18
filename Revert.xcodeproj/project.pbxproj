@@ -60,7 +60,7 @@
 		9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BC1B05D9100059776E /* AlertItems.plist */; };
 		9AC3C3BF1B05DCD80059776E /* AlertDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BE1B05DCD80059776E /* AlertDataSource.swift */; };
 		9AC3C3C11B05DF8E0059776E /* BasicCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3C01B05DF8E0059776E /* BasicCellConfigurator.swift */; };
-		9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */; };
+		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
 		9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
 		9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE718E81AD7515500DD7FFC /* HomeCellConfigurator.swift */; };
@@ -131,7 +131,7 @@
 		9AC3C3BC1B05D9100059776E /* AlertItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AlertItems.plist; path = Resources/AlertItems.plist; sourceTree = "<group>"; };
 		9AC3C3BE1B05DCD80059776E /* AlertDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertDataSource.swift; path = Revert/Sources/AlertDataSource.swift; sourceTree = "<group>"; };
 		9AC3C3C01B05DF8E0059776E /* BasicCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicCellConfigurator.swift; path = Revert/Sources/BasicCellConfigurator.swift; sourceTree = "<group>"; };
-		9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollectionViewDataSource.swift; path = Revert/Sources/CollectableCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Revert/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
 		9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Revert/Sources/LayerPropertiesCells.swift; sourceTree = "<group>"; };
 		9AE300211AEF09AA00E81377 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Revert/Sources/LayerViews.swift; sourceTree = "<group>"; };
 		9AE718E81AD7515500DD7FFC /* HomeCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCellConfigurator.swift; path = Revert/Sources/HomeCellConfigurator.swift; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 		9ADAA3C51ADC8D1F008CC87B /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				9ADAA3C61ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift */,
+				9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */,
 				9A87FA771ADC953C00290F7A /* HomeDataSource.swift */,
 				9A87FA7B1ADCA16500290F7A /* CountryDataSource.swift */,
 				9AC3C3BE1B05DCD80059776E /* AlertDataSource.swift */,
@@ -425,7 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADAA3C71ADC8D3B008CC87B /* CollectableCollectionViewDataSource.swift in Sources */,
+				9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */,
 				9ABEBA151AD4ADF100E3D998 /* SelectTilesViewController.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
