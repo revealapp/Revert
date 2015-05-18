@@ -12,6 +12,14 @@ final class MapViewController: RevertViewController {
     super.viewDidLoad()
 
     self.addAnnotations()
+    
+    self.mapView.region = self.ozRegion
+  }
+  
+  private var ozRegion: MKCoordinateRegion {
+    let center = CLLocationCoordinate2D(latitude: -24.291451, longitude: 134.126772)
+    let span = MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
+    return MKCoordinateRegion(center: center, span: span)
   }
   
   private func addAnnotations() {
