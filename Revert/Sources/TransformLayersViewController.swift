@@ -41,11 +41,13 @@ final class TransformLayersViewController: RevertViewController {
     self.animateViewsIfNecessarry()
   }
   
+  private static let minItemHeight: CGFloat = 150
+
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     
     let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 4
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, 150)
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minItemHeight)
   }
 }
 
