@@ -1,4 +1,5 @@
-# Revert
+
+# REVEal Rendering Test
 
 Revert is a Universal iOS 7+ application destined to be inspected through @reveal_app.
 
