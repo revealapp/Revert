@@ -2101,10 +2101,12 @@
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="LBF-J0-iUK">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <segments>
                                 <segment title="UIWebView"/>
                                 <segment title="WKWebView"/>
                             </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="segmentedControlValueChanged:" destination="zbC-XF-QPg" eventType="valueChanged" id="ow7-zQ-7YY"/>
                             </connections>
@@ -4539,7 +4541,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uRU-Kc-gHf"/>
+        <segue reference="OwL-GG-XTi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
