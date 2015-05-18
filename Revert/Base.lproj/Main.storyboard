@@ -1667,7 +1667,7 @@
                                                 <rect key="frame" x="0.0" y="1" width="600" height="165"/>
                                                 <subviews>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RLO-wz-rfy">
-                                                        <rect key="frame" x="0.0" y="1.5" width="600" height="162"/>
+                                                        <rect key="frame" x="0.0" y="2" width="600" height="162"/>
                                                         <date key="date" timeIntervalSinceReferenceDate="450683719.47818398">
                                                             <!--2015-04-14 05:55:19 +0000-->
                                                         </date>
