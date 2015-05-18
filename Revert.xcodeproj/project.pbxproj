@@ -203,14 +203,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A28739D1AD76E8E006466BE /* Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */,
-			);
-			name = Adapters;
-			sourceTree = "<group>";
-		};
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +252,7 @@
 		9A94E3F41AD63F040005BA44 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9A28739E1AD76EA2006466BE /* GrouppedCollection.swift */,
 				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
 				9A2873991AD76863006466BE /* Country.swift */,
 				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
@@ -296,7 +289,6 @@
 			children = (
 				9A07D8DD1AE4B8260099C4CB /* Layouts */,
 				9ADAA3C51ADC8D1F008CC87B /* DataSources */,
-				9A28739D1AD76E8E006466BE /* Adapters */,
 				9AE718E71AD7513D00DD7FFC /* CellConfigurators */,
 				9A94E3F41AD63F040005BA44 /* Models */,
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,

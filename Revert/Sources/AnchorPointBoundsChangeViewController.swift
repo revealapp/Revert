@@ -40,12 +40,12 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     self.animateIfNecessary()
   }
   
-  private static let minItemHeight: CGFloat = 150
+  private let minItemHeight: CGFloat = 150
   
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     
     let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 2
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minItemHeight)
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minItemHeight)
   }
 }

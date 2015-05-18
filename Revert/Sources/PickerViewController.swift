@@ -10,12 +10,12 @@ final class PickerViewController: RevertViewController {
   @IBOutlet weak var pickerHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var containerView: UIView!
   
-  private static let minimumSpacingHeight: CGFloat = 5 * 3
-  private static let maxPickerHeight: CGFloat = 200
+  private let minimumSpacingHeight: CGFloat = 5 * 3
+  private let maxPickerHeight: CGFloat = 200
   
   private var pickerHeight: CGFloat {
-    let pickersHeight = (self.containerView.bounds.height - self.dynamicType.minimumSpacingHeight) / 2
-    return min(pickersHeight, self.dynamicType.maxPickerHeight)
+    let pickersHeight = (self.containerView.bounds.height - self.minimumSpacingHeight) / 2
+    return min(pickersHeight, self.maxPickerHeight)
   }
   
   override func viewWillLayoutSubviews() {
