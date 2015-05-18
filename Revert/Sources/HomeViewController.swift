@@ -55,7 +55,7 @@ final class HomeViewController: UITableViewController {
     // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
     if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableHomeItem,
       indexPath = sender as? NSIndexPath {
-        destinationViewController.item = self.collection.itemAtIndexPath(indexPath)
+        destinationViewController.item = self.collection[indexPath]
     }
   }
   
@@ -68,7 +68,7 @@ final class HomeViewController: UITableViewController {
 // MARK: UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let item = self.collection.itemAtIndexPath(indexPath)
+    let item = self.collection[indexPath]
     
     // Only perform segue if the selected item isn't the one currently selected.
     if indexPath != self.currentDetailIndexPath {

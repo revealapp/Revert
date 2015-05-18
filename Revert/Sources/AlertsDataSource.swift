@@ -25,7 +25,7 @@ final class AlertsDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Alert) as! BasicCell
-    let item = self.collection.itemAtIndexPath(indexPath)
+    let item = self.collection[indexPath]
     
     self.cellConfigurator.configureCell(cell, item: item)
     return cell

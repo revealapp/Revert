@@ -109,7 +109,7 @@ extension AlertViewController {
 extension AlertViewController: UITableViewDelegate {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
-    let item = self.collection.itemAtIndexPath(indexPath)
+    let item = self.collection[indexPath]
     self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
     
     tableView.deselectRowAtIndexPath(indexPath, animated: true)

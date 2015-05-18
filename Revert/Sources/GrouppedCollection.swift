@@ -37,12 +37,12 @@ struct CollectableCollection<T: Collectable> {
     return self.groups[i]
   }
   
-  var countOfGroups: Int {
-    return self.groups.count
+  subscript(indexPath: NSIndexPath) -> T {
+    return self.groups[indexPath.section][indexPath.row]
   }
   
-  func itemAtIndexPath(indexPath: NSIndexPath) -> T {
-    return self[indexPath.section][indexPath.row]
+  var countOfGroups: Int {
+    return self.groups.count
   }
   
   private static func collectableItemsFromRessource(resourceFilename: String) -> [CollectableGroup<T>] {

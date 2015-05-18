@@ -24,7 +24,7 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let item = self.collection.itemAtIndexPath(indexPath)
+    let item = self.collection[indexPath]
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier(item.cellIdentifier, forIndexPath: indexPath) as! CollectionViewCell
     
     self.cellConfigurator.configureCell(cell)

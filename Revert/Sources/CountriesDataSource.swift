@@ -25,7 +25,7 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.TableViewController) as! BasicCell
-    let country = self.collection.itemAtIndexPath(indexPath)
+    let country = self.collection[indexPath]
     
     self.cellConfigurator.configureCell(cell, withCountry: country)
     return cell

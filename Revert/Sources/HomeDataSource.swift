@@ -25,7 +25,7 @@ final class HomeDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Home, forIndexPath: indexPath) as! HomeCell
-    let item = self.collection.itemAtIndexPath(indexPath)
+    let item = self.collection[indexPath]
     
     self.cellConfigurator.configureCell(cell, withItem: item)
     return cell
