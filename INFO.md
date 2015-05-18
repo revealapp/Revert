@@ -1,20 +1,18 @@
-Table View
-----------------
+# View Controller Information Text
+
+## Table View
 
 A simple indexed `UITableView` listing a selection of countries and their respective capitals.  Countries are sorted and grouped alphabetically. Each section display both a `UITableViewHeaderView` and `UITableViewFooterView`. Each custom cell contains a `.Checkmark` as their `accessoryType`.
 
-Collection View
-----------------
+## Collection View
 
 A `UICollectionView` with a simple 2 column layout. Tapping a cell will update its background colour to grey.
 
-Scroll View
-----------------
+## Scroll View
 
 A `UIScrollView` containing a large scrollable image.
 
-Default Views
-----------------
+## Default Views
 
 A selection of stock UIKit views:
 
@@ -24,8 +22,7 @@ A selection of stock UIKit views:
 - `UIProgressView`
 - `UILabel`
 
-Controls
-----------------
+## Controls
 
 A selection of stock UIKit controls:
 
@@ -38,8 +35,7 @@ A selection of stock UIKit controls:
 - `UITextField` (x2)
 - `UITextField` with custom input view (x2)
 
-Bars
-----------------
+## Bars
 
 A selection of stock UIKit bars:
 
@@ -47,52 +43,43 @@ A selection of stock UIKit bars:
 - `UIToolBar` - with embedded UIBarButtonItem.
 - `UITabBar`
 
-Alert View
-----------------
+## Alert View
 
 Legacy and new way of presenting both alert views and action sheets. As `UIAlertController` is only present on iOS 8+, its usage is hidden from device running iOS 7.
 
 Legacy alert views and action sheets are not rendered in Reveal as they have been removed from the application’s view hierarchy on iOS 7. `UIAlertController` however add presents alert views and action sheets as any view controller would be presented - hence they are back in the view hierarchy. See http://support.revealapp.com/kb/faq/why-cant-i-inspect-uialertviews-in-reveal-in-ios-7 for more info.
 
-Picker View
-----------------
+## Picker View
 
 `UIDatePicker` and `UIPicker`.
 
-Map View
-----------------
+## Map View
 
 `MKMapView` displays the origin of Itty Bitty Apps employees. All the annotations are linked together by an `MKPolygon`.
 
-Web View
-----------------
+## Web View
 
 Revealapp.com website displayed from both `UIWebView` and `WKWebView`. `WKWebView` is only available from iOS 8.
 
-SpriteKit View
-----------------
+## SpriteKit View
 
 Sample SpriteKit project dropping a Reveal logo on each tap.
 
-OpenGL View
-----------------
+## OpenGL View
 
 TODO
 
-Modal View
-----------------
+## Modal View
 
 A simple modal presentation of a view controller.
 
-Arranged Views
-----------------
+## Arranged Views
 
 A selection of coloured views surrounded by slim hairline views.
 
 Select any view to inspect the basic `UIView` attributes through Reveal. For example, start by updating a view’s background color, it’s alpha value or its hidden property and see the changes appear both in Reveal and your device / simulator.
 
-Auto Layout 
-----------------
+## Auto Layout 
 
 An auto layout scenario demoing the following basic attributes:
 
@@ -105,8 +92,7 @@ Proportional constraints: The blue views’ heights are constrained to be half o
 
 For example, update the constant value of the horizontal spacing constraint between both white `UIViews` and see the changes appear both in Reveal and your device / simulator.
 
-Auto Layout Alignments
-----------------
+## Auto Layout Alignments
 
 An auto layout scenario demoing the following alignments attributes:
 
@@ -117,8 +103,7 @@ An auto layout scenario demoing the following alignments attributes:
 
 For example, update the orange view’s width constraint constant and see the changes appear both in Reveal and your device / simulator.
 
-Auto Layout Margins
-----------------
+## Auto Layout Margins
 
 An auto layout scenario showcasing alignments, pinning and layout margins interacting altogether. All squares have their width equals the width of the centre square.
 
@@ -126,8 +111,7 @@ A `UISlider` is displayed on devices running iOS 8+ which is bound to the centre
 
 For example, update the centre's view width constraint constant through Reveal and see the changes appear both in Reveal and your device / simulator.
 
-Autoresizing Masks
-----------------
+## Autoresizing Masks
 
 An autoresizing masks scenario showcasing:
 
@@ -138,8 +122,7 @@ An autoresizing masks scenario showcasing:
 
 For example, update the centre view’s resizing mask through Reveal and deselect `.RightMargin`, then rotate the device / simulator to see the changes.
 
-Transform Views
-----------------
+## Transform Views
 
 A selection of transformed view containing subviews:
 
@@ -149,8 +132,7 @@ A selection of transformed view containing subviews:
 
 The behaviour when mixing constraint and transform on iOS 7 is broken and has been fixed on iOS 8. See http://revealapp.com/blog/constraints-and-transforms.html for more info.
 
-Transform Layers
-----------------
+## Transform Layers
 
 A selection of transformed layers with subviews:
 
@@ -161,8 +143,7 @@ A selection of transformed layers with subviews:
 
 The behaviour when mixing constraint and transform on iOS 7 is broken and has been fixed on iOS 8. See http://revealapp.com/blog/constraints-and-transforms.html for more info.
 
-Layer Properties
-----------------
+## Layer Properties
 
 A collection of different `CALayers`:
 
@@ -175,8 +156,7 @@ A collection of different `CALayers`:
 - `CATiledLayer`
 - `CAAEGLayer`
 
-Bounds & Anchor Point changes
-----------------
+## Bounds & Anchor Point changes
 
 Scenarios of bounds and anchor point changes.
 
@@ -184,17 +164,14 @@ For example, update the anchor point or the bounds of the purple view and see th
 
 The behaviour when mixing constraint and transform on iOS 7 is broken and has been fixed on iOS 8. See http://revealapp.com/blog/constraints-and-transforms.html for more info.
 
-Super Deep
-----------------
+## Super Deep
 
 Embedded coloured subviews forming a pyramid. Each subview is 5pts from its superview’ bounds.
 
-Stress Test
-----------------
+## Stress Test
 
 A `UICollectionView` containing a pyramid of subviews on each `UICollectionViewCell`.
 
-Not Serializable
-----------------
+## Not Serializable
 
 A view controller containing unserializable properties on its subviews. Is is expected that modifying the `UISlider` makes the app crash.

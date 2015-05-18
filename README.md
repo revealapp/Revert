@@ -1,30 +1,28 @@
-**Revert**
-==========
+# Revert
 
 Revert is a Universal iOS 7+ application destined to be inspected through @reveal_app.
 
-It supports dynamic type.
+_The application also supports dynamic type._
 
-Architecture
------------
+## Architecture
 
-Revert uses `plist` files for data persistance. Main ressource file `HomeItems.plist` contains the data required for the `HomeViewController`. It represent the next level of view controllers (title, icon name, segue name and information text).
+Revert loads its data for dynamic view controllers from `plist` files. Following is a table mapping between the view controller, the used data source and its `plist` file.
 
-The following files contains the data required for cells and map based view controllers.
 
-- `ControlItems.plist`
-- `ViewItems.plist`
-- `LayerPropertiesItems.plist`
-- `MapLocations.plist`
-- `CountriesCapitals.plist`
-- `AlertItems.plist`
+View Controller | Data Source | Plist File
+--- | --- | ---
+`HomeViewController` | `HomeDataSource` | `HomeItems.plist`
+`CountriesViewController` | `CountriesDataSource` | `CountriesCapitals.plist`
+`ControlsViewController` | `ControlsDataSource` | `ControlItems.plist`, `ViewItems.plist`
+`LayerPropertiesViewController` | `ControlsDataSource` | `LayerPropertiesItems.plist`
+`AlertsViewController` | `AlertsDataSource` | `AlertItems.plist`
+`MapViewController` | _None_ | `MapLocations.plist`
 
-All the `plist` files are deserialised using a generic process and stored into `CollectableCollection<T>`. These contain a collection of `CollectableGroup<T>` representing a `UITableView` or `UICollectionView` section. Finally, these contain a collection of models of type `T`, with `T` being an object conforming to the `Collectable` protocol.
+All the `plist` files are deserialised and mapped into objects via the `Collectable` protocol. These objects are then grouped and stored within `CollectableGroup<T>` embeded in a `CollectableCollection<T>`.
 
-View Controllers
-----------------
+## View Controllers
 
-All view controllers besides `HomeViewController` and `InfoViewController` inherit from either one of these custom view controllers:
+All view controllers apartfrom `HomeViewController` and `InfoViewController` inherit from either one of the following custom view controllers:
 
 - `RevertViewController`
 - `RevertTableViewController`
@@ -33,6 +31,6 @@ All view controllers besides `HomeViewController` and `InfoViewController` inher
 
 which all conform to the `SettableHomeItem` protocol. They are responsible for managing the `item` object by:
 
-- Ensures that an `item` object is set by the time `viewDidLoad` gets called.
+- Ensuring that an `item` object is set by the time `viewDidLoad` gets called.
 - Configuring in a similar manner `InfoViewController` in `prepareForSegue:sender:` with `item` when the info button present on every screen is tapped.
 
