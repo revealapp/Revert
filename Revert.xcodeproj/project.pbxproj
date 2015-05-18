@@ -54,6 +54,7 @@
 		9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
 		9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */; };
 		9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
+		9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
@@ -126,6 +127,7 @@
 		9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Revert/Sources/AutoLayoutMarginsViewController.swift; sourceTree = "<group>"; };
 		9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GLKViewController.swift; path = Revert/Sources/GLKViewController.swift; sourceTree = "<group>"; };
 		9AAB0D0E1AEDCBC700F74ABB /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Revert/Sources/Static.swift; sourceTree = "<group>"; };
+		9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Revert/Sources/CALayer+Revert.swift"; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
+				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			files = (
 				9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */,
 				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
+				9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */,
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
 				9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */,
