@@ -20,7 +20,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     let padding:CGFloat = 20
     let cornerRadius:CGFloat = 2
     let borderWidth:CGFloat = 1
-    let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.15)
+    let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.15).CGColor
     let defaultViewSideLength: CGFloat = 50
     let leftRightWidth: CGFloat = 80
     
@@ -31,9 +31,9 @@ final class AutoResizingMaskViewController: RevertViewController {
     
     flexibleWidthHeightView.backgroundColor = UIColor.clearColor()
     flexibleWidthHeightView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
-    flexibleWidthHeightView.cornerRadius = cornerRadius
-    flexibleWidthHeightView.borderWidth = borderWidth
-    flexibleWidthHeightView.borderColor = UIColor.whiteColor()
+    flexibleWidthHeightView.layer.cornerRadius = cornerRadius
+    flexibleWidthHeightView.layer.borderWidth = borderWidth
+    flexibleWidthHeightView.layer.borderColor = UIColor.whiteColor().CGColor
     self.outterView.addSubview(flexibleWidthHeightView)
     
     // Top: Flexible Width View
@@ -42,9 +42,9 @@ final class AutoResizingMaskViewController: RevertViewController {
     
     flexibleWidthView.backgroundColor = UIColor.revertDarkblueColor()
     flexibleWidthView.autoresizingMask = .FlexibleWidth
-    flexibleWidthView.cornerRadius = cornerRadius
-    flexibleWidthView.borderWidth = borderWidth
-    flexibleWidthView.borderColor = borderColor
+    flexibleWidthView.layer.cornerRadius = cornerRadius
+    flexibleWidthView.layer.borderWidth = borderWidth
+    flexibleWidthView.layer.borderColor = borderColor
     
     flexibleWidthHeightView.addSubview(flexibleWidthView)
     
@@ -54,9 +54,9 @@ final class AutoResizingMaskViewController: RevertViewController {
     let flexibleHeightLeftRightView = UIView(frame: CGRect(origin: flexibleHeightLeftRightOrigin, size: flexibleHeightLeftRightSize))
     
     flexibleHeightLeftRightView.backgroundColor = UIColor.revertOrangeColor()
-    flexibleHeightLeftRightView.cornerRadius = cornerRadius
-    flexibleHeightLeftRightView.borderWidth = borderWidth
-    flexibleHeightLeftRightView.borderColor = borderColor
+    flexibleHeightLeftRightView.layer.cornerRadius = cornerRadius
+    flexibleHeightLeftRightView.layer.borderWidth = borderWidth
+    flexibleHeightLeftRightView.layer.borderColor = borderColor
     flexibleHeightLeftRightView.autoresizingMask = .FlexibleHeight | .FlexibleLeftMargin | .FlexibleRightMargin
     flexibleWidthHeightView.addSubview(flexibleHeightLeftRightView)
     
@@ -66,9 +66,9 @@ final class AutoResizingMaskViewController: RevertViewController {
     let leftFlexibleTopBottomView = UIView(frame: CGRect(origin: leftFlexibleTopBottomOrigin, size: flexibleTopBottomSize))
     
     leftFlexibleTopBottomView.backgroundColor = UIColor.awesgreenColor()
-    leftFlexibleTopBottomView.borderWidth = borderWidth
-    leftFlexibleTopBottomView.cornerRadius = cornerRadius
-    leftFlexibleTopBottomView.borderColor = borderColor
+    leftFlexibleTopBottomView.layer.borderWidth = borderWidth
+    leftFlexibleTopBottomView.layer.cornerRadius = cornerRadius
+    leftFlexibleTopBottomView.layer.borderColor = borderColor
     leftFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleRightMargin
     flexibleWidthHeightView.addSubview(leftFlexibleTopBottomView)
     
@@ -77,9 +77,9 @@ final class AutoResizingMaskViewController: RevertViewController {
     let rightFlexibleTopBottomView = UIView(frame: CGRect(origin: rightFlexibleTopBottomOrigin, size: flexibleTopBottomSize))
     
     rightFlexibleTopBottomView.backgroundColor = UIColor.revertPinkColor()
-    rightFlexibleTopBottomView.borderWidth = borderWidth
-    rightFlexibleTopBottomView.borderColor = borderColor
-    rightFlexibleTopBottomView.cornerRadius = cornerRadius
+    rightFlexibleTopBottomView.layer.borderWidth = borderWidth
+    rightFlexibleTopBottomView.layer.borderColor = borderColor
+    rightFlexibleTopBottomView.layer.cornerRadius = cornerRadius
     rightFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleLeftMargin
     flexibleWidthHeightView.addSubview(rightFlexibleTopBottomView)
   }
