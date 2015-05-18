@@ -4,12 +4,6 @@
 
 import UIKit
 
-final class CustomIntrinsicContentSizeView: UIView {
-  override func intrinsicContentSize() -> CGSize {
-    return CGSize(width: 80, height: 80)
-  }
-}
-
 final class AutoLayoutMarginsViewController: RevertViewController {
   @IBOutlet weak var centerView: UIView!
   @IBOutlet weak var slider: UISlider!
