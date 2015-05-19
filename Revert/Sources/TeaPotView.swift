@@ -57,15 +57,20 @@ import UIKit
 import GLKit
 
 final class TeaPotView: UIView {
-  var backingWidth: GLint = 0
-  var backingHeight: GLint = 0
-  
-  var viewRenderbuffer: GLuint = 0
-  var viewFramebuffer: GLuint = 0
-  var depthRenderbuffer: GLuint = 0
-  
   private let context = EAGLContext(API: .OpenGLES1)
   
+  private var backingWidth: GLint = 0
+  private var backingHeight: GLint = 0
+  
+  private var viewRenderbuffer: GLuint = 0
+  private var viewFramebuffer: GLuint = 0
+  private var depthRenderbuffer: GLuint = 0
+  
+  private let fieldOfView: GLfloat = 60
+  private let zFar: GLfloat  = 1000
+  private let zNear: GLfloat = 0.1
+  private let scale: GLfloat = 3
+
   private var eaglLayer: CAEAGLLayer {
     return self.layer as! CAEAGLLayer
   }
@@ -84,7 +89,7 @@ final class TeaPotView: UIView {
     let matDiffuse: [GLfloat] = [1, 1, 1, 1]
     let matSpecular: [GLfloat] = [1, 1, 1, 1]
     let lightPosition: [GLfloat] = [0, 0, 1, 0]
-    let lightShininess: GLfloat = 100.0
+    let lightShininess: GLfloat = 100
     
     // Configure OpenGL lighting
     glEnable(GLenum(GL_LIGHTING))
@@ -118,14 +123,11 @@ final class TeaPotView: UIView {
     }
     self.lastViewportUpdateSize = self.bounds.size
     
-    let fieldOfView: GLfloat = 60
-    let zFar: GLfloat  = 1000
-    let zNear: GLfloat = 0.1
-    var size: GLfloat = zNear * GLfloat(tan(Double(fieldOfView) / 180 * M_PI_2))
-    let rect = self.bounds
+    let size = zNear * GLfloat(tan(Double(self.fieldOfView) / 180 * M_PI_2))
+    let sizeByRatio = size / GLfloat(self.bounds.size.width / self.bounds.size.height)
     
-    glFrustumf(-size, size, -size / GLfloat(rect.size.width / rect.size.height), size / GLfloat(rect.size.width / rect.size.height), zNear, zFar)
-    glViewport(0, 0, GLsizei(rect.size.width), GLsizei(rect.size.height))
+    glFrustumf(-size, size, -sizeByRatio, sizeByRatio, self.zNear, self.zFar)
+    glViewport(0, 0, GLsizei(self.bounds.size.width), GLsizei(self.bounds.size.height))
     
     // Make the OpenGL modelview matrix the default
     glMatrixMode(GLenum(GL_MODELVIEW))
@@ -140,8 +142,8 @@ final class TeaPotView: UIView {
     glClear(GLenum(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT))
     
     glLoadIdentity()
-    glTranslatef(0, -0.1, -1)
-    glScalef(3, 3, 3)
+    glTranslatef(0, -0.25, -1)
+    glScalef(self.scale, self.scale, self.scale)
 
     for teapot_indices in teapot_indicies {
       glDrawElements(GLenum(GL_TRIANGLE_STRIP), GLsizei(teapot_indices.count), GLenum(GL_UNSIGNED_SHORT), teapot_indices)
