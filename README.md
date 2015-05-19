@@ -28,7 +28,6 @@ All view controllers apart from `HomeViewController` and `InfoViewController` in
 - `RevertViewController`
 - `RevertTableViewController`
 - `RevertCollectionViewController`
-- `RevertGLKViewController`
 
 which all conform to the `SettableHomeItem` protocol. They are responsible for managing the `item` object by:
 

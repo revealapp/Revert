@@ -40,6 +40,7 @@
 		9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
+		9A82321B1B0A2DCA00EF1647 /* TeaPot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82321A1B0A2DCA00EF1647 /* TeaPot.swift */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
 		9A87FA781ADC953C00290F7A /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA771ADC953C00290F7A /* HomeDataSource.swift */; };
 		9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
@@ -52,9 +53,9 @@
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
 		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
 		9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
-		9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */; };
 		9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
 		9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
+		9ABCC15D1B0A2435009A0665 /* TeaPotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15C1B0A2435009A0665 /* TeaPotView.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
@@ -113,6 +114,7 @@
 		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6850C61AD4A20E00ACCE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A82321A1B0A2DCA00EF1647 /* TeaPot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeaPot.swift; path = Revert/Sources/TeaPot.swift; sourceTree = "<group>"; };
 		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHandler.swift; path = Revert/Sources/KeyboardHandler.swift; sourceTree = "<group>"; };
 		9A87FA771ADC953C00290F7A /* HomeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeDataSource.swift; path = Revert/Sources/HomeDataSource.swift; sourceTree = "<group>"; };
 		9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Revert/Sources/MapAnnotationView.swift; sourceTree = "<group>"; };
@@ -125,9 +127,9 @@
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
 		9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Revert/Sources/AutoLayoutMarginsViewController.swift; sourceTree = "<group>"; };
-		9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GLKViewController.swift; path = Revert/Sources/GLKViewController.swift; sourceTree = "<group>"; };
 		9AAB0D0E1AEDCBC700F74ABB /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Revert/Sources/Static.swift; sourceTree = "<group>"; };
 		9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Revert/Sources/CALayer+Revert.swift"; sourceTree = "<group>"; };
+		9ABCC15C1B0A2435009A0665 /* TeaPotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeaPotView.swift; path = Revert/Sources/TeaPotView.swift; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
 				9A2873991AD76863006466BE /* Country.swift */,
 				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
+				9A82321A1B0A2DCA00EF1647 /* TeaPot.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */,
 				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
 				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
+				9ABCC15C1B0A2435009A0665 /* TeaPotView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -317,7 +321,6 @@
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
-				9AAB0D0A1AEDB6FD00F74ABB /* GLKViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
 				9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */,
@@ -450,7 +453,6 @@
 				9A28739F1AD76EA2006466BE /* GrouppedCollection.swift in Sources */,
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
 				9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */,
-				9AAB0D0B1AEDB6FD00F74ABB /* GLKViewController.swift in Sources */,
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
 				9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */,
 				9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */,
@@ -476,11 +478,13 @@
 				9AC3C3BF1B05DCD80059776E /* AlertsDataSource.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
 				9A28739A1AD76863006466BE /* Country.swift in Sources */,
+				9A82321B1B0A2DCA00EF1647 /* TeaPot.swift in Sources */,
 				9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */,
 				9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
 				9AC3C3C11B05DF8E0059776E /* AlertCellConfigurator.swift in Sources */,
+				9ABCC15D1B0A2435009A0665 /* TeaPotView.swift in Sources */,
 				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
 				9A87FA7C1ADCA16500290F7A /* CountriesDataSource.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
