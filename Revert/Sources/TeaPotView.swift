@@ -57,7 +57,6 @@ import UIKit
 import GLKit
 
 final class TeaPotView: UIView {
-  
   var backingWidth: GLint = 0
   var backingHeight: GLint = 0
   
@@ -109,7 +108,16 @@ final class TeaPotView: UIView {
     
     // Set the OpenGL projection matrix
     glMatrixMode(GLenum(GL_PROJECTION))
-
+  }
+  
+  private var lastViewportUpdateSize: CGSize?
+  
+  private func updateViewport() {
+    if lastViewportUpdateSize == self.bounds.size {
+      return
+    }
+    self.lastViewportUpdateSize = self.bounds.size
+    
     let fieldOfView: GLfloat = 60
     let zFar: GLfloat  = 1000
     let zNear: GLfloat = 0.1
@@ -124,16 +132,18 @@ final class TeaPotView: UIView {
   }
   
   private func drawView() {
-    glBindFramebufferOES(GLenum(GL_FRAMEBUFFER_OES), self.viewFramebuffer)
+    EAGLContext.setCurrentContext(self.context)
 
-    glClearColor(0, 0, 0, 1)
+    glBindFramebufferOES(GLenum(GL_FRAMEBUFFER_OES), self.viewFramebuffer)
+    
+    glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
     glClear(GLenum(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT))
     
     glLoadIdentity()
     glTranslatef(0, -0.1, -1)
     glScalef(3, 3, 3)
-    
-    for teapot_indices in new_teapot_indicies {
+
+    for teapot_indices in teapot_indicies {
       glDrawElements(GLenum(GL_TRIANGLE_STRIP), GLsizei(teapot_indices.count), GLenum(GL_UNSIGNED_SHORT), teapot_indices)
     }
 
@@ -163,8 +173,7 @@ final class TeaPotView: UIView {
     glRenderbufferStorageOES(GLenum(GL_RENDERBUFFER_OES), GLenum(GL_DEPTH_COMPONENT16_OES), self.backingWidth, self.backingHeight)
     glFramebufferRenderbufferOES(GLenum(GL_FRAMEBUFFER_OES), GLenum(GL_DEPTH_ATTACHMENT_OES), GLenum(GL_RENDERBUFFER_OES), self.depthRenderbuffer)
     
-    if glCheckFramebufferStatusOES(GLenum(GL_FRAMEBUFFER_OES)) != GLenum(GL_FRAMEBUFFER_COMPLETE_OES)
-    {
+    if glCheckFramebufferStatusOES(GLenum(GL_FRAMEBUFFER_OES)) != GLenum(GL_FRAMEBUFFER_COMPLETE_OES) {
       println("failed to make complete framebuffer object")
     }
   }
@@ -175,9 +184,8 @@ final class TeaPotView: UIView {
     self.viewFramebuffer = 0
     glDeleteRenderbuffersOES(1, &self.viewRenderbuffer)
     self.viewRenderbuffer = 0
-
-    if self.depthRenderbuffer != 0
-    {
+    
+    if self.depthRenderbuffer != 0 {
       glDeleteRenderbuffersOES(1, &self.depthRenderbuffer)
       self.depthRenderbuffer = 0
     }
@@ -207,8 +215,8 @@ final class TeaPotView: UIView {
     // This is the perfect opportunity to also update the framebuffer so that it is
     // the same size as our display area.
     super.layoutSubviews()
-    
-    EAGLContext.setCurrentContext(self.context)
+
+    self.updateViewport()
     self.destroyFrameBuffer()
     self.createFrameBuffer()
     self.drawView()
