@@ -124,10 +124,13 @@ final class TeaPotView: UIView {
     self.lastViewportUpdateSize = self.bounds.size
     
     let size = zNear * GLfloat(tan(Double(self.fieldOfView) / 180 * M_PI_2))
-    let sizeByRatio = size / GLfloat(self.bounds.size.width / self.bounds.size.height)
+    
+    let minLength = min(self.bounds.height, self.bounds.width)
+    let maxLength = max(self.bounds.height, self.bounds.width)
+    let sizeByRatio = size / GLfloat(minLength / maxLength)
     
     glFrustumf(-size, size, -sizeByRatio, sizeByRatio, self.zNear, self.zFar)
-    glViewport(0, 0, GLsizei(self.bounds.size.width), GLsizei(self.bounds.size.height))
+    glViewport(0, 0, GLsizei(self.bounds.width), GLsizei(self.bounds.height))
     
     // Make the OpenGL modelview matrix the default
     glMatrixMode(GLenum(GL_MODELVIEW))
