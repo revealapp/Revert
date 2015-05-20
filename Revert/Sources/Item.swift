@@ -4,12 +4,17 @@
 
 import Foundation
 
+private enum Attributes: String {
+  case Title = "title"
+  case Cell = "cellIdentifier"
+}
+
 struct Item: Collectable {
   let title: String
   let cellIdentifier: String
   
   init(dictionary: [String : AnyObject]) {
-    self.title = dictionary["title"] as! String
-    self.cellIdentifier = dictionary["cellIdentifier"] as! String
+    self.title = dictionary[Attributes.Title.rawValue] as! String
+    self.cellIdentifier = dictionary[Attributes.Cell.rawValue] as! String
   }
 }

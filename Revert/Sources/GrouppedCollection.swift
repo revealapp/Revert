@@ -8,13 +8,18 @@ protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 
+private enum Attributes: String {
+  case Title = "title"
+  case Rows = "rows"
+}
+
 struct CollectableGroup<T: Collectable> {
   let rows: [T]
   let title: String?
   
   init(dictionary: [String: AnyObject]) {
-    self.title = dictionary["title"] as? String
-    self.rows = (dictionary["rows"] as! [[String: AnyObject]]).map({T(dictionary: $0)})
+    self.title = dictionary[Attributes.Title.rawValue] as? String
+    self.rows = (dictionary[Attributes.Rows.rawValue] as! [[String: AnyObject]]).map({T(dictionary: $0)})
   }
   
   subscript(i: Int) -> T {
