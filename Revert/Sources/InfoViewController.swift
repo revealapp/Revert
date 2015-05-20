@@ -16,6 +16,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     
     self.textView.textContainerInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
     
+    // Configure the view
     if let item = self.item {
       self.textView.text = item.info
       self.imageView.image = UIImage(named: item.iconName)

@@ -28,6 +28,7 @@ final class CountriesViewController: RevertTableViewController {
     self.refreshControl = UIRefreshControl()
     self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
     
+    // Setup dynamic type notifications.
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
@@ -43,6 +44,7 @@ final class CountriesViewController: RevertTableViewController {
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    // Reload tableview to update the cell font sizes.
     self.tableView!.reloadData()
   }
 }

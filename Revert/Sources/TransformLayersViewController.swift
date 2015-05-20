@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import GLKit
 
 final class TransformLayersViewController: RevertViewController {
   @IBOutlet weak var yRotateView: UIView!
@@ -10,10 +11,6 @@ final class TransformLayersViewController: RevertViewController {
   @IBOutlet weak var zRotateView: UIView!
   @IBOutlet weak var xyRotateView: UIView!
   @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
-
-  private func degreesToRadians(degrees: CGFloat) -> CGFloat {
-    return degrees * CGFloat(M_PI) / 180
-  }
   
   private var wasAnimated = false
 
@@ -24,8 +21,8 @@ final class TransformLayersViewController: RevertViewController {
     }
     self.wasAnimated = true
 
-    let fortyFiveDegreesInRadian = self.degreesToRadians(45)
-    let tenDegreesInRadian = self.degreesToRadians(10)
+    let fortyFiveDegreesInRadian = CGFloat(GLKMathDegreesToRadians(45))
+    let tenDegreesInRadian = CGFloat(GLKMathDegreesToRadians(10))
 
     UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
       self.xRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 1, 0, 0)
@@ -46,6 +43,7 @@ final class TransformLayersViewController: RevertViewController {
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     
+    // Update the scrollview' subview's height to match the screen height with a minimum value
     let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 4
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minItemHeight)
   }

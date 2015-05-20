@@ -31,10 +31,12 @@ final class AlertViewController: RevertTableViewController {
     
     self.tableView.dataSource = self.dataSource
     
+    // Setup dynamic type notifications.
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
 
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    // Reload tableview to update the cell font sizes.
     self.tableView!.reloadData()
   }
 }

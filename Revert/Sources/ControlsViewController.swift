@@ -43,6 +43,7 @@ final class ControlsViewController: RevertCollectionViewController {
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
     
+    // Setup dynamic type notifications.
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
@@ -51,6 +52,7 @@ final class ControlsViewController: RevertCollectionViewController {
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
+    // Reload tableview to update the cell font sizes.
     self.collectionView!.reloadData()
   }
 }
