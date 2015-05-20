@@ -18,6 +18,10 @@ extension StressTestViewController: UICollectionViewDataSource {
   }
   
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    return collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath) as! UICollectionViewCell
+    if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath) as? UICollectionViewCell {
+      return cell
+    } else {
+      fatalError("Expecting to dequeue a UICollectionViewCell from the UICollectionView")
+    }
   }
 }
