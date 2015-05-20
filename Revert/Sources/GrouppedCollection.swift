@@ -19,7 +19,12 @@ struct CollectableGroup<T: Collectable> {
   
   init(dictionary: [String: AnyObject]) {
     self.title = dictionary[Attributes.Title.rawValue] as? String
-    self.rows = (dictionary[Attributes.Rows.rawValue] as! [[String: AnyObject]]).map({T(dictionary: $0)})
+    
+    if let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] {
+      self.rows = rowsData.map({T(dictionary: $0)})
+    } else {
+      fatalError("Unable to deserialize Group rows")
+    }
   }
   
   subscript(i: Int) -> T {
@@ -51,7 +56,10 @@ struct CollectableCollection<T: Collectable> {
   }
   
   private static func collectableItemsFromRessource(resourceFilename: String) -> [CollectableGroup<T>] {
-    let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFilename, ofType: "plist")!) as! [[String: AnyObject]]
-    return items.map({CollectableGroup<T>(dictionary: $0)})
+    if let items = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource(resourceFilename, ofType: "plist")!) as? [[String: AnyObject]] {
+      return items.map({CollectableGroup<T>(dictionary: $0)})
+    } else {
+      fatalError("Invalid file: \(resourceFilename).plist")
+    }
   }
 }

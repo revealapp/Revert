@@ -34,7 +34,7 @@ final class MapViewController: RevertViewController {
       self.mapView.addAnnotations(annotations)
       self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
     } else {
-      fatalError("MapLocations.plist file not valid")
+      fatalError("Invalid file: MapLocations.plist")
     }
   }
 }

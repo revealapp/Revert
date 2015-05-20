@@ -20,10 +20,18 @@ struct HomeItem: Collectable {
   let isPush: Bool
   
   init(dictionary: [String: AnyObject]) {
-    self.title = dictionary[Attributes.Title.rawValue] as! String
-    self.info = dictionary[Attributes.Info.rawValue] as! String
-    self.iconName = dictionary[Attributes.Icon.rawValue] as! String
-    self.segueIdentifier = dictionary[Attributes.Segue.rawValue] as! String
+    if let title = dictionary[Attributes.Title.rawValue] as? String,
+      info = dictionary[Attributes.Info.rawValue] as? String,
+      iconName = dictionary[Attributes.Icon.rawValue] as? String,
+      segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String {
+        self.title = title
+        self.info = info
+        self.iconName = iconName
+        self.segueIdentifier = segueIdentifier
+    } else {
+      fatalError("Invalid HomeItem attributes")
+    }
+    
     self.isPush = dictionary[Attributes.Push.rawValue] as? Bool ?? true
   }
 }

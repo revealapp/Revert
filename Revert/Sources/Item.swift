@@ -14,7 +14,12 @@ struct Item: Collectable {
   let cellIdentifier: String
   
   init(dictionary: [String : AnyObject]) {
-    self.title = dictionary[Attributes.Title.rawValue] as! String
-    self.cellIdentifier = dictionary[Attributes.Cell.rawValue] as! String
+    if let title = dictionary[Attributes.Title.rawValue] as? String,
+      cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String {
+        self.title = title
+        self.cellIdentifier = cellIdentifier
+    } else {
+      fatalError("Invalid Item attributes")
+    }
   }
 }
