@@ -9,7 +9,7 @@ final class MapAnnotation: NSObject, MKAnnotation {
     case Title = "title"
     case Subtitle = "subtitle"
     case Latitude = "latitude"
-    case Longitude = "londitude"
+    case Longitude = "longitude"
   }
   
   let coordinate: CLLocationCoordinate2D

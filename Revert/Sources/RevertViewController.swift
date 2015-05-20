@@ -69,3 +69,21 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
     }
   }
 }
+
+class RevertGLKViewController: GLKViewController, SettableHomeItem {
+  final var item: HomeItem?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
+    
+    if segue.identifier == SB.Segue.Info {
+      self.prepareForInfoSegue(segue, item: self.item!)
+    }
+  }
+}

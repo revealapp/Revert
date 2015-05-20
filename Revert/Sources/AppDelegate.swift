@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       if let splitViewController = self.window?.rootViewController as? UISplitViewController {
         self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
       } else {
-        fatalError("Root view controller should be a UISplitViewController")
+        fatalError("Root view controller should be a UISplitViewController on any device > iOS 7 or on iPads")
       }
     }
 
