@@ -23,10 +23,6 @@ final class ControlsViewController: RevertCollectionViewController {
   private let cellConfigurator = ControlCellConfigurator()
   private let keyboardHandler = KeyboardHandler()
 
-  private var collectionViewFlowLayout: UICollectionViewFlowLayout {
-    return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
-  }
-  
   deinit {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }

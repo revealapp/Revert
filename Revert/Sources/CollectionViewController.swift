@@ -4,11 +4,7 @@
 
 import UIKit
 
-final class CollectionViewController: RevertCollectionViewController {
-  private var collectionViewFlowLayout: UICollectionViewFlowLayout {
-    return self.collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
-  }
-}
+final class CollectionViewController: RevertCollectionViewController { }
 
 // MARK: UICollectionViewDataSource
 extension CollectionViewController: UICollectionViewDataSource {
