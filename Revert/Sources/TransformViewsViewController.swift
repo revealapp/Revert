@@ -33,12 +33,13 @@ final class TransformViewsViewController: RevertViewController {
   }
   
   private let minItemHeight: CGFloat = 150
+  private let noOfItems = 3
   
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
 
     // Update the scrollview' subview's height to match the screen height with a minimum value
-    let scrollViewItemHeight = floor(self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / 3
+    let scrollViewItemHeight = floor((self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / CGFloat(self.noOfItems))
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minItemHeight)
   }
 }
