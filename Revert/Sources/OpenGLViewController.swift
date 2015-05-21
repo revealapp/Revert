@@ -54,14 +54,12 @@ final class OpenGLViewController: RevertGLKViewController {
     glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Indices)), &Indices, GLenum(GL_STATIC_DRAW))
 
     
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
-    
     let positionUnsafePointer = UnsafePointer<Void>(bitPattern: 0)
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
     glVertexAttribPointer(GLuint(GLKVertexAttrib.Position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), positionUnsafePointer)
     
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
-    
     let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
     glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
     
     glBindVertexArrayOES(0)
