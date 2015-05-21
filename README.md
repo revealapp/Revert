@@ -1,36 +1,22 @@
-
 # REVEal Rendering Test
 
-Revert is a Universal iOS 7+ application destined to be inspected through @reveal_app.
+Revert is a sample iOS application destined to be inspected with @revealapp. It showcases UIKit's stock views and controls as well as specific view scenarios. It is an Universal app running on iOS7+ devices which supports portrait and lanscape orientation. It also support iOS dynamic type setting.
 
-_The application also supports dynamic type._
+## Getting Started
 
-## Architecture
+Run the following steps to start inspecting _Revert_ with _Reveal_:
 
-Revert loads its data for dynamic view controllers from `plist` files. Following is a table mapping between the view controller, the used data source and its `plist` file.
+- Download and clone the repository: _git clone https://github.com/revealapp/revert.git_
+- Open Revert: _open revert/Revert.xcodeproj_
+- Run the project: _⌘+ R_
+- Launch _Reveal_ and start inspecting
 
+## Changes between iOS Versions
 
-View Controller | Data Source | Plist File
---- | --- | ---
-`HomeViewController` | `HomeDataSource` | `HomeItems.plist`
-`CountriesViewController` | `CountriesDataSource` | `CountriesCapitals.plist`
-`ControlsViewController` | `ControlsDataSource` | `ControlItems.plist`, `ViewItems.plist`
-`LayerPropertiesViewController` | `ControlsDataSource` | `LayerPropertiesItems.plist`
-`AlertsViewController` | `AlertsDataSource` | `AlertItems.plist`
-`MapViewController` | _None_ | `MapLocations.plist`
+The behaviour when mixing constraint and transform has evolved between iOS7 and iOS8. Hence, the view controllers dealing with transforms (`TransformViewsViewController`, `TransformLayersViewController`, `AnchorPointBoundsChangeViewController`) will behave differently if running the application on an iOS7 or an iOS8 device. For more information please see [this blog post](http://revealapp.com/blog/constraints-and-transforms.html).
 
-All the `plist` files are deserialised and mapped into objects via the `Collectable` protocol. These objects are then grouped and stored within `CollectableGroup<T>` embeded in a `CollectableCollection<T>`.
+## More about Reveal
 
-## View Controllers
-
-All view controllers apart from `HomeViewController` and `InfoViewController` inherit from either one of the following custom view controllers:
-
-- `RevertViewController`
-- `RevertTableViewController`
-- `RevertCollectionViewController`
-
-which all conform to the `SettableHomeItem` protocol. They are responsible for managing the `item` object by:
-
-- Ensuring that an `item` object is set by the time `viewDidLoad` gets called.
-- Configuring in a similar manner `InfoViewController` in `prepareForSegue:sender:` with `item` when the info button present on every screen is tapped.
-
+- Web: [revealapp.com](https://www.revealapp.com)
+- Twitter: [@reveal_app](https://twitter.com/reveal_app)
+- GitHub: [@revealapp](https://github.com/revealapp)
