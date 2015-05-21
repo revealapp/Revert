@@ -1,6 +1,6 @@
 # REVEal Rendering Test
 
-Revert is a sample iOS application destined to be inspected with @revealapp. It showcases UIKit's stock views and controls as well as specific view scenarios. It is an Universal app running on iOS7+ devices which supports portrait and lanscape orientation. It also support implement iOS7+ dynamic type system setting.
+Revert is a sample iOS application destined to be inspected with @revealapp. It showcases UIKit's stock views and controls as well as specific view scenarios. It is an Universal app running on iOS7+ devices which supports portrait and lanscape orientation. It also implement iOS7 dynamic type system setting.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Run the following steps to start inspecting _Revert_ with _Reveal_:
 
 - Download and clone the repository: _git clone https://github.com/revealapp/revert.git_
 - Open Revert: _open revert/Revert.xcodeproj_
-- Run the project: _⌘+ R_
+- Run the project: _⌘ + R_
 - Launch _Reveal_ and connect to device / simulator
 
 ## Changes between iOS Versions
