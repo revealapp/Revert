@@ -1647,14 +1647,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S74-Tx-UKU" userLabel="Container">
-                                <rect key="frame" x="0.0" y="64" width="600" height="546"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4F-Ml-7dt" userLabel="Top Separator">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTi-7D-Lfb" userLabel="Upper Picker">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="167"/>
+                                        <rect key="frame" x="0.0" y="69" width="600" height="164"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRY-st-aI0" userLabel="Date Picker Separator Top">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
@@ -1663,11 +1663,11 @@
                                                     <constraint firstAttribute="height" constant="1" id="WkZ-u9-5Ws" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-54-6HQ" userLabel="Date Picker Container">
-                                                <rect key="frame" x="0.0" y="1" width="600" height="165"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-54-6HQ" userLabel="Date Picker Container">
+                                                <rect key="frame" x="0.0" y="1" width="600" height="162"/>
                                                 <subviews>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RLO-wz-rfy">
-                                                        <rect key="frame" x="0.0" y="2" width="600" height="162"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
                                                         <date key="date" timeIntervalSinceReferenceDate="450683719.47818398">
                                                             <!--2015-04-14 05:55:19 +0000-->
                                                         </date>
@@ -1676,13 +1676,14 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="RLO-wz-rfy" firstAttribute="leading" secondItem="6mg-54-6HQ" secondAttribute="leading" id="13P-Ex-dbF"/>
-                                                    <constraint firstAttribute="bottom" secondItem="RLO-wz-rfy" secondAttribute="bottom" id="MJ7-3b-bRF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RLO-wz-rfy" secondAttribute="bottom" priority="750" id="MJ7-3b-bRF"/>
+                                                    <constraint firstAttribute="centerY" secondItem="RLO-wz-rfy" secondAttribute="centerY" id="Nwd-Kq-OB2"/>
                                                     <constraint firstAttribute="trailing" secondItem="RLO-wz-rfy" secondAttribute="trailing" id="XLg-eg-551"/>
-                                                    <constraint firstItem="RLO-wz-rfy" firstAttribute="top" secondItem="6mg-54-6HQ" secondAttribute="top" id="p13-R2-WFV"/>
+                                                    <constraint firstItem="RLO-wz-rfy" firstAttribute="top" secondItem="6mg-54-6HQ" secondAttribute="top" priority="750" id="p13-R2-WFV"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB8-oM-jRa" userLabel="Date Picker Separator Bottom">
-                                                <rect key="frame" x="0.0" y="166" width="600" height="1"/>
+                                                <rect key="frame" x="0.0" y="163" width="600" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="2XC-Xz-2UF" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
@@ -1696,7 +1697,6 @@
                                             <constraint firstItem="6mg-54-6HQ" firstAttribute="top" secondItem="MRY-st-aI0" secondAttribute="bottom" id="JkZ-LP-9ST"/>
                                             <constraint firstItem="MRY-st-aI0" firstAttribute="leading" secondItem="vTi-7D-Lfb" secondAttribute="leading" id="Mjq-BZ-2lo"/>
                                             <constraint firstItem="iB8-oM-jRa" firstAttribute="leading" secondItem="vTi-7D-Lfb" secondAttribute="leading" id="PTB-6y-eYH"/>
-                                            <constraint firstAttribute="height" constant="167" id="Pli-9W-ELR"/>
                                             <constraint firstAttribute="trailing" secondItem="iB8-oM-jRa" secondAttribute="trailing" id="VNZ-RW-dqG"/>
                                             <constraint firstItem="MRY-st-aI0" firstAttribute="top" secondItem="vTi-7D-Lfb" secondAttribute="top" id="ZeJ-t1-lKc"/>
                                             <constraint firstAttribute="bottom" secondItem="iB8-oM-jRa" secondAttribute="bottom" id="jhG-IU-mgf"/>
@@ -1705,11 +1705,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-2f-rOZ" userLabel="Middle Separator">
-                                        <rect key="frame" x="0.0" y="239" width="600" height="71"/>
+                                        <rect key="frame" x="0.0" y="233" width="600" height="70"/>
                                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGZ-rT-zgu" userLabel="Lower Picker">
-                                        <rect key="frame" x="0.0" y="310" width="600" height="164"/>
+                                        <rect key="frame" x="0.0" y="303" width="600" height="164"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-a0-0kP" userLabel="Picker Separator Top">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
@@ -1718,11 +1718,14 @@
                                                     <constraint firstAttribute="height" constant="1" id="NQH-7l-j8m" customClass="HairlineConstraint" customModule="Revert" customModuleProvider="target"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-9d-yHN" userLabel="Picker Container">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-9d-yHN" userLabel="Picker Container">
                                                 <rect key="frame" x="0.0" y="1" width="600" height="162"/>
                                                 <subviews>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97n-vh-KYK">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="162" id="uA0-RA-uGa"/>
+                                                        </constraints>
                                                         <connections>
                                                             <outlet property="dataSource" destination="T6q-5N-cqU" id="etB-f6-K20"/>
                                                             <outlet property="delegate" destination="T6q-5N-cqU" id="xAw-LG-XbU"/>
@@ -1732,9 +1735,10 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="97n-vh-KYK" secondAttribute="trailing" id="5e0-Cu-M39"/>
-                                                    <constraint firstItem="97n-vh-KYK" firstAttribute="top" secondItem="7oR-9d-yHN" secondAttribute="top" id="ch6-o5-Pnx"/>
+                                                    <constraint firstAttribute="centerY" secondItem="97n-vh-KYK" secondAttribute="centerY" id="9VG-bN-oOC"/>
+                                                    <constraint firstItem="97n-vh-KYK" firstAttribute="top" secondItem="7oR-9d-yHN" secondAttribute="top" priority="750" id="ch6-o5-Pnx"/>
                                                     <constraint firstItem="97n-vh-KYK" firstAttribute="leading" secondItem="7oR-9d-yHN" secondAttribute="leading" id="h3C-IK-JEP"/>
-                                                    <constraint firstAttribute="bottom" secondItem="97n-vh-KYK" secondAttribute="bottom" id="hUk-78-xkI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="97n-vh-KYK" secondAttribute="bottom" priority="750" id="hUk-78-xkI"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmU-s7-Yhr" userLabel="Picker Separator Bottom">
@@ -1760,8 +1764,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhP-p7-TTs" userLabel="Bottom Separator">
-                                        <rect key="frame" x="0.0" y="474" width="600" height="72"/>
+                                        <rect key="frame" x="0.0" y="467" width="600" height="69"/>
                                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="1000" id="6Jt-ts-0xA"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1775,14 +1782,15 @@
                                     <constraint firstItem="O4F-Ml-7dt" firstAttribute="leading" secondItem="S74-Tx-UKU" secondAttribute="leading" id="bGx-9F-Rsc"/>
                                     <constraint firstItem="FGZ-rT-zgu" firstAttribute="leading" secondItem="S74-Tx-UKU" secondAttribute="leading" id="eYE-qy-2fh"/>
                                     <constraint firstItem="vTi-7D-Lfb" firstAttribute="leading" secondItem="S74-Tx-UKU" secondAttribute="leading" id="ebX-mL-GPl"/>
+                                    <constraint firstItem="RLO-wz-rfy" firstAttribute="height" secondItem="97n-vh-KYK" secondAttribute="height" id="eyF-bd-g5n"/>
                                     <constraint firstItem="XhP-p7-TTs" firstAttribute="height" secondItem="O4F-Ml-7dt" secondAttribute="height" id="fFa-Eb-8jD"/>
                                     <constraint firstItem="XhP-p7-TTs" firstAttribute="height" secondItem="lM2-2f-rOZ" secondAttribute="height" id="fbt-4B-RSc"/>
                                     <constraint firstItem="vTi-7D-Lfb" firstAttribute="top" secondItem="O4F-Ml-7dt" secondAttribute="bottom" id="gr9-Bq-r7i"/>
                                     <constraint firstAttribute="trailing" secondItem="lM2-2f-rOZ" secondAttribute="trailing" id="it3-Au-Aaa"/>
                                     <constraint firstAttribute="trailing" secondItem="O4F-Ml-7dt" secondAttribute="trailing" id="ki0-Zt-6fE"/>
                                     <constraint firstAttribute="trailing" secondItem="vTi-7D-Lfb" secondAttribute="trailing" id="lUA-Rb-Ni0"/>
+                                    <constraint firstItem="vTi-7D-Lfb" firstAttribute="height" secondItem="FGZ-rT-zgu" secondAttribute="height" id="oex-r4-2q1"/>
                                     <constraint firstItem="lM2-2f-rOZ" firstAttribute="top" secondItem="vTi-7D-Lfb" secondAttribute="bottom" id="rbi-EB-1PO"/>
-                                    <constraint firstItem="FGZ-rT-zgu" firstAttribute="width" secondItem="vTi-7D-Lfb" secondAttribute="width" id="tTm-Zr-lB3"/>
                                     <constraint firstAttribute="trailing" secondItem="FGZ-rT-zgu" secondAttribute="trailing" id="tjc-uC-c9w"/>
                                     <constraint firstItem="XhP-p7-TTs" firstAttribute="top" secondItem="FGZ-rT-zgu" secondAttribute="bottom" id="urX-TC-WwV"/>
                                 </constraints>
@@ -1790,7 +1798,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YWa-cb-Hcr" firstAttribute="top" secondItem="S74-Tx-UKU" secondAttribute="bottom" constant="-10" id="CKr-Y6-ikv"/>
+                            <constraint firstItem="YWa-cb-Hcr" firstAttribute="top" secondItem="S74-Tx-UKU" secondAttribute="bottom" id="CKr-Y6-ikv"/>
                             <constraint firstItem="S74-Tx-UKU" firstAttribute="top" secondItem="gIX-0g-jah" secondAttribute="bottom" id="D5W-d3-JQh"/>
                             <constraint firstAttribute="trailing" secondItem="S74-Tx-UKU" secondAttribute="trailing" id="bj1-Nu-oOt"/>
                             <constraint firstItem="S74-Tx-UKU" firstAttribute="leading" secondItem="C8r-xN-EbH" secondAttribute="leading" id="tni-6n-FMd"/>
@@ -1803,10 +1811,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="containerView" destination="S74-Tx-UKU" id="Oqh-ro-fIO"/>
-                        <outlet property="pickerHeightConstraint" destination="Pli-9W-ELR" id="vcB-af-6Fd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWL-AT-WvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4542,7 +4546,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bOh-3j-R0P"/>
+        <segue reference="U0Q-Og-cwg"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
