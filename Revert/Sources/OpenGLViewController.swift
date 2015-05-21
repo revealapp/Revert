@@ -25,11 +25,11 @@ final class OpenGLViewController: RevertGLKViewController {
   private func loadGL() {
     EAGLContext.setCurrentContext(self.glkView.context)
     
-    let options: [NSObject: AnyObject] = [GLKTextureLoaderOriginBottomLeft: true]
+    let options: [NSObject: AnyObject] = [GLKTextureLoaderOriginBottomLeft: false]
     var error: NSError?
     
-    if let image = UIImage(named: "reveal_pretty.jpg") {
-      let textureInfo = GLKTextureLoader.textureWithCGImage(image.CGImage, options: options, error: nil)
+    if let image = UIImage(named: "reveal_pretty_flipped.jpg") {
+      let textureInfo = GLKTextureLoader.textureWithCGImage(image.CGImage, options: options, error: &error)
       assert(error == nil, "Unable to load texture")
       
       self.effect.texture2d0.name = textureInfo.name
@@ -96,6 +96,17 @@ final class OpenGLViewController: RevertGLKViewController {
     
     self.rotation += 90 * Float(self.timeSinceLastUpdate)
     self.effect.transform.modelviewMatrix = self.computedModelViewMatrix
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+   
+    // Make CAEAGLLayer a square to ease the rotation process
+    if self.view.layer.bounds.size.width > self.view.layer.bounds.size.height {
+      self.view.layer.bounds.size.height = self.view.layer.bounds.size.width
+    } else {
+      self.view.layer.bounds.size.width = self.view.layer.bounds.size.height
+    }
   }
   
   override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {

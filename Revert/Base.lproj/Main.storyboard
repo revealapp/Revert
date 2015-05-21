@@ -2131,7 +2131,7 @@
                         <viewControllerLayoutGuide type="top" id="zaV-f3-sf7"/>
                         <viewControllerLayoutGuide type="bottom" id="CLt-kN-smg"/>
                     </layoutGuides>
-                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="24" drawableStencilFormat="8" drawableMultisample="4X" id="5U0-IC-78G">
+                    <glkView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="24" drawableStencilFormat="8" drawableMultisample="4X" id="5U0-IC-78G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
