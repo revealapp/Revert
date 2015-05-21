@@ -5,7 +5,6 @@
 import UIKit
 
 extension CALayer {
-  
   var borderUIColor: UIColor! {
     set {
       self.borderColor = newValue.CGColor
