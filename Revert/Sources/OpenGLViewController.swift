@@ -6,7 +6,6 @@ import UIKit
 import GLKit
 
 final class OpenGLViewController: RevertGLKViewController {
-  
   private var glkView: GLKView {
     return self.view as! GLKView
   }
@@ -23,8 +22,6 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   private func loadGL() {
-    EAGLContext.setCurrentContext(self.glkView.context)
-    
     let options: [NSObject: AnyObject] = [GLKTextureLoaderOriginBottomLeft: false]
     var error: NSError?
     
@@ -66,13 +63,20 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   private func unloadGL() {
+    let previousContext = EAGLContext.currentContext()
+    
+    self.setCurrentContext()
+    
     glDeleteBuffers(1, &self.vertexBuffer)
     glDeleteBuffers(1, &self.indexBuffer)
     glDeleteVertexArraysOES(1, &self.vertexArray)
-    
-    if EAGLContext.currentContext() == self.glkView.context {
-      EAGLContext.setCurrentContext(nil)
-    }
+
+    EAGLContext.setCurrentContext(previousContext != self.glkView.context ? previousContext : nil)
+  }
+  
+  private func setCurrentContext() {
+    let isContextSet = EAGLContext.setCurrentContext(self.glkView.context)
+    assert(isContextSet, "Failed to set current context")
   }
   
   deinit {
@@ -84,6 +88,8 @@ final class OpenGLViewController: RevertGLKViewController {
     
     self.glkView.context = EAGLContext(API: .OpenGLES2)
     assert(self.glkView.context != nil, "Failed to initialise context .OpenGLES2")
+
+    self.setCurrentContext()
     
     self.glkView.delegate = self
     
@@ -99,14 +105,14 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   override func viewWillLayoutSubviews() {
-    super.viewWillLayoutSubviews()
-   
     // Make CAEAGLLayer a square to ease the rotation process
     if self.view.layer.bounds.size.width > self.view.layer.bounds.size.height {
       self.view.layer.bounds.size.height = self.view.layer.bounds.size.width
     } else {
       self.view.layer.bounds.size.width = self.view.layer.bounds.size.height
     }
+
+    super.viewWillLayoutSubviews()
   }
   
   override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -116,6 +122,8 @@ final class OpenGLViewController: RevertGLKViewController {
 
 extension OpenGLViewController: GLKViewDelegate {
   override func glkView(view: GLKView!, drawInRect rect: CGRect) {
+    self.setCurrentContext()
+
     glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
     glClear(GLenum(GL_COLOR_BUFFER_BIT))
     
