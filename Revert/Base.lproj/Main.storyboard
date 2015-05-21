@@ -338,9 +338,9 @@
                                     <constraints>
                                         <constraint firstItem="z76-Yq-qd9" firstAttribute="leading" secondItem="p0d-PK-Oep" secondAttribute="leading" constant="15" id="5TZ-hh-cR9"/>
                                         <constraint firstItem="oWk-E8-mvi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="z76-Yq-qd9" secondAttribute="trailing" constant="8" id="DDL-1X-flM"/>
-                                        <constraint firstAttribute="centerYWithinMargins" secondItem="oWk-E8-mvi" secondAttribute="centerYWithinMargins" id="IVj-Ia-2hf"/>
+                                        <constraint firstAttribute="centerY" secondItem="oWk-E8-mvi" secondAttribute="centerY" id="IVj-Ia-2hf"/>
                                         <constraint firstAttribute="trailing" secondItem="oWk-E8-mvi" secondAttribute="trailing" constant="15" id="kf5-aN-syw"/>
-                                        <constraint firstAttribute="centerY" secondItem="z76-Yq-qd9" secondAttribute="centerY" id="v8x-WF-Ny3"/>
+                                        <constraint firstAttribute="centerY" secondItem="z76-Yq-qd9" secondAttribute="centerY" id="lE0-7P-veM"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1915,8 +1915,8 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerYWithinMargins" secondItem="jg8-Cp-3dU" secondAttribute="centerYWithinMargins" id="fM2-9F-1Oo"/>
-                                    <constraint firstAttribute="centerXWithinMargins" secondItem="jg8-Cp-3dU" secondAttribute="centerXWithinMargins" id="nTG-AV-p2i"/>
+                                    <constraint firstAttribute="centerX" secondItem="jg8-Cp-3dU" secondAttribute="centerX" id="gNF-hc-52U"/>
+                                    <constraint firstAttribute="centerY" secondItem="jg8-Cp-3dU" secondAttribute="centerY" id="hT8-R3-IwE"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="titleLabel" destination="1u0-zS-ka0" id="VPr-AL-C8b"/>
@@ -3054,7 +3054,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cST-9k-P7P">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-9k-P7P">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-km-3E8" userLabel="Container Translate">
@@ -3272,9 +3272,9 @@
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cST-9k-P7P" secondAttribute="trailing" id="MLh-hf-8Xc"/>
-                            <constraint firstItem="cST-9k-P7P" firstAttribute="top" secondItem="CiJ-mk-FKv" secondAttribute="topMargin" id="iQg-F7-VGK"/>
+                            <constraint firstItem="cST-9k-P7P" firstAttribute="top" secondItem="CiJ-mk-FKv" secondAttribute="top" id="iQg-F7-VGK"/>
                             <constraint firstItem="cST-9k-P7P" firstAttribute="leading" secondItem="CiJ-mk-FKv" secondAttribute="leading" id="tJb-l4-QBV"/>
-                            <constraint firstItem="cST-9k-P7P" firstAttribute="bottom" secondItem="CiJ-mk-FKv" secondAttribute="bottomMargin" id="zG3-dT-vu4"/>
+                            <constraint firstItem="cST-9k-P7P" firstAttribute="bottom" secondItem="CiJ-mk-FKv" secondAttribute="bottom" id="zG3-dT-vu4"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -3675,9 +3675,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="8j6-aN-FN0" secondAttribute="bottom" id="ALa-JH-BP2"/>
+                            <constraint firstAttribute="bottom" secondItem="8j6-aN-FN0" secondAttribute="bottom" id="ALa-JH-BP2"/>
                             <constraint firstAttribute="trailing" secondItem="8j6-aN-FN0" secondAttribute="trailing" id="cYg-ox-Oy4"/>
-                            <constraint firstItem="8j6-aN-FN0" firstAttribute="top" secondItem="TiM-gJ-rcQ" secondAttribute="topMargin" id="lqM-2L-xpT"/>
+                            <constraint firstItem="8j6-aN-FN0" firstAttribute="top" secondItem="TiM-gJ-rcQ" secondAttribute="top" id="lqM-2L-xpT"/>
                             <constraint firstItem="8j6-aN-FN0" firstAttribute="leading" secondItem="TiM-gJ-rcQ" secondAttribute="leading" id="muA-XK-BwT"/>
                         </constraints>
                     </view>
@@ -3883,8 +3883,8 @@
                         <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="E7S-8z-ts3" secondAttribute="trailing" id="1ky-3Q-iIE"/>
-                            <constraint firstItem="E7S-8z-ts3" firstAttribute="top" secondItem="7HG-iY-bRN" secondAttribute="topMargin" id="AsK-Yy-Pl6"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="E7S-8z-ts3" secondAttribute="bottom" id="frj-CS-aAV"/>
+                            <constraint firstItem="E7S-8z-ts3" firstAttribute="top" secondItem="7HG-iY-bRN" secondAttribute="top" id="AsK-Yy-Pl6"/>
+                            <constraint firstAttribute="bottom" secondItem="E7S-8z-ts3" secondAttribute="bottom" id="frj-CS-aAV"/>
                             <constraint firstItem="E7S-8z-ts3" firstAttribute="leading" secondItem="7HG-iY-bRN" secondAttribute="leading" id="oWZ-1Y-xCU"/>
                         </constraints>
                     </view>
@@ -4542,7 +4542,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qyv-uF-yqa"/>
+        <segue reference="bOh-3j-R0P"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
