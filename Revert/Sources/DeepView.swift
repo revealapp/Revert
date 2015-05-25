@@ -6,6 +6,12 @@ import UIKit
 
 final class DeepView: UIView {
   private let subviewSpacing: CGFloat = 5
+
+  required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    
+    assert(self.subviewSpacing > 0, "Subview spacing must be a positive number")
+  }
   
   private class func colorForIndex(index: Int) -> UIColor {
     if index % 5 == 0 {
