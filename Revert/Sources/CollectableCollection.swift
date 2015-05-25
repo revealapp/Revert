@@ -8,45 +8,20 @@ protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 
-private enum Attributes: String {
-  case Title = "title"
-  case Rows = "rows"
-}
-
-struct CollectableGroup<T: Collectable> {
-  let rows: [T]
-  let title: String?
-  
-  init(dictionary: [String: AnyObject]) {
-    self.title = dictionary[Attributes.Title.rawValue] as? String
-    
-    if let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] {
-      self.rows = rowsData.map({T(dictionary: $0)})
-    } else {
-      fatalError("Unable to deserialize Group rows")
-    }
-  }
-  
-  subscript(i: Int) -> T {
-    return self.rows[i]
-  }
-  
-  var countOfRows: Int {
-    return self.rows.count
-  }
-}
-
-struct CollectableCollection<T: Collectable> {
+struct CollectableCollection<T: Collectable>: CollectionType {
   let groups: [CollectableGroup<T>]
+  
+  var startIndex: Int { return 0 }
+  var endIndex: Int { return self.groups.count }
   
   init(resourceFilename: String) {
     self.groups = self.dynamicType.collectableItemsFromRessource(resourceFilename)
   }
-  
+
   subscript(i: Int) -> CollectableGroup<T> {
     return self.groups[i]
   }
-  
+
   subscript(indexPath: NSIndexPath) -> T {
     return self.groups[indexPath.section][indexPath.row]
   }
@@ -60,6 +35,20 @@ struct CollectableCollection<T: Collectable> {
       return items.map({CollectableGroup<T>(dictionary: $0)})
     } else {
       fatalError("Invalid file: \(resourceFilename).plist")
+    }
+  }
+}
+
+extension CollectableCollection : SequenceType {
+  typealias Generator = GeneratorOf<CollectableGroup<T>>
+  
+  func generate() -> Generator {
+    var index = 0
+    return GeneratorOf {
+      if index < self.groups.count {
+        return self.groups[index++]
+      }
+      return nil
     }
   }
 }
