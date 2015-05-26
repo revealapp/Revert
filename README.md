@@ -1,4 +1,5 @@
 # REVEal Rendering Test
+[![Build status](https://badge.buildkite.com/808be6190e39e59f227d054db81a083b8a485e9de3fbeb02a6.svg)](https://buildkite.com/itty-bitty-apps/revert)
 
 Revert is a sample iOS application destined to be inspected with @revealapp. It showcases UIKit's stock views and controls as well as specific view scenarios. It is an Universal app running on iOS7+ devices which supports portrait and lanscape orientation. It also implement iOS7 dynamic type system setting.
 

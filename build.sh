@@ -20,8 +20,6 @@ echo 'Cleaning Devived Data Folder...'
 
 $RM -rf $DERIVED_DATA_FOLDER
 
-echo 'Building Project...'
-
 BUILD_CMD="$XCRUN xcodebuild -project $PROJECT_FILE -scheme $SCHEME -sdk iphonesimulator clean build -derivedDataPath $DERIVED_DATA_FOLDER"
 
 if [ -x $XCPRETTY ]; then
