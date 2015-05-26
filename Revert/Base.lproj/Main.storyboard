@@ -742,13 +742,13 @@
                                                         <segment title="Title"/>
                                                     </segments>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="ThI-Ia-sbg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThI-Ia-sbg">
                                                     <rect key="frame" x="21" y="43" width="88" height="41"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="enc-4k-2ZM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enc-4k-2ZM">
                                                     <rect key="frame" x="51" y="92" width="28" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033903121948" green="0.55635666847229004" blue="0.57699871063232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -762,8 +762,10 @@
                                                 <constraint firstItem="Z8Y-RX-PHy" firstAttribute="leading" secondItem="KGt-kw-jOb" secondAttribute="leading" id="MXc-Un-IhU"/>
                                                 <constraint firstItem="enc-4k-2ZM" firstAttribute="top" secondItem="ThI-Ia-sbg" secondAttribute="bottom" constant="8" id="Toa-D2-0hA"/>
                                                 <constraint firstAttribute="trailing" secondItem="Z8Y-RX-PHy" secondAttribute="trailing" id="auX-Y8-54G"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ThI-Ia-sbg" secondAttribute="trailing" id="b2v-1q-MxH"/>
                                                 <constraint firstAttribute="bottom" secondItem="enc-4k-2ZM" secondAttribute="bottom" id="dRV-8u-FVA"/>
                                                 <constraint firstAttribute="centerX" secondItem="ThI-Ia-sbg" secondAttribute="centerX" id="g7c-hz-Zf3"/>
+                                                <constraint firstItem="ThI-Ia-sbg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGt-kw-jOb" secondAttribute="leading" id="jk8-SX-XMy"/>
                                                 <constraint firstAttribute="centerX" secondItem="enc-4k-2ZM" secondAttribute="centerX" id="qs3-BP-ylX"/>
                                             </constraints>
                                         </view>
@@ -800,13 +802,13 @@
                                                         <segment title="" image="delorian"/>
                                                     </segments>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="tUG-q2-Eg8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segmented Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUG-q2-Eg8">
                                                     <rect key="frame" x="21" y="43" width="88" height="41"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-WB-1WZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-WB-1WZ">
                                                     <rect key="frame" x="45" y="92" width="40" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033903121948" green="0.55635666847229004" blue="0.57699871063232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -815,10 +817,12 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tUG-q2-Eg8" secondAttribute="trailing" id="14t-AZ-sSO"/>
                                                 <constraint firstAttribute="centerX" secondItem="Asf-WB-1WZ" secondAttribute="centerX" id="6jo-Vk-wJk"/>
                                                 <constraint firstItem="Asf-WB-1WZ" firstAttribute="top" secondItem="tUG-q2-Eg8" secondAttribute="bottom" constant="8" id="BUa-EF-75G"/>
                                                 <constraint firstItem="tUG-q2-Eg8" firstAttribute="top" secondItem="heg-qq-qKB" secondAttribute="bottom" constant="15" id="CKr-sr-gUo"/>
                                                 <constraint firstItem="heg-qq-qKB" firstAttribute="top" secondItem="rai-Od-S4x" secondAttribute="top" id="DSA-a9-Bue"/>
+                                                <constraint firstItem="tUG-q2-Eg8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rai-Od-S4x" secondAttribute="leading" id="bTv-9e-31l"/>
                                                 <constraint firstItem="heg-qq-qKB" firstAttribute="leading" secondItem="rai-Od-S4x" secondAttribute="leading" id="bXP-WE-ZtX"/>
                                                 <constraint firstAttribute="trailing" secondItem="heg-qq-qKB" secondAttribute="trailing" id="ohF-0U-nge"/>
                                                 <constraint firstAttribute="bottom" secondItem="Asf-WB-1WZ" secondAttribute="bottom" id="v0E-8I-hWP"/>
@@ -1152,7 +1156,7 @@
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-48-m72">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-48-m72">
                                                     <rect key="frame" x="4" y="73" width="122" height="36"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1218,7 +1222,7 @@
                                                     <color key="textColor" red="0.21958050131797791" green="0.21962401270866394" blue="0.21957439184188843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-Rx-xYi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="With custom input view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-Rx-xYi">
                                                     <rect key="frame" x="4" y="73" width="122" height="36"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.55700033900000001" green="0.55635666849999998" blue="0.57699871059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4546,7 +4550,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uRU-Kc-gHf"/>
+        <segue reference="uaK-Ao-sI1"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
