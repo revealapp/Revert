@@ -31,6 +31,7 @@
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
 		9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
 		9A2F943F1B12A760007E51B1 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */; };
+		9A2F94741B140DA7007E51B1 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F94731B140DA7007E51B1 /* build.sh */; };
 		9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */; };
 		9A3B4BC21B0230B300F6117D /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4BC11B0230B300F6117D /* RevertViewController.swift */; };
 		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
@@ -106,6 +107,7 @@
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		9A2C24031AEE110C007B17CE /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
 		9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Revert/Sources/CollectableGroup.swift; sourceTree = "<group>"; };
+		9A2F94731B140DA7007E51B1 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = SOURCE_ROOT; };
 		9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Revert/Sources/HairlineConstraint.swift; sourceTree = "<group>"; };
 		9A3B4BC11B0230B300F6117D /* RevertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertViewController.swift; path = Revert/Sources/RevertViewController.swift; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
@@ -214,11 +216,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A2F94701B140B0E007E51B1 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F94731B140DA7007E51B1 /* build.sh */,
+			);
+			name = Scripts;
+			path = Revert/Scripts;
+			sourceTree = "<group>";
+		};
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
 				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
 				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
+				9A2F94701B140B0E007E51B1 /* Scripts */,
 				9A6850BA1AD4A20E00ACCE29 /* Resources */,
 				9A6850B91AD4A20E00ACCE29 /* Products */,
 			);
@@ -449,6 +461,7 @@
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */,
+				9A2F94741B140DA7007E51B1 /* build.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
