@@ -213,7 +213,7 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Transform Views</string>
+				<string>Transformed Views</string>
 				<key>iconName</key>
 				<string>icon_TransformViews</string>
 				<key>segueIdentifier</key>
@@ -223,7 +223,7 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Transform Layers</string>
+				<string>Transformed Layers</string>
 				<key>iconName</key>
 				<string>icon_TransformLayers</string>
 				<key>segueIdentifier</key>
@@ -243,7 +243,7 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Bounds Change &amp; Anchor Point</string>
+				<string>Bounds &amp; Anchor Point Changes</string>
 				<key>iconName</key>
 				<string>icon_Squares</string>
 				<key>segueIdentifier</key>
@@ -258,7 +258,7 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Super Deep</string>
+				<string>Super Deep View Hierarchy</string>
 				<key>iconName</key>
 				<string>icon_Superdeep</string>
 				<key>segueIdentifier</key>
