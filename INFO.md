@@ -130,7 +130,7 @@ A selection of transformed views with embedded subviews showing both the transfo
 - Rotate: A view that has been rotated 15°.
 - Scale: A view that has been scaled by 50%.
 
-The behaviour when mixing constraint and transform has evolved between iOS7 and iOS8. For more information please see [this blog post](http://revealapp.com/blog/constraints-and-transforms.html).
+The behaviour when mixing constraints and transforms has changed between iOS7 and iOS8. For more information please see [our blog post](http://revealapp.com/blog/constraints-and-transforms.html).
 
 ## Transformed Layers
 
