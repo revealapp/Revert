@@ -35,7 +35,7 @@ final class DeepView: UIView {
     return horizontalConstraints + verticalConstraints
   }
   
-  private class func updateSubviewsRecursively(view: UIView, length: CGFloat, constant: CGFloat, depth: CGFloat = 0) {
+  private class func updateSubviewsRecursively(view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
     if length > 2 * constant {
       // Enough space for subviews
       if view.subviews.count == 0 {
