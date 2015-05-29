@@ -6,7 +6,7 @@ import UIKit
 
 final class InfoViewController: UIViewController, SettableHomeItem {
   @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var webView: UIWebView!
   @IBOutlet weak var titleLabel: UILabel!
   
   var item: HomeItem?
@@ -14,13 +14,13 @@ final class InfoViewController: UIViewController, SettableHomeItem {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.textView.textContainerInset = UIEdgeInsets(top: 20, left: 8, bottom: 20, right: 8)
-    
     // Configure the view
     if let item = self.item {
-      self.textView.text = item.info
       self.imageView.image = UIImage(named: item.iconName)
       self.titleLabel.text = item.title
+      
+      let htmlString = HTMLWithContent(item.infoFilename)
+      self.webView.loadHTMLString(htmlString, baseURL: nil)
     } else {
       fatalError("Item should be set before viewDidLoad")
     }
@@ -28,5 +28,15 @@ final class InfoViewController: UIViewController, SettableHomeItem {
   
   @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
     self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
+  }
+}
+
+extension InfoViewController: UIWebViewDelegate {
+  func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    if let URL = request.URL where URL != NSURL(string: "about:blank") {
+      UIApplication.sharedApplication().openURL(URL)
+      return false
+    }
+    return true
   }
 }

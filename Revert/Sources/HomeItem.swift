@@ -6,7 +6,7 @@ import Foundation
 
 private enum Attributes: String {
   case Title = "title"
-  case Info = "info"
+  case InfoFilename = "infoFilename"
   case Icon = "iconName"
   case Segue = "segueIdentifier"
   case Push = "isPush"
@@ -14,18 +14,18 @@ private enum Attributes: String {
 
 struct HomeItem: Collectable {
   let title: String
-  let info: String
+  let infoFilename: String
   let iconName: String
   let segueIdentifier: String
   let isPush: Bool
   
   init(dictionary: [String: AnyObject]) {
     if let title = dictionary[Attributes.Title.rawValue] as? String,
-      info = dictionary[Attributes.Info.rawValue] as? String,
+      infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String,
       iconName = dictionary[Attributes.Icon.rawValue] as? String,
       segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String {
         self.title = title
-        self.info = info
+        self.infoFilename = infoFilename
         self.iconName = iconName
         self.segueIdentifier = segueIdentifier
     } else {
