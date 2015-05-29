@@ -14,21 +14,31 @@
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>37.618762</real>
-		<key>latitude</key>
-		<real>55.754429</real>
+		<real>-3.189591</real>
 		<key>title</key>
-		<string>Moscow</string>
+		<string>Edinburgh</string>
+		<key>subtitle</key>
+		<string>Baz</string>
+		<key>latitude</key>
+		<real>55.952024</real>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>38.882383</real>
+		<key>latitude</key>
+		<real>47.236863</real>
+		<key>title</key>
+		<string>Taganrog</string>
 		<key>subtitle</key>
 		<string>Vlas</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>126.977877</real>
+		<real>129.351404</real>
 		<key>latitude</key>
-		<real>37.564828</real>
+		<real>36.092575</real>
 		<key>title</key>
-		<string>Seoul</string>
+		<string>Pohang</string>
 		<key>subtitle</key>
 		<string>Jinju</string>
 	</dict>
