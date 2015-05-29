@@ -56,6 +56,8 @@ final class HomeViewController: UITableViewController {
     if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableHomeItem,
       indexPath = sender as? NSIndexPath {
         destinationViewController.item = self.collection[indexPath]
+    } else {
+      fatalError("Transition to view controller that doesn't implement `SettableHomeItem` protocol")
     }
   }
   
