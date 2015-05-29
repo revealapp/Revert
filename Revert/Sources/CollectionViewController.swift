@@ -18,7 +18,7 @@ extension CollectionViewController: UICollectionViewDataSource {
   
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.CollectionViewController, forIndexPath: indexPath) as? UICollectionViewCell {
-      cell.contentView.backgroundColor = cell.selected ? UIColor.revertTintColor() : UIColor.whitesmokeColor()
+      cell.contentView.backgroundColor = cell.selected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
       return cell
     } else {
       fatalError("Expecting to dequeue a UICollectionViewCell from the UICollectionView")
