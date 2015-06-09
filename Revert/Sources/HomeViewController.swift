@@ -17,14 +17,14 @@ final class HomeViewController: UITableViewController {
     
     // Deselects the selected cell on phones to fix the selection state when interactively panning
     // from the edge of the screen.
-    if let selectedIndexPath = self.tableView.indexPathForSelectedRow() {
+    if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
       self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
     }
   }
   
   private var wasInitiallySelected = false
   
-  required init!(coder aDecoder: NSCoder!) {
+  required init(coder aDecoder: NSCoder) {
     self.dataSource = HomeDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     super.init(coder: aDecoder)
   }
@@ -68,7 +68,7 @@ final class HomeViewController: UITableViewController {
 }
 
 // MARK: UITableViewDelegate
-extension HomeViewController: UITableViewDelegate {
+extension HomeViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection[indexPath]
     

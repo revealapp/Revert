@@ -10,7 +10,7 @@ extension CALayer {
       self.borderColor = newValue.CGColor
     }
     get {
-      return UIColor(CGColor: self.borderColor)
+      return UIColor(CGColor: self.borderColor!)
     }
   }
 }

@@ -41,14 +41,15 @@ final class MapViewController: RevertViewController {
 
 // MARK: MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
-  func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+  func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
     if (overlay is MKPolygon) {
       let pr = MKPolygonRenderer(overlay: overlay)
       pr.strokeColor = self.overlayStrokeColor
       pr.fillColor = self.overlayFillColor
       pr.lineWidth = self.overlayLineWidth
       return pr
+    } else {
+        return MKOverlayRenderer(overlay: overlay)
     }
-    return nil
   }
 }

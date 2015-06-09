@@ -40,11 +40,11 @@ struct CollectableCollection<T: Collectable>: CollectionType {
 }
 
 extension CollectableCollection : SequenceType {
-  typealias Generator = GeneratorOf<CollectableGroup<T>>
+  typealias Generator = AnyGenerator<CollectableGroup<T>>
   
   func generate() -> Generator {
     var index = 0
-    return GeneratorOf {
+    return anyGenerator {
       if index < self.groups.count {
         return self.groups[index++]
       }

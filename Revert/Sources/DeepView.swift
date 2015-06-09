@@ -24,14 +24,14 @@ final class DeepView: UIView {
     let bindingViews = ["subview": subview]
     let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
       "H:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
-      options: NSLayoutFormatOptions(0),
+      options: NSLayoutFormatOptions(rawValue: 0),
       metrics: nil,
-      views: bindingViews) as! [NSLayoutConstraint]
+      views: bindingViews)
     let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
       "V:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
-      options: NSLayoutFormatOptions(0),
+      options: NSLayoutFormatOptions(rawValue: 0),
       metrics: nil,
-      views: bindingViews) as! [NSLayoutConstraint]
+      views: bindingViews)
     return horizontalConstraints + verticalConstraints
   }
   
@@ -41,7 +41,7 @@ final class DeepView: UIView {
       if view.subviews.count == 0 {
         let subview = UIView()
         subview.backgroundColor = self.colorForIndex(Int(depth)).colorWithAlphaComponent(0.5)
-        subview.setTranslatesAutoresizingMaskIntoConstraints(false)
+        subview.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(subview)
         
@@ -50,8 +50,8 @@ final class DeepView: UIView {
         let constraints = self.constraintsForSubview(subview, constant: constant, priority: priority)
         view.addConstraints(constraints)
       }
-      self.updateSubviewsRecursively(view.subviews.first as! UIView, length: length - 2 * constant, constant: constant, depth: depth + 1)
-    } else if let subview = view.subviews.first as? UIView {
+      self.updateSubviewsRecursively(view.subviews.first!, length: length - 2 * constant, constant: constant, depth: depth + 1)
+    } else if let subview = view.subviews.first {
       subview.removeFromSuperview()
     }
   }

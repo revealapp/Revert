@@ -21,7 +21,7 @@ extension PickerViewController: UIPickerViewDataSource {
 
 // MARK: UIPickerViewDelegate
 extension PickerViewController: UIPickerViewDelegate {
-  func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+  func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return self.collection.groups.first![row].name
   }
 }

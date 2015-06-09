@@ -36,11 +36,11 @@ struct CollectableGroup<T: Collectable>: CollectionType {
 }
 
 extension CollectableGroup : SequenceType {
-  typealias Generator = GeneratorOf<T>
+  typealias Generator = AnyGenerator<T>
   
   func generate() -> Generator {
     var index = 0
-    return GeneratorOf {
+    return anyGenerator {
       if index < self.rows.count {
         return self.rows[index++]
       }

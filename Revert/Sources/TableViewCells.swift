@@ -14,7 +14,7 @@ final class HomeCell: UITableViewCell {
     if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
       self.backgroundView = UIView()
       self.selectedBackgroundView = UIView()
-      self.selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
+      self.selectedBackgroundView?.backgroundColor = UIColor.revertTintColor()
     }
   }
 }

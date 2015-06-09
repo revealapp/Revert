@@ -30,7 +30,7 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
     
     picker.datePickerMode = .Date
     picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
-    picker.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+    picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
     return picker
   }
 

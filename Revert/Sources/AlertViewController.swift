@@ -16,7 +16,7 @@ final class AlertViewController: RevertTableViewController {
     case ActionController = "actioncontroller"
   }
   
-  required init!(coder aDecoder: NSCoder!) {
+  required init(coder aDecoder: NSCoder) {
     self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)
@@ -43,6 +43,7 @@ final class AlertViewController: RevertTableViewController {
 
 // MARK: Presenters
 
+@available(iOS 8.0, *)
 extension AlertViewController {
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController(
@@ -108,12 +109,13 @@ extension AlertViewController {
 }
 
 // MARK: UITableViewDelegate
-extension AlertViewController: UITableViewDelegate {
+extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
-    self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
-    
+    if #available(iOS 8.0, *) {
+        self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
+    }
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }

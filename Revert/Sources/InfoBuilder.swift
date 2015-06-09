@@ -9,7 +9,13 @@ private func contentOfFile(filename: String) -> String {
   assert(path != nil, "Cannot find file \(filename)")
   
   var error: NSError?
-  let string = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &error)
+  let string: String?
+  do {
+    string = try String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+  } catch let error1 as NSError {
+    error = error1
+    string = nil
+  }
   assert(error == nil && string != nil, "Cannot load \(filename)")
   
   return string!
@@ -19,6 +25,6 @@ func HTMLWithContent(filename: String) -> String {
   let contentHTML = contentOfFile(filename)
   let containerHTML = contentOfFile("container")
   
-  return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: .allZeros)
+  return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
 }
 

@@ -5,6 +5,7 @@
 import UIKit
 import WebKit
 
+@available(iOS 8.0, *)
 final class WebViewController: RevertViewController {
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
   
@@ -41,7 +42,7 @@ final class WebViewController: RevertViewController {
   private var topConstraint: NSLayoutConstraint?
   
   private func setupWebView(webView: UIView) {
-    webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    webView.translatesAutoresizingMaskIntoConstraints = false
     
     let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0)
     let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
@@ -87,6 +88,7 @@ final class WebViewController: RevertViewController {
 }
 
 // MARK: UIWebViewDelegate
+@available(iOS 8.0, *)
 extension WebViewController: UIWebViewDelegate {
   func webViewDidStartLoad(webView: UIWebView) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true
@@ -98,6 +100,7 @@ extension WebViewController: UIWebViewDelegate {
 }
 
 // MARK: WKNavigationDelegate
+@available(iOS 8.0, *)
 extension WebViewController: WKNavigationDelegate {
   func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true

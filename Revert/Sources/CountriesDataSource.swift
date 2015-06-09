@@ -43,7 +43,7 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
     return NSString(format: NSLocalizedString("%lu Countries", comment: ""), count) as String
   }
   
-  func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
+  func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
     return self.collection.groups.map({$0.title!})
   }
 }

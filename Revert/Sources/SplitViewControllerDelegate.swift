@@ -10,7 +10,11 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
   func configureSplitViewController(splitViewController: UISplitViewController) {
     splitViewController.delegate = self
     if splitViewController.respondsToSelector("preferredDisplayMode") {
-      splitViewController.preferredDisplayMode = .AllVisible
+      if #available(iOS 8.0, *) {
+          splitViewController.preferredDisplayMode = .AllVisible
+      } else {
+          // Fallback on earlier versions
+      }
     }
   }
 
@@ -19,7 +23,7 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
     return false
   }
   
-  func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
+  func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
     return self.didShowDetailViewController == false
   }
   
