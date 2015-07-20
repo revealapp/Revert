@@ -38,7 +38,7 @@ final private class IBAScene: SKScene {
   }
   
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-    for touch in touches as Set<UITouch> {
+    for touch in touches {
       let location = touch.locationInNode(self)
       self.addSpaceshipAtLocation(location)
     }
