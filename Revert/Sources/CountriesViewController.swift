@@ -10,7 +10,7 @@ final class CountriesViewController: RevertTableViewController {
   private let dataSource: CountriesDataSource
   private var refreshTimer: NSTimer?
   
-  required init(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     self.dataSource = CountriesDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)

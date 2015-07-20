@@ -16,7 +16,7 @@ final class AlertViewController: RevertTableViewController {
     case ActionController = "actioncontroller"
   }
   
-  required init(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)
