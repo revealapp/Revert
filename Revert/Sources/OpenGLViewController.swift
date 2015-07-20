@@ -22,50 +22,50 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   private func loadGL() {
-//    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
-//    var error: NSError?
-//    
-//    if let image = UIImage(named: "reveal_pretty_flipped.jpg") {
-//      let textureInfo: GLKTextureInfo!
-//      do {
-//        textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
-//      } catch let error1 as NSError {
-//        error = error1
-//        textureInfo = nil
-//      }
-//      assert(error == nil, "Unable to load texture")
-//      
-//      self.effect.texture2d0.name = textureInfo.name
-//      self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
-//    } else {
-//      fatalError("Invalid texture image for OpenGLVC")
-//    }
-//    
-//    glEnable(GLenum(GL_CULL_FACE))
-//    
-//    glGenVertexArraysOES(1, &self.vertexArray)
-//    glBindVertexArrayOES(self.vertexArray)
-//    
-//    // Generate and bind vertex buffer
-//    glGenBuffers(1, &self.vertexBuffer)
-//    glBindBuffer(GLenum(GL_ARRAY_BUFFER), self.vertexBuffer)
-//    glBufferData(GLenum(GL_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Vertices)), &Vertices, GLenum(GL_STATIC_DRAW))
-//    
-//    // Generate and bind index buffer
-//    glGenBuffers(1, &self.indexBuffer)
-//    glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), self.indexBuffer)
-//    glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Indices)), &Indices, GLenum(GL_STATIC_DRAW))
-//
-//    
-//    let positionUnsafePointer = UnsafePointer<Void>(bitPattern: 0)
-//    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
-//    glVertexAttribPointer(GLuint(GLKVertexAttrib.Position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), positionUnsafePointer)
-//    
-//    let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
-//    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
-//    glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
-//    
-//    glBindVertexArrayOES(0)
+    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
+    var error: NSError?
+    
+    if let image = UIImage(named: "reveal_pretty_flipped.jpg") {
+      let textureInfo: GLKTextureInfo!
+      do {
+        textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
+      } catch let error1 as NSError {
+        error = error1
+        textureInfo = nil
+      }
+      assert(error == nil, "Unable to load texture")
+      
+      self.effect.texture2d0.name = textureInfo.name
+      self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
+    } else {
+      fatalError("Invalid texture image for OpenGLVC")
+    }
+    
+    glEnable(GLenum(GL_CULL_FACE))
+    
+    glGenVertexArraysOES(1, &self.vertexArray)
+    glBindVertexArrayOES(self.vertexArray)
+    
+    // Generate and bind vertex buffer
+    glGenBuffers(1, &self.vertexBuffer)
+    glBindBuffer(GLenum(GL_ARRAY_BUFFER), self.vertexBuffer)
+    glBufferData(GLenum(GL_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Vertices)), &Vertices, GLenum(GL_STATIC_DRAW))
+    
+    // Generate and bind index buffer
+    glGenBuffers(1, &self.indexBuffer)
+    glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), self.indexBuffer)
+    glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Indices)), &Indices, GLenum(GL_STATIC_DRAW))
+
+    
+    let positionUnsafePointer = UnsafePointer<Void>(bitPattern: 0)
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
+    glVertexAttribPointer(GLuint(GLKVertexAttrib.Position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), positionUnsafePointer)
+    
+    let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
+    glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
+    
+    glBindVertexArrayOES(0)
   }
   
   private func unloadGL() {
@@ -92,9 +92,11 @@ final class OpenGLViewController: RevertGLKViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.glkView.context = EAGLContext(API: .OpenGLES2)
-//    assert(self.glkView.context != nil, "Failed to initialise context .OpenGLES2")
-// Shows error under Swift 2b1: Cannot invoke 'assert' with an argument list of type '(Bool, String)'
+    if let context = EAGLContext(API: .OpenGLES2) {
+      self.glkView.context = context
+    } else {
+      fatalError("Failed to initialise context .OpenGLES2")
+    }
 
     self.setCurrentContext()
     
@@ -128,14 +130,14 @@ final class OpenGLViewController: RevertGLKViewController {
 
 
 override func glkView(view: GLKView, drawInRect rect: CGRect) {
-//    self.setCurrentContext()
-//
-//    glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
-//    glClear(GLenum(GL_COLOR_BUFFER_BIT))
-//    
-//    self.effect.prepareToDraw()
-//    
-//    glBindVertexArrayOES(self.vertexArray)
-//    glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
+    self.setCurrentContext()
+
+    glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
+    glClear(GLenum(GL_COLOR_BUFFER_BIT))
+    
+    self.effect.prepareToDraw()
+    
+    glBindVertexArrayOES(self.vertexArray)
+    glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
   }
 }

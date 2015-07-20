@@ -48,7 +48,6 @@
 		9A93ED6A1B01B06F00CFA5BD /* ControlCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED691B01B06F00CFA5BD /* ControlCellConfigurator.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
 		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
-		9A9E6B4E1B0CBB0700A22270 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9E6B4D1B0CBB0700A22270 /* Cube.m */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
@@ -629,7 +628,6 @@
 				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
 				9A87FA7C1ADCA16500290F7A /* CountriesDataSource.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
-				9A9E6B4E1B0CBB0700A22270 /* Cube.m in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				9AE718E91AD7515500DD7FFC /* HomeCellConfigurator.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
