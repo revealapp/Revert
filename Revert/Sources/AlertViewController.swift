@@ -5,7 +5,7 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
-  private var collection = CollectableCollection<Item>(resourceFilename: "AlertItems")
+  private var collection = CollectableCollection<Item>(items: .Alert)
   private var dataSource: AlertsDataSource
   private let cellConfigurator = AlertCellConfigurator()
 

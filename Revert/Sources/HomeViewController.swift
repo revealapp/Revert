@@ -6,7 +6,7 @@ import UIKit
 
 final class HomeViewController: UITableViewController {
   private let cellConfigurator = HomeCellConfigurator()
-  private var collection = CollectableCollection<HomeItem>(resourceFilename: "HomeItems")
+  private var collection = CollectableCollection<HomeItem>(items: .Home)
   private var dataSource: HomeDataSource
   private var currentDetailIndexPath: NSIndexPath?
   

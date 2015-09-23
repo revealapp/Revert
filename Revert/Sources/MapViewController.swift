@@ -21,15 +21,12 @@ final class MapViewController: RevertViewController {
   }
   
   private func addAnnotations() {
-    if let locations = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("MapLocations", ofType: "plist")!) as? [[String: AnyObject]] {
-      let annotations = locations.map({MapAnnotation(dictionary: $0)})
-      var coordinates = annotations.map({$0.coordinate})
-      
-      self.mapView.addAnnotations(annotations)
-      self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
-    } else {
-      fatalError("Invalid file: MapLocations.plist")
-    }
+    let locations = RevertItems.MapLocations.data
+    let annotations = locations.map { MapAnnotation.init(dictionary: $0) }
+    var coordinates = annotations.map { $0.coordinate }
+
+    self.mapView.addAnnotations(annotations)
+    self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
   }
 }
 

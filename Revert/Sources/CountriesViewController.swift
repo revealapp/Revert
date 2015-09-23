@@ -5,7 +5,7 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
+  private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountriesDataSource
   private var refreshTimer: NSTimer?
