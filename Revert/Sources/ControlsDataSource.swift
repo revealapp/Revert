@@ -16,11 +16,11 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   }
   
   func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-    return self.collection.countOfGroups
+    return self.collection.countOfItems
   }
   
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return self.collection[section].countOfRows
+    return self.collection[section].countOfItems
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

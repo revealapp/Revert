@@ -20,7 +20,7 @@ final class AlertsDataSource: NSObject, UITableViewDataSource {
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.collection[section].countOfRows
+    return self.collection[section].countOfItems
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

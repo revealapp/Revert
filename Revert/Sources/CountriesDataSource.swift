@@ -16,11 +16,11 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   }
   
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return self.collection.countOfGroups
+    return self.collection.countOfItems
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.collection[section].countOfRows
+    return self.collection[section].countOfItems
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -38,11 +38,11 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-    let count = self.collection[section].countOfRows
+    let count = self.collection[section].countOfItems
     return NSString(format: NSLocalizedString("%lu Countries", comment: ""), count) as String
   }
   
   func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-    return self.collection.groups.map { $0.title! }
+    return self.collection.items.map { $0.title! }
   }
 }

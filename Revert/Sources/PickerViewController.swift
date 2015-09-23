@@ -15,13 +15,13 @@ extension PickerViewController: UIPickerViewDataSource {
   }
   
   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return self.collection[component].countOfRows
+    return self.collection[component].countOfItems
   }
 }
 
 // MARK: UIPickerViewDelegate
 extension PickerViewController: UIPickerViewDelegate {
   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return self.collection.groups.first![row].name
+    return self.collection.items.first![row].name
   }
 }
