@@ -4,12 +4,12 @@
 
 import Foundation
 
-private enum Attributes: String {
-  case Title = "title"
-  case Cell = "cellIdentifier"
-}
-
 struct Item: Collectable {
+  private enum Attributes: String {
+    case Title = "title"
+    case Cell = "cellIdentifier"
+  }
+  
   let title: String
   let cellIdentifier: String
   

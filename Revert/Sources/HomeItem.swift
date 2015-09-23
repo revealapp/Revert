@@ -4,15 +4,15 @@
 
 import Foundation
 
-private enum Attributes: String {
-  case Title = "title"
-  case InfoFilename = "infoFilename"
-  case Icon = "iconName"
-  case Segue = "segueIdentifier"
-  case Push = "isPush"
-}
-
 struct HomeItem: Collectable {
+  private enum Attributes: String {
+    case Title = "title"
+    case InfoFilename = "infoFilename"
+    case Icon = "iconName"
+    case Segue = "segueIdentifier"
+    case Push = "isPush"
+  }
+  
   let title: String
   let infoFilename: String
   let iconName: String

@@ -4,12 +4,12 @@
 
 import Foundation
 
-private enum Attributes: String {
-  case Name = "name"
-  case Capital = "capital"
-}
-
 struct Country: Collectable {
+  private enum Attributes: String {
+    case Name = "name"
+    case Capital = "capital"
+  }
+  
   let name: String
   let capital: String?
   
