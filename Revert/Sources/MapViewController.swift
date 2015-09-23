@@ -17,7 +17,7 @@ final class MapViewController: RevertViewController {
 
     self.addAnnotations()
     
-    self.mapView.region = Constants.Region.Australia
+    self.mapView.region = Static.Region.Australia
   }
   
   private func addAnnotations() {
