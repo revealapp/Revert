@@ -5,9 +5,9 @@
 import UIKit
 
 final class AnchorPointBoundsChangeViewController: RevertViewController {
-  @IBOutlet weak var boundsChangeView: HairlineBorderView!
-  @IBOutlet weak var anchorPointView: HairlineBorderView!
-  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private weak var boundsChangeView: HairlineBorderView!
+  @IBOutlet private weak var anchorPointView: HairlineBorderView!
+  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
 
   private var wasAnimated = false
   

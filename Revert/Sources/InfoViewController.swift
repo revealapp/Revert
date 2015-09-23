@@ -5,9 +5,9 @@
 import UIKit
 
 final class InfoViewController: UIViewController, SettableHomeItem {
-  @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var webView: UIWebView!
-  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet private weak var imageView: UIImageView!
+  @IBOutlet private weak var webView: UIWebView!
+  @IBOutlet private weak var titleLabel: UILabel!
   
   var item: HomeItem?
   

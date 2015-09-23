@@ -5,7 +5,7 @@
 import UIKit
 
 final class CATextLayerCell: CollectionViewCell {
-  @IBOutlet weak var textLayerView: CATextLayerView!
+  @IBOutlet private weak var textLayerView: CATextLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -24,7 +24,7 @@ final class CATextLayerCell: CollectionViewCell {
 }
 
 final class CAEmitterLayerCell: CollectionViewCell {
-  @IBOutlet weak var emitterLayerView: CAEmitterLayerView!
+  @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -60,7 +60,7 @@ final class CAEmitterLayerCell: CollectionViewCell {
 }
 
 final class CAShapeLayerCell: CollectionViewCell {
-  @IBOutlet weak var shapeLayerView: CAShapeLayerView!
+  @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -88,7 +88,7 @@ final class CAShapeLayerCell: CollectionViewCell {
 }
 
 final class CAScrollLayerCell: CollectionViewCell {
-  @IBOutlet weak var scrollLayerView: CAScrollLayerView!
+  @IBOutlet private weak var scrollLayerView: CAScrollLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -104,7 +104,7 @@ final class CAScrollLayerCell: CollectionViewCell {
 }
 
 final class CATiledLayerCell: CollectionViewCell {
-  @IBOutlet weak var tiledLayerView: CATiledLayerView!
+  @IBOutlet private weak var tiledLayerView: CATiledLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -123,7 +123,7 @@ final class CATiledLayerCell: CollectionViewCell {
 }
 
 final class CAGradientLayerCell: CollectionViewCell {
-  @IBOutlet weak var gradientLayerView: CAGradientLayerView!
+  @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -154,7 +154,7 @@ final class CAGradientLayerCell: CollectionViewCell {
 }
 
 final class CAReplicatorLayerCell: CollectionViewCell {
-  @IBOutlet weak var replicatorLayerView: CAReplicatorLayerView!
+  @IBOutlet private weak var replicatorLayerView: CAReplicatorLayerView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -185,7 +185,7 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 }
 
 final class CAEAGLLayerCell: CollectionViewCell {
-  @IBOutlet weak var aegLayerView: CAEAGLLayerView!
+  @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
   
   override func awakeFromNib() {
     super.awakeFromNib()

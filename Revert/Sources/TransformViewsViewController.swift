@@ -5,10 +5,10 @@
 import UIKit
 
 final class TransformViewsViewController: RevertViewController {
-  @IBOutlet weak var translateView: UIView!
-  @IBOutlet weak var rotateView: UIView!
-  @IBOutlet weak var scaleView: UIView!
-  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private weak var translateView: UIView!
+  @IBOutlet private weak var rotateView: UIView!
+  @IBOutlet private weak var scaleView: UIView!
+  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
   
   private var wasAnimated = false
 

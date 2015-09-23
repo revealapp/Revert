@@ -5,11 +5,11 @@
 import UIKit
 
 final class AutoLayoutMarginsViewController: RevertViewController {
-  @IBOutlet weak var centerView: UIView!
-  @IBOutlet weak var slider: UISlider!
-  @IBOutlet weak var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet weak var containerView: UIView!
-  @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var centerView: UIView!
+  @IBOutlet private weak var slider: UISlider!
+  @IBOutlet private weak var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var containerView: UIView!
+  @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -10,7 +10,7 @@ class CollectionViewCell: UICollectionViewCell {
 }
 
 class TextFieldControlCell: CollectionViewCell {
-  @IBOutlet weak var textField: UITextField!
+  @IBOutlet private weak var textField: UITextField!
   
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
     sender.resignFirstResponder()

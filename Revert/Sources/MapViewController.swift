@@ -6,7 +6,7 @@ import UIKit
 import MapKit
 
 final class MapViewController: RevertViewController {
-  @IBOutlet weak var mapView: MKMapView!
+  @IBOutlet private weak var mapView: MKMapView!
 
   private let overlayLineWidth: CGFloat = 3
   private let overlayFillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)

@@ -6,11 +6,11 @@ import UIKit
 import GLKit
 
 final class TransformLayersViewController: RevertViewController {
-  @IBOutlet weak var yRotateView: UIView!
-  @IBOutlet weak var xRotateView: UIView!
-  @IBOutlet weak var zRotateView: UIView!
-  @IBOutlet weak var xyRotateView: UIView!
-  @IBOutlet weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private weak var yRotateView: UIView!
+  @IBOutlet private weak var xRotateView: UIView!
+  @IBOutlet private weak var zRotateView: UIView!
+  @IBOutlet private weak var xyRotateView: UIView!
+  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
   
   private var wasAnimated = false
 
