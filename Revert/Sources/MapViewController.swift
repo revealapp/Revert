@@ -40,7 +40,7 @@ extension MapViewController: MKMapViewDelegate {
       pr.lineWidth = self.overlayLineWidth
       return pr
     } else {
-        return MKOverlayRenderer(overlay: overlay)
+      return MKOverlayRenderer(overlay: overlay)
     }
   }
 }

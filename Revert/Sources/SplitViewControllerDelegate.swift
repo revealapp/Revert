@@ -11,9 +11,9 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
     splitViewController.delegate = self
     if splitViewController.respondsToSelector("preferredDisplayMode") {
       if #available(iOS 8.0, *) {
-          splitViewController.preferredDisplayMode = .AllVisible
+        splitViewController.preferredDisplayMode = .AllVisible
       } else {
-          // Fallback on earlier versions
+        // Fallback on earlier versions
       }
     }
   }

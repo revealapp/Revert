@@ -114,7 +114,7 @@ extension AlertViewController {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
     if #available(iOS 8.0, *) {
-        self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
+      self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
     }
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }

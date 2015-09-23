@@ -19,7 +19,7 @@ final class AutoLayoutMarginsViewController: RevertViewController {
       self.slider.minimumValue = 0
       self.slider.maximumValue = 100
       if #available(iOS 8.0, *) {
-          self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
       }
     } else {
       self.slider.hidden = true
@@ -50,7 +50,7 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     if self.centerView.respondsToSelector("layoutMargins") {
       let margin = CGFloat(sender.value)
       if #available(iOS 8.0, *) {
-          self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+        self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
       }
     }
   }
