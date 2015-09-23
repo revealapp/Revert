@@ -20,7 +20,7 @@ struct CollectableGroup<T: Collectable>: CollectionType {
     self.title = dictionary[Attributes.Title.rawValue] as? String
     
     if let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] {
-      self.rows = rowsData.map({T(dictionary: $0)})
+      self.rows = rowsData.map { T(dictionary: $0) }
     } else {
       fatalError("Unable to deserialize Group rows")
     }
