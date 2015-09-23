@@ -17,13 +17,12 @@ struct CollectableGroup<T: Collectable>: CollectionType {
   var endIndex: Int { return self.rows.count }
   
   init(dictionary: [String: AnyObject]) {
-    self.title = dictionary[Attributes.Title.rawValue] as? String
-    
-    if let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] {
-      self.rows = rowsData.map { T(dictionary: $0) }
-    } else {
+    guard let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] else {
       fatalError("Unable to deserialize Group rows")
     }
+
+    self.title = dictionary[Attributes.Title.rawValue] as? String
+    self.rows = rowsData.map { T(dictionary: $0) }
   }
   
   subscript(i: Int) -> T {

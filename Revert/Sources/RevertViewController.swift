@@ -7,12 +7,11 @@ import GLKit
 
 private extension UIViewController {
   func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem) {
-    if let destinationNavigationController = segue.destinationViewController as? UINavigationController,
-      destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem {
-        destinationViewController.item = item
-    } else {
-      fatalError("Destination view controller isn't a NavigationController or its topViewController doesn't conform to SettableHomeItem")
+    guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
+      destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
+        fatalError("Destination view controller isn't a NavigationController or its topViewController doesn't conform to SettableHomeItem")
     }
+    destinationViewController.item = item
   }
 }
 

@@ -24,13 +24,12 @@ final class HomeDataSource: NSObject, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    if let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Home, forIndexPath: indexPath) as? HomeCell {
-      let item = self.collection[indexPath]
-      
-      self.cellConfigurator.configureCell(cell, withItem: item)
-      return cell
-    } else {
+    guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Home, forIndexPath: indexPath) as? HomeCell else {
       fatalError("Expecting to dequeue a HomeCell from the UITableView")
     }
+
+    let item = self.collection[indexPath]
+    self.cellConfigurator.configureCell(cell, withItem: item)
+    return cell
   }
 }

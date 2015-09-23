@@ -14,11 +14,11 @@ struct Country: Collectable {
   let capital: String?
   
   init(dictionary: [String: AnyObject]) {
-    if let name = dictionary[Attributes.Name.rawValue] as? String {
-      self.name = name
-    } else {
+    guard let name = dictionary[Attributes.Name.rawValue] as? String else {
       fatalError("Unable to deserialize Country name")
     }
+
+    self.name = name
     self.capital = dictionary[Attributes.Capital.rawValue] as? String
   }
 }

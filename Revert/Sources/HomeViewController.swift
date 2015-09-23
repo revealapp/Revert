@@ -53,11 +53,11 @@ final class HomeViewController: UITableViewController {
     super.prepareForSegue(segue, sender: sender)
     
     // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
-    if let destinationViewController = ((segue.destinationViewController as? UINavigationController)?.topViewController ?? segue.destinationViewController) as? SettableHomeItem,
-      indexPath = sender as? NSIndexPath {
-        destinationViewController.item = self.collection[indexPath]
-    } else {
-      fatalError("Transition to view controller that doesn't implement `SettableHomeItem` protocol")
+    if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
+      guard let indexPath = sender as? NSIndexPath else {
+        fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
+      }
+      destinationViewController.item = self.collection[indexPath]
     }
   }
   

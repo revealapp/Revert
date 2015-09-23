@@ -25,11 +25,11 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
     let item = self.collection[indexPath]
-    if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(item.cellIdentifier, forIndexPath: indexPath) as? CollectionViewCell {
-      self.cellConfigurator.configureCell(cell)
-      return cell
-    } else {
+    guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier(item.cellIdentifier, forIndexPath: indexPath) as? CollectionViewCell else {
       fatalError("Expecting to dequeue a CollectionViewCell from the UICollectionView")
     }
+    
+    self.cellConfigurator.configureCell(cell)
+    return cell
   }
 }

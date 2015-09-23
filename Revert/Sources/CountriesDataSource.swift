@@ -24,14 +24,13 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    if let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.TableViewController) as? BasicCell {
-      let country = self.collection[indexPath]
-      
-      self.cellConfigurator.configureCell(cell, withCountry: country)
-      return cell
-    } else {
+    guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.TableViewController) as? BasicCell else {
       fatalError("Expecting to dequeue a BasicCell from the UITableView")
     }
+
+    let country = self.collection[indexPath]
+    self.cellConfigurator.configureCell(cell, withCountry: country)
+    return cell
   }
   
   func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
