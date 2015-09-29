@@ -37,7 +37,7 @@ final class AlertViewController: RevertTableViewController {
 
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView!.reloadData()
+    self.tableView?.reloadData()
   }
 }
 

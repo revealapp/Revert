@@ -43,6 +43,6 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   }
   
   func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-    return self.collection.items.map { $0.title! }
+    return self.collection.items.map { $0.title ?? "" }
   }
 }

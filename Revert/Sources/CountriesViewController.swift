@@ -40,12 +40,12 @@ final class CountriesViewController: RevertTableViewController {
   }
   
   func didLoadDummyData(timer: NSTimer) {
-    self.refreshControl!.endRefreshing()
+    self.refreshControl?.endRefreshing()
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView!.reloadData()
+    self.tableView?.reloadData()
   }
 }
 

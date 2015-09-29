@@ -50,11 +50,11 @@ final class ControlsViewController: RevertCollectionViewController {
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView!.endEditing(true)
+    self.collectionView?.endEditing(true)
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.collectionView!.reloadData()
+    self.collectionView?.reloadData()
   }
 }
