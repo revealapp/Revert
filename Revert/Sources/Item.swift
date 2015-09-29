@@ -18,6 +18,7 @@ struct Item: Collectable {
       cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
         fatalError("Invalid Item attributes")
     }
+
     self.title = title
     self.cellIdentifier = cellIdentifier
   }
