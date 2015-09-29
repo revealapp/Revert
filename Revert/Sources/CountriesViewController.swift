@@ -47,6 +47,16 @@ final class CountriesViewController: RevertTableViewController {
     // Reload tableview to update the cell font sizes.
     self.tableView?.reloadData()
   }
+
+  private class func footerLabelWithText(text: String?) -> UILabel {
+    let label = UILabel()
+    label.backgroundColor = UIColor.whiteColor()
+    label.text = text
+    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
+    label.textColor = UIColor.revertLightBlackColor()
+    label.textAlignment = .Center
+    return label
+  }
 }
 
 // MARK : UITableViewDelegate
@@ -56,13 +66,7 @@ extension CountriesViewController {
   }
   
   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-    let label = UILabel()
-    
-    label.backgroundColor = UIColor.whiteColor()
-    label.text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
-    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
-    label.textColor = UIColor.revertLightBlackColor()
-    label.textAlignment = .Center
-    return label
+    let text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
+    return self.dynamicType.footerLabelWithText(text)
   }
 }
