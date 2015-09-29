@@ -5,7 +5,6 @@
 import UIKit
 import WebKit
 
-@available(iOS 8.0, *)
 final class WebViewController: RevertViewController {
   private let req = NSURLRequest(URL: NSURL(string: "http://www.revealapp.com")!)
   
@@ -16,6 +15,7 @@ final class WebViewController: RevertViewController {
     return webView
   }()
   
+  @available (iOS 8.0, *)
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
@@ -80,6 +80,7 @@ final class WebViewController: RevertViewController {
     }
   }
   
+  @available (iOS 8.0, *)
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView!.removeFromSuperview()
@@ -88,7 +89,6 @@ final class WebViewController: RevertViewController {
 }
 
 // MARK: UIWebViewDelegate
-@available(iOS 8.0, *)
 extension WebViewController: UIWebViewDelegate {
   func webViewDidStartLoad(webView: UIWebView) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true

@@ -9,12 +9,10 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
   
   func configureSplitViewController(splitViewController: UISplitViewController) {
     splitViewController.delegate = self
-    if splitViewController.respondsToSelector("preferredDisplayMode") {
-      if #available(iOS 8.0, *) {
-        splitViewController.preferredDisplayMode = .AllVisible
-      } else {
-        // Fallback on earlier versions
-      }
+    if #available(iOS 8.0, *) {
+      splitViewController.preferredDisplayMode = .AllVisible
+    } else {
+      // Fallback on earlier versions
     }
   }
 
