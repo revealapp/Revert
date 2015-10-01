@@ -41,7 +41,7 @@
 				<key>iconName</key>
 				<string>icon_StackedView</string>
 				<key>segueIdentifier</key>
-				<string>ShowStackedViewControllerSegue</string>
+				<string>ShowStackViewViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>stacked_view</string>
 				<key>requiredClassName</key>
