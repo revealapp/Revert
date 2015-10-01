@@ -21,7 +21,14 @@ struct CollectableGroup<I: Collectable>: Collection {
     }
 
     self.title = dictionary[Attributes.Title.rawValue] as? String
-    self.items = rowsData.map { I(dictionary: $0) }
+    let unfilteredItems = rowsData.map { I(dictionary: $0) }
+    self.items = unfilteredItems.filter { (element) -> Bool in
+      if let requiredClassName = element.requiredClassName {
+        return nil != NSClassFromString(requiredClassName)
+      }
+      
+      return true
+    }
   }
 }
 
