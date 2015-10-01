@@ -27,7 +27,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
   }
   
   @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
-    self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
+    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
 }
 

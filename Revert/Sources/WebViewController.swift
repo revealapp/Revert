@@ -76,14 +76,14 @@ final class WebViewController: RevertViewController {
     super.viewWillLayoutSubviews()
     
     if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) {
-      self.topConstraint!.constant = self.currentWebView!.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
+      self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
     }
   }
   
   @available (iOS 8.0, *)
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
-    self.currentWebView!.removeFromSuperview()
+    self.currentWebView?.removeFromSuperview()
     self.setupWebView(nextWebView)
   }
 }
