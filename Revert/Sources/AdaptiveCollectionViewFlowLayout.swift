@@ -27,7 +27,7 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   
   private var itemWidth: CGFloat {
     let separatorsWidth = (CGFloat(self.noOfItemsInRow - 1) * self.minimumInteritemSpacing)
-    return floor(self.totalItemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow)
+    return floor((self.totalItemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
   }
   
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
