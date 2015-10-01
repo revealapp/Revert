@@ -11,6 +11,7 @@ struct HomeItem: Collectable {
     case Icon = "iconName"
     case Segue = "segueIdentifier"
     case Push = "isPush"
+    case RequiredClassName = "requiredClassName"
   }
   
   let title: String
@@ -18,6 +19,7 @@ struct HomeItem: Collectable {
   let iconName: String
   let segueIdentifier: String
   let isPush: Bool
+  let requiredClassName: String?
   
   init(dictionary: [String: AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
@@ -32,6 +34,7 @@ struct HomeItem: Collectable {
     self.iconName = iconName
     self.segueIdentifier = segueIdentifier
     self.isPush = dictionary[Attributes.Push.rawValue] as? Bool ?? true
+    self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
   }
 }
 
