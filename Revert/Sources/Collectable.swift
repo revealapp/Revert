@@ -5,6 +5,8 @@
 import Foundation
 
 protocol Collectable {
+  var requiredClassName: String? { get }
+  
   init(dictionary: [String: AnyObject])
 }
 
