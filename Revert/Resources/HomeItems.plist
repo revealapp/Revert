@@ -35,6 +35,18 @@
 				<key>infoFilename</key>
 				<string>scroll_view</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stacked View</string>
+				<key>iconName</key>
+				<string>icon_StackedView</string>
+				<key>segueIdentifier</key>
+				<string>ShowStackedViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stacked_view</string>
+				<key>requiredClassName</key>
+				<string>UIStackView</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
