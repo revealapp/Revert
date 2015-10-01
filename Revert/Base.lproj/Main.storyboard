@@ -2341,9 +2341,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-ZG-Of6">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-ZG-Of6">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0zQ-B8-J76">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="536"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tG5-Cr-Rwx">
+                                                <rect key="frame" x="0.0" y="0.0" width="296" height="328"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0t3-WO-mVY">
+                                                <rect key="frame" x="0.0" y="336" width="296" height="200"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="R3C-sk-uCx"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bw6-tf-xiD">
+                                        <rect key="frame" x="304" y="0.0" width="296" height="536"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sw-rd-5oS">
+                                                <rect key="frame" x="0.0" y="0.0" width="296" height="200"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="NAh-kC-ne6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMS-ms-oqg">
+                                                <rect key="frame" x="0.0" y="208" width="296" height="328"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bw6-tf-xiD" secondAttribute="bottom" id="BuY-rA-no7"/>
+                                    <constraint firstItem="Bw6-tf-xiD" firstAttribute="top" secondItem="GMP-ZG-Of6" secondAttribute="top" id="pDT-pw-cxy"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <animations/>
@@ -2369,6 +2413,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.20023062829999999" green="0.67298656700000004" blue="0.93640762570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="MfB-Vl-dOE" kind="relationship" relationship="rootViewController" id="loO-8W-3j5"/>
