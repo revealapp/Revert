@@ -22,19 +22,22 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   private func loadGL() {
-    let options: [NSObject: AnyObject] = [GLKTextureLoaderOriginBottomLeft: false]
-    var error: NSError?
-    
-    if let image = UIImage(named: "reveal_pretty_flipped.jpg") {
-      let textureInfo = GLKTextureLoader.textureWithCGImage(image.CGImage, options: options, error: &error)
-      assert(error == nil, "Unable to load texture")
-      
-      self.effect.texture2d0.name = textureInfo.name
-      self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
-    } else {
+    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
+
+    guard let image = UIImage(named: "reveal_pretty_flipped.jpg") else {
       fatalError("Invalid texture image for OpenGLVC")
     }
-    
+
+    let textureInfo: GLKTextureInfo
+    do {
+      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
+    } catch let error {
+      fatalError("Unable to load texture \(error)")
+    }
+
+    self.effect.texture2d0.name = textureInfo.name
+    self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
+
     glEnable(GLenum(GL_CULL_FACE))
     
     glGenVertexArraysOES(1, &self.vertexArray)
@@ -86,8 +89,11 @@ final class OpenGLViewController: RevertGLKViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.glkView.context = EAGLContext(API: .OpenGLES2)
-    assert(self.glkView.context != nil, "Failed to initialise context .OpenGLES2")
+    guard let context = EAGLContext(API: .OpenGLES2) else {
+      fatalError("Failed to initialise context .OpenGLES2")
+    }
+
+    self.glkView.context = context
 
     self.setCurrentContext()
     
@@ -115,13 +121,11 @@ final class OpenGLViewController: RevertGLKViewController {
     super.viewWillLayoutSubviews()
   }
   
-  override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     self.paused = !self.paused
   }
-}
 
-extension OpenGLViewController: GLKViewDelegate {
-  override func glkView(view: GLKView!, drawInRect rect: CGRect) {
+  override func glkView(view: GLKView, drawInRect rect: CGRect) {
     self.setCurrentContext()
 
     glClearColor(0.156862745, 0.156862745, 0.156862745, 1)

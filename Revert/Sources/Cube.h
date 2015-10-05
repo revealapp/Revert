@@ -4,6 +4,9 @@
 
 #import <GLKit/GLKit.h>
 
+#ifndef __RevertCubeGLConstants
+#define __RevertCubeGLConstants
+
 typedef struct {
   float Position[3];
   float TexCoord[2];
@@ -63,3 +66,4 @@ GLubyte Indices[] = {
   4, 5, 7
 };
 
+#endif

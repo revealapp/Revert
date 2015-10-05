@@ -5,7 +5,7 @@
 import UIKit
 
 final class ScrollViewController: RevertViewController {
-  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet private weak var scrollView: UIScrollView!
 
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)

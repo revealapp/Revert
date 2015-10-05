@@ -5,9 +5,9 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
-  @IBOutlet weak var progressView: UIProgressView!
-  @IBOutlet weak var subView: UIView!
-  @IBOutlet weak var slider: UISlider!
+  @IBOutlet private weak var progressView: UIProgressView!
+  @IBOutlet private weak var subView: UIView!
+  @IBOutlet private weak var slider: UISlider!
   
   override func viewDidLoad() {
     super.viewDidLoad()

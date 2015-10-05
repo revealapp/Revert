@@ -20,17 +20,16 @@ final class AlertsDataSource: NSObject, UITableViewDataSource {
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.collection[section].countOfRows
+    return self.collection[section].countOfItems
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    if let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Alert) as? BasicCell {
-      let item = self.collection[indexPath]
-      
-      self.cellConfigurator.configureCell(cell, item: item)
-      return cell
-    } else {
+    guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Alert) as? BasicCell else {
       fatalError("Expecting to dequeue a BasicCell from the UITableView")
     }
+
+    let item = self.collection[indexPath]
+    self.cellConfigurator.configureCell(cell, item: item)
+    return cell
   }
 }

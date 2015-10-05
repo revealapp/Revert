@@ -16,18 +16,22 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
   }
   
-  private var horizontalSectionInsets: CGFloat {
-    return self.sectionInset.left + self.sectionInset.right
+  private var totalItemsWidth: CGFloat {
+    guard let collectionView = self.collectionView else {
+      return 0
+    }
+
+    let horizontalSectionInsets = self.sectionInset.left + self.sectionInset.right
+    return collectionView.bounds.width - horizontalSectionInsets
   }
   
   private var itemWidth: CGFloat {
-    let itemsWidth = self.collectionView!.bounds.width - self.horizontalSectionInsets
     let separatorsWidth = (CGFloat(self.noOfItemsInRow - 1) * self.minimumInteritemSpacing)
-    return floor((itemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
+    return floor((self.totalItemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
   }
   
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
-    return newBounds.size != self.collectionView!.bounds.size
+    return newBounds.size != self.collectionView?.bounds.size
   }
 
   override func prepareLayout() {

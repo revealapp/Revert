@@ -15,6 +15,7 @@ final class WebViewController: RevertViewController {
     return webView
   }()
   
+  @available (iOS 8.0, *)
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
@@ -41,7 +42,7 @@ final class WebViewController: RevertViewController {
   private var topConstraint: NSLayoutConstraint?
   
   private func setupWebView(webView: UIView) {
-    webView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    webView.translatesAutoresizingMaskIntoConstraints = false
     
     let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0)
     let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
@@ -75,13 +76,14 @@ final class WebViewController: RevertViewController {
     super.viewWillLayoutSubviews()
     
     if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) {
-      self.topConstraint!.constant = self.currentWebView!.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
+      self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
     }
   }
   
+  @available (iOS 8.0, *)
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
-    self.currentWebView!.removeFromSuperview()
+    self.currentWebView?.removeFromSuperview()
     self.setupWebView(nextWebView)
   }
 }
@@ -98,6 +100,7 @@ extension WebViewController: UIWebViewDelegate {
 }
 
 // MARK: WKNavigationDelegate
+@available(iOS 8.0, *)
 extension WebViewController: WKNavigationDelegate {
   func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true

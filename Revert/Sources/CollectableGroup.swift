@@ -9,42 +9,20 @@ private enum Attributes: String {
   case Rows = "rows"
 }
 
-struct CollectableGroup<T: Collectable>: CollectionType {
-  let rows: [T]
+struct CollectableGroup<I: Collectable>: Collection {
+  typealias T = I
+
+  let items: [I]
   let title: String?
-  
-  var startIndex: Int { return 0 }
-  var endIndex: Int { return self.rows.count }
-  
+
   init(dictionary: [String: AnyObject]) {
-    self.title = dictionary[Attributes.Title.rawValue] as? String
-    
-    if let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] {
-      self.rows = rowsData.map({T(dictionary: $0)})
-    } else {
+    guard let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] else {
       fatalError("Unable to deserialize Group rows")
     }
-  }
-  
-  subscript(i: Int) -> T {
-    return self.rows[i]
-  }
-  
-  var countOfRows: Int {
-    return self.rows.count
+
+    self.title = dictionary[Attributes.Title.rawValue] as? String
+    self.items = rowsData.map { I(dictionary: $0) }
   }
 }
 
-extension CollectableGroup : SequenceType {
-  typealias Generator = GeneratorOf<T>
-  
-  func generate() -> Generator {
-    var index = 0
-    return GeneratorOf {
-      if index < self.rows.count {
-        return self.rows[index++]
-      }
-      return nil
-    }
-  }
-}
+

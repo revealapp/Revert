@@ -7,7 +7,7 @@ import UIKit
 final class CollectionViewController: RevertCollectionViewController { }
 
 // MARK: UICollectionViewDataSource
-extension CollectionViewController: UICollectionViewDataSource {
+extension CollectionViewController {
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -17,19 +17,16 @@ extension CollectionViewController: UICollectionViewDataSource {
   }
   
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.CollectionViewController, forIndexPath: indexPath) as? UICollectionViewCell {
-      cell.contentView.backgroundColor = cell.selected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
-      return cell
-    } else {
-      fatalError("Expecting to dequeue a UICollectionViewCell from the UICollectionView")
-    }
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.CollectionViewController, forIndexPath: indexPath)
+    cell.contentView.backgroundColor = cell.selected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
+    return cell
   }
 }
 
 // MARK: UICollectionViewDelegate
-extension CollectionViewController: UICollectionViewDelegate {
+extension CollectionViewController {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.graySelectionColor()
+    collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.graySelectionColor()
   }
   
   override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {

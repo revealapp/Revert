@@ -4,22 +4,22 @@
 
 import Foundation
 
-private enum Attributes: String {
-  case Title = "title"
-  case Cell = "cellIdentifier"
-}
-
 struct Item: Collectable {
+  private enum Attributes: String {
+    case Title = "title"
+    case Cell = "cellIdentifier"
+  }
+  
   let title: String
   let cellIdentifier: String
   
   init(dictionary: [String : AnyObject]) {
-    if let title = dictionary[Attributes.Title.rawValue] as? String,
-      cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String {
-        self.title = title
-        self.cellIdentifier = cellIdentifier
-    } else {
-      fatalError("Invalid Item attributes")
+    guard let title = dictionary[Attributes.Title.rawValue] as? String,
+      cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
+        fatalError("Invalid Item attributes")
     }
+
+    self.title = title
+    self.cellIdentifier = cellIdentifier
   }
 }

@@ -7,10 +7,12 @@ import UIKit
 final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable var resourceFilename: String? {
     didSet {
-      if let resourceFilename = self.resourceFilename {
-        let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)
+      if let resourceFilename = self.resourceFilename, items = RevertItems(rawValue: resourceFilename) {
+        let collection = CollectableCollection<Item>(items: items)
         self.dataSource = ControlsDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
         self.collection = collection
+      } else if let resourceFilename = resourceFilename {
+        fatalError("Unable to load resourceFilename: \(resourceFilename)")
       } else {
         self.collection = nil
         self.dataSource = nil
@@ -31,10 +33,15 @@ final class ControlsViewController: RevertCollectionViewController {
     super.viewDidLoad()
     
     assert(self.resourceFilename != nil, "Resource file name should be set before `viewDidLoad`")
-    
-    // Setup Keyboard Handler
-    self.keyboardHandler.scrollView = self.collectionView
-    self.keyboardHandler.viewController = self
+
+    // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
+    // The behaviour is not perfect, but there is no way to opt-out
+    if #available(iOS 9.0, *) {
+    } else {
+        // Setup Keyboard Handler
+        self.keyboardHandler.scrollView = self.collectionView
+        self.keyboardHandler.viewController = self
+    }
     
     // Setup Data Source
     self.collectionView!.dataSource = self.dataSource
@@ -48,11 +55,11 @@ final class ControlsViewController: RevertCollectionViewController {
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView!.endEditing(true)
+    self.collectionView?.endEditing(true)
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.collectionView!.reloadData()
+    self.collectionView?.reloadData()
   }
 }

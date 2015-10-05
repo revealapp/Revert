@@ -5,7 +5,7 @@
 import UIKit
 
 final class AutoResizingMaskViewController: RevertViewController {
-  @IBOutlet weak var outterView: UIView!
+  @IBOutlet private weak var outterView: UIView!
   
   private var viewsWereSetup = false
   
@@ -32,7 +32,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     let flexibleWidthHeightView = UIView(frame: CGRect(origin: origin, size: flexibleWidthHeightSize))
     
     flexibleWidthHeightView.backgroundColor = UIColor.clearColor()
-    flexibleWidthHeightView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+    flexibleWidthHeightView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
     flexibleWidthHeightView.layer.cornerRadius = self.cornerRadius
     flexibleWidthHeightView.layer.borderWidth = self.borderWidth
     flexibleWidthHeightView.layer.borderColor = UIColor.whiteColor().CGColor
@@ -72,7 +72,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     flexibleHeightLeftRightView.layer.cornerRadius = self.cornerRadius
     flexibleHeightLeftRightView.layer.borderWidth = self.borderWidth
     flexibleHeightLeftRightView.layer.borderColor = self.borderColor
-    flexibleHeightLeftRightView.autoresizingMask = .FlexibleHeight | .FlexibleLeftMargin | .FlexibleRightMargin
+    flexibleHeightLeftRightView.autoresizingMask = [.FlexibleHeight, .FlexibleLeftMargin, .FlexibleRightMargin]
     flexibleWidthHeightView.addSubview(flexibleHeightLeftRightView)
     
     // Left: Flexible Top / Bottom View
@@ -90,7 +90,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     leftFlexibleTopBottomView.layer.borderWidth = self.borderWidth
     leftFlexibleTopBottomView.layer.cornerRadius = self.cornerRadius
     leftFlexibleTopBottomView.layer.borderColor = self.borderColor
-    leftFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleRightMargin
+    leftFlexibleTopBottomView.autoresizingMask = [.FlexibleTopMargin, .FlexibleBottomMargin, .FlexibleRightMargin]
     flexibleWidthHeightView.addSubview(leftFlexibleTopBottomView)
     
     // Right: Flexible Top / Bottom View
@@ -104,7 +104,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     rightFlexibleTopBottomView.layer.borderWidth = self.borderWidth
     rightFlexibleTopBottomView.layer.borderColor = self.borderColor
     rightFlexibleTopBottomView.layer.cornerRadius = self.cornerRadius
-    rightFlexibleTopBottomView.autoresizingMask = .FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleLeftMargin
+    rightFlexibleTopBottomView.autoresizingMask = [.FlexibleTopMargin, .FlexibleBottomMargin, .FlexibleLeftMargin]
     flexibleWidthHeightView.addSubview(rightFlexibleTopBottomView)
   }
 

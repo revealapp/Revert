@@ -5,20 +5,31 @@
 import Foundation
 
 private func contentOfFile(filename: String) -> String {
-  let path = NSBundle.mainBundle().pathForResource(filename, ofType: "html")
-  assert(path != nil, "Cannot find file \(filename)")
-  
+  guard let path = NSBundle.mainBundle().pathForResource(filename, ofType: "html") else {
+    fatalError("Cannot find file \(filename)")
+  }
+
   var error: NSError?
-  let string = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &error)
-  assert(error == nil && string != nil, "Cannot load \(filename)")
-  
-  return string!
+  let content: String?
+
+  do {
+    content = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+  } catch let error1 as NSError {
+    error = error1
+    content = nil
+  }
+
+  guard let unwrappedContent = content else {
+    fatalError("Cannot load \(filename): \(error)")
+  }
+
+  return unwrappedContent
 }
 
 func HTMLWithContent(filename: String) -> String {
   let contentHTML = contentOfFile(filename)
   let containerHTML = contentOfFile("container")
   
-  return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: .allZeros)
+  return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
 }
 

@@ -5,7 +5,7 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
-  private var collection = CollectableCollection<Item>(resourceFilename: "AlertItems")
+  private var collection = CollectableCollection<Item>(items: .Alert)
   private var dataSource: AlertsDataSource
   private let cellConfigurator = AlertCellConfigurator()
 
@@ -16,7 +16,7 @@ final class AlertViewController: RevertTableViewController {
     case ActionController = "actioncontroller"
   }
   
-  required init!(coder aDecoder: NSCoder!) {
+  required init?(coder aDecoder: NSCoder) {
     self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
     
     super.init(coder: aDecoder)
@@ -37,13 +37,14 @@ final class AlertViewController: RevertTableViewController {
 
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView!.reloadData()
+    self.tableView?.reloadData()
   }
 }
 
 // MARK: Presenters
 
 extension AlertViewController {
+  @available(iOS 8.0, *)
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
@@ -102,18 +103,19 @@ extension AlertViewController {
       break;
       
     default:
-      self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
+      if #available(iOS 8.0, *) {
+        self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
+      }
     }
   }
 }
 
 // MARK: UITableViewDelegate
-extension AlertViewController: UITableViewDelegate {
+extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
     self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
-    
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }

@@ -10,7 +10,7 @@ class CollectionViewCell: UICollectionViewCell {
 }
 
 class TextFieldControlCell: CollectionViewCell {
-  @IBOutlet weak var textField: UITextField!
+  @IBOutlet private weak var textField: UITextField!
   
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
     sender.resignFirstResponder()
@@ -30,7 +30,7 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
     
     picker.datePickerMode = .Date
     picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
-    picker.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+    picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
     return picker
   }
 

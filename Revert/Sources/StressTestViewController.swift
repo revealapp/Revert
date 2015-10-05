@@ -7,7 +7,7 @@ import UIKit
 final class StressTestViewController: RevertCollectionViewController { }
 
 // MARK: UICollectionViewDataSource
-extension StressTestViewController: UICollectionViewDataSource {
+extension StressTestViewController {
   
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
     return 1
@@ -18,10 +18,6 @@ extension StressTestViewController: UICollectionViewDataSource {
   }
   
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath) as? UICollectionViewCell {
-      return cell
-    } else {
-      fatalError("Expecting to dequeue a UICollectionViewCell from the UICollectionView")
-    }
+    return collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath)
   }
 }
