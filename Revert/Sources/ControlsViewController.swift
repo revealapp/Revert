@@ -33,10 +33,15 @@ final class ControlsViewController: RevertCollectionViewController {
     super.viewDidLoad()
     
     assert(self.resourceFilename != nil, "Resource file name should be set before `viewDidLoad`")
-    
-    // Setup Keyboard Handler
-    self.keyboardHandler.scrollView = self.collectionView
-    self.keyboardHandler.viewController = self
+
+    // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
+    // The behaviour is not perfect, but there is no way to opt-out
+    if #available(iOS 9.0, *) {
+    } else {
+        // Setup Keyboard Handler
+        self.keyboardHandler.scrollView = self.collectionView
+        self.keyboardHandler.viewController = self
+    }
     
     // Setup Data Source
     self.collectionView!.dataSource = self.dataSource
