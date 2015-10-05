@@ -2453,6 +2453,9 @@
                     <navigationItem key="navigationItem" title="Safari View Controller" id="ecP-uP-xtI">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="1xy-Qx-HkR">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="1WC-Dc-4rD"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
