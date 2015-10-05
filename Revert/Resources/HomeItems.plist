@@ -138,8 +138,6 @@
 				<string>icon_SFSafariViewController</string>
 				<key>segueIdentifier</key>
 				<string>ShowSFSafariViewControllerSegue</string>
-				<key>isPush</key>
-				<false/>
 				<key>infoFilename</key>
 				<string>sf_safari_view_controller</string>
 				<key>requiredClassName</key>
