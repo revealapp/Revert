@@ -2425,9 +2425,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-m9-5sq">
-                                <rect key="frame" x="241" y="285" width="118" height="30"/>
+                                <rect key="frame" x="229" y="283" width="142" height="34"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.66666666666666663" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Sample webpage"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonActionHandler" destination="8wk-Ae-Mic" eventType="touchUpInside" id="8Kx-4U-ihu"/>
                                 </connections>
@@ -2461,6 +2470,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="barTintColor" red="0.20023062829999999" green="0.67298656700000004" blue="0.93640762570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="8wk-Ae-Mic" kind="relationship" relationship="rootViewController" id="PM6-ol-aoN"/>
@@ -2479,6 +2491,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="barTintColor" red="0.20023062829999999" green="0.67298656700000004" blue="0.93640762570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="MfB-Vl-dOE" kind="relationship" relationship="rootViewController" id="loO-8W-3j5"/>
@@ -5055,7 +5070,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gSb-RG-pTo"/>
+        <segue reference="Nyj-Av-I6n"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
