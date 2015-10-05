@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icon_WebView.png",
+      "filename" : "icon_SafariView 2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icon_WebView@2x.png",
+      "filename" : "icon_SafariView@2x 3.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icon_WebView@3x.png",
+      "filename" : "icon_SafariView@3x 2.png",
       "scale" : "3x"
     }
   ],
