@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>CATextLayer</string>
+				<key>cellIdentifier</key>
+				<string>TextLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAEmitterLayer</string>
+				<key>cellIdentifier</key>
+				<string>EmitterLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAShapeLayer</string>
+				<key>cellIdentifier</key>
+				<string>ShapeLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAScrollLayer</string>
+				<key>cellIdentifier</key>
+				<string>ScrollLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAGradientLayer</string>
+				<key>cellIdentifier</key>
+				<string>GradientLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAReplicatorLayer</string>
+				<key>cellIdentifier</key>
+				<string>ReplicatorLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CATiledLayer</string>
+				<key>cellIdentifier</key>
+				<string>TiledLayerCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>CAAEGLayer</string>
+				<key>cellIdentifier</key>
+				<string>AEGLayerCell</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

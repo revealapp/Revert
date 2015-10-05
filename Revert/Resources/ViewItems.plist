@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Text View</string>
+				<key>cellIdentifier</key>
+				<string>TextViewCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Image View</string>
+				<key>cellIdentifier</key>
+				<string>ImageViewCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Volume View</string>
+				<key>cellIdentifier</key>
+				<string>VolumeViewCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Progress View</string>
+				<key>cellIdentifier</key>
+				<string>ProgressViewCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Label</string>
+				<key>cellIdentifier</key>
+				<string>LabelCell</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

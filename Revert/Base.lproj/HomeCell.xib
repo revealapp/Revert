@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="7t1-c2-2ZJ" userLabel="CollectionViewController Cell" customClass="HomeCell" customModule="Revert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7t1-c2-2ZJ" id="3dl-oU-csQ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nqM-EP-bnt">
+                        <rect key="frame" x="15" y="11" width="29" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="L0F-J7-Ts9"/>
+                            <constraint firstAttribute="height" constant="29" id="YYW-KZ-gae"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" verticalCompressionResistancePriority="751" text="Table View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gad-o9-hIY">
+                        <rect key="frame" x="59" y="11" width="493" height="29"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="0.21958050130000001" green="0.21962401270000001" blue="0.21957439179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="nqM-EP-bnt" secondAttribute="centerY" id="1T4-wC-UQ8"/>
+                    <constraint firstItem="gad-o9-hIY" firstAttribute="top" secondItem="nqM-EP-bnt" secondAttribute="top" id="C2x-bS-mFJ"/>
+                    <constraint firstItem="gad-o9-hIY" firstAttribute="leading" secondItem="nqM-EP-bnt" secondAttribute="trailing" constant="15" id="ZNO-k1-kaZ"/>
+                    <constraint firstItem="nqM-EP-bnt" firstAttribute="leading" secondItem="3dl-oU-csQ" secondAttribute="leading" constant="15" id="bR7-of-rlt"/>
+                    <constraint firstItem="gad-o9-hIY" firstAttribute="bottom" secondItem="nqM-EP-bnt" secondAttribute="bottom" id="m4l-aG-Egp"/>
+                    <constraint firstAttribute="trailing" secondItem="gad-o9-hIY" secondAttribute="trailing" constant="15" id="uf3-LR-FrW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconImageView" destination="nqM-EP-bnt" id="Nk4-8M-Ruf"/>
+                <outlet property="titleLabel" destination="gad-o9-hIY" id="e2B-Wt-5Tj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
