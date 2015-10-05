@@ -5,11 +5,11 @@
 import UIKit
 
 final class AutoLayoutMarginsViewController: RevertViewController {
-  @IBOutlet weak var centerView: UIView!
-  @IBOutlet weak var slider: UISlider!
-  @IBOutlet weak var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet weak var containerView: UIView!
-  @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var centerView: UIView!
+  @IBOutlet private weak var slider: UISlider!
+  @IBOutlet private weak var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var containerView: UIView!
+  @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,7 +19,7 @@ final class AutoLayoutMarginsViewController: RevertViewController {
       self.slider.minimumValue = 0
       self.slider.maximumValue = 100
       if #available(iOS 8.0, *) {
-          self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
       }
     } else {
       self.slider.hidden = true
@@ -50,7 +50,7 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     if self.centerView.respondsToSelector("layoutMargins") {
       let margin = CGFloat(sender.value)
       if #available(iOS 8.0, *) {
-          self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+        self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
       }
     }
   }

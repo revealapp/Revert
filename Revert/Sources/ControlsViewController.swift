@@ -7,10 +7,12 @@ import UIKit
 final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable var resourceFilename: String? {
     didSet {
-      if let resourceFilename = self.resourceFilename {
-        let collection = CollectableCollection<Item>(resourceFilename: resourceFilename)
+      if let resourceFilename = self.resourceFilename, items = RevertItems(rawValue: resourceFilename) {
+        let collection = CollectableCollection<Item>(items: items)
         self.dataSource = ControlsDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
         self.collection = collection
+      } else if let resourceFilename = resourceFilename {
+        fatalError("Unable to load resourceFilename: \(resourceFilename)")
       } else {
         self.collection = nil
         self.dataSource = nil
@@ -48,11 +50,11 @@ final class ControlsViewController: RevertCollectionViewController {
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView!.endEditing(true)
+    self.collectionView?.endEditing(true)
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.collectionView!.reloadData()
+    self.collectionView?.reloadData()
   }
 }

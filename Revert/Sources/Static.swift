@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import MapKit
 
 struct Static {
   struct DateFormatter {
@@ -11,5 +12,13 @@ struct Static {
       dateFormatter.dateFormat = "dd MMM YYYY"
       return dateFormatter
     }()
+  }
+
+  struct Region {
+    static let Australia: MKCoordinateRegion = {
+      let center = CLLocationCoordinate2D(latitude: -24.291451, longitude: 134.126772)
+      let span = MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
+      return MKCoordinateRegion(center: center, span: span)
+      }()
   }
 }

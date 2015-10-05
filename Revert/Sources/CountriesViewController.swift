@@ -5,7 +5,7 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  private let collection = CollectableCollection<Country>(resourceFilename: "CountriesCapitals")
+  private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
   private let cellConfigurator = CountryCellConfigurator()
   private let dataSource: CountriesDataSource
   private var refreshTimer: NSTimer?
@@ -40,12 +40,22 @@ final class CountriesViewController: RevertTableViewController {
   }
   
   func didLoadDummyData(timer: NSTimer) {
-    self.refreshControl!.endRefreshing()
+    self.refreshControl?.endRefreshing()
   }
   
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView!.reloadData()
+    self.tableView?.reloadData()
+  }
+
+  private class func footerLabelWithText(text: String?) -> UILabel {
+    let label = UILabel()
+    label.backgroundColor = UIColor.whiteColor()
+    label.text = text
+    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
+    label.textColor = UIColor.revertLightBlackColor()
+    label.textAlignment = .Center
+    return label
   }
 }
 
@@ -56,13 +66,7 @@ extension CountriesViewController {
   }
   
   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-    let label = UILabel()
-    
-    label.backgroundColor = UIColor.whiteColor()
-    label.text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
-    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
-    label.textColor = UIColor.revertLightBlackColor()
-    label.textAlignment = .Center
-    return label
+    let text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
+    return self.dynamicType.footerLabelWithText(text)
   }
 }

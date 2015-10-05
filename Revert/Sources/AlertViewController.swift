@@ -5,7 +5,7 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
-  private var collection = CollectableCollection<Item>(resourceFilename: "AlertItems")
+  private var collection = CollectableCollection<Item>(items: .Alert)
   private var dataSource: AlertsDataSource
   private let cellConfigurator = AlertCellConfigurator()
 
@@ -37,14 +37,14 @@ final class AlertViewController: RevertTableViewController {
 
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
-    self.tableView!.reloadData()
+    self.tableView?.reloadData()
   }
 }
 
 // MARK: Presenters
 
-@available(iOS 8.0, *)
 extension AlertViewController {
+  @available(iOS 8.0, *)
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
@@ -103,7 +103,9 @@ extension AlertViewController {
       break;
       
     default:
-      self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
+      if #available(iOS 8.0, *) {
+        self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
+      }
     }
   }
 }
@@ -113,9 +115,7 @@ extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
-    if #available(iOS 8.0, *) {
-        self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
-    }
+    self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }

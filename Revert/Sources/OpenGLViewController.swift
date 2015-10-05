@@ -23,24 +23,21 @@ final class OpenGLViewController: RevertGLKViewController {
   
   private func loadGL() {
     let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
-    var error: NSError?
-    
-    if let image = UIImage(named: "reveal_pretty_flipped.jpg") {
-      let textureInfo: GLKTextureInfo!
-      do {
-        textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
-      } catch let error1 as NSError {
-        error = error1
-        textureInfo = nil
-      }
-      assert(error == nil, "Unable to load texture")
-      
-      self.effect.texture2d0.name = textureInfo.name
-      self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
-    } else {
+
+    guard let image = UIImage(named: "reveal_pretty_flipped.jpg") else {
       fatalError("Invalid texture image for OpenGLVC")
     }
-    
+
+    let textureInfo: GLKTextureInfo
+    do {
+      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
+    } catch let error {
+      fatalError("Unable to load texture \(error)")
+    }
+
+    self.effect.texture2d0.name = textureInfo.name
+    self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
+
     glEnable(GLenum(GL_CULL_FACE))
     
     glGenVertexArraysOES(1, &self.vertexArray)
@@ -92,11 +89,11 @@ final class OpenGLViewController: RevertGLKViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if let context = EAGLContext(API: .OpenGLES2) {
-      self.glkView.context = context
-    } else {
+    guard let context = EAGLContext(API: .OpenGLES2) else {
       fatalError("Failed to initialise context .OpenGLES2")
     }
+
+    self.glkView.context = context
 
     self.setCurrentContext()
     
@@ -128,8 +125,7 @@ final class OpenGLViewController: RevertGLKViewController {
     self.paused = !self.paused
   }
 
-
-override func glkView(view: GLKView, drawInRect rect: CGRect) {
+  override func glkView(view: GLKView, drawInRect rect: CGRect) {
     self.setCurrentContext()
 
     glClearColor(0.156862745, 0.156862745, 0.156862745, 1)

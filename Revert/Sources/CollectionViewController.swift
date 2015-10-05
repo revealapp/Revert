@@ -26,7 +26,7 @@ extension CollectionViewController {
 // MARK: UICollectionViewDelegate
 extension CollectionViewController {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.cellForItemAtIndexPath(indexPath)!.contentView.backgroundColor = UIColor.graySelectionColor()
+    collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.graySelectionColor()
   }
   
   override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {

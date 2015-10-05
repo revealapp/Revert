@@ -10,6 +10,10 @@ final class HomeCellConfigurator {
     cell.titleLabel.text = item.title
     
     cell.iconImageView.image = UIImage(named: item.iconName)
-    cell.accessoryType = item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone ? .DisclosureIndicator : .None
+    cell.accessoryType = self.dynamicType.shouldDisplayDisclosureIndicatorForItem(item) ? .DisclosureIndicator : .None
+  }
+
+  static func shouldDisplayDisclosureIndicatorForItem(item: HomeItem) -> Bool {
+    return item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone
   }
 }
