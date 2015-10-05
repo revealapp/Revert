@@ -27,12 +27,16 @@
 				<string>UIAlertController: UIAlertView</string>
 				<key>cellIdentifier</key>
 				<string>alertcontroller</string>
+				<key>requiredClassName</key>
+				<string>UIAlertController</string>
 			</dict>
 			<dict>
 				<key>title</key>
 				<string>UIAlertController: UIAlertView</string>
 				<key>cellIdentifier</key>
 				<string>actioncontroller</string>
+				<key>requiredClassName</key>
+				<string>UIAlertController</string>
 			</dict>
 		</array>
 	</dict>

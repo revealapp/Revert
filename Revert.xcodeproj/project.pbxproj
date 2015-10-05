@@ -106,6 +106,9 @@
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
 		B5B483021BBA471800C860E5 /* stack_view.html in Resources */ = {isa = PBXBuildFile; fileRef = B5B483011BBA471800C860E5 /* stack_view.html */; settings = {ASSET_TAGS = (); }; };
+		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */ = {isa = PBXBuildFile; fileRef = B5DCC9F31BBCF8B9004EA327 /* sf_safari_view_controller.html */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +220,9 @@
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
 		B5B483011BBA471800C860E5 /* stack_view.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = stack_view.html; path = Resources/Info/stack_view.html; sourceTree = "<group>"; };
+		B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Revert/Sources/StackViewController.swift; sourceTree = "<group>"; };
+		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
+		B5DCC9F31BBCF8B9004EA327 /* sf_safari_view_controller.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = sf_safari_view_controller.html; path = Resources/Info/sf_safari_view_controller.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +406,8 @@
 				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
 				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */,
+				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
+				B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */,
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
 				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
@@ -465,6 +473,7 @@
 				9AA26B981B17E8CC00BC632C /* stress_test.html */,
 				9AA26BB41B17E99000BC632C /* not_serializable.html */,
 				B5B483011BBA471800C860E5 /* stack_view.html */,
+				B5DCC9F31BBCF8B9004EA327 /* sf_safari_view_controller.html */,
 			);
 			name = Info;
 			sourceTree = "<group>";
@@ -523,6 +532,7 @@
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = K6S9ARSMGH;
 					};
 				};
 			};
@@ -558,6 +568,7 @@
 				9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */,
 				9AA26BA51B17E8CC00BC632C /* controls.html in Resources */,
 				9AA26BAB1B17E8CC00BC632C /* picker_views.html in Resources */,
+				B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */,
 				9AA26BA01B17E8CC00BC632C /* auto_layout_margins.html in Resources */,
 				9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */,
 				9AA26BB11B17E8CC00BC632C /* web_views.html in Resources */,
@@ -650,11 +661,13 @@
 				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
+				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
 				9A1D66CC1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
 				9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */,
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
+				B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */,
 				9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */,
 				9A87FA781ADC953C00290F7A /* HomeDataSource.swift in Sources */,
 			);

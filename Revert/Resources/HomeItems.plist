@@ -37,13 +37,13 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Stacked View</string>
+				<string>Stack View</string>
 				<key>iconName</key>
-				<string>icon_StackedView</string>
+				<string>icon_UIStackView</string>
 				<key>segueIdentifier</key>
 				<string>ShowStackViewViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>stacked_view</string>
+				<string>stack_view</string>
 				<key>requiredClassName</key>
 				<string>UIStackView</string>
 			</dict>
@@ -167,6 +167,20 @@
 				<false/>
 				<key>infoFilename</key>
 				<string>modal_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Safari View Controller</string>
+				<key>iconName</key>
+				<string>icon_SFSafariViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowSFSafariViewControllerSegue</string>
+				<key>isPush</key>
+				<false/>
+				<key>infoFilename</key>
+				<string>sf_safari_view_controller</string>
+				<key>requiredClassName</key>
+				<string>SFSafariViewController</string>
 			</dict>
 		</array>
 	</dict>

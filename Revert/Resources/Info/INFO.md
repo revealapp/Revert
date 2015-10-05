@@ -10,6 +10,10 @@ A `UICollectionView` with a two column layout. Tapping a cell will update its ba
 
 A `UIScrollView` containing a large scrollable image.
 
+## Stacked View
+
+An example of embedding `UIStackView` in `UIStackView`.
+
 ## Default Views
 
 A selection of stock UIKit views:

@@ -2329,10 +2329,10 @@
             </objects>
             <point key="canvasLocation" x="4070" y="484"/>
         </scene>
-        <!--View Controller-->
+        <!--Stack View-->
         <scene sceneID="BEN-OY-AhQ">
             <objects>
-                <viewController id="MfB-Vl-dOE" sceneMemberID="viewController">
+                <viewController id="MfB-Vl-dOE" customClass="StackViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ilv-Lk-18a"/>
                         <viewControllerLayoutGuide type="bottom" id="Ef8-74-TEz"/>
@@ -2399,11 +2399,76 @@
                             <constraint firstItem="GMP-ZG-Of6" firstAttribute="width" secondItem="7Vr-8O-FIu" secondAttribute="width" id="wug-12-yU7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bB8-li-ksP"/>
+                    <navigationItem key="navigationItem" title="Stack View" id="bB8-li-ksP">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="pMS-Kd-FQS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="Nyj-Av-I6n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K7-4n-j8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4067" y="1202"/>
+        </scene>
+        <!--Safari View Controller-->
+        <scene sceneID="nvz-qa-Yob">
+            <objects>
+                <viewController id="8wk-Ae-Mic" customClass="SafariViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VHq-HQ-xAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NiO-MZ-vhL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tTU-TA-RpD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-m9-5sq">
+                                <rect key="frame" x="241" y="285" width="118" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sample webpage"/>
+                                <connections>
+                                    <action selector="buttonActionHandler" destination="8wk-Ae-Mic" eventType="touchUpInside" id="8Kx-4U-ihu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k8W-m9-5sq" firstAttribute="centerY" secondItem="tTU-TA-RpD" secondAttribute="centerY" id="a5t-pE-Y1F"/>
+                            <constraint firstItem="k8W-m9-5sq" firstAttribute="centerX" secondItem="tTU-TA-RpD" secondAttribute="centerX" id="ehj-Tv-Ite"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Safari View Controller" id="ecP-uP-xtI">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="1xy-Qx-HkR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAV-7O-TQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4067" y="1908"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1D5-Yg-iWZ">
+            <objects>
+                <navigationController id="iFc-DU-kqi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VVB-jt-7hc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.20023062829999999" green="0.67298656700000004" blue="0.93640762570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8wk-Ae-Mic" kind="relationship" relationship="rootViewController" id="PM6-ol-aoN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8HG-oU-yfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3247" y="1908"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5ao-aQ-aAm">
@@ -2497,6 +2562,7 @@
                         <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
                         <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                         <segue destination="wsb-8b-MuL" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
+                        <segue destination="iFc-DU-kqi" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -3219,7 +3285,7 @@
                                     <constraint firstItem="iTa-Ci-YGO" firstAttribute="top" secondItem="cfJ-ng-rHP" secondAttribute="top" id="uNT-r4-icq"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQm-Fr-y7e">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQm-Fr-y7e">
                                 <rect key="frame" x="0.0" y="117" width="600" height="483"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4989,7 +5055,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bOh-3j-R0P"/>
+        <segue reference="gSb-RG-pTo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

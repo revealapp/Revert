@@ -16,7 +16,7 @@ final class AlertsDataSource: NSObject, UITableViewDataSource {
   }
   
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return NSClassFromString("UIAlertController") != nil ? 2 : 1
+    return self.collection.countOfItems
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
