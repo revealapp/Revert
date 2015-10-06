@@ -105,6 +105,7 @@
 		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
+		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; settings = {ASSET_TAGS = (); }; };
 		B5B483021BBA471800C860E5 /* stack_view.html in Resources */ = {isa = PBXBuildFile; fileRef = B5B483011BBA471800C860E5 /* stack_view.html */; settings = {ASSET_TAGS = (); }; };
 		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -219,6 +220,7 @@
 		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualRowBasicCollectionViewFlowLayout.swift; path = Revert/Sources/DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
+		B59998E71BC36092002FE92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		B5B483011BBA471800C860E5 /* stack_view.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = stack_view.html; path = Resources/Info/stack_view.html; sourceTree = "<group>"; };
 		B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Revert/Sources/StackViewController.swift; sourceTree = "<group>"; };
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			children = (
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
+				B59998E61BC36092002FE92C /* StackView.xib */,
 			);
 			name = SB/XIB;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				9AA26BB01B17E8CC00BC632C /* transformed_views.html in Resources */,
 				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9AA26BA71B17E8CC00BC632C /* layer_properties.html in Resources */,
+				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
 				9AA26BAD1B17E8CC00BC632C /* stress_test.html in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
@@ -706,6 +710,14 @@
 				9AF1B3181AE5EBE400BB626B /* Base */,
 			);
 			name = HomeCell.xib;
+			sourceTree = "<group>";
+		};
+		B59998E61BC36092002FE92C /* StackView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59998E71BC36092002FE92C /* Base */,
+			);
+			name = StackView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
