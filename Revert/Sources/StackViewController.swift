@@ -4,11 +4,15 @@
 
 import Foundation
 
+@available(iOS 9.0, *)
 class StackViewController : RevertViewController {
   override func loadView() {
-    if #available(iOS 9.0, *) {
-      let nib = NSBundle.mainBundle().loadNibNamed("StackView", owner: self, options: nil)
-      self.view = nib.first as! UIView
+    let nib = NSBundle.mainBundle().loadNibNamed("StackView", owner: self, options: nil)
+    
+    guard let view = nib.first as? UIView else {
+      fatalError("Could not load Stack View from xib")
     }
+    
+    self.view = view
   }
 }
