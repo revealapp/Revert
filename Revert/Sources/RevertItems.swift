@@ -1,8 +1,4 @@
 //
-//  RevertItems.swift
-//  Revert
-//
-//  Created by Hugo Cuvillier on 23/09/2015.
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 //
 
