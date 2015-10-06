@@ -12,7 +12,7 @@ A `UIScrollView` containing a large scrollable image.
 
 ## Stacked View
 
-An example of embedding `UIStackView` in `UIStackView`.
+An example of embedded `UIStackView`.
 
 ## Default Views
 
