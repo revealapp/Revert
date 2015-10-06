@@ -63,10 +63,10 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="BSo-kL-Emd" firstAttribute="width" secondItem="Xsc-fG-L8E" secondAttribute="width" id="4fG-WJ-pKc"/>
-                <constraint firstItem="BSo-kL-Emd" firstAttribute="height" secondItem="Xsc-fG-L8E" secondAttribute="height" id="Ace-u3-BMt"/>
-                <constraint firstItem="BSo-kL-Emd" firstAttribute="top" secondItem="Xsc-fG-L8E" secondAttribute="top" id="cDm-oa-KH5"/>
-                <constraint firstItem="BSo-kL-Emd" firstAttribute="centerX" secondItem="Xsc-fG-L8E" secondAttribute="centerX" id="cGD-da-59z"/>
+                <constraint firstItem="BSo-kL-Emd" firstAttribute="leading" secondItem="Xsc-fG-L8E" secondAttribute="leading" id="C8P-s4-A8h"/>
+                <constraint firstAttribute="trailing" secondItem="BSo-kL-Emd" secondAttribute="trailing" id="URj-ZZ-B6u"/>
+                <constraint firstAttribute="bottom" secondItem="BSo-kL-Emd" secondAttribute="bottom" id="tqt-ef-ghT"/>
+                <constraint firstItem="BSo-kL-Emd" firstAttribute="top" secondItem="Xsc-fG-L8E" secondAttribute="top" id="vUD-o4-fyW"/>
             </constraints>
         </view>
     </objects>
