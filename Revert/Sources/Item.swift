@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct Item: Collectable {
+struct Item: Collectable, Requirement {
   private enum Attributes: String {
     case Title = "title"
     case Cell = "cellIdentifier"

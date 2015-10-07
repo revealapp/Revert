@@ -12,7 +12,6 @@ struct Country: Collectable {
   
   let name: String
   let capital: String?
-  let requiredClassName: String?
   
   init(dictionary: [String: AnyObject]) {
     guard let name = dictionary[Attributes.Name.rawValue] as? String else {
@@ -21,6 +20,5 @@ struct Country: Collectable {
 
     self.name = name
     self.capital = dictionary[Attributes.Capital.rawValue] as? String
-    self.requiredClassName = nil
   }
 }

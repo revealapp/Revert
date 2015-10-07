@@ -23,8 +23,8 @@ struct CollectableGroup<I: Collectable>: Collection {
     self.title = dictionary[Attributes.Title.rawValue] as? String
     let unfilteredItems = rowsData.map { I(dictionary: $0) }
     self.items = unfilteredItems.filter { (element) -> Bool in
-      if let requiredClassName = element.requiredClassName {
-        return nil != NSClassFromString(requiredClassName)
+      if let elementWithRequirement = element as? Requirement {
+        return elementWithRequirement.isAvailable
       }
       
       return true
