@@ -105,6 +105,7 @@
 		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
+		B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55841181BD496AB009725C5 /* NSBundle+Revert.swift */; settings = {ASSET_TAGS = (); }; };
 		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; settings = {ASSET_TAGS = (); }; };
 		B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; settings = {ASSET_TAGS = (); }; };
 		B5B483021BBA471800C860E5 /* stack_view.html in Resources */ = {isa = PBXBuildFile; fileRef = B5B483011BBA471800C860E5 /* stack_view.html */; settings = {ASSET_TAGS = (); }; };
@@ -221,6 +222,7 @@
 		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualRowBasicCollectionViewFlowLayout.swift; path = Revert/Sources/DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
+		B55841181BD496AB009725C5 /* NSBundle+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSBundle+Revert.swift"; path = "Revert/Sources/NSBundle+Revert.swift"; sourceTree = "<group>"; };
 		B59998E71BC36092002FE92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		B59998EB1BC3848D002FE92C /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Revert/Sources/Requirement.swift; sourceTree = "<group>"; };
 		B5B483011BBA471800C860E5 /* stack_view.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = stack_view.html; path = Resources/Info/stack_view.html; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
 				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
+				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
 				9A1D66CC1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
+				B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */,
 				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
 				9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */,
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
