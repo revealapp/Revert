@@ -25,7 +25,7 @@ final class HomeDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Home, forIndexPath: indexPath) as? HomeCell else {
-      fatalError("Expecting to dequeue a HomeCell from the UITableView")
+      fatalError("Expecting to dequeue a `HomeCell` from the tableView")
     }
 
     let item = self.collection[indexPath]

@@ -25,7 +25,7 @@ final class AlertsDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.Alert) as? BasicCell else {
-      fatalError("Expecting to dequeue a BasicCell from the UITableView")
+      fatalError("Expecting to dequeue a `BasicCell` from the tableView")
     }
 
     let item = self.collection[indexPath]

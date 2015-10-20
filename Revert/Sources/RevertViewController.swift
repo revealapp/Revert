@@ -9,7 +9,7 @@ private extension UIViewController {
   func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem) {
     guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
       destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
-        fatalError("Destination view controller isn't a NavigationController or its topViewController doesn't conform to SettableHomeItem")
+        fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
     }
     destinationViewController.item = item
   }

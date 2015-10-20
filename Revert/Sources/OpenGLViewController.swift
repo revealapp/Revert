@@ -90,7 +90,7 @@ final class OpenGLViewController: RevertGLKViewController {
     super.viewDidLoad()
     
     guard let context = EAGLContext(API: .OpenGLES2) else {
-      fatalError("Failed to initialise context .OpenGLES2")
+      fatalError("Failed to initialise context `.OpenGLES2`")
     }
 
     self.glkView.context = context

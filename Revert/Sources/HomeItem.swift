@@ -26,7 +26,7 @@ struct HomeItem: Collectable, Requirement {
       infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String,
       iconName = dictionary[Attributes.Icon.rawValue] as? String,
       segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String else {
-        fatalError("Invalid HomeItem attributes")
+        fatalError("Invalid `HomeItem` attributes")
     }
 
     self.title = title

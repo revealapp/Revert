@@ -15,7 +15,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     super.viewDidLoad()
 
     guard let item = self.item else {
-      fatalError("Item should be set before viewDidLoad")
+      fatalError("Item should be set before `-viewDidLoad`")
     }
 
     // Configure the view

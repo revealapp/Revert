@@ -17,7 +17,7 @@ struct CollectableGroup<I: Collectable>: Collection {
 
   init(dictionary: [String: AnyObject]) {
     guard let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] else {
-      fatalError("Unable to deserialize Group rows")
+      fatalError("Unable to deserialize `CollectableGroup` rows")
     }
 
     self.title = dictionary[Attributes.Title.rawValue] as? String

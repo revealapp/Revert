@@ -12,7 +12,7 @@ final class ControlsViewController: RevertCollectionViewController {
         self.dataSource = ControlsDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
         self.collection = collection
       } else if let resourceFilename = resourceFilename {
-        fatalError("Unable to load resourceFilename: \(resourceFilename)")
+        fatalError("Unable to load file: \(resourceFilename)")
       } else {
         self.collection = nil
         self.dataSource = nil

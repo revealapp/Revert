@@ -18,7 +18,7 @@ struct Item: Collectable, Requirement {
   init(dictionary: [String : AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
       cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
-        fatalError("Invalid Item attributes")
+        fatalError("Invalid `Item` attributes")
     }
 
     self.title = title

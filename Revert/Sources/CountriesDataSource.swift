@@ -25,7 +25,7 @@ final class CountriesDataSource: NSObject, UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCellWithIdentifier(SB.Cell.TableViewController) as? BasicCell else {
-      fatalError("Expecting to dequeue a BasicCell from the UITableView")
+      fatalError("Expecting to dequeue a `BasicCell` from the tableView")
     }
 
     let country = self.collection[indexPath]
