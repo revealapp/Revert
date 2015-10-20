@@ -36,11 +36,10 @@ final class ControlsViewController: RevertCollectionViewController {
 
     // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
     // The behaviour is not perfect, but there is no way to opt-out
-    if #available(iOS 9.0, *) {
-    } else {
-        // Setup Keyboard Handler
-        self.keyboardHandler.scrollView = self.collectionView
-        self.keyboardHandler.viewController = self
+    if NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_3 {
+      // Setup Keyboard Handler
+      self.keyboardHandler.scrollView = self.collectionView
+      self.keyboardHandler.viewController = self
     }
     
     // Setup Data Source
