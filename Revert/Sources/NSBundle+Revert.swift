@@ -9,13 +9,13 @@
 import Foundation
 
 extension NSBundle {
-  class var revealWebsiteURL: NSURL {
+  var revealWebsiteURL: NSURL {
 
-    if let urlString = NSBundle.mainBundle().infoDictionary!["revealWebsiteURL"] as? String,
-      url = NSURL(string: urlString) {
-        return url
+    guard let urlString = infoDictionary!["revealWebsiteURL"] as? String,
+      url = NSURL(string: urlString) else {
+        preconditionFailure("reveal website URL missing or invalid")
     }
 
-    preconditionFailure("reveal website URL missing or invalid")
+    return url
   }
 }
