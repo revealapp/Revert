@@ -7,7 +7,7 @@ import UIKit
 final class AutoResizingMaskViewController: RevertViewController {
   @IBOutlet private weak var outterView: UIView!
   
-  private var viewsWereSetup = false
+  private var wereViewsSetup = false
   
   private let padding: CGFloat = 20
   private let cornerRadius: CGFloat = 2
@@ -18,10 +18,10 @@ final class AutoResizingMaskViewController: RevertViewController {
   
   private func addSubViewsIfNeeded() {
     // Only perform this action once
-    if self.viewsWereSetup {
+    if self.wereViewsSetup {
       return
     }
-    self.viewsWereSetup = true
+    self.wereViewsSetup = true
     
     // Back: Flexible Height / Width View
     let origin = CGPoint(x: self.padding, y: self.padding)
