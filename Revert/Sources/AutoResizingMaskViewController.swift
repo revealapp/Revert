@@ -8,7 +8,6 @@ final class AutoResizingMaskViewController: RevertViewController {
   @IBOutlet private weak var outterView: UIView!
   
   private var wereViewsSetup = false
-  
   private let padding: CGFloat = 20
   private let cornerRadius: CGFloat = 2
   private let borderWidth: CGFloat = 1

@@ -7,7 +7,6 @@ import SafariServices
 
 @available(iOS 9.0, *)
 final class SafariViewController: RevertViewController {
-  
   @IBAction func buttonActionHandler() {
     let safariViewController = SFSafariViewController(URL: NSBundle.mainBundle().revealWebsiteURL)
     safariViewController.delegate = self
