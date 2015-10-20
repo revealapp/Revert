@@ -6,12 +6,12 @@ import UIKit
 import WebKit
 
 final class WebViewController: RevertViewController {
-  private let req = NSURLRequest(URL: NSBundle.mainBundle().revealWebsiteURL)
+  private let request = NSURLRequest(URL: NSBundle.mainBundle().revealWebsiteURL)
   
   private lazy var uiWebView: UIWebView = {
     let webView = UIWebView()
     webView.delegate = self
-    webView.loadRequest(self.req)
+    webView.loadRequest(self.request)
     return webView
   }()
   
@@ -19,7 +19,7 @@ final class WebViewController: RevertViewController {
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
-    webView.loadRequest(self.req)
+    webView.loadRequest(self.request)
     return webView
   }()
   
