@@ -6,8 +6,7 @@ import UIKit
 
 final class AlertViewController: RevertTableViewController {
   private var collection = CollectableCollection<Item>(items: .Alert)
-  private var dataSource: AlertsDataSource
-  private let cellConfigurator = AlertCellConfigurator()
+  private var dataSource: DataSource<Item, BasicCell>
 
   private enum Identifier: String {
     case AlertView = "alertview"
@@ -17,8 +16,8 @@ final class AlertViewController: RevertTableViewController {
   }
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
+    self.dataSource = DataSource(collection: self.collection, configureCell: AlertCellConfigurator.configureCell, identifyCell: AlertCellConfigurator.identifyCellWithObject)
+
     super.init(coder: aDecoder)
   }
   

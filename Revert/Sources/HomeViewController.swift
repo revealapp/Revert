@@ -5,9 +5,8 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
-  private let cellConfigurator = HomeCellConfigurator()
   private var collection = CollectableCollection<HomeItem>(items: .Home)
-  private var dataSource: HomeDataSource
+  private var dataSource: DataSource<HomeItem, HomeCell>
   private var currentDetailIndexPath: NSIndexPath?
   
   private func deselectSelectedRowIfNeeded() {
@@ -25,7 +24,8 @@ final class HomeViewController: UITableViewController {
   private var wasInitiallySelected = false
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = HomeDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    self.dataSource = DataSource(collection: self.collection, configureCell: HomeCellConfigurator.configureCell, identifyCell: HomeCellConfigurator.identifyCellWithObject)
+    
     super.init(coder: aDecoder)
   }
   

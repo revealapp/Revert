@@ -5,8 +5,12 @@
 import UIKit
 
 final class AlertCellConfigurator {
-  func configureCell(cell: BasicCell, item: Item) {
+  static func configureCell(cell: BasicCell, object: Item) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    cell.titleLabel.text = item.title
+    cell.titleLabel.text = object.title
+  }
+
+  static func identifyCellWithObject(object: Item) -> String {
+    return SB.Cell.Alert
   }
 }

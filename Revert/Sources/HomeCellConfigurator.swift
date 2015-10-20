@@ -5,15 +5,19 @@
 import UIKit
 
 final class HomeCellConfigurator {
-  func configureCell(cell: HomeCell, withItem item: HomeItem) {
+  static func configureCell(cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = item.title
     
     cell.iconImageView.image = UIImage(named: item.iconName)
-    cell.accessoryType = self.dynamicType.shouldDisplayDisclosureIndicatorForItem(item) ? .DisclosureIndicator : .None
+    cell.accessoryType = self.shouldDisplayDisclosureIndicatorForItem(item) ? .DisclosureIndicator : .None
   }
 
-  static func shouldDisplayDisclosureIndicatorForItem(item: HomeItem) -> Bool {
+  static func identifyCellWithObject(item: HomeItem) -> String {
+    return SB.Cell.Home
+  }
+
+  static private func shouldDisplayDisclosureIndicatorForItem(item: HomeItem) -> Bool {
     return item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone
   }
 }
