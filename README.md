@@ -8,7 +8,7 @@ Revert is a sample iOS application destined to be inspected with @revealapp. It 
 Run the following steps to start inspecting _Revert_ with _Reveal_:
 
 - Download and clone the repository: _git clone https://github.com/revealapp/revert.git_
-- Run `Scripts/fetch-dependencies.sh` in order to install `swiftlint`
+- Run `Scripts/bootstrap.sh` in order to install `swiftlint`
 - Open Revert: _open revert/Revert.xcodeproj_
 - Run the project: _⌘ + R_
 - Launch _Reveal_ and connect to device / simulator
