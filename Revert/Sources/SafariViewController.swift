@@ -23,5 +23,4 @@ extension SafariViewController: SFSafariViewControllerDelegate {
     UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
     controller.dismissViewControllerAnimated(true, completion: nil)
   }
-  
 }

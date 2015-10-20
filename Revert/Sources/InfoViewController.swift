@@ -31,6 +31,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
   }
 }
 
+// MARK: UIWebViewDelegate
 extension InfoViewController: UIWebViewDelegate {
   func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
     if let URL = request.URL where URL != NSURL(string: "about:blank") {

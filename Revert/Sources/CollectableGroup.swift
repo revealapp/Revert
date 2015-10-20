@@ -31,5 +31,3 @@ struct CollectableGroup<I: Collectable>: Collection {
     }
   }
 }
-
-
