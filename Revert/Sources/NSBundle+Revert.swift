@@ -11,11 +11,11 @@ import Foundation
 extension NSBundle {
   var revealWebsiteURL: NSURL {
 
-    guard let urlString = infoDictionary!["revealWebsiteURL"] as? String,
-      url = NSURL(string: urlString) else {
-        preconditionFailure("reveal website URL missing or invalid")
+    guard let URLString = infoDictionary!["revealWebsiteURL"] as? String,
+      URL = NSURL(string: URLString) else {
+        fatalError("reveal website URL missing or invalid")
     }
 
-    return url
+    return URL
   }
 }
