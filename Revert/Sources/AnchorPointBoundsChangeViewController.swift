@@ -24,6 +24,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     }, completion: nil)
     
     // Anchor Point Testing
+
     let toValue = CGPoint(x: 0.25, y: 0.25)
     let basicAnimation = self.dynamicType.basicAnimationWithFromValue(self.anchorPointView.layer.anchorPoint, toValue: toValue)
     self.anchorPointView.layer.addAnimation(basicAnimation, forKey: "anchorPoint")
@@ -36,15 +37,17 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     self.animateIfNecessary()
   }
   
-  private let minItemHeight: CGFloat = 150
-  private let noOfItems = 2
+  private let minimumItemHeight: CGFloat = 150
+  private let numberOfItems = 2
   
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
     
     // Update the scrollview' subview's height to match the screen height with a minimum value
-    let scrollViewItemHeight = floor((self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / CGFloat(self.noOfItems))
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minItemHeight)
+    let scrollViewItemHeight = floor((self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / CGFloat(self.numberOfItems))
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minimumItemHeight)
+  }
+}
 
 extension AnchorPointBoundsChangeViewController {
   private static func basicAnimationWithFromValue(fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
