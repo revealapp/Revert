@@ -5,11 +5,20 @@
 import UIKit
 
 final class CountryCellConfigurator {
-  func configureCell(cell: BasicCell, withCountry country: Country) {
+  static func configureCell(cell: BasicCell, object: Country) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    cell.titleLabel.text = country.name
+    cell.titleLabel.text = object.name
 
     cell.subtitleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-    cell.subtitleLabel.text = country.capital
+    cell.subtitleLabel.text = object.capital
+  }
+
+  static func identifyCellWithObject(object: Country) -> String {
+    return SB.Cell.TableViewController
+  }
+
+  static func titleForFooter(group: CollectableGroup<Country>) -> String? {
+    let count = group.countOfItems
+    return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format"), count) as String
   }
 }

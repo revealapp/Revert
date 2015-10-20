@@ -6,13 +6,16 @@ import UIKit
 
 final class CountriesViewController: RevertTableViewController {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
-  private let cellConfigurator = CountryCellConfigurator()
-  private let dataSource: CountriesDataSource
+  private let dataSource: DataSource<Country, BasicCell>
   private var refreshTimer: NSTimer?
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = CountriesDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: CountryCellConfigurator.configureCell,
+      identifyCell: CountryCellConfigurator.identifyCellWithObject,
+      titleForFooter: CountryCellConfigurator.titleForFooter)
+
     super.init(coder: aDecoder)
   }
   
