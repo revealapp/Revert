@@ -4,14 +4,16 @@
 
 import Foundation
 
-struct Item: Collectable {
+struct Item: Collectable, Requirement {
   private enum Attributes: String {
     case Title = "title"
     case Cell = "cellIdentifier"
+    case RequiredClassName = "requiredClassName"
   }
   
   let title: String
   let cellIdentifier: String
+  let requiredClassName: String?
   
   init(dictionary: [String : AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
@@ -21,5 +23,6 @@ struct Item: Collectable {
 
     self.title = title
     self.cellIdentifier = cellIdentifier
+    self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
   }
 }

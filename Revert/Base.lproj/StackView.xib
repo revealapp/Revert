@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Xsc-fG-L8E">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-kL-Emd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mpT-Ft-keW">
+                            <rect key="frame" x="0.0" y="0.0" width="296" height="600"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epy-6Z-Fy5">
+                                    <rect key="frame" x="0.0" y="0.0" width="296" height="392"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-YH-U3H">
+                                    <rect key="frame" x="0.0" y="400" width="296" height="200"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="0rb-To-qNm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <animations/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Ne-Ps-05d">
+                            <rect key="frame" x="304" y="0.0" width="296" height="600"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwe-u6-nVa">
+                                    <rect key="frame" x="0.0" y="0.0" width="296" height="200"/>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="Wy8-yY-AJD"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhG-0Z-QlL">
+                                    <rect key="frame" x="0.0" y="208" width="296" height="392"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <animations/>
+                        </stackView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="5Ne-Ps-05d" firstAttribute="top" secondItem="BSo-kL-Emd" secondAttribute="top" id="2Y1-cG-WPr"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ne-Ps-05d" secondAttribute="bottom" id="g76-ip-k8y"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BSo-kL-Emd" firstAttribute="leading" secondItem="Xsc-fG-L8E" secondAttribute="leading" id="C8P-s4-A8h"/>
+                <constraint firstAttribute="trailing" secondItem="BSo-kL-Emd" secondAttribute="trailing" id="URj-ZZ-B6u"/>
+                <constraint firstAttribute="bottom" secondItem="BSo-kL-Emd" secondAttribute="bottom" id="tqt-ef-ghT"/>
+                <constraint firstItem="BSo-kL-Emd" firstAttribute="top" secondItem="Xsc-fG-L8E" secondAttribute="top" id="vUD-o4-fyW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

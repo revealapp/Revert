@@ -4,7 +4,7 @@
 
 import Foundation
 
-protocol Collectable {
+protocol Collectable {  
   init(dictionary: [String: AnyObject])
 }
 
@@ -39,3 +39,4 @@ extension Collection {
     }
   }
 }
+

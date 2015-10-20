@@ -35,6 +35,18 @@
 				<key>infoFilename</key>
 				<string>scroll_view</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stack View</string>
+				<key>iconName</key>
+				<string>icon_UIStackView</string>
+				<key>segueIdentifier</key>
+				<string>ShowStackViewViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stack_view</string>
+				<key>requiredClassName</key>
+				<string>UIStackView</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -118,6 +130,18 @@
 				<string>ShowWebViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>web_views</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Safari View Controller</string>
+				<key>iconName</key>
+				<string>icon_SFSafariViewController</string>
+				<key>segueIdentifier</key>
+				<string>ShowSFSafariViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>sf_safari_view_controller</string>
+				<key>requiredClassName</key>
+				<string>SFSafariViewController</string>
 			</dict>
 			<dict>
 				<key>title</key>
