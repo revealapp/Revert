@@ -22,7 +22,7 @@ final class MapViewController: RevertViewController {
   
   private func addAnnotations() {
     let locations = RevertItems.MapLocations.data
-    let annotations = locations.map { MapAnnotation.init(dictionary: $0) }
+    let annotations = locations.map(MapAnnotation.init)
     var coordinates = annotations.map { $0.coordinate }
 
     self.mapView.addAnnotations(annotations)

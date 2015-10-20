@@ -21,7 +21,7 @@ struct CollectableGroup<I: Collectable>: Collection {
     }
 
     self.title = dictionary[Attributes.Title.rawValue] as? String
-    let unfilteredItems = rowsData.map { I(dictionary: $0) }
+    let unfilteredItems = rowsData.map(I.init)
     self.items = unfilteredItems.filter { (element) -> Bool in
       if let elementWithRequirement = element as? Requirement {
         return elementWithRequirement.isAvailable

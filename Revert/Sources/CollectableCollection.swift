@@ -10,7 +10,7 @@ struct CollectableCollection<I: Collectable>: Collection {
   let items: [CollectableGroup<I>]
 
   init(items: RevertItems) {
-    let unfilteredItems = items.data.map { CollectableGroup<I>(dictionary: $0) }
+    let unfilteredItems = items.data.map(CollectableGroup<I>.init)
     self.items = unfilteredItems.filter { $0.countOfItems > 0 }
   }
 
