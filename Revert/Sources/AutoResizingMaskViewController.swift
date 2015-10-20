@@ -114,4 +114,3 @@ final class AutoResizingMaskViewController: RevertViewController {
     self.addSubViewsIfNeeded()
   }
 }
-

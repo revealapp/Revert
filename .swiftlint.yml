@@ -1,0 +1,9 @@
+disabled_rules:
+  - line_length
+  - force_cast
+  - variable_name
+  - nesting
+  - trailing_whitespace
+  - type_name
+included:
+  - Revert/Sources

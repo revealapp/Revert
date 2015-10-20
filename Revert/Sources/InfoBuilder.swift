@@ -32,4 +32,3 @@ func HTMLWithContent(filename: String) -> String {
   
   return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
 }
-

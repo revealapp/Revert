@@ -5,7 +5,7 @@
 import Foundation
 
 @available(iOS 9.0, *)
-class StackViewController : RevertViewController {
+class StackViewController: RevertViewController {
   override func loadView() {
     let nib = NSBundle.mainBundle().loadNibNamed("StackView", owner: self, options: nil)
     
