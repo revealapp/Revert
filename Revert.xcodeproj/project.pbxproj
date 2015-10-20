@@ -91,6 +91,11 @@
 		9AC3C3BF1B05DCD80059776E /* AlertsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */; };
 		9AC3C3C11B05DF8E0059776E /* AlertCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */; };
 		9AC639131B16BEA300B2CA0D /* table_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AC639121B16BEA300B2CA0D /* table_view.html */; };
+		9AD8295C1BD7048C0049C996 /* bootstrap.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9AD829571BD7048C0049C996 /* bootstrap.sh */; settings = {ASSET_TAGS = (); }; };
+		9AD8295D1BD7048C0049C996 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9AD829581BD7048C0049C996 /* build.sh */; settings = {ASSET_TAGS = (); }; };
+		9AD8295E1BD7048C0049C996 /* ci.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9AD829591BD7048C0049C996 /* ci.sh */; settings = {ASSET_TAGS = (); }; };
+		9AD8295F1BD7048C0049C996 /* fetch-dependencies.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8295A1BD7048C0049C996 /* fetch-dependencies.sh */; settings = {ASSET_TAGS = (); }; };
+		9AD829601BD7048C0049C996 /* swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8295B1BD7048C0049C996 /* swiftlint.sh */; settings = {ASSET_TAGS = (); }; };
 		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
@@ -142,7 +147,6 @@
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		9A2C24031AEE110C007B17CE /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
 		9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Revert/Sources/CollectableGroup.swift; sourceTree = "<group>"; };
-		9A2F94731B140DA7007E51B1 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = SOURCE_ROOT; };
 		9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Revert/Sources/HairlineConstraint.swift; sourceTree = "<group>"; };
 		9A3B4BC11B0230B300F6117D /* RevertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertViewController.swift; path = Revert/Sources/RevertViewController.swift; sourceTree = "<group>"; };
 		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,11 @@
 		9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertsDataSource.swift; path = Revert/Sources/AlertsDataSource.swift; sourceTree = "<group>"; };
 		9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertCellConfigurator.swift; path = Revert/Sources/AlertCellConfigurator.swift; sourceTree = "<group>"; };
 		9AC639121B16BEA300B2CA0D /* table_view.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = table_view.html; path = Resources/Info/table_view.html; sourceTree = "<group>"; };
+		9AD829571BD7048C0049C996 /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bootstrap.sh; path = Scripts/bootstrap.sh; sourceTree = SOURCE_ROOT; };
+		9AD829581BD7048C0049C996 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = Scripts/build.sh; sourceTree = SOURCE_ROOT; };
+		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
+		9AD8295A1BD7048C0049C996 /* fetch-dependencies.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "fetch-dependencies.sh"; path = "Scripts/fetch-dependencies.sh"; sourceTree = SOURCE_ROOT; };
+		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
 		9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Revert/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
 		9AE252501B18211A002B596C /* InfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoBuilder.swift; path = Revert/Sources/InfoBuilder.swift; sourceTree = "<group>"; };
 		9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Revert/Sources/LayerPropertiesCells.swift; sourceTree = "<group>"; };
@@ -295,7 +304,11 @@
 		9A2F94701B140B0E007E51B1 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				9A2F94731B140DA7007E51B1 /* build.sh */,
+				9AD829571BD7048C0049C996 /* bootstrap.sh */,
+				9AD829581BD7048C0049C996 /* build.sh */,
+				9AD829591BD7048C0049C996 /* ci.sh */,
+				9AD8295A1BD7048C0049C996 /* fetch-dependencies.sh */,
+				9AD8295B1BD7048C0049C996 /* swiftlint.sh */,
 			);
 			name = Scripts;
 			path = Revert/Scripts;
@@ -576,6 +589,7 @@
 				9AA26BA81B17E8CC00BC632C /* map_view.html in Resources */,
 				9AA26BAA1B17E8CC00BC632C /* open_gl.html in Resources */,
 				9AA26BB31B17E8E500BC632C /* scroll_view.html in Resources */,
+				9AD8295C1BD7048C0049C996 /* bootstrap.sh in Resources */,
 				9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */,
 				9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */,
 				9AA26BA51B17E8CC00BC632C /* controls.html in Resources */,
@@ -588,9 +602,11 @@
 				9AA26BC01B1801C400BC632C /* container.html in Resources */,
 				9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */,
 				9AA26B9D1B17E8CC00BC632C /* alert_views.html in Resources */,
+				9AD8295D1BD7048C0049C996 /* build.sh in Resources */,
 				9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */,
 				9AA26BAC1B17E8CC00BC632C /* sprite_kit.html in Resources */,
 				9AA26B9E1B17E8CC00BC632C /* arranged_views.html in Resources */,
+				9AD8295E1BD7048C0049C996 /* ci.sh in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
 				9AA26BA91B17E8CC00BC632C /* modal_view.html in Resources */,
 				9AC639131B16BEA300B2CA0D /* table_view.html in Resources */,
@@ -603,9 +619,11 @@
 				9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */,
 				9AA26B871B17E7FE00BC632C /* collection_view.html in Resources */,
 				9AA26BB01B17E8CC00BC632C /* transformed_views.html in Resources */,
+				9AD8295F1BD7048C0049C996 /* fetch-dependencies.sh in Resources */,
 				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9AA26BA71B17E8CC00BC632C /* layer_properties.html in Resources */,
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
+				9AD829601BD7048C0049C996 /* swiftlint.sh in Resources */,
 				9AA26BAD1B17E8CC00BC632C /* stress_test.html in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
