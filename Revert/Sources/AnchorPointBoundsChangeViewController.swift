@@ -25,11 +25,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     
     // Anchor Point Testing
     let toValue = CGPoint(x: 0.25, y: 0.25)
-    let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
-    basicAnimation.duration = 1
-    basicAnimation.fromValue = NSValue(CGPoint: self.anchorPointView.layer.anchorPoint)
-    basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-    basicAnimation.toValue = NSValue(CGPoint: toValue)
+    let basicAnimation = self.dynamicType.basicAnimationWithFromValue(self.anchorPointView.layer.anchorPoint, toValue: toValue)
     self.anchorPointView.layer.addAnimation(basicAnimation, forKey: "anchorPoint")
     self.anchorPointView.layer.anchorPoint = toValue
   }
@@ -49,5 +45,14 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     // Update the scrollview' subview's height to match the screen height with a minimum value
     let scrollViewItemHeight = floor((self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length) / CGFloat(self.noOfItems))
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minItemHeight)
+
+extension AnchorPointBoundsChangeViewController {
+  private static func basicAnimationWithFromValue(fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
+    let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
+    basicAnimation.duration = 1
+    basicAnimation.fromValue = NSValue(CGPoint: fromValue)
+    basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+    basicAnimation.toValue = NSValue(CGPoint: toValue)
+    return basicAnimation
   }
 }
