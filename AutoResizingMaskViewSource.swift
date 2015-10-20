@@ -38,7 +38,7 @@ final class AutoResizingMaskViewSource {
     return view
   }
 
-  lazy var flexibleWidthHeightView: UIView = {
+  private(set) lazy var flexibleWidthHeightView: UIView = {
     // Back: Flexible Height / Width View
     let frame = CGRect(origin: self.origin, size: self.flexibleWidthHeightSize)
     let flexibleWidthHeightView = self.bakeViewWithFrame(frame)
@@ -49,7 +49,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthHeightView
   }()
 
-  lazy var flexibleWidthView: UIView = {
+  private(set) lazy var flexibleWidthView: UIView = {
     let flexibleWidthSize = CGSize(
       width: self.flexibleWidthHeightSize.width - (2 * self.padding),
       height: self.defaultViewSideLength
@@ -62,7 +62,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthView
   }()
 
-  lazy var flexibleHeightLeftRightView: UIView = {
+  private(set) lazy var flexibleHeightLeftRightView: UIView = {
     let flexibleHeightLeftRightSize = CGSize(
       width: self.defaultViewSideLength,
       height: self.flexibleWidthHeightSize.height - self.flexibleWidthView.frame.maxY - (2 * self.padding)
@@ -81,7 +81,7 @@ final class AutoResizingMaskViewSource {
     return flexibleHeightLeftRightView
   }()
 
-  lazy var leftFlexibleTopBottomView: UIView = {
+  private(set) lazy var leftFlexibleTopBottomView: UIView = {
     let leftFlexibleTopBottomOrigin = CGPoint(
       x: self.padding,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
@@ -94,7 +94,7 @@ final class AutoResizingMaskViewSource {
     return leftFlexibleTopBottomView
   }()
 
-  lazy var rightFlexibleTopBottomView: UIView = {
+  private(set) lazy var rightFlexibleTopBottomView: UIView = {
     let rightFlexibleTopBottomOrigin = CGPoint(x:
       self.flexibleWidthHeightView.bounds.width - self.padding - self.leftRightWidth,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
