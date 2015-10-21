@@ -16,7 +16,11 @@ final class AlertViewController: RevertTableViewController {
   }
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(collection: self.collection, configureCell: AlertCellConfigurator.configureCell, identifyCell: AlertCellConfigurator.identifyCellWithObject)
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: AlertCellConfigurator.configureCell,
+      cellIdentifier: SB.Cell.Alert
+    )
 
     super.init(coder: aDecoder)
   }

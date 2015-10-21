@@ -9,8 +9,4 @@ final class AlertCellConfigurator {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = object.title
   }
-
-  static func identifyCellWithObject(object: Item) -> String {
-    return SB.Cell.Alert
-  }
 }

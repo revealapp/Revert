@@ -13,7 +13,7 @@ final class CountriesViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: CountryCellConfigurator.configureCell,
-      identifyCell: CountryCellConfigurator.identifyCellWithObject,
+      cellIdentifier: SB.Cell.TableViewController,
       titleForFooter: CountryCellConfigurator.titleForFooter)
 
     super.init(coder: aDecoder)

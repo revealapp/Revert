@@ -13,10 +13,6 @@ final class HomeCellConfigurator {
     cell.accessoryType = self.shouldDisplayDisclosureIndicatorForItem(item) ? .DisclosureIndicator : .None
   }
 
-  static func identifyCellWithObject(item: HomeItem) -> String {
-    return SB.Cell.Home
-  }
-
   static private func shouldDisplayDisclosureIndicatorForItem(item: HomeItem) -> Bool {
     return item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone
   }

@@ -6,18 +6,17 @@ import Foundation
 
 class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, object: Object) -> Void
-  typealias CellIdenfitier = (Object) -> String
   typealias FooterTitleGetter = ((CollectableGroup<Object>) -> String?)?
 
   private let collection: CollectableCollection<Object>
   private let configureCell: CellConfigurator
-  private let identifyCellWithObject: CellIdenfitier
+  private let cellIdentifier: String
   private let titleForFooter: FooterTitleGetter
 
-  required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, identifyCell: CellIdenfitier, titleForFooter: FooterTitleGetter = nil) {
+  required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleGetter = nil) {
     self.collection = collection
     self.configureCell = configureCell
-    self.identifyCellWithObject = identifyCell
+    self.cellIdentifier = cellIdentifier
     self.titleForFooter = titleForFooter
 
     super.init()
@@ -32,13 +31,11 @@ class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableV
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let object = self.collection[indexPath]
-    let cellIdentifier = self.identifyCellWithObject(object)
-
-    guard let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? Cell else {
+    guard let cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as? Cell else {
       fatalError("Expecting to dequeue a `\(Cell.self)` from the tableView")
     }
 
+    let object = self.collection[indexPath]
     self.configureCell(cell, object: object)
     return cell
   }

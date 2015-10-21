@@ -24,7 +24,11 @@ final class HomeViewController: UITableViewController {
   private var wasInitiallySelected = false
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(collection: self.collection, configureCell: HomeCellConfigurator.configureCell, identifyCell: HomeCellConfigurator.identifyCellWithObject)
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: HomeCellConfigurator.configureCell,
+      cellIdentifier: SB.Cell.Home
+    )
     
     super.init(coder: aDecoder)
   }

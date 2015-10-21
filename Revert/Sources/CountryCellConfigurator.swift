@@ -13,10 +13,6 @@ final class CountryCellConfigurator {
     cell.subtitleLabel.text = object.capital
   }
 
-  static func identifyCellWithObject(object: Country) -> String {
-    return SB.Cell.TableViewController
-  }
-
   static func titleForFooter(group: CollectableGroup<Country>) -> String? {
     let count = group.countOfItems
     return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format"), count) as String
