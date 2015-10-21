@@ -51,6 +51,12 @@
 		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
 		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
 		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1EA1BD67B17001A439D /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1EB1BD67B17001A439D /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1EC1BD67B17001A439D /* Project-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1ED1BD67B17001A439D /* Revert-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1EE1BD67B17001A439D /* Revert-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1EF1BD67B17001A439D /* Revert-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */; settings = {ASSET_TAGS = (); }; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
@@ -169,6 +175,12 @@
 		9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Revert/Sources/TableViewCells.swift; sourceTree = "<group>"; };
 		9A94E3F51AD63F160005BA44 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Revert/Sources/HomeItem.swift; sourceTree = "<group>"; };
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
+		9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Debug.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Release.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
@@ -318,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
+				9A9BD1E31BD67B17001A439D /* Configurations */,
 				9A2F94701B140B0E007E51B1 /* Scripts */,
 				9A6850BA1AD4A20E00ACCE29 /* Resources */,
 				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
@@ -375,6 +388,20 @@
 				9A9E6B4D1B0CBB0700A22270 /* Cube.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9A9BD1E31BD67B17001A439D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
+				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
+				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
+				9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */,
+				9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */,
+				9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */,
+			);
+			name = Configurations;
+			path = Revert/Configurations;
 			sourceTree = "<group>";
 		};
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
@@ -586,6 +613,7 @@
 			files = (
 				9AA26BA21B17E8CC00BC632C /* auto_resizing_masks.html in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				9A9BD1EE1BD67B17001A439D /* Revert-Release.xcconfig in Resources */,
 				9AA26BA81B17E8CC00BC632C /* map_view.html in Resources */,
 				9AA26BAA1B17E8CC00BC632C /* open_gl.html in Resources */,
 				9AA26BB31B17E8E500BC632C /* scroll_view.html in Resources */,
@@ -594,8 +622,11 @@
 				9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */,
 				9AA26BA51B17E8CC00BC632C /* controls.html in Resources */,
 				9AA26BAB1B17E8CC00BC632C /* picker_views.html in Resources */,
+				9A9BD1EC1BD67B17001A439D /* Project-Shared.xcconfig in Resources */,
+				9A9BD1ED1BD67B17001A439D /* Revert-Debug.xcconfig in Resources */,
 				B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */,
 				9AA26BA01B17E8CC00BC632C /* auto_layout_margins.html in Resources */,
+				9A9BD1EB1BD67B17001A439D /* Project-Release.xcconfig in Resources */,
 				9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */,
 				9AA26BB11B17E8CC00BC632C /* web_views.html in Resources */,
 				9AA26BA61B17E8CC00BC632C /* default_views.html in Resources */,
@@ -604,6 +635,7 @@
 				9AA26B9D1B17E8CC00BC632C /* alert_views.html in Resources */,
 				9AD8295D1BD7048C0049C996 /* build.sh in Resources */,
 				9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */,
+				9A9BD1EA1BD67B17001A439D /* Project-Debug.xcconfig in Resources */,
 				9AA26BAC1B17E8CC00BC632C /* sprite_kit.html in Resources */,
 				9AA26B9E1B17E8CC00BC632C /* arranged_views.html in Resources */,
 				9AD8295E1BD7048C0049C996 /* ci.sh in Resources */,
@@ -625,6 +657,7 @@
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
 				9AD829601BD7048C0049C996 /* swiftlint.sh in Resources */,
 				9AA26BAD1B17E8CC00BC632C /* stress_test.html in Resources */,
+				9A9BD1EF1BD67B17001A439D /* Revert-Shared.xcconfig in Resources */,
 				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */,
@@ -772,114 +805,29 @@
 /* Begin XCBuildConfiguration section */
 		9A6850D71AD4A20E00ACCE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9A6850D81AD4A20E00ACCE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9A6850DA1AD4A20E00ACCE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Revert/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ittybittyapps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Revert/Sources/Revert-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		9A6850DB1AD4A20E00ACCE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Revert/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ittybittyapps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Revert/Sources/Revert-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
