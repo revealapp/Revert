@@ -123,28 +123,6 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Web View</string>
-				<key>iconName</key>
-				<string>icon_WebView</string>
-				<key>segueIdentifier</key>
-				<string>ShowWebViewControllerSegue</string>
-				<key>infoFilename</key>
-				<string>web_views</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Safari View Controller</string>
-				<key>iconName</key>
-				<string>icon_SFSafariViewController</string>
-				<key>segueIdentifier</key>
-				<string>ShowSFSafariViewControllerSegue</string>
-				<key>infoFilename</key>
-				<string>sf_safari_view_controller</string>
-				<key>requiredClassName</key>
-				<string>SFSafariViewController</string>
-			</dict>
-			<dict>
-				<key>title</key>
 				<string>SpriteKit</string>
 				<key>iconName</key>
 				<string>icon_SpriteKit</string>
@@ -163,25 +141,55 @@
 				<key>infoFilename</key>
 				<string>open_gl</string>
 			</dict>
+            <dict>
+                <key>title</key>
+                <string>Web View</string>
+                <key>iconName</key>
+                <string>icon_WebView</string>
+                <key>segueIdentifier</key>
+                <string>ShowWebViewControllerSegue</string>
+                <key>infoFilename</key>
+                <string>web_views</string>
+            </dict>
+            
 		</array>
 	</dict>
-	<dict>
-		<key>rows</key>
-		<array>
-			<dict>
-				<key>title</key>
-				<string>Modal View</string>
-				<key>iconName</key>
-				<string>icon_Modal</string>
-				<key>segueIdentifier</key>
-				<string>ShowModalViewController</string>
-				<key>isPush</key>
-				<false/>
-				<key>infoFilename</key>
-				<string>modal_view</string>
-			</dict>
-		</array>
-	</dict>
+    <dict>
+        <key>rows</key>
+        <array>
+            <dict>
+                <key>title</key>
+                <string>Safari View Controller</string>
+                <key>iconName</key>
+                <string>icon_SFSafariViewController</string>
+                <key>segueIdentifier</key>
+                <string>ShowSFSafariViewControllerSegue</string>
+                <key>infoFilename</key>
+                <string>sf_safari_view_controller</string>
+                <key>requiredClassName</key>
+                <string>SFSafariViewController</string>
+                <key>isPush</key>
+                <false/>
+            </dict>
+        </array>
+    </dict>
+    <dict>
+        <key>rows</key>
+        <array>
+            <dict>
+                <key>title</key>
+                <string>Modal View</string>
+                <key>iconName</key>
+                <string>icon_Modal</string>
+                <key>segueIdentifier</key>
+                <string>ShowModalViewController</string>
+                <key>isPush</key>
+                <false/>
+                <key>infoFilename</key>
+                <string>modal_view</string>
+            </dict>
+        </array>
+    </dict>
 	<dict>
 		<key>rows</key>
 		<array>
