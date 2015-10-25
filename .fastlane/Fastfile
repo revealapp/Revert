@@ -4,10 +4,6 @@ fastlane_version "1.35.0"
 
 default_platform :ios
 
-before_all do
-  sh "../Scripts/validate-environment.sh"
-end
-
 platform :ios do
   desc "Builds Revert"
   lane :build do
