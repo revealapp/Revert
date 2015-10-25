@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/bash -e
 
-set -e
+./Scripts/install-gems.sh
 
-./Scripts/fetch-dependencies.sh
-./Scripts/build.sh
+fastlane build
