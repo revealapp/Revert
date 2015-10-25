@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-./Scripts/fetch-dependencies.sh
-
-SWIFTLINT=$(which swiftlint)
-
-$SWIFTLINT
+if hash swiftlint 2>/dev/null; then
+  $(which swiftlint)
+fi
