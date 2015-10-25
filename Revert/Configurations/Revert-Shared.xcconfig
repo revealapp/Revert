@@ -44,8 +44,7 @@ IPHONEOS_DEPLOYMENT_TARGET = 7.0
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
 
-
-PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.revert
+PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.$(PRODUCT_NAME:rfc1034identifier:lower)
 
 
 // Product Name
