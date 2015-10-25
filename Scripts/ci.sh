@@ -2,4 +2,4 @@
 
 ./Scripts/install-gems.sh
 
-fastlane build
+bundle exec fastlane build
