@@ -1,13 +1,12 @@
 #/bin/bash
 
-function installBrewBinary () {
+function checkPresenceOf () {
   echo " 👮  Checking '$1' is installed... \c"
   if ! hash $1 2>/dev/null; then
-    echo " 👮  Installing '$1'..."
-    brew install $1
+    echo "\n 👮  '$1' Not present. Exiting..." >&2 
   else
     echo " 👍 "
   fi
 }
 
-installBrewBinary swiftlint
+checkPresenceOf swiftlint
