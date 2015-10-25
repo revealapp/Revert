@@ -1,15 +1,22 @@
 #!/bin/bash -e
 
-if !bundle 2>/dev/null; then
-  echo "\n 👮  'bundle' Not present. Exiting..." >&2 
+if [ -z "hash rbenv 2>/dev/null;" ]; then
+  echo "--- 🚫  Stopping. rbenv not found!"
+  exit 1
 fi
 
-echo "📦  Installing Gems..."
+eval "$(rbenv init -)"
 
+if [ -z "$(rbenv versions | grep $(cat .ruby-version))" ]; then
+  echo "--- 👩  Installing Ruby..."
+  rbenv install
+fi
+
+if [ -z "$(gem list --local | grep bundler)" ]; then
+  echo "--- 💎  Installing Bundler Gem..."
+  gem install bundler
+  rbenv rehash
+fi
+
+echo "--- 📦  Installing Bundle..."
 bundle install --quiet
-
-if [ $? -eq 0 ]; then
-  echo "--- 👍  Gems Installed Successfully"
-else
-  echo "🚫  Gems Install Failed. Exiting. 😔 " >&2
-fi
