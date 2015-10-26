@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
-		9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BB1B02EA7F00477E60 /* Localizable.strings */; };
 		9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */; };
 		9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* HomeItems.plist */; };
 		9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BF1B02EA7F00477E60 /* ControlItems.plist */; };
@@ -117,7 +116,6 @@
 
 /* Begin PBXFileReference section */
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
-		9A0416BC1B02EA7F00477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CountriesCapitals.plist; path = Resources/CountriesCapitals.plist; sourceTree = "<group>"; };
 		9A0416BE1B02EA7F00477E60 /* HomeItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HomeItems.plist; path = Resources/HomeItems.plist; sourceTree = "<group>"; };
 		9A0416BF1B02EA7F00477E60 /* ControlItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ControlItems.plist; path = Resources/ControlItems.plist; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
-				9A0416BB1B02EA7F00477E60 /* Localizable.strings */,
 			);
 			name = Strings;
 			sourceTree = "<group>";
@@ -611,7 +608,6 @@
 				9AA26BAB1B17E8CC00BC632C /* picker_views.html in Resources */,
 				B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */,
 				9AA26BA01B17E8CC00BC632C /* auto_layout_margins.html in Resources */,
-				9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */,
 				9AA26BB11B17E8CC00BC632C /* web_views.html in Resources */,
 				9AA26BA61B17E8CC00BC632C /* default_views.html in Resources */,
 				9AA26BC01B1801C400BC632C /* container.html in Resources */,
@@ -738,14 +734,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9A0416BB1B02EA7F00477E60 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A0416BC1B02EA7F00477E60 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
