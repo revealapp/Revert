@@ -1,6 +1,6 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
-if [ -z "hash rbenv 2>/dev/null;" ]; then
+if [ -z "$(command -v rbenv)" ]; then
   echo "--- 🚫  Stopping. rbenv not found!"
   exit 1
 fi

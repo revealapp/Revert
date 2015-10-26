@@ -1,5 +1,7 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
-source ./Scripts/install-gems.sh
+# Load Testing Dependencies"
+source "./Scripts/install-gems.sh"
 
+# Build Revert
 bundle exec fastlane build

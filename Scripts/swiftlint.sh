@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-if hash swiftlint 2>/dev/null; then
+# Only execute swiftlint if available
+if [ ! -z "$(command -v swiftlint)" ]; then
   swiftlint
 fi
