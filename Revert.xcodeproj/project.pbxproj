@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BB1B02EA7F00477E60 /* Localizable.strings */; };
-		9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BD1B02EA7F00477E60 /* CountriesCapitals.plist */; };
-		9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BE1B02EA7F00477E60 /* HomeItems.plist */; };
-		9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416BF1B02EA7F00477E60 /* ControlItems.plist */; };
-		9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C11B02EA7F00477E60 /* MapLocations.plist */; };
-		9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C21B02EA7F00477E60 /* LayerPropertiesItems.plist */; };
-		9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416C31B02EA7F00477E60 /* ViewItems.plist */; };
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A0416D21B03048B00477E60 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
 		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
@@ -56,41 +50,14 @@
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
 		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
 		9AA02A921B0C235D000750E5 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */; };
-		9AA26B871B17E7FE00BC632C /* collection_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B861B17E7FE00BC632C /* collection_view.html */; };
-		9AA26B9D1B17E8CC00BC632C /* alert_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B881B17E8CC00BC632C /* alert_views.html */; };
-		9AA26B9E1B17E8CC00BC632C /* arranged_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B891B17E8CC00BC632C /* arranged_views.html */; };
-		9AA26B9F1B17E8CC00BC632C /* auto_layout_alignments.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8A1B17E8CC00BC632C /* auto_layout_alignments.html */; };
-		9AA26BA01B17E8CC00BC632C /* auto_layout_margins.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8B1B17E8CC00BC632C /* auto_layout_margins.html */; };
-		9AA26BA11B17E8CC00BC632C /* auto_layout.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8C1B17E8CC00BC632C /* auto_layout.html */; };
-		9AA26BA21B17E8CC00BC632C /* auto_resizing_masks.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8D1B17E8CC00BC632C /* auto_resizing_masks.html */; };
-		9AA26BA31B17E8CC00BC632C /* bars.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8E1B17E8CC00BC632C /* bars.html */; };
-		9AA26BA41B17E8CC00BC632C /* bounds_anchor_point_changes.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B8F1B17E8CC00BC632C /* bounds_anchor_point_changes.html */; };
-		9AA26BA51B17E8CC00BC632C /* controls.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B901B17E8CC00BC632C /* controls.html */; };
-		9AA26BA61B17E8CC00BC632C /* default_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B911B17E8CC00BC632C /* default_views.html */; };
-		9AA26BA71B17E8CC00BC632C /* layer_properties.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B921B17E8CC00BC632C /* layer_properties.html */; };
-		9AA26BA81B17E8CC00BC632C /* map_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B931B17E8CC00BC632C /* map_view.html */; };
-		9AA26BA91B17E8CC00BC632C /* modal_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B941B17E8CC00BC632C /* modal_view.html */; };
-		9AA26BAA1B17E8CC00BC632C /* open_gl.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B951B17E8CC00BC632C /* open_gl.html */; };
-		9AA26BAB1B17E8CC00BC632C /* picker_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B961B17E8CC00BC632C /* picker_views.html */; };
-		9AA26BAC1B17E8CC00BC632C /* sprite_kit.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B971B17E8CC00BC632C /* sprite_kit.html */; };
-		9AA26BAD1B17E8CC00BC632C /* stress_test.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B981B17E8CC00BC632C /* stress_test.html */; };
-		9AA26BAE1B17E8CC00BC632C /* super_deep.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B991B17E8CC00BC632C /* super_deep.html */; };
-		9AA26BAF1B17E8CC00BC632C /* transformed_layers.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B9A1B17E8CC00BC632C /* transformed_layers.html */; };
-		9AA26BB01B17E8CC00BC632C /* transformed_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B9B1B17E8CC00BC632C /* transformed_views.html */; };
-		9AA26BB11B17E8CC00BC632C /* web_views.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26B9C1B17E8CC00BC632C /* web_views.html */; };
-		9AA26BB31B17E8E500BC632C /* scroll_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26BB21B17E8E500BC632C /* scroll_view.html */; };
-		9AA26BB51B17E99000BC632C /* not_serializable.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26BB41B17E99000BC632C /* not_serializable.html */; };
-		9AA26BC01B1801C400BC632C /* container.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA26BBF1B1801C400BC632C /* container.html */; };
 		9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
 		9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
 		9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
-		9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BC1B05D9100059776E /* AlertItems.plist */; };
 		9AC3C3BF1B05DCD80059776E /* AlertsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */; };
 		9AC3C3C11B05DF8E0059776E /* AlertCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */; };
-		9AC639131B16BEA300B2CA0D /* table_view.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AC639121B16BEA300B2CA0D /* table_view.html */; };
 		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
@@ -109,10 +76,8 @@
 		B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55841181BD496AB009725C5 /* NSBundle+Revert.swift */; };
 		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; };
 		B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
-		B5B483021BBA471800C860E5 /* stack_view.html in Resources */ = {isa = PBXBuildFile; fileRef = B5B483011BBA471800C860E5 /* stack_view.html */; };
 		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
-		B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */ = {isa = PBXBuildFile; fileRef = B5DCC9F31BBCF8B9004EA327 /* sf_safari_view_controller.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -600,47 +565,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA26BA21B17E8CC00BC632C /* auto_resizing_masks.html in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
-				9AA26BA81B17E8CC00BC632C /* map_view.html in Resources */,
-				9AA26BAA1B17E8CC00BC632C /* open_gl.html in Resources */,
-				9AA26BB31B17E8E500BC632C /* scroll_view.html in Resources */,
-				9A0416C61B02EA7F00477E60 /* HomeItems.plist in Resources */,
-				9A0416C71B02EA7F00477E60 /* ControlItems.plist in Resources */,
-				9AA26BA51B17E8CC00BC632C /* controls.html in Resources */,
-				9AA26BAB1B17E8CC00BC632C /* picker_views.html in Resources */,
-				B5DCC9F41BBCF8B9004EA327 /* sf_safari_view_controller.html in Resources */,
-				9AA26BA01B17E8CC00BC632C /* auto_layout_margins.html in Resources */,
 				9A0416C41B02EA7F00477E60 /* Localizable.strings in Resources */,
-				9AA26BB11B17E8CC00BC632C /* web_views.html in Resources */,
-				9AA26BA61B17E8CC00BC632C /* default_views.html in Resources */,
-				9AA26BC01B1801C400BC632C /* container.html in Resources */,
-				9A0416CA1B02EA7F00477E60 /* LayerPropertiesItems.plist in Resources */,
-				9AA26B9D1B17E8CC00BC632C /* alert_views.html in Resources */,
-				9A0416CB1B02EA7F00477E60 /* ViewItems.plist in Resources */,
-				9AA26BAC1B17E8CC00BC632C /* sprite_kit.html in Resources */,
-				9AA26B9E1B17E8CC00BC632C /* arranged_views.html in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
-				9AA26BA91B17E8CC00BC632C /* modal_view.html in Resources */,
-				9AC639131B16BEA300B2CA0D /* table_view.html in Resources */,
-				9AA26BA41B17E8CC00BC632C /* bounds_anchor_point_changes.html in Resources */,
-				B5B483021BBA471800C860E5 /* stack_view.html in Resources */,
-				9AA26BB51B17E99000BC632C /* not_serializable.html in Resources */,
-				9AA26BAF1B17E8CC00BC632C /* transformed_layers.html in Resources */,
-				9AA26BA31B17E8CC00BC632C /* bars.html in Resources */,
-				9AA26BA11B17E8CC00BC632C /* auto_layout.html in Resources */,
-				9AC3C3BD1B05D9100059776E /* AlertItems.plist in Resources */,
-				9AA26B871B17E7FE00BC632C /* collection_view.html in Resources */,
-				9AA26BB01B17E8CC00BC632C /* transformed_views.html in Resources */,
 				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
-				9AA26BA71B17E8CC00BC632C /* layer_properties.html in Resources */,
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
-				9AA26BAD1B17E8CC00BC632C /* stress_test.html in Resources */,
-				9A0416C91B02EA7F00477E60 /* MapLocations.plist in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
-				9A0416C51B02EA7F00477E60 /* CountriesCapitals.plist in Resources */,
-				9AA26BAE1B17E8CC00BC632C /* super_deep.html in Resources */,
-				9AA26B9F1B17E8CC00BC632C /* auto_layout_alignments.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
