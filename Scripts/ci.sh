@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
-./Scripts/install-gems.sh
+source ./Scripts/install-gems.sh
 
 bundle exec fastlane build
