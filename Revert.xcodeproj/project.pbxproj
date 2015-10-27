@@ -45,8 +45,7 @@
 		9A93ED6A1B01B06F00CFA5BD /* ControlCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED691B01B06F00CFA5BD /* ControlCellConfigurator.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
 		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
-		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; settings = {ASSET_TAGS = (); }; };
-		9A9BD1E21BD664F6001A439D /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
@@ -60,6 +59,7 @@
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		9AC3C3BF1B05DCD80059776E /* AlertsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */; };
 		9AC3C3C11B05DF8E0059776E /* AlertCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */; };
+		9ACFC5071BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */; };
 		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
@@ -84,7 +84,6 @@
 
 /* Begin PBXFileReference section */
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
-		9A0416BC1B02EA7F00477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416D11B03048B00477E60 /* DeepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepView.swift; path = Revert/Sources/DeepView.swift; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 		9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Release.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
-		9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +148,7 @@
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertsDataSource.swift; path = Revert/Sources/AlertsDataSource.swift; sourceTree = "<group>"; };
 		9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertCellConfigurator.swift; path = Revert/Sources/AlertCellConfigurator.swift; sourceTree = "<group>"; };
+		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9AD829571BD7048C0049C996 /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bootstrap.sh; path = Scripts/bootstrap.sh; sourceTree = SOURCE_ROOT; };
 		9AD829581BD7048C0049C996 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = Scripts/build.sh; sourceTree = SOURCE_ROOT; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
@@ -316,6 +315,7 @@
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */,
 				9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */,
 				9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */,
 				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
@@ -326,7 +326,6 @@
 				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
 				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
-				9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -548,7 +547,7 @@
 				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
 				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
-				9A9BD1E21BD664F6001A439D /* AutoResizingMaskViewSource.swift in Sources */,
+				9ACFC5071BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift in Sources */,
 				9A0416D21B03048B00477E60 /* DeepView.swift in Sources */,
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
 				9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */,
