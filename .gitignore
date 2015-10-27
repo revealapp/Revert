@@ -41,3 +41,10 @@ profile
 # dotenv
 .env
 
+*.ipa
+*.dSYM.zip
+
+
+# Fastlane
+
+.fastlane/report.xml
