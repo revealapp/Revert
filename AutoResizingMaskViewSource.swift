@@ -12,16 +12,14 @@ final class AutoResizingMaskViewSource {
   private let defaultViewSideLength: CGFloat = 50
   private let leftRightWidth: CGFloat = 80
 
-  private let outterViewBounds: CGRect
   private let origin: CGPoint
   private let flexibleWidthHeightSize: CGSize
   private let flexibleTopBottomSize: CGSize
 
-  init(outterViewBounds: CGRect) {
-    self.outterViewBounds = outterViewBounds
+  init(bounds: CGRect) {
     self.flexibleWidthHeightSize = CGSize(
-      width: outterViewBounds.width - (2 * self.padding),
-      height: outterViewBounds.height - (2 * self.padding)
+      width: bounds.width - (2 * self.padding),
+      height: bounds.height - (2 * self.padding)
     )
     self.origin = CGPoint(x: self.padding, y: self.padding)
     self.flexibleTopBottomSize = CGSize(
