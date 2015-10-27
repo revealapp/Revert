@@ -16,7 +16,7 @@ final class AutoResizingMaskViewController: RevertViewController {
     }
     self.wereViewsSetup = true
 
-    let viewSource = AutoResizingMaskViewSource(outterViewBounds: self.outterView.bounds)
+    let viewSource = AutoResizingMaskViewSource(bounds: self.outterView.bounds)
 
     self.outterView.addSubview(viewSource.flexibleWidthHeightView)
     viewSource.flexibleWidthHeightView.addSubview(viewSource.flexibleWidthView)
