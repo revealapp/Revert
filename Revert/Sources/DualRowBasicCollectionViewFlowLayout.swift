@@ -16,7 +16,7 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
   }
 
   private var computedItemSize: CGSize {
-    let itemWidth = floor(self.availableWidth / CGFloat(self.dynamicType.noOfItemsInRow))
+    let itemWidth = floor((self.availableWidth - self.minimumInteritemSpacing * (CGFloat(self.dynamicType.noOfItemsInRow) - 1)) / CGFloat(self.dynamicType.noOfItemsInRow))
     return CGSize(width: itemWidth, height: self.itemSize.height)
   }
   
