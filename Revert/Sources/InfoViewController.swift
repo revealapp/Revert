@@ -22,7 +22,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     self.imageView.image = UIImage(named: item.iconName)
     self.titleLabel.text = item.title
 
-    let htmlString = HTMLWithContent(item.infoFilename)
+    let htmlString = infoHTMLWithContent(item.infoFilename)
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
   
