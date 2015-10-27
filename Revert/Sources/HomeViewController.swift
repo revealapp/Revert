@@ -26,7 +26,7 @@ final class HomeViewController: UITableViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
-      configureCell: HomeCellConfigurator.configureCell,
+      configureCell: self.dynamicType.configureCell,
       cellIdentifier: SB.Cell.Home
     )
     
@@ -85,6 +85,20 @@ extension HomeViewController {
       if UIDevice.currentDevice().userInterfaceIdiom == .Pad && item.isPush {
         self.currentDetailIndexPath = indexPath
       }
+    }
+  }
+}
+
+private extension HomeViewController {
+  static func configureCell(cell: HomeCell, withItem item: HomeItem) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.titleLabel.text = item.title
+    cell.iconImageView.image = UIImage(named: item.iconName)
+
+    if item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+      cell.accessoryType = .DisclosureIndicator
+    } else {
+      cell.accessoryType = .None
     }
   }
 }

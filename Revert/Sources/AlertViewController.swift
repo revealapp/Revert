@@ -18,7 +18,7 @@ final class AlertViewController: RevertTableViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
-      configureCell: AlertCellConfigurator.configureCell,
+      configureCell: self.dynamicType.configureCell,
       cellIdentifier: SB.Cell.Alert
     )
 
@@ -75,5 +75,12 @@ extension AlertViewController {
     let item = self.collection[indexPath]
     self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+}
+
+extension AlertViewController {
+  static func configureCell(cell: BasicCell, object: Item) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.titleLabel.text = object.title
   }
 }

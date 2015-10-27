@@ -62,3 +62,10 @@ final class ControlsViewController: RevertCollectionViewController {
     self.collectionView?.reloadData()
   }
 }
+
+private extension ControlsViewController {
+  func configureCell(cell: CollectionViewCell) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  }
+}
