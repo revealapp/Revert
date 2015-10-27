@@ -6,14 +6,14 @@ import Foundation
 
 class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, object: Object) -> Void
-  typealias FooterTitleGetter = ((CollectableGroup<Object>) -> String?)?
+  typealias FooterTitleRetriever = ((CollectableGroup<Object>) -> String?)?
 
   private let collection: CollectableCollection<Object>
   private let configureCell: CellConfigurator
   private let cellIdentifier: String
-  private let titleForFooter: FooterTitleGetter
+  private let titleForFooter: FooterTitleRetriever
 
-  required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleGetter = nil) {
+  required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
     self.collection = collection
     self.configureCell = configureCell
     self.cellIdentifier = cellIdentifier
