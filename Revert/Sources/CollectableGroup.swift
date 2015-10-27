@@ -9,10 +9,10 @@ private enum Attributes: String {
   case Rows = "rows"
 }
 
-struct CollectableGroup<I: Collectable>: Collection {
-  typealias T = I
+struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
+  typealias CollectionObject = CollectableGroupObject
 
-  let items: [I]
+  let items: [CollectableGroupObject]
   let title: String?
 
   init(dictionary: [String: AnyObject]) {
@@ -21,7 +21,7 @@ struct CollectableGroup<I: Collectable>: Collection {
     }
 
     self.title = dictionary[Attributes.Title.rawValue] as? String
-    let unfilteredItems = rowsData.map(I.init)
+    let unfilteredItems = rowsData.map(CollectableGroupObject.init)
     self.items = unfilteredItems.filter { ($0 as? Requirement)?.isAvailable ?? true }
   }
 }
