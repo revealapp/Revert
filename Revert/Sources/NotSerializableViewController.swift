@@ -22,4 +22,3 @@ final class NonSerializableViewController: RevertViewController {
     self.subView.contentScaleFactor = -1 / 0
   }
 }
-

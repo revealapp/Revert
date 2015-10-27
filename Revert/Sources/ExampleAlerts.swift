@@ -1,5 +1,5 @@
 //
-//  ExampleAlerts.swift
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 //
 
 import Foundation
@@ -8,23 +8,23 @@ import Foundation
 extension UIAlertController {
   static func exampleAlertControllerWithStyle(style: UIAlertControllerStyle) -> UIAlertController {
     let alertViewController = UIAlertController(
-      title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
-      message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
+      title: NSLocalizedString("This is an UIAlertController", comment: "Alert title"),
+      message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),
       preferredStyle: style
     )
 
     alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("ok", comment: "Alert Ok button title"),
+      title: NSLocalizedString("Ok", comment: "Alert Ok button title"),
       style: .Default,
       handler: nil)
     )
     alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
+      title: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
       style: .Cancel,
       handler: nil)
     )
     alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("delete", comment: "Alert Delete button title"),
+      title: NSLocalizedString("Delete", comment: "Alert Delete button title"),
       style: .Destructive,
       handler: nil)
     )
@@ -35,22 +35,22 @@ extension UIAlertController {
 extension UIAlertView {
   static func exampleAlertView() -> UIAlertView {
     return UIAlertView(
-      title: NSLocalizedString("alertviewcontroller.alertview.title", comment: "Alert title"),
-      message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
+      title: NSLocalizedString("This is an UIAlertView", comment: "Alert title"),
+      message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),
       delegate: nil,
-      cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      otherButtonTitles: NSLocalizedString("ok", comment: "Alert Ok button title"),
-      NSLocalizedString("delete", comment: "Alert Delete button title"))
+      cancelButtonTitle: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
+      otherButtonTitles: NSLocalizedString("Ok", comment: "Alert Ok button title"),
+      NSLocalizedString("Delete", comment: "Alert Delete button title"))
   }
 }
 
 extension UIActionSheet {
   static func exampleActionSheet() -> UIActionSheet {
     let actionSheet = UIActionSheet(
-      title: NSLocalizedString("alertviewcontroller.actionsheet.title", comment: "Alert title"),
+      title: NSLocalizedString("This is an UIActionSheet", comment: "Alert title"),
       delegate: nil,
-      cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      destructiveButtonTitle: NSLocalizedString("delete", comment: "Alert Delete button title"))
+      cancelButtonTitle: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
+      destructiveButtonTitle: NSLocalizedString("Delete", comment: "Alert Delete button title"))
     return actionSheet
   }
 }

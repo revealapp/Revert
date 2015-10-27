@@ -5,8 +5,8 @@
 import UIKit
 
 final class HomeCell: UITableViewCell {
-  @IBOutlet weak var iconImageView: UIImageView!
-  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var iconImageView: UIImageView!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -20,6 +20,6 @@ final class HomeCell: UITableViewCell {
 }
 
 final class BasicCell: UITableViewCell {
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subtitleLabel: UILabel!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subtitleLabel: UILabel!
 }
