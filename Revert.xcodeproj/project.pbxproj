@@ -45,7 +45,8 @@
 		9A93ED6A1B01B06F00CFA5BD /* ControlCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93ED691B01B06F00CFA5BD /* ControlCellConfigurator.swift */; };
 		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
 		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
-		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
+		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; settings = {ASSET_TAGS = (); }; };
+		9A9BD1E21BD664F6001A439D /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */; settings = {ASSET_TAGS = (); }; };
 		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
 		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
 		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
@@ -132,6 +133,7 @@
 		9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Release.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
+		9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
 				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
+				9A9BD1E11BD664F6001A439D /* AutoResizingMaskViewSource.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
 				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
+				9A9BD1E21BD664F6001A439D /* AutoResizingMaskViewSource.swift in Sources */,
 				9A0416D21B03048B00477E60 /* DeepView.swift in Sources */,
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
 				9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */,
