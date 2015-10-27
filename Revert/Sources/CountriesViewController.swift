@@ -75,7 +75,7 @@ extension CountriesViewController {
   }
 }
 
-private extension HomeViewController {
+private extension CountriesViewController {
   static func configureCell(cell: BasicCell, object: Country) {
     cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = object.name
