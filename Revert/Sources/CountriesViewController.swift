@@ -52,7 +52,7 @@ final class CountriesViewController: RevertTableViewController {
     self.tableView?.reloadData()
   }
 
-  private class func footerLabelWithText(text: String?) -> UILabel {
+  private static func footerLabelWithText(text: String?) -> UILabel {
     let label = UILabel()
     label.backgroundColor = UIColor.whiteColor()
     label.text = text

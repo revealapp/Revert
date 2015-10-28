@@ -5,7 +5,7 @@
 import UIKit
 import MediaPlayer
 
-class VolumeView: MPVolumeView {
+final class VolumeView: MPVolumeView {
   
   override func layoutSubviews() {
     super.layoutSubviews()
@@ -19,7 +19,7 @@ class VolumeView: MPVolumeView {
     }
   }
   
-  private class func recursiveRemoveAnimationsOnView(view: UIView) {
+  private static func recursiveRemoveAnimationsOnView(view: UIView) {
     view.layer.removeAllAnimations()
     view.subviews.forEach { self.recursiveRemoveAnimationsOnView($0) }
   }

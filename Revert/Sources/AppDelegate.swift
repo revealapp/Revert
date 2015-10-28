@@ -5,7 +5,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   private var splitViewControllerDelegate = SplitViewControllerDelegate()
   
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
   
-  private class func configureAppearance() {
+  private static func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
     UINavigationBar.appearance().barTintColor = UIColor.revertTintColor()
   }
