@@ -430,7 +430,7 @@
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
-				9A9BD1E01BD65D66001A439D /* Swiftlint */,
+				9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */,
 			);
 			buildRules = (
 			);
@@ -492,14 +492,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A9BD1E01BD65D66001A439D /* Swiftlint */ = {
+		9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = Swiftlint;
+			name = "Lint Swift Source Code";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
