@@ -5,12 +5,12 @@
 import UIKit
 
 final class AutoResizingMaskViewSource {
-  private let padding: CGFloat = 20
-  private let cornerRadius: CGFloat = 2
-  private let borderWidth: CGFloat = 1
-  private let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.5).CGColor
-  private let defaultViewSideLength: CGFloat = 50
-  private let leftRightWidth: CGFloat = 80
+  private static let padding: CGFloat = 20
+  private static let cornerRadius: CGFloat = 2
+  private static let borderWidth: CGFloat = 1
+  private static let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.5).CGColor
+  private static let defaultViewSideLength: CGFloat = 50
+  private static let leftRightWidth: CGFloat = 80
 
   private let origin: CGPoint
   private let flexibleWidthHeightSize: CGSize
@@ -18,21 +18,21 @@ final class AutoResizingMaskViewSource {
 
   init(bounds: CGRect) {
     self.flexibleWidthHeightSize = CGSize(
-      width: bounds.width - (2 * self.padding),
-      height: bounds.height - (2 * self.padding)
+      width: bounds.width - (2 * self.dynamicType.padding),
+      height: bounds.height - (2 * self.dynamicType.padding)
     )
-    self.origin = CGPoint(x: self.padding, y: self.padding)
+    self.origin = CGPoint(x: self.dynamicType.padding, y: self.dynamicType.padding)
     self.flexibleTopBottomSize = CGSize(
-      width: self.leftRightWidth,
-      height: self.defaultViewSideLength
+      width: self.dynamicType.leftRightWidth,
+      height: self.dynamicType.defaultViewSideLength
     )
   }
 
   private func bakeViewWithFrame(frame: CGRect) -> UIView {
     let view = UIView(frame: frame)
-    view.layer.cornerRadius = self.cornerRadius
-    view.layer.borderWidth = self.borderWidth
-    view.layer.borderColor = self.borderColor
+    view.layer.cornerRadius = self.dynamicType.cornerRadius
+    view.layer.borderWidth = self.dynamicType.borderWidth
+    view.layer.borderColor = self.dynamicType.borderColor
     return view
   }
 
@@ -49,8 +49,8 @@ final class AutoResizingMaskViewSource {
 
   private(set) lazy var flexibleWidthView: UIView = {
     let flexibleWidthSize = CGSize(
-      width: self.flexibleWidthHeightSize.width - (2 * self.padding),
-      height: self.defaultViewSideLength
+      width: self.flexibleWidthHeightSize.width - (2 * self.dynamicType.padding),
+      height: self.dynamicType.defaultViewSideLength
     )
     let frame = CGRect(origin: self.origin, size: flexibleWidthSize)
     let flexibleWidthView = self.bakeViewWithFrame(frame)
@@ -62,13 +62,13 @@ final class AutoResizingMaskViewSource {
 
   private(set) lazy var flexibleHeightLeftRightView: UIView = {
     let flexibleHeightLeftRightSize = CGSize(
-      width: self.defaultViewSideLength,
-      height: self.flexibleWidthHeightSize.height - self.flexibleWidthView.frame.maxY - (2 * self.padding)
+      width: self.dynamicType.defaultViewSideLength,
+      height: self.flexibleWidthHeightSize.height - self.flexibleWidthView.frame.maxY - (2 * self.dynamicType.padding)
     )
 
     let flexibleHeightLeftRightOrigin = CGPoint(
       x: (self.flexibleWidthHeightView.bounds.width - flexibleHeightLeftRightSize.width) / 2,
-      y: self.flexibleWidthView.frame.maxY + self.padding
+      y: self.flexibleWidthView.frame.maxY + self.dynamicType.padding
     )
 
     let frame = CGRect(origin: flexibleHeightLeftRightOrigin, size: flexibleHeightLeftRightSize)
@@ -81,7 +81,7 @@ final class AutoResizingMaskViewSource {
 
   private(set) lazy var leftFlexibleTopBottomView: UIView = {
     let leftFlexibleTopBottomOrigin = CGPoint(
-      x: self.padding,
+      x: self.dynamicType.padding,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
     )
     let frame = CGRect(origin: leftFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
@@ -94,7 +94,7 @@ final class AutoResizingMaskViewSource {
 
   private(set) lazy var rightFlexibleTopBottomView: UIView = {
     let rightFlexibleTopBottomOrigin = CGPoint(x:
-      self.flexibleWidthHeightView.bounds.width - self.padding - self.leftRightWidth,
+      self.flexibleWidthHeightView.bounds.width - self.dynamicType.padding - self.dynamicType.leftRightWidth,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
     )
 

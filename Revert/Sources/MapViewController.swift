@@ -8,9 +8,9 @@ import MapKit
 final class MapViewController: RevertViewController {
   @IBOutlet private weak var mapView: MKMapView!
 
-  private let overlayLineWidth: CGFloat = 3
-  private let overlayFillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)
-  private let overlayStrokeColor = UIColor.revertDarkblueColor()
+  private static let overlayLineWidth: CGFloat = 3
+  private static let overlayFillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)
+  private static let overlayStrokeColor = UIColor.revertDarkblueColor()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,9 +35,9 @@ extension MapViewController: MKMapViewDelegate {
   func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKPolygon {
       let pr = MKPolygonRenderer(overlay: overlay)
-      pr.strokeColor = self.overlayStrokeColor
-      pr.fillColor = self.overlayFillColor
-      pr.lineWidth = self.overlayLineWidth
+      pr.strokeColor = self.dynamicType.overlayStrokeColor
+      pr.fillColor = self.dynamicType.overlayFillColor
+      pr.lineWidth = self.dynamicType.overlayLineWidth
       return pr
     } else {
       return MKOverlayRenderer(overlay: overlay)

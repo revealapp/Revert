@@ -36,11 +36,11 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     }
   }
   
-  private let interSquareSpacing: CGFloat = 20
+  private static let interSquareSpacing: CGFloat = 20
 
   private func updateSquareWidths() {
     let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
-    let centerWidth = (minDistance - (4 * self.interSquareSpacing)) / 3
+    let centerWidth = (minDistance - (4 * self.dynamicType.interSquareSpacing)) / 3
     self.centerViewWidthConstraint.constant = centerWidth
   }
   
