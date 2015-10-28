@@ -2,7 +2,7 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, object: Object) -> Void
