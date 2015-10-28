@@ -4,17 +4,18 @@
 
 import Foundation
 
-struct CollectableCollection<I: Collectable>: Collection {
-  typealias T = CollectableGroup<I>
+struct CollectableCollection<CollectableCollectionObject: Collectable>: Collection {
+  typealias CollectionObject = CollectableGroup<CollectableCollectionObject>
 
-  let items: [CollectableGroup<I>]
+  let items: [CollectableGroup<CollectableCollectionObject>]
 
   init(items: RevertItems) {
-    let unfilteredItems = items.data.map(CollectableGroup<I>.init)
-    self.items = unfilteredItems.filter { $0.countOfItems > 0 }
+    self.items = items.data
+      .map(CollectableGroup<CollectableCollectionObject>.init)
+      .filter { $0.countOfItems > 0 }
   }
 
-  subscript(indexPath: NSIndexPath) -> I {
+  subscript(indexPath: NSIndexPath) -> CollectableCollectionObject {
     return self[indexPath.section][indexPath.row]
   }
 }

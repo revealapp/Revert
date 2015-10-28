@@ -49,8 +49,8 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
   }
 }
 
-extension AnchorPointBoundsChangeViewController {
-  private static func basicAnimationWithFromValue(fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
+private extension AnchorPointBoundsChangeViewController {
+  static func basicAnimationWithFromValue(fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
     basicAnimation.duration = 1
     basicAnimation.fromValue = NSValue(CGPoint: fromValue)

@@ -31,10 +31,10 @@ final class WebViewController: RevertViewController {
   
   private func showFailAlert() {
     UIAlertView(
-      title: NSLocalizedString("error", comment: "Alert title on content failed loading"),
-      message: NSLocalizedString("webviewcontroller.alert.message", comment: "Alert message on content failed loading"),
+      title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
+      message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet an try again.", comment: "Alert message on content failed loading"),
       delegate: nil,
-      cancelButtonTitle: NSLocalizedString("ok", comment: "Alert dismiss button on content failed loading")
+      cancelButtonTitle: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading")
       ).show()
   }
   

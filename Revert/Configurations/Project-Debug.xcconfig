@@ -1,0 +1,45 @@
+//
+// Project-Debug.xcconfig
+//
+
+#include "Project-Shared.xcconfig"
+
+
+ENABLE_TESTABILITY = YES
+
+
+GCC_DYNAMIC_NO_PIC = NO
+
+
+GCC_OPTIMIZATION_LEVEL = 0
+
+
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+
+
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+
+// Produce debugging information
+// 
+// Produce debugging information. This information is required for shader profiling.
+
+MTL_ENABLE_DEBUG_INFO = YES
+
+
+// Build Active Architecture Only
+// 
+// When checked, only the active architecture is built for faster debugging turnaround
+
+ONLY_ACTIVE_ARCH = YES
+
+
+// Swift Optimization Level
+// 
+// None: Compile without any optimization. [-Onone]
+// 
+// Fast [-O]
+// 
+// Fast, Whole Module Optimization  [-O -whole-module-optimization]
+
+SWIFT_OPTIMIZATION_LEVEL = -Onone

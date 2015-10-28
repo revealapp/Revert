@@ -9,10 +9,10 @@ private enum Attributes: String {
   case Rows = "rows"
 }
 
-struct CollectableGroup<I: Collectable>: Collection {
-  typealias T = I
+struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
+  typealias CollectionObject = CollectableGroupObject
 
-  let items: [I]
+  let items: [CollectableGroupObject]
   let title: String?
 
   init(dictionary: [String: AnyObject]) {
@@ -21,13 +21,13 @@ struct CollectableGroup<I: Collectable>: Collection {
     }
 
     self.title = dictionary[Attributes.Title.rawValue] as? String
-    let unfilteredItems = rowsData.map(I.init)
-    self.items = unfilteredItems.filter { (element) -> Bool in
-      if let elementWithRequirement = element as? Requirement {
-        return elementWithRequirement.isAvailable
-      }
-      
-      return true
+    self.items = rowsData
+      .map(CollectableGroupObject.init)
+      .filter { item -> Bool in
+        if let requirementItem = item as? Requirement {
+          return requirementItem.isAvailable
+        }
+        return true
     }
   }
 }

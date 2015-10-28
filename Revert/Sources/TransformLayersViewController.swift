@@ -49,4 +49,3 @@ final class TransformLayersViewController: RevertViewController {
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.minimumItemHeight)
   }
 }
-

@@ -1,0 +1,15 @@
+opt_out_usage
+
+fastlane_version "1.35.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Builds Revert"
+  lane :build do
+    xcodebuild(
+      configuration: "Debug",
+      clean: true
+    )
+  end
+end

@@ -5,8 +5,8 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subheadLabel: UILabel!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subheadLabel: UILabel!
 }
 
 class TextFieldControlCell: CollectionViewCell {
