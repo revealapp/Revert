@@ -23,6 +23,11 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
     self.title = dictionary[Attributes.Title.rawValue] as? String
     self.items = rowsData
       .map(CollectableGroupObject.init)
-      .filter { ($0 as? Requirement)?.isAvailable ?? true }
+      .filter { item -> Bool in
+        if let requirementItem = item as? Requirement {
+          return requirementItem.isAvailable
+        }
+        return true
+    }
   }
 }
