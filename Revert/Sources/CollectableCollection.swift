@@ -10,8 +10,9 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
   let items: [CollectableGroup<CollectableCollectionObject>]
 
   init(items: RevertItems) {
-    let unfilteredItems = items.data.map(CollectableGroup<CollectableCollectionObject>.init)
-    self.items = unfilteredItems.filter { $0.countOfItems > 0 }
+    self.items = items.data
+      .map(CollectableGroup<CollectableCollectionObject>.init)
+      .filter { $0.countOfItems > 0 }
   }
 
   subscript(indexPath: NSIndexPath) -> CollectableCollectionObject {
