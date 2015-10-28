@@ -6,13 +6,17 @@ import UIKit
 
 final class CountriesViewController: RevertTableViewController {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
-  private let cellConfigurator = CountryCellConfigurator()
-  private let dataSource: CountriesDataSource
+  private let dataSource: DataSource<Country, BasicCell>
   private var refreshTimer: NSTimer?
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = CountriesDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: self.dynamicType.configureCell,
+      cellIdentifier: SB.Cell.TableViewController,
+      titleForFooter: self.dynamicType.titleForFooter
+    )
+
     super.init(coder: aDecoder)
   }
   
@@ -68,5 +72,20 @@ extension CountriesViewController {
   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     let text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
     return self.dynamicType.footerLabelWithText(text)
+  }
+}
+
+private extension CountriesViewController {
+  static func configureCell(cell: BasicCell, object: Country) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.titleLabel.text = object.name
+
+    cell.subtitleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    cell.subtitleLabel.text = object.capital
+  }
+
+  static func titleForFooter(group: CollectableGroup<Country>) -> String? {
+    let count = group.countOfItems
+    return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format"), count) as String
   }
 }

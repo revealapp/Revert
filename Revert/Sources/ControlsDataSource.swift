@@ -5,12 +5,11 @@
 import UIKit
 
 final class ControlsDataSource: NSObject, UICollectionViewDataSource {
+  typealias CellConfigurator = (CollectionViewCell) -> Void
   private let collection: CollectableCollection<Item>
-  private let cellConfigurator: ControlCellConfigurator
-  
-  required init(collection: CollectableCollection<Item>, cellConfigurator: ControlCellConfigurator) {
+
+  required init(collection: CollectableCollection<Item>) {
     self.collection = collection
-    self.cellConfigurator = cellConfigurator
 
     super.init()
   }
@@ -29,7 +28,9 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
       fatalError("Expecting to dequeue a `CollectionViewCell` from the collectionView")
     }
     
-    self.cellConfigurator.configureCell(cell)
+
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     return cell
   }
 }

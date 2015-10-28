@@ -9,7 +9,7 @@ final class ControlsViewController: RevertCollectionViewController {
     didSet {
       if let resourceFilename = self.resourceFilename, items = RevertItems(rawValue: resourceFilename) {
         let collection = CollectableCollection<Item>(items: items)
-        self.dataSource = ControlsDataSource(collection: collection, cellConfigurator: self.cellConfigurator)
+        self.dataSource = ControlsDataSource(collection: collection)
         self.collection = collection
       } else if let resourceFilename = resourceFilename {
         fatalError("Unable to load file: \(resourceFilename)")
@@ -22,7 +22,6 @@ final class ControlsViewController: RevertCollectionViewController {
   
   private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
-  private let cellConfigurator = ControlCellConfigurator()
   private let keyboardHandler = KeyboardHandler()
 
   deinit {
@@ -60,5 +59,12 @@ final class ControlsViewController: RevertCollectionViewController {
   func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
     // Reload tableview to update the cell font sizes.
     self.collectionView?.reloadData()
+  }
+}
+
+private extension ControlsViewController {
+  func configureCell(cell: CollectionViewCell) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
   }
 }

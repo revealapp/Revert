@@ -6,8 +6,7 @@ import UIKit
 
 final class AlertViewController: RevertTableViewController {
   private var collection = CollectableCollection<Item>(items: .Alert)
-  private var dataSource: AlertsDataSource
-  private let cellConfigurator = AlertCellConfigurator()
+  private var dataSource: DataSource<Item, BasicCell>
 
   private enum Identifier: String {
     case AlertView = "alertview"
@@ -17,8 +16,12 @@ final class AlertViewController: RevertTableViewController {
   }
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: self.dynamicType.configureCell,
+      cellIdentifier: SB.Cell.Alert
+    )
+
     super.init(coder: aDecoder)
   }
   
@@ -72,5 +75,12 @@ extension AlertViewController {
     let item = self.collection[indexPath]
     self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+}
+
+extension AlertViewController {
+  static func configureCell(cell: BasicCell, object: Item) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.titleLabel.text = object.title
   }
 }

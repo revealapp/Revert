@@ -5,9 +5,8 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
-  private let cellConfigurator = HomeCellConfigurator()
   private var collection = CollectableCollection<HomeItem>(items: .Home)
-  private var dataSource: HomeDataSource
+  private var dataSource: DataSource<HomeItem, HomeCell>
   private var currentDetailIndexPath: NSIndexPath?
   
   private func deselectSelectedRowIfNeeded() {
@@ -25,7 +24,12 @@ final class HomeViewController: UITableViewController {
   private var wasInitiallySelected = false
   
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = HomeDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: self.dynamicType.configureCell,
+      cellIdentifier: SB.Cell.Home
+    )
+    
     super.init(coder: aDecoder)
   }
   
@@ -81,6 +85,20 @@ extension HomeViewController {
       if UIDevice.currentDevice().userInterfaceIdiom == .Pad && item.isPush {
         self.currentDetailIndexPath = indexPath
       }
+    }
+  }
+}
+
+private extension HomeViewController {
+  static func configureCell(cell: HomeCell, withItem item: HomeItem) {
+    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    cell.titleLabel.text = item.title
+    cell.iconImageView.image = UIImage(named: item.iconName)
+
+    if item.isPush && UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+      cell.accessoryType = .DisclosureIndicator
+    } else {
+      cell.accessoryType = .None
     }
   }
 }
