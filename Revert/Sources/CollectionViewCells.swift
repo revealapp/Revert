@@ -7,6 +7,28 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
   @IBOutlet private(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subheadLabel: UILabel!
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "applyDynamicType:", name:
+      UIContentSizeCategoryDidChangeNotification, object: nil)
+  }
+
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+
+    self.applyDynamicType()
+  }
+
+  func applyDynamicType(notification: NSNotification? = nil) {
+    self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    self.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  }
 }
 
 class TextFieldControlCell: CollectionViewCell {

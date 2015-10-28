@@ -28,9 +28,6 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
       fatalError("Expecting to dequeue a `CollectionViewCell` from the collectionView")
     }
     
-
-    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     return cell
   }
 }

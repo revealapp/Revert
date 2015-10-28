@@ -33,18 +33,11 @@ final class HomeViewController: UITableViewController {
     super.init(coder: aDecoder)
   }
   
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: SB.Cell.Home, bundle: nil), forCellReuseIdentifier: SB.Cell.Home)
-    
-    // Setup dynamic type notifications.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   override func viewWillAppear(animated: Bool) {
@@ -63,11 +56,6 @@ final class HomeViewController: UITableViewController {
       }
       destinationViewController.item = self.collection[indexPath]
     }
-  }
-  
-  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    // Reload tableview to update the cell font sizes.
-    self.tableView?.reloadData()
   }
 }
 
@@ -91,7 +79,6 @@ extension HomeViewController {
 
 private extension HomeViewController {
   static func configureCell(cell: HomeCell, withItem item: HomeItem) {
-    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = item.title
     cell.iconImageView.image = UIImage(named: item.iconName)
 

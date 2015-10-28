@@ -24,10 +24,6 @@ final class ControlsViewController: RevertCollectionViewController {
   private var dataSource: ControlsDataSource?
   private let keyboardHandler = KeyboardHandler()
 
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -47,24 +43,9 @@ final class ControlsViewController: RevertCollectionViewController {
     // Setup Dismiss Tap Gesture
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
-    
-    // Setup dynamic type notifications.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView?.endEditing(true)
-  }
-  
-  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    // Reload tableview to update the cell font sizes.
-    self.collectionView?.reloadData()
-  }
-}
-
-private extension ControlsViewController {
-  func configureCell(cell: CollectionViewCell) {
-    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    cell.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
   }
 }

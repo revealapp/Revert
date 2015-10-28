@@ -25,22 +25,10 @@ final class AlertViewController: RevertTableViewController {
     super.init(coder: aDecoder)
   }
   
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
-    
-    // Setup dynamic type notifications.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
-  }
-
-  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    // Reload tableview to update the cell font sizes.
-    self.tableView?.reloadData()
   }
 }
 
@@ -80,7 +68,6 @@ extension AlertViewController {
 
 extension AlertViewController {
   static func configureCell(cell: BasicCell, object: Item) {
-    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = object.title
   }
 }
