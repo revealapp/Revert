@@ -22,7 +22,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
   
-  private class func configureAppearance() {
+  private static func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
     UINavigationBar.appearance().barTintColor = UIColor.revertTintColor()
   }
