@@ -149,10 +149,7 @@
 		9AC3C3BE1B05DCD80059776E /* AlertsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertsDataSource.swift; path = Revert/Sources/AlertsDataSource.swift; sourceTree = "<group>"; };
 		9AC3C3C01B05DF8E0059776E /* AlertCellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertCellConfigurator.swift; path = Revert/Sources/AlertCellConfigurator.swift; sourceTree = "<group>"; };
 		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
-		9AD829571BD7048C0049C996 /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = bootstrap.sh; path = Scripts/bootstrap.sh; sourceTree = SOURCE_ROOT; };
-		9AD829581BD7048C0049C996 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = Scripts/build.sh; sourceTree = SOURCE_ROOT; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
-		9AD8295A1BD7048C0049C996 /* fetch-dependencies.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "fetch-dependencies.sh"; path = "Scripts/fetch-dependencies.sh"; sourceTree = SOURCE_ROOT; };
 		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
 		9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Revert/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
 		9AE252501B18211A002B596C /* InfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoBuilder.swift; path = Revert/Sources/InfoBuilder.swift; sourceTree = "<group>"; };
@@ -227,10 +224,7 @@
 		9A2F94701B140B0E007E51B1 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				9AD829571BD7048C0049C996 /* bootstrap.sh */,
-				9AD829581BD7048C0049C996 /* build.sh */,
 				9AD829591BD7048C0049C996 /* ci.sh */,
-				9AD8295A1BD7048C0049C996 /* fetch-dependencies.sh */,
 				9AD8295B1BD7048C0049C996 /* swiftlint.sh */,
 			);
 			name = Scripts;
