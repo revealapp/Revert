@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-
-./Scripts/fetch-dependencies.sh
-
-SWIFTLINT=$(which swiftlint)
-
-$SWIFTLINT
+# Only execute swiftlint if available
+if [ ! -z "$(command -v swiftlint)" ]; then
+  swiftlint
+fi

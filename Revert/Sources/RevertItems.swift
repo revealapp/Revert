@@ -27,11 +27,13 @@ enum RevertItems: String {
   }
 
   private var url: NSURL {
-    guard let bundle = NSBundle.mainBundle().URLForResource(self.rawValue, withExtension: self.dynamicType.fileExtension) else {
+    let path = "\(self.dynamicType.subfolder)/\(self.rawValue)"
+    guard let bundle = NSBundle.mainBundle().URLForResource(path, withExtension: self.dynamicType.fileExtension) else {
       fatalError(self.invalidFileError)
     }
     return bundle
   }
 
   private static let fileExtension = "plist"
+  private static let subfolder = "Data"
 }

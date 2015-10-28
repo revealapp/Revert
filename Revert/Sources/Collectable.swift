@@ -9,19 +9,24 @@ protocol Collectable {
 }
 
 protocol Collection: CollectionType, SequenceType {
-  typealias T
+  typealias CollectionObject
 
-  var items: [T] { get }
+  var items: [CollectionObject] { get }
 
   var startIndex: Int { get }
   var endIndex: Int { get }
 }
 
 extension Collection {
-  var startIndex: Int { return 0 }
-  var endIndex: Int { return self.items.count }
+  var startIndex: Int {
+    return 0
+  }
 
-  subscript(i: Int) -> T {
+  var endIndex: Int {
+    return self.items.count
+  }
+
+  subscript(i: Int) -> CollectionObject {
     return self.items[i]
   }
 
@@ -29,7 +34,7 @@ extension Collection {
     return self.items.count
   }
 
-  func generate() -> AnyGenerator<T> {
+  func generate() -> AnyGenerator<CollectionObject> {
     var index = 0
     return anyGenerator {
       if index < self.items.count {
