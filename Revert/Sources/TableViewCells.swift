@@ -33,6 +33,12 @@ class BasicCell: UITableViewCell {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
+  override func awakeFromNib() {
+    super.awakeFromNib()
+
+    self.applyDynamicType()
+  }
+
   func applyDynamicType(notification: NSNotification? = nil) {
     self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     self.subtitleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
