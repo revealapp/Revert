@@ -5,12 +5,12 @@
 import UIKit
 
 final class DeepView: UIView {
-  private let subviewSpacing: CGFloat = 5
+  private static let subviewSpacing: CGFloat = 5
 
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     
-    assert(self.subviewSpacing > 0, "Subview spacing must be a positive number")
+    assert(self.dynamicType.subviewSpacing > 0, "Subview spacing must be a positive number")
   }
   
   private static func colorForIndex(index: Int) -> UIColor {
@@ -68,6 +68,6 @@ final class DeepView: UIView {
 
   private func updateSubViews() {
     let length = min(self.bounds.size.width, self.bounds.size.height)
-    self.dynamicType.updateSubviewsRecursively(self, length: length, constant: self.subviewSpacing)
+    self.dynamicType.updateSubviewsRecursively(self, length: length, constant: self.dynamicType.subviewSpacing)
   }
 }
