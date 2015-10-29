@@ -20,10 +20,6 @@ final class CountriesViewController: RevertTableViewController {
     super.init(coder: aDecoder)
   }
   
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -31,9 +27,6 @@ final class CountriesViewController: RevertTableViewController {
     
     self.refreshControl = UIRefreshControl()
     self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
-    
-    // Setup dynamic type notifications.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
   
   func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
@@ -47,11 +40,6 @@ final class CountriesViewController: RevertTableViewController {
     self.refreshControl?.endRefreshing()
   }
   
-  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    // Reload tableview to update the cell font sizes.
-    self.tableView?.reloadData()
-  }
-
   private static func footerLabelWithText(text: String?) -> UILabel {
     let label = UILabel()
     label.backgroundColor = UIColor.whiteColor()
@@ -77,10 +65,7 @@ extension CountriesViewController {
 
 private extension CountriesViewController {
   static func configureCell(cell: BasicCell, object: Country) {
-    cell.titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     cell.titleLabel.text = object.name
-
-    cell.subtitleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     cell.subtitleLabel.text = object.capital
   }
 
