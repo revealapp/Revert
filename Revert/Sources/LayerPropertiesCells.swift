@@ -13,7 +13,7 @@ final class CATextLayerCell: CollectionViewCell {
     self.dynamicType.configureTextLayer(self.textLayerView.textLayer)
   }
   
-  private class func configureTextLayer(textLayer: CATextLayer) {
+  private static func configureTextLayer(textLayer: CATextLayer) {
     textLayer.string = "I am a quite long CATextLayer string."
     textLayer.fontSize = 20
     textLayer.foregroundColor = UIColor.lightGrayColor().CGColor
@@ -32,7 +32,7 @@ final class CAEmitterLayerCell: CollectionViewCell {
     self.dynamicType.configureEmitterLayer(self.emitterLayerView.emitterLayer)
   }
   
-  private class func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
+  private static func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
     emitterLayer.emitterZPosition = 5
     emitterLayer.emitterSize = CGSize(width: 1, height: 1)
@@ -68,7 +68,7 @@ final class CAShapeLayerCell: CollectionViewCell {
     self.dynamicType.configureShapeLayer(self.shapeLayerView.shapeLayer)
   }
   
-  private class func configureShapeLayer(shapeLayer: CAShapeLayer) {
+  private static func configureShapeLayer(shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
     let origin = CGPointMake((shapeLayer.bounds.width - minLength) / 2, 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
@@ -96,7 +96,7 @@ final class CAScrollLayerCell: CollectionViewCell {
     self.dynamicType.configureScrollLayer(self.scrollLayerView.scrollLayer)
   }
   
-  private class func configureScrollLayer(scrollLayer: CAScrollLayer) {
+  private static func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertDarkblueColor().CGColor
     scrollLayer.cornerRadius = 5
@@ -112,7 +112,7 @@ final class CATiledLayerCell: CollectionViewCell {
     self.dynamicType.configureTiledLayer(self.tiledLayerView.tiledLayer)
   }
   
-  private class func configureTiledLayer(tiledLayer: CATiledLayer) {
+  private static func configureTiledLayer(tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
     tiledLayer.tileSize = tiledLayer.bounds.size
@@ -131,7 +131,7 @@ final class CAGradientLayerCell: CollectionViewCell {
     self.dynamicType.configureGradientLayer(self.gradientLayerView.gradientLayer)
   }
   
-  private class func configureGradientLayer(gradientLayer: CAGradientLayer) {
+  private static func configureGradientLayer(gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
     gradientLayer.locations = [0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1]
     gradientLayer.startPoint = CGPoint(x: 0, y: 0)
@@ -162,7 +162,7 @@ final class CAReplicatorLayerCell: CollectionViewCell {
     self.dynamicType.configureReplicatorLayer(self.replicatorLayerView.replicatorLayer)
   }
   
-  private class func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
+  private static func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
     let circleWidth: CGFloat = 20
     let circlePadding: CGFloat = 10
     let circleRect = CGRect(x: circlePadding / 2, y: replicatorLayer.bounds.midY - circleWidth / 2, width: circleWidth, height: circleWidth)
@@ -193,7 +193,7 @@ final class CAEAGLLayerCell: CollectionViewCell {
     self.dynamicType.configureAeglLayer(self.aegLayerView.aeglLayer)
   }
   
-  private class func configureAeglLayer(aeglLayer: CAEAGLLayer) {
+  private static func configureAeglLayer(aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1
     aeglLayer.borderColor = UIColor.revertLightBlackColor().CGColor

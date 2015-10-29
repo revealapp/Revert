@@ -4,7 +4,7 @@
 
 import UIKit
 
-class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
+final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, object: Object) -> Void
   typealias FooterTitleRetriever = ((CollectableGroup<Object>) -> String?)?
 
