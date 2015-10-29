@@ -59,9 +59,14 @@ extension AlertViewController {
 // MARK: UITableViewDelegate
 extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
-    self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
+
+    guard let cell = tableView.cellForRowAtIndexPath(indexPath),
+      identifier = Identifier(rawValue: item.cellIdentifier) else {
+      fatalError("Unknown cellIdentifier or cell")
+    }
+
+    self.displayCorrespondingAlertForIdentifier(identifier, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 }

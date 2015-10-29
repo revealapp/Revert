@@ -6,11 +6,16 @@ import UIKit
 import GLKit
 
 private extension UIViewController {
-  func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem) {
+  func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem?) {
     guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
       destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
         fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
     }
+
+    guard let item = item else {
+      fatalError("There should be an item present")
+    }
+
     destinationViewController.item = item
   }
 }
@@ -29,7 +34,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
     super.prepareForSegue(segue, sender: sender)
     
     if segue.identifier == SB.Segue.Info {
-      self.prepareForInfoSegue(segue, item: self.item!)
+      self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
@@ -48,7 +53,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     super.prepareForSegue(segue, sender: sender)
     
     if segue.identifier == SB.Segue.Info {
-      self.prepareForInfoSegue(segue, item: self.item!)
+      self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
@@ -67,7 +72,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
     super.prepareForSegue(segue, sender: sender)
     
     if segue.identifier == SB.Segue.Info {
-      self.prepareForInfoSegue(segue, item: self.item!)
+      self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
@@ -86,7 +91,7 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
     super.prepareForSegue(segue, sender: sender)
     
     if segue.identifier == SB.Segue.Info {
-      self.prepareForInfoSegue(segue, item: self.item!)
+      self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }

@@ -61,7 +61,7 @@ final class OpenGLViewController: RevertGLKViewController {
   }
   
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-    self.paused = !self.paused
+    self.paused = self.paused == false
   }
 
   override func glkView(view: GLKView, drawInRect rect: CGRect) {

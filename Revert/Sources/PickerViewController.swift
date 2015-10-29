@@ -22,6 +22,6 @@ extension PickerViewController: UIPickerViewDataSource {
 // MARK: UIPickerViewDelegate
 extension PickerViewController: UIPickerViewDelegate {
   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return self.collection.items.first![row].name
+    return self.collection.items.first?[row].name
   }
 }
