@@ -5,37 +5,29 @@
 import UIKit
 
 final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
-  private let minColumnsForLayout = 2
-  private let maxColumnsForLayout = 3
-  private let minCellWidth: CGFloat = 150
+  private static let minimumColumnsForLayout = 2
+  private static let maximumColumnsForLayout = 3
+  private static let minimumCellWidth: CGFloat = 150
 
-  private var cellWidthForCollectionView: CGFloat {
-    let totalPadding = CGFloat(maxColumnsForLayout - 1) * self.minimumInteritemSpacing + self.sectionInset.left + self.sectionInset.right
-    let collectionViewWidth = CGRectGetWidth(self.collectionView!.bounds)
-    return (collectionViewWidth - totalPadding) / CGFloat(maxColumnsForLayout)
-  }
-
-  private var noOfItemsInRow: Int {
-    if cellWidthForCollectionView < minCellWidth {
-      return minColumnsForLayout
-    }
-    else {
-      return maxColumnsForLayout
-    }
-  }
-
-  private var totalItemsWidth: CGFloat {
+  private func itemWidthForNumberOfColumns(numberOfColumns: Int) -> CGFloat {
     guard let collectionView = self.collectionView else {
       return 0
     }
 
-    let horizontalSectionInsets = self.sectionInset.left + self.sectionInset.right
-    return collectionView.bounds.width - horizontalSectionInsets
+    let totalPadding = CGFloat(numberOfColumns - 1) * self.minimumInteritemSpacing + self.sectionInset.left + self.sectionInset.right
+    return (collectionView.bounds.width - totalPadding) / CGFloat(numberOfColumns)
+  }
+
+  private var numberOfColumns: Int {
+    if self.itemWidthForNumberOfColumns(self.dynamicType.maximumColumnsForLayout) < self.dynamicType.minimumCellWidth {
+      return self.dynamicType.maximumColumnsForLayout
+    } else {
+      return self.dynamicType.minimumColumnsForLayout
+    }
   }
 
   private var itemWidth: CGFloat {
-    let separatorsWidth = (CGFloat(self.noOfItemsInRow - 1) * self.minimumInteritemSpacing)
-    return floor((self.totalItemsWidth - separatorsWidth) / CGFloat(self.noOfItemsInRow))
+    return self.itemWidthForNumberOfColumns(self.numberOfColumns)
   }
 
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
@@ -45,6 +37,7 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   override func prepareLayout() {
     super.prepareLayout()
 
-    self.itemSize = CGSize(width: self.itemWidth, height: self.itemWidth)
+    let itemWidth = self.itemWidth
+    self.itemSize = CGSize(width: itemWidth, height: itemWidth)
   }
 }
