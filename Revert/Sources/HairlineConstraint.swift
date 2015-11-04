@@ -7,11 +7,11 @@ import UIKit
 final class HairlineConstraint: NSLayoutConstraint {
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.constant = self.dynamicType.constantValue
   }
-  
-  private class var constantValue: CGFloat {
+
+  private static var constantValue: CGFloat {
     return 1 / UIScreen.mainScreen().scale
   }
 }

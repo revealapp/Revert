@@ -1,6 +1,5 @@
 //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
-//
 
 import Foundation
 
@@ -10,10 +9,10 @@ protocol Requirement {
 
 extension Requirement {
   var isAvailable: Bool {
-    if let name = requiredClassName {
-      return NSClassFromString(name) != nil
+    guard let name = requiredClassName else {
+      return true
     }
-    
-    return true
+
+    return NSClassFromString(name) != nil
   }
 }

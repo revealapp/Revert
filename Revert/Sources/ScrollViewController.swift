@@ -1,6 +1,5 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
@@ -9,7 +8,7 @@ final class ScrollViewController: RevertViewController {
 
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
-    
+
     self.scrollView.flashScrollIndicators()
   }
 }

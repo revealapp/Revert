@@ -26,10 +26,9 @@ private func contentOfFile(filename: String) -> String {
   return unwrappedContent
 }
 
-func HTMLWithContent(filename: String) -> String {
-  let contentHTML = contentOfFile(filename)
-  let containerHTML = contentOfFile("container")
-  
+func infoHTMLWithContent(filename: String) -> String {
+  let contentHTML = contentOfFile("Info/\(filename)")
+  let containerHTML = contentOfFile("Info/container")
+
   return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
 }
-

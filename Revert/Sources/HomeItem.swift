@@ -1,6 +1,5 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import Foundation
 
@@ -13,20 +12,20 @@ struct HomeItem: Collectable, Requirement {
     case Push = "isPush"
     case RequiredClassName = "requiredClassName"
   }
-  
+
   let title: String
   let infoFilename: String
   let iconName: String
   let segueIdentifier: String
   let isPush: Bool
   let requiredClassName: String?
-  
+
   init(dictionary: [String: AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
       infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String,
       iconName = dictionary[Attributes.Icon.rawValue] as? String,
       segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String else {
-        fatalError("Invalid HomeItem attributes")
+        fatalError("Invalid `HomeItem` attributes")
     }
 
     self.title = title

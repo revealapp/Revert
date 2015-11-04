@@ -1,13 +1,11 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
-final class HomeCell: UITableViewCell {
-  @IBOutlet weak var iconImageView: UIImageView!
-  @IBOutlet weak var titleLabel: UILabel!
-  
+final class HomeCell: BasicCell {
+  @IBOutlet private(set) weak var iconImageView: UIImageView!
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -19,7 +17,29 @@ final class HomeCell: UITableViewCell {
   }
 }
 
-final class BasicCell: UITableViewCell {
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subtitleLabel: UILabel!
+class BasicCell: UITableViewCell {
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subtitleLabel: UILabel!
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "applyDynamicType:", name:
+      UIContentSizeCategoryDidChangeNotification, object: nil)
+  }
+
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+
+    self.applyDynamicType()
+  }
+
+  func applyDynamicType(notification: NSNotification? = nil) {
+    self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    self.subtitleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  }
 }

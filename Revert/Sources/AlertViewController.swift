@@ -1,13 +1,11 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
   private var collection = CollectableCollection<Item>(items: .Alert)
-  private var dataSource: AlertsDataSource
-  private let cellConfigurator = AlertCellConfigurator()
+  private var dataSource: DataSource<Item, BasicCell>
 
   private enum Identifier: String {
     case AlertView = "alertview"
@@ -15,96 +13,43 @@ final class AlertViewController: RevertTableViewController {
     case AlertController = "alertcontroller"
     case ActionController = "actioncontroller"
   }
-  
+
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = AlertsDataSource(collection: self.collection, cellConfigurator: self.cellConfigurator)
-    
+    self.dataSource = DataSource(
+      collection: self.collection,
+      configureCell: self.dynamicType.configureCell,
+      cellIdentifier: SB.Cell.Alert
+    )
+
     super.init(coder: aDecoder)
   }
-  
-  deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
-  }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.tableView.dataSource = self.dataSource
-    
-    // Setup dynamic type notifications.
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeCategoryDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
-  }
 
-  func contentSizeCategoryDidChangeNotification(notification: NSNotification) {
-    // Reload tableview to update the cell font sizes.
-    self.tableView?.reloadData()
+    self.tableView.dataSource = self.dataSource
   }
 }
 
 // MARK: Presenters
-
 extension AlertViewController {
   @available(iOS 8.0, *)
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
-    let alertViewController = UIAlertController(
-      title: NSLocalizedString("alertviewcontroller.alert.title", comment: "Alert title"),
-      message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
-      preferredStyle: style
-    )
-    
-    alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("ok", comment: "Alert Ok button title"),
-      style: .Default,
-      handler: nil)
-    )
-    alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      style: .Cancel,
-      handler: nil)
-    )
-    alertViewController.addAction(UIAlertAction(
-      title: NSLocalizedString("delete", comment: "Alert Delete button title"),
-      style: .Destructive,
-      handler: nil)
-    )
-    
+    let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
-  
-  private func displayAlertView() {
-    UIAlertView(
-      title: NSLocalizedString("alertviewcontroller.alertview.title", comment: "Alert title"),
-      message: NSLocalizedString("alertviewcontroller.alert.message", comment: "Alert message"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      otherButtonTitles: NSLocalizedString("ok", comment: "Alert Ok button title"),
-      NSLocalizedString("delete", comment: "Alert Delete button title")).show()
-  }
-  
-  private func displayActionSheetFromView(fromView: UIView) {
-    let actionSheet = UIActionSheet(
-      title: NSLocalizedString("alertviewcontroller.actionsheet.title", comment: "Alert title"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("cancel", comment: "Alert Cancel button title"),
-      destructiveButtonTitle: NSLocalizedString("delete", comment: "Alert Delete button title"))
 
-    actionSheet.showInView(fromView)
-  }
-  
   private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
     switch identifier {
     case .AlertView:
-      self.displayAlertView()
-      break;
-      
+      UIAlertView.exampleAlertView().show()
     case .ActionSheet:
-      self.displayActionSheetFromView(fromView)
-      break;
-      
+      UIActionSheet.exampleActionSheet().showInView(fromView)
     default:
       if #available(iOS 8.0, *) {
-        self.displayAlertControllerForWithStyle(identifier == .AlertController ? .Alert : .ActionSheet, fromView: fromView)
+        let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
+        self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
       }
     }
   }
@@ -113,9 +58,20 @@ extension AlertViewController {
 // MARK: UITableViewDelegate
 extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let cell = tableView.cellForRowAtIndexPath(indexPath)!
     let item = self.collection[indexPath]
-    self.displayCorrespondingAlertForIdentifier(Identifier(rawValue: item.cellIdentifier)!, fromView: cell)
+
+    guard let cell = tableView.cellForRowAtIndexPath(indexPath),
+      identifier = Identifier(rawValue: item.cellIdentifier) else {
+      fatalError("Unknown cellIdentifier or cell")
+    }
+
+    self.displayCorrespondingAlertForIdentifier(identifier, fromView: cell)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
+}
+
+extension AlertViewController {
+  static func configureCell(cell: BasicCell, object: Item) {
+    cell.titleLabel.text = object.title
   }
 }

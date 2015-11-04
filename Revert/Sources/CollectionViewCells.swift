@@ -1,17 +1,38 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subheadLabel: UILabel!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subheadLabel: UILabel!
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "applyDynamicType:", name:
+      UIContentSizeCategoryDidChangeNotification, object: nil)
+  }
+
+  deinit {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+
+    self.applyDynamicType()
+  }
+
+  func applyDynamicType(notification: NSNotification? = nil) {
+    self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    self.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  }
 }
 
 class TextFieldControlCell: CollectionViewCell {
   @IBOutlet private weak var textField: UITextField!
-  
+
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
     sender.resignFirstResponder()
   }
@@ -20,14 +41,14 @@ class TextFieldControlCell: CollectionViewCell {
 final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.textField.inputView = self.textFieldInputView
     self.textField.inputAccessoryView = self.textFieldInputAccessoryView
   }
-  
+
   private var textFieldInputView: UIDatePicker {
     let picker = UIDatePicker()
-    
+
     picker.datePickerMode = .Date
     picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
     picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
@@ -47,11 +68,11 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
     ]
     return toolBar
   }
-  
+
   func doneButtonTapped(sender: UIBarButtonItem) {
     self.textField.resignFirstResponder()
   }
-  
+
   func datePickerChanged(datePicker: UIDatePicker) {
     self.textField.text = Static.DateFormatter.ddmmyy.stringFromDate(datePicker.date)
   }
