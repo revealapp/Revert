@@ -7,7 +7,7 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   private var splitViewControllerDelegate = SplitViewControllerDelegate()
-  
+
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
     if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) || UIDevice.currentDevice().userInterfaceIdiom == .Pad {
@@ -20,7 +20,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     self.dynamicType.configureAppearance()
     return true
   }
-  
+
   private static func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
     UINavigationBar.appearance().barTintColor = UIColor.revertTintColor()

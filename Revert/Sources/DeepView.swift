@@ -8,17 +8,17 @@ final class DeepView: UIView {
 
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    
+
     assert(self.dynamicType.subviewSpacing > 0, "Subview spacing must be a positive number")
   }
-  
+
   private static func colorForIndex(index: Int) -> UIColor {
     if index % 5 == 0 {
       return [UIColor.revertDarkblueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()][(index / 5) % 3]
     }
     return UIColor.whiteColor()
   }
-  
+
   private static func constraintsForSubview(subview: UIView, constant: CGFloat, priority: UILayoutPriority) -> [NSLayoutConstraint] {
     let bindingViews = ["subview": subview]
     let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
@@ -33,7 +33,7 @@ final class DeepView: UIView {
       views: bindingViews)
     return horizontalConstraints + verticalConstraints
   }
-  
+
   private static func updateSubviewsRecursively(view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
     if length > 2 * constant {
       // Enough space for subviews
@@ -41,9 +41,9 @@ final class DeepView: UIView {
         let subview = UIView()
         subview.backgroundColor = self.colorForIndex(Int(depth)).colorWithAlphaComponent(0.5)
         subview.translatesAutoresizingMaskIntoConstraints = false
-        
+
         view.addSubview(subview)
-        
+
         // Prevents constraints from being invalid on rotation. Subviews added/removed on `layoutSubviews`
         let priority = UILayoutPriority(1000 - CGFloat(depth))
         let constraints = self.constraintsForSubview(subview, constant: constant, priority: priority)
@@ -54,13 +54,13 @@ final class DeepView: UIView {
       subview.removeFromSuperview()
     }
   }
-  
+
   override func layoutSubviews() {
     self.updateSubViews()
 
     super.layoutSubviews()
   }
-  
+
   override static func requiresConstraintBasedLayout() -> Bool {
     return true
   }

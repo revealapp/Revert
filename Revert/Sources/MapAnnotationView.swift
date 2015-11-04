@@ -10,7 +10,7 @@ final class MapAnnotation: NSObject, MKAnnotation {
     case Latitude = "latitude"
     case Longitude = "longitude"
   }
-  
+
   let coordinate: CLLocationCoordinate2D
   let title: String?
   let subtitle: String?
@@ -19,16 +19,16 @@ final class MapAnnotation: NSObject, MKAnnotation {
     self.coordinate = coordinate
     self.title = title
     self.subtitle = subtitle
-    
+
     super.init()
   }
-  
+
   init(dictionary: [String: AnyObject]) {
     guard let latitude = dictionary[Attributes.Latitude.rawValue] as? Double,
       longitude = dictionary[Attributes.Longitude.rawValue] as? Double,
       title = dictionary[Attributes.Title.rawValue] as? String,
       subtitle = dictionary[Attributes.Subtitle.rawValue] as? String else {
-      fatalError("Invalid `MapAnnotation` attributes")
+        fatalError("Invalid `MapAnnotation` attributes")
     }
 
     self.title = title

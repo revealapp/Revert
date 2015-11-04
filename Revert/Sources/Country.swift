@@ -8,10 +8,10 @@ struct Country: Collectable {
     case Name = "name"
     case Capital = "capital"
   }
-  
+
   let name: String
   let capital: String?
-  
+
   init(dictionary: [String: AnyObject]) {
     guard let name = dictionary[Attributes.Name.rawValue] as? String else {
       fatalError("Unable to deserialize `Country.name`")

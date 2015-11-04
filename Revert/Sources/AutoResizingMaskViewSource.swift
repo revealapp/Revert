@@ -105,4 +105,3 @@ final class AutoResizingMaskViewSource {
     return rightFlexibleTopBottomView
   }()
 }
-

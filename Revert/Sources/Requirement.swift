@@ -12,7 +12,7 @@ extension Requirement {
     guard let name = requiredClassName else {
       return true
     }
-    
+
     return NSClassFromString(name) != nil
   }
 }

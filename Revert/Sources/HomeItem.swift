@@ -12,14 +12,14 @@ struct HomeItem: Collectable, Requirement {
     case Push = "isPush"
     case RequiredClassName = "requiredClassName"
   }
-  
+
   let title: String
   let infoFilename: String
   let iconName: String
   let segueIdentifier: String
   let isPush: Bool
   let requiredClassName: String?
-  
+
   init(dictionary: [String: AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
       infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String,

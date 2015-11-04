@@ -10,11 +10,11 @@ struct SB {
     static let Stress = "StressCell"
     static let Alert = "AlertCell"
   }
-  
+
   struct Segue {
     static let Info = "ShowInfoViewControllerSegue"
   }
-  
+
   struct VC {
     static let Help = "HelpViewController"
   }

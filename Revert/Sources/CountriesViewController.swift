@@ -7,7 +7,7 @@ final class CountriesViewController: RevertTableViewController {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
   private let dataSource: DataSource<Country, BasicCell>
   private var refreshTimer: NSTimer?
-  
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -18,27 +18,27 @@ final class CountriesViewController: RevertTableViewController {
 
     super.init(coder: aDecoder)
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     self.tableView.dataSource = self.dataSource
-    
+
     self.refreshControl = UIRefreshControl()
     self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
   }
-  
+
   func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
     self.refreshTimer?.invalidate()
 
     // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
     self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
   }
-  
+
   func didLoadDummyData(timer: NSTimer) {
     self.refreshControl?.endRefreshing()
   }
-  
+
   private static func footerLabelWithText(text: String?) -> UILabel {
     let label = UILabel()
     label.backgroundColor = UIColor.whiteColor()
@@ -55,7 +55,7 @@ extension CountriesViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
-  
+
   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     let text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
     return self.dynamicType.footerLabelWithText(text)

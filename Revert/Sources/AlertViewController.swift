@@ -13,7 +13,7 @@ final class AlertViewController: RevertTableViewController {
     case AlertController = "alertcontroller"
     case ActionController = "actioncontroller"
   }
-  
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -23,10 +23,10 @@ final class AlertViewController: RevertTableViewController {
 
     super.init(coder: aDecoder)
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     self.tableView.dataSource = self.dataSource
   }
 }
@@ -39,7 +39,7 @@ extension AlertViewController {
     alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
-  
+
   private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
     switch identifier {
     case .AlertView:

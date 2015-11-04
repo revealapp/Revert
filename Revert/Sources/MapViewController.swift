@@ -15,10 +15,10 @@ final class MapViewController: RevertViewController {
     super.viewDidLoad()
 
     self.addAnnotations()
-    
+
     self.mapView.region = Static.Region.Australia
   }
-  
+
   private func addAnnotations() {
     let locations = RevertItems.MapLocations.data
     let annotations = locations.map(MapAnnotation.init)

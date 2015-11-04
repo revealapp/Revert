@@ -9,11 +9,11 @@ struct Item: Collectable, Requirement {
     case Cell = "cellIdentifier"
     case RequiredClassName = "requiredClassName"
   }
-  
+
   let title: String
   let cellIdentifier: String
   let requiredClassName: String?
-  
+
   init(dictionary: [String : AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
       cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {

@@ -32,7 +32,7 @@ class CollectionViewCell: UICollectionViewCell {
 
 class TextFieldControlCell: CollectionViewCell {
   @IBOutlet private weak var textField: UITextField!
-  
+
   @IBAction func textFieldDidEndOnExit(sender: UITextField) {
     sender.resignFirstResponder()
   }
@@ -41,14 +41,14 @@ class TextFieldControlCell: CollectionViewCell {
 final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.textField.inputView = self.textFieldInputView
     self.textField.inputAccessoryView = self.textFieldInputAccessoryView
   }
-  
+
   private var textFieldInputView: UIDatePicker {
     let picker = UIDatePicker()
-    
+
     picker.datePickerMode = .Date
     picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
     picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
@@ -68,11 +68,11 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
     ]
     return toolBar
   }
-  
+
   func doneButtonTapped(sender: UIBarButtonItem) {
     self.textField.resignFirstResponder()
   }
-  
+
   func datePickerChanged(datePicker: UIDatePicker) {
     self.textField.text = Static.DateFormatter.ddmmyy.stringFromDate(datePicker.date)
   }

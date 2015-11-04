@@ -22,16 +22,16 @@ private extension UIViewController {
 // MARK: UIViewController
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
-  
+
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if segue.identifier == SB.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
@@ -41,16 +41,16 @@ class RevertViewController: UIViewController, SettableHomeItem {
 // MARK: UITableViewController
 class RevertTableViewController: UITableViewController, SettableHomeItem {
   final var item: HomeItem?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
-  
+
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if segue.identifier == SB.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
@@ -60,16 +60,16 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
 // MARK: UICollectionViewController
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
   final var item: HomeItem?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
-  
+
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if segue.identifier == SB.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
@@ -79,16 +79,16 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
 // MARK: GLKViewController
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
   final var item: HomeItem?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
   }
-  
+
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if segue.identifier == SB.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }

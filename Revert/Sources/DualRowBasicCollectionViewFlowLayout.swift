@@ -18,14 +18,14 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
     let itemWidth = floor((self.availableWidth - self.minimumInteritemSpacing * (CGFloat(self.dynamicType.noOfItemsInRow) - 1)) / CGFloat(self.dynamicType.noOfItemsInRow))
     return CGSize(width: itemWidth, height: self.itemSize.height)
   }
-  
+
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
     return newBounds.size != self.collectionView?.bounds.size
   }
-  
+
   override func prepareLayout() {
     super.prepareLayout()
-    
+
     self.itemSize = self.computedItemSize
   }
 }

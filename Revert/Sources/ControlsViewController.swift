@@ -18,14 +18,14 @@ final class ControlsViewController: RevertCollectionViewController {
       }
     }
   }
-  
+
   private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
   private let keyboardHandler = KeyboardHandler()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     assert(self.resourceFilename != nil, "Resource file name should be set before `viewDidLoad`")
 
     // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
@@ -35,15 +35,15 @@ final class ControlsViewController: RevertCollectionViewController {
       self.keyboardHandler.scrollView = self.collectionView
       self.keyboardHandler.viewController = self
     }
-    
+
     // Setup Data Source
     self.collectionView!.dataSource = self.dataSource
-    
+
     // Setup Dismiss Tap Gesture
     let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
   }
-  
+
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView?.endEditing(true)
   }

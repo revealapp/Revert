@@ -5,13 +5,13 @@ import UIKit
 
 final class CATextLayerCell: CollectionViewCell {
   @IBOutlet private weak var textLayerView: CATextLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureTextLayer(self.textLayerView.textLayer)
   }
-  
+
   private static func configureTextLayer(textLayer: CATextLayer) {
     textLayer.string = "I am a quite long CATextLayer string."
     textLayer.fontSize = 20
@@ -24,13 +24,13 @@ final class CATextLayerCell: CollectionViewCell {
 
 final class CAEmitterLayerCell: CollectionViewCell {
   @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureEmitterLayer(self.emitterLayerView.emitterLayer)
   }
-  
+
   private static func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
     emitterLayer.emitterZPosition = 5
@@ -42,7 +42,7 @@ final class CAEmitterLayerCell: CollectionViewCell {
     emitterLayer.renderMode = kCAEmitterLayerAdditive
     emitterLayer.emitterCells = [self.emitterCell]
   }
-  
+
   private static var emitterCell: CAEmitterCell {
     let emitterCell = CAEmitterCell()
     emitterCell.scale = 0.05
@@ -60,13 +60,13 @@ final class CAEmitterLayerCell: CollectionViewCell {
 
 final class CAShapeLayerCell: CollectionViewCell {
   @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureShapeLayer(self.shapeLayerView.shapeLayer)
   }
-  
+
   private static func configureShapeLayer(shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
     let origin = CGPointMake((shapeLayer.bounds.width - minLength) / 2, 0)
@@ -88,13 +88,13 @@ final class CAShapeLayerCell: CollectionViewCell {
 
 final class CAScrollLayerCell: CollectionViewCell {
   @IBOutlet private weak var scrollLayerView: CAScrollLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureScrollLayer(self.scrollLayerView.scrollLayer)
   }
-  
+
   private static func configureScrollLayer(scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertDarkblueColor().CGColor
@@ -104,13 +104,13 @@ final class CAScrollLayerCell: CollectionViewCell {
 
 final class CATiledLayerCell: CollectionViewCell {
   @IBOutlet private weak var tiledLayerView: CATiledLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureTiledLayer(self.tiledLayerView.tiledLayer)
   }
-  
+
   private static func configureTiledLayer(tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
@@ -126,10 +126,10 @@ final class CAGradientLayerCell: CollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureGradientLayer(self.gradientLayerView.gradientLayer)
   }
-  
+
   private static func configureGradientLayer(gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
     gradientLayer.locations = [0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1]
@@ -157,19 +157,19 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureReplicatorLayer(self.replicatorLayerView.replicatorLayer)
   }
-  
+
   private static func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
     let circleWidth: CGFloat = 20
     let circlePadding: CGFloat = 10
     let circleRect = CGRect(x: circlePadding / 2, y: replicatorLayer.bounds.midY - circleWidth / 2, width: circleWidth, height: circleWidth)
     let circleLayer = CAShapeLayer()
-    
+
     circleLayer.path = UIBezierPath(ovalInRect: circleRect).CGPath
     circleLayer.fillColor = UIColor.revertOrangeColor().CGColor
-    
+
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
     replicatorLayer.instanceDelay = 1
@@ -185,13 +185,13 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 
 final class CAEAGLLayerCell: CollectionViewCell {
   @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
-    
+
     self.dynamicType.configureAeglLayer(self.aegLayerView.aeglLayer)
   }
-  
+
   private static func configureAeglLayer(aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1

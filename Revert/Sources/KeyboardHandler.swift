@@ -7,22 +7,22 @@ import UIKit
 final class KeyboardHandler: NSObject {
   weak var scrollView: UIScrollView?
   weak var viewController: UIViewController?
-  
+
   deinit {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
-  
+
   override init() {
     super.init()
-    
+
     self.registerNotifications()
   }
-  
+
   private func registerNotifications() {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillShowNotification, object: nil)
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
   }
-  
+
   func keyboardWillShowHideNotification(notification: NSNotification) {
     guard let scrollView = self.scrollView,
       scrollViewSuperview = scrollView.superview,

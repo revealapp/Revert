@@ -5,7 +5,7 @@ import UIKit
 
 final class HomeCell: BasicCell {
   @IBOutlet private(set) weak var iconImageView: UIImageView!
-  
+
   override func awakeFromNib() {
     super.awakeFromNib()
 

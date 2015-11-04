@@ -10,7 +10,7 @@ class StackViewController: RevertViewController {
     guard let view = nib.first as? UIView else {
       fatalError("Could not load Stack View from xib")
     }
-    
+
     self.view = view
   }
 }

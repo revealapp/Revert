@@ -7,9 +7,9 @@ final class InfoViewController: UIViewController, SettableHomeItem {
   @IBOutlet private weak var imageView: UIImageView!
   @IBOutlet private weak var webView: UIWebView!
   @IBOutlet private weak var titleLabel: UILabel!
-  
+
   var item: HomeItem?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -24,7 +24,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     let htmlString = infoHTMLWithContent(item.infoFilename)
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
-  
+
   @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
     self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
   }

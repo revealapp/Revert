@@ -8,7 +8,7 @@ final class OpenGLViewController: RevertGLKViewController {
   private var glkView: GLKView {
     return self.view as! GLKView
   }
-  
+
   private var vertexBuffer: GLuint = 0
   private var indexBuffer: GLuint = 0
   private var vertexArray: GLuint = 0
@@ -23,10 +23,10 @@ final class OpenGLViewController: RevertGLKViewController {
   deinit {
     self.unloadGL()
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     guard let context = EAGLContext(API: .OpenGLES2) else {
       fatalError("Failed to initialise context `.OpenGLES2`")
     }
@@ -34,20 +34,20 @@ final class OpenGLViewController: RevertGLKViewController {
     self.glkView.context = context
 
     self.setCurrentContext()
-    
+
     self.glkView.delegate = self
-    
+
     self.loadGL()
   }
-  
+
   func update() {
     let aspect = Float(self.view.bounds.width / self.view.bounds.height)
     self.effect.transform.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65), aspect, 4, 10)
-    
+
     self.rotation += 90 * Float(self.timeSinceLastUpdate)
     self.effect.transform.modelviewMatrix = self.computedModelViewMatrix
   }
-  
+
   override func viewWillLayoutSubviews() {
     // Make CAEAGLLayer a square to ease the rotation process
     if self.view.layer.bounds.size.width > self.view.layer.bounds.size.height {
@@ -58,7 +58,7 @@ final class OpenGLViewController: RevertGLKViewController {
 
     super.viewWillLayoutSubviews()
   }
-  
+
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     self.paused = self.paused == false
   }
@@ -68,9 +68,9 @@ final class OpenGLViewController: RevertGLKViewController {
 
     glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
     glClear(GLenum(GL_COLOR_BUFFER_BIT))
-    
+
     self.effect.prepareToDraw()
-    
+
     glBindVertexArrayOES(self.vertexArray)
     glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
   }
@@ -144,8 +144,8 @@ private extension OpenGLViewController {
     let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
     glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
     glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
-    
+
     glBindVertexArrayOES(0)
   }
-  
+
 }

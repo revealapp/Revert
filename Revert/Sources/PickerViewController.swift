@@ -12,7 +12,7 @@ extension PickerViewController: UIPickerViewDataSource {
   func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
     return 1
   }
-  
+
   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return self.collection[component].countOfItems
   }

@@ -29,6 +29,6 @@ private func contentOfFile(filename: String) -> String {
 func infoHTMLWithContent(filename: String) -> String {
   let contentHTML = contentOfFile("Info/\(filename)")
   let containerHTML = contentOfFile("Info/container")
-  
+
   return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
 }
