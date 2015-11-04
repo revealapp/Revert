@@ -1,6 +1,5 @@
 //
 // Revert-Release.xcconfig
-//
 
 #include "Revert-Shared.xcconfig"
 
