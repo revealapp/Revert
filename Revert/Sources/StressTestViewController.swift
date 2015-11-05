@@ -17,6 +17,6 @@ extension StressTestViewController {
   }
 
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    return collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.Stress, forIndexPath: indexPath)
+    return collectionView.dequeueReusableCellWithReuseIdentifier(Storyboards.Cell.Stress, forIndexPath: indexPath)
   }
 }

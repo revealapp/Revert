@@ -26,7 +26,7 @@ final class HomeViewController: UITableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: self.dynamicType.configureCell,
-      cellIdentifier: SB.Cell.Home
+      cellIdentifier: Storyboards.Cell.Home
     )
 
     super.init(coder: aDecoder)
@@ -36,7 +36,7 @@ final class HomeViewController: UITableViewController {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-    self.tableView.registerNib(UINib(nibName: SB.Cell.Home, bundle: nil), forCellReuseIdentifier: SB.Cell.Home)
+    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
   }
 
   override func viewWillAppear(animated: Bool) {

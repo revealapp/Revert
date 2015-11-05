@@ -16,7 +16,7 @@ extension CollectionViewController {
   }
 
   override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SB.Cell.CollectionViewController, forIndexPath: indexPath)
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Storyboards.Cell.CollectionViewController, forIndexPath: indexPath)
     cell.contentView.backgroundColor = cell.selected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
     return cell
   }

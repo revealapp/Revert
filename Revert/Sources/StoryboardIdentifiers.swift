@@ -2,7 +2,7 @@
 //  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
 //
 
-struct SB {
+struct Storyboards {
   struct Cell {
     static let CollectionViewController = "CollectionViewControllerCell"
     static let TableViewController = "TableViewControllerCell"

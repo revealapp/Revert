@@ -18,7 +18,7 @@ final class AlertViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: self.dynamicType.configureCell,
-      cellIdentifier: SB.Cell.Alert
+      cellIdentifier: Storyboards.Cell.Alert
     )
 
     super.init(coder: aDecoder)
