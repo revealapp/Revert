@@ -32,7 +32,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
 
-    if segue.identifier == SB.Segue.Info {
+    if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -51,7 +51,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
 
-    if segue.identifier == SB.Segue.Info {
+    if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -70,7 +70,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
 
-    if segue.identifier == SB.Segue.Info {
+    if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -89,7 +89,7 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
 
-    if segue.identifier == SB.Segue.Info {
+    if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
