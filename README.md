@@ -1,6 +1,5 @@
 ![Revert](http://images.revealapp.com.s3.amazonaws.com/revert_github/revert-header.jpg)
 # REVEal Rendering Test - REVERT
-[![Build status](https://badge.buildkite.com/808be6190e39e59f227d054db81a083b8a485e9de3fbeb02a6.svg)](https://buildkite.com/itty-bitty-apps/revert)
 
 Revert is a reference iOS project developed to help test the performance and accuracy of [Reveal](http://revealapp.com), a runtime view hierarchy inspection tool from [Itty Bitty Apps](http://ittybittyapps.com). It contains a number of examples which highlight both common and edge case scenarios. Revert is a universal iOS 7+ app that supports both portrait and landscape orientations.
 
@@ -29,6 +28,8 @@ Revert has helped us isolate changes in behaviour between iOS versions and verif
 - [Twitter](https://twitter.com/reveal_app)
 - [GitHub](https://github.com/revealapp)
 - [Support](http://support.revealapp.com)
+
+[![Build status](https://badge.buildkite.com/808be6190e39e59f227d054db81a083b8a485e9de3fbeb02a6.svg)](https://buildkite.com/itty-bitty-apps/revert)
 
 ## Licensing
 
