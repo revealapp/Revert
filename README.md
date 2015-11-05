@@ -1,3 +1,4 @@
+![Revert](http://images.revealapp.com.s3.amazonaws.com/revert_github/revert-header.jpg)
 # REVEal Rendering Test - REVERT
 [![Build status](https://badge.buildkite.com/808be6190e39e59f227d054db81a083b8a485e9de3fbeb02a6.svg)](https://buildkite.com/itty-bitty-apps/revert)
 
