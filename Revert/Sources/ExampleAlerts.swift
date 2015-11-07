@@ -1,7 +1,7 @@
 //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import Foundation
+import UIKit
 
 @available(iOS 8.0, *)
 extension UIAlertController {
