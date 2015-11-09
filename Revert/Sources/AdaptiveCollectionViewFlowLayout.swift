@@ -18,7 +18,7 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   }
 
   private var numberOfColumns: Int {
-    if self.itemWidthForNumberOfColumns(self.dynamicType.maximumColumnsForLayout) < self.dynamicType.minimumCellWidth {
+    if self.itemWidthForNumberOfColumns(self.dynamicType.maximumColumnsForLayout) >= self.dynamicType.minimumCellWidth {
       return self.dynamicType.maximumColumnsForLayout
     } else {
       return self.dynamicType.minimumColumnsForLayout
