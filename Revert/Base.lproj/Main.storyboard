@@ -2497,7 +2497,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Revert" id="YiS-DF-YmP">
                         <barButtonItem key="backBarButtonItem" title="Back" id="jDh-uz-YpJ"/>
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="sCU-eZ-mhU"/>
                     </navigationItem>
                     <connections>
                         <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
