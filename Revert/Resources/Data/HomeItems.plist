@@ -169,7 +169,7 @@
                 <key>requiredClassName</key>
                 <string>SFSafariViewController</string>
                 <key>isPush</key>
-                <false/>
+                <true/>
             </dict>
         </array>
     </dict>

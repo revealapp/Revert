@@ -20,7 +20,6 @@ final class HomeViewController: UITableViewController {
     }
   }
 
-  private var wasInitiallySelected = false
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
