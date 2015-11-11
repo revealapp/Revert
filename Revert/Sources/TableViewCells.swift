@@ -6,13 +6,12 @@ import UIKit
 final class HomeCell: BasicCell {
   @IBOutlet private(set) weak var iconImageView: UIImageView!
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-
-    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      self.backgroundView = UIView()
+  func updateSelectedBackgroundColor(isBlue isBlue: Bool) {
+    if isBlue {
       self.selectedBackgroundView = UIView()
-      self.selectedBackgroundView?.backgroundColor = UIColor.revertTintColor()
+      self.selectedBackgroundView!.backgroundColor = UIColor.revertTintColor()
+    } else {
+      self.selectedBackgroundView = nil
     }
   }
 }
