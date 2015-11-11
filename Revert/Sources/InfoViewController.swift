@@ -21,6 +21,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     self.imageView.image = UIImage(named: item.iconName)
     self.titleLabel.text = item.title
 
+    // Hide the black 1 pixel line across the bottom of the web view
     self.webView.opaque = false
     self.webView.backgroundColor = UIColor.clearColor()
     
