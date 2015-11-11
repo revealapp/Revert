@@ -28,7 +28,7 @@ final class NonSerializableViewController: RevertViewController {
       let continueAction = UIAlertAction(
         title: NSLocalizedString("Ok", comment: "Alert Ok button title"),
         style: .Default) { [weak self] _ in
-          self?.dynamicType.makeSliderUnserializable(self)
+          self?.makeSliderUnserializable()
 
           // Only show the alert once
           self?.slider.removeTarget(self, action: "warnBeforeCrash:", forControlEvents: .TouchUpInside)
@@ -50,22 +50,22 @@ final class NonSerializableViewController: RevertViewController {
 
   }
 
-  private static func makeSliderUnserializable(viewController: NonSerializableViewController?) {
+  private func makeSliderUnserializable() {
     // inf
-    viewController?.slider.maximumValue = 1 / 0
+    self.slider.maximumValue = 1 / 0
 
     // nan
-    viewController?.progressView.contentScaleFactor = 0 / 0
+    self.progressView.contentScaleFactor = 0 / 0
 
     // - inf
-    viewController?.subView.contentScaleFactor = -1 / 0
+    self.subView.contentScaleFactor = -1 / 0
   }
 }
 
 extension NonSerializableViewController: UIAlertViewDelegate {
 
   func alertView(alertView: UIAlertView, willDismissWithButtonIndex buttonIndex: Int) {
-    self.dynamicType.makeSliderUnserializable(self)
+    self.makeSliderUnserializable()
 
     // Only show the alert once
     self.slider.removeTarget(self, action: "warnBeforeCrash:", forControlEvents: .TouchUpInside)
