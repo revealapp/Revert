@@ -21,6 +21,9 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     self.imageView.image = UIImage(named: item.iconName)
     self.titleLabel.text = item.title
 
+    self.webView.opaque = false
+    self.webView.backgroundColor = UIColor.clearColor()
+    
     let htmlString = infoHTMLWithContent(item.infoFilename)
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
