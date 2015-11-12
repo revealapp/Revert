@@ -35,7 +35,9 @@ final class HomeViewController: UITableViewController {
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
+    if #available(iOS 8.0, *) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
+    }
   }
 
   override func viewDidLoad() {
