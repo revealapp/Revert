@@ -55,7 +55,7 @@
 		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
 		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		9ACFC5071BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */; };
-		9AD7F2141BF3817C00745D18 /* UISplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7F2131BF3817C00745D18 /* UISplitViewController.swift */; };
+		9AD7F2141BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7F2131BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift */; };
 		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
@@ -139,7 +139,7 @@
 		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
 		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
-		9AD7F2131BF3817C00745D18 /* UISplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISplitViewController.swift; path = Revert/Sources/UISplitViewController.swift; sourceTree = "<group>"; };
+		9AD7F2131BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UISplitViewController+BackwardsCompatibility.swift"; path = "Revert/Sources/UISplitViewController+BackwardsCompatibility.swift"; sourceTree = "<group>"; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
 		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
 		9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Revert/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
 				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
 				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
-				9AD7F2131BF3817C00745D18 /* UISplitViewController.swift */,
+				9AD7F2131BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -507,7 +507,7 @@
 				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				9A7345C81BB2BA4D00768DAA /* RevertItems.swift in Sources */,
-				9AD7F2141BF3817C00745D18 /* UISplitViewController.swift in Sources */,
+				9AD7F2141BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift in Sources */,
 				9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */,
 				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
 				B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */,
