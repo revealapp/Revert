@@ -78,13 +78,13 @@ final class OpenGLViewController: RevertGLKViewController {
 
 // MARK: Helpers
 private extension OpenGLViewController {
-  private func loadGL() {
+  func loadGL() {
     self.loadTexture()
     self.generateBindVertex()
     self.loadCube()
   }
 
-  private func unloadGL() {
+  func unloadGL() {
     let previousContext = EAGLContext.currentContext()
 
     self.setCurrentContext()
@@ -96,7 +96,7 @@ private extension OpenGLViewController {
     EAGLContext.setCurrentContext(previousContext != self.glkView.context ? previousContext : nil)
   }
 
-  private func setCurrentContext() {
+  func setCurrentContext() {
     let isContextSet = EAGLContext.setCurrentContext(self.glkView.context)
     assert(isContextSet, "Failed to set current context")
   }
