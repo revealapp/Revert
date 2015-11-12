@@ -44,16 +44,6 @@
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>121.49451</real>
-		<key>latitude</key>
-		<real>31.200187</real>
-		<key>title</key>
-		<string>Shangai</string>
-		<key>subtitle</key>
-		<string>Longs</string>
-	</dict>
-	<dict>
-		<key>longitude</key>
 		<real>151.773509</real>
 		<key>latitude</key>
 		<real>-32.926788</real>
@@ -64,11 +54,11 @@
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>174.765219</real>
+		<real>176.0694</real>
 		<key>latitude</key>
-		<real>-36.855881</real>
+		<real>-38.6875</real>
 		<key>title</key>
-		<string>Auckland</string>
+		<string>Taupo</string>
 		<key>subtitle</key>
 		<string>Oliver</string>
 	</dict>
