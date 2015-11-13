@@ -29,7 +29,7 @@ class BasicCell: UITableViewCell {
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
 
   override func awakeFromNib() {
