@@ -30,6 +30,7 @@
 		9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */; };
 		9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */; };
 		9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
+		9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */; };
 		9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
 		9A63DFFF1BD6811B006D0A82 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63DFFE1BD6811B006D0A82 /* DataSource.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
@@ -102,6 +103,7 @@
 		9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlignmentInsetView.swift; path = Revert/Sources/AlignmentInsetView.swift; sourceTree = "<group>"; };
 		9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Revert/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = "<group>"; };
 		9A535C481ADB563B0082778A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Revert/Sources/ControlsViewController.swift; sourceTree = "<group>"; };
+		9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealOpenGLCube.swift; path = Revert/Sources/RevealOpenGLCube.swift; sourceTree = "<group>"; };
 		9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Revert/Sources/SplitViewControllerDelegate.swift; sourceTree = "<group>"; };
 		9A63DFFE1BD6811B006D0A82 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Revert/Sources/DataSource.swift; sourceTree = "<group>"; };
 		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +377,7 @@
 		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */,
 				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
@@ -533,6 +536,7 @@
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
 				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
+				9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,

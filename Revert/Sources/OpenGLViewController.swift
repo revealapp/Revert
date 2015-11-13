@@ -5,47 +5,22 @@ import UIKit
 import GLKit
 
 final class OpenGLViewController: RevertGLKViewController {
+  private let cube = RevealOpenGLCube()
   private var glkView: GLKView {
     return self.view as! GLKView
-  }
-
-  private var vertexBuffer: GLuint = 0
-  private var indexBuffer: GLuint = 0
-  private var vertexArray: GLuint = 0
-  private let effect = GLKBaseEffect()
-  private var rotation: Float = 0
-  private var computedModelViewMatrix: GLKMatrix4 {
-    var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
-    matrix = GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(25), 1, 0, 0)
-    return GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(self.rotation), 0, 1, 0)
-  }
-
-  deinit {
-    self.unloadGL()
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    guard let context = EAGLContext(API: .OpenGLES2) else {
-      fatalError("Failed to initialise context `.OpenGLES2`")
-    }
-
-    self.glkView.context = context
-
-    self.setCurrentContext()
-
+    self.glkView.context = self.cube.context
     self.glkView.delegate = self
-
-    self.loadGL()
   }
 
   func update() {
-    let aspect = Float(self.view.bounds.width / self.view.bounds.height)
-    self.effect.transform.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65), aspect, 4, 10)
-
-    self.rotation += 90 * Float(self.timeSinceLastUpdate)
-    self.effect.transform.modelviewMatrix = self.computedModelViewMatrix
+    let aspectRatio = Float(self.view.bounds.width / self.view.bounds.height)
+    let rotation = 90 * Float(self.timeSinceLastUpdate)
+    self.cube.updateWithAspectRatio(aspectRatio, rotation: rotation)
   }
 
   override func viewWillLayoutSubviews() {
@@ -64,88 +39,6 @@ final class OpenGLViewController: RevertGLKViewController {
   }
 
   override func glkView(view: GLKView, drawInRect rect: CGRect) {
-    self.setCurrentContext()
-
-    glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
-    glClear(GLenum(GL_COLOR_BUFFER_BIT))
-
-    self.effect.prepareToDraw()
-
-    glBindVertexArrayOES(self.vertexArray)
-    glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
+    self.cube.draw()
   }
-}
-
-// MARK: Helpers
-private extension OpenGLViewController {
-  private func loadGL() {
-    self.loadTexture()
-    self.generateBindVertex()
-    self.loadCube()
-  }
-
-  private func unloadGL() {
-    let previousContext = EAGLContext.currentContext()
-
-    self.setCurrentContext()
-
-    glDeleteBuffers(1, &self.vertexBuffer)
-    glDeleteBuffers(1, &self.indexBuffer)
-    glDeleteVertexArraysOES(1, &self.vertexArray)
-
-    EAGLContext.setCurrentContext(previousContext != self.glkView.context ? previousContext : nil)
-  }
-
-  private func setCurrentContext() {
-    let isContextSet = EAGLContext.setCurrentContext(self.glkView.context)
-    assert(isContextSet, "Failed to set current context")
-  }
-
-  func generateBindVertex() {
-    glEnable(GLenum(GL_CULL_FACE))
-
-    glGenVertexArraysOES(1, &self.vertexArray)
-    glBindVertexArrayOES(self.vertexArray)
-
-    // Generate and bind vertex buffer
-    glGenBuffers(1, &self.vertexBuffer)
-    glBindBuffer(GLenum(GL_ARRAY_BUFFER), self.vertexBuffer)
-    glBufferData(GLenum(GL_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Vertices)), &Vertices, GLenum(GL_STATIC_DRAW))
-
-    // Generate and bind index buffer
-    glGenBuffers(1, &self.indexBuffer)
-    glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), self.indexBuffer)
-    glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Indices)), &Indices, GLenum(GL_STATIC_DRAW))
-  }
-
-  func loadTexture() {
-    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
-
-    guard let image = UIImage(named: "reveal_pretty_flipped.jpg") else {
-      fatalError("Invalid texture image for OpenGLVC")
-    }
-
-    let textureInfo: GLKTextureInfo
-    do {
-      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
-    } catch let error {
-      fatalError("Unable to load texture \(error)")
-    }
-
-    self.effect.texture2d0.name = textureInfo.name
-    self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
-  }
-
-  func loadCube() {
-    let positionUnsafePointer = UnsafePointer<Void>(bitPattern: 0)
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
-    glVertexAttribPointer(GLuint(GLKVertexAttrib.Position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), positionUnsafePointer)
-
-    let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
-    glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
-
-    glBindVertexArrayOES(0)
-  }
-
 }
