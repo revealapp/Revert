@@ -17,11 +17,15 @@ final class InfoViewController: UIViewController, SettableHomeItem {
       fatalError("Item should be set before `-viewDidLoad`")
     }
 
+    guard let infoFilename = item.infoFilename else {
+      fatalError("Cannot display without a valid info filename")
+    }
+
     // Configure the view
     self.imageView.image = UIImage(named: item.iconName)
     self.titleLabel.text = item.title
 
-    let htmlString = infoHTMLWithContent(item.infoFilename)
+    let htmlString = infoHTMLWithContent(infoFilename)
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
 
