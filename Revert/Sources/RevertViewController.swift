@@ -27,6 +27,10 @@ class RevertViewController: UIViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -46,6 +50,10 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -65,6 +73,10 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -84,6 +96,10 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
