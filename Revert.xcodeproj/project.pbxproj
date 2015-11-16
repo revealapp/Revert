@@ -190,8 +190,8 @@
 		9A17423B1B09CF9C00BEDFAB /* SB/XIB */ = {
 			isa = PBXGroup;
 			children = (
-				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
+				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				B59998E61BC36092002FE92C /* StackView.xib */,
 			);
 			name = SB/XIB;
@@ -249,12 +249,12 @@
 			isa = PBXGroup;
 			children = (
 				9A6C75011BDE29DE00534680 /* Data */,
-				9A6C75021BDE29DE00534680 /* Info */,
+				9A6C75051BDE2A0200534680 /* Docs */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
+				9A6C75021BDE29DE00534680 /* Info */,
+				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* SB/XIB */,
 				9A17423C1B09CFAC00BEDFAB /* Strings */,
-				9A6C75051BDE2A0200534680 /* Docs */,
-				9A0416C01B02EA7F00477E60 /* Info.plist */,
 			);
 			name = Resources;
 			path = Revert;
@@ -263,9 +263,9 @@
 		9A6C75051BDE2A0200534680 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				9A1742381B09CCA100BEDFAB /* README.md */,
-				9AFAB7491B0DBDA00009707A /* LICENSE.md */,
 				9A6C74FF1BDE297800534680 /* INFO.md */,
+				9AFAB7491B0DBDA00009707A /* LICENSE.md */,
+				9A1742381B09CCA100BEDFAB /* README.md */,
 			);
 			name = Docs;
 			sourceTree = "<group>";
@@ -274,14 +274,14 @@
 			isa = PBXGroup;
 			children = (
 				9AE511751BB2F51C0087A68D /* Collectable.swift */,
-				B59998EB1BC3848D002FE92C /* Requirement.swift */,
 				9A28739E1AD76EA2006466BE /* CollectableCollection.swift */,
 				9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */,
-				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
 				9A2873991AD76863006466BE /* Country.swift */,
-				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
 				9AA02A931B0C5C50000750E5 /* Cube.h */,
 				9A9E6B4D1B0CBB0700A22270 /* Cube.m */,
+				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
+				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
+				B59998EB1BC3848D002FE92C /* Requirement.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -303,16 +303,16 @@
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
 				9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */,
-				9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */,
 				9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */,
-				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
+				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
 				9A0416D11B03048B00477E60 /* DeepView.swift */,
+				9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */,
+				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
 				9AE300211AEF09AA00E81377 /* LayerViews.swift */,
 				9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */,
-				9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */,
-				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
-				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
+				9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
 			);
 			name = Views;
@@ -321,12 +321,12 @@
 		9A9F59A91AD4C17400A8CB4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */,
-				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
-				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
+				9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */,
 				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
+				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 				9AD7F2131BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift */,
+				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -334,14 +334,14 @@
 		9ABEBA0E1AD4ABDB00E3D998 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9A07D8DD1AE4B8260099C4CB /* Layouts */,
+				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
 				9ADAA3C51ADC8D1F008CC87B /* DataSources */,
-				9A94E3F41AD63F040005BA44 /* Models */,
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
+				9A07D8DD1AE4B8260099C4CB /* Layouts */,
+				9ABEBA161AD4AEC900E3D998 /* Misc */,
+				9A94E3F41AD63F040005BA44 /* Models */,
 				9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
-				9ABEBA161AD4AEC900E3D998 /* Misc */,
-				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -349,30 +349,30 @@
 		9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A3B4BC11B0230B300F6117D /* RevertViewController.swift */,
-				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
-				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
-				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
-				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
-				9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */,
-				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
-				B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */,
-				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
-				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
 				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
-				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
-				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
-				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
-				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
-				9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */,
-				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
+				9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */,
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
 				9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */,
-				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
-				9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */,
-				9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */,
-				9A2C24031AEE110C007B17CE /* StressTestViewController.swift */,
+				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
+				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
+				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
+				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
+				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
+				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
+				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
+				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
+				9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */,
+				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
+				9A3B4BC11B0230B300F6117D /* RevertViewController.swift */,
+				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
+				9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */,
+				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
+				B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */,
+				9A2C24031AEE110C007B17CE /* StressTestViewController.swift */,
+				9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */,
+				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
+				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -380,15 +380,15 @@
 		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */,
 				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
-				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
-				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
-				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
-				9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */,
-				9AA02A941B0C5C83000750E5 /* Revert-Bridging-Header.h */,
 				9AE252501B18211A002B596C /* InfoBuilder.swift */,
+				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
+				9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */,
+				9AA02A941B0C5C83000750E5 /* Revert-Bridging-Header.h */,
 				9A7345C71BB2BA4D00768DAA /* RevertItems.swift */,
+				9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */,
+				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
+				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -396,8 +396,8 @@
 		9ADAA3C51ADC8D1F008CC87B /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				9A63DFFE1BD6811B006D0A82 /* DataSource.swift */,
 				9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */,
+				9A63DFFE1BD6811B006D0A82 /* DataSource.swift */,
 			);
 			name = DataSources;
 			sourceTree = "<group>";
