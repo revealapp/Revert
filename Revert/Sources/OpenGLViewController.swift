@@ -5,22 +5,11 @@ import UIKit
 import GLKit
 
 final class OpenGLViewController: RevertGLKViewController {
-  private let cube = RevealOpenGLCube()
-  private var glkView: GLKView {
-    return self.view as! GLKView
-  }
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
     self.glkView.context = self.cube.context
     self.glkView.delegate = self
-  }
-
-  func update() {
-    let aspectRatio = Float(self.view.bounds.width / self.view.bounds.height)
-    let rotation = 90 * Float(self.timeSinceLastUpdate)
-    self.cube.updateWithAspectRatio(aspectRatio, rotation: rotation)
   }
 
   override func viewWillLayoutSubviews() {
@@ -41,4 +30,18 @@ final class OpenGLViewController: RevertGLKViewController {
   override func glkView(view: GLKView, drawInRect rect: CGRect) {
     self.cube.draw()
   }
+
+  func update() {
+    let aspectRatio = Float(self.view.bounds.width / self.view.bounds.height)
+    let rotation = 90 * Float(self.timeSinceLastUpdate)
+    self.cube.updateWithAspectRatio(aspectRatio, rotation: rotation)
+  }
+
+  // MARK: Private
+
+  private let cube = RevealOpenGLCube()
+  private var glkView: GLKView {
+    return self.view as! GLKView
+  }
+
 }

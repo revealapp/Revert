@@ -4,10 +4,6 @@
 import UIKit
 
 final class InfoViewController: UIViewController, SettableHomeItem {
-  @IBOutlet private weak var imageView: UIImageView!
-  @IBOutlet private weak var webView: UIWebView!
-  @IBOutlet private weak var titleLabel: UILabel!
-
   var item: HomeItem?
 
   override func viewDidLoad() {
@@ -29,12 +25,18 @@ final class InfoViewController: UIViewController, SettableHomeItem {
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
 
-  @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
+  // MARK: Private
+
+  @IBOutlet private weak var imageView: UIImageView!
+  @IBOutlet private weak var webView: UIWebView!
+  @IBOutlet private weak var titleLabel: UILabel!
+
+  @IBAction private func dismiss(sender: UIBarButtonItem) {
     self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
 }
 
-// MARK: UIWebViewDelegate
+// MARK:- UIWebViewDelegate
 extension InfoViewController: UIWebViewDelegate {
   func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
     if let URL = request.URL where URL != NSURL(string: "about:blank") {

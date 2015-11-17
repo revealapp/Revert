@@ -4,10 +4,6 @@
 import UIKit
 
 final class BarsViewController: RevertViewController {
-  @IBOutlet private weak var searchBar: UISearchBar!
-  @IBOutlet private weak var dismissContainerView: UIView!
-  @IBOutlet private weak var tabBar: UITabBar!
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -25,4 +21,10 @@ final class BarsViewController: RevertViewController {
   func viewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.searchBar.resignFirstResponder()
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var searchBar: UISearchBar!
+  @IBOutlet private weak var dismissContainerView: UIView!
+  @IBOutlet private weak var tabBar: UITabBar!
 }

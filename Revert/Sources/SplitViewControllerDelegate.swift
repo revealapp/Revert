@@ -5,8 +5,6 @@
 import UIKit
 
 final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
-  private var didShowDetailViewController = false
-
   func configureSplitViewController(splitViewController: UISplitViewController) {
     splitViewController.delegate = self
     if #available(iOS 8.0, *) {
@@ -26,4 +24,7 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
   func splitViewController(svc: UISplitViewController, shouldHideViewController vc: UIViewController, inOrientation orientation: UIInterfaceOrientation) -> Bool {
     return false
   }
+
+  // MARK: Private
+  private var didShowDetailViewController = false
 }

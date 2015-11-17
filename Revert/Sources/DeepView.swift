@@ -4,13 +4,25 @@
 import UIKit
 
 final class DeepView: UIView {
-  private static let subviewSpacing: CGFloat = 5
-
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
     assert(self.dynamicType.subviewSpacing > 0, "Subview spacing must be a positive number")
   }
+
+  override func layoutSubviews() {
+    self.updateSubViews()
+
+    super.layoutSubviews()
+  }
+
+  override static func requiresConstraintBasedLayout() -> Bool {
+    return true
+  }
+
+  // MARK: Private
+
+  private static let subviewSpacing: CGFloat = 5
 
   private static func colorForIndex(index: Int) -> UIColor {
     if index % 5 == 0 {
@@ -53,16 +65,6 @@ final class DeepView: UIView {
     } else if let subview = view.subviews.first {
       subview.removeFromSuperview()
     }
-  }
-
-  override func layoutSubviews() {
-    self.updateSubViews()
-
-    super.layoutSubviews()
-  }
-
-  override static func requiresConstraintBasedLayout() -> Bool {
-    return true
   }
 
   private func updateSubViews() {

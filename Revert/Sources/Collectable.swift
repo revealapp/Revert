@@ -11,7 +11,6 @@ protocol Collection: CollectionType, SequenceType {
   typealias CollectionObject
 
   var items: [CollectionObject] { get }
-
   var startIndex: Int { get }
   var endIndex: Int { get }
 }
@@ -23,10 +22,6 @@ extension Collection {
 
   var endIndex: Int {
     return self.items.count
-  }
-
-  subscript(i: Int) -> CollectionObject {
-    return self.items[i]
   }
 
   var countOfItems: Int {
@@ -41,5 +36,9 @@ extension Collection {
       }
       return nil
     }
+  }
+
+  subscript(i: Int) -> CollectionObject {
+    return self.items[i]
   }
 }

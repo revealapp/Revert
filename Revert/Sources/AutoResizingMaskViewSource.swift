@@ -4,17 +4,6 @@
 import UIKit
 
 final class AutoResizingMaskViewSource {
-  private static let padding: CGFloat = 20
-  private static let cornerRadius: CGFloat = 2
-  private static let borderWidth: CGFloat = 1
-  private static let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.5).CGColor
-  private static let defaultViewSideLength: CGFloat = 50
-  private static let leftRightWidth: CGFloat = 80
-
-  private let origin: CGPoint
-  private let flexibleWidthHeightSize: CGSize
-  private let flexibleTopBottomSize: CGSize
-
   init(bounds: CGRect) {
     self.flexibleWidthHeightSize = CGSize(
       width: bounds.width - (2 * self.dynamicType.padding),
@@ -27,13 +16,18 @@ final class AutoResizingMaskViewSource {
     )
   }
 
-  private func bakeViewWithFrame(frame: CGRect) -> UIView {
-    let view = UIView(frame: frame)
-    view.layer.cornerRadius = self.dynamicType.cornerRadius
-    view.layer.borderWidth = self.dynamicType.borderWidth
-    view.layer.borderColor = self.dynamicType.borderColor
-    return view
-  }
+  // MARK: Private
+
+  private static let padding: CGFloat = 20
+  private static let cornerRadius: CGFloat = 2
+  private static let borderWidth: CGFloat = 1
+  private static let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.5).CGColor
+  private static let defaultViewSideLength: CGFloat = 50
+  private static let leftRightWidth: CGFloat = 80
+
+  private let origin: CGPoint
+  private let flexibleWidthHeightSize: CGSize
+  private let flexibleTopBottomSize: CGSize
 
   private(set) lazy var flexibleWidthHeightView: UIView = {
     // Back: Flexible Height / Width View
@@ -104,4 +98,12 @@ final class AutoResizingMaskViewSource {
     rightFlexibleTopBottomView.autoresizingMask = [.FlexibleTopMargin, .FlexibleBottomMargin, .FlexibleLeftMargin]
     return rightFlexibleTopBottomView
   }()
+
+  private func bakeViewWithFrame(frame: CGRect) -> UIView {
+    let view = UIView(frame: frame)
+    view.layer.cornerRadius = self.dynamicType.cornerRadius
+    view.layer.borderWidth = self.dynamicType.borderWidth
+    view.layer.borderColor = self.dynamicType.borderColor
+    return view
+  }
 }

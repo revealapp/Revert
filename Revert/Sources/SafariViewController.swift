@@ -6,7 +6,7 @@ import SafariServices
 
 @available(iOS 9.0, *)
 final class SafariViewController: RevertViewController {
-  @IBAction func buttonActionHandler() {
+  @IBAction private func showSafariViewController() {
     let safariViewController = SFSafariViewController(URL: NSBundle.mainBundle().revealWebsiteURL)
     safariViewController.delegate = self
     UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
@@ -14,7 +14,7 @@ final class SafariViewController: RevertViewController {
   }
 }
 
-//MARK : SFSafariViewControllerDelegate
+// MARK:- SFSafariViewControllerDelegate
 @available(iOS 9.0, *)
 extension SafariViewController: SFSafariViewControllerDelegate {
   func safariViewControllerDidFinish(controller: SFSafariViewController) {

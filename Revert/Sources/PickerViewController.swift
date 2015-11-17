@@ -7,7 +7,7 @@ final class PickerViewController: RevertViewController {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
 }
 
-// MARK: UIPickerViewDataSource
+// MARK:- UIPickerViewDataSource
 extension PickerViewController: UIPickerViewDataSource {
   func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
     return 1
@@ -18,7 +18,7 @@ extension PickerViewController: UIPickerViewDataSource {
   }
 }
 
-// MARK: UIPickerViewDelegate
+// MARK:- UIPickerViewDelegate
 extension PickerViewController: UIPickerViewDelegate {
   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return self.collection.items.first?[row].name

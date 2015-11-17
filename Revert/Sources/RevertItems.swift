@@ -20,6 +20,10 @@ enum RevertItems: String {
     return data
   }
 
+  // MARK: Private
+  private static let fileExtension = "plist"
+  private static let subfolder = "Data"
+
   private var invalidContentError: String {
     return "Invalid content: \(self.rawValue).\(self.dynamicType.fileExtension)"
   }
@@ -35,7 +39,4 @@ enum RevertItems: String {
     }
     return bundle
   }
-
-  private static let fileExtension = "plist"
-  private static let subfolder = "Data"
 }

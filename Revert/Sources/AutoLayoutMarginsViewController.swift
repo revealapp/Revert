@@ -4,12 +4,6 @@
 import UIKit
 
 final class AutoLayoutMarginsViewController: RevertViewController {
-  @IBOutlet private weak var centerView: UIView!
-  @IBOutlet private weak var slider: UISlider!
-  @IBOutlet private weak var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet private weak var containerView: UIView!
-  @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -24,8 +18,6 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     }
   }
 
-  private var lastUpdateSquaresWidthSize: CGSize?
-
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
@@ -35,18 +27,28 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     }
   }
 
+  // MARK: Private
+
   private static let interSquareSpacing: CGFloat = 20
+
+  private var lastUpdateSquaresWidthSize: CGSize?
+
+  @IBOutlet private weak var centerView: UIView!
+  @IBOutlet private weak var slider: UISlider!
+  @IBOutlet private weak var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet private weak var containerView: UIView!
+  @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
+
+  @IBAction private func sliderValueChanged(sender: UISlider) {
+    if #available(iOS 8.0, *) {
+      let margin = CGFloat(sender.value)
+      self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+    }
+  }
 
   private func updateSquareWidths() {
     let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
     let centerWidth = (minDistance - (4 * self.dynamicType.interSquareSpacing)) / 3
     self.centerViewWidthConstraint.constant = centerWidth
-  }
-
-  @IBAction func sliderValueChanged(sender: UISlider) {
-    if #available(iOS 8.0, *) {
-      let margin = CGFloat(sender.value)
-      self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
-    }
   }
 }
