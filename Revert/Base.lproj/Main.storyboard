@@ -2384,7 +2384,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonActionHandler" destination="8wk-Ae-Mic" eventType="touchUpInside" id="8Kx-4U-ihu"/>
+                                    <action selector="showSafariViewController" destination="8wk-Ae-Mic" eventType="touchDragInside" id="fis-1x-M8q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3273,7 +3273,7 @@
                     <navigationItem key="navigationItem" title="Info" id="t1g-of-3zj">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Ncf-bX-mOM">
                             <connections>
-                                <action selector="doneButtonTapped:" destination="4Px-36-ahp" id="QsH-M1-jFw"/>
+                                <action selector="dismiss:" destination="4Px-36-ahp" id="kUv-LO-POR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -5018,7 +5018,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yKn-kh-YUx"/>
+        <segue reference="gSb-RG-pTo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

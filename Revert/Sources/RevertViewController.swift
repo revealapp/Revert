@@ -19,7 +19,7 @@ private extension UIViewController {
   }
 }
 
-// MARK: UIViewController
+// MARK:- UIViewController
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -42,7 +42,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
   }
 }
 
-// MARK: UITableViewController
+// MARK:- UITableViewController
 class RevertTableViewController: UITableViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -65,7 +65,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
   }
 }
 
-// MARK: UICollectionViewController
+// MARK:- UICollectionViewController
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -88,7 +88,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
   }
 }
 
-// MARK: GLKViewController
+// MARK:- GLKViewController
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
   final var item: HomeItem?
 

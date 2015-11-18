@@ -5,55 +5,6 @@ import UIKit
 import WebKit
 
 final class WebViewController: RevertViewController {
-  private let request = NSURLRequest(URL: NSBundle.mainBundle().revealWebsiteURL)
-
-  private lazy var uiWebView: UIWebView = {
-    let webView = UIWebView()
-    webView.delegate = self
-    webView.loadRequest(self.request)
-    return webView
-  }()
-
-  @available (iOS 8.0, *)
-  private lazy var wkWebView: WKWebView = {
-    let webView = WKWebView()
-    webView.navigationDelegate = self
-    webView.loadRequest(self.request)
-    return webView
-  }()
-
-
-  private enum Type: Int {
-    case UIWebView = 0
-    case WKWebView = 1
-  }
-
-  private func showFailAlert() {
-    UIAlertView(
-      title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
-      message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet an try again.", comment: "Alert message on content failed loading"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading")
-      ).show()
-  }
-
-  private var currentWebView: UIView?
-  private var topConstraint: NSLayoutConstraint?
-
-  private func setupWebView(webView: UIView) {
-    webView.translatesAutoresizingMaskIntoConstraints = false
-
-    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0)
-    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
-    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0)
-    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0)
-
-    self.currentWebView = webView
-    self.view.addSubview(webView)
-    self.view.addConstraints([leftConstraint, rightConstraint, topConstraint, bottomConstraint])
-    self.topConstraint = topConstraint
-  }
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -79,15 +30,64 @@ final class WebViewController: RevertViewController {
     }
   }
 
+  // MARK: Private
+
+  private enum Type: Int {
+    case UIWebView = 0
+    case WKWebView = 1
+  }
+
+  private let request = NSURLRequest(URL: NSBundle.mainBundle().revealWebsiteURL)
+  private var currentWebView: UIView?
+  private var topConstraint: NSLayoutConstraint?
+
+  private lazy var uiWebView: UIWebView = {
+    let webView = UIWebView()
+    webView.delegate = self
+    webView.loadRequest(self.request)
+    return webView
+  }()
+
   @available (iOS 8.0, *)
-  @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
+  private lazy var wkWebView: WKWebView = {
+    let webView = WKWebView()
+    webView.navigationDelegate = self
+    webView.loadRequest(self.request)
+    return webView
+  }()
+
+  @available (iOS 8.0, *)
+  @IBAction private func segmentedControlValueChanged(sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView?.removeFromSuperview()
     self.setupWebView(nextWebView)
   }
+
+  private func setupWebView(webView: UIView) {
+    webView.translatesAutoresizingMaskIntoConstraints = false
+
+    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0)
+    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
+    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0)
+    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0)
+
+    self.currentWebView = webView
+    self.view.addSubview(webView)
+    self.view.addConstraints([leftConstraint, rightConstraint, topConstraint, bottomConstraint])
+    self.topConstraint = topConstraint
+  }
+
+  private func showFailAlert() {
+    UIAlertView(
+      title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
+      message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet an try again.", comment: "Alert message on content failed loading"),
+      delegate: nil,
+      cancelButtonTitle: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading")
+      ).show()
+  }
 }
 
-// MARK: UIWebViewDelegate
+// MARK:- UIWebViewDelegate
 extension WebViewController: UIWebViewDelegate {
   func webViewDidStartLoad(webView: UIWebView) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true
@@ -98,7 +98,7 @@ extension WebViewController: UIWebViewDelegate {
   }
 }
 
-// MARK: WKNavigationDelegate
+// MARK:- WKNavigationDelegate
 @available(iOS 8.0, *)
 extension WebViewController: WKNavigationDelegate {
   func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {

@@ -4,17 +4,25 @@
 import UIKit
 
 final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
+  override func prepareLayout() {
+    super.prepareLayout()
+
+    let itemWidth = self.itemWidth
+    self.itemSize = CGSize(width: itemWidth, height: itemWidth)
+  }
+
+  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+    return newBounds.size != self.collectionView?.bounds.size
+  }
+
+  // MARK: Private
+
   private static let minimumColumnsForLayout = 2
   private static let maximumColumnsForLayout = 3
   private static let minimumCellWidth: CGFloat = 150
 
-  private func itemWidthForNumberOfColumns(numberOfColumns: Int) -> CGFloat {
-    guard let collectionView = self.collectionView else {
-      return 0
-    }
-
-    let totalPadding = CGFloat(numberOfColumns - 1) * self.minimumInteritemSpacing + self.sectionInset.left + self.sectionInset.right
-    return (collectionView.bounds.width - totalPadding) / CGFloat(numberOfColumns)
+  private var itemWidth: CGFloat {
+    return self.itemWidthForNumberOfColumns(self.numberOfColumns)
   }
 
   private var numberOfColumns: Int {
@@ -25,18 +33,12 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
   }
 
-  private var itemWidth: CGFloat {
-    return self.itemWidthForNumberOfColumns(self.numberOfColumns)
-  }
+  private func itemWidthForNumberOfColumns(numberOfColumns: Int) -> CGFloat {
+    guard let collectionView = self.collectionView else {
+      return 0
+    }
 
-  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
-    return newBounds.size != self.collectionView?.bounds.size
-  }
-
-  override func prepareLayout() {
-    super.prepareLayout()
-
-    let itemWidth = self.itemWidth
-    self.itemSize = CGSize(width: itemWidth, height: itemWidth)
+    let totalPadding = CGFloat(numberOfColumns - 1) * self.minimumInteritemSpacing + self.sectionInset.left + self.sectionInset.right
+    return (collectionView.bounds.width - totalPadding) / CGFloat(numberOfColumns)
   }
 }

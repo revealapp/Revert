@@ -4,15 +4,6 @@
 import Foundation
 
 struct HomeItem: Collectable, Requirement {
-  private enum Attributes: String {
-    case Title = "title"
-    case InfoFilename = "infoFilename"
-    case Icon = "iconName"
-    case Segue = "segueIdentifier"
-    case Push = "isPush"
-    case RequiredClassName = "requiredClassName"
-  }
-
   let title: String
   let infoFilename: String?
   let iconName: String
@@ -33,6 +24,17 @@ struct HomeItem: Collectable, Requirement {
     self.segueIdentifier = segueIdentifier
     self.isPush = dictionary[Attributes.Push.rawValue] as? Bool ?? true
     self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+  }
+
+  // MARK: Private
+
+  private enum Attributes: String {
+    case Title = "title"
+    case InfoFilename = "infoFilename"
+    case Icon = "iconName"
+    case Segue = "segueIdentifier"
+    case Push = "isPush"
+    case RequiredClassName = "requiredClassName"
   }
 }
 

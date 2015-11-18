@@ -4,25 +4,6 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
-  private var collection = CollectableCollection<HomeItem>(items: .Home)
-  private var dataSource: DataSource<HomeItem, HomeCell>
-  private var isSplitViewControllerCollapsed: Bool {
-    // If self.splitViewController is nil then we're on iOS7 on phone, i.e equivalent to collapsed mode
-    return self.splitViewController?.backwardCompatibleCollapsed ?? true
-  }
-
-  private func deselectSelectedRowIfNeeded() {
-    // Deselects the selected cell if the split view controller is collapsed
-    guard self.isSplitViewControllerCollapsed else {
-      return
-    }
-
-    if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
-      self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
-    }
-  }
-
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -76,9 +57,29 @@ final class HomeViewController: UITableViewController {
       }
     }
   }
-}
 
-// MARK: UITableViewDelegate
+  // MARK: Private
+
+  private var collection = CollectableCollection<HomeItem>(items: .Home)
+  private var dataSource: DataSource<HomeItem, HomeCell>
+  private var isSplitViewControllerCollapsed: Bool {
+    // If self.splitViewController is nil then we're on iOS7 on phone, i.e equivalent to collapsed mode
+    return self.splitViewController?.backwardCompatibleCollapsed ?? true
+  }
+
+  private func deselectSelectedRowIfNeeded() {
+    // Deselects the selected cell if the split view controller is collapsed
+    guard self.isSplitViewControllerCollapsed else {
+      return
+    }
+
+    if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+      self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+    }
+  }
+  }
+
+// MARK:- UITableViewDelegate
 extension HomeViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection[indexPath]

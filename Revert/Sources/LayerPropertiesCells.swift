@@ -4,13 +4,15 @@
 import UIKit
 
 final class CATextLayerCell: CollectionViewCell {
-  @IBOutlet private weak var textLayerView: CATextLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureTextLayer(self.textLayerView.textLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var textLayerView: CATextLayerView!
 
   private static func configureTextLayer(textLayer: CATextLayer) {
     textLayer.string = "I am a quite long CATextLayer string."
@@ -23,13 +25,15 @@ final class CATextLayerCell: CollectionViewCell {
 }
 
 final class CAEmitterLayerCell: CollectionViewCell {
-  @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureEmitterLayer(self.emitterLayerView.emitterLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
 
   private static func configureEmitterLayer(emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
@@ -59,13 +63,15 @@ final class CAEmitterLayerCell: CollectionViewCell {
 }
 
 final class CAShapeLayerCell: CollectionViewCell {
-  @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureShapeLayer(self.shapeLayerView.shapeLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
 
   private static func configureShapeLayer(shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
@@ -103,13 +109,15 @@ final class CAScrollLayerCell: CollectionViewCell {
 }
 
 final class CATiledLayerCell: CollectionViewCell {
-  @IBOutlet private weak var tiledLayerView: CATiledLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureTiledLayer(self.tiledLayerView.tiledLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var tiledLayerView: CATiledLayerView!
 
   private static func configureTiledLayer(tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
@@ -122,13 +130,15 @@ final class CATiledLayerCell: CollectionViewCell {
 }
 
 final class CAGradientLayerCell: CollectionViewCell {
-  @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureGradientLayer(self.gradientLayerView.gradientLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
 
   private static func configureGradientLayer(gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
@@ -153,13 +163,15 @@ final class CAGradientLayerCell: CollectionViewCell {
 }
 
 final class CAReplicatorLayerCell: CollectionViewCell {
-  @IBOutlet private weak var replicatorLayerView: CAReplicatorLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureReplicatorLayer(self.replicatorLayerView.replicatorLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var replicatorLayerView: CAReplicatorLayerView!
 
   private static func configureReplicatorLayer(replicatorLayer: CAReplicatorLayer) {
     let circleWidth: CGFloat = 20
@@ -184,13 +196,15 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 }
 
 final class CAEAGLLayerCell: CollectionViewCell {
-  @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
     self.dynamicType.configureAeglLayer(self.aegLayerView.aeglLayer)
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
 
   private static func configureAeglLayer(aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5

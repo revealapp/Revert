@@ -11,6 +11,8 @@ final class HairlineConstraint: NSLayoutConstraint {
     self.constant = self.dynamicType.constantValue
   }
 
+  // MARK: Private
+
   private static var constantValue: CGFloat {
     return 1 / UIScreen.mainScreen().scale
   }

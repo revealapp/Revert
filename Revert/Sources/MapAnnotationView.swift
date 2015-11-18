@@ -4,13 +4,6 @@
 import MapKit
 
 final class MapAnnotation: NSObject, MKAnnotation {
-  private enum Attributes: String {
-    case Title = "title"
-    case Subtitle = "subtitle"
-    case Latitude = "latitude"
-    case Longitude = "longitude"
-  }
-
   let coordinate: CLLocationCoordinate2D
   let title: String?
   let subtitle: String?
@@ -36,5 +29,14 @@ final class MapAnnotation: NSObject, MKAnnotation {
     self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
     super.init()
+  }
+
+  // MARK: Private
+
+  private enum Attributes: String {
+    case Title = "title"
+    case Subtitle = "subtitle"
+    case Latitude = "latitude"
+    case Longitude = "longitude"
   }
 }

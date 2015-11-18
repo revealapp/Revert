@@ -4,12 +4,6 @@
 import Foundation
 
 struct Item: Collectable, Requirement {
-  private enum Attributes: String {
-    case Title = "title"
-    case Cell = "cellIdentifier"
-    case RequiredClassName = "requiredClassName"
-  }
-
   let title: String
   let cellIdentifier: String
   let requiredClassName: String?
@@ -23,5 +17,13 @@ struct Item: Collectable, Requirement {
     self.title = title
     self.cellIdentifier = cellIdentifier
     self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+  }
+
+  // MARK: Private
+
+  private enum Attributes: String {
+    case Title = "title"
+    case Cell = "cellIdentifier"
+    case RequiredClassName = "requiredClassName"
   }
 }

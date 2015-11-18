@@ -4,15 +4,24 @@
 import UIKit
 
 final class AutoResizingMaskViewController: RevertViewController {
-  @IBOutlet private weak var outterView: UIView!
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+
+    self.addSubViewsIfNeeded()
+  }
+
+  // MARK: Private
 
   private var viewsReady = false
+
+  @IBOutlet private weak var outterView: UIView!
 
   private func addSubViewsIfNeeded() {
     // Only perform this action once
     if self.viewsReady {
       return
     }
+
     self.viewsReady = true
 
     let viewSource = AutoResizingMaskViewSource(bounds: self.outterView.bounds)
@@ -26,11 +35,5 @@ final class AutoResizingMaskViewController: RevertViewController {
 
     // Right: Flexible Top / Bottom View
     viewSource.flexibleWidthHeightView.addSubview(viewSource.rightFlexibleTopBottomView)
-  }
-
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-
-    self.addSubViewsIfNeeded()
   }
 }

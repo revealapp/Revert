@@ -4,23 +4,13 @@
 import GLKit
 
 final class RevealOpenGLCube {
-  private var vertexBuffer: GLuint = 0
-  private var indexBuffer: GLuint = 0
-  private var vertexArray: GLuint = 0
-  private let effect = GLKBaseEffect()
-  private var rotation: Float = 0
-  private var computedModelViewMatrix: GLKMatrix4 {
-    var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
-    matrix = GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(25), 1, 0, 0)
-    return GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(self.rotation), 0, 1, 0)
-  }
-
   let context: EAGLContext
 
   init() {
     guard let context = EAGLContext(API: .OpenGLES2) else {
       fatalError("Failed to initialise context `.OpenGLES2`")
     }
+
     self.context = context
 
     self.setCurrentContext()
@@ -29,11 +19,6 @@ final class RevealOpenGLCube {
 
   deinit {
     self.unloadGL()
-  }
-
-  func setCurrentContext() {
-    let isContextSet = EAGLContext.setCurrentContext(self.context)
-    assert(isContextSet, "Failed to set current context")
   }
 
   func draw() {
@@ -48,11 +33,28 @@ final class RevealOpenGLCube {
     glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
   }
 
+  func setCurrentContext() {
+    let isContextSet = EAGLContext.setCurrentContext(self.context)
+    assert(isContextSet, "Failed to set current context")
+  }
+
   func updateWithAspectRatio(aspectRatio: Float, rotation: Float) {
     self.effect.transform.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65), aspectRatio, 4, 10)
-
     self.rotation += rotation
     self.effect.transform.modelviewMatrix = self.computedModelViewMatrix
+  }
+
+  // MARK: Private
+
+  private var vertexBuffer: GLuint = 0
+  private var indexBuffer: GLuint = 0
+  private var vertexArray: GLuint = 0
+  private let effect = GLKBaseEffect()
+  private var rotation: Float = 0
+  private var computedModelViewMatrix: GLKMatrix4 {
+    var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
+    matrix = GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(25), 1, 0, 0)
+    return GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(self.rotation), 0, 1, 0)
   }
 }
 
@@ -63,22 +65,16 @@ private extension RevealOpenGLCube {
     self.loadCube()
   }
 
-  func loadTexture() {
-    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
+  func unloadGL() {
+    let previousContext = EAGLContext.currentContext()
 
-    guard let image = UIImage(named: "reveal_pretty_flipped.jpg") else {
-      fatalError("Invalid texture image for OpenGLVC")
-    }
+    self.setCurrentContext()
 
-    let textureInfo: GLKTextureInfo
-    do {
-      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
-    } catch let error {
-      fatalError("Unable to load texture \(error)")
-    }
+    glDeleteBuffers(1, &self.vertexBuffer)
+    glDeleteBuffers(1, &self.indexBuffer)
+    glDeleteVertexArraysOES(1, &self.vertexArray)
 
-    self.effect.texture2d0.name = textureInfo.name
-    self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
+    EAGLContext.setCurrentContext(previousContext != self.context ? previousContext : nil)
   }
 
   func generateBindVertex() {
@@ -110,15 +106,21 @@ private extension RevealOpenGLCube {
     glBindVertexArrayOES(0)
   }
 
-  func unloadGL() {
-    let previousContext = EAGLContext.currentContext()
+  func loadTexture() {
+    let options: [String: NSNumber] = [GLKTextureLoaderOriginBottomLeft: false]
 
-    self.setCurrentContext()
+    guard let image = UIImage(named: "reveal_pretty_flipped.jpg") else {
+      fatalError("Invalid texture image for OpenGLVC")
+    }
 
-    glDeleteBuffers(1, &self.vertexBuffer)
-    glDeleteBuffers(1, &self.indexBuffer)
-    glDeleteVertexArraysOES(1, &self.vertexArray)
+    let textureInfo: GLKTextureInfo
+    do {
+      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
+    } catch let error {
+      fatalError("Unable to load texture \(error)")
+    }
 
-    EAGLContext.setCurrentContext(previousContext != self.context ? previousContext : nil)
+    self.effect.texture2d0.name = textureInfo.name
+    self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
   }
 }

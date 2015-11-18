@@ -4,7 +4,6 @@
 import UIKit
 
 final class HomeCell: BasicCell {
-  @IBOutlet private(set) weak var iconImageView: UIImageView!
 
   func updateSelectedBackgroundColor(isBlue isBlue: Bool) {
     if isBlue {
@@ -15,12 +14,13 @@ final class HomeCell: BasicCell {
       self.selectedBackgroundView = nil
     }
   }
+
+  // MARK: Private
+
+  @IBOutlet private(set) weak var iconImageView: UIImageView!
 }
 
 class BasicCell: UITableViewCell {
-  @IBOutlet private(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subtitleLabel: UILabel!
-
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -42,4 +42,9 @@ class BasicCell: UITableViewCell {
     self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     self.subtitleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
   }
+
+  // MARK: Private
+
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subtitleLabel: UILabel!
 }

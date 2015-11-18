@@ -4,10 +4,6 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
-  @IBOutlet private weak var progressView: UIProgressView!
-  @IBOutlet private weak var subView: UIView!
-  @IBOutlet private weak var slider: UISlider!
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -47,8 +43,13 @@ final class NonSerializableViewController: RevertViewController {
 
       alertView.show()
     }
-
   }
+
+  // MARK: Private
+
+  @IBOutlet private weak var progressView: UIProgressView!
+  @IBOutlet private weak var subView: UIView!
+  @IBOutlet private weak var slider: UISlider!
 
   private func makeSliderUnserializable() {
     // inf
@@ -63,12 +64,10 @@ final class NonSerializableViewController: RevertViewController {
 }
 
 extension NonSerializableViewController: UIAlertViewDelegate {
-
   func alertView(alertView: UIAlertView, willDismissWithButtonIndex buttonIndex: Int) {
     self.makeSliderUnserializable()
 
     // Only show the alert once
     self.slider.removeTarget(self, action: "warnBeforeCrash:", forControlEvents: .TouchUpInside)
   }
-
 }

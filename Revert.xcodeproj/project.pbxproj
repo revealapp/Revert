@@ -187,14 +187,14 @@
 			name = Layouts;
 			sourceTree = "<group>";
 		};
-		9A17423B1B09CF9C00BEDFAB /* SB/XIB */ = {
+		9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */ = {
 			isa = PBXGroup;
 			children = (
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				B59998E61BC36092002FE92C /* StackView.xib */,
 			);
-			name = SB/XIB;
+			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
 		};
 		9A17423C1B09CFAC00BEDFAB /* Strings */ = {
@@ -249,25 +249,25 @@
 			isa = PBXGroup;
 			children = (
 				9A6C75011BDE29DE00534680 /* Data */,
-				9A6C75051BDE2A0200534680 /* Docs */,
+				9A6C75051BDE2A0200534680 /* Documentation */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
-				9A17423B1B09CF9C00BEDFAB /* SB/XIB */,
+				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
 				9A17423C1B09CFAC00BEDFAB /* Strings */,
 			);
 			name = Resources;
 			path = Revert;
 			sourceTree = "<group>";
 		};
-		9A6C75051BDE2A0200534680 /* Docs */ = {
+		9A6C75051BDE2A0200534680 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
 				9A6C74FF1BDE297800534680 /* INFO.md */,
 				9AFAB7491B0DBDA00009707A /* LICENSE.md */,
 				9A1742381B09CCA100BEDFAB /* README.md */,
 			);
-			name = Docs;
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 		9A94E3F41AD63F040005BA44 /* Models */ = {
@@ -335,18 +335,18 @@
 			isa = PBXGroup;
 			children = (
 				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
-				9ADAA3C51ADC8D1F008CC87B /* DataSources */,
+				9ADAA3C51ADC8D1F008CC87B /* Data Sources */,
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
 				9A07D8DD1AE4B8260099C4CB /* Layouts */,
-				9ABEBA161AD4AEC900E3D998 /* Misc */,
+				9ABEBA161AD4AEC900E3D998 /* Miscellaneous */,
 				9A94E3F41AD63F040005BA44 /* Models */,
-				9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */,
+				9ABEBA0F1AD4ABE600E3D998 /* View Controllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		9ABEBA0F1AD4ABE600E3D998 /* ViewControllers */ = {
+		9ABEBA0F1AD4ABE600E3D998 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
@@ -374,10 +374,10 @@
 				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 			);
-			name = ViewControllers;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		9ABEBA161AD4AEC900E3D998 /* Misc */ = {
+		9ABEBA161AD4AEC900E3D998 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
 				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
@@ -390,16 +390,16 @@
 				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
 				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 			);
-			name = Misc;
+			name = Miscellaneous;
 			sourceTree = "<group>";
 		};
-		9ADAA3C51ADC8D1F008CC87B /* DataSources */ = {
+		9ADAA3C51ADC8D1F008CC87B /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
 				9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */,
 				9A63DFFE1BD6811B006D0A82 /* DataSource.swift */,
 			);
-			name = DataSources;
+			name = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
