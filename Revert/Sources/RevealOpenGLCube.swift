@@ -12,9 +12,6 @@ final class RevealOpenGLCube {
     }
 
     self.context = context
-
-    self.setCurrentContext()
-    self.loadGL()
   }
 
   deinit {
@@ -33,9 +30,9 @@ final class RevealOpenGLCube {
     glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
   }
 
-  func setCurrentContext() {
-    let isContextSet = EAGLContext.setCurrentContext(self.context)
-    assert(isContextSet, "Failed to set current context")
+  func load() {
+    self.setCurrentContext()
+    self.loadGL()
   }
 
   func updateWithAspectRatio(aspectRatio: Float, rotation: Float) {
@@ -59,6 +56,11 @@ final class RevealOpenGLCube {
 }
 
 private extension RevealOpenGLCube {
+  func setCurrentContext() {
+    let isContextSet = EAGLContext.setCurrentContext(self.context)
+    assert(isContextSet, "Failed to set current context")
+  }
+
   func loadGL() {
     self.loadTexture()
     self.generateBindVertex()
