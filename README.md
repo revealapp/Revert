@@ -1,4 +1,4 @@
-![Revert](http://images.revealapp.com.s3.amazonaws.com/revert_github/revert-header.jpg)
+![Revert](http://images.revealapp.com.s3.amazonaws.com/revert_github/revert_top.jpg)
 # REVEal Rendering Test - REVERT
 
 Revert is a reference iOS project developed to help test the performance and accuracy of [Reveal](http://revealapp.com), a runtime view hierarchy inspection tool from [Itty Bitty Apps](http://ittybittyapps.com). It contains a number of examples which highlight both common and edge case scenarios. Revert is a universal iOS 7+ app that supports both portrait and landscape orientations.
@@ -6,7 +6,10 @@ Revert is a reference iOS project developed to help test the performance and acc
 We're releasing Revert so the community can compare the features and accuracy of the various view debuggers on the market and for our own regression and feature testing.
 
 We've tried to include as many scenarios as possible, but if you'd like to add your own or suggest one that should be supported, please feel free to create a pull request or contact us directly via our [online support](http://support.revealapp.com).
+<br><br>
 
+
+![Revert](http://images.revealapp.com.s3.amazonaws.com/revert_github/revert.jpg) 
 ## Getting Started
 
 Follow the steps below to start inspecting Revert with Reveal:
