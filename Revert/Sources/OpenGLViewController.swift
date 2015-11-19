@@ -8,6 +8,8 @@ final class OpenGLViewController: RevertGLKViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.cube.load()
+
     self.glkView.context = self.cube.context
     self.glkView.delegate = self
   }
