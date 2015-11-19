@@ -5,12 +5,6 @@ import UIKit
 import MapKit
 
 final class MapViewController: RevertViewController {
-  @IBOutlet private weak var mapView: MKMapView!
-
-  private static let overlayLineWidth: CGFloat = 3
-  private static let overlayFillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)
-  private static let overlayStrokeColor = UIColor.revertDarkblueColor()
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -18,6 +12,14 @@ final class MapViewController: RevertViewController {
 
     self.mapView.region = Static.Region.Australia
   }
+
+  // MARK: Private
+
+  private static let overlayLineWidth: CGFloat = 3
+  private static let overlayFillColor = UIColor.revertTintColor().colorWithAlphaComponent(0.5)
+  private static let overlayStrokeColor = UIColor.revertDarkblueColor()
+
+  @IBOutlet private weak var mapView: MKMapView!
 
   private func addAnnotations() {
     let locations = RevertItems.MapLocations.data
@@ -29,7 +31,7 @@ final class MapViewController: RevertViewController {
   }
 }
 
-// MARK: MKMapViewDelegate
+// MARK:- MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
   func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKPolygon {

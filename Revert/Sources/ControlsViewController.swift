@@ -19,10 +19,6 @@ final class ControlsViewController: RevertCollectionViewController {
     }
   }
 
-  private var collection: CollectableCollection<Item>?
-  private var dataSource: ControlsDataSource?
-  private let keyboardHandler = KeyboardHandler()
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -47,4 +43,10 @@ final class ControlsViewController: RevertCollectionViewController {
   func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
     self.collectionView?.endEditing(true)
   }
+
+  // MARK: Private
+
+  private var collection: CollectableCollection<Item>?
+  private var dataSource: ControlsDataSource?
+  private let keyboardHandler = KeyboardHandler()
 }

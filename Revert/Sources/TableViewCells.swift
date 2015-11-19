@@ -4,23 +4,23 @@
 import UIKit
 
 final class HomeCell: BasicCell {
-  @IBOutlet private(set) weak var iconImageView: UIImageView!
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-
-    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      self.backgroundView = UIView()
-      self.selectedBackgroundView = UIView()
-      self.selectedBackgroundView?.backgroundColor = UIColor.revertTintColor()
+  func updateSelectedBackgroundColor(isBlue isBlue: Bool) {
+    if isBlue {
+      let selectedBackgroundView = UIView()
+      selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
+      self.selectedBackgroundView = selectedBackgroundView
+    } else {
+      self.selectedBackgroundView = nil
     }
   }
+
+  // MARK: Private
+
+  @IBOutlet private(set) weak var iconImageView: UIImageView!
 }
 
 class BasicCell: UITableViewCell {
-  @IBOutlet private(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subtitleLabel: UILabel!
-
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -29,7 +29,7 @@ class BasicCell: UITableViewCell {
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self)
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
   }
 
   override func awakeFromNib() {
@@ -42,4 +42,9 @@ class BasicCell: UITableViewCell {
     self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     self.subtitleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
   }
+
+  // MARK: Private
+
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subtitleLabel: UILabel!
 }

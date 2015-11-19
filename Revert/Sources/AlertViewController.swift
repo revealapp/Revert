@@ -4,16 +4,6 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
-  private var collection = CollectableCollection<Item>(items: .Alert)
-  private var dataSource: DataSource<Item, BasicCell>
-
-  private enum Identifier: String {
-    case AlertView = "alertview"
-    case ActionSheet = "actionsheet"
-    case AlertController = "alertcontroller"
-    case ActionController = "actioncontroller"
-  }
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -29,9 +19,21 @@ final class AlertViewController: RevertTableViewController {
 
     self.tableView.dataSource = self.dataSource
   }
+
+  // MARK: Private
+
+  private enum Identifier: String {
+    case AlertView = "alertview"
+    case ActionSheet = "actionsheet"
+    case AlertController = "alertcontroller"
+    case ActionController = "actioncontroller"
+  }
+
+  private var collection = CollectableCollection<Item>(items: .Alert)
+  private var dataSource: DataSource<Item, BasicCell>
 }
 
-// MARK: Presenters
+// MARK:- Presenters
 extension AlertViewController {
   @available(iOS 8.0, *)
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
@@ -55,7 +57,7 @@ extension AlertViewController {
   }
 }
 
-// MARK: UITableViewDelegate
+// MARK:- UITableViewDelegate
 extension AlertViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection[indexPath]

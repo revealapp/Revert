@@ -4,10 +4,6 @@
 import UIKit
 
 final class InfoViewController: UIViewController, SettableHomeItem {
-  @IBOutlet private weak var imageView: UIImageView!
-  @IBOutlet private weak var webView: UIWebView!
-  @IBOutlet private weak var titleLabel: UILabel!
-
   var item: HomeItem?
 
   override func viewDidLoad() {
@@ -17,20 +13,30 @@ final class InfoViewController: UIViewController, SettableHomeItem {
       fatalError("Item should be set before `-viewDidLoad`")
     }
 
+    guard let infoFilename = item.infoFilename else {
+      fatalError("Cannot display without a valid info filename")
+    }
+
     // Configure the view
     self.imageView.image = UIImage(named: item.iconName)
     self.titleLabel.text = item.title
 
-    let htmlString = infoHTMLWithContent(item.infoFilename)
+    let htmlString = infoHTMLWithContent(infoFilename)
     self.webView.loadHTMLString(htmlString, baseURL: nil)
   }
 
-  @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
+  // MARK: Private
+
+  @IBOutlet private weak var imageView: UIImageView!
+  @IBOutlet private weak var webView: UIWebView!
+  @IBOutlet private weak var titleLabel: UILabel!
+
+  @IBAction private func dismiss(sender: UIBarButtonItem) {
     self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
 }
 
-// MARK: UIWebViewDelegate
+// MARK:- UIWebViewDelegate
 extension InfoViewController: UIWebViewDelegate {
   func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
     if let URL = request.URL where URL != NSURL(string: "about:blank") {

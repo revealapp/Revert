@@ -19,7 +19,7 @@ private extension UIViewController {
   }
 }
 
-// MARK: UIViewController
+// MARK:- UIViewController
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -27,6 +27,10 @@ class RevertViewController: UIViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -38,7 +42,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
   }
 }
 
-// MARK: UITableViewController
+// MARK:- UITableViewController
 class RevertTableViewController: UITableViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -46,6 +50,10 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -57,7 +65,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
   }
 }
 
-// MARK: UICollectionViewController
+// MARK:- UICollectionViewController
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -65,6 +73,10 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -76,7 +88,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
   }
 }
 
-// MARK: GLKViewController
+// MARK:- GLKViewController
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -84,6 +96,10 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
+
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

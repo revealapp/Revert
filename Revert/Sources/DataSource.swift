@@ -7,11 +7,6 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
   typealias CellConfigurator = (Cell, object: Object) -> Void
   typealias FooterTitleRetriever = ((CollectableGroup<Object>) -> String?)?
 
-  private let collection: CollectableCollection<Object>
-  private let configureCell: CellConfigurator
-  private let cellIdentifier: String
-  private let titleForFooter: FooterTitleRetriever
-
   required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
     self.collection = collection
     self.configureCell = configureCell
@@ -20,6 +15,8 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
 
     super.init()
   }
+
+  // MARK: UITableViewDataSource
 
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return self.collection.countOfItems
@@ -54,4 +51,12 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
 
     return items.count > 0 ? items : nil
   }
+
+  // MARK: Private
+
+  private let collection: CollectableCollection<Object>
+  private let configureCell: CellConfigurator
+  private let cellIdentifier: String
+  private let titleForFooter: FooterTitleRetriever
+
 }

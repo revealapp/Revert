@@ -6,7 +6,6 @@ import UIKit
 import MediaPlayer
 
 final class VolumeView: MPVolumeView {
-
   override func layoutSubviews() {
     super.layoutSubviews()
 
@@ -18,6 +17,8 @@ final class VolumeView: MPVolumeView {
       self.center = CGPoint(x: superview.bounds.midX, y: self.center.y)
     }
   }
+
+  // MARK: Private
 
   private static func recursiveRemoveAnimationsOnView(view: UIView) {
     view.layer.removeAllAnimations()

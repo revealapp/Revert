@@ -50,7 +50,7 @@ final class CountriesViewController: RevertTableViewController {
   }
 }
 
-// MARK : UITableViewDelegate
+// MARK:- UITableViewDelegate
 extension CountriesViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)

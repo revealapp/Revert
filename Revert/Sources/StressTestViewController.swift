@@ -5,7 +5,7 @@ import UIKit
 
 final class StressTestViewController: RevertCollectionViewController { }
 
-// MARK: UICollectionViewDataSource
+// MARK:- UICollectionViewDataSource
 extension StressTestViewController {
 
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

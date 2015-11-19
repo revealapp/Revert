@@ -4,17 +4,8 @@
 import Foundation
 
 struct HomeItem: Collectable, Requirement {
-  private enum Attributes: String {
-    case Title = "title"
-    case InfoFilename = "infoFilename"
-    case Icon = "iconName"
-    case Segue = "segueIdentifier"
-    case Push = "isPush"
-    case RequiredClassName = "requiredClassName"
-  }
-
   let title: String
-  let infoFilename: String
+  let infoFilename: String?
   let iconName: String
   let segueIdentifier: String
   let isPush: Bool
@@ -22,18 +13,28 @@ struct HomeItem: Collectable, Requirement {
 
   init(dictionary: [String: AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
-      infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String,
       iconName = dictionary[Attributes.Icon.rawValue] as? String,
       segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String else {
         fatalError("Invalid `HomeItem` attributes")
     }
 
     self.title = title
-    self.infoFilename = infoFilename
+    self.infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String
     self.iconName = iconName
     self.segueIdentifier = segueIdentifier
     self.isPush = dictionary[Attributes.Push.rawValue] as? Bool ?? true
     self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+  }
+
+  // MARK: Private
+
+  private enum Attributes: String {
+    case Title = "title"
+    case InfoFilename = "infoFilename"
+    case Icon = "iconName"
+    case Segue = "segueIdentifier"
+    case Push = "isPush"
+    case RequiredClassName = "requiredClassName"
   }
 }
 
