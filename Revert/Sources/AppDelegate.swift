@@ -8,12 +8,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) || UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-      guard let splitViewController = self.window?.rootViewController as? UISplitViewController else {
-        fatalError("Root view controller should be a `UISplitViewController` on any device > iOS 7 or on iPads")
-      }
-      self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
+    guard let splitViewController = self.window?.rootViewController as? UISplitViewController else {
+      fatalError("Root view controller should always be a `UISplitViewController`")
     }
+    self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
 
     self.dynamicType.configureAppearance()
 

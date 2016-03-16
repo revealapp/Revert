@@ -25,9 +25,7 @@ final class WebViewController: RevertViewController {
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
 
-    if floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_0) {
-      self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
-    }
+    self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
   }
 
   // MARK: Private
