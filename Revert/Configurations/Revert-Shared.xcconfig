@@ -31,10 +31,6 @@ GCC_WARN_UNUSED_PARAMETER = YES
 
 INFOPLIST_FILE = $(SRCROOT)/Revert/Resources/Info.plist
 
-
-IPHONEOS_DEPLOYMENT_TARGET = 7.0
-
-
 // Runpath Search Paths
 // 
 // This is a list of paths to be added to the runpath search path list for the image

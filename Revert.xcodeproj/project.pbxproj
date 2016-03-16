@@ -611,7 +611,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -619,7 +618,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
