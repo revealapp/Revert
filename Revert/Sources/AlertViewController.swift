@@ -49,10 +49,8 @@ extension AlertViewController {
     case .ActionSheet:
       UIActionSheet.exampleActionSheet().showInView(fromView)
     default:
-      if #available(iOS 8.0, *) {
-        let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
-        self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
-      }
+      let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
+      self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
     }
   }
 }

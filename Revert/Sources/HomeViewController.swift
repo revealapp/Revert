@@ -15,9 +15,7 @@ final class HomeViewController: UITableViewController {
   }
 
   deinit {
-    if #available(iOS 8.0, *) {
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
-    }
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
   }
 
   override func viewDidLoad() {
@@ -26,9 +24,7 @@ final class HomeViewController: UITableViewController {
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
 
-    if #available (iOS 8.0, *) {
-      NSNotificationCenter.defaultCenter().addObserver(self, selector: "showDetailTargetDidChange:", name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
-    }
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showDetailTargetDidChange:", name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
   }
 
   override func viewWillAppear(animated: Bool) {

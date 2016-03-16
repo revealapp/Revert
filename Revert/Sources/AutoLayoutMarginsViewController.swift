@@ -7,15 +7,10 @@ final class AutoLayoutMarginsViewController: RevertViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    if #available(iOS 8.0, *) {
-      self.slider.value = 0
-      self.slider.minimumValue = 0
-      self.slider.maximumValue = 100
-      self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    } else {
-      self.slider.hidden = true
-      self.containerViewBottomConstraint.constant = 0
-    }
+    self.slider.value = 0
+    self.slider.minimumValue = 0
+    self.slider.maximumValue = 100
+    self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
   }
 
   override func viewDidLayoutSubviews() {
@@ -40,10 +35,8 @@ final class AutoLayoutMarginsViewController: RevertViewController {
   @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
 
   @IBAction private func sliderValueChanged(sender: UISlider) {
-    if #available(iOS 8.0, *) {
-      let margin = CGFloat(sender.value)
-      self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
-    }
+    let margin = CGFloat(sender.value)
+    self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
   }
 
   private func updateSquareWidths() {
