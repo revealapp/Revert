@@ -28,16 +28,6 @@ extension Collection {
     return self.items.count
   }
 
-  func generate() -> AnyGenerator<CollectionObject> {
-    var index = 0
-    return anyGenerator {
-      if index < self.items.count {
-        return self.items[index++]
-      }
-      return nil
-    }
-  }
-
   subscript(i: Int) -> CollectionObject {
     return self.items[i]
   }
