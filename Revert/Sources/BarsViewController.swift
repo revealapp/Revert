@@ -8,7 +8,7 @@ final class BarsViewController: RevertViewController {
     super.viewDidLoad()
 
     // Setup Dismiss Tap Gesture
-    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "viewTapped:")
+    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped(_:)))
     self.dismissContainerView.addGestureRecognizer(dismissKeyboardGestureRecogniser)
 
     guard let firstTabBarItem = self.tabBar.items?.first else {

@@ -7,7 +7,7 @@ class CollectionViewCell: UICollectionViewCell {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "applyDynamicType:", name:
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
       UIContentSizeCategoryDidChangeNotification, object: nil)
   }
 
@@ -61,7 +61,7 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
   private var textFieldInputView: UIDatePicker {
     let picker = UIDatePicker()
     picker.datePickerMode = .Date
-    picker.addTarget(self, action: "datePickerChanged:", forControlEvents: .ValueChanged)
+    picker.addTarget(self, action: #selector(self.datePickerChanged(_:)), forControlEvents: .ValueChanged)
     picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
     return picker
   }
@@ -69,7 +69,7 @@ final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewD
   private var textFieldInputAccessoryView: UIView {
     let size = CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 44)
     let toolBar = UIToolbar(frame: CGRect(origin: CGPointZero, size: size))
-    let doneBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "doneButtonTapped:")
+    let doneBarButtonItem = UIBarButtonItem(title: "Done", style: .Done, target: self, action: #selector(self.doneButtonTapped(_:)))
     let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
 
     doneBarButtonItem.tintColor = UIColor.revertTintColor()

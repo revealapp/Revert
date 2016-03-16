@@ -36,7 +36,7 @@ final class ControlsViewController: RevertCollectionViewController {
     self.collectionView!.dataSource = self.dataSource
 
     // Setup Dismiss Tap Gesture
-    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: "collectionViewTapped:")
+    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(self.collectionViewTapped(_:)))
     self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
   }
 

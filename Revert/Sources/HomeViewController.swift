@@ -24,7 +24,7 @@ final class HomeViewController: UITableViewController {
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showDetailTargetDidChange:", name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.showDetailTargetDidChange(_:)), name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
   }
 
   override func viewWillAppear(animated: Bool) {

@@ -49,8 +49,8 @@ final class KeyboardHandler: NSObject {
   // MARK: Private
 
   private func registerNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillShowNotification, object: nil)
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
   }
 
   private func unregisterNotifications() {
