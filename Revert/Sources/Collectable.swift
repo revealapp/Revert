@@ -8,7 +8,7 @@ protocol Collectable {
 }
 
 protocol Collection: CollectionType, SequenceType {
-  typealias CollectionObject
+  associatedtype CollectionObject
 
   var items: [CollectionObject] { get }
   var startIndex: Int { get }
