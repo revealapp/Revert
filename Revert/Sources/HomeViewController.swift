@@ -59,8 +59,7 @@ final class HomeViewController: UITableViewController {
   private var collection = CollectableCollection<HomeItem>(items: .Home)
   private var dataSource: DataSource<HomeItem, HomeCell>
   private var isSplitViewControllerCollapsed: Bool {
-    // If self.splitViewController is nil then we're on iOS7 on phone, i.e equivalent to collapsed mode
-    return self.splitViewController?.backwardCompatibleCollapsed ?? true
+    return self.splitViewController?.collapsed ?? true
   }
 
   private func deselectSelectedRowIfNeeded() {
