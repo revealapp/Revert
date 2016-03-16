@@ -427,7 +427,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
