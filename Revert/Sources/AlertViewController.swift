@@ -35,7 +35,6 @@ final class AlertViewController: RevertTableViewController {
 
 // MARK:- Presenters
 extension AlertViewController {
-  @available(iOS 8.0, *)
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView

@@ -46,7 +46,6 @@ final class WebViewController: RevertViewController {
     return webView
   }()
 
-  @available (iOS 8.0, *)
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
@@ -54,7 +53,6 @@ final class WebViewController: RevertViewController {
     return webView
   }()
 
-  @available (iOS 8.0, *)
   @IBAction private func segmentedControlValueChanged(sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView?.removeFromSuperview()
@@ -97,7 +95,6 @@ extension WebViewController: UIWebViewDelegate {
 }
 
 // MARK:- WKNavigationDelegate
-@available(iOS 8.0, *)
 extension WebViewController: WKNavigationDelegate {
   func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true
