@@ -51,12 +51,3 @@ final class NonSerializableViewController: RevertViewController {
     self.subView.contentScaleFactor = -1 / 0
   }
 }
-
-extension NonSerializableViewController: UIAlertViewDelegate {
-  func alertView(alertView: UIAlertView, willDismissWithButtonIndex buttonIndex: Int) {
-    self.makeSliderUnserializable()
-
-    // Only show the alert once
-    self.slider.removeTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
-  }
-}

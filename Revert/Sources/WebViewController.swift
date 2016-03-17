@@ -74,12 +74,20 @@ final class WebViewController: RevertViewController {
   }
 
   private func showFailAlert() {
-    UIAlertView(
+    let alertViewController = UIAlertController(
       title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
-      message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet an try again.", comment: "Alert message on content failed loading"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading")
-      ).show()
+      message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet and try again.", comment: "Alert message on content failed loading"),
+      preferredStyle: .Alert
+    )
+    
+    alertViewController.addAction(UIAlertAction(
+      title: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading"),
+      style: .Cancel,
+      handler: nil)
+    )
+    
+    alertViewController.popoverPresentationController?.sourceView = self.view
+    self.presentViewController(alertViewController, animated: true, completion: nil)
   }
 }
 
