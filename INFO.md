@@ -47,11 +47,11 @@ A selection of stock UIKit bar views:
 
 ## Alert View
 
-Shows the new iOS 8 and old iOS 7 methods of presenting alert views and action sheets. `UIAlertController` is only available on iOS8, so it will not be shown on devices running iOS 7.
+Shows the new and legacy methods of presenting alert views and action sheets.
 
-Under iOS 7, alert views and action sheets are not inspectable through _Reveal_ as they are removed from the application’s list of windows. 
+Before iOS 8, alert views and action sheets are not inspectable through _Reveal_ as they are removed from the application’s list of windows. 
 
-On iOS8, `UIAlertController` is available and presented as a regular `UIViewController` and can be inspected via _Reveal_. See [this knowledge base article](http://support.revealapp.com/kb/faq/why-cant-i-inspect-uialertviews-in-reveal-in-ios-7) for more information.
+On iOS 8, `UIAlertController` is available and presented as a regular `UIViewController` and can be inspected via _Reveal_. See [this knowledge base article](http://support.revealapp.com/kb/faq/why-cant-i-inspect-uialertviews-in-reveal-in-ios-7) for more information.
 
 ## Picker View
 
