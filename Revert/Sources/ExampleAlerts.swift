@@ -3,7 +3,6 @@
 
 import UIKit
 
-@available(iOS 8.0, *)
 extension UIAlertController {
   static func exampleAlertControllerWithStyle(style: UIAlertControllerStyle) -> UIAlertController {
     let alertViewController = UIAlertController(

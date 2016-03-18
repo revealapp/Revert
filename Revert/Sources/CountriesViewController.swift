@@ -25,14 +25,14 @@ final class CountriesViewController: RevertTableViewController {
     self.tableView.dataSource = self.dataSource
 
     self.refreshControl = UIRefreshControl()
-    self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
+    self.refreshControl!.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
   }
 
   func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
     self.refreshTimer?.invalidate()
 
     // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
-    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
+    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
   }
 
   func didLoadDummyData(timer: NSTimer) {

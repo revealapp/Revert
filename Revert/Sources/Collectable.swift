@@ -8,7 +8,7 @@ protocol Collectable {
 }
 
 protocol Collection: CollectionType, SequenceType {
-  typealias CollectionObject
+  associatedtype CollectionObject
 
   var items: [CollectionObject] { get }
   var startIndex: Int { get }
@@ -26,16 +26,6 @@ extension Collection {
 
   var countOfItems: Int {
     return self.items.count
-  }
-
-  func generate() -> AnyGenerator<CollectionObject> {
-    var index = 0
-    return anyGenerator {
-      if index < self.items.count {
-        return self.items[index++]
-      }
-      return nil
-    }
   }
 
   subscript(i: Int) -> CollectionObject {

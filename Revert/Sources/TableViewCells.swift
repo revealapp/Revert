@@ -24,7 +24,7 @@ class BasicCell: UITableViewCell {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "applyDynamicType:", name:
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
       UIContentSizeCategoryDidChangeNotification, object: nil)
   }
 
