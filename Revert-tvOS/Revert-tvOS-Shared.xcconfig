@@ -1,5 +1,5 @@
 //
-// Revert-Shared.xcconfig
+// Revert-tvOS-Shared.xcconfig
 
 
 // Asset Catalog App Icon Set Name
@@ -7,7 +7,7 @@
 // Name of the asset catalog app icon set whose contents will be merged into the
 // Info.plist.
 
-ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_APPICON_NAME = App Icon & Top Shelf Image
 
 
 // Asset Catalog Launch Image Set Name
@@ -29,7 +29,7 @@ GCC_WARN_UNUSED_PARAMETER = YES
 // This is the project-relative path to the plist file that contains the Info.plist
 // information used by bundles.
 
-INFOPLIST_FILE = $(SRCROOT)/Revert/Resources/Info.plist
+INFOPLIST_FILE = $(SRCROOT)/Revert-tvOS/Info.plist
 
 
 TVOS_DEPLOYMENT_TARGET = 9.2

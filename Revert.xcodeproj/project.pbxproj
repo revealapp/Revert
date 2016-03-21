@@ -564,7 +564,7 @@
 		};
 		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB27205A1C9B8E44002E53EE /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
+			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list */;
 			buildPhases = (
 				BB2720481C9B8E44002E53EE /* Sources */,
 				BB2720491C9B8E44002E53EE /* Frameworks */,
@@ -855,6 +855,15 @@
 			buildConfigurations = (
 				9A6850DA1AD4A20E00ACCE29 /* Debug */,
 				9A6850DB1AD4A20E00ACCE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAA731C9FB25B002B1B0C /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DAA711C9FB25B002B1B0C /* Debug */,
+				BB6DAA721C9FB25B002B1B0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
