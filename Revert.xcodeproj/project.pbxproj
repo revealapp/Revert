@@ -99,6 +99,7 @@
 		BB2720C21C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */; };
 		BB2720C41C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */; };
 		BB2720C71C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */; };
+		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,7 +152,7 @@
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
-		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
+		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = ../Sources/CountriesViewController.swift; sourceTree = "<group>"; };
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
 		9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenGLViewController.swift; path = Revert/Sources/OpenGLViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +163,7 @@
 		9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Revert/Sources/CALayer+Revert.swift"; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
-		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
+		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9AD7F2131BF3817C00745D18 /* UISplitViewController+BackwardsCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UISplitViewController+BackwardsCompatibility.swift"; path = "Revert/Sources/UISplitViewController+BackwardsCompatibility.swift"; sourceTree = "<group>"; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
@@ -390,9 +391,7 @@
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
 				9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
-				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
-				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
 				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
 				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
@@ -521,6 +520,7 @@
 		BB2720BF1C9F8DD0002E53EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BB2720C81C9F9265002E53EE /* View Controllers */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -533,6 +533,15 @@
 				BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */,
 			);
 			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720C81C9F9265002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
+				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -731,6 +740,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */,
 				BB2720B61C9BCD19002E53EE /* Country.swift in Sources */,
 				BB2720B91C9BCD19002E53EE /* Item.swift in Sources */,
 				BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */,
