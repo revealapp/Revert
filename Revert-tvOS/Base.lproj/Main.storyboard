@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -89,8 +89,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-Dl-hFo">
-                                            <rect key="frame" x="1759" y="15" width="73" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-Dl-hFo">
+                                            <rect key="frame" x="1124" y="15" width="73" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" id="upD-5Q-jwC"/>
                                             </constraints>

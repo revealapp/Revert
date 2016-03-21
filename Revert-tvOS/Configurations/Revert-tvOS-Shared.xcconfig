@@ -29,7 +29,7 @@ GCC_WARN_UNUSED_PARAMETER = YES
 // This is the project-relative path to the plist file that contains the Info.plist
 // information used by bundles.
 
-INFOPLIST_FILE = $(SRCROOT)/Revert-tvOS/Info.plist
+INFOPLIST_FILE = $(SRCROOT)/Revert-tvOS/Resources/Info.plist
 
 
 // Runpath Search Paths
