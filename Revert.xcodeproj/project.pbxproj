@@ -76,6 +76,29 @@
 		B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
 		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
+		BB27204F1C9B8E44002E53EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27204E1C9B8E44002E53EE /* AppDelegate.swift */; };
+		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
+		BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Assets.xcassets */; };
+		BB2720A01C9B92B7002E53EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27209F1C9B92B7002E53EE /* HomeViewController.swift */; };
+		BB2720A21C9B94B8002E53EE /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* CollectableCollection.swift */; };
+		BB2720A31C9B94BE002E53EE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63DFFE1BD6811B006D0A82 /* DataSource.swift */; };
+		BB2720A41C9B94D2002E53EE /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
+		BB2720A51C9B9551002E53EE /* RevertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C71BB2BA4D00768DAA /* RevertItems.swift */; };
+		BB2720A61C9B9571002E53EE /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE511751BB2F51C0087A68D /* Collectable.swift */; };
+		BB2720A71C9B9571002E53EE /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */; };
+		BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
+		BB2720AD1C9B975A002E53EE /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB2720AC1C9B975A002E53EE /* Data */; };
+		BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
+		BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
+		BB2720B01C9B9A16002E53EE /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
+		BB2720B41C9BCC8E002E53EE /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
+		BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4BC11B0230B300F6117D /* RevertViewController.swift */; };
+		BB2720B61C9BCD19002E53EE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
+		BB2720B91C9BCD19002E53EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
+		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB2720C21C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */; };
+		BB2720C41C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */; };
+		BB2720C71C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +187,17 @@
 		B59998EB1BC3848D002FE92C /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Revert/Sources/Requirement.swift; sourceTree = "<group>"; };
 		B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Revert/Sources/StackViewController.swift; sourceTree = "<group>"; };
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
+		BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB27204E1C9B8E44002E53EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB2720571C9B8E44002E53EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB27209F1C9B92B7002E53EE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB2720AC1C9B975A002E53EE /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
+		BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2720491C9B8E44002E53EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,12 +267,9 @@
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
-				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
-				9A9BD1E31BD67B17001A439D /* Configurations */,
-				9A2F94701B140B0E007E51B1 /* Scripts */,
-				9A6850BA1AD4A20E00ACCE29 /* Resources */,
-				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
-				9A6850B91AD4A20E00ACCE29 /* Products */,
+				BB27205B1C9B8E9E002E53EE /* Revert */,
+				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
+				BB2720BD1C9F8DAE002E53EE /* Shared */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -241,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6850B81AD4A20E00ACCE29 /* Revert.app */,
+				BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,9 +328,6 @@
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
-				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
-				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
 				9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */,
 				9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */,
 				9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */,
@@ -402,6 +438,103 @@
 			name = "Data Sources";
 			sourceTree = "<group>";
 		};
+		BB27204D1C9B8E44002E53EE /* Revert-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720C01C9F8F57002E53EE /* Configurations */,
+				BB27205E1C9B9160002E53EE /* Sources */,
+				BB27205D1C9B8ECF002E53EE /* Resources */,
+			);
+			path = "Revert-tvOS";
+			sourceTree = "<group>";
+		};
+		BB27205B1C9B8E9E002E53EE /* Revert */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
+				9A9BD1E31BD67B17001A439D /* Configurations */,
+				9A2F94701B140B0E007E51B1 /* Scripts */,
+				9A6850BA1AD4A20E00ACCE29 /* Resources */,
+				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
+				9A6850B91AD4A20E00ACCE29 /* Products */,
+			);
+			name = Revert;
+			sourceTree = "<group>";
+		};
+		BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
+			);
+			name = "Storyboards & XIBs";
+			sourceTree = "<group>";
+		};
+		BB27205D1C9B8ECF002E53EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720551C9B8E44002E53EE /* Assets.xcassets */,
+				BB2720AC1C9B975A002E53EE /* Data */,
+				BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */,
+				BB2720571C9B8E44002E53EE /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB27205E1C9B9160002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB27204E1C9B8E44002E53EE /* AppDelegate.swift */,
+				BB2720A11C9B92BD002E53EE /* View Controllers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720A11C9B92BD002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB27209F1C9B92B7002E53EE /* HomeViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB2720BD1C9F8DAE002E53EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720BF1C9F8DD0002E53EE /* Sources */,
+				BB2720BE1C9F8DBA002E53EE /* Configurations */,
+			);
+			name = Shared;
+			path = Revert/Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BE1C9F8DBA002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
+				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
+				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BF1C9F8DD0002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720C01C9F8F57002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */,
+				BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */,
+				BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -423,18 +556,38 @@
 			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB27205A1C9B8E44002E53EE /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
+			buildPhases = (
+				BB2720481C9B8E44002E53EE /* Sources */,
+				BB2720491C9B8E44002E53EE /* Frameworks */,
+				BB27204A1C9B8E44002E53EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Revert-tvOS";
+			productName = "Revert-tvOS";
+			productReference = BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9A6850B01AD4A20E00ACCE29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+					};
+					BB27204B1C9B8E44002E53EE = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -452,6 +605,7 @@
 			projectRoot = "";
 			targets = (
 				9A6850B71AD4A20E00ACCE29 /* Revert */,
+				BB27204B1C9B8E44002E53EE /* Revert-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -468,6 +622,20 @@
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
 				9A6C75031BDE29DE00534680 /* Data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB27204A1C9B8E44002E53EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2720C41C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig in Resources */,
+				BB2720C71C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig in Resources */,
+				BB2720C21C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig in Resources */,
+				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
+				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
+				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
+				BB2720AD1C9B975A002E53EE /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +727,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB2720481C9B8E44002E53EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2720B61C9BCD19002E53EE /* Country.swift in Sources */,
+				BB2720B91C9BCD19002E53EE /* Item.swift in Sources */,
+				BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */,
+				BB2720B41C9BCC8E002E53EE /* CountriesViewController.swift in Sources */,
+				BB2720B01C9B9A16002E53EE /* UIColor+Revert.swift in Sources */,
+				BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */,
+				BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */,
+				BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */,
+				BB2720A61C9B9571002E53EE /* Collectable.swift in Sources */,
+				BB2720A71C9B9571002E53EE /* CollectableGroup.swift in Sources */,
+				BB2720A51C9B9551002E53EE /* RevertItems.swift in Sources */,
+				BB2720A41C9B94D2002E53EE /* HomeItem.swift in Sources */,
+				BB2720A31C9B94BE002E53EE /* DataSource.swift in Sources */,
+				BB2720A21C9B94B8002E53EE /* CollectableCollection.swift in Sources */,
+				BB27204F1C9B8E44002E53EE /* AppDelegate.swift in Sources */,
+				BB2720A01C9B92B7002E53EE /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -592,6 +783,22 @@
 				B59998E71BC36092002FE92C /* Base */,
 			);
 			name = StackView.xib;
+			sourceTree = "<group>";
+		};
+		BB2720521C9B8E44002E53EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720531C9B8E44002E53EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720BB1C9F8BE5002E53EE /* Base */,
+			);
+			name = HomeCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
