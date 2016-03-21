@@ -99,6 +99,8 @@
 		BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */; };
 		BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */; };
 		BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */; };
+		BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
+		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -740,6 +742,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
+				BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */,
 				BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */,
 				BB2720B61C9BCD19002E53EE /* Country.swift in Sources */,
 				BB2720B91C9BCD19002E53EE /* Item.swift in Sources */,
