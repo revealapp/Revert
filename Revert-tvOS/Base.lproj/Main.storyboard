@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="lNg-wZ-S9M">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -30,6 +32,7 @@
                     <connections>
                         <segue destination="fHS-Xr-lQr" kind="showDetail" identifier="ShowTableViewControllerSegue" action="showViewController:sender:" id="va5-Zs-yUS"/>
                         <segue destination="CWp-Qb-NnH" kind="showDetail" identifier="ShowCollectionViewControllerSegue" action="showViewController:sender:" id="LDR-cf-9S1"/>
+                        <segue destination="SEc-9z-0Bk" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="01H-Hl-J7o"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -128,7 +131,7 @@
         <!--Collection View Controller-->
         <scene sceneID="leq-1A-Xqs">
             <objects>
-                <collectionViewController id="e3a-qH-2ke" customClass="CollectionViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="e3a-qH-2ke" customClass="CollectionViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8dg-WC-so0">
                         <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +162,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8E-1a-t8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6890.5" y="377"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="Qdk-Wu-4UX">
+            <objects>
+                <viewController id="OUl-Wk-Rz3" customClass="ScrollViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72W-gS-xzk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vY7-N2-Zfr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YrI-tz-vNF">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-2G-eMc">
+                                <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="zEC-Nq-c8u">
+                                        <rect key="frame" x="0.0" y="0.0" width="2160" height="2160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zEC-Nq-c8u" secondAttribute="height" multiplier="1:1" id="3Kl-qz-Mgs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="leading" secondItem="bxo-2G-eMc" secondAttribute="leading" id="E6v-q5-abT"/>
+                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="height" secondItem="bxo-2G-eMc" secondAttribute="height" multiplier="2" id="EQG-mj-uV7"/>
+                                    <constraint firstAttribute="bottom" secondItem="zEC-Nq-c8u" secondAttribute="bottom" id="Lsj-3V-6wN"/>
+                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="top" secondItem="bxo-2G-eMc" secondAttribute="top" id="lva-5y-TW4"/>
+                                    <constraint firstAttribute="trailing" secondItem="zEC-Nq-c8u" secondAttribute="trailing" id="zZf-4e-E0y"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bxo-2G-eMc" secondAttribute="bottom" id="81u-5C-Q44"/>
+                            <constraint firstItem="bxo-2G-eMc" firstAttribute="leading" secondItem="YrI-tz-vNF" secondAttribute="leading" id="kJg-rd-KmE"/>
+                            <constraint firstAttribute="trailing" secondItem="bxo-2G-eMc" secondAttribute="trailing" id="nOr-uY-1zM"/>
+                            <constraint firstItem="bxo-2G-eMc" firstAttribute="top" secondItem="YrI-tz-vNF" secondAttribute="top" id="tKV-aC-3gO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ltQ-dx-239"/>
+                    <connections>
+                        <outlet property="scrollView" destination="bxo-2G-eMc" id="ATp-9X-WLX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qf2-Bd-Wpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6890.5" y="1665"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
@@ -216,5 +266,26 @@
             </objects>
             <point key="canvasLocation" x="5393.5" y="377"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JWM-RM-T1O">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nW8-OW-zrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SEc-9z-0Bk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJ3-ny-2Vd">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OUl-Wk-Rz3" kind="relationship" relationship="rootViewController" id="3MW-jc-ro0"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="5393.5" y="1665"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="reveal_pretty" width="800" height="600"/>
+    </resources>
 </document>
