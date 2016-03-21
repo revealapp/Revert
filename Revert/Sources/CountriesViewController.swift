@@ -1,9 +1,9 @@
-//
+ //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
-final class CountriesViewController: RevertTableViewController {
+final class CountriesViewController: RevertTableViewController, CountriesViewRefreshControlProtocol {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
   private let dataSource: DataSource<Country, BasicCell>
   private var refreshTimer: NSTimer?
@@ -23,20 +23,8 @@ final class CountriesViewController: RevertTableViewController {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-
-    self.refreshControl = UIRefreshControl()
-    self.refreshControl!.addTarget(self, action: "tableViewPulledToRefresh:", forControlEvents: .ValueChanged)
-  }
-
-  func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
-    self.refreshTimer?.invalidate()
-
-    // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
-    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "didLoadDummyData:", userInfo: nil, repeats: false)
-  }
-
-  func didLoadDummyData(timer: NSTimer) {
-    self.refreshControl?.endRefreshing()
+    
+    self.setupRefreshControl()
   }
 
   private static func footerLabelWithText(text: String?) -> UILabel {
@@ -53,6 +41,13 @@ final class CountriesViewController: RevertTableViewController {
 // MARK:- UITableViewDelegate
 extension CountriesViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let cell = tableView.cellForRowAtIndexPath(indexPath)
+    if cell?.accessoryType == .Checkmark {
+      cell?.accessoryType = .None
+    } else {
+      cell?.accessoryType = .Checkmark
+    }
+    
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 
@@ -64,6 +59,8 @@ extension CountriesViewController {
 
 private extension CountriesViewController {
   static func configureCell(cell: BasicCell, object: Country) {
+    cell.accessoryType = .None
+    
     cell.titleLabel.text = object.name
     cell.subtitleLabel.text = object.capital
   }
@@ -73,3 +70,38 @@ private extension CountriesViewController {
     return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format"), count) as String
   }
 }
+
+// MARK:- UIRefreshControl
+// UIRefreshControl is not available on tvOS, so we have to keep everything related to that control separate.
+// The `CountriesViewRefreshControlProtocol` protocol and extension ensure compatibility with tvOS.
+// The `CountriesViewController` extension makes sure UIRefreshControl is only referenced outside tvOS.
+
+protocol CountriesViewRefreshControlProtocol {
+  func setupRefreshControl()
+}
+
+extension CountriesViewRefreshControlProtocol {
+  func setupRefreshControl() {
+    // This empty method simulates an optional protocol method like we have in ObjC.
+  }
+}
+
+#if os(iOS)
+extension CountriesViewController {
+  func setupRefreshControl() {
+    self.refreshControl = UIRefreshControl()
+    self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
+  }
+  
+  func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
+    self.refreshTimer?.invalidate()
+    
+    // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
+    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
+  }
+  
+  func didLoadDummyData(timer: NSTimer) {
+    self.refreshControl?.endRefreshing()
+  }
+}
+#endif
