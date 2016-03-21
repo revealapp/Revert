@@ -19,10 +19,6 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
     return self.didShowDetailViewController == false
   }
 
-  func splitViewController(svc: UISplitViewController, shouldHideViewController vc: UIViewController, inOrientation orientation: UIInterfaceOrientation) -> Bool {
-    return false
-  }
-
   // MARK: Private
   private var didShowDetailViewController = false
 }
