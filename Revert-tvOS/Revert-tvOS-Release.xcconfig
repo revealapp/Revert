@@ -1,7 +1,7 @@
 //
 // Revert-Release.xcconfig
 
-#include "Revert-Shared.xcconfig"
+#include "Revert-tvOS-Shared.xcconfig"
 
 
 // Swift Optimization Level

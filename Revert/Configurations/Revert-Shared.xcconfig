@@ -54,3 +54,18 @@ PRODUCT_NAME = $(TARGET_NAME)
 
 
 SWIFT_OBJC_BRIDGING_HEADER = Revert/Sources/Revert-Bridging-Header.h
+
+
+// Base SDK
+//
+// The name or path of the base SDK being used during the build. The product will be
+// built against the headers and libraries located inside the indicated SDK. This path
+// will be prepended to all search paths, and will be passed through the environment to
+// the compiler and linker. Additional SDKs can be specified in the ADDITIONAL_SDKS
+// setting.
+
+SDKROOT = iphoneos
+
+IPHONEOS_DEPLOYMENT_TARGET = 8.2
+
+TARGETED_DEVICE_FAMILY = 1,2
