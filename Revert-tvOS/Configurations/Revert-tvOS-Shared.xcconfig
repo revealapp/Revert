@@ -32,9 +32,6 @@ GCC_WARN_UNUSED_PARAMETER = YES
 INFOPLIST_FILE = $(SRCROOT)/Revert-tvOS/Info.plist
 
 
-TVOS_DEPLOYMENT_TARGET = 9.2
-
-
 // Runpath Search Paths
 //
 // This is a list of paths to be added to the runpath search path list for the image
@@ -54,3 +51,18 @@ PRODUCT_NAME = $(TARGET_NAME)
 
 
 SWIFT_OBJC_BRIDGING_HEADER = Revert/Sources/Revert-Bridging-Header.h
+
+
+// Base SDK
+//
+// The name or path of the base SDK being used during the build. The product will be
+// built against the headers and libraries located inside the indicated SDK. This path
+// will be prepended to all search paths, and will be passed through the environment to
+// the compiler and linker. Additional SDKs can be specified in the ADDITIONAL_SDKS
+// setting.
+
+SDKROOT = appletvos
+
+TARGETED_DEVICE_FAMILY = 3
+
+TVOS_DEPLOYMENT_TARGET = 9.2

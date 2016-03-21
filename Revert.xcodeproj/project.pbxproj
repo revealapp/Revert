@@ -96,9 +96,9 @@
 		BB2720B61C9BCD19002E53EE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
 		BB2720B91C9BCD19002E53EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
-		BB2720C21C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */; };
-		BB2720C41C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */; };
-		BB2720C71C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */; };
+		BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */; };
+		BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */; };
+		BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -196,9 +196,9 @@
 		BB27209F1C9B92B7002E53EE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BB2720AC1C9B975A002E53EE /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
-		BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
-		BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
-		BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,9 +528,9 @@
 		BB2720C01C9F8F57002E53EE /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				BB2720C11C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig */,
-				BB2720C31C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig */,
-				BB2720C61C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig */,
+				BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */,
+				BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */,
+				BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */,
 			);
 			name = Configurations;
 			sourceTree = "<group>";
@@ -567,7 +567,7 @@
 		};
 		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list */;
+			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
 			buildPhases = (
 				BB2720481C9B8E44002E53EE /* Sources */,
 				BB2720491C9B8E44002E53EE /* Frameworks */,
@@ -638,13 +638,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2720C41C9F8FBC002E53EE /* Revert-tvOS-Release.xcconfig in Resources */,
-				BB2720C71C9F8FDC002E53EE /* Revert-tvOS-Shared.xcconfig in Resources */,
-				BB2720C21C9F8FAB002E53EE /* Revert-tvOS-Debug.xcconfig in Resources */,
+				BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */,
 				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				BB2720AD1C9B975A002E53EE /* Data in Resources */,
+				BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */,
+				BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +842,20 @@
 			};
 			name = Release;
 		};
+		BB2ED9DB1C9FB8F8002BFD74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BB2ED9DC1C9FB8F8002BFD74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -863,11 +877,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB6DAA731C9FB25B002B1B0C /* Build configuration list */ = {
+		BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB6DAA711C9FB25B002B1B0C /* Debug */,
-				BB6DAA721C9FB25B002B1B0C /* Release */,
+				BB2ED9DB1C9FB8F8002BFD74 /* Debug */,
+				BB2ED9DC1C9FB8F8002BFD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
