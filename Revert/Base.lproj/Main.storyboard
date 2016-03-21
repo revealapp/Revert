@@ -455,7 +455,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-og-Tnc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-vH-kVU">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-vH-kVU">
                                         <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Su6-vH-kVU" secondAttribute="height" multiplier="1:1" id="5w1-hD-yTi"/>
@@ -4682,7 +4682,7 @@
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
         <image name="info_icon" width="22" height="22"/>
-        <image name="reveal_pretty.jpg" width="22" height="22"/>
+        <image name="reveal_pretty" width="800" height="600"/>
         <image name="tab_scenes" width="26" height="26"/>
         <image name="tab_scenes_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
