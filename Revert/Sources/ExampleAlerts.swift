@@ -6,7 +6,7 @@ import UIKit
 extension UIAlertController {
   static func exampleAlertControllerWithStyle(style: UIAlertControllerStyle) -> UIAlertController {
     let alertViewController = UIAlertController(
-      title: NSLocalizedString("This is an UIAlertController", comment: "Alert title"),
+      title: NSLocalizedString("This is a UIAlertController", comment: "Alert title"),
       message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),
       preferredStyle: style
     )
@@ -30,25 +30,18 @@ extension UIAlertController {
   }
 }
 
-extension UIAlertView {
-  static func exampleAlertView() -> UIAlertView {
-    return UIAlertView(
-      title: NSLocalizedString("This is an UIAlertView", comment: "Alert title"),
-      message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
-      otherButtonTitles: NSLocalizedString("Ok", comment: "Alert Ok button title"),
-      NSLocalizedString("Delete", comment: "Alert Delete button title"))
-  }
-}
+// UIAlertView and UIActionSheet are not available on tvOS, so we filter out their related methods.
 
-extension UIActionSheet {
-  static func exampleActionSheet() -> UIActionSheet {
-    let actionSheet = UIActionSheet(
-      title: NSLocalizedString("This is an UIActionSheet", comment: "Alert title"),
-      delegate: nil,
-      cancelButtonTitle: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
-      destructiveButtonTitle: NSLocalizedString("Delete", comment: "Alert Delete button title"))
-    return actionSheet
+extension AlertViewController {
+  static func showExampleAlertView() {
+    #if os(iOS)
+      UIAlertView.exampleAlertView().show()
+    #endif
+  }
+  
+  static func showExampleActionsSheetInView(view : UIView) {
+    #if os(iOS)
+      UIActionSheet.exampleActionSheet().showInView(view)
+    #endif
   }
 }

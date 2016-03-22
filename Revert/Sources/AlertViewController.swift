@@ -40,13 +40,13 @@ extension AlertViewController {
     alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
-
+  
   private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
     switch identifier {
     case .AlertView:
-      UIAlertView.exampleAlertView().show()
+      AlertViewController.showExampleAlertView()
     case .ActionSheet:
-      UIActionSheet.exampleActionSheet().showInView(fromView)
+      AlertViewController.showExampleActionsSheetInView(fromView)
     default:
       let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)

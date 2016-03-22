@@ -92,6 +92,9 @@
 		BB2720B61C9BCD19002E53EE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
 		BB2720B91C9BCD19002E53EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
+		BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
+		BB61E7EB1CA111A400853994 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */; };
 		BB735B3E1C9FCC290092FA6F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB735B3C1C9FCC290092FA6F /* Data */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -197,6 +200,7 @@
 		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
 		BB735B3C1C9FCC290092FA6F /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Resources/Data; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 			children = (
 				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
 				9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */,
+				BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */,
 				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
@@ -737,6 +742,7 @@
 				9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
+				BB61E7EB1CA111A400853994 /* ExampleLegacyAlerts.swift in Sources */,
 				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
 				9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
@@ -761,6 +767,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */,
+				BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */,
 				BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */,
 				BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */,
 				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
