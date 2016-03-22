@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AYz-7P-cQw">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lfp-5i-f58">
+                            <rect key="frame" x="0.0" y="0.0" width="960" height="1080"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw0-xR-6tB">
+                                    <rect key="frame" x="0.0" y="0.0" width="960" height="860"/>
+                                    <color key="backgroundColor" red="0.41569492219999998" green="0.87322348360000002" blue="0.79264503720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-AG-y3G">
+                                    <rect key="frame" x="0.0" y="880" width="960" height="200"/>
+                                    <color key="backgroundColor" red="0.99020928139999997" green="0.75412577390000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="DpW-UD-8Ee"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rfC-Mr-JwT">
+                            <rect key="frame" x="980" y="0.0" width="940" height="1080"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-ne-r0Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="940" height="200"/>
+                                    <color key="backgroundColor" red="0.78327852490000005" green="0.90873157979999997" blue="0.97590535879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="k08-Sk-Ejj"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqN-Se-waB">
+                                    <rect key="frame" x="0.0" y="220" width="940" height="860"/>
+                                    <color key="backgroundColor" red="0.29858762030000002" green="0.72199642659999996" blue="0.94276738169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lfp-5i-f58" firstAttribute="leading" secondItem="AYz-7P-cQw" secondAttribute="leading" id="7gl-sI-OwM"/>
+                        <constraint firstItem="rfC-Mr-JwT" firstAttribute="top" secondItem="AYz-7P-cQw" secondAttribute="top" id="eea-PL-UTi"/>
+                        <constraint firstAttribute="bottom" secondItem="rfC-Mr-JwT" secondAttribute="bottom" id="oG7-1B-FC8"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lfp-5i-f58" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="9Lx-mn-RmR"/>
+                <constraint firstItem="AYz-7P-cQw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X99-Gg-WCS"/>
+                <constraint firstItem="AYz-7P-cQw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zwj-kY-l6D"/>
+                <constraint firstAttribute="bottom" secondItem="AYz-7P-cQw" secondAttribute="bottom" id="pP8-5G-3QD"/>
+                <constraint firstAttribute="trailing" secondItem="AYz-7P-cQw" secondAttribute="trailing" id="zMA-zv-bbi"/>
+            </constraints>
+            <point key="canvasLocation" x="-364" y="467"/>
+        </view>
+    </objects>
+</document>

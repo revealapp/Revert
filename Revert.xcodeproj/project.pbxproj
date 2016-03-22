@@ -103,6 +103,8 @@
 		BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */; };
 		BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
 		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
+		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
+		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +205,7 @@
 		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
 		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
+		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +471,7 @@
 			children = (
 				BB2720521C9B8E44002E53EE /* Main.storyboard */,
 				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
+				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -607,9 +611,11 @@
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = KBY3G4JPGC;
 					};
 					BB27204B1C9B8E44002E53EE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AH5AV3R4FK;
 					};
 				};
 			};
@@ -654,6 +660,7 @@
 			files = (
 				BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */,
 				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
+				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */,
@@ -754,6 +761,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */,
 				BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */,
 				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
 				BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */,
@@ -826,6 +834,14 @@
 				BB2720BB1C9F8BE5002E53EE /* Base */,
 			);
 			name = HomeCell.xib;
+			sourceTree = "<group>";
+		};
+		BB957F8D1CA0B57C000F09CA /* StackView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB957F8E1CA0B57C000F09CA /* Base */,
+			);
+			name = StackView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
