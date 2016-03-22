@@ -95,6 +95,9 @@
 		BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
 		BB61E7EB1CA111A400853994 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */; };
+		BB61E7EC1CA1143700853994 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
+		BB61E7ED1CA1145400853994 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
+		BB61E7EE1CA1146C00853994 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
 		BB735B3E1C9FCC290092FA6F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB735B3C1C9FCC290092FA6F /* Data */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -767,6 +770,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB61E7EE1CA1146C00853994 /* Static.swift in Sources */,
+				BB61E7ED1CA1145400853994 /* MapAnnotationView.swift in Sources */,
+				BB61E7EC1CA1143700853994 /* MapViewController.swift in Sources */,
 				BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */,
 				BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */,
 				BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */,

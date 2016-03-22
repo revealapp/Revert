@@ -36,6 +36,7 @@
                         <segue destination="SEc-9z-0Bk" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="01H-Hl-J7o"/>
                         <segue destination="lFm-dl-sa7" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="KBU-j6-RIc"/>
                         <segue destination="v8M-oi-8Oq" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="cpF-4f-CXS"/>
+                        <segue destination="IXd-ap-SWc" kind="showDetail" identifier="ShowMapViewControllerSegue" id="ZZl-5t-VJI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,6 +277,41 @@
             </objects>
             <point key="canvasLocation" x="6890.5" y="4077"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Kg5-9c-nEa">
+            <objects>
+                <viewController id="Dak-gW-7g8" customClass="MapViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5rl-19-p1B"/>
+                        <viewControllerLayoutGuide type="bottom" id="6if-m7-8Al"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pd0-Gt-Ooz">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-P5-zsv">
+                                <rect key="frame" x="0.0" y="145" width="1285" height="935"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dak-gW-7g8" id="z67-aU-01I"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3l0-P5-zsv" firstAttribute="top" secondItem="5rl-19-p1B" secondAttribute="bottom" id="DxK-Sa-zMB"/>
+                            <constraint firstAttribute="trailing" secondItem="3l0-P5-zsv" secondAttribute="trailing" id="S7F-70-UfR"/>
+                            <constraint firstItem="6if-m7-8Al" firstAttribute="top" secondItem="3l0-P5-zsv" secondAttribute="bottom" id="T2w-dA-CMG"/>
+                            <constraint firstItem="3l0-P5-zsv" firstAttribute="leading" secondItem="Pd0-Gt-Ooz" secondAttribute="leading" id="jTA-or-afe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cmA-Kv-vig"/>
+                    <connections>
+                        <outlet property="mapView" destination="3l0-P5-zsv" id="7EI-Wi-ETn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugJ-Ne-hXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6890.5" y="5249"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
             <objects>
@@ -386,6 +422,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itp-HB-LOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5393.5" y="4077"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xrx-Ny-LqV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IXd-ap-SWc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MZH-c0-tZg">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dak-gW-7g8" kind="relationship" relationship="rootViewController" id="iEe-qj-auj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXZ-4k-u1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5393.5" y="5249"/>
         </scene>
     </scenes>
     <resources>
