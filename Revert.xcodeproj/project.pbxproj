@@ -115,6 +115,7 @@
 		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
+		BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +217,7 @@
 		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
+		BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,6 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
+				BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */,
 				BB2720B41C9BCC8E002E53EE /* CountriesViewController.swift in Sources */,
 				BB2720B01C9B9A16002E53EE /* UIColor+Revert.swift in Sources */,
+				BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */,
 				BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */,
 				BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */,
 				BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */,

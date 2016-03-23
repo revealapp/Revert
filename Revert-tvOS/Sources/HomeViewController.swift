@@ -43,9 +43,11 @@ final class HomeViewController: UITableViewController {
 
 extension HomeViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let item = self.collection[indexPath]
+    guard let splitViewController = self.splitViewController as? RevertSplitViewController else {
+      fatalError("tvOS `SplitViewController` should always be of type `RevertSplitViewController")
+    }
     
-    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+    splitViewController.focusDetailView()
   }
   
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
