@@ -40,6 +40,13 @@ final class CountriesViewController: RevertTableViewController, CountriesViewRef
 
 // MARK:- UITableViewDelegate
 extension CountriesViewController {
+  @available(iOS 9.0, *)
+  override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    if let nextFocusedIndexPath = context.nextFocusedIndexPath {
+      self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
+    }
+  }
+  
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)
     if cell?.accessoryType == .Checkmark {

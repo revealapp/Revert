@@ -19,6 +19,7 @@ final class HomeViewController: UITableViewController {
     
     self.tableView.dataSource = self.dataSource
     self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
+    self.tableView.remembersLastFocusedIndexPath = true
     
   }
   
@@ -42,6 +43,19 @@ final class HomeViewController: UITableViewController {
 }
 
 extension HomeViewController {
+  override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    if let nextFocusedIndexPath = context.nextFocusedIndexPath {
+      let item = self.collection[nextFocusedIndexPath]
+      
+      // TODO: remove **the check** later on. This is just for debugging purposes while we don't have all segues implemented.
+      if self.dynamicType.isWhitelistedSegueIdentifier(item.segueIdentifier) {
+        self.performSegueWithIdentifier(item.segueIdentifier, sender: nextFocusedIndexPath)
+      }
+      
+      self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
+    }
+  }
+  
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     guard let splitViewController = self.splitViewController as? RevertSplitViewController else {
       fatalError("tvOS `SplitViewController` should always be of type `RevertSplitViewController")
@@ -62,5 +76,17 @@ extension HomeViewController {
 private extension HomeViewController {
   static func configureCell(cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
+  }
+}
+
+// TODO: remove later on. This is just for debugging purposes while we don't have all segues implemented.
+private extension HomeViewController {
+  static func isWhitelistedSegueIdentifier(identifier: String) -> Bool {
+    switch identifier {
+    case "ShowTableViewControllerSegue", "ShowCollectionViewControllerSegue", "ShowScrollViewControllerSegue", "ShowStackViewViewControllerSegue", "ShowAlertViewControllerSegue", "ShowSpriteKitViewControllerSegue", "ShowMapViewControllerSegue", "ShowGLKViewControllerSegue":
+      return true
+    default:
+      return false
+    }
   }
 }
