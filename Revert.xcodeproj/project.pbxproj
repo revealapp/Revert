@@ -101,6 +101,8 @@
 		BB61E7EF1CA11ED800853994 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
 		BB61E7F01CA1262700853994 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */; };
 		BB61E7F11CA1263500853994 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */; };
+		BB7121A61CAA464A00885A12 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */; };
+		BB7121A71CAA464A00885A12 /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */; };
 		BB735B3E1C9FCC290092FA6F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB735B3C1C9FCC290092FA6F /* Data */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -812,6 +814,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7121A61CAA464A00885A12 /* HairlineConstraint.swift in Sources */,
+				BB7121A71CAA464A00885A12 /* HairlineBorderView.swift in Sources */,
 				BB61E7F11CA1263500853994 /* RevealOpenGLCube.swift in Sources */,
 				BB61E7F01CA1262700853994 /* OpenGLViewController.swift in Sources */,
 				BB61E7EF1CA11ED800853994 /* SpriteKitViewController.swift in Sources */,

@@ -64,7 +64,7 @@ extension HomeViewController {
   
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     guard let cell = cell as? HomeCell else {
-      fatalError("Cell should be of type `HomeCell`")
+      fatalError("Cell should be of type `HomeCollectionCell`")
     }
     
     cell.accessoryType = .None
