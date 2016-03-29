@@ -97,6 +97,16 @@
 				<key>infoFilename</key>
 				<string>auto_resizing_masks</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Transformed Views</string>
+				<key>iconName</key>
+				<string>icon_TransformViews</string>
+				<key>segueIdentifier</key>
+				<string>ShowTransformViewsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>transformed_views</string>
+			</dict>
 		</array>
 	</dict>
 </array>
