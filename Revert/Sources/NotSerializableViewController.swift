@@ -8,6 +8,7 @@ final class NonSerializableViewController: RevertViewController {
     super.viewDidLoad()
 
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
+    self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpOutside)
   }
 
   func warnBeforeCrash(sender: UISlider?) {
@@ -27,6 +28,7 @@ final class NonSerializableViewController: RevertViewController {
         
         // Only show the alert once
         self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
+        self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), forControlEvents: .TouchUpOutside)
     }
     
     alertViewController.addAction(continueAction)
