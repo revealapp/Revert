@@ -67,6 +67,16 @@
 				<key>infoFilename</key>
 				<string>arranged_views</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout</string>
+				<key>iconName</key>
+				<string>icon_Autolayout</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout</string>
+			</dict>
 		</array>
 	</dict>
 </array>
