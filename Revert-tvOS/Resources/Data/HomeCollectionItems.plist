@@ -127,6 +127,16 @@
 				<key>infoFilename</key>
 				<string>bounds_anchor_point_changes</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Super Deep View Hierarchy</string>
+				<key>iconName</key>
+				<string>icon_Superdeep</string>
+				<key>segueIdentifier</key>
+				<string>ShowSuperDeepViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>super_deep</string>
+			</dict>
 		</array>
 	</dict>
 </array>
