@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Scroll View</string>
+				<key>iconName</key>
+				<string>icon_ScrollView</string>
+				<key>segueIdentifier</key>
+				<string>ShowScrollViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>scroll_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stack View</string>
+				<key>iconName</key>
+				<string>icon_UIStackView</string>
+				<key>segueIdentifier</key>
+				<string>ShowStackViewViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stack_view</string>
+				<key>requiredClassName</key>
+				<string>UIStackView</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Map View</string>
+				<key>iconName</key>
+				<string>icon_MapView</string>
+				<key>segueIdentifier</key>
+				<string>ShowMapViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>map_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>SpriteKit</string>
+				<key>iconName</key>
+				<string>icon_SpriteKit</string>
+				<key>segueIdentifier</key>
+				<string>ShowSpriteKitViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>sprite_kit</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>OpenGL</string>
+				<key>iconName</key>
+				<string>icon_GLkit</string>
+				<key>segueIdentifier</key>
+				<string>ShowGLKViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>open_gl</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Arranged Views</string>
+				<key>iconName</key>
+				<string>icon_Views</string>
+				<key>segueIdentifier</key>
+				<string>ShowViewsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>arranged_views</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -30,6 +30,17 @@ class CollectionViewCell: UICollectionViewCell {
 }
 
 final class HomeCollectionCell: CollectionViewCell {
+  override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
+    
+    coordinator.addCoordinatedAnimations({
+      if self.focused {
+        self.titleLabel.textColor = UIColor.whiteColor()
+      } else {
+        self.titleLabel.textColor = UIColor.blackColor()
+      }
+    }, completion: nil)
+  }
   
   // MARK: Private
   @IBOutlet private(set) weak var imageView: UIImageView!
