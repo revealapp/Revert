@@ -117,6 +117,16 @@
 				<key>infoFilename</key>
 				<string>transformed_layers</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bounds &amp; Anchor Point Changes</string>
+				<key>iconName</key>
+				<string>icon_Squares</string>
+				<key>segueIdentifier</key>
+				<string>ShowAnchorBoundsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>bounds_anchor_point_changes</string>
+			</dict>
 		</array>
 	</dict>
 </array>
