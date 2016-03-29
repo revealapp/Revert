@@ -77,6 +77,16 @@
 				<key>infoFilename</key>
 				<string>auto_layout</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Alignments</string>
+				<key>iconName</key>
+				<string>icon_AutolayoutAlignment</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout_alignments</string>
+			</dict>
 		</array>
 	</dict>
 </array>
