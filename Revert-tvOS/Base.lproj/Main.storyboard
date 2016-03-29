@@ -98,24 +98,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wqU-L6-BXq">
-                            <size key="itemSize" width="500" height="500"/>
+                            <size key="itemSize" width="300" height="300"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="100" minY="100" maxX="100" maxY="100"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="8ch-Gq-M0a" customClass="HomeCollectionCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <rect key="frame" x="100" y="100" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSW-LR-CFX">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-pU-Nqq">
-                                            <rect key="frame" x="207" y="434" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-pU-Nqq">
+                                            <rect key="frame" x="129" y="240" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -124,13 +124,14 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="uHW-pU-Nqq" firstAttribute="top" secondItem="jSW-LR-CFX" secondAttribute="bottom" constant="40" id="93G-Lk-VWn"/>
                                     <constraint firstAttribute="bottom" secondItem="jSW-LR-CFX" secondAttribute="bottom" constant="100" id="Piy-iX-2rE"/>
                                     <constraint firstItem="jSW-LR-CFX" firstAttribute="leading" secondItem="8ch-Gq-M0a" secondAttribute="leading" id="WW0-M7-LLW"/>
                                     <constraint firstAttribute="trailing" secondItem="jSW-LR-CFX" secondAttribute="trailing" id="oA7-E8-uUo"/>
                                     <constraint firstItem="uHW-pU-Nqq" firstAttribute="centerX" secondItem="8ch-Gq-M0a" secondAttribute="centerX" id="tN2-3b-c4z"/>
                                     <constraint firstItem="jSW-LR-CFX" firstAttribute="top" secondItem="8ch-Gq-M0a" secondAttribute="top" id="x8v-Wb-lMj"/>
                                 </constraints>
-                                <size key="customSize" width="500" height="500"/>
+                                <size key="customSize" width="300" height="300"/>
                                 <connections>
                                     <outlet property="imageView" destination="jSW-LR-CFX" id="kXq-eJ-kX2"/>
                                     <outlet property="titleLabel" destination="uHW-pU-Nqq" id="ZTC-Vf-4pK"/>
