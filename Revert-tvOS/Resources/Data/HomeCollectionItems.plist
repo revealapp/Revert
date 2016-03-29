@@ -107,6 +107,16 @@
 				<key>infoFilename</key>
 				<string>transformed_views</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Transformed Layers</string>
+				<key>iconName</key>
+				<string>icon_TransformLayers</string>
+				<key>segueIdentifier</key>
+				<string>ShowTransformLayersViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>transformed_layers</string>
+			</dict>
 		</array>
 	</dict>
 </array>
