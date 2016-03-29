@@ -114,6 +114,9 @@
 		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
 		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
+		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
+		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
+		BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */; };
 /* End PBXBuildFile section */
@@ -217,6 +220,9 @@
 		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
+		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 		BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -504,7 +510,10 @@
 			isa = PBXGroup;
 			children = (
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
+				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
+				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -514,6 +523,7 @@
 			children = (
 				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
 				BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */,
+				BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -573,6 +583,22 @@
 			);
 			name = Resources;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -788,7 +814,10 @@
 				BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */,
 				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
 				BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */,
+				BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */,
+				BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */,
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
+				BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */,
 				BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */,
 				BB2720B61C9BCD19002E53EE /* Country.swift in Sources */,
 				BB2720B91C9BCD19002E53EE /* Item.swift in Sources */,

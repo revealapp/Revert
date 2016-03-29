@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Table View</string>
+				<key>iconName</key>
+				<string>icon_TableView</string>
+				<key>segueIdentifier</key>
+				<string>ShowTableViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>table_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Alert View</string>
+				<key>iconName</key>
+				<string>icon_AlertView</string>
+				<key>segueIdentifier</key>
+				<string>ShowAlertViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>alert_views</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="lNg-wZ-S9M">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kps-Wr-dkW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -11,7 +11,7 @@
         <scene sceneID="5ND-I0-8s1">
             <objects>
                 <tableViewController id="u4O-gr-CGU" customClass="HomeViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Lda-l1-Itm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Lda-l1-Itm" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
                         <rect key="frame" x="0.0" y="0.0" width="634" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
@@ -63,10 +63,29 @@
             </objects>
             <point key="canvasLocation" x="2346.5" y="2021"/>
         </scene>
-        <!--Revert Split View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="RqC-xv-Bus">
+            <objects>
+                <tabBarController id="Kps-Wr-dkW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RUS-xi-b4m">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lNg-wZ-S9M" kind="relationship" relationship="viewControllers" id="ula-St-dVR"/>
+                        <segue destination="pX9-ob-Qo2" kind="relationship" relationship="viewControllers" id="MjR-TQ-dWL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvQ-bh-64V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="4385"/>
+        </scene>
+        <!--Split-->
         <scene sceneID="9PH-2D-Mkh">
             <objects>
                 <splitViewController id="lNg-wZ-S9M" customClass="RevertSplitViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Split" id="wgR-gF-3Dn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="Xo7-E1-MSz" kind="relationship" relationship="detailViewController" id="LvY-Bq-vrf"/>
@@ -75,13 +94,75 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEV-B2-lWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="2021"/>
+            <point key="canvasLocation" x="1753" y="3561"/>
+        </scene>
+        <!--Fullscreen-->
+        <scene sceneID="Az1-fs-Upj">
+            <objects>
+                <collectionViewController id="pX9-ob-Qo2" customClass="HomeCollectionViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nWu-eR-7iM">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wqU-L6-BXq">
+                            <size key="itemSize" width="500" height="500"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="8ch-Gq-M0a" customClass="HomeCollectionCell" customModule="Revert_tvOS">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSW-LR-CFX">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-pU-Nqq">
+                                            <rect key="frame" x="207" y="434" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jSW-LR-CFX" secondAttribute="bottom" constant="100" id="Piy-iX-2rE"/>
+                                    <constraint firstItem="jSW-LR-CFX" firstAttribute="leading" secondItem="8ch-Gq-M0a" secondAttribute="leading" id="WW0-M7-LLW"/>
+                                    <constraint firstAttribute="trailing" secondItem="jSW-LR-CFX" secondAttribute="trailing" id="oA7-E8-uUo"/>
+                                    <constraint firstItem="uHW-pU-Nqq" firstAttribute="centerX" secondItem="8ch-Gq-M0a" secondAttribute="centerX" id="tN2-3b-c4z"/>
+                                    <constraint firstItem="jSW-LR-CFX" firstAttribute="top" secondItem="8ch-Gq-M0a" secondAttribute="top" id="x8v-Wb-lMj"/>
+                                </constraints>
+                                <size key="customSize" width="500" height="500"/>
+                                <connections>
+                                    <outlet property="imageView" destination="jSW-LR-CFX" id="kXq-eJ-kX2"/>
+                                    <outlet property="titleLabel" destination="uHW-pU-Nqq" id="ZTC-Vf-4pK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="pX9-ob-Qo2" id="GWr-Ee-LMc"/>
+                            <outlet property="delegate" destination="pX9-ob-Qo2" id="ZIF-RS-wHs"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Fullscreen" id="QXI-VC-0rn"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="nWu-eR-7iM" id="L2J-hV-Nlu"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBn-yj-hei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="4833"/>
         </scene>
         <!--Countries View Controller-->
         <scene sceneID="QPr-2G-kru">
             <objects>
                 <tableViewController id="MbP-er-7NZ" customClass="CountriesViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="o56-cN-OD0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="o56-cN-OD0" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
                         <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
@@ -238,7 +319,7 @@
         <scene sceneID="Jfb-nc-Bed">
             <objects>
                 <tableViewController id="eit-dp-6nz" customClass="AlertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
                         <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
