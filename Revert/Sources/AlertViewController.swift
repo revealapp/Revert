@@ -56,6 +56,13 @@ extension AlertViewController {
 
 // MARK:- UITableViewDelegate
 extension AlertViewController {
+  @available(iOS 9.0, *)
+  override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    if let nextFocusedIndexPath = context.nextFocusedIndexPath {
+      self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
+    }
+  }
+  
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection[indexPath]
 
