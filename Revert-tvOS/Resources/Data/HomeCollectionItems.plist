@@ -87,6 +87,16 @@
 				<key>infoFilename</key>
 				<string>auto_layout_alignments</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Resizing Masks</string>
+				<key>iconName</key>
+				<string>icon_AutoResizing</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoResizingMasksViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_resizing_masks</string>
+			</dict>
 		</array>
 	</dict>
 </array>
