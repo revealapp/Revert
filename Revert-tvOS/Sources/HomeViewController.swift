@@ -18,9 +18,7 @@ final class HomeViewController: UITableViewController {
     super.viewDidLoad()
     
     self.tableView.dataSource = self.dataSource
-    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
-    self.tableView.remembersLastFocusedIndexPath = true
-    
+    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)    
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -37,7 +35,7 @@ final class HomeViewController: UITableViewController {
   
   //MARK: - Private
   
-  private var collection = CollectableCollection<HomeItem>(items: .TVHome)
+  private var collection = CollectableCollection<HomeItem>(items: .Home)
   private var dataSource: DataSource<HomeItem, HomeCell>
 
 }
@@ -69,7 +67,7 @@ extension HomeViewController {
       fatalError("Cell should be of type `HomeCell`")
     }
     
-    cell.accessoryType = .DisclosureIndicator
+    cell.accessoryType = .None
   }
 }
 

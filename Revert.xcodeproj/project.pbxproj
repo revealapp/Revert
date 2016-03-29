@@ -117,6 +117,7 @@
 		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
 		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
 		BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */; };
+		BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */; };
 /* End PBXBuildFile section */
@@ -223,6 +224,7 @@
 		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
+		BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
 		BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -601,6 +603,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		BBB6FCC01CA9FBE300AF24F3 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -808,6 +818,7 @@
 				BB61E7EE1CA1146C00853994 /* Static.swift in Sources */,
 				BB61E7ED1CA1145400853994 /* MapAnnotationView.swift in Sources */,
 				BB61E7EC1CA1143700853994 /* MapViewController.swift in Sources */,
+				BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */,
 				BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */,
 				BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */,
 				BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */,
