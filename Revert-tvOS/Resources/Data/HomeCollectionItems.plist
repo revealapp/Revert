@@ -137,6 +137,16 @@
 				<key>infoFilename</key>
 				<string>super_deep</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stress Test</string>
+				<key>iconName</key>
+				<string>icon_StressTest</string>
+				<key>segueIdentifier</key>
+				<string>ShowStressTestViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stress_test</string>
+			</dict>
 		</array>
 	</dict>
 </array>

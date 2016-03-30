@@ -110,6 +110,7 @@
 		BB7121AC1CAA548100885A12 /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */; };
 		BB7121AD1CAA5BD600885A12 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */; };
 		BB7121AE1CAA625C00885A12 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
+		BB7121AF1CAA635B00885A12 /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
 		BB735B3E1C9FCC290092FA6F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB735B3C1C9FCC290092FA6F /* Data */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -821,6 +822,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7121AF1CAA635B00885A12 /* StressTestViewController.swift in Sources */,
 				BB7121AE1CAA625C00885A12 /* DeepView.swift in Sources */,
 				BB7121AD1CAA5BD600885A12 /* AnchorPointBoundsChangeViewController.swift in Sources */,
 				BB7121AC1CAA548100885A12 /* TransformLayersViewController.swift in Sources */,
