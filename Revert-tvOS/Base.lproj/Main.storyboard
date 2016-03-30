@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" id="JSQ-A6-fCK">
-                                <rect key="frame" x="0.0" y="199" width="594" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="634" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JSQ-A6-fCK" id="gEB-GB-Jeq">
                                     <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
@@ -176,7 +176,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -298,7 +298,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
                                     <rect key="frame" x="0.0" y="0.0" width="1269" height="66"/>
@@ -1503,24 +1503,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6x-yA-AwD" userLabel="Anchor Point">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="400"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anchor Point (0.25, 0.25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-Od-JJE">
-                                                <rect key="frame" x="879" y="20" width="162" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Anchor Point (0.25, 0.25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-Od-JJE">
+                                                <rect key="frame" x="728" y="20" width="466" height="51"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-yV-R09" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="910" y="57" width="100" height="100"/>
+                                                <rect key="frame" x="810" y="91" width="300" height="300"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="4Gv-Di-9JW"/>
-                                                    <constraint firstAttribute="width" constant="100" id="9HO-ZK-Dr8"/>
+                                                    <constraint firstAttribute="height" constant="300" id="4Gv-Di-9JW"/>
+                                                    <constraint firstAttribute="width" constant="300" id="9HO-ZK-Dr8"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
+                                                        <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                                         <color key="value" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1528,15 +1528,15 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-NB-yCf" userLabel="Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="910" y="57" width="100" height="100"/>
+                                                <rect key="frame" x="810" y="91" width="300" height="300"/>
                                                 <color key="backgroundColor" red="0.81829309459999999" green="0.28785437349999998" blue="1" alpha="0.85098039219999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="9sJ-Do-4PP"/>
-                                                    <constraint firstAttribute="width" constant="100" id="W3f-aw-fXE"/>
+                                                    <constraint firstAttribute="height" constant="300" id="9sJ-Do-4PP"/>
+                                                    <constraint firstAttribute="width" constant="300" id="W3f-aw-fXE"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
+                                                        <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                                         <color key="value" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1548,7 +1548,7 @@
                                         <constraints>
                                             <constraint firstItem="qjB-yV-R09" firstAttribute="top" secondItem="TcN-Od-JJE" secondAttribute="bottom" constant="20" id="8yE-G6-5EJ"/>
                                             <constraint firstItem="TcN-Od-JJE" firstAttribute="top" secondItem="I6x-yA-AwD" secondAttribute="top" constant="20" id="MFv-g9-Jfn"/>
-                                            <constraint firstAttribute="height" constant="200" id="TTH-Co-ljI"/>
+                                            <constraint firstAttribute="height" constant="400" id="TTH-Co-ljI"/>
                                             <constraint firstAttribute="centerX" secondItem="TcN-Od-JJE" secondAttribute="centerX" id="YdK-go-djJ"/>
                                             <constraint firstItem="Jcn-NB-yCf" firstAttribute="top" secondItem="TcN-Od-JJE" secondAttribute="bottom" constant="20" id="aVn-So-GVW"/>
                                             <constraint firstAttribute="centerX" secondItem="qjB-yV-R09" secondAttribute="centerX" id="gaF-Lo-kda"/>
@@ -1556,23 +1556,23 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-Nn-w4C" userLabel="Bounds Change">
-                                        <rect key="frame" x="0.0" y="200" width="1920" height="200"/>
+                                        <rect key="frame" x="0.0" y="400" width="1920" height="400"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounds Change (-25.0, -25.0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkP-s4-nhQ">
-                                                <rect key="frame" x="863" y="20" width="194" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bounds Change (?, ?)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkP-s4-nhQ">
+                                                <rect key="frame" x="762" y="20" width="398" height="51"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-Nd-PMc" userLabel="Bounds Change View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="910" y="57" width="100" height="100"/>
+                                                <rect key="frame" x="810" y="91" width="300" height="300"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-Fy-VL2" userLabel="Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                                         <color key="backgroundColor" red="0.81829309459999999" green="0.28785437349999998" blue="1" alpha="0.85098039219999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <real key="value" value="2"/>
+                                                                <integer key="value" value="6"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                                                 <color key="value" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1585,13 +1585,13 @@
                                                     <constraint firstItem="z6N-Fy-VL2" firstAttribute="top" secondItem="rc9-Nd-PMc" secondAttribute="top" id="AMj-lL-RWC"/>
                                                     <constraint firstAttribute="bottom" secondItem="z6N-Fy-VL2" secondAttribute="bottom" id="FPL-ou-iaJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="z6N-Fy-VL2" secondAttribute="trailing" id="T2H-mc-pUY"/>
-                                                    <constraint firstAttribute="width" constant="100" id="en0-NJ-X7V"/>
+                                                    <constraint firstAttribute="width" constant="300" id="en0-NJ-X7V"/>
                                                     <constraint firstItem="z6N-Fy-VL2" firstAttribute="leading" secondItem="rc9-Nd-PMc" secondAttribute="leading" id="jQ6-Oz-o4K"/>
-                                                    <constraint firstAttribute="height" constant="100" id="rcX-Yi-bAb"/>
+                                                    <constraint firstAttribute="height" constant="300" id="rcX-Yi-bAb"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
+                                                        <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                                         <color key="value" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1633,6 +1633,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="anchorPointView" destination="Jcn-NB-yCf" id="zZO-bT-2Mw"/>
+                        <outlet property="boundsChangeLabel" destination="qkP-s4-nhQ" id="hKu-1h-4ax"/>
                         <outlet property="boundsChangeView" destination="rc9-Nd-PMc" id="7V3-fK-qSG"/>
                         <outlet property="scrollViewItemHeight" destination="TTH-Co-ljI" id="fNn-64-mg3"/>
                     </connections>

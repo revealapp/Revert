@@ -17,6 +17,9 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length
     let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
+    
+    let offset: CGFloat = -self.boundsChangeView.frame.height / 4
+    self.boundsChangeLabel.text = self.boundsChangeLabel.text?.stringByReplacingOccurrencesOfString("?", withString:"\(offset)")
   }
 
   // MARK: Private
@@ -28,6 +31,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 
   @IBOutlet private weak var boundsChangeView: HairlineBorderView!
   @IBOutlet private weak var anchorPointView: HairlineBorderView!
+  @IBOutlet private weak var boundsChangeLabel: UILabel!
   @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
 
   private func animateIfNecessary() {
@@ -38,7 +42,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     self.wasAnimated = true
 
     // Bounds Change testing
-    let offset: CGFloat = -25
+    let offset: CGFloat = -self.boundsChangeView.frame.height / 4
     UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
       self.boundsChangeView.bounds = CGRectOffset(self.boundsChangeView.bounds, offset, offset)
       }, completion: nil)

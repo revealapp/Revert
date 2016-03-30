@@ -124,6 +124,7 @@
 		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
 		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
+		BBB0D3CB1CAB7A1F00449A9B /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
 		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
 		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
 		BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */; };
@@ -822,6 +823,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB0D3CB1CAB7A1F00449A9B /* CALayer+Revert.swift in Sources */,
 				BB7121AF1CAA635B00885A12 /* StressTestViewController.swift in Sources */,
 				BB7121AE1CAA625C00885A12 /* DeepView.swift in Sources */,
 				BB7121AD1CAA5BD600885A12 /* AnchorPointBoundsChangeViewController.swift in Sources */,
