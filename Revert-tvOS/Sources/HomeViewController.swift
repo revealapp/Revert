@@ -44,11 +44,7 @@ extension HomeViewController {
   override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
       let item = self.collection[nextFocusedIndexPath]
-      
-      // TODO: remove **the check** later on. This is just for debugging purposes while we don't have all segues implemented.
-      if self.dynamicType.isWhitelistedSegueIdentifier(item.segueIdentifier) {
-        self.performSegueWithIdentifier(item.segueIdentifier, sender: nextFocusedIndexPath)
-      }
+      self.performSegueWithIdentifier(item.segueIdentifier, sender: nextFocusedIndexPath)
       
       self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
     }
@@ -74,17 +70,5 @@ extension HomeViewController {
 private extension HomeViewController {
   static func configureCell(cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
-  }
-}
-
-// TODO: remove later on. This is just for debugging purposes while we don't have all segues implemented.
-private extension HomeViewController {
-  static func isWhitelistedSegueIdentifier(identifier: String) -> Bool {
-    switch identifier {
-    case "ShowTableViewControllerSegue", "ShowAlertViewControllerSegue", "ShowLayerPropertiesViewControllerSegue", "ShowDefaultsControllerSegue", "ShowNotSerializableViewControllerSegue":
-      return true
-    default:
-      return false
-    }
   }
 }

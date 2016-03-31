@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string></string>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Segmented Control</string>
+				<key>cellIdentifier</key>
+				<string>SegmentedControlTitleCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Segmented Control</string>
+				<key>cellIdentifier</key>
+				<string>SegmentedControlImageCell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Page Control</string>
+				<key>cellIdentifier</key>
+				<string>PageControlCell</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>SystemButtonCell</string>
+				<key>title</key>
+				<string>System Button</string>
+			</dict>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>CustomButtonCell</string>
+				<key>title</key>
+				<string>Custom Button</string>
+			</dict>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>DetailDisclosureButtonCell</string>
+				<key>title</key>
+				<string>Detail Disclosure Button</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Add Contact Button</string>
+				<key>cellIdentifier</key>
+				<string>AddContactButtonCell</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>Buttons</string>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>TextFieldCell</string>
+				<key>title</key>
+				<string>No Border TextField</string>
+			</dict>
+			<dict>
+				<key>cellIdentifier</key>
+				<string>RoundedTextFieldCell</string>
+				<key>title</key>
+				<string>Rounded Rect TextField</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>TextFields</string>
+	</dict>
+</array>
+</plist>

@@ -132,9 +132,9 @@
 		BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
 		BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
 		BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */; };
+		BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
 		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
-		BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */; };
 		BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 		BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */; };
@@ -242,7 +242,6 @@
 		BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
-		BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 		BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
 		BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -618,7 +617,6 @@
 		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BBB6FCB91CA3A2F400AF24F3 /* CollectionViewCells.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -832,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */,
 				BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */,
 				BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */,
 				BBB0D3D01CACA98F00449A9B /* LayerPropertiesCells.swift in Sources */,
@@ -863,7 +862,6 @@
 				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
 				BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */,
 				BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */,
-				BBB6FCBA1CA3A2F400AF24F3 /* CollectionViewCells.swift in Sources */,
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
 				BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */,
 				BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */,
