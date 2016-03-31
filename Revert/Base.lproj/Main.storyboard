@@ -4196,7 +4196,7 @@
         <!--Layer Properties-->
         <scene sceneID="uvP-f3-Wui">
             <objects>
-                <collectionViewController storyboardIdentifier="teste" id="sz2-FY-SQT" customClass="ControlsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="sz2-FY-SQT" customClass="ControlsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="pIC-Y7-GIB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

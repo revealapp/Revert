@@ -26,6 +26,18 @@
 				<string>alert_views</string>
 			</dict>
 			<dict>
+				<key>resourceFilename</key>
+				<string>ViewItems</string>
+				<key>title</key>
+				<string>Views</string>
+				<key>iconName</key>
+				<string>icon_DefaultView</string>
+				<key>segueIdentifier</key>
+				<string>ShowDefaultsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>default_views</string>
+			</dict>
+			<dict>
 				<key>title</key>
 				<string>Layer Properties</string>
 				<key>iconName</key>
