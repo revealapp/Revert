@@ -83,6 +83,7 @@ class TextFieldControlCell: CollectionViewCell {
   }
 #endif
 
+#if os(tvOS)
 final class HomeCollectionCell: CollectionViewCell {
   override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
     super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
@@ -99,3 +100,4 @@ final class HomeCollectionCell: CollectionViewCell {
   // MARK: Private
   @IBOutlet private(set) weak var imageView: UIImageView!
 }
+#endif
