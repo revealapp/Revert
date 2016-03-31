@@ -25,6 +25,16 @@
 				<key>infoFilename</key>
 				<string>alert_views</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Layer Properties</string>
+				<key>iconName</key>
+				<string>icon_Layerproperties</string>
+				<key>segueIdentifier</key>
+				<string>ShowLayerPropertiesViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>layer_properties</string>
+			</dict>
 		</array>
 	</dict>
 </array>
