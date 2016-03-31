@@ -133,6 +133,8 @@
 		BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
 		BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */; };
 		BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
+		BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
+		BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */; };
 		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
 		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
 		BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */; };
@@ -830,6 +832,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */,
+				BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */,
 				BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */,
 				BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */,
 				BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */,
