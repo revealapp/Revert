@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" id="JSQ-A6-fCK">
-                                <rect key="frame" x="0.0" y="199" width="594" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="634" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JSQ-A6-fCK" id="gEB-GB-Jeq">
                                     <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
@@ -35,6 +35,7 @@
                         <segue destination="v8M-oi-8Oq" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="cpF-4f-CXS"/>
                         <segue destination="0Wa-iV-Elk" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ea7-nA-3Ah"/>
                         <segue destination="jSn-KT-RLN" kind="showDetail" identifier="ShowLayerPropertiesViewControllerSegue" id="3Fo-mq-Wui"/>
+                        <segue destination="lkE-mP-DvX" kind="showDetail" identifier="ShowNotSerializableViewControllerSegue" id="HQY-yo-j9P"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -178,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -300,7 +301,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
                                     <rect key="frame" x="0.0" y="0.0" width="1269" height="66"/>
@@ -1355,6 +1356,62 @@
                 </collectionViewController>
             </objects>
             <point key="canvasLocation" x="9870.5" y="1744"/>
+        </scene>
+        <!--Non Serializable View Controller-->
+        <scene sceneID="Yuo-rZ-SJW">
+            <objects>
+                <viewController id="xx1-ys-faf" customClass="NonSerializableViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M3Q-Er-PCS"/>
+                        <viewControllerLayoutGuide type="bottom" id="AB7-ds-hz2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lVj-3l-LAc">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK4-lQ-s4o">
+                                <rect key="frame" x="100" y="680" width="1085" height="300"/>
+                                <color key="backgroundColor" red="0.95564013719999996" green="0.62022560829999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BG7-gd-itM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cr-U6-5Ai">
+                                <rect key="frame" x="100" y="245" width="1085" height="300"/>
+                                <color key="backgroundColor" red="0.29858762030000002" green="0.72199642659999996" blue="0.94276738169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Z6m-aI-W8h"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Cr-U6-5Ai" firstAttribute="top" secondItem="M3Q-Er-PCS" secondAttribute="bottom" constant="100" id="1W7-DA-c6e"/>
+                            <constraint firstAttribute="trailing" secondItem="MK4-lQ-s4o" secondAttribute="trailing" constant="100" id="7Je-xY-Rsh"/>
+                            <constraint firstItem="AB7-ds-hz2" firstAttribute="top" secondItem="MK4-lQ-s4o" secondAttribute="bottom" constant="100" id="NiL-R7-eD7"/>
+                            <constraint firstItem="MK4-lQ-s4o" firstAttribute="leading" secondItem="lVj-3l-LAc" secondAttribute="leading" constant="100" id="Tds-iU-BJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="1Cr-U6-5Ai" secondAttribute="trailing" constant="100" id="pjQ-ph-3qm"/>
+                            <constraint firstItem="1Cr-U6-5Ai" firstAttribute="leading" secondItem="lVj-3l-LAc" secondAttribute="leading" constant="100" id="raW-Oh-KL3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3VK-HZ-oyg"/>
+                    <connections>
+                        <outlet property="infAlphaView" destination="1Cr-U6-5Ai" id="gKy-Uw-fwx"/>
+                        <outlet property="nanAlphaView" destination="MK4-lQ-s4o" id="H2g-ek-8IY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfu-zM-zG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13018.5" y="1744"/>
         </scene>
         <!--Controls View Controller-->
         <scene sceneID="8h6-vh-PSe">
@@ -2469,6 +2526,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWX-do-LQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8421.5" y="1744"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ndz-Rj-WM3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lkE-mP-DvX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKA-Sv-gWK">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xx1-ys-faf" kind="relationship" relationship="rootViewController" id="NQ6-KP-LZm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMq-IQ-TMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11569.5" y="1744"/>
         </scene>
     </scenes>
     <resources>

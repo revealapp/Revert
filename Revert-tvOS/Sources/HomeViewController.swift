@@ -81,7 +81,7 @@ private extension HomeViewController {
 private extension HomeViewController {
   static func isWhitelistedSegueIdentifier(identifier: String) -> Bool {
     switch identifier {
-    case "ShowTableViewControllerSegue", "ShowAlertViewControllerSegue", "ShowLayerPropertiesViewControllerSegue", "ShowDefaultsControllerSegue":
+    case "ShowTableViewControllerSegue", "ShowAlertViewControllerSegue", "ShowLayerPropertiesViewControllerSegue", "ShowDefaultsControllerSegue", "ShowNotSerializableViewControllerSegue":
       return true
     default:
       return false

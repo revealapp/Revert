@@ -47,6 +47,16 @@
 				<key>infoFilename</key>
 				<string>layer_properties</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Not Serializable</string>
+				<key>iconName</key>
+				<string>icon_Serialize</string>
+				<key>segueIdentifier</key>
+				<string>ShowNotSerializableViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>not_serializable</string>
+			</dict>
 		</array>
 	</dict>
 </array>
