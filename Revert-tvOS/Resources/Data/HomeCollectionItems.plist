@@ -147,6 +147,16 @@
 				<key>infoFilename</key>
 				<string>stress_test</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Margins</string>
+				<key>iconName</key>
+				<string>icon_AutolayoutMargin</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout_margins</string>
+			</dict>
 		</array>
 	</dict>
 </array>

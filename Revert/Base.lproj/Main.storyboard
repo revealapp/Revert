@@ -2545,7 +2545,7 @@
         <!--Auto Layout Margins-->
         <scene sceneID="6ot-VI-ZcG">
             <objects>
-                <viewController id="AT1-f1-sr1" customClass="AutoLayoutMarginsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AT1-f1-sr1" customClass="SliderAutoLayoutMarginsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
                         <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
@@ -4688,7 +4688,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aJQ-lc-aaA"/>
+        <segue reference="KGq-sa-9db"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
