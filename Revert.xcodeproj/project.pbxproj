@@ -135,6 +135,8 @@
 		BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
 		BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */; };
+		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
 		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
 		BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */; };
@@ -242,6 +244,7 @@
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
+		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
 		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
@@ -576,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2720C81C9F9265002E53EE /* View Controllers */,
+				BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -788,6 +792,7 @@
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
+				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */,
 				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
@@ -882,6 +887,7 @@
 				BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
 				BB2720A71C9B9571002E53EE /* CollectableGroup.swift in Sources */,
+				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BB2720A51C9B9551002E53EE /* RevertItems.swift in Sources */,
 				BB2720A41C9B94D2002E53EE /* HomeItem.swift in Sources */,
 				BB2720A31C9B94BE002E53EE /* DataSource.swift in Sources */,

@@ -3090,7 +3090,7 @@
         <!--Auto Layout Margins-->
         <scene sceneID="9oB-lF-eno">
             <objects>
-                <viewController storyboardIdentifier="teste" id="M69-5z-vrU" customClass="ButtonsAutoLayoutMarginsViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teste" id="M69-5z-vrU" customClass="AutoLayoutMarginsViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
                         <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
@@ -3099,7 +3099,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="930"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
@@ -3190,59 +3190,76 @@
                                     <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
                                 </constraints>
                             </view>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Aj-34F">
-                                <rect key="frame" x="760" y="995" width="400" height="10"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-09-ief" customClass="ButtonsMarginsAdjustingView" customModule="Revert_tvOS">
+                                <rect key="frame" x="20" y="930" width="1880" height="150"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Aj-34F">
+                                        <rect key="frame" x="740" y="70" width="400" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="Xdq-Ms-JUk"/>
+                                        </constraints>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEI-dK-INO">
+                                        <rect key="frame" x="1240" y="25" width="200" height="100"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="8ie-09-ief" eventType="primaryActionTriggered" id="y4t-8D-2Lu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-5Q-oih">
+                                        <rect key="frame" x="440" y="25" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Bpk-ff-wVD"/>
+                                            <constraint firstAttribute="height" constant="100" id="b0w-yl-1bi"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="8ie-09-ief" eventType="primaryActionTriggered" id="n97-aZ-gIA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="Xdq-Ms-JUk"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="leading" secondItem="ckc-5Q-oih" secondAttribute="trailing" constant="100" id="228-w6-aGF"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="centerX" secondItem="8ie-09-ief" secondAttribute="centerX" id="5qD-fO-cU5"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="centerY" secondItem="8ie-09-ief" secondAttribute="centerY" id="64t-SF-Lgo"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="width" secondItem="ckc-5Q-oih" secondAttribute="width" id="EWO-Zu-Cru"/>
+                                    <constraint firstItem="ckc-5Q-oih" firstAttribute="centerY" secondItem="8ie-09-ief" secondAttribute="centerY" id="Fii-yi-yeg"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="leading" secondItem="cSf-Aj-34F" secondAttribute="trailing" constant="100" id="H9n-dh-UKg"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="height" secondItem="ckc-5Q-oih" secondAttribute="height" id="bAA-Xk-FOc"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="centerY" secondItem="8ie-09-ief" secondAttribute="centerY" id="vuD-bo-JGP"/>
                                 </constraints>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-5Q-oih">
-                                <rect key="frame" x="460" y="950" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Bpk-ff-wVD"/>
-                                    <constraint firstAttribute="height" constant="100" id="b0w-yl-1bi"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="M69-5z-vrU" eventType="primaryActionTriggered" id="wyY-Qa-kJg"/>
+                                    <outlet property="decrementButton" destination="ckc-5Q-oih" id="Wb8-U2-OSn"/>
+                                    <outlet property="incrementButton" destination="iEI-dK-INO" id="3qH-vq-IBN"/>
+                                    <outlet property="progressView" destination="cSf-Aj-34F" id="Fcc-BK-NS5"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEI-dK-INO">
-                                <rect key="frame" x="1260" y="950" width="200" height="100"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="M69-5z-vrU" eventType="primaryActionTriggered" id="8Sj-Ud-o5s"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="leading" secondItem="cSf-Aj-34F" secondAttribute="trailing" constant="100" id="3Lo-QD-aNm"/>
                             <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="150" id="3uA-BM-GyP"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="8ie-09-ief" secondAttribute="bottom" id="6hD-wJ-MZn"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
+                            <constraint firstItem="8ie-09-ief" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="FnW-4F-0Pu"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="leading" secondItem="ckc-5Q-oih" secondAttribute="trailing" constant="100" id="QQP-8y-sbd"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="width" secondItem="ckc-5Q-oih" secondAttribute="width" id="TNX-0o-3je"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="height" secondItem="ckc-5Q-oih" secondAttribute="height" id="jg9-s8-WET"/>
                             <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="centerY" secondItem="ckc-5Q-oih" secondAttribute="centerY" id="n1p-1y-NKg"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8ie-09-ief" secondAttribute="trailing" id="qdv-BF-U0B"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="ckc-5Q-oih" secondAttribute="bottom" constant="30" id="si9-5n-H22"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="centerY" secondItem="ckc-5Q-oih" secondAttribute="centerY" id="tDO-TQ-NIy"/>
+                            <constraint firstItem="8ie-09-ief" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leadingMargin" id="tKW-wD-yy3"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="leadingMargin" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" constant="40" id="tTn-xT-ReG"/>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="bottomMargin" secondItem="ml3-CY-mgV" secondAttribute="topMargin" constant="-40" id="vQh-Fy-wXe"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="centerX" secondItem="i1S-l0-cJP" secondAttribute="centerX" id="zkh-rZ-yKm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1"/>
@@ -3251,9 +3268,7 @@
                         <outlet property="centerViewWidthConstraint" destination="7h9-Sy-hh0" id="JGP-RS-YsJ"/>
                         <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
                         <outlet property="containerViewBottomConstraint" destination="3uA-BM-GyP" id="P9P-E0-cGD"/>
-                        <outlet property="decrementButton" destination="ckc-5Q-oih" id="rsv-OR-L0D"/>
-                        <outlet property="incrementButton" destination="iEI-dK-INO" id="XZ6-mm-24k"/>
-                        <outlet property="progressView" destination="cSf-Aj-34F" id="FFJ-vW-N1a"/>
+                        <outlet property="marginsAdjustingView" destination="8ie-09-ief" id="6oB-o9-El3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNI-hJ-PUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3264,7 +3279,7 @@
     <resources>
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
-        <image name="reveal_pretty" width="800" height="600"/>
+        <image name="reveal_pretty" width="22" height="22"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
 </document>

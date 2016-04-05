@@ -2545,7 +2545,7 @@
         <!--Auto Layout Margins-->
         <scene sceneID="6ot-VI-ZcG">
             <objects>
-                <viewController id="AT1-f1-sr1" customClass="SliderAutoLayoutMarginsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AT1-f1-sr1" customClass="AutoLayoutMarginsViewController" customModule="Revert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
                         <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
@@ -2645,32 +2645,47 @@
                                     <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
-                                <rect key="frame" x="200" y="562" width="200" height="31"/>
-                                <color key="tintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="790-cb-XJk" customClass="SliderMarginsAdjustingView" customModule="Revert" customModuleProvider="target">
+                                <rect key="frame" x="20" y="554" width="560" height="46"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
+                                        <rect key="frame" x="180" y="8" width="200" height="31"/>
+                                        <color key="tintColor" red="0.19429907202720642" green="0.66482287645339966" blue="0.94496184587478638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="790-cb-XJk" eventType="valueChanged" id="mHc-od-UbP"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
+                                    <constraint firstItem="rfO-2Q-Zto" firstAttribute="centerX" secondItem="790-cb-XJk" secondAttribute="centerX" id="DyJ-lr-4XX"/>
+                                    <constraint firstItem="rfO-2Q-Zto" firstAttribute="centerY" secondItem="790-cb-XJk" secondAttribute="centerY" id="VWL-js-EOa"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sliderValueChanged:" destination="AT1-f1-sr1" eventType="valueChanged" id="PY6-Pr-pLs"/>
+                                    <outlet property="slider" destination="rfO-2Q-Zto" id="QlD-7d-C2J"/>
                                 </connections>
-                            </slider>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
                             <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="46" id="3uA-BM-GyP"/>
+                            <constraint firstItem="790-cb-XJk" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="8PD-Ej-BH5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="790-cb-XJk" secondAttribute="bottom" id="Al2-de-2ki"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
+                            <constraint firstItem="790-cb-XJk" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leadingMargin" id="bvB-mv-e56"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="rfO-2Q-Zto" secondAttribute="bottom" constant="8" id="iA7-FF-0LT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="790-cb-XJk" secondAttribute="trailing" id="ij0-oq-jfZ"/>
                             <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
-                            <constraint firstAttribute="centerX" secondItem="rfO-2Q-Zto" secondAttribute="centerX" id="nPs-kx-9uS"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
@@ -2690,7 +2705,7 @@
                         <outlet property="centerViewWidthConstraint" destination="7h9-Sy-hh0" id="JGP-RS-YsJ"/>
                         <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
                         <outlet property="containerViewBottomConstraint" destination="3uA-BM-GyP" id="P9P-E0-cGD"/>
-                        <outlet property="slider" destination="rfO-2Q-Zto" id="jfc-Kf-F0d"/>
+                        <outlet property="marginsAdjustingView" destination="790-cb-XJk" id="h4q-i8-7Eq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-S5-dcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4690,7 +4705,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bOh-3j-R0P"/>
+        <segue reference="U7X-9a-vKX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21786168217658997" green="0.67291539907455444" blue="0.94411402940750122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
