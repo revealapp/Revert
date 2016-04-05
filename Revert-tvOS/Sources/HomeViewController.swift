@@ -6,11 +6,11 @@ import UIKit
 final class HomeViewController: UITableViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
-    collection: self.collection,
-    configureCell: self.dynamicType.configureCell,
-    cellIdentifier: Storyboards.Cell.Home
+      collection: self.collection,
+      configureCell: self.dynamicType.configureCell,
+      cellIdentifier: Storyboards.Cell.Home
     )
-    
+
     super.init(coder: aDecoder)
   }
   
