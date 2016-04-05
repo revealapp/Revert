@@ -11,8 +11,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     guard let tabBarController = self.window?.rootViewController as? UITabBarController else {
       fatalError("Root view controller should be a `UITabBarController`")
     }
-    // TODO: configure tabbarcontroller for delegate
-//    self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
     
     return true
   }
