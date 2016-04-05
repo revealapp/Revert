@@ -14,6 +14,18 @@ struct Static {
     }()
   }
 
+  struct NumberFormatter {
+    static var decimalFormatter: NSNumberFormatter = {
+      let numberFormatter = NSNumberFormatter()
+      numberFormatter.alwaysShowsDecimalSeparator = true
+      numberFormatter.locale = NSLocale.currentLocale()
+      numberFormatter.maximumFractionDigits = 2
+      numberFormatter.minimumFractionDigits = 1
+      numberFormatter.minimumIntegerDigits = 1
+      return numberFormatter
+    }()
+  }
+
   struct Region {
     static let Australia: MKCoordinateRegion = {
       let center = CLLocationCoordinate2D(latitude: -24.291451, longitude: 134.126772)
