@@ -685,7 +685,7 @@
 					};
 					BB27204B1C9B8E44002E53EE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = AH5AV3R4FK;
+						DevelopmentTeam = KBY3G4JPGC;
 					};
 				};
 			};
