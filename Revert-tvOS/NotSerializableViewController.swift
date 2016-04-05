@@ -13,6 +13,6 @@ final class NonSerializableViewController: RevertViewController {
   }
   
   // Mark: Private
-  @IBOutlet private weak var infAlphaView: UIView!
-  @IBOutlet private weak var nanAlphaView: UIView!
+  @IBOutlet private var infAlphaView: UIView!
+  @IBOutlet private var nanAlphaView: UIView!
 }
