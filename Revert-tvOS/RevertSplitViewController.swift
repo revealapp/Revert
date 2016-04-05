@@ -22,7 +22,6 @@ class RevertSplitViewController: UISplitViewController {
     }
     
     return preferredView
-    
   }
   
   // MARK:- Private
