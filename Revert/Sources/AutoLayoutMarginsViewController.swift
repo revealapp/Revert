@@ -28,6 +28,8 @@ private struct MarginValue {
     return self.value == self.dynamicType.minValue
   }
 
+  let progress = NSProgress(totalUnitCount:Int64(MarginValue.maxValue))
+
   // MARK: Private
   private static let maxValue: CGFloat = 150
   private static let minValue: CGFloat = 0
@@ -38,8 +40,6 @@ private struct MarginValue {
       self.progress.completedUnitCount = Int64(self.value)
     }
   }
-
-  let progress = NSProgress(totalUnitCount:Int64(MarginValue.maxValue))
 
   private static func cappedMarginForMargin(margin: CGFloat, delta: CGFloat) -> CGFloat {
     let margin = margin + delta

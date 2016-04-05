@@ -26,7 +26,7 @@ final class HomeViewController: UITableViewController {
     
     if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
       guard let indexPath = sender as? NSIndexPath else {
-        fatalError("`SettableHomeItem` requres `indexPath` to be sent as the sender.")
+        fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
       
       destinationViewController.item = self.collection[indexPath]
