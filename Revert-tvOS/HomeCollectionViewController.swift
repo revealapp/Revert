@@ -32,7 +32,7 @@ final class HomeCollectionViewController: UICollectionViewController {
     }
   }
 
-  //MARK: - Private
+  // MARK: - Private
   private var collection = CollectableCollection<HomeItem>(items: .HomeCollection)
   private var dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
