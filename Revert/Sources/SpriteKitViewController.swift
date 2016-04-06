@@ -18,30 +18,59 @@ final private class IBAScene: SKScene {
   }
 
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-    touches.forEach {
-      let location = $0.locationInNode(self)
-      self.addSpaceshipAtLocation(location)
+    if let firstTouch = touches.first {
+      let location = firstTouch.locationInNode(self)
+      let spaceship = self.dynamicType.packagedSpaceship(location)
+
+      self.spaceship = spaceship
+      self.addChild(spaceship)
+    }
+  }
+
+  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    if let firstTouch = touches.first {
+      let location = firstTouch.locationInNode(self)
+
+      self.spaceship?.position = location
+    }
+  }
+
+  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    if let spaceship = self.spaceship {
+      self.dynamicType.actionSpaceship(spaceship)
+
+      self.spaceship = nil
     }
   }
 
   // MARK: Private
 
+  private var spaceship: SKSpriteNode?
+
   private lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
-    label.text = NSLocalizedString("Tap to add sprite", comment: "SpriteKitViewController background label")
+    label.text = NSLocalizedString("Touch to add sprite, release to animate it", comment: "SpriteKitViewController background label")
     label.fontSize = 28
     label.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+
+    #if os(tvOS)
+      label.text = NSLocalizedString("Touch the trackpad to add sprite, release to animate it", comment: "SpriteKitViewController background label")
+      label.fontSize = 60
+    #endif
+
     return label
   }()
 
-  private func addSpaceshipAtLocation(location: CGPoint) {
-    let spaceShip = SKSpriteNode(imageNamed: "spritekit_reveal")
+  private static func packagedSpaceship(startingPosition: CGPoint) -> SKSpriteNode {
+    let spaceship = SKSpriteNode(imageNamed: "spritekit_reveal")
+    spaceship.position = startingPosition
+    
+    return spaceship
+  }
+
+  private static func actionSpaceship(spaceship: SKSpriteNode) {
     let action = SKAction.rotateByAngle(CGFloat(M_PI), duration: 1)
-
-    spaceShip.position = location
-    spaceShip.runAction(SKAction.repeatActionForever(action))
-
-    self.addChild(spaceShip)
+    spaceship.runAction(SKAction.repeatActionForever(action))
   }
 }
 
