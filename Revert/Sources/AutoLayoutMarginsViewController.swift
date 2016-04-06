@@ -3,13 +3,12 @@
 
 import UIKit
 
-final class AutoLayoutMarginsViewController: RevertViewController {
+class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.slider.value = 0
-    self.slider.minimumValue = 0
-    self.slider.maximumValue = 100
+    self.marginsAdjustingView.marginsDelegate = self
+
     self.centerView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
   }
 
@@ -22,22 +21,21 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     }
   }
 
-  // MARK: Private
+  // MARK: MarginsAdjustingViewDelegate
+  func didUpdateMargins(updatedLayoutMargins: UIEdgeInsets) {
+    self.centerView.layoutMargins = updatedLayoutMargins
+  }
 
+  // MARK: Private
   private static let interSquareSpacing: CGFloat = 20
 
   private var lastUpdateSquaresWidthSize: CGSize?
 
-  @IBOutlet private weak var centerView: UIView!
-  @IBOutlet private weak var slider: UISlider!
-  @IBOutlet private weak var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet private weak var containerView: UIView!
-  @IBOutlet private weak var containerViewBottomConstraint: NSLayoutConstraint!
-
-  @IBAction private func sliderValueChanged(sender: UISlider) {
-    let margin = CGFloat(sender.value)
-    self.centerView.layoutMargins = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
-  }
+  @IBOutlet private var marginsAdjustingView: MarginsAdjustingView!
+  @IBOutlet private var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet private var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet private var centerView: UIView!
+  @IBOutlet private var containerView: UIView!
 
   private func updateSquareWidths() {
     let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
@@ -45,3 +43,11 @@ final class AutoLayoutMarginsViewController: RevertViewController {
     self.centerViewWidthConstraint.constant = centerWidth
   }
 }
+
+#if os(tvOS)
+  extension AutoLayoutMarginsViewController {
+    override var preferredFocusedView: UIView? {
+      return self.marginsAdjustingView
+    }
+  }
+#endif

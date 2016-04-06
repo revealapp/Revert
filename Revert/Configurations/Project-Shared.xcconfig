@@ -57,9 +57,9 @@ CLANG_WARN_UNREACHABLE_CODE = YES
 // Code Signing Identity
 // 
 // The name ("common name") of a valid code-signing certificate in a keychain within your
-// keychain path.   A missing or invalid certificate will cause a build error.
+// keychain path. A missing or invalid certificate will cause a build error.
 
-CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+CODE_SIGN_IDENTITY = iPhone Developer
 
 
 // Strip Debug Symbols During Copy
@@ -94,20 +94,3 @@ GCC_WARN_UNUSED_FUNCTION = YES
 
 
 GCC_WARN_UNUSED_VARIABLE = YES
-
-
-IPHONEOS_DEPLOYMENT_TARGET = 8.2
-
-
-// Base SDK
-// 
-// The name or path of the base SDK being used during the build. The product will be
-// built against the headers and libraries located inside the indicated SDK. This path
-// will be prepended to all search paths, and will be passed through the environment to
-// the compiler and linker. Additional SDKs can be specified in the ADDITIONAL_SDKS
-// setting.
-
-SDKROOT = iphoneos
-
-
-TARGETED_DEVICE_FAMILY = 1,2

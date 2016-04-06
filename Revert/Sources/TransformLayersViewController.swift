@@ -13,9 +13,11 @@ final class TransformLayersViewController: RevertViewController {
 
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
+    
+    let rotationInRadians = CGFloat(GLKMathDegreesToRadians(10))
 
-    // Update the scrollview' subview's height to match the screen height with a minimum value
-    let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length
+    // Update the scrollview' subview's height to match the screen height with a minimum value and accounts for extra height after xy rotation
+    let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length - sqrt((2 * self.xyRotateView.frame.size.width/2 * self.xyRotateView.frame.size.width/2) * (1 - cos(rotationInRadians)))
     let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
   }

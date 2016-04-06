@@ -7,6 +7,7 @@ struct Storyboards {
     static let CollectionViewController = "CollectionViewControllerCell"
     static let TableViewController = "TableViewControllerCell"
     static let Home = "HomeCell"
+    static let HomeCollection = "HomeCollectionCell"
     static let Stress = "StressCell"
     static let Alert = "AlertCell"
   }

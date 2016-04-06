@@ -75,6 +75,73 @@
 		B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
 		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
+		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
+		BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Assets.xcassets */; };
+		BB2720A21C9B94B8002E53EE /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* CollectableCollection.swift */; };
+		BB2720A31C9B94BE002E53EE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63DFFE1BD6811B006D0A82 /* DataSource.swift */; };
+		BB2720A41C9B94D2002E53EE /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
+		BB2720A51C9B9551002E53EE /* RevertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C71BB2BA4D00768DAA /* RevertItems.swift */; };
+		BB2720A61C9B9571002E53EE /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE511751BB2F51C0087A68D /* Collectable.swift */; };
+		BB2720A71C9B9571002E53EE /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */; };
+		BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
+		BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
+		BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
+		BB2720B01C9B9A16002E53EE /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
+		BB2720B41C9BCC8E002E53EE /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
+		BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4BC11B0230B300F6117D /* RevertViewController.swift */; };
+		BB2720B61C9BCD19002E53EE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
+		BB2720B91C9BCD19002E53EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
+		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
+		BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
+		BB61E7EB1CA111A400853994 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */; };
+		BB61E7EC1CA1143700853994 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
+		BB61E7ED1CA1145400853994 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
+		BB61E7EE1CA1146C00853994 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
+		BB61E7EF1CA11ED800853994 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
+		BB61E7F01CA1262700853994 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */; };
+		BB61E7F11CA1263500853994 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */; };
+		BB7121A61CAA464A00885A12 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */; };
+		BB7121A71CAA464A00885A12 /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */; };
+		BB7121A81CAA4AE200885A12 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */; };
+		BB7121A91CAA51EF00885A12 /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
+		BB7121AA1CAA51FE00885A12 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */; };
+		BB7121AB1CAA53B200885A12 /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */; };
+		BB7121AC1CAA548100885A12 /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */; };
+		BB7121AD1CAA5BD600885A12 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */; };
+		BB7121AE1CAA625C00885A12 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
+		BB7121AF1CAA635B00885A12 /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
+		BB735B3E1C9FCC290092FA6F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB735B3C1C9FCC290092FA6F /* Data */; };
+		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
+		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
+		BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
+		BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
+		BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
+		BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */; };
+		BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */; };
+		BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */; };
+		BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
+		BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
+		BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
+		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
+		BBB0D3CB1CAB7A1F00449A9B /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
+		BBB0D3CC1CACA67200449A9B /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
+		BBB0D3CD1CACA75D00449A9B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
+		BBB0D3CF1CACA93000449A9B /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
+		BBB0D3D01CACA98F00449A9B /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
+		BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
+		BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
+		BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */; };
+		BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
+		BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
+		BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */; };
+		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */; };
+		BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */; };
+		BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */; };
+		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
+		BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,7 +194,7 @@
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
-		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
+		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = ../Sources/CountriesViewController.swift; sourceTree = "<group>"; };
 		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
 		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
 		9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenGLViewController.swift; path = Revert/Sources/OpenGLViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +205,7 @@
 		9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Revert/Sources/CALayer+Revert.swift"; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
-		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
+		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../Sources/CollectionViewController.swift; sourceTree = "<group>"; };
 		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
 		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
@@ -162,6 +229,26 @@
 		B59998EB1BC3848D002FE92C /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Revert/Sources/Requirement.swift; sourceTree = "<group>"; };
 		B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Revert/Sources/StackViewController.swift; sourceTree = "<group>"; };
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
+		BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
+		BB735B3C1C9FCC290092FA6F /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Resources/Data; sourceTree = "<group>"; };
+		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Sources/HomeViewController.swift; sourceTree = "<group>"; };
+		BB735B451C9FD0490092FA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Shared/Assets.xcassets; sourceTree = "<group>"; };
+		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
+		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
+		BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
+		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
+		BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
+		BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2720491C9B8E44002E53EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,12 +318,9 @@
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
-				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
-				9A9BD1E31BD67B17001A439D /* Configurations */,
-				9A2F94701B140B0E007E51B1 /* Scripts */,
-				9A6850BA1AD4A20E00ACCE29 /* Resources */,
-				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
-				9A6850B91AD4A20E00ACCE29 /* Products */,
+				BB27205B1C9B8E9E002E53EE /* Revert */,
+				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
+				BB2720BD1C9F8DAE002E53EE /* Shared */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -239,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6850B81AD4A20E00ACCE29 /* Revert.app */,
+				BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,9 +379,6 @@
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
-				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
-				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
 				9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */,
 				9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */,
 				9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */,
@@ -321,6 +410,7 @@
 			children = (
 				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
 				9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */,
+				BB61E7EA1CA111A400853994 /* ExampleLegacyAlerts.swift */,
 				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
 				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
 				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
@@ -351,9 +441,7 @@
 				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
 				9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
-				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
 				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
-				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
 				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
 				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
 				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
@@ -399,6 +487,154 @@
 			name = "Data Sources";
 			sourceTree = "<group>";
 		};
+		BB27204D1C9B8E44002E53EE /* Revert-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720C01C9F8F57002E53EE /* Configurations */,
+				BB27205E1C9B9160002E53EE /* Sources */,
+				BB27205D1C9B8ECF002E53EE /* Resources */,
+			);
+			path = "Revert-tvOS";
+			sourceTree = "<group>";
+		};
+		BB27205B1C9B8E9E002E53EE /* Revert */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
+				9A9BD1E31BD67B17001A439D /* Configurations */,
+				9A2F94701B140B0E007E51B1 /* Scripts */,
+				9A6850BA1AD4A20E00ACCE29 /* Resources */,
+				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
+				9A6850B91AD4A20E00ACCE29 /* Products */,
+			);
+			name = Revert;
+			sourceTree = "<group>";
+		};
+		BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
+				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
+			);
+			name = "Storyboards & XIBs";
+			sourceTree = "<group>";
+		};
+		BB27205D1C9B8ECF002E53EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720551C9B8E44002E53EE /* Assets.xcassets */,
+				BB735B3C1C9FCC290092FA6F /* Data */,
+				BB735B3D1C9FCC290092FA6F /* Info.plist */,
+				BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB27205E1C9B9160002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
+				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
+				BB2720A11C9B92BD002E53EE /* View Controllers */,
+				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720A11C9B92BD002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
+				BBED3B481CA228A100FFFF04 /* RevertSplitViewController.swift */,
+				BBB6FCB41CA3798B00AF24F3 /* HomeCollectionViewController.swift */,
+				BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB2720BD1C9F8DAE002E53EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720BF1C9F8DD0002E53EE /* Sources */,
+				BB2720BE1C9F8DBA002E53EE /* Configurations */,
+				BB735B481C9FD0500092FA6F /* Resources */,
+			);
+			name = Shared;
+			path = Revert/Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BE1C9F8DBA002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
+				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
+				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BF1C9F8DD0002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720C81C9F9265002E53EE /* View Controllers */,
+				BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720C01C9F8F57002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */,
+				BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */,
+				BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720C81C9F9265002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
+				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB735B481C9FD0500092FA6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB735B451C9FD0490092FA6F /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBB6FCB61CA37CA900AF24F3 /* CollectionDataSource.swift */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BBB6FCC01CA9FBE300AF24F3 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				BBB6FCC11CA9FD6100AF24F3 /* RevertFocusableTableView.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +656,23 @@
 			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
+			buildPhases = (
+				BB2720481C9B8E44002E53EE /* Sources */,
+				BB2720491C9B8E44002E53EE /* Frameworks */,
+				BB27204A1C9B8E44002E53EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Revert-tvOS";
+			productName = "Revert-tvOS";
+			productReference = BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -432,6 +685,11 @@
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = KBY3G4JPGC;
+					};
+					BB27204B1C9B8E44002E53EE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KBY3G4JPGC;
 					};
 				};
 			};
@@ -449,6 +707,7 @@
 			projectRoot = "";
 			targets = (
 				9A6850B71AD4A20E00ACCE29 /* Revert */,
+				BB27204B1C9B8E44002E53EE /* Revert-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -464,7 +723,24 @@
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
+				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6C75031BDE29DE00534680 /* Data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB27204A1C9B8E44002E53EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */,
+				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
+				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
+				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
+				BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */,
+				BB92F1401C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig in Resources */,
+				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				BB735B3E1C9FCC290092FA6F /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +792,7 @@
 				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
 				9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
+				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */,
 				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
 				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
@@ -535,6 +812,7 @@
 				9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */,
 				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
+				BB61E7EB1CA111A400853994 /* ExampleLegacyAlerts.swift in Sources */,
 				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
 				9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */,
 				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
@@ -552,6 +830,68 @@
 				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
 				B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */,
 				9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2720481C9B8E44002E53EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */,
+				BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */,
+				BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */,
+				BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */,
+				BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */,
+				BBB0D3D01CACA98F00449A9B /* LayerPropertiesCells.swift in Sources */,
+				BBB0D3CF1CACA93000449A9B /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
+				BBB0D3CD1CACA75D00449A9B /* ControlsDataSource.swift in Sources */,
+				BBB0D3CC1CACA67200449A9B /* ControlsViewController.swift in Sources */,
+				BBB0D3CB1CAB7A1F00449A9B /* CALayer+Revert.swift in Sources */,
+				BB7121AF1CAA635B00885A12 /* StressTestViewController.swift in Sources */,
+				BB7121AE1CAA625C00885A12 /* DeepView.swift in Sources */,
+				BB7121AD1CAA5BD600885A12 /* AnchorPointBoundsChangeViewController.swift in Sources */,
+				BB7121AC1CAA548100885A12 /* TransformLayersViewController.swift in Sources */,
+				BB7121AB1CAA53B200885A12 /* TransformViewsViewController.swift in Sources */,
+				BB7121AA1CAA51FE00885A12 /* AutoResizingMaskViewSource.swift in Sources */,
+				BB7121A91CAA51EF00885A12 /* AutoResizingMaskViewController.swift in Sources */,
+				BB7121A81CAA4AE200885A12 /* AlignmentInsetView.swift in Sources */,
+				BB7121A61CAA464A00885A12 /* HairlineConstraint.swift in Sources */,
+				BB7121A71CAA464A00885A12 /* HairlineBorderView.swift in Sources */,
+				BB61E7F11CA1263500853994 /* RevealOpenGLCube.swift in Sources */,
+				BB61E7F01CA1262700853994 /* OpenGLViewController.swift in Sources */,
+				BB61E7EF1CA11ED800853994 /* SpriteKitViewController.swift in Sources */,
+				BB61E7EE1CA1146C00853994 /* Static.swift in Sources */,
+				BB61E7ED1CA1145400853994 /* MapAnnotationView.swift in Sources */,
+				BB61E7EC1CA1143700853994 /* MapViewController.swift in Sources */,
+				BBB6FCC21CA9FD6100AF24F3 /* RevertFocusableTableView.swift in Sources */,
+				BB61E7E91CA0FC6E00853994 /* ExampleAlerts.swift in Sources */,
+				BB61E7E81CA0FC4600853994 /* AlertViewController.swift in Sources */,
+				BB957F8B1CA0B47D000F09CA /* StackViewController.swift in Sources */,
+				BB735B441C9FCD9D0092FA6F /* ScrollViewController.swift in Sources */,
+				BB92F1421C9FC4B500ECD9CB /* UIStoryboardSegue+Revert.swift in Sources */,
+				BB92F1411C9FC34900ECD9CB /* SplitViewControllerDelegate.swift in Sources */,
+				BBB6FCB71CA37CA900AF24F3 /* CollectionDataSource.swift in Sources */,
+				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
+				BBB6FCB51CA3798B00AF24F3 /* HomeCollectionViewController.swift in Sources */,
+				BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */,
+				BB2720B61C9BCD19002E53EE /* Country.swift in Sources */,
+				BB2720B91C9BCD19002E53EE /* Item.swift in Sources */,
+				BB2720B51C9BCD09002E53EE /* RevertViewController.swift in Sources */,
+				BB2720B41C9BCC8E002E53EE /* CountriesViewController.swift in Sources */,
+				BB2720B01C9B9A16002E53EE /* UIColor+Revert.swift in Sources */,
+				BBED3B491CA228A100FFFF04 /* RevertSplitViewController.swift in Sources */,
+				BB2720AF1C9B99FA002E53EE /* StoryboardIdentifiers.swift in Sources */,
+				BB2720AE1C9B9894002E53EE /* TableViewCells.swift in Sources */,
+				BB2720A81C9B95FF002E53EE /* Requirement.swift in Sources */,
+				BB2720A61C9B9571002E53EE /* Collectable.swift in Sources */,
+				BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */,
+				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
+				BB2720A71C9B9571002E53EE /* CollectableGroup.swift in Sources */,
+				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
+				BB2720A51C9B9551002E53EE /* RevertItems.swift in Sources */,
+				BB2720A41C9B94D2002E53EE /* HomeItem.swift in Sources */,
+				BB2720A31C9B94BE002E53EE /* DataSource.swift in Sources */,
+				BB2720A21C9B94B8002E53EE /* CollectableCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +930,30 @@
 			name = StackView.xib;
 			sourceTree = "<group>";
 		};
+		BB2720521C9B8E44002E53EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720531C9B8E44002E53EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720BB1C9F8BE5002E53EE /* Base */,
+			);
+			name = HomeCell.xib;
+			sourceTree = "<group>";
+		};
+		BB957F8D1CA0B57C000F09CA /* StackView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB957F8E1CA0B57C000F09CA /* Base */,
+			);
+			name = StackView.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -621,6 +985,20 @@
 			};
 			name = Release;
 		};
+		BB2ED9DB1C9FB8F8002BFD74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BB2ED9DC1C9FB8F8002BFD74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -638,6 +1016,15 @@
 			buildConfigurations = (
 				9A6850DA1AD4A20E00ACCE29 /* Debug */,
 				9A6850DB1AD4A20E00ACCE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB2ED9DB1C9FB8F8002BFD74 /* Debug */,
+				BB2ED9DC1C9FB8F8002BFD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

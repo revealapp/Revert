@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Table View</string>
+				<key>iconName</key>
+				<string>icon_TableView</string>
+				<key>segueIdentifier</key>
+				<string>ShowTableViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>table_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Alert View</string>
+				<key>iconName</key>
+				<string>icon_AlertView</string>
+				<key>segueIdentifier</key>
+				<string>ShowAlertViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>alert_views</string>
+			</dict>
+			<dict>
+				<key>resourceFilename</key>
+				<string>ViewItems</string>
+				<key>title</key>
+				<string>Views</string>
+				<key>iconName</key>
+				<string>icon_DefaultView</string>
+				<key>segueIdentifier</key>
+				<string>ShowDefaultsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>default_views</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Layer Properties</string>
+				<key>iconName</key>
+				<string>icon_Layerproperties</string>
+				<key>segueIdentifier</key>
+				<string>ShowLayerPropertiesViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>layer_properties</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Not Serializable</string>
+				<key>iconName</key>
+				<string>icon_Serialize</string>
+				<key>segueIdentifier</key>
+				<string>ShowNotSerializableViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>not_serializable</string>
+			</dict>
+			<dict>
+				<key>resourceFilename</key>
+				<string>ControlItems</string>
+				<key>title</key>
+				<string>Controls</string>
+				<key>iconName</key>
+				<string>icon_Controls</string>
+				<key>segueIdentifier</key>
+				<string>ShowControlsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>controls</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -10,7 +10,29 @@ final class ScrollViewController: RevertViewController {
     self.scrollView.flashScrollIndicators()
   }
 
+  override var preferredFocusedView: UIView? {
+    return self.scrollView
+  }
+
   // MARK: Private
 
-  @IBOutlet private weak var scrollView: UIScrollView!
+  @IBOutlet private weak var scrollView: RevertFocusableScrollView!
+}
+
+#if os(tvOS)
+  extension ScrollViewController {
+    override func viewDidLoad() {
+      super.viewDidLoad()
+
+      self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
+    }
+  }
+#endif
+
+final class RevertFocusableScrollView: UIScrollView {
+  #if os(tvOS)
+    override func canBecomeFocused() -> Bool {
+      return true
+    }
+  #endif
 }
