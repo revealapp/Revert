@@ -30,18 +30,14 @@ extension UIAlertController {
   }
 }
 
-// UIAlertView and UIActionSheet are not available on tvOS, so we filter out their related methods.
-
+#if os(iOS)
 extension AlertViewController {
   static func showExampleAlertView() {
-    #if os(iOS)
       UIAlertView.exampleAlertView().show()
-    #endif
   }
   
   static func showExampleActionsSheetInView(view : UIView) {
-    #if os(iOS)
       UIActionSheet.exampleActionSheet().showInView(view)
-    #endif
   }
 }
+#endif

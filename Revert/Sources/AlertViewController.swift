@@ -20,39 +20,55 @@ final class AlertViewController: RevertTableViewController {
     self.tableView.dataSource = self.dataSource
   }
 
-  // MARK: Private
-
-  private enum Identifier: String {
-    case AlertView = "alertview"
-    case ActionSheet = "actionsheet"
-    case AlertController = "alertcontroller"
-    case ActionController = "actioncontroller"
-  }
-
   private var collection = CollectableCollection<Item>(items: .Alert)
   private var dataSource: DataSource<Item, BasicCell>
 }
 
-// MARK:- Presenters
+// MARK:- UIAlertController Presenter
 extension AlertViewController {
   private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
     self.presentViewController(alertViewController, animated: true, completion: nil)
   }
-  
-  private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
-    switch identifier {
-    case .AlertView:
-      AlertViewController.showExampleAlertView()
-    case .ActionSheet:
-      AlertViewController.showExampleActionsSheetInView(fromView)
-    default:
+}
+
+#if os(iOS)
+  extension AlertViewController {
+    private enum Identifier: String {
+      case AlertView = "alertview"
+      case ActionSheet = "actionsheet"
+      case AlertController = "alertcontroller"
+      case ActionController = "actioncontroller"
+    }
+
+    private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
+      switch identifier {
+      case .AlertView:
+        AlertViewController.showExampleAlertView()
+      case .ActionSheet:
+        AlertViewController.showExampleActionsSheetInView(fromView)
+      default:
+        let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
+        self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
+      }
+    }
+  }
+#endif
+
+#if os(tvOS)
+  extension AlertViewController {
+    private enum Identifier: String {
+      case AlertController = "alertcontroller"
+      case ActionController = "actioncontroller"
+    }
+
+    private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
       let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
     }
   }
-}
+#endif
 
 // MARK:- UITableViewDelegate
 extension AlertViewController {
