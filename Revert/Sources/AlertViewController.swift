@@ -33,15 +33,18 @@ extension AlertViewController {
   }
 }
 
+private enum Identifier: String {
+  case AlertController = "alertcontroller"
+  case ActionController = "actioncontroller"
+
+  #if os(iOS)
+    case AlertView = "alertview"
+    case ActionSheet = "actionsheet"
+  #endif
+}
+
 #if os(iOS)
   extension AlertViewController {
-    private enum Identifier: String {
-      case AlertView = "alertview"
-      case ActionSheet = "actionsheet"
-      case AlertController = "alertcontroller"
-      case ActionController = "actioncontroller"
-    }
-
     private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
       switch identifier {
       case .AlertView:
@@ -58,11 +61,6 @@ extension AlertViewController {
 
 #if os(tvOS)
   extension AlertViewController {
-    private enum Identifier: String {
-      case AlertController = "alertcontroller"
-      case ActionController = "actioncontroller"
-    }
-
     private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
       let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
