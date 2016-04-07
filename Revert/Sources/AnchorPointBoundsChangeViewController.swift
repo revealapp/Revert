@@ -18,12 +18,12 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
     self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
 
-    if let boundsOffset = Static.NumberFormatter.decimalFormatter.stringFromNumber(-self.quarterBoundsHeight) {
+    if let boundsOffset = Static.Formatter.decimal.stringFromNumber(-self.quarterBoundsHeight) {
       self.boundsChangeLabel.text = NSLocalizedString("Bounds Change: (\(boundsOffset), \(boundsOffset))", comment: "Bounds change description")
     }
 
-    if let anchorOffsetX = Static.NumberFormatter.decimalFormatter.stringFromNumber(self.dynamicType.anchorOffset.x),
-      let anchorOffsetY = Static.NumberFormatter.decimalFormatter.stringFromNumber(self.dynamicType.anchorOffset.y) {
+    if let anchorOffsetX = Static.Formatter.decimal.stringFromNumber(self.dynamicType.anchorOffset.x),
+      let anchorOffsetY = Static.Formatter.decimal.stringFromNumber(self.dynamicType.anchorOffset.y) {
       self.anchorChangeLabel.text = NSLocalizedString("Anchor Point: (\(anchorOffsetX), \(anchorOffsetY))", comment: "Anchor point description")
     }
   }

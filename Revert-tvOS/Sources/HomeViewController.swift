@@ -35,9 +35,8 @@ final class HomeViewController: UITableViewController {
   
   //MARK: - Private
   
-  private var collection = CollectableCollection<HomeItem>(items: .Home)
-  private var dataSource: DataSource<HomeItem, HomeCell>
-
+  private let collection = CollectableCollection<HomeItem>(items: .Home)
+  private let dataSource: DataSource<HomeItem, HomeCell>
 }
 
 extension HomeViewController {

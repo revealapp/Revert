@@ -24,29 +24,43 @@ final class ControlsViewController: RevertCollectionViewController {
 
     assert(self.resourceFilename != nil, "Resource file name should be set before `viewDidLoad`")
 
-    // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
-    // The behaviour is not perfect, but there is no way to opt-out
-    if NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_4 {
-      // Setup Keyboard Handler
-      self.keyboardHandler.scrollView = self.collectionView
-      self.keyboardHandler.viewController = self
-    }
-
     // Setup Data Source
     self.collectionView!.dataSource = self.dataSource
 
-    // Setup Dismiss Tap Gesture
-    let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(self.collectionViewTapped(_:)))
-    self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
+    #if os(iOS)
+      self.setupKeyboardHandler()
+    #endif
   }
 
-  func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
-    self.collectionView?.endEditing(true)
-  }
+
 
   // MARK: Private
+  #if os(iOS)
+    private let keyboardHandler = KeyboardHandler()
+  #endif
 
   private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
-  private let keyboardHandler = KeyboardHandler()
 }
+
+#if os(iOS)
+  extension ControlsViewController {
+    private func setupKeyboardHandler() {
+      // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
+      // The behaviour is not perfect, but there is no way to opt-out
+      if NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_4 {
+        // Setup Keyboard Handler
+        self.keyboardHandler.scrollView = self.collectionView
+        self.keyboardHandler.viewController = self
+      }
+
+      // Setup Dismiss Tap Gesture
+      let dismissKeyboardGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(self.collectionViewTapped(_:)))
+      self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
+    }
+
+    func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
+      self.collectionView?.endEditing(true)
+    }
+  }
+#endif

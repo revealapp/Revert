@@ -3,7 +3,7 @@
 
 import UIKit
 
-final class CountriesViewController: RevertTableViewController, CountriesViewRefreshControlProtocol {
+final class CountriesViewController: RevertTableViewController {
   private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
   private let dataSource: DataSource<Country, BasicCell>
   private var refreshTimer: NSTimer?
@@ -23,8 +23,10 @@ final class CountriesViewController: RevertTableViewController, CountriesViewRef
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-    
-    self.setupRefreshControl()
+
+    #if os(iOS)
+      self.setupRefreshControl()
+    #endif
   }
 
   private static func footerLabelWithText(text: String?) -> UILabel {
@@ -78,24 +80,9 @@ private extension CountriesViewController {
   }
 }
 
-// MARK:- UIRefreshControl
-// UIRefreshControl is not available on tvOS, so we have to keep everything related to that control separate.
-// The `CountriesViewRefreshControlProtocol` protocol and extension ensure compatibility with tvOS.
-// The `CountriesViewController` extension makes sure UIRefreshControl is only referenced outside tvOS.
-
-protocol CountriesViewRefreshControlProtocol {
-  func setupRefreshControl()
-}
-
-extension CountriesViewRefreshControlProtocol {
-  func setupRefreshControl() {
-    // This empty method simulates an optional protocol method like we have in ObjC.
-  }
-}
-
 #if os(iOS)
 extension CountriesViewController {
-  func setupRefreshControl() {
+  private func setupRefreshControl() {
     self.refreshControl = UIRefreshControl()
     self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
   }

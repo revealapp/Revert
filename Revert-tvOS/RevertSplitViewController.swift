@@ -8,8 +8,8 @@ class RevertSplitViewController: UISplitViewController {
   func focusDetailView() {
     self.preferDetailViewFocus = true
     
-    setNeedsFocusUpdate()
-    updateFocusIfNeeded()
+    self.setNeedsFocusUpdate()
+    self.updateFocusIfNeeded()
   }
   
   override var preferredFocusedView: UIView? {

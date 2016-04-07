@@ -130,7 +130,6 @@
 		BBB0D3CF1CACA93000449A9B /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
 		BBB0D3D01CACA98F00449A9B /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
 		BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
-		BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
 		BBB0D3D51CACD9BF00449A9B /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0D3D41CACD9BF00449A9B /* NotSerializableViewController.swift */; };
 		BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
@@ -840,7 +839,6 @@
 				BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */,
 				BBB0D3D71CACF18000449A9B /* AutoLayoutMarginsViewController.swift in Sources */,
 				BBB0D3D61CACE3D400449A9B /* CollectionViewCells.swift in Sources */,
-				BBB0D3D21CACB64500449A9B /* KeyboardHandler.swift in Sources */,
 				BBB0D3D11CACA99600449A9B /* LayerViews.swift in Sources */,
 				BBB0D3D01CACA98F00449A9B /* LayerPropertiesCells.swift in Sources */,
 				BBB0D3CF1CACA93000449A9B /* AdaptiveCollectionViewFlowLayout.swift in Sources */,

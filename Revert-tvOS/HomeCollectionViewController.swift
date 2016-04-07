@@ -33,8 +33,8 @@ final class HomeCollectionViewController: UICollectionViewController {
   }
 
   // MARK: - Private
-  private var collection = CollectableCollection<HomeItem>(items: .HomeCollection)
-  private var dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let collection = CollectableCollection<HomeItem>(items: .HomeCollection)
+  private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
  
 private extension HomeCollectionViewController {

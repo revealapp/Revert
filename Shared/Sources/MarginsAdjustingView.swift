@@ -54,13 +54,9 @@ final class SliderMarginsAdjustingView: MarginsAdjustingView {
     @IBOutlet private var progressView: UIProgressView!
 
     @IBAction private func buttonPressed(sender: UIButton) {
-      if sender == self.incrementButton {
-        self.margin.increment()
-      } else if sender == self.decrementButton {
-        self.margin.decrement()
-      }
+      self.margin.changeValue(sender == self.incrementButton ? .Increment : .Decrement)
 
-      self.marginsDelegate?.didUpdateMargins(self.margin.layoutMarginsForCurrentValue())
+      self.marginsDelegate?.didUpdateMargins(self.margin.layoutMarginsForCurrentValue)
 
       self.updateStepButtonState(sender)
     }
@@ -69,13 +65,13 @@ final class SliderMarginsAdjustingView: MarginsAdjustingView {
       if sender == self.incrementButton {
         self.decrementButton.enabled = true
 
-        if self.margin.isMaximumValue() {
+        if self.margin.isOnUpperLimit {
           self.disableStepButton(sender)
         }
       } else if sender == self.decrementButton {
         self.incrementButton.enabled = true
 
-        if self.margin.isMinimumValue() {
+        if self.margin.isOnLowerLimit {
           self.disableStepButton(sender)
         }
       }
@@ -90,37 +86,35 @@ final class SliderMarginsAdjustingView: MarginsAdjustingView {
         self.preferredFocusedButton = self.incrementButton
       }
 
-      setNeedsFocusUpdate()
-      updateFocusIfNeeded()
+      self.setNeedsFocusUpdate()
+      self.updateFocusIfNeeded()
     }
   }
 
   private struct MarginValue {
-    mutating func increment() {
-      self.value = self.dynamicType.cappedMarginForMargin(self.value, delta: self.dynamicType.delta)
+    mutating func changeValue(changeType: ChangeType) {
+      let computedDelta = CGFloat(changeType.rawValue) * self.dynamicType.delta
+      self.value = self.dynamicType.cappedMarginForMargin(self.value, delta: computedDelta)
     }
 
-    mutating func decrement() {
-      self.value = self.dynamicType.cappedMarginForMargin(self.value, delta: -self.dynamicType.delta)
-    }
-
-    func layoutMarginsForCurrentValue() -> UIEdgeInsets {
-      return UIEdgeInsets(top: self.value, left: self.value, bottom: self.value, right: self.value)
-    }
-
-    func currentValuePercentage() -> Float {
-      return Float(self.value / self.dynamicType.maxValue)
-    }
-
-    func isMaximumValue() -> Bool {
-      return self.value == self.dynamicType.maxValue
-    }
-
-    func isMinimumValue() -> Bool {
-      return self.value == self.dynamicType.minValue
+    enum ChangeType: Int {
+      case Decrement = -1
+      case Increment = 1
     }
 
     let progress = NSProgress(totalUnitCount:Int64(MarginValue.maxValue))
+
+    var isOnUpperLimit: Bool {
+      return self.value == self.dynamicType.maxValue
+    }
+
+    var isOnLowerLimit: Bool {
+      return self.value == self.dynamicType.minValue
+    }
+
+    var layoutMarginsForCurrentValue: UIEdgeInsets {
+      return UIEdgeInsets(top: self.value, left: self.value, bottom: self.value, right: self.value)
+    }
 
     // MARK: Private
     private static let maxValue: CGFloat = 150

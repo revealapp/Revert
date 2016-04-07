@@ -25,7 +25,7 @@ class CollectionViewCell: UICollectionViewCell {
     self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     self.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
   }
-  
+
   // MARK: Private
 
   @IBOutlet private(set) weak var titleLabel: UILabel!
@@ -54,7 +54,7 @@ class TextFieldControlCell: CollectionViewCell {
     }
 
     func datePickerChanged(datePicker: UIDatePicker) {
-      self.textField.text = Static.DateFormatter.ddmmyy.stringFromDate(datePicker.date)
+      self.textField.text = Static.Formatter.ddmmyy.stringFromDate(datePicker.date)
     }
 
     // MARK: Private

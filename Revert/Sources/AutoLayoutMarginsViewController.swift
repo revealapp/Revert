@@ -3,7 +3,7 @@
 
 import UIKit
 
-class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingViewDelegate {
+final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -31,9 +31,9 @@ class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingVie
 
   private var lastUpdateSquaresWidthSize: CGSize?
 
-  @IBOutlet private var marginsAdjustingView: MarginsAdjustingView!
   @IBOutlet private var centerViewWidthConstraint: NSLayoutConstraint!
   @IBOutlet private var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet private var marginsAdjustingView: MarginsAdjustingView!
   @IBOutlet private var centerView: UIView!
   @IBOutlet private var containerView: UIView!
 

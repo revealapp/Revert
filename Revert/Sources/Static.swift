@@ -6,16 +6,14 @@ import Foundation
 import MapKit
 
 struct Static {
-  struct DateFormatter {
+  struct Formatter {
     static var ddmmyy: NSDateFormatter = {
       let dateFormatter = NSDateFormatter()
       dateFormatter.dateFormat = "dd MMM YYYY"
       return dateFormatter
     }()
-  }
 
-  struct NumberFormatter {
-    static var decimalFormatter: NSNumberFormatter = {
+    static var decimal: NSNumberFormatter = {
       let numberFormatter = NSNumberFormatter()
       numberFormatter.alwaysShowsDecimalSeparator = true
       numberFormatter.locale = NSLocale.currentLocale()
