@@ -172,7 +172,7 @@
 		9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealOpenGLCube.swift; path = Revert/Sources/RevealOpenGLCube.swift; sourceTree = "<group>"; };
 		9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Revert/Sources/SplitViewControllerDelegate.swift; sourceTree = "<group>"; };
 		9A63DFFE1BD6811B006D0A82 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Revert/Sources/DataSource.swift; sourceTree = "<group>"; };
-		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6850C61AD4A20E00ACCE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A6C74FF1BDE297800534680 /* INFO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = INFO.md; sourceTree = SOURCE_ROOT; };
@@ -327,7 +327,7 @@
 		9A6850B91AD4A20E00ACCE29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A6850B81AD4A20E00ACCE29 /* Revert.app */,
+				9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */,
 				BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */,
 			);
 			name = Products;
@@ -635,9 +635,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A6850B71AD4A20E00ACCE29 /* Revert */ = {
+		9A6850B71AD4A20E00ACCE29 /* Revert-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert" */;
+			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */;
 			buildPhases = (
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
@@ -648,9 +648,9 @@
 			);
 			dependencies = (
 			);
-			name = Revert;
+			name = "Revert-iOS";
 			productName = Revert;
-			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert.app */;
+			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
@@ -701,7 +701,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A6850B71AD4A20E00ACCE29 /* Revert */,
+				9A6850B71AD4A20E00ACCE29 /* Revert-iOS */,
 				BB27204B1C9B8E44002E53EE /* Revert-tvOS */,
 			);
 		};
@@ -1005,7 +1005,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert" */ = {
+		9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A6850DA1AD4A20E00ACCE29 /* Debug */,
