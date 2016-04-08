@@ -186,9 +186,9 @@
 		9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Debug.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Release.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Shared.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
 		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
 		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
@@ -376,9 +376,9 @@
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */,
-				9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */,
-				9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */,
+				9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */,
+				9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */,
+				9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */,
 			);
 			name = Configurations;
 			path = Revert/Configurations;
@@ -967,14 +967,14 @@
 		};
 		9A6850DA1AD4A20E00ACCE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */;
+			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		9A6850DB1AD4A20E00ACCE29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */;
+			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;

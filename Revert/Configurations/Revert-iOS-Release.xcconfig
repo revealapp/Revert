@@ -1,7 +1,7 @@
 //
-// Revert-Release.xcconfig
+// Revert-iOS-Release.xcconfig
 
-#include "Revert-Shared.xcconfig"
+#include "Revert-iOS-Shared.xcconfig"
 
 
 // Swift Optimization Level
