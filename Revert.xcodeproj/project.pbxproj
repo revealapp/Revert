@@ -30,6 +30,8 @@
 		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
 		BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Assets.xcassets */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
+		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
 		BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
@@ -175,6 +177,8 @@
 		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Person.swift; sourceTree = "<group>"; };
+		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Sources/HomeViewController.swift; sourceTree = "<group>"; };
@@ -474,6 +478,7 @@
 			children = (
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BB66CC001CB74C6000954AD1 /* Models */,
 				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
@@ -488,6 +493,7 @@
 				BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */,
 				BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */,
 				BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */,
+				BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -560,6 +566,14 @@
 				BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB66CC001CB74C6000954AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB66CC011CB74C8900954AD1 /* Person.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BB735B481C9FD0500092FA6F /* Resources */ = {
@@ -892,6 +906,7 @@
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
+				BB66CC021CB74C8900954AD1 /* Person.swift in Sources */,
 				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
 				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
 				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
@@ -926,6 +941,7 @@
 				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
+				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
 				BBE51D0C1CB73996006638B8 /* DeepView.swift in Sources */,
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,

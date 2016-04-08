@@ -9,6 +9,7 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
 
   required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
     self.collection = collection
+    self.filteredCollection = collection
     self.configureCell = configureCell
     self.cellIdentifier = cellIdentifier
     self.titleForFooter = titleForFooter
@@ -19,11 +20,11 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
   // MARK: UITableViewDataSource
 
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return self.collection.countOfItems
+    return self.filteredCollection.countOfItems
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.collection[section].countOfItems
+    return self.filteredCollection[section].countOfItems
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -31,32 +32,35 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
       fatalError("Expecting to dequeue a `\(Cell.self)` from the tableView")
     }
 
-    let object = self.collection[indexPath]
-    self.configureCell(cell, object: object)
+    self.configureCell(cell, object: self.filteredCollection[indexPath])
     return cell
   }
 
   func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return self.collection[section].title
+    return self.filteredCollection[section].title
   }
 
   func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-    return self.titleForFooter?(self.collection[section])
+    return self.titleForFooter?(self.filteredCollection[section])
   }
 
   func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
-    let items = self.collection.items
+    let items = self.filteredCollection.items
       .map { $0.title }
       .flatMap { $0 }
 
     return items.count > 0 ? items : nil
   }
 
+  func filter(filterClosure: ((Object) -> Bool)?) {
+    self.filteredCollection = self.collection.filteredCollectableCollection(filterClosure)
+  }
+
   // MARK: Private
 
   private let collection: CollectableCollection<Object>
+  private var filteredCollection: CollectableCollection<Object>
   private let configureCell: CellConfigurator
   private let cellIdentifier: String
   private let titleForFooter: FooterTitleRetriever
-
 }

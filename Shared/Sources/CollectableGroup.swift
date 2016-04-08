@@ -29,4 +29,9 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
         return true
     }
   }
+
+  init(title: String? = nil, items: [CollectableGroupObject]) {
+    self.title = title
+    self.items = items
+  }
 }
