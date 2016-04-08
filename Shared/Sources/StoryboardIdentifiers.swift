@@ -18,5 +18,6 @@ struct Storyboards {
 
   struct VC {
     static let Help = "HelpViewController"
+    static let SearchController = "SearchViewController"
   }
 }

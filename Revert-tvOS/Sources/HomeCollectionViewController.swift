@@ -45,7 +45,7 @@ private extension HomeCollectionViewController {
     if let iconImage = UIImage(named: item.iconName) {
       cell.imageView.image = iconImage
     } else {
-      cell.imageView.image = UIImage(named: "icon_AlertView")
+      cell.imageView.image = UIImage(named: "orange")
     }
   }
 }
