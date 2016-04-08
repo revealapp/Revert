@@ -140,6 +140,8 @@
 		BBB0D3D81CACFCBF00449A9B /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */; };
 		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBE51C731CB7309A006638B8 /* Revert-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */; };
+		BBE51C741CB7309A006638B8 /* Revert-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */; };
 		BBE847571C9FA04900225A80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -247,6 +249,7 @@
 		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertSplitViewController.swift; path = Sources/RevertSplitViewController.swift; sourceTree = "<group>"; };
 		BB9F76911CB628C4006EA285 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Shared/Resources/Data; sourceTree = "<group>"; };
 		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-Shared.xcconfig"; path = "Shared/Configurations/Revert-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -567,6 +570,7 @@
 				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
 				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
 				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
+				BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */,
 			);
 			name = Configurations;
 			sourceTree = "<group>";
@@ -719,6 +723,7 @@
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
 				BB9F76921CB628C4006EA285 /* Data in Resources */,
+				BBE51C731CB7309A006638B8 /* Revert-Shared.xcconfig in Resources */,
 				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +735,7 @@
 				BB92F13A1C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig in Resources */,
 				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
 				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				BBE51C741CB7309A006638B8 /* Revert-Shared.xcconfig in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				BB92F13C1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig in Resources */,
