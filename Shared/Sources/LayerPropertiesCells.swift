@@ -69,6 +69,7 @@ final class CAShapeLayerCell: CollectionViewCell {
     self.dynamicType.configureShapeLayer(self.shapeLayerView.shapeLayer)
   }
 
+  
   // MARK: Private
 
   @IBOutlet private weak var shapeLayerView: CAShapeLayerView!

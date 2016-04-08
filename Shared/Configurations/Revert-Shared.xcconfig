@@ -45,4 +45,4 @@ REVERT_BUNDLE_DISPLAY_NAME = Revert
 //
 //
 
-SWIFT_OBJC_BRIDGING_HEADER = Revert/Sources/Revert-Bridging-Header.h
+SWIFT_OBJC_BRIDGING_HEADER = $(SRCROOT)/Shared/Sources/Revert-Bridging-Header.h
