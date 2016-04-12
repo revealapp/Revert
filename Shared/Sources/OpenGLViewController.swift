@@ -22,6 +22,10 @@ final class OpenGLViewController: RevertGLKViewController {
       self.view.layer.bounds.size.width = self.view.layer.bounds.size.height
     }
 
+    #if os(tvOS)
+      self.view.layer.opaque = false
+    #endif
+
     super.viewWillLayoutSubviews()
   }
 

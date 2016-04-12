@@ -21,7 +21,12 @@ final class RevealOpenGLCube {
   func draw() {
     self.setCurrentContext()
 
-    glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
+    #if os(tvOS)
+      glClearColor(0.0, 0.0, 0.0, 0.0)
+    #else
+      glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
+    #endif
+    
     glClear(GLenum(GL_COLOR_BUFFER_BIT))
 
     self.effect.prepareToDraw()
