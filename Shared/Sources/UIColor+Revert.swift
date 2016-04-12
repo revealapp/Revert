@@ -35,4 +35,12 @@ extension UIColor {
   static func graySelectionColor() -> UIColor {
     return UIColor(white: 215 / 255, alpha: 1)
   }
+
+  static func borderColor() -> UIColor {
+    #if os(tvOS)
+      return UIColor.blackColor()
+    #else
+      return UIColor.whiteColor()
+    #endif
+  }
 }

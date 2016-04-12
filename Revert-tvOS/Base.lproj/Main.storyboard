@@ -413,7 +413,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-da-VZE" userLabel="Bottom 1px High View">
                                                 <rect key="frame" x="27" y="1021" width="986" height="1"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
                                                 </constraints>
@@ -425,7 +425,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blY-Pd-GBR" userLabel="Top 1px High View">
                                                 <rect key="frame" x="27" y="18" width="986" height="1"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="pvI-5g-07b" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
                                                 </constraints>
@@ -437,7 +437,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piu-ME-qW0" userLabel="Left 1px Width View">
                                                 <rect key="frame" x="18" y="27" width="1" height="986"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
                                                 </constraints>
@@ -449,7 +449,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADL-Xh-nuv" userLabel="Right 1px Width View">
                                                 <rect key="frame" x="1021" y="27" width="1" height="986"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="I18-iO-8UK" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
                                                 </constraints>
@@ -536,7 +536,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eWE-n9-7js" secondAttribute="trailing" constant="20" symbolic="YES" id="JFX-dP-oXg"/>
                                     <constraint firstItem="eWE-n9-7js" firstAttribute="width" secondItem="Qt1-pP-YK1" secondAttribute="width" priority="750" id="Y9W-Gm-GkG"/>
@@ -548,7 +547,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Qt1-pP-YK1" secondAttribute="trailing" id="8Um-Sb-eNx"/>
                             <constraint firstItem="Uxt-hp-ALN" firstAttribute="top" secondItem="Qt1-pP-YK1" secondAttribute="bottom" id="Fp9-hk-g7g"/>
@@ -657,7 +655,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15567031502723694" green="0.15570440888404846" blue="0.15566816926002502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="yPk-JU-Yv3" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="top" constant="20" symbolic="YES" id="3Yr-F6-Sgp"/>
                                     <constraint firstItem="6eq-yE-ba2" firstAttribute="width" secondItem="QI8-18-dJq" secondAttribute="width" id="7wf-p5-PX6"/>
@@ -677,7 +674,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Eow-WP-D5J" firstAttribute="leading" secondItem="e2E-bh-HFh" secondAttribute="leading" id="4n6-QH-cSr"/>
                             <constraint firstItem="7Xj-bo-Bd6" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="bottom" id="UUL-5S-diC"/>
@@ -818,7 +814,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baseline Aligned" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz0-mi-y6s">
                                 <rect key="frame" x="984" y="671" width="370" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8s-Kl-vgc">
@@ -830,7 +826,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertically Centered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfy-18-kzU">
                                 <rect key="frame" x="984" y="740" width="421" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYW-gA-DCz">
@@ -842,7 +838,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horizontally Centered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eST-6h-VKt">
                                 <rect key="frame" x="984" y="809" width="481" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKV-M6-fjO">
@@ -852,7 +848,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="F8s-Kl-vgc" firstAttribute="leading" secondItem="Qz0-mi-y6s" secondAttribute="trailing" constant="8" symbolic="YES" id="3Ws-Zy-nSF"/>
                             <constraint firstItem="eST-6h-VKt" firstAttribute="leading" secondItem="OEj-Na-HCf" secondAttribute="trailing" constant="8" symbolic="YES" id="46U-Vl-Ncs"/>
@@ -907,10 +902,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-tU-cGi">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1036"/>
-                                <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Plp-tU-cGi" firstAttribute="leading" secondItem="aCQ-F8-eg0" secondAttribute="leading" id="2GW-eZ-Xg0"/>
                             <constraint firstItem="JGO-5Q-n72" firstAttribute="top" secondItem="Plp-tU-cGi" secondAttribute="bottom" id="3zE-8a-2tv"/>
@@ -2147,12 +2140,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate (-20, 20)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-fz-DgG">
                                                 <rect key="frame" x="788" y="20" width="344" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-vP-6mx" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="vH1-XU-DVg"/>
                                                 </constraints>
@@ -2193,7 +2186,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="6wK-C8-cKh"/>
                                             <constraint firstItem="gOM-vP-6mx" firstAttribute="top" secondItem="GrE-fz-DgG" secondAttribute="bottom" constant="20" id="8cA-ES-5bX"/>
@@ -2212,12 +2204,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale (50%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-wD-gtH">
                                                 <rect key="frame" x="850" y="20" width="221" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-rw-ZVs" userLabel="Original Scale View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="101" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="RrW-rH-oxE"/>
                                                 </constraints>
@@ -2258,7 +2250,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Iuj-rw-ZVs" secondAttribute="trailing" constant="50" id="3dd-np-G7I"/>
                                             <constraint firstAttribute="centerX" secondItem="oAH-wD-gtH" secondAttribute="centerX" id="8cf-GM-WjD"/>
@@ -2277,12 +2268,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRY-fh-LSR">
                                                 <rect key="frame" x="852" y="20" width="217" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-TK-GaT" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="e0U-Nj-W3g"/>
                                                 </constraints>
@@ -2323,7 +2314,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="qRY-fh-LSR" secondAttribute="centerX" id="21e-k9-V1B"/>
                                             <constraint firstItem="ptE-TK-GaT" firstAttribute="top" secondItem="qRY-fh-LSR" secondAttribute="bottom" constant="20" id="9qU-uN-I0N"/>
@@ -2353,7 +2343,6 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cST-9k-P7P" secondAttribute="trailing" id="MLh-hf-8Xc"/>
                             <constraint firstItem="cST-9k-P7P" firstAttribute="top" secondItem="CiJ-mk-FKv" secondAttribute="top" id="iQg-F7-VGK"/>
@@ -2395,12 +2384,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-XD-MnC">
                                                 <rect key="frame" x="834" y="20" width="253" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W99-4Q-Ptm" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="hyf-g9-JKU"/>
                                                 </constraints>
@@ -2441,7 +2430,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="3I4-iT-AYg" firstAttribute="top" secondItem="s9f-XD-MnC" secondAttribute="bottom" constant="20" id="35W-F9-9ZA"/>
                                             <constraint firstAttribute="trailing" secondItem="W99-4Q-Ptm" secondAttribute="trailing" constant="50" id="EzO-0B-8Fd"/>
@@ -2460,12 +2448,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-jh-FLz">
                                                 <rect key="frame" x="833" y="20" width="254" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-d2-Lob" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="wyY-8h-h9k"/>
                                                 </constraints>
@@ -2506,7 +2494,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="QNk-Sj-PpA" firstAttribute="leading" secondItem="uxQ-UX-dI1" secondAttribute="leading" constant="50" id="9wC-UE-Y4i"/>
                                             <constraint firstItem="QNk-Sj-PpA" firstAttribute="top" secondItem="gvJ-jh-FLz" secondAttribute="bottom" constant="20" id="EZS-d0-bWl"/>
@@ -2524,12 +2511,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XY Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v65-aT-MYb">
                                                 <rect key="frame" x="820" y="20" width="280" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9n-gr-EkR" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="jMj-me-Axt"/>
                                                 </constraints>
@@ -2570,7 +2557,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="v65-aT-MYb" firstAttribute="top" secondItem="Pyn-uB-MfJ" secondAttribute="top" constant="20" id="0GX-uc-KI5"/>
                                             <constraint firstAttribute="trailing" secondItem="nBL-0A-Pri" secondAttribute="trailing" constant="50" id="5TB-I9-Q60"/>
@@ -2588,12 +2574,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsX-mN-ezH">
                                                 <rect key="frame" x="833" y="20" width="254" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-pR-OcN" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="50" y="91" width="1820" height="80"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="CvA-rL-ivw"/>
                                                 </constraints>
@@ -2634,7 +2620,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="AsX-mN-ezH" secondAttribute="centerX" id="4Ds-ES-WFS"/>
                                             <constraint firstItem="ryr-Hg-ZQb" firstAttribute="top" secondItem="AsX-mN-ezH" secondAttribute="bottom" constant="20" id="6qC-LY-yRv"/>
@@ -2669,7 +2654,6 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="8j6-aN-FN0" secondAttribute="bottom" id="ALa-JH-BP2"/>
                             <constraint firstAttribute="trailing" secondItem="8j6-aN-FN0" secondAttribute="trailing" id="cYg-ox-Oy4"/>
@@ -2712,12 +2696,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anchor Point (0.25, 0.25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-Od-JJE">
                                                 <rect key="frame" x="727" y="20" width="466" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-yV-R09" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
                                                 <rect key="frame" x="810" y="91" width="300" height="300"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="4Gv-Di-9JW"/>
                                                     <constraint firstAttribute="width" constant="300" id="9HO-ZK-Dr8"/>
@@ -2748,7 +2732,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="qjB-yV-R09" firstAttribute="top" secondItem="TcN-Od-JJE" secondAttribute="bottom" constant="20" id="8yE-G6-5EJ"/>
                                             <constraint firstItem="TcN-Od-JJE" firstAttribute="top" secondItem="I6x-yA-AwD" secondAttribute="top" constant="20" id="MFv-g9-Jfn"/>
@@ -2765,7 +2748,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounds Change (?, ?)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkP-s4-nhQ">
                                                 <rect key="frame" x="761" y="20" width="398" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-Nd-PMc" userLabel="Bounds Change View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
@@ -2784,7 +2767,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="z6N-Fy-VL2" firstAttribute="top" secondItem="rc9-Nd-PMc" secondAttribute="top" id="AMj-lL-RWC"/>
                                                     <constraint firstAttribute="bottom" secondItem="z6N-Fy-VL2" secondAttribute="bottom" id="FPL-ou-iaJ"/>
@@ -2803,7 +2786,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.1559789776802063" green="0.15601241588592529" blue="0.15597429871559143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="qkP-s4-nhQ" firstAttribute="top" secondItem="2Kr-Nn-w4C" secondAttribute="top" constant="20" id="84G-bT-L7g"/>
                                             <constraint firstAttribute="centerX" secondItem="qkP-s4-nhQ" secondAttribute="centerX" id="Gq6-Jr-viI"/>
@@ -2825,7 +2807,6 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="E7S-8z-ts3" secondAttribute="trailing" id="1ky-3Q-iIE"/>
                             <constraint firstItem="E7S-8z-ts3" firstAttribute="top" secondItem="7HG-iY-bRN" secondAttribute="top" id="AsK-Yy-Pl6"/>
@@ -2861,10 +2842,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-rV-fjz" customClass="DeepView" customModule="Revert_tvOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gFt-rV-fjz" firstAttribute="top" secondItem="lIb-EX-hHx" secondAttribute="bottom" id="2kg-if-3gw"/>
                             <constraint firstAttribute="trailing" secondItem="gFt-rV-fjz" secondAttribute="trailing" id="K9c-if-U3u"/>
@@ -2884,7 +2863,6 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VHO-V4-ra3">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="raa-mz-quy">
                             <size key="itemSize" width="170" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2901,7 +2879,6 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncx-lw-kCg" customClass="DeepView" customModule="Revert_tvOS" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
-                                            <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -3239,7 +3216,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="ml3-CY-mgV" secondAttribute="centerY" id="67p-Qk-XfP"/>
                                     <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
@@ -3275,7 +3251,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="cSf-Aj-34F" firstAttribute="centerY" secondItem="6c8-7v-Iyh" secondAttribute="centerY" id="N7H-0K-HLi"/>
                                     <constraint firstItem="iEI-dK-INO" firstAttribute="height" secondItem="ckc-5Q-oih" secondAttribute="height" id="RpR-uZ-h11"/>
@@ -3293,7 +3268,6 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
                             <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="150" id="3uA-BM-GyP"/>

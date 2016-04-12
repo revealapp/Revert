@@ -21,7 +21,7 @@ final class AutoResizingMaskViewSource {
   private static let padding: CGFloat = 20
   private static let cornerRadius: CGFloat = 2
   private static let borderWidth: CGFloat = 1
-  private static let borderColor = UIColor.whiteColor().colorWithAlphaComponent(0.5).CGColor
+  private static let borderColor = UIColor.borderColor().colorWithAlphaComponent(0.5).CGColor
   private static let defaultViewSideLength: CGFloat = 50
   private static let leftRightWidth: CGFloat = 80
 
@@ -36,7 +36,7 @@ final class AutoResizingMaskViewSource {
 
     flexibleWidthHeightView.backgroundColor = UIColor.clearColor()
     flexibleWidthHeightView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-    flexibleWidthHeightView.layer.borderColor = UIColor.whiteColor().CGColor
+    flexibleWidthHeightView.layer.borderColor = UIColor.borderColor().CGColor
     return flexibleWidthHeightView
   }()
 
