@@ -55,6 +55,7 @@ final private class IBAScene: SKScene {
 
     #if os(tvOS)
       label.text = NSLocalizedString("Touch the trackpad to add sprite, release to animate it", comment: "SpriteKitViewController background label")
+      label.fontColor = UIColor.darkGrayColor()
       label.fontSize = 60
     #endif
 
@@ -85,6 +86,11 @@ final class SpriteKitViewController: RevertViewController {
     // Create and configure the scene
     let scene = IBAScene(size: self.skView.bounds.size)
     scene.scaleMode = .AspectFill
+
+    #if os(tvOS)
+      self.skView.allowsTransparency = true
+      scene.backgroundColor = UIColor.clearColor()
+    #endif
 
     self.skView.presentScene(scene)
   }
