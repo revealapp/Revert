@@ -14,6 +14,7 @@ enum RevertItems: String {
   case LayerProperties = "LayerPropertiesItems"
   case Persons = "Persons"
   case View = "ViewItems"
+  case WhatsNew = "NewItems"
 
   var data: [[String: AnyObject]] {
     guard let data = NSArray(contentsOfURL: self.URL) as? [[String: AnyObject]] else {
