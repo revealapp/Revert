@@ -41,4 +41,16 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
       return self
     }
   }
+
+  typealias GroupFilterClosure = ((CollectableGroup<CollectableCollectionObject>) -> Bool)?
+  func groupFilteredCollectableCollection(groupFilter: GroupFilterClosure = nil) -> CollectableCollection {
+    if let groupFilter = groupFilter {
+      let groups = self.items.filter({ object -> Bool in
+        groupFilter(object)
+      })
+      return CollectableCollection(groups: groups)
+    } else {
+      return self
+    }
+  }
 }

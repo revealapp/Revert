@@ -3,10 +3,24 @@
 
 import UIKit
  
-final class HomeCollectionViewController: UICollectionViewController {
+final class HomeCollectionViewController: UICollectionViewController, SettableHomeCollectionGroup {
+  var collectionGroup: String? {
+    didSet {
+      self.dataSource.filterGroups({
+        if let groupTitle = $0.title, collectionTitle = self.collectionGroup {
+          return groupTitle.localizedStandardContainsString(collectionTitle)
+        } else {
+          return false
+        }
+      })
+
+      self.collectionView?.reloadData()
+    }
+  }
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: self.collection,
+      collection: CollectableCollection<HomeItem>(items: .Home),
       configureCell: self.dynamicType.configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
@@ -18,6 +32,7 @@ final class HomeCollectionViewController: UICollectionViewController {
     super.viewDidLoad()
 
     self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -28,12 +43,11 @@ final class HomeCollectionViewController: UICollectionViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.collection[indexPath]
+      destinationViewController.item = self.dataSource[indexPath]
     }
   }
 
   // MARK: - Private
-  private let collection = CollectableCollection<HomeItem>(items: .HomeCollection)
   private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
  
@@ -53,8 +67,12 @@ private extension HomeCollectionViewController {
 // MARK:- UICollectionViewDelegate
 extension HomeCollectionViewController {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    let item = self.collection[indexPath]
+    let item = self.dataSource[indexPath]
 
     self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
   }
+}
+
+protocol SettableHomeCollectionGroup: class {
+  var collectionGroup: String? { get set }
 }

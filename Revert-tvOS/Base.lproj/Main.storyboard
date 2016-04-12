@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" id="JSQ-A6-fCK">
-                                <rect key="frame" x="0.0" y="199" width="634" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="594" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JSQ-A6-fCK" id="gEB-GB-Jeq">
                                     <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
@@ -32,12 +32,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="xXO-nq-eI9"/>
                     <connections>
-                        <segue destination="fHS-Xr-lQr" kind="showDetail" identifier="ShowTableViewControllerSegue" action="showViewController:sender:" id="va5-Zs-yUS"/>
-                        <segue destination="v8M-oi-8Oq" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="cpF-4f-CXS"/>
-                        <segue destination="0Wa-iV-Elk" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ea7-nA-3Ah"/>
-                        <segue destination="jSn-KT-RLN" kind="showDetail" identifier="ShowLayerPropertiesViewControllerSegue" id="3Fo-mq-Wui"/>
-                        <segue destination="lkE-mP-DvX" kind="showDetail" identifier="ShowNotSerializableViewControllerSegue" id="HQY-yo-j9P"/>
-                        <segue destination="1nP-YX-9Fn" kind="showDetail" identifier="ShowControlsControllerSegue" id="7df-h0-JCF"/>
+                        <segue destination="pX9-ob-Qo2" kind="showDetail" identifier="ShowDetailsCollectionViewSegue" id="VAp-qY-mst"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -73,18 +68,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="lNg-wZ-S9M" kind="relationship" relationship="viewControllers" id="ula-St-dVR"/>
-                        <segue destination="pX9-ob-Qo2" kind="relationship" relationship="viewControllers" id="MjR-TQ-dWL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvQ-bh-64V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="4385"/>
         </scene>
-        <!--Split-->
+        <!--Examples-->
         <scene sceneID="9PH-2D-Mkh">
             <objects>
                 <splitViewController id="lNg-wZ-S9M" customClass="RevertSplitViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Split" id="wgR-gF-3Dn"/>
+                    <tabBarItem key="tabBarItem" title="Examples" id="wgR-gF-3Dn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="Xo7-E1-MSz" kind="relationship" relationship="detailViewController" id="LvY-Bq-vrf"/>
@@ -100,7 +94,7 @@
             <objects>
                 <collectionViewController id="pX9-ob-Qo2" customClass="HomeCollectionViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nWu-eR-7iM">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wqU-L6-BXq">
                             <size key="itemSize" width="300" height="300"/>
@@ -152,26 +146,32 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="nWu-eR-7iM" id="L2J-hV-Nlu"/>
-                        <segue destination="kwX-zB-gqk" kind="show" identifier="ShowStackViewViewControllerSegue" id="Yk7-9X-b85"/>
-                        <segue destination="OUl-Wk-Rz3" kind="show" identifier="ShowScrollViewControllerSegue" id="CoU-h2-kQn"/>
-                        <segue destination="2bX-AO-Trr" kind="show" identifier="ShowSpriteKitViewControllerSegue" id="a57-Ee-SfI"/>
-                        <segue destination="Dak-gW-7g8" kind="show" identifier="ShowMapViewControllerSegue" id="q0r-vv-LgC"/>
-                        <segue destination="3b2-Pq-NFS" kind="show" identifier="ShowGLKViewControllerSegue" id="mHO-2y-80D"/>
-                        <segue destination="K8O-85-JUK" kind="show" identifier="ShowViewsViewControllerSegue" id="vFS-bM-dpy"/>
-                        <segue destination="B3Q-u2-yev" kind="show" identifier="ShowAutoLayoutViewControllerSegue" id="mbr-3F-zx4"/>
-                        <segue destination="YTP-b7-xvD" kind="show" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="IKM-id-NVk"/>
-                        <segue destination="JQj-gw-CfQ" kind="show" identifier="ShowAutoResizingMasksViewControllerSegue" id="2qd-xF-A12"/>
-                        <segue destination="ntU-xe-67R" kind="show" identifier="ShowTransformViewsViewControllerSegue" id="BX6-z7-hZv"/>
-                        <segue destination="sBY-yx-FIR" kind="show" identifier="ShowTransformLayersViewControllerSegue" id="Lrm-th-gto"/>
-                        <segue destination="daz-S4-wUY" kind="show" identifier="ShowAnchorBoundsViewControllerSegue" id="JWL-YW-WZV"/>
-                        <segue destination="hhn-ff-Cay" kind="show" identifier="ShowSuperDeepViewControllerSegue" id="uwY-Pf-Ajf"/>
-                        <segue destination="VVc-wb-2KU" kind="show" identifier="ShowStressTestViewControllerSegue" id="IGp-KU-ecv"/>
-                        <segue destination="M69-5z-vrU" kind="show" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="bDC-DE-zUG"/>
+                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="Yk7-9X-b85"/>
+                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="CoU-h2-kQn"/>
+                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="a57-Ee-SfI"/>
+                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="q0r-vv-LgC"/>
+                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="mHO-2y-80D"/>
+                        <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="vFS-bM-dpy"/>
+                        <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="mbr-3F-zx4"/>
+                        <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="IKM-id-NVk"/>
+                        <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="2qd-xF-A12"/>
+                        <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="BX6-z7-hZv"/>
+                        <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="Lrm-th-gto"/>
+                        <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="JWL-YW-WZV"/>
+                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="uwY-Pf-Ajf"/>
+                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="IGp-KU-ecv"/>
+                        <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="bDC-DE-zUG"/>
+                        <segue destination="v8M-oi-8Oq" kind="presentation" identifier="ShowAlertViewControllerSegue" id="wHM-HG-rdq"/>
+                        <segue destination="fHS-Xr-lQr" kind="presentation" identifier="ShowTableViewControllerSegue" id="njW-1s-QvD"/>
+                        <segue destination="jSn-KT-RLN" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="PqG-Xh-at0"/>
+                        <segue destination="0Wa-iV-Elk" kind="presentation" identifier="ShowDefaultsControllerSegue" id="Wv3-xO-ODV"/>
+                        <segue destination="1nP-YX-9Fn" kind="presentation" identifier="ShowControlsControllerSegue" id="wtD-1M-vYh"/>
+                        <segue destination="lkE-mP-DvX" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="qqp-No-2ka"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBn-yj-hei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760" y="4833"/>
+            <point key="canvasLocation" x="3355.5" y="4933"/>
         </scene>
         <!--Countries View Controller-->
         <scene sceneID="QPr-2G-kru">
@@ -300,14 +300,14 @@
             <objects>
                 <tableViewController id="eit-dp-6nz" customClass="AlertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="199" width="1285" height="66"/>
+                                <rect key="frame" x="0.0" y="199" width="1920" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
-                                    <rect key="frame" x="0.0" y="0.0" width="1269" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjr-J3-SwP">
@@ -742,7 +742,7 @@
                                 <rect key="frame" x="16" y="928" width="1713" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-r7-88x" customClass="AlignmentInsetView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="831" y="25" width="50" height="50"/>
+                                        <rect key="frame" x="832" y="25" width="50" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.030603691935539246" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="aTr-X9-n41"/>
@@ -761,14 +761,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-GI-TLs" userLabel="Left View">
-                                        <rect key="frame" x="0.0" y="40" width="831" height="20"/>
+                                        <rect key="frame" x="0.0" y="40" width="832" height="20"/>
                                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Dvb-J1-L0d"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvC-ya-xq5" userLabel="Right View">
-                                        <rect key="frame" x="881" y="40" width="832" height="20"/>
+                                        <rect key="frame" x="882" y="40" width="831" height="20"/>
                                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="FnJ-HR-onk"/>
@@ -934,7 +934,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeg-Sb-sBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="yJR-7A-ONj" customClass="ControlsViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="pIC-Y7-GIB">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="r7i-hj-Imh" customClass="AdaptiveCollectionViewFlowLayout" customModule="Revert_tvOS" customModuleProvider="target">
                             <size key="itemSize" width="298" height="298"/>
@@ -995,7 +995,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmitterLayerCell" id="rsU-Mc-V1F" customClass="CAEmitterLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="329" y="145" width="298" height="298"/>
+                                <rect key="frame" x="325" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1046,7 +1046,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShapeLayerCell" id="TrP-g7-0OG" customClass="CAShapeLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="658" y="145" width="298" height="298"/>
+                                <rect key="frame" x="649" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1097,7 +1097,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollLayerCell" id="Eb1-op-wWO" customClass="CAScrollLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="986" y="145" width="298" height="298"/>
+                                <rect key="frame" x="973" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1148,7 +1148,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TiledLayerCell" id="SfN-Ln-8Qo" customClass="CATiledLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1297" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1199,7 +1199,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GradientLayerCell" id="lgk-gX-L9A" customClass="CAGradientLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="329" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1621" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1250,7 +1250,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReplicatorLayerCell" id="toT-IZ-yEO" customClass="CAReplicatorLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="658" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1" y="444" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1300,7 +1300,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAEAGLLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="986" y="444" width="298" height="298"/>
+                                <rect key="frame" x="325" y="444" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1369,11 +1369,11 @@
                         <viewControllerLayoutGuide type="bottom" id="AB7-ds-hz2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lVj-3l-LAc">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK4-lQ-s4o">
-                                <rect key="frame" x="100" y="680" width="1085" height="300"/>
+                                <rect key="frame" x="100" y="680" width="1720" height="300"/>
                                 <color key="backgroundColor" red="0.95564013719999996" green="0.62022560829999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="BG7-gd-itM"/>
@@ -1385,7 +1385,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cr-U6-5Ai">
-                                <rect key="frame" x="100" y="245" width="1085" height="300"/>
+                                <rect key="frame" x="100" y="245" width="1720" height="300"/>
                                 <color key="backgroundColor" red="0.29858762030000002" green="0.72199642659999996" blue="0.94276738169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Z6m-aI-W8h"/>
@@ -1421,7 +1421,7 @@
             <objects>
                 <collectionViewController id="ZKE-Bx-3RF" customClass="ControlsViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="3Ef-aw-TQh">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="pCw-6n-daR" customClass="AdaptiveCollectionViewFlowLayout" customModule="Revert_tvOS" customModuleProvider="target">
@@ -1493,7 +1493,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlImageCell" id="sh4-bE-1pX" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="329" y="145" width="298" height="298"/>
+                                <rect key="frame" x="325" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1553,7 +1553,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageControlCell" id="Kni-Pw-ESJ" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="658" y="145" width="298" height="298"/>
+                                <rect key="frame" x="649" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1600,7 +1600,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextFieldCell" id="Dta-Xx-PQg" customClass="TextFieldControlCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="986" y="145" width="298" height="298"/>
+                                <rect key="frame" x="973" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1656,7 +1656,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundedTextFieldCell" id="N4E-8r-ew4" customClass="TextFieldControlCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1297" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1709,7 +1709,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SystemButtonCell" id="xkW-8D-F8s" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="329" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1621" y="145" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1758,7 +1758,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomButtonCell" id="HgL-qC-W9P" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="658" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1" y="444" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1819,7 +1819,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailDisclosureButtonCell" id="BI1-da-OkD" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="986" y="444" width="298" height="298"/>
+                                <rect key="frame" x="325" y="444" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1872,7 +1872,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1" y="743" width="298" height="298"/>
+                                <rect key="frame" x="649" y="444" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1941,7 +1941,7 @@
             <objects>
                 <collectionViewController id="ElL-2W-GMq" customClass="ControlsViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" dataMode="prototypes" id="nX5-EI-u4O">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="1" id="NKL-MB-wn0" customClass="AdaptiveCollectionViewFlowLayout" customModule="Revert_tvOS" customModuleProvider="target">
                             <size key="itemSize" width="400" height="300"/>
@@ -2836,6 +2836,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="anchorChangeLabel" destination="TcN-Od-JJE" id="zzt-N4-Wnu"/>
                         <outlet property="anchorPointView" destination="Jcn-NB-yCf" id="zZO-bT-2Mw"/>
                         <outlet property="boundsChangeLabel" destination="qkP-s4-nhQ" id="hKu-1h-4ax"/>
                         <outlet property="boundsChangeView" destination="rc9-Nd-PMc" id="7V3-fK-qSG"/>
@@ -2961,8 +2962,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-Tz-bxl">
-                                            <rect key="frame" x="1759" y="15" width="73" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-Tz-bxl">
+                                            <rect key="frame" x="1832" y="15" width="73" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" id="hsx-15-gMr"/>
                                             </constraints>
@@ -3001,7 +3002,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z3p-1b-hSq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uAV-w1-nGw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uAV-w1-nGw">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3020,7 +3021,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHS-Xr-lQr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sRa-m0-Fob">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sRa-m0-Fob">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3038,7 +3039,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v8M-oi-8Oq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EJE-ft-ijf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EJE-ft-ijf">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3074,7 +3075,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Wa-iV-Elk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XGX-dl-OlX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGX-dl-OlX">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3085,14 +3086,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-Ud-Azs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8421.5" y="2917"/>
+            <point key="canvasLocation" x="8581" y="3937"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lUb-E7-rU3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jSn-KT-RLN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WC0-V8-jVg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WC0-V8-jVg">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3103,14 +3104,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWX-do-LQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8421.5" y="1744"/>
+            <point key="canvasLocation" x="8825" y="1752"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ndz-Rj-WM3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lkE-mP-DvX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cKA-Sv-gWK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKA-Sv-gWK">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3121,14 +3122,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMq-IQ-TMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11569.5" y="1744"/>
+            <point key="canvasLocation" x="12145" y="1880"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HVB-aC-MH7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1nP-YX-9Fn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="jCa-Lx-vn9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jCa-Lx-vn9">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3139,12 +3140,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ky-I4-FSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11569.5" y="2917"/>
+            <point key="canvasLocation" x="12089" y="4281"/>
         </scene>
         <!--Auto Layout Margins-->
         <scene sceneID="9oB-lF-eno">
             <objects>
-                <viewController storyboardIdentifier="teste" id="M69-5z-vrU" customClass="ButtonsAutoLayoutMarginsViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teste" id="M69-5z-vrU" customClass="AutoLayoutMarginsViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
                         <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
@@ -3244,70 +3245,85 @@
                                     <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
                                 </constraints>
                             </view>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Aj-34F">
-                                <rect key="frame" x="760" y="995" width="400" height="10"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-7v-Iyh" customClass="ButtonsMarginsAdjustingView" customModule="Revert_tvOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="930" width="1880" height="150"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Aj-34F">
+                                        <rect key="frame" x="740" y="70" width="400" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="Xdq-Ms-JUk"/>
+                                        </constraints>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEI-dK-INO">
+                                        <rect key="frame" x="1240" y="25" width="200" height="100"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6c8-7v-Iyh" eventType="primaryActionTriggered" id="lTA-lI-1PB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-5Q-oih">
+                                        <rect key="frame" x="440" y="25" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Bpk-ff-wVD"/>
+                                            <constraint firstAttribute="height" constant="100" id="b0w-yl-1bi"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="6c8-7v-Iyh" eventType="primaryActionTriggered" id="eBN-cz-cpq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15684163570000001" green="0.1568752229" blue="0.15683692690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="Xdq-Ms-JUk"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="centerY" secondItem="6c8-7v-Iyh" secondAttribute="centerY" id="N7H-0K-HLi"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="height" secondItem="ckc-5Q-oih" secondAttribute="height" id="RpR-uZ-h11"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="centerX" secondItem="6c8-7v-Iyh" secondAttribute="centerX" id="j8q-Yn-MFx"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="centerY" secondItem="6c8-7v-Iyh" secondAttribute="centerY" id="jNR-Qc-erW"/>
+                                    <constraint firstItem="ckc-5Q-oih" firstAttribute="centerY" secondItem="6c8-7v-Iyh" secondAttribute="centerY" id="oeB-ZJ-CI3"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="leading" secondItem="cSf-Aj-34F" secondAttribute="trailing" constant="100" id="sts-XT-pgI"/>
+                                    <constraint firstItem="cSf-Aj-34F" firstAttribute="leading" secondItem="ckc-5Q-oih" secondAttribute="trailing" constant="100" id="vI1-A8-3oH"/>
+                                    <constraint firstItem="iEI-dK-INO" firstAttribute="width" secondItem="ckc-5Q-oih" secondAttribute="width" id="wyz-If-rQg"/>
                                 </constraints>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-5Q-oih">
-                                <rect key="frame" x="460" y="950" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Bpk-ff-wVD"/>
-                                    <constraint firstAttribute="height" constant="100" id="b0w-yl-1bi"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="M69-5z-vrU" eventType="primaryActionTriggered" id="wyY-Qa-kJg"/>
+                                    <outlet property="decrementButton" destination="ckc-5Q-oih" id="gNz-NB-QLw"/>
+                                    <outlet property="incrementButton" destination="iEI-dK-INO" id="3eC-ae-GXm"/>
+                                    <outlet property="progressView" destination="cSf-Aj-34F" id="1MV-KX-2mz"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEI-dK-INO">
-                                <rect key="frame" x="1260" y="950" width="200" height="100"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="M69-5z-vrU" eventType="primaryActionTriggered" id="8Sj-Ud-o5s"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.15684163570404053" green="0.15687522292137146" blue="0.15683692693710327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="leading" secondItem="cSf-Aj-34F" secondAttribute="trailing" constant="100" id="3Lo-QD-aNm"/>
                             <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="150" id="3uA-BM-GyP"/>
+                            <constraint firstItem="6c8-7v-Iyh" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="6u2-Wv-XCB"/>
+                            <constraint firstItem="6c8-7v-Iyh" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leadingMargin" id="ASU-zF-8zr"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6c8-7v-Iyh" secondAttribute="trailing" id="Ku2-N4-4wF"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="leading" secondItem="ckc-5Q-oih" secondAttribute="trailing" constant="100" id="QQP-8y-sbd"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="width" secondItem="ckc-5Q-oih" secondAttribute="width" id="TNX-0o-3je"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="height" secondItem="ckc-5Q-oih" secondAttribute="height" id="jg9-s8-WET"/>
                             <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
                             <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="centerY" secondItem="ckc-5Q-oih" secondAttribute="centerY" id="n1p-1y-NKg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6c8-7v-Iyh" secondAttribute="bottom" id="o1W-cd-ZYn"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="ckc-5Q-oih" secondAttribute="bottom" constant="30" id="si9-5n-H22"/>
-                            <constraint firstItem="iEI-dK-INO" firstAttribute="centerY" secondItem="ckc-5Q-oih" secondAttribute="centerY" id="tDO-TQ-NIy"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="leadingMargin" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" constant="40" id="tTn-xT-ReG"/>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="bottomMargin" secondItem="ml3-CY-mgV" secondAttribute="topMargin" constant="-40" id="vQh-Fy-wXe"/>
-                            <constraint firstItem="cSf-Aj-34F" firstAttribute="centerX" secondItem="i1S-l0-cJP" secondAttribute="centerX" id="zkh-rZ-yKm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1"/>
                     <connections>
-                        <outlet property="centerView" destination="ml3-CY-mgV" id="sST-GT-cHJ"/>
+                        <outlet property="centerView" destination="ml3-CY-mgV" id="CE8-3H-xQO"/>
                         <outlet property="centerViewWidthConstraint" destination="7h9-Sy-hh0" id="JGP-RS-YsJ"/>
                         <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
                         <outlet property="containerViewBottomConstraint" destination="3uA-BM-GyP" id="P9P-E0-cGD"/>
-                        <outlet property="decrementButton" destination="ckc-5Q-oih" id="rsv-OR-L0D"/>
-                        <outlet property="incrementButton" destination="iEI-dK-INO" id="XZ6-mm-24k"/>
-                        <outlet property="progressView" destination="cSf-Aj-34F" id="FFJ-vW-N1a"/>
+                        <outlet property="marginsAdjustingView" destination="6c8-7v-Iyh" id="gye-i3-1H4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNI-hJ-PUa" userLabel="First Responder" sceneMemberID="firstResponder"/>

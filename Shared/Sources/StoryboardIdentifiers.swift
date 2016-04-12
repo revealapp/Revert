@@ -14,6 +14,7 @@ struct Storyboards {
 
   struct Segue {
     static let Info = "ShowInfoViewControllerSegue"
+    static let DetailsCollectionView = "ShowDetailsCollectionViewSegue"
   }
 
   struct VC {

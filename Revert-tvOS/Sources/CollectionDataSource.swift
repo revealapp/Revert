@@ -7,6 +7,7 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
   typealias CellConfigurator = (HomeCollectionCell, item: HomeItem) -> Void
   
   required init(collection: CollectableCollection<HomeItem>, configureCell: CellConfigurator, cellIdentifier: String) {
+    self.completeCollection = collection
     self.collection = collection
     self.configureCell = configureCell
     self.cellIdentifier = cellIdentifier
@@ -31,9 +32,20 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
     self.configureCell(cell, item: item)
     return cell
   }
+
+  subscript(indexPath: NSIndexPath) -> HomeItem {
+    get {
+      return self.collection[indexPath]
+    }
+  }
+
+  func filterGroups(filterClosure: ((CollectableGroup<HomeItem>) -> Bool)?) {
+    self.collection = self.completeCollection.groupFilteredCollectableCollection(filterClosure)
+  }
   
   // MARK: Private
-  private let collection: CollectableCollection<HomeItem>
+  private let completeCollection: CollectableCollection<HomeItem>
+  private var collection: CollectableCollection<HomeItem>
   private let configureCell: CellConfigurator
   private let cellIdentifier: String
 }
