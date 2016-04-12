@@ -49,7 +49,7 @@ final private class IBAScene: SKScene {
 
   private lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
-    label.text = NSLocalizedString("Touch to add sprite, release to animate it", comment: "SpriteKitViewController background label")
+    label.text = NSLocalizedString("Tap to add sprite", comment: "SpriteKitViewController background label")
     label.fontSize = 28
     label.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
 
