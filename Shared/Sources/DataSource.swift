@@ -58,7 +58,11 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
     }
   }
 
-  func filter(filterClosure: ((Object) -> Bool)?) {
+  func clearFilter() {
+    self.collection = self.completeCollection
+  }
+
+  func filter(filterClosure: ((Object) -> Bool)) {
     self.collection = self.completeCollection.filteredCollectableCollection(filterClosure)
   }
 
