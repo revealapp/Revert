@@ -37,7 +37,7 @@ final class SearchViewController: UICollectionViewController {
           $0.title.localizedStandardContainsString(string)
         })
       } else {
-        self.dataSource.filter(nil)
+        self.dataSource.clearFilter()
       }
 
       self.collectionView?.reloadData()
