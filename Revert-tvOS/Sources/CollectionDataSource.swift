@@ -39,6 +39,10 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
     }
   }
 
+  func filter(filterClosure: ((HomeItem) -> Bool)?) {
+    self.collection = self.completeCollection.filteredCollectableCollection(filterClosure)
+  }
+
   func filterGroups(filterClosure: ((CollectableGroup<HomeItem>) -> Bool)?) {
     self.collection = self.completeCollection.groupFilteredCollectableCollection(filterClosure)
   }
