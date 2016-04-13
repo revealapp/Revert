@@ -3,12 +3,12 @@
 
 import UIKit
 
-final class SearchViewController: UITableViewController {
+final class SearchViewController: UICollectionViewController {
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(
-      collection: self.collection,
+    self.dataSource = CollectionDataSource(
+      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true),
       configureCell: self.dynamicType.configureCell,
-      cellIdentifier: Storyboards.Cell.TableViewController
+      cellIdentifier: Storyboards.Cell.HomeCollection
     )
 
     super.init(coder: aDecoder)
@@ -17,39 +17,48 @@ final class SearchViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.tableView.dataSource = self.dataSource
+    self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
   //MARK: Private
-  private let collection = CollectableCollection<Person>(items: .Persons)
-  private let dataSource: DataSource<Person, BasicCell>
+
+  private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 
   private var searchText: String? {
     didSet {
       guard searchText != oldValue else {
-        // We don't want to keep reloading contents if the search text has not changed
+        // We don't want to keep reloading contents if the search text has not changed.
         return
       }
 
       if let string = searchText where string.isEmpty == false {
         self.dataSource.filter({
-          $0.city.localizedStandardContainsString(string) || $0.name.localizedStandardContainsString(string)
+          $0.title.localizedStandardContainsString(string)
         })
       } else {
         self.dataSource.filter(nil)
       }
 
-      self.tableView.reloadData()
+      self.collectionView?.reloadData()
     }
   }
 }
 
 private extension SearchViewController {
-  static func configureCell(cell: BasicCell, object: Person) {
-    cell.accessoryType = .None
+  static func configureCell(cell: HomeCollectionCell, withItem item: HomeItem) {
+    cell.titleLabel.text = item.title
+    cell.imageView.image = UIImage(named: item.iconName)
+  }
+}
 
-    cell.titleLabel.text = object.name
-    cell.subtitleLabel.text = object.city
+// MARK:- UICollectionViewDelegate
+
+extension SearchViewController {
+  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    let item = self.dataSource[indexPath]
+
+    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
   }
 }
 
