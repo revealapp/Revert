@@ -8,10 +8,16 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
 
   let items: [CollectableGroup<CollectableCollectionObject>]
 
-  init(items: RevertItems) {
-    self.items = items.data
+  init(items: RevertItems, flatten: Bool = false) {
+    let items = items.data
       .map(CollectableGroup<CollectableCollectionObject>.init)
       .filter { $0.countOfItems > 0 }
+
+    if flatten == true {
+      self.items = [CollectableGroup<CollectableCollectionObject>(items: items.flatMap({$0.items}))]
+    } else {
+      self.items = items
+    }
   }
 
   init(groups: [CollectableGroup<CollectableCollectionObject>]) {
