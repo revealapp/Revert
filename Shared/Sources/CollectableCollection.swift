@@ -24,11 +24,11 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
 
   typealias FilterClosure = ((CollectableCollectionObject) -> Bool)?
   func filteredCollectableCollection(itemFilter: FilterClosure = nil) -> CollectableCollection {
-    if let itemFilter = itemFilter {
+    if let filter = itemFilter {
       let groups = self.items.map({ group -> CollectableGroup<CollectableCollectionObject> in
         // Runs through every `CollectableGroup` in order to filter items using the received closure.
         let items = group.items.filter({ object -> Bool in
-          itemFilter(object)
+          filter(object)
         })
         return CollectableGroup<CollectableCollectionObject>(title: group.title, items: items)
         // After filtering items in each group, we need to filter out empty `CollectableGroup`s.
@@ -44,9 +44,9 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
 
   typealias GroupFilterClosure = ((CollectableGroup<CollectableCollectionObject>) -> Bool)?
   func groupFilteredCollectableCollection(groupFilter: GroupFilterClosure = nil) -> CollectableCollection {
-    if let groupFilter = groupFilter {
+    if let filter = groupFilter {
       let groups = self.items.filter({ object -> Bool in
-        groupFilter(object)
+        filter(object)
       })
       return CollectableCollection(groups: groups)
     } else {
