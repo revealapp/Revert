@@ -21,6 +21,18 @@ final class SearchViewController: UICollectionViewController {
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
+
+    if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
+      guard let indexPath = sender as? NSIndexPath else {
+        fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
+      }
+
+      destinationViewController.item = self.dataSource[indexPath]
+    }
+  }
+
   //MARK: Private
 
   private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
