@@ -44,13 +44,7 @@ final class WhatsNewViewController: UIViewController {
 private extension WhatsNewViewController {
   static func configureCell(cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
-
-    // TODO: remove **the check** later on. This is just for testing purposes while we don't have images ready.
-    if let iconImage = UIImage(named: item.iconName) {
-      cell.imageView.image = iconImage
-    } else {
-      cell.imageView.image = UIImage(named: "orange")
-    }
+    cell.imageView.image = UIImage(named: item.iconName)
   }
 }
 
