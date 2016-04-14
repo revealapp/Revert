@@ -31,10 +31,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xXO-nq-eI9"/>
+                    <connections>
+                        <segue destination="mfO-Ru-H1k" kind="showDetail" identifier="ShowDetailsCollectionViewSegue" id="GiF-RU-ckt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3856" y="2349"/>
+            <point key="canvasLocation" x="-1136" y="7265"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u8o-g9-oU3">
@@ -52,7 +55,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3530.5" y="3561"/>
+            <point key="canvasLocation" x="-3312.5" y="8769"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RqC-xv-Bus">
@@ -85,7 +88,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEV-B2-lWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753" y="3561"/>
+            <point key="canvasLocation" x="-3313" y="7265"/>
         </scene>
         <!--What's New-->
         <scene sceneID="8zX-CE-NZD">
@@ -172,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406" y="5635"/>
+            <point key="canvasLocation" x="-348" y="5883"/>
         </scene>
         <!--Countries View Controller-->
         <scene sceneID="QPr-2G-kru">
@@ -183,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="199" width="1245" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="1285" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -229,7 +232,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWq-5b-QXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6706.5" y="1744"/>
+            <point key="canvasLocation" x="5401.5" y="6584"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="Qdk-Wu-4UX">
@@ -276,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qf2-Bd-Wpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="4841"/>
+            <point key="canvasLocation" x="5719" y="9417"/>
         </scene>
         <!--Stack View Controller-->
         <scene sceneID="ToS-Rw-Jop">
@@ -294,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ud-rc-9E1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="7428"/>
+            <point key="canvasLocation" x="8071" y="10739"/>
         </scene>
         <!--Alert View Controller-->
         <scene sceneID="Jfb-nc-Bed">
@@ -305,7 +308,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="199" width="1880" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="1920" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
                                     <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
@@ -339,7 +342,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmU-yh-yul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6706.5" y="2917"/>
+            <point key="canvasLocation" x="5719" y="8005"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Kg5-9c-nEa">
@@ -374,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugJ-Ne-hXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="10025"/>
+            <point key="canvasLocation" x="10415" y="12145"/>
         </scene>
         <!--Arranged Views-->
         <scene sceneID="5g5-Ff-0lS">
@@ -558,7 +561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZB-dU-Djb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="11345"/>
+            <point key="canvasLocation" x="8071" y="13577"/>
         </scene>
         <!--Auto Layout-->
         <scene sceneID="lu0-4b-Fhv">
@@ -687,7 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO8-Gt-ODy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="12633"/>
+            <point key="canvasLocation" x="5719" y="14985"/>
         </scene>
         <!--Auto Layout Alignments-->
         <scene sceneID="3i2-N8-Ty5">
@@ -887,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCT-Ie-lBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="13937"/>
+            <point key="canvasLocation" x="8071" y="14985"/>
         </scene>
         <!--Auto Resizing Masks-->
         <scene sceneID="KQZ-0s-iFb">
@@ -920,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eca-YK-jgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="15217"/>
+            <point key="canvasLocation" x="10415" y="14985"/>
         </scene>
         <!--Controls View Controller-->
         <scene sceneID="SSy-o1-yj4">
@@ -938,7 +941,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextLayerCell" id="Fya-ne-N0M" customClass="CATextLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -989,7 +992,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmitterLayerCell" id="rsU-Mc-V1F" customClass="CAEmitterLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="325" y="145" width="298" height="298"/>
+                                <rect key="frame" x="325" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1040,7 +1043,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShapeLayerCell" id="TrP-g7-0OG" customClass="CAShapeLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="649" y="145" width="298" height="298"/>
+                                <rect key="frame" x="649" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1091,7 +1094,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollLayerCell" id="Eb1-op-wWO" customClass="CAScrollLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="973" y="145" width="298" height="298"/>
+                                <rect key="frame" x="973" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1142,7 +1145,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TiledLayerCell" id="SfN-Ln-8Qo" customClass="CATiledLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1297" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1297" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1193,7 +1196,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GradientLayerCell" id="lgk-gX-L9A" customClass="CAGradientLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1621" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1621" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1244,7 +1247,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReplicatorLayerCell" id="toT-IZ-yEO" customClass="CAReplicatorLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1" y="299" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1294,7 +1297,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AEGLayerCell" id="3fM-Ms-N9K" customClass="CAEAGLLayerCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="325" y="444" width="298" height="298"/>
+                                <rect key="frame" x="325" y="299" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1352,7 +1355,7 @@
                     </userDefinedRuntimeAttributes>
                 </collectionViewController>
             </objects>
-            <point key="canvasLocation" x="9870.5" y="1744"/>
+            <point key="canvasLocation" x="8071" y="6584"/>
         </scene>
         <!--Non Serializable View Controller-->
         <scene sceneID="Yuo-rZ-SJW">
@@ -1408,7 +1411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfu-zM-zG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13018.5" y="1744"/>
+            <point key="canvasLocation" x="10415" y="6584"/>
         </scene>
         <!--Controls View Controller-->
         <scene sceneID="L8w-Yo-BMo">
@@ -1426,7 +1429,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlTitleCell" id="wsb-4D-NCp" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1487,7 +1490,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlImageCell" id="sh4-bE-1pX" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="325" y="145" width="298" height="298"/>
+                                <rect key="frame" x="325" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1547,7 +1550,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageControlCell" id="Kni-Pw-ESJ" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="649" y="145" width="298" height="298"/>
+                                <rect key="frame" x="649" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1594,7 +1597,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextFieldCell" id="Dta-Xx-PQg" customClass="TextFieldControlCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="973" y="145" width="298" height="298"/>
+                                <rect key="frame" x="973" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1650,7 +1653,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundedTextFieldCell" id="N4E-8r-ew4" customClass="TextFieldControlCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1297" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1297" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1703,7 +1706,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SystemButtonCell" id="xkW-8D-F8s" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1621" y="145" width="298" height="298"/>
+                                <rect key="frame" x="1621" y="0.0" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1752,7 +1755,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomButtonCell" id="HgL-qC-W9P" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="1" y="444" width="298" height="298"/>
+                                <rect key="frame" x="1" y="299" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1813,7 +1816,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailDisclosureButtonCell" id="BI1-da-OkD" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="325" y="444" width="298" height="298"/>
+                                <rect key="frame" x="325" y="299" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1866,7 +1869,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddContactButtonCell" id="e2f-7C-Saq" customClass="CollectionViewCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="649" y="444" width="298" height="298"/>
+                                <rect key="frame" x="649" y="299" width="298" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="298" height="298"/>
@@ -1928,7 +1931,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ces-6a-MTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13018.5" y="2917"/>
+            <point key="canvasLocation" x="10415" y="8005"/>
         </scene>
         <!--Controls View Controller-->
         <scene sceneID="8h6-vh-PSe">
@@ -1945,7 +1948,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextViewCell" id="oI0-lu-9AY" customClass="CollectionViewCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1" y="145" width="400" height="300"/>
+                                <rect key="frame" x="1" y="0.0" width="400" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
@@ -1994,7 +1997,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageViewCell" id="p9e-dp-KgB" customClass="CollectionViewCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="1" y="745" width="400" height="300"/>
+                                <rect key="frame" x="1" y="373" width="400" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
@@ -2040,7 +2043,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProgressViewCell" id="I0A-fB-ZHW" customClass="CollectionViewCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="402" y="145" width="400" height="300"/>
+                                <rect key="frame" x="1" y="745" width="400" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
@@ -2085,7 +2088,7 @@
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="VeB-xG-1vG" customClass="CollectionViewCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="402" y="745" width="400" height="300"/>
+                                <rect key="frame" x="402" y="0.0" width="400" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
@@ -2118,7 +2121,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyW-w7-9mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9870.5" y="2917"/>
+            <point key="canvasLocation" x="8071" y="8005"/>
         </scene>
         <!--Transform Views-->
         <scene sceneID="BfB-nA-Zk3">
@@ -2362,7 +2365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCa-Ks-1Ev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="4833"/>
+            <point key="canvasLocation" x="8071" y="9409"/>
         </scene>
         <!--Transform Layers View Controller-->
         <scene sceneID="9HY-Lc-cAJ">
@@ -2674,7 +2677,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbK-SA-1Iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="6131"/>
+            <point key="canvasLocation" x="5719" y="10739"/>
         </scene>
         <!--Anchor Point Bounds Change View Controller-->
         <scene sceneID="WVc-Rn-bjb">
@@ -2827,7 +2830,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvv-0z-AGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="7428"/>
+            <point key="canvasLocation" x="10415" y="10739"/>
         </scene>
         <!--Super Deep-->
         <scene sceneID="vWS-e5-x9X">
@@ -2855,7 +2858,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKa-zd-REC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="8737"/>
+            <point key="canvasLocation" x="8071" y="12145"/>
         </scene>
         <!--Stress Test View Controller-->
         <scene sceneID="SMY-SU-ijv">
@@ -2896,7 +2899,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTX-mh-Rdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="10025"/>
+            <point key="canvasLocation" x="5719" y="13577"/>
         </scene>
         <!--GLKit View Controller-->
         <scene sceneID="lgi-Wg-TAr">
@@ -2917,7 +2920,7 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-FX-1n6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="6131"/>
+            <point key="canvasLocation" x="10415" y="9409"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
@@ -2936,44 +2939,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USi-Rw-wb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3205" y="2349"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WHi-m3-l81">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHS-Xr-lQr" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sRa-m0-Fob">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MbP-er-7NZ" kind="relationship" relationship="rootViewController" id="7h4-EV-x3W"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E0J-uY-kBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5257.5" y="1744"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hlc-x4-5WS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v8M-oi-8Oq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EJE-ft-ijf">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eit-dp-6nz" kind="relationship" relationship="rootViewController" id="ou4-7w-eVe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Itp-HB-LOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5257.5" y="2917"/>
+            <point key="canvasLocation" x="-1835" y="7265"/>
         </scene>
         <!--Sprite Kit View Controller-->
         <scene sceneID="D9e-7X-BGJ">
@@ -2991,79 +2957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnK-kZ-Ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5575" y="8737"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Meq-Rw-Cb6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Wa-iV-Elk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGX-dl-OlX">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ElL-2W-GMq" kind="relationship" relationship="rootViewController" id="MqX-k2-xga"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-Ud-Azs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8581" y="3937"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="lUb-E7-rU3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jSn-KT-RLN" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WC0-V8-jVg">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yJR-7A-ONj" kind="relationship" relationship="rootViewController" id="JSD-TU-JEU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VWX-do-LQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8825" y="1752"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ndz-Rj-WM3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lkE-mP-DvX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKA-Sv-gWK">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="xx1-ys-faf" kind="relationship" relationship="rootViewController" id="NQ6-KP-LZm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tMq-IQ-TMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="12145" y="1880"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="HVB-aC-MH7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1nP-YX-9Fn" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jCa-Lx-vn9">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ZKE-Bx-3RF" kind="relationship" relationship="rootViewController" id="Ofg-76-XZ2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ky-I4-FSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="12089" y="4281"/>
+            <point key="canvasLocation" x="5719" y="12145"/>
         </scene>
         <!--Auto Layout Margins-->
         <scene sceneID="9oB-lF-eno">
@@ -3248,7 +3142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNI-hJ-PUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7927" y="11345"/>
+            <point key="canvasLocation" x="10415" y="13577"/>
         </scene>
         <!--Fullscreen-->
         <scene sceneID="wk6-IB-Zpe">
@@ -3307,11 +3201,116 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="xXV-QE-xLb" id="hPp-bp-QfI"/>
+                        <segue destination="MbP-er-7NZ" kind="presentation" identifier="ShowTableViewControllerSegue" id="2sN-Om-l3s"/>
+                        <segue destination="yJR-7A-ONj" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="hsh-dy-nEy"/>
+                        <segue destination="xx1-ys-faf" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="Fb8-BI-6uh"/>
+                        <segue destination="eit-dp-6nz" kind="presentation" identifier="ShowAlertViewControllerSegue" id="dek-3j-uaJ"/>
+                        <segue destination="ElL-2W-GMq" kind="presentation" identifier="ShowDefaultsControllerSegue" id="C6t-OM-qMf"/>
+                        <segue destination="ZKE-Bx-3RF" kind="presentation" identifier="ShowControlsControllerSegue" id="78i-3L-W5g"/>
+                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="s71-DX-UNb"/>
+                        <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="HVs-14-jRy"/>
+                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="9eS-Oe-XOH"/>
+                        <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="16b-Sd-dJ0"/>
+                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
+                        <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
+                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
+                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
+                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
+                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
+                        <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="saQ-hI-FT8"/>
+                        <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="kJb-0f-6j4"/>
+                        <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="E3N-aw-4qX"/>
+                        <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Ad2-lN-jOy"/>
+                        <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="leq-yV-WZf"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg3-jq-6cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="1193"/>
+            <point key="canvasLocation" x="15263" y="9177"/>
+        </scene>
+        <!--Fullscreen-->
+        <scene sceneID="FNL-Pl-9nt">
+            <objects>
+                <collectionViewController id="mfO-Ru-H1k" customClass="HomeCollectionViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H2X-Y7-Whk">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QDJ-ws-tas">
+                            <size key="itemSize" width="300" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="100" minY="100" maxX="100" maxY="100"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="aGr-S6-f5D" customClass="HomeCollectionCell" customModule="Revert_tvOS">
+                                <rect key="frame" x="100" y="100" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDX-qj-VTX">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7e-aV-rMX">
+                                            <rect key="frame" x="129" y="240" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dDX-qj-VTX" secondAttribute="trailing" id="0G9-b8-hWE"/>
+                                    <constraint firstItem="dDX-qj-VTX" firstAttribute="top" secondItem="aGr-S6-f5D" secondAttribute="top" id="2eH-Y3-kin"/>
+                                    <constraint firstAttribute="bottom" secondItem="dDX-qj-VTX" secondAttribute="bottom" constant="100" id="ANr-7C-liP"/>
+                                    <constraint firstItem="P7e-aV-rMX" firstAttribute="top" secondItem="dDX-qj-VTX" secondAttribute="bottom" constant="40" id="l71-v8-8LU"/>
+                                    <constraint firstItem="dDX-qj-VTX" firstAttribute="leading" secondItem="aGr-S6-f5D" secondAttribute="leading" id="tHt-DE-zyi"/>
+                                    <constraint firstItem="P7e-aV-rMX" firstAttribute="centerX" secondItem="aGr-S6-f5D" secondAttribute="centerX" id="zOn-rA-nse"/>
+                                </constraints>
+                                <size key="customSize" width="300" height="300"/>
+                                <connections>
+                                    <outlet property="imageView" destination="dDX-qj-VTX" id="B7F-nk-Yc0"/>
+                                    <outlet property="titleLabel" destination="P7e-aV-rMX" id="cz8-FA-FoZ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mfO-Ru-H1k" id="XH3-dR-inV"/>
+                            <outlet property="delegate" destination="mfO-Ru-H1k" id="wLl-PZ-Glb"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Fullscreen" id="nIG-8f-n7p"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="H2X-Y7-Whk" id="LzM-eJ-evd"/>
+                        <segue destination="MbP-er-7NZ" kind="presentation" identifier="ShowTableViewControllerSegue" id="aVG-NZ-NKb"/>
+                        <segue destination="yJR-7A-ONj" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="4s0-rw-FfM"/>
+                        <segue destination="xx1-ys-faf" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="pdL-yi-YIS"/>
+                        <segue destination="eit-dp-6nz" kind="presentation" identifier="ShowAlertViewControllerSegue" id="Qd6-iH-n0w"/>
+                        <segue destination="ElL-2W-GMq" kind="presentation" identifier="ShowDefaultsControllerSegue" id="uRr-Hb-cuq"/>
+                        <segue destination="ZKE-Bx-3RF" kind="presentation" identifier="ShowControlsControllerSegue" id="5k6-RJ-og9"/>
+                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="RRh-BP-TQ7"/>
+                        <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="A3G-Ah-Elw"/>
+                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="5nw-8H-DJ6"/>
+                        <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="fT7-7t-zD6"/>
+                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
+                        <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
+                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
+                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
+                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
+                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
+                        <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="Ct7-dL-JYR"/>
+                        <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="ZuO-qJ-3KH"/>
+                        <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="hSD-sW-MUc"/>
+                        <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="CWR-H1-Ubd"/>
+                        <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="vbS-XY-Q0Q"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-yE-1wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30.5" y="7265"/>
         </scene>
     </scenes>
     <resources>
@@ -3321,4 +3320,27 @@
         <image name="reveal_pretty" width="800" height="600"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZuO-qJ-3KH"/>
+        <segue reference="4hY-3r-U1F"/>
+        <segue reference="SIv-Cp-spB"/>
+        <segue reference="EA6-HN-coe"/>
+        <segue reference="vbS-XY-Q0Q"/>
+        <segue reference="3ya-Xa-ejL"/>
+        <segue reference="hSD-sW-MUc"/>
+        <segue reference="2sN-Om-l3s"/>
+        <segue reference="Tqf-V4-xDk"/>
+        <segue reference="HVs-14-jRy"/>
+        <segue reference="Ad2-lN-jOy"/>
+        <segue reference="hsh-dy-nEy"/>
+        <segue reference="s71-DX-UNb"/>
+        <segue reference="Fb8-BI-6uh"/>
+        <segue reference="saQ-hI-FT8"/>
+        <segue reference="9eS-Oe-XOH"/>
+        <segue reference="C6t-OM-qMf"/>
+        <segue reference="78i-3L-W5g"/>
+        <segue reference="16b-Sd-dJ0"/>
+        <segue reference="sQz-c6-PNe"/>
+        <segue reference="dek-3j-uaJ"/>
+    </inferredMetricsTieBreakers>
 </document>
