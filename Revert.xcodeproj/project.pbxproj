@@ -45,6 +45,7 @@
 		BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */; };
 		BB9F76921CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
 		BB9F76931CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
+		BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */; };
 		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBE51C831CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
@@ -194,6 +195,7 @@
 		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertSplitViewController.swift; path = Sources/RevertSplitViewController.swift; sourceTree = "<group>"; };
 		BB9F76911CB628C4006EA285 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Shared/Resources/Data; sourceTree = "<group>"; };
+		BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewViewController.swift; sourceTree = "<group>"; };
 		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-Shared.xcconfig"; path = "Shared/Configurations/Revert-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
 		BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Debug.xcconfig"; path = "Shared/Configurations/Project-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -494,6 +496,7 @@
 				BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */,
 				BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */,
 				BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */,
+				BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -925,6 +928,7 @@
 				BBE51CDD1CB73929006638B8 /* ControlsViewController.swift in Sources */,
 				BBE51D0A1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				BBE51CE51CB73929006638B8 /* RevertViewController.swift in Sources */,
+				BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */,
 				BBE51CD91CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
 				BBE51CED1CB73929006638B8 /* StressTestViewController.swift in Sources */,

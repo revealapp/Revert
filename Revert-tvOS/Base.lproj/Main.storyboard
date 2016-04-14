@@ -31,9 +31,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xXO-nq-eI9"/>
-                    <connections>
-                        <segue destination="pX9-ob-Qo2" kind="showDetail" identifier="ShowDetailsCollectionViewSegue" id="VAp-qY-mst"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-aj-aYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +64,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lNg-wZ-S9M" kind="relationship" relationship="viewControllers" id="ula-St-dVR"/>
+                        <segue destination="KVv-8A-u7a" kind="relationship" relationship="viewControllers" id="qsL-ra-9EC"/>
+                        <segue destination="lNg-wZ-S9M" kind="relationship" relationship="viewControllers" id="fRn-fT-0c8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvQ-bh-64V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,89 +87,92 @@
             </objects>
             <point key="canvasLocation" x="1753" y="3561"/>
         </scene>
-        <!--Fullscreen-->
-        <scene sceneID="Az1-fs-Upj">
+        <!--What's New-->
+        <scene sceneID="8zX-CE-NZD">
             <objects>
-                <collectionViewController id="pX9-ob-Qo2" customClass="HomeCollectionViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nWu-eR-7iM">
-                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                <viewController id="KVv-8A-u7a" customClass="WhatsNewViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7KZ-vg-cnu"/>
+                        <viewControllerLayoutGuide type="bottom" id="N2w-Ma-xKd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h7e-bd-dHn">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wqU-L6-BXq">
-                            <size key="itemSize" width="300" height="300"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="100" minY="100" maxX="100" maxY="100"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="8ch-Gq-M0a" customClass="HomeCollectionCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="100" y="100" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSW-LR-CFX">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-pU-Nqq">
-                                            <rect key="frame" x="129" y="240" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_WhatsNew" translatesAutoresizingMaskIntoConstraints="NO" id="qoL-Hj-9Hw">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="600"/>
                                 <constraints>
-                                    <constraint firstItem="uHW-pU-Nqq" firstAttribute="top" secondItem="jSW-LR-CFX" secondAttribute="bottom" constant="40" id="93G-Lk-VWn"/>
-                                    <constraint firstAttribute="bottom" secondItem="jSW-LR-CFX" secondAttribute="bottom" constant="100" id="Piy-iX-2rE"/>
-                                    <constraint firstItem="jSW-LR-CFX" firstAttribute="leading" secondItem="8ch-Gq-M0a" secondAttribute="leading" id="WW0-M7-LLW"/>
-                                    <constraint firstAttribute="trailing" secondItem="jSW-LR-CFX" secondAttribute="trailing" id="oA7-E8-uUo"/>
-                                    <constraint firstItem="uHW-pU-Nqq" firstAttribute="centerX" secondItem="8ch-Gq-M0a" secondAttribute="centerX" id="tN2-3b-c4z"/>
-                                    <constraint firstItem="jSW-LR-CFX" firstAttribute="top" secondItem="8ch-Gq-M0a" secondAttribute="top" id="x8v-Wb-lMj"/>
+                                    <constraint firstAttribute="height" constant="600" id="oYg-vV-iT3"/>
                                 </constraints>
-                                <size key="customSize" width="300" height="300"/>
-                                <connections>
-                                    <outlet property="imageView" destination="jSW-LR-CFX" id="kXq-eJ-kX2"/>
-                                    <outlet property="titleLabel" destination="uHW-pU-Nqq" id="ZTC-Vf-4pK"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="pX9-ob-Qo2" id="GWr-Ee-LMc"/>
-                            <outlet property="delegate" destination="pX9-ob-Qo2" id="ZIF-RS-wHs"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Fullscreen" id="QXI-VC-0rn"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cro-LW-isO">
+                                <rect key="frame" x="0.0" y="700" width="1920" height="380"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="60" minimumInteritemSpacing="100" id="L04-pa-tnH">
+                                    <size key="itemSize" width="300" height="300"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="90" minY="40" maxX="90" maxY="40"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="6j1-rz-3wS" customClass="HomeCollectionCell" customModule="Revert_tvOS">
+                                        <rect key="frame" x="90" y="70" width="300" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-Mh-E7a">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJi-57-iFw">
+                                                    <rect key="frame" x="129" y="240" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PYi-Mh-E7a" secondAttribute="bottom" constant="100" id="IC3-eu-03H"/>
+                                            <constraint firstItem="PYi-Mh-E7a" firstAttribute="leading" secondItem="6j1-rz-3wS" secondAttribute="leading" id="Lhd-yD-izq"/>
+                                            <constraint firstAttribute="trailing" secondItem="PYi-Mh-E7a" secondAttribute="trailing" id="VtI-CB-8cM"/>
+                                            <constraint firstItem="BJi-57-iFw" firstAttribute="centerX" secondItem="6j1-rz-3wS" secondAttribute="centerX" id="VzM-3v-Luh"/>
+                                            <constraint firstItem="BJi-57-iFw" firstAttribute="top" secondItem="PYi-Mh-E7a" secondAttribute="bottom" constant="40" id="upW-MB-SRS"/>
+                                            <constraint firstItem="PYi-Mh-E7a" firstAttribute="top" secondItem="6j1-rz-3wS" secondAttribute="top" id="vSb-GS-LuD"/>
+                                        </constraints>
+                                        <size key="customSize" width="300" height="240"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="PYi-Mh-E7a" id="ErD-Kt-oUO"/>
+                                            <outlet property="titleLabel" destination="BJi-57-iFw" id="MPX-oM-2E4"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="N2w-Ma-xKd" firstAttribute="top" secondItem="cro-LW-isO" secondAttribute="bottom" id="BAy-j2-ygS"/>
+                            <constraint firstAttribute="trailing" secondItem="cro-LW-isO" secondAttribute="trailing" id="LyH-XZ-ulq"/>
+                            <constraint firstItem="qoL-Hj-9Hw" firstAttribute="leading" secondItem="h7e-bd-dHn" secondAttribute="leading" id="TcX-OB-1VV"/>
+                            <constraint firstItem="cro-LW-isO" firstAttribute="leading" secondItem="h7e-bd-dHn" secondAttribute="leading" id="ZiJ-dF-kIq"/>
+                            <constraint firstItem="cro-LW-isO" firstAttribute="top" secondItem="qoL-Hj-9Hw" secondAttribute="bottom" constant="100" id="gV9-aE-C1k"/>
+                            <constraint firstItem="qoL-Hj-9Hw" firstAttribute="top" secondItem="7KZ-vg-cnu" secondAttribute="bottom" id="hf1-tK-zRR"/>
+                            <constraint firstAttribute="trailing" secondItem="qoL-Hj-9Hw" secondAttribute="trailing" id="izB-SJ-xQg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="What's New" id="M4k-2j-oRx"/>
                     <connections>
-                        <outlet property="collectionView" destination="nWu-eR-7iM" id="L2J-hV-Nlu"/>
-                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="Yk7-9X-b85"/>
-                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="CoU-h2-kQn"/>
-                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="a57-Ee-SfI"/>
-                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="q0r-vv-LgC"/>
-                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="mHO-2y-80D"/>
-                        <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="vFS-bM-dpy"/>
-                        <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="mbr-3F-zx4"/>
-                        <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="IKM-id-NVk"/>
-                        <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="2qd-xF-A12"/>
-                        <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="BX6-z7-hZv"/>
-                        <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="Lrm-th-gto"/>
-                        <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="JWL-YW-WZV"/>
-                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="uwY-Pf-Ajf"/>
-                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="IGp-KU-ecv"/>
-                        <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="bDC-DE-zUG"/>
-                        <segue destination="v8M-oi-8Oq" kind="presentation" identifier="ShowAlertViewControllerSegue" id="wHM-HG-rdq"/>
-                        <segue destination="fHS-Xr-lQr" kind="presentation" identifier="ShowTableViewControllerSegue" id="njW-1s-QvD"/>
-                        <segue destination="jSn-KT-RLN" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="PqG-Xh-at0"/>
-                        <segue destination="0Wa-iV-Elk" kind="presentation" identifier="ShowDefaultsControllerSegue" id="Wv3-xO-ODV"/>
-                        <segue destination="1nP-YX-9Fn" kind="presentation" identifier="ShowControlsControllerSegue" id="wtD-1M-vYh"/>
-                        <segue destination="lkE-mP-DvX" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="qqp-No-2ka"/>
+                        <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
+                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="qzC-v2-4zL"/>
+                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
+                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
+                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
+                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
                     </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OBn-yj-hei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3355.5" y="4933"/>
+            <point key="canvasLocation" x="1406" y="5635"/>
         </scene>
         <!--Countries View Controller-->
         <scene sceneID="QPr-2G-kru">
@@ -3306,6 +3307,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banner_WhatsNew" width="2200" height="848"/>
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
         <image name="reveal_pretty" width="800" height="600"/>
