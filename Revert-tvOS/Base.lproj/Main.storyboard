@@ -124,11 +124,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-Mh-E7a">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-Mh-E7a">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="140"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJi-57-iFw">
-                                                    <rect key="frame" x="129" y="240" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJi-57-iFw">
+                                                    <rect key="frame" x="129" y="180" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="TableViewControllerCell" id="ZGj-pT-j6R" customClass="BasicCell" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="54" width="1285" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="1245" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGj-pT-j6R" id="8Fb-SC-xXg">
                                     <rect key="frame" x="0.0" y="0.0" width="1196" height="66"/>
@@ -308,7 +308,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="54" width="1920" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="1880" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
                                     <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
@@ -1382,7 +1382,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cr-U6-5Ai">
-                                <rect key="frame" x="100" y="245" width="1720" height="300"/>
+                                <rect key="frame" x="100" y="100" width="1720" height="300"/>
                                 <color key="backgroundColor" red="0.29858762030000002" green="0.72199642659999996" blue="0.94276738169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Z6m-aI-W8h"/>
@@ -3322,25 +3322,25 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZuO-qJ-3KH"/>
-        <segue reference="4hY-3r-U1F"/>
-        <segue reference="SIv-Cp-spB"/>
-        <segue reference="EA6-HN-coe"/>
-        <segue reference="vbS-XY-Q0Q"/>
-        <segue reference="3ya-Xa-ejL"/>
         <segue reference="hSD-sW-MUc"/>
-        <segue reference="2sN-Om-l3s"/>
-        <segue reference="Tqf-V4-xDk"/>
-        <segue reference="HVs-14-jRy"/>
-        <segue reference="Ad2-lN-jOy"/>
+        <segue reference="3ya-Xa-ejL"/>
+        <segue reference="vbS-XY-Q0Q"/>
+        <segue reference="qzC-v2-4zL"/>
+        <segue reference="TNP-CT-4h2"/>
+        <segue reference="SIv-Cp-spB"/>
+        <segue reference="rJr-K8-5YV"/>
+        <segue reference="4hY-3r-U1F"/>
         <segue reference="hsh-dy-nEy"/>
-        <segue reference="s71-DX-UNb"/>
-        <segue reference="Fb8-BI-6uh"/>
-        <segue reference="saQ-hI-FT8"/>
-        <segue reference="9eS-Oe-XOH"/>
         <segue reference="C6t-OM-qMf"/>
-        <segue reference="78i-3L-W5g"/>
+        <segue reference="Tqf-V4-xDk"/>
+        <segue reference="Fb8-BI-6uh"/>
         <segue reference="16b-Sd-dJ0"/>
-        <segue reference="sQz-c6-PNe"/>
         <segue reference="dek-3j-uaJ"/>
+        <segue reference="2sN-Om-l3s"/>
+        <segue reference="78i-3L-W5g"/>
+        <segue reference="HVs-14-jRy"/>
+        <segue reference="sQz-c6-PNe"/>
+        <segue reference="saQ-hI-FT8"/>
+        <segue reference="Ad2-lN-jOy"/>
     </inferredMetricsTieBreakers>
 </document>

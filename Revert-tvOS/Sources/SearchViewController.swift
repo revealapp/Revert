@@ -6,7 +6,7 @@ import UIKit
 final class SearchViewController: UICollectionViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true),
+      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true, sortClosure: {$0.title < $1.title}),
       configureCell: self.dynamicType.configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
@@ -33,14 +33,14 @@ final class SearchViewController: UICollectionViewController {
     }
   }
 
-  //MARK: Private
+  // MARK: Private
 
   private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 
   private var searchText: String? {
     didSet {
       guard searchText != oldValue else {
-        // We don't want to keep reloading contents if the search text has not changed.
+        // We don't want to keep reloading content if the search text has not changed.
         return
       }
 
@@ -64,7 +64,7 @@ private extension SearchViewController {
   }
 }
 
-// MARK:- UICollectionViewDelegate
+// MARK: UICollectionViewDelegate
 
 extension SearchViewController {
   override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
