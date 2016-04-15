@@ -303,12 +303,12 @@
         <scene sceneID="Jfb-nc-Bed">
             <objects>
                 <tableViewController id="eit-dp-6nz" customClass="AlertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="54" width="1880" height="66"/>
+                                <rect key="frame" x="0.0" y="54" width="1144" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
                                     <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
@@ -392,13 +392,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qt1-pP-YK1">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-n9-7js" userLabel="Samples">
-                                        <rect key="frame" x="440" y="20" width="1040" height="1040"/>
+                                        <rect key="frame" x="410" y="20" width="920" height="920"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-sa-tWo" userLabel="Center View">
-                                                <rect key="frame" x="229" y="229" width="582" height="582"/>
+                                                <rect key="frame" x="205" y="205" width="510" height="510"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -407,7 +407,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-9q-W9e" userLabel="Bottom View">
-                                                <rect key="frame" x="27" y="819" width="986" height="194"/>
+                                                <rect key="frame" x="27" y="723" width="866" height="170"/>
                                                 <color key="backgroundColor" red="0.4071236849" green="0.76479762790000005" blue="0.99791806940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -416,7 +416,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-da-VZE" userLabel="Bottom 1px High View">
-                                                <rect key="frame" x="27" y="1021" width="986" height="1"/>
+                                                <rect key="frame" x="27" y="901" width="866" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Gn3-E9-Vej" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
@@ -428,7 +428,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blY-Pd-GBR" userLabel="Top 1px High View">
-                                                <rect key="frame" x="27" y="18" width="986" height="1"/>
+                                                <rect key="frame" x="27" y="18" width="866" height="1"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="pvI-5g-07b" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
@@ -440,7 +440,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piu-ME-qW0" userLabel="Left 1px Width View">
-                                                <rect key="frame" x="18" y="27" width="1" height="986"/>
+                                                <rect key="frame" x="18" y="27" width="1" height="866"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="y6P-DN-ylq" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
@@ -452,7 +452,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADL-Xh-nuv" userLabel="Right 1px Width View">
-                                                <rect key="frame" x="1021" y="27" width="1" height="986"/>
+                                                <rect key="frame" x="901" y="27" width="1" height="866"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="I18-iO-8UK" customClass="HairlineConstraint" customModule="Revert_tvOS" customModuleProvider="target"/>
@@ -464,7 +464,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLX-bX-2HL" userLabel="Top View">
-                                                <rect key="frame" x="27" y="27" width="986" height="194"/>
+                                                <rect key="frame" x="27" y="27" width="866" height="170"/>
                                                 <color key="backgroundColor" red="0.21725654602050781" green="0.37238520383834839" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -473,7 +473,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRZ-Wf-s5d" userLabel="Right View">
-                                                <rect key="frame" x="819" y="229" width="194" height="582"/>
+                                                <rect key="frame" x="723" y="205" width="170" height="510"/>
                                                 <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -482,7 +482,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-N1-HDr" userLabel="Left View">
-                                                <rect key="frame" x="27" y="229" width="194" height="582"/>
+                                                <rect key="frame" x="27" y="205" width="170" height="510"/>
                                                 <color key="backgroundColor" red="0.99945300817489624" green="0.66625046730041504" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -552,10 +552,10 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Qt1-pP-YK1" secondAttribute="trailing" id="8Um-Sb-eNx"/>
-                            <constraint firstItem="Uxt-hp-ALN" firstAttribute="top" secondItem="Qt1-pP-YK1" secondAttribute="bottom" id="Fp9-hk-g7g"/>
-                            <constraint firstItem="Qt1-pP-YK1" firstAttribute="top" secondItem="ErB-La-4G3" secondAttribute="bottom" id="boV-AT-myC"/>
-                            <constraint firstItem="Qt1-pP-YK1" firstAttribute="leading" secondItem="sOb-pY-U43" secondAttribute="leading" id="lrj-My-DQY"/>
+                            <constraint firstAttribute="trailing" secondItem="Qt1-pP-YK1" secondAttribute="trailing" constant="90" id="8Um-Sb-eNx"/>
+                            <constraint firstItem="Uxt-hp-ALN" firstAttribute="top" secondItem="Qt1-pP-YK1" secondAttribute="bottom" constant="60" id="Fp9-hk-g7g"/>
+                            <constraint firstItem="Qt1-pP-YK1" firstAttribute="top" secondItem="ErB-La-4G3" secondAttribute="bottom" constant="60" id="boV-AT-myC"/>
+                            <constraint firstItem="Qt1-pP-YK1" firstAttribute="leading" secondItem="sOb-pY-U43" secondAttribute="leading" constant="90" id="lrj-My-DQY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -576,10 +576,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eow-WP-D5J">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1036"/>
+                                <rect key="frame" x="90" y="60" width="1740" height="916"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPk-JU-Yv3">
-                                        <rect key="frame" x="20" y="20" width="1880" height="25"/>
+                                        <rect key="frame" x="20" y="20" width="1700" height="25"/>
                                         <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="SvM-AP-Sgc"/>
@@ -591,7 +591,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-js-vJS">
-                                        <rect key="frame" x="20" y="991" width="1880" height="25"/>
+                                        <rect key="frame" x="20" y="871" width="1700" height="25"/>
                                         <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="N1c-jK-Z64"/>
@@ -602,11 +602,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QI8-18-dJq">
-                                        <rect key="frame" x="20" y="53" width="930" height="930"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QI8-18-dJq">
+                                        <rect key="frame" x="20" y="96" width="846" height="846"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-pA-VYO">
-                                                <rect key="frame" x="233" y="233" width="465" height="465"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-pA-VYO">
+                                                <rect key="frame" x="223" y="223" width="446" height="445"/>
                                                 <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Etd-pA-VYO" secondAttribute="height" multiplier="1:1" id="hLT-gS-ifg"/>
@@ -631,11 +631,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eq-yE-ba2">
-                                        <rect key="frame" x="970" y="53" width="930" height="930"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eq-yE-ba2">
+                                        <rect key="frame" x="874" y="96" width="846" height="846"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lq-dQ-ALK">
-                                                <rect key="frame" x="233" y="233" width="465" height="465"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lq-dQ-ALK">
+                                                <rect key="frame" x="223" y="223" width="446" height="445"/>
                                                 <color key="backgroundColor" red="0.40712368488311768" green="0.7647976279258728" blue="0.99791806936264038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -679,10 +679,10 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Eow-WP-D5J" firstAttribute="leading" secondItem="e2E-bh-HFh" secondAttribute="leading" id="4n6-QH-cSr"/>
-                            <constraint firstItem="7Xj-bo-Bd6" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="bottom" id="UUL-5S-diC"/>
-                            <constraint firstItem="Eow-WP-D5J" firstAttribute="top" secondItem="Kkf-X6-llX" secondAttribute="bottom" id="cwq-Uc-AER"/>
-                            <constraint firstAttribute="trailing" secondItem="Eow-WP-D5J" secondAttribute="trailing" id="zH2-io-riw"/>
+                            <constraint firstItem="Eow-WP-D5J" firstAttribute="leading" secondItem="e2E-bh-HFh" secondAttribute="leading" constant="90" id="4n6-QH-cSr"/>
+                            <constraint firstItem="7Xj-bo-Bd6" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="bottom" constant="60" id="UUL-5S-diC"/>
+                            <constraint firstItem="Eow-WP-D5J" firstAttribute="top" secondItem="Kkf-X6-llX" secondAttribute="bottom" constant="60" id="cwq-Uc-AER"/>
+                            <constraint firstAttribute="trailing" secondItem="Eow-WP-D5J" secondAttribute="trailing" constant="90" id="zH2-io-riw"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -705,7 +705,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0i-XL-vZn" userLabel="Top View">
-                                <rect key="frame" x="16" y="8" width="960" height="604"/>
+                                <rect key="frame" x="90" y="60" width="960" height="500"/>
                                 <color key="backgroundColor" red="0.99945300820000005" green="0.66625046730000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="960" id="AaF-I3-6db"/>
@@ -717,7 +717,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVr-RD-GnT" userLabel="Middle Left View">
-                                <rect key="frame" x="16" y="620" width="60" height="300"/>
+                                <rect key="frame" x="90" y="568" width="60" height="300"/>
                                 <color key="backgroundColor" red="0.4071236849" green="0.76479762790000005" blue="0.99791806940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="XxP-Tm-cOI"/>
@@ -730,7 +730,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-Na-HCf" userLabel="Middle Right View">
-                                <rect key="frame" x="84" y="620" width="892" height="300"/>
+                                <rect key="frame" x="158" y="568" width="892" height="300"/>
                                 <color key="backgroundColor" red="0.236713707447052" green="0.33243662118911743" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -739,10 +739,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-Yf-pFc" userLabel="Bottom Left View">
-                                <rect key="frame" x="16" y="928" width="1713" height="100"/>
+                                <rect key="frame" x="90" y="876" width="1565" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-r7-88x" customClass="AlignmentInsetView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="832" y="25" width="50" height="50"/>
+                                        <rect key="frame" x="758" y="25" width="50" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.030603691935539246" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="aTr-X9-n41"/>
@@ -761,14 +761,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-GI-TLs" userLabel="Left View">
-                                        <rect key="frame" x="0.0" y="40" width="832" height="20"/>
+                                        <rect key="frame" x="0.0" y="40" width="758" height="20"/>
                                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Dvb-J1-L0d"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvC-ya-xq5" userLabel="Right View">
-                                        <rect key="frame" x="882" y="40" width="831" height="20"/>
+                                        <rect key="frame" x="808" y="40" width="757" height="20"/>
                                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="FnJ-HR-onk"/>
@@ -794,7 +794,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-h5-Lq5" userLabel="Bottom Top Right">
-                                <rect key="frame" x="1737" y="928" width="167" height="60"/>
+                                <rect key="frame" x="1663" y="876" width="167" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.65508842468261719" blue="0.23882710933685303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8N3-h3-uzG"/>
@@ -807,7 +807,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXA-WG-emP" userLabel="Bottom Bottom Right">
-                                <rect key="frame" x="1737" y="996" width="167" height="32"/>
+                                <rect key="frame" x="1663" y="944" width="167" height="32"/>
                                 <color key="backgroundColor" red="0.19825923442840576" green="0.8211103081703186" blue="0.72854232788085938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -816,37 +816,37 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baseline Aligned" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz0-mi-y6s">
-                                <rect key="frame" x="984" y="671" width="370" height="61"/>
+                                <rect key="frame" x="1058" y="619" width="370" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8s-Kl-vgc">
-                                <rect key="frame" x="1362" y="686" width="104" height="43"/>
+                                <rect key="frame" x="1436" y="634" width="104" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertically Centered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfy-18-kzU">
-                                <rect key="frame" x="984" y="740" width="421" height="61"/>
+                                <rect key="frame" x="1058" y="688" width="421" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYW-gA-DCz">
-                                <rect key="frame" x="1413" y="749" width="104" height="43"/>
+                                <rect key="frame" x="1487" y="697" width="104" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horizontally Centered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eST-6h-VKt">
-                                <rect key="frame" x="984" y="809" width="481" height="61"/>
+                                <rect key="frame" x="1058" y="757" width="481" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKV-M6-fjO">
-                                <rect key="frame" x="1173" y="878" width="104" height="43"/>
+                                <rect key="frame" x="1247" y="826" width="104" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -858,7 +858,7 @@
                             <constraint firstItem="ZXn-Yf-pFc" firstAttribute="top" secondItem="Uls-h5-Lq5" secondAttribute="top" id="6iJ-ta-ulG"/>
                             <constraint firstItem="WYW-gA-DCz" firstAttribute="leading" secondItem="Dfy-18-kzU" secondAttribute="trailing" constant="8" symbolic="YES" id="AYo-J2-grq"/>
                             <constraint firstItem="QVr-RD-GnT" firstAttribute="top" secondItem="F0i-XL-vZn" secondAttribute="bottom" constant="8" id="Az7-0v-EZ1"/>
-                            <constraint firstItem="p6M-it-JEr" firstAttribute="top" secondItem="ZXn-Yf-pFc" secondAttribute="bottom" constant="8" symbolic="YES" id="GXN-Jx-fR5"/>
+                            <constraint firstItem="p6M-it-JEr" firstAttribute="top" secondItem="ZXn-Yf-pFc" secondAttribute="bottom" constant="60" id="GXN-Jx-fR5"/>
                             <constraint firstItem="F0i-XL-vZn" firstAttribute="leading" secondItem="QVr-RD-GnT" secondAttribute="leading" id="Hnv-vq-94c"/>
                             <constraint firstItem="eST-6h-VKt" firstAttribute="top" secondItem="Dfy-18-kzU" secondAttribute="bottom" constant="8" symbolic="YES" id="Ka5-rA-gRr"/>
                             <constraint firstItem="zXA-WG-emP" firstAttribute="leading" secondItem="Uls-h5-Lq5" secondAttribute="leading" id="KaV-nr-dL1"/>
@@ -870,17 +870,17 @@
                             <constraint firstItem="Dfy-18-kzU" firstAttribute="leading" secondItem="OEj-Na-HCf" secondAttribute="trailing" constant="8" id="Y6e-Gy-KBp"/>
                             <constraint firstItem="uKV-M6-fjO" firstAttribute="centerX" secondItem="eST-6h-VKt" secondAttribute="centerX" id="a4l-oQ-RDl"/>
                             <constraint firstItem="Dfy-18-kzU" firstAttribute="centerY" secondItem="WYW-gA-DCz" secondAttribute="centerY" id="bGP-xK-zaC"/>
-                            <constraint firstItem="F0i-XL-vZn" firstAttribute="leading" secondItem="aSC-yw-Uum" secondAttribute="leading" constant="16" id="bXU-qK-P27"/>
+                            <constraint firstItem="F0i-XL-vZn" firstAttribute="leading" secondItem="aSC-yw-Uum" secondAttribute="leading" constant="90" id="bXU-qK-P27"/>
                             <constraint firstItem="Uls-h5-Lq5" firstAttribute="leading" secondItem="ZXn-Yf-pFc" secondAttribute="trailing" constant="8" id="c8n-1E-MqU"/>
                             <constraint firstItem="uKV-M6-fjO" firstAttribute="top" secondItem="eST-6h-VKt" secondAttribute="bottom" constant="8" id="dtR-UC-mSN"/>
                             <constraint firstItem="OEj-Na-HCf" firstAttribute="leading" secondItem="QVr-RD-GnT" secondAttribute="trailing" constant="8" symbolic="YES" id="geO-HW-GEp"/>
                             <constraint firstItem="zXA-WG-emP" firstAttribute="trailing" secondItem="Uls-h5-Lq5" secondAttribute="trailing" id="iSp-sA-FcS"/>
                             <constraint firstItem="F8s-Kl-vgc" firstAttribute="baseline" secondItem="Qz0-mi-y6s" secondAttribute="baseline" id="ket-k9-T6c"/>
-                            <constraint firstAttribute="trailing" secondItem="Uls-h5-Lq5" secondAttribute="trailing" constant="16" id="m4z-41-eNN"/>
+                            <constraint firstAttribute="trailing" secondItem="Uls-h5-Lq5" secondAttribute="trailing" constant="90" id="m4z-41-eNN"/>
                             <constraint firstItem="OEj-Na-HCf" firstAttribute="bottom" secondItem="QVr-RD-GnT" secondAttribute="bottom" id="mvz-Pd-Ykl"/>
                             <constraint firstItem="zXA-WG-emP" firstAttribute="top" secondItem="Uls-h5-Lq5" secondAttribute="bottom" constant="8" id="nej-wW-DHm"/>
                             <constraint firstItem="ZXn-Yf-pFc" firstAttribute="top" secondItem="QVr-RD-GnT" secondAttribute="bottom" constant="8" symbolic="YES" id="tGQ-iw-FSs"/>
-                            <constraint firstItem="F0i-XL-vZn" firstAttribute="top" secondItem="nhe-Iu-BvR" secondAttribute="bottom" constant="8" symbolic="YES" id="uY1-Op-B0X"/>
+                            <constraint firstItem="F0i-XL-vZn" firstAttribute="top" secondItem="nhe-Iu-BvR" secondAttribute="bottom" constant="60" id="uY1-Op-B0X"/>
                             <constraint firstItem="ZXn-Yf-pFc" firstAttribute="top" secondItem="uKV-M6-fjO" secondAttribute="bottom" constant="7" id="uqG-9m-eOs"/>
                             <constraint firstItem="zXA-WG-emP" firstAttribute="bottom" secondItem="ZXn-Yf-pFc" secondAttribute="bottom" id="zYU-gm-xDC"/>
                         </constraints>
@@ -2136,19 +2136,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-9k-P7P">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <rect key="frame" x="90" y="60" width="1740" height="1080"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-km-3E8" userLabel="Container Translate">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="180"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1740" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate (-20, 20)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-fz-DgG">
-                                                <rect key="frame" x="788" y="20" width="344" height="51"/>
+                                                <rect key="frame" x="698" y="20" width="344" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-vP-6mx" userLabel="Original Transform View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="91" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="vH1-XU-DVg"/>
@@ -2163,10 +2163,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMF-zP-KRW" userLabel="Transformed View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="91" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prt-Ma-bjP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89646518230438232" blue="0.96600669622421265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2203,16 +2203,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2s4-yi-r57" userLabel="Container Scale">
-                                        <rect key="frame" x="0.0" y="360" width="1920" height="180"/>
+                                        <rect key="frame" x="0.0" y="360" width="1740" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale (50%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-wD-gtH">
-                                                <rect key="frame" x="850" y="20" width="221" height="51"/>
+                                                <rect key="frame" x="760" y="20" width="221" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-rw-ZVs" userLabel="Original Scale View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="101" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="101" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="RrW-rH-oxE"/>
@@ -2227,10 +2227,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck4-Sp-cNQ" userLabel="Scaled View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="101" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="101" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scaled Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7Yr-Cp-wdl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89646518230438232" blue="0.96600669622421265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2267,16 +2267,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vw-H5-Jt0" userLabel="Container Rotate">
-                                        <rect key="frame" x="0.0" y="180" width="1920" height="180"/>
+                                        <rect key="frame" x="0.0" y="180" width="1740" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRY-fh-LSR">
-                                                <rect key="frame" x="852" y="20" width="217" height="51"/>
+                                                <rect key="frame" x="762" y="20" width="217" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-TK-GaT" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="91" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="e0U-Nj-W3g"/>
@@ -2291,10 +2291,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-oo-oIk" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="91" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scK-ju-dcJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89646518230438232" blue="0.96600669622421265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2348,10 +2348,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cST-9k-P7P" secondAttribute="trailing" id="MLh-hf-8Xc"/>
-                            <constraint firstItem="cST-9k-P7P" firstAttribute="top" secondItem="CiJ-mk-FKv" secondAttribute="top" id="iQg-F7-VGK"/>
-                            <constraint firstItem="cST-9k-P7P" firstAttribute="leading" secondItem="CiJ-mk-FKv" secondAttribute="leading" id="tJb-l4-QBV"/>
-                            <constraint firstItem="cST-9k-P7P" firstAttribute="bottom" secondItem="CiJ-mk-FKv" secondAttribute="bottom" id="zG3-dT-vu4"/>
+                            <constraint firstAttribute="trailing" secondItem="cST-9k-P7P" secondAttribute="trailing" constant="90" id="MLh-hf-8Xc"/>
+                            <constraint firstItem="cST-9k-P7P" firstAttribute="top" secondItem="CiJ-mk-FKv" secondAttribute="top" constant="60" id="iQg-F7-VGK"/>
+                            <constraint firstItem="cST-9k-P7P" firstAttribute="leading" secondItem="CiJ-mk-FKv" secondAttribute="leading" constant="90" id="tJb-l4-QBV"/>
+                            <constraint firstItem="cST-9k-P7P" firstAttribute="bottom" secondItem="CiJ-mk-FKv" secondAttribute="bottom" constant="60" id="zG3-dT-vu4"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -2380,19 +2380,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-aN-FN0">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ka-6g-bej" userLabel="Y Rotate">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1740" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-XD-MnC">
-                                                <rect key="frame" x="834" y="20" width="253" height="51"/>
+                                                <rect key="frame" x="744" y="0.0" width="253" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W99-4Q-Ptm" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="hyf-g9-JKU"/>
@@ -2407,10 +2407,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3I4-iT-AYg" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-xi-rJl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89790230989456177" blue="0.96329563856124878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2440,23 +2440,23 @@
                                             <constraint firstItem="3I4-iT-AYg" firstAttribute="leading" secondItem="4ka-6g-bej" secondAttribute="leading" constant="50" id="MLq-Z0-ldB"/>
                                             <constraint firstAttribute="centerX" secondItem="s9f-XD-MnC" secondAttribute="centerX" id="QUB-ha-2h6"/>
                                             <constraint firstItem="W99-4Q-Ptm" firstAttribute="top" secondItem="s9f-XD-MnC" secondAttribute="bottom" constant="20" id="cVG-xA-ktC"/>
-                                            <constraint firstItem="s9f-XD-MnC" firstAttribute="top" secondItem="4ka-6g-bej" secondAttribute="top" constant="20" id="fcq-Fd-Hyk"/>
+                                            <constraint firstItem="s9f-XD-MnC" firstAttribute="top" secondItem="4ka-6g-bej" secondAttribute="top" id="fcq-Fd-Hyk"/>
                                             <constraint firstAttribute="trailing" secondItem="3I4-iT-AYg" secondAttribute="trailing" constant="50" id="hXw-ta-2mc"/>
                                             <constraint firstAttribute="height" constant="150" id="nZ9-rD-CBi"/>
                                             <constraint firstItem="W99-4Q-Ptm" firstAttribute="leading" secondItem="4ka-6g-bej" secondAttribute="leading" constant="50" id="out-X6-UTo"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxQ-UX-dI1" userLabel="X Rotate">
-                                        <rect key="frame" x="0.0" y="180" width="1920" height="150"/>
+                                        <rect key="frame" x="0.0" y="150" width="1740" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-jh-FLz">
-                                                <rect key="frame" x="833" y="20" width="254" height="51"/>
+                                                <rect key="frame" x="743" y="0.0" width="254" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-d2-Lob" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="wyY-8h-h9k"/>
@@ -2471,10 +2471,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNk-Sj-PpA" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-zl-Ybn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89790230989456177" blue="0.96329563856124878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2501,7 +2501,7 @@
                                         <constraints>
                                             <constraint firstItem="QNk-Sj-PpA" firstAttribute="leading" secondItem="uxQ-UX-dI1" secondAttribute="leading" constant="50" id="9wC-UE-Y4i"/>
                                             <constraint firstItem="QNk-Sj-PpA" firstAttribute="top" secondItem="gvJ-jh-FLz" secondAttribute="bottom" constant="20" id="EZS-d0-bWl"/>
-                                            <constraint firstItem="gvJ-jh-FLz" firstAttribute="top" secondItem="uxQ-UX-dI1" secondAttribute="top" constant="20" id="HZP-B8-brk"/>
+                                            <constraint firstItem="gvJ-jh-FLz" firstAttribute="top" secondItem="uxQ-UX-dI1" secondAttribute="top" id="HZP-B8-brk"/>
                                             <constraint firstAttribute="trailing" secondItem="bqp-d2-Lob" secondAttribute="trailing" constant="50" id="TB1-cc-tCT"/>
                                             <constraint firstAttribute="trailing" secondItem="QNk-Sj-PpA" secondAttribute="trailing" constant="50" id="gQ6-VN-8Yl"/>
                                             <constraint firstItem="bqp-d2-Lob" firstAttribute="top" secondItem="gvJ-jh-FLz" secondAttribute="bottom" constant="20" id="hro-Pe-vdO"/>
@@ -2510,16 +2510,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-uB-MfJ" userLabel="XY Rotate">
-                                        <rect key="frame" x="0.0" y="540" width="1920" height="150"/>
+                                        <rect key="frame" x="0.0" y="450" width="1740" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XY Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v65-aT-MYb">
-                                                <rect key="frame" x="820" y="20" width="280" height="51"/>
+                                                <rect key="frame" x="730" y="0.0" width="280" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9n-gr-EkR" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="jMj-me-Axt"/>
@@ -2534,10 +2534,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBL-0A-Pri" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mo8-cB-Obc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89646518230438232" blue="0.96600669622421265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2562,7 +2562,7 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="v65-aT-MYb" firstAttribute="top" secondItem="Pyn-uB-MfJ" secondAttribute="top" constant="20" id="0GX-uc-KI5"/>
+                                            <constraint firstItem="v65-aT-MYb" firstAttribute="top" secondItem="Pyn-uB-MfJ" secondAttribute="top" id="0GX-uc-KI5"/>
                                             <constraint firstAttribute="trailing" secondItem="nBL-0A-Pri" secondAttribute="trailing" constant="50" id="5TB-I9-Q60"/>
                                             <constraint firstItem="C9n-gr-EkR" firstAttribute="top" secondItem="v65-aT-MYb" secondAttribute="bottom" constant="20" id="96T-tT-GUs"/>
                                             <constraint firstItem="nBL-0A-Pri" firstAttribute="leading" secondItem="Pyn-uB-MfJ" secondAttribute="leading" constant="50" id="Afb-8p-f8k"/>
@@ -2573,16 +2573,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-oB-5aU" userLabel="Z Rotate">
-                                        <rect key="frame" x="0.0" y="360" width="1920" height="150"/>
+                                        <rect key="frame" x="0.0" y="300" width="1740" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z Rotate (15°)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsX-mN-ezH">
-                                                <rect key="frame" x="833" y="20" width="254" height="51"/>
+                                                <rect key="frame" x="743" y="0.0" width="254" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-pR-OcN" userLabel="Original Rotate View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="CvA-rL-ivw"/>
@@ -2597,10 +2597,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-3s-Dae" userLabel="Rotated View" customClass="HairlineBorderView" customModule="Revert_tvOS" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="91" width="1820" height="80"/>
+                                                <rect key="frame" x="50" y="71" width="1640" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotated Subview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-Hg-ZQb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1820" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1640" height="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                         <color key="textColor" red="1" green="0.89646518230438232" blue="0.96600669622421265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2632,17 +2632,17 @@
                                             <constraint firstItem="HFw-3s-Dae" firstAttribute="leading" secondItem="Qpw-oB-5aU" secondAttribute="leading" constant="50" id="K3W-9g-IH3"/>
                                             <constraint firstItem="lPy-pR-OcN" firstAttribute="leading" secondItem="Qpw-oB-5aU" secondAttribute="leading" constant="50" id="lNa-ch-vK1"/>
                                             <constraint firstAttribute="trailing" secondItem="HFw-3s-Dae" secondAttribute="trailing" constant="50" id="pSD-C3-dsG"/>
-                                            <constraint firstItem="AsX-mN-ezH" firstAttribute="top" secondItem="Qpw-oB-5aU" secondAttribute="top" constant="20" id="q4m-l6-g3T"/>
+                                            <constraint firstItem="AsX-mN-ezH" firstAttribute="top" secondItem="Qpw-oB-5aU" secondAttribute="top" id="q4m-l6-g3T"/>
                                             <constraint firstItem="lPy-pR-OcN" firstAttribute="top" secondItem="AsX-mN-ezH" secondAttribute="bottom" constant="20" id="w9U-ky-0R4"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Pyn-uB-MfJ" firstAttribute="top" secondItem="Qpw-oB-5aU" secondAttribute="bottom" constant="30" id="1Gb-Ns-XP0"/>
+                                    <constraint firstItem="Pyn-uB-MfJ" firstAttribute="top" secondItem="Qpw-oB-5aU" secondAttribute="bottom" id="1Gb-Ns-XP0"/>
                                     <constraint firstAttribute="trailing" secondItem="4ka-6g-bej" secondAttribute="trailing" id="6Mr-7c-Bo1"/>
                                     <constraint firstAttribute="bottom" secondItem="Pyn-uB-MfJ" secondAttribute="bottom" id="9TY-3P-Fai"/>
                                     <constraint firstItem="uxQ-UX-dI1" firstAttribute="height" secondItem="Pyn-uB-MfJ" secondAttribute="height" id="HDK-8d-zfN"/>
-                                    <constraint firstItem="uxQ-UX-dI1" firstAttribute="top" secondItem="4ka-6g-bej" secondAttribute="bottom" constant="30" id="IQh-6y-rRp"/>
+                                    <constraint firstItem="uxQ-UX-dI1" firstAttribute="top" secondItem="4ka-6g-bej" secondAttribute="bottom" id="IQh-6y-rRp"/>
                                     <constraint firstItem="4ka-6g-bej" firstAttribute="leading" secondItem="8j6-aN-FN0" secondAttribute="leading" id="OWj-Nz-0iu"/>
                                     <constraint firstItem="Qpw-oB-5aU" firstAttribute="leading" secondItem="8j6-aN-FN0" secondAttribute="leading" id="OYF-h4-wou"/>
                                     <constraint firstItem="uxQ-UX-dI1" firstAttribute="height" secondItem="4ka-6g-bej" secondAttribute="height" id="Sau-GC-rrt"/>
@@ -2653,16 +2653,16 @@
                                     <constraint firstAttribute="trailing" secondItem="Pyn-uB-MfJ" secondAttribute="trailing" id="fGU-CB-m4j"/>
                                     <constraint firstItem="4ka-6g-bej" firstAttribute="width" secondItem="8j6-aN-FN0" secondAttribute="width" id="g7e-Cn-llF"/>
                                     <constraint firstAttribute="trailing" secondItem="Qpw-oB-5aU" secondAttribute="trailing" id="iIQ-aQ-XTu"/>
-                                    <constraint firstItem="Qpw-oB-5aU" firstAttribute="top" secondItem="uxQ-UX-dI1" secondAttribute="bottom" constant="30" id="t6q-Xr-dK9"/>
+                                    <constraint firstItem="Qpw-oB-5aU" firstAttribute="top" secondItem="uxQ-UX-dI1" secondAttribute="bottom" id="t6q-Xr-dK9"/>
                                     <constraint firstItem="uxQ-UX-dI1" firstAttribute="leading" secondItem="8j6-aN-FN0" secondAttribute="leading" id="x82-th-rAc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8j6-aN-FN0" secondAttribute="bottom" id="ALa-JH-BP2"/>
-                            <constraint firstAttribute="trailing" secondItem="8j6-aN-FN0" secondAttribute="trailing" id="cYg-ox-Oy4"/>
-                            <constraint firstItem="8j6-aN-FN0" firstAttribute="top" secondItem="TiM-gJ-rcQ" secondAttribute="top" id="lqM-2L-xpT"/>
-                            <constraint firstItem="8j6-aN-FN0" firstAttribute="leading" secondItem="TiM-gJ-rcQ" secondAttribute="leading" id="muA-XK-BwT"/>
+                            <constraint firstAttribute="bottom" secondItem="8j6-aN-FN0" secondAttribute="bottom" constant="60" id="ALa-JH-BP2"/>
+                            <constraint firstAttribute="trailing" secondItem="8j6-aN-FN0" secondAttribute="trailing" constant="90" id="cYg-ox-Oy4"/>
+                            <constraint firstItem="8j6-aN-FN0" firstAttribute="top" secondItem="TiM-gJ-rcQ" secondAttribute="top" constant="60" id="lqM-2L-xpT"/>
+                            <constraint firstItem="8j6-aN-FN0" firstAttribute="leading" secondItem="TiM-gJ-rcQ" secondAttribute="leading" constant="90" id="muA-XK-BwT"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -2695,7 +2695,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6x-yA-AwD" userLabel="Anchor Point">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="400"/>
+                                        <rect key="frame" x="0.0" y="40" width="1920" height="400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anchor Point (0.25, 0.25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-Od-JJE">
                                                 <rect key="frame" x="727" y="20" width="466" height="51"/>
@@ -2747,7 +2747,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-Nn-w4C" userLabel="Bounds Change">
-                                        <rect key="frame" x="0.0" y="400" width="1920" height="400"/>
+                                        <rect key="frame" x="0.0" y="380" width="1920" height="400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounds Change (?, ?)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkP-s4-nhQ">
                                                 <rect key="frame" x="761" y="20" width="398" height="51"/>
@@ -2799,15 +2799,15 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="2Kr-Nn-w4C" firstAttribute="top" secondItem="I6x-yA-AwD" secondAttribute="bottom" id="B83-0I-dGk"/>
+                                    <constraint firstItem="2Kr-Nn-w4C" firstAttribute="top" secondItem="I6x-yA-AwD" secondAttribute="bottom" constant="-60" id="B83-0I-dGk"/>
                                     <constraint firstItem="I6x-yA-AwD" firstAttribute="width" secondItem="E7S-8z-ts3" secondAttribute="width" id="NQ9-DL-Khs"/>
                                     <constraint firstItem="I6x-yA-AwD" firstAttribute="leading" secondItem="E7S-8z-ts3" secondAttribute="leading" id="U8v-q8-pMd"/>
                                     <constraint firstItem="2Kr-Nn-w4C" firstAttribute="leading" secondItem="E7S-8z-ts3" secondAttribute="leading" id="cW8-9Z-pIa"/>
                                     <constraint firstItem="I6x-yA-AwD" firstAttribute="height" secondItem="2Kr-Nn-w4C" secondAttribute="height" id="dK0-dN-Fdy"/>
                                     <constraint firstAttribute="trailing" secondItem="2Kr-Nn-w4C" secondAttribute="trailing" id="jkp-zK-iWg"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Kr-Nn-w4C" secondAttribute="bottom" id="oAG-hO-mvD"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Kr-Nn-w4C" secondAttribute="bottom" constant="40" id="oAG-hO-mvD"/>
                                     <constraint firstAttribute="trailing" secondItem="I6x-yA-AwD" secondAttribute="trailing" id="qm7-9y-SgF"/>
-                                    <constraint firstItem="I6x-yA-AwD" firstAttribute="top" secondItem="E7S-8z-ts3" secondAttribute="top" id="t0m-hu-d2c"/>
+                                    <constraint firstItem="I6x-yA-AwD" firstAttribute="top" secondItem="E7S-8z-ts3" secondAttribute="top" constant="40" id="t0m-hu-d2c"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -2845,14 +2845,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-rV-fjz" customClass="DeepView" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="gFt-rV-fjz" firstAttribute="top" secondItem="lIb-EX-hHx" secondAttribute="bottom" id="2kg-if-3gw"/>
-                            <constraint firstAttribute="trailing" secondItem="gFt-rV-fjz" secondAttribute="trailing" id="K9c-if-U3u"/>
-                            <constraint firstItem="gFt-rV-fjz" firstAttribute="leading" secondItem="XeV-Gy-C05" secondAttribute="leading" id="gOx-vk-ccY"/>
-                            <constraint firstItem="tf9-FK-G90" firstAttribute="top" secondItem="gFt-rV-fjz" secondAttribute="bottom" id="itc-SK-fzc"/>
+                            <constraint firstItem="gFt-rV-fjz" firstAttribute="top" secondItem="lIb-EX-hHx" secondAttribute="bottom" constant="60" id="2kg-if-3gw"/>
+                            <constraint firstAttribute="trailing" secondItem="gFt-rV-fjz" secondAttribute="trailing" constant="90" id="K9c-if-U3u"/>
+                            <constraint firstItem="gFt-rV-fjz" firstAttribute="leading" secondItem="XeV-Gy-C05" secondAttribute="leading" constant="90" id="gOx-vk-ccY"/>
+                            <constraint firstItem="tf9-FK-G90" firstAttribute="top" secondItem="gFt-rV-fjz" secondAttribute="bottom" constant="60" id="itc-SK-fzc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -2871,11 +2871,11 @@
                             <size key="itemSize" width="170" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <inset key="sectionInset" minX="90" minY="60" maxX="90" maxY="60"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StressCell" id="Lrz-3n-xMd">
-                                <rect key="frame" x="20" y="0.0" width="170" height="170"/>
+                                <rect key="frame" x="90" y="60" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
@@ -2928,7 +2928,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z3p-1b-hSq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uAV-w1-nGw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uAV-w1-nGw">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2972,10 +2972,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="930"/>
+                                <rect key="frame" x="0.0" y="60" width="1920" height="810"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="920" y="425" width="80" height="80"/>
+                                        <rect key="frame" x="920" y="365" width="80" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
                                                 <rect key="frame" x="8" y="8" width="64" height="64"/>
@@ -3004,7 +3004,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="1024" y="417" width="80" height="80"/>
+                                        <rect key="frame" x="1024" y="357" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.9956403374671936" green="0.68156266212463379" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Right View"/>
                                         <constraints>
@@ -3017,7 +3017,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="928" y="529" width="80" height="80"/>
+                                        <rect key="frame" x="928" y="469" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.18039215689999999" green="0.83529411760000005" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Bottom View"/>
                                         <constraints>
@@ -3030,7 +3030,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="816" y="433" width="80" height="80"/>
+                                        <rect key="frame" x="816" y="373" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.81012684106826782" green="0.32538783550262451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Left View"/>
                                         <constraints>
@@ -3043,7 +3043,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="912" y="321" width="80" height="80"/>
+                                        <rect key="frame" x="912" y="261" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.42200243473052979" green="0.76358240842819214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Top View"/>
                                         <constraints>
@@ -3062,7 +3062,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-7v-Iyh" customClass="ButtonsMarginsAdjustingView" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="930" width="1880" height="150"/>
+                                <rect key="frame" x="20" y="870" width="1880" height="150"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Aj-34F">
                                         <rect key="frame" x="740" y="70" width="400" height="10"/>
@@ -3110,7 +3110,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="150" id="3uA-BM-GyP"/>
+                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="210" id="3uA-BM-GyP"/>
                             <constraint firstItem="6c8-7v-Iyh" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="6u2-Wv-XCB"/>
                             <constraint firstItem="6c8-7v-Iyh" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leadingMargin" id="ASU-zF-8zr"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
@@ -3121,9 +3121,9 @@
                             <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
                             <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
                             <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
-                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
+                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" constant="60" id="k1C-Is-1yM"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="6c8-7v-Iyh" secondAttribute="bottom" id="o1W-cd-ZYn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6c8-7v-Iyh" secondAttribute="bottom" constant="60" id="o1W-cd-ZYn"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
                             <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
                             <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
@@ -3321,26 +3321,26 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZuO-qJ-3KH"/>
-        <segue reference="hSD-sW-MUc"/>
-        <segue reference="3ya-Xa-ejL"/>
-        <segue reference="vbS-XY-Q0Q"/>
-        <segue reference="qzC-v2-4zL"/>
         <segue reference="TNP-CT-4h2"/>
-        <segue reference="SIv-Cp-spB"/>
-        <segue reference="rJr-K8-5YV"/>
+        <segue reference="qzC-v2-4zL"/>
         <segue reference="4hY-3r-U1F"/>
-        <segue reference="hsh-dy-nEy"/>
-        <segue reference="C6t-OM-qMf"/>
-        <segue reference="Tqf-V4-xDk"/>
-        <segue reference="Fb8-BI-6uh"/>
-        <segue reference="16b-Sd-dJ0"/>
-        <segue reference="dek-3j-uaJ"/>
-        <segue reference="2sN-Om-l3s"/>
-        <segue reference="78i-3L-W5g"/>
-        <segue reference="HVs-14-jRy"/>
-        <segue reference="sQz-c6-PNe"/>
-        <segue reference="saQ-hI-FT8"/>
-        <segue reference="Ad2-lN-jOy"/>
+        <segue reference="rJr-K8-5YV"/>
+        <segue reference="SIv-Cp-spB"/>
+        <segue reference="ZuO-qJ-3KH"/>
+        <segue reference="uRr-Hb-cuq"/>
+        <segue reference="hSD-sW-MUc"/>
+        <segue reference="fT7-7t-zD6"/>
+        <segue reference="Ct7-dL-JYR"/>
+        <segue reference="aVG-NZ-NKb"/>
+        <segue reference="CWR-H1-Ubd"/>
+        <segue reference="DMn-a2-SDu"/>
+        <segue reference="5k6-RJ-og9"/>
+        <segue reference="pdL-yi-YIS"/>
+        <segue reference="ePP-G8-d2j"/>
+        <segue reference="3ya-Xa-ejL"/>
+        <segue reference="4s0-rw-FfM"/>
+        <segue reference="A3G-Ah-Elw"/>
+        <segue reference="vbS-XY-Q0Q"/>
+        <segue reference="Qd6-iH-n0w"/>
     </inferredMetricsTieBreakers>
 </document>

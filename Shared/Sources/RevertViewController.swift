@@ -54,6 +54,11 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     if self.item?.infoFilename == nil {
       self.navigationItem.rightBarButtonItem = nil
     }
+
+    #if os(tvOS)
+      self.dynamicType.adjustTVInsetsForTableView(self.tableView)
+      self.automaticallyAdjustsScrollViewInsets = false
+    #endif
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -62,6 +67,20 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
+  }
+
+  // MARK: Private
+
+  private static let overscanInsets = UIEdgeInsets(top: 60, left: 90, bottom: 60, right: 90)
+
+  private static func adjustTVInsetsForTableView(tableView: UITableView) {
+    tableView.layoutMargins = self.overscanInsets
+
+    // We also have to account for overscan on the top and the bottom of the table view itself.
+    // Content is initially offset so the table view doesn't jump when the inset update takes place.
+    tableView.contentInset.top = self.overscanInsets.top
+    tableView.contentInset.bottom = self.overscanInsets.bottom
+    tableView.contentOffset.y = -self.overscanInsets.top
   }
 }
 
