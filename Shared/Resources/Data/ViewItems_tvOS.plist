@@ -17,6 +17,11 @@
 				<key>cellIdentifier</key>
 				<string>ImageViewCell</string>
 			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>rows</key>
+		<array>
 			<dict>
 				<key>title</key>
 				<string>Progress View</string>

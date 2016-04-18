@@ -59,16 +59,34 @@
 				<string>default_views</string>
 			</dict>
 			<dict>
-				<key>resourceFilename</key>
-				<string>ControlItems</string>
 				<key>title</key>
-				<string>Controls</string>
+				<string>Buttons</string>
 				<key>iconName</key>
-				<string>icon_Controls</string>
+				<string>icon_Buttons</string>
 				<key>segueIdentifier</key>
-				<string>ShowControlsControllerSegue</string>
+				<string>ShowButtonsControllerSegue</string>
 				<key>infoFilename</key>
-				<string>controls</string>
+				<string>buttons</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Segmented Controls</string>
+				<key>iconName</key>
+				<string>icon_SegmentedControls</string>
+				<key>segueIdentifier</key>
+				<string>ShowSegmentedControlsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>segmented_controls</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Text Fields</string>
+				<key>iconName</key>
+				<string>icon_TextFields</string>
+				<key>segueIdentifier</key>
+				<string>ShowTextFieldsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>text_fields</string>
 			</dict>
 			<dict>
 				<key>title</key>
