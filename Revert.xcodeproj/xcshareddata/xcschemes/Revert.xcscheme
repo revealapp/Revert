@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A6850B71AD4A20E00ACCE29"
-               BuildableName = "Revert.app"
-               BlueprintName = "Revert"
+               BuildableName = "Revert-iOS.app"
+               BlueprintName = "Revert-iOS"
                ReferencedContainer = "container:Revert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A6850B71AD4A20E00ACCE29"
-            BuildableName = "Revert.app"
-            BlueprintName = "Revert"
+            BuildableName = "Revert-iOS.app"
+            BlueprintName = "Revert-iOS"
             ReferencedContainer = "container:Revert.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A6850B71AD4A20E00ACCE29"
-            BuildableName = "Revert.app"
-            BlueprintName = "Revert"
+            BuildableName = "Revert-iOS.app"
+            BlueprintName = "Revert-iOS"
             ReferencedContainer = "container:Revert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,8 +99,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A6850B71AD4A20E00ACCE29"
-            BuildableName = "Revert.app"
-            BlueprintName = "Revert"
+            BuildableName = "Revert-iOS.app"
+            BlueprintName = "Revert-iOS"
             ReferencedContainer = "container:Revert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

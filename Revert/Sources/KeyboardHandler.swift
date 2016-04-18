@@ -18,6 +18,16 @@ final class KeyboardHandler: NSObject {
     self.unregisterNotifications()
   }
 
+  private func registerNotifications() {
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
+  }
+
+  private func unregisterNotifications() {
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+  }
+
   func keyboardWillShowHideNotification(notification: NSNotification) {
     guard let scrollView = self.scrollView,
       scrollViewSuperview = scrollView.superview,
@@ -44,17 +54,5 @@ final class KeyboardHandler: NSObject {
       scrollView.contentInset = contentInsets
       scrollView.scrollIndicatorInsets = scrollIndicatorInsets
       }, completion: nil)
-  }
-
-  // MARK: Private
-
-  private func registerNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
-  }
-
-  private func unregisterNotifications() {
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
   }
 }

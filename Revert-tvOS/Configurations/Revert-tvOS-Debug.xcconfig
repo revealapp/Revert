@@ -1,0 +1,4 @@
+//
+// Revert-Debug.xcconfig
+
+#include "Revert-tvOS-Shared.xcconfig"
