@@ -54,7 +54,7 @@ final private class IBAScene: SKScene {
     label.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
 
     #if os(tvOS)
-      label.text = NSLocalizedString("Touch the trackpad to add sprite, release to animate it", comment: "SpriteKitViewController background label")
+      label.text = NSLocalizedString("Touch the trackpad to add sprite, drag and release to animate it", comment: "SpriteKitViewController background label")
       label.fontColor = UIColor.darkGrayColor()
       label.fontSize = 60
     #endif
