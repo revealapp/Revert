@@ -20,7 +20,7 @@ final class HomeCollectionViewController: UICollectionViewController, SettableHo
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home),
+      collection: CollectableCollection<HomeItem>(items: .Home, sortClosure: {$0.title < $1.title}),
       configureCell: self.dynamicType.configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
