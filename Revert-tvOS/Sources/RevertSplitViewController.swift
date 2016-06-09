@@ -5,6 +5,13 @@
 import UIKit
 
 class RevertSplitViewController: UISplitViewController {
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+
+    self.setNeedsFocusUpdate()
+    self.updateFocusIfNeeded()
+  }
+
   func focusDetailView() {
     self.preferDetailViewFocus = true
     
