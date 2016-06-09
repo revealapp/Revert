@@ -28,7 +28,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let searchController = UISearchController(searchResultsController: searchViewController)
     searchController.searchResultsUpdater = searchViewController
-    searchController.searchBar.placeholder = NSLocalizedString("Enter name or city", comment: "Search prompt")
+    searchController.searchBar.placeholder = NSLocalizedString("Enter example name", comment: "Search prompt")
 
     // UISearchController needs to be inside a container view controller when presented as part of the navigation of the app.
     let searchContainer = UISearchContainerViewController(searchController: searchController)
