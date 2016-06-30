@@ -1461,7 +1461,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-uU-KMG">
-                                <rect key="frame" x="660" y="100" width="600" height="626"/>
+                                <rect key="frame" x="660" y="227" width="600" height="626"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-qS-iH4">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
@@ -1548,7 +1548,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="xLv-uU-KMG" firstAttribute="centerX" secondItem="OZP-hg-8yD" secondAttribute="centerX" id="GHZ-NC-f6J"/>
-                            <constraint firstItem="xLv-uU-KMG" firstAttribute="top" secondItem="ziw-UX-Hr3" secondAttribute="bottom" constant="100" id="d3H-nF-GIE"/>
+                            <constraint firstItem="xLv-uU-KMG" firstAttribute="centerY" secondItem="OZP-hg-8yD" secondAttribute="centerY" id="Zg5-1t-eh6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1582,12 +1582,12 @@
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-cw-fST">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="ktc-9q-nUG"/>
                                                         <constraint firstAttribute="width" constant="300" id="ovc-oC-AFf"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="KFu-q2-Ysj">
@@ -1597,7 +1597,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="kIF-cw-fST" firstAttribute="top" secondItem="GWO-dW-5DH" secondAttribute="top" id="3fh-Jf-7c5"/>
                                                 <constraint firstItem="kIF-cw-fST" firstAttribute="leading" secondItem="GWO-dW-5DH" secondAttribute="leading" id="7av-g2-Nsb"/>
@@ -1610,7 +1610,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="0.34953034682080925" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="GWO-dW-5DH" secondAttribute="centerY" id="QvF-pN-pGX"/>
                                     <constraint firstAttribute="centerX" secondItem="GWO-dW-5DH" secondAttribute="centerX" id="d96-Yu-Bcp"/>
@@ -1643,7 +1643,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="ELS-fX-hZL" secondAttribute="trailing" id="341-cG-2pA"/>
                                                 <constraint firstAttribute="centerX" secondItem="1u0-zS-ka0" secondAttribute="centerX" id="Imp-kB-76M"/>
@@ -1656,7 +1656,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="0.3495303468" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="jg8-Cp-3dU" secondAttribute="centerX" id="gNF-hc-52U"/>
                                     <constraint firstAttribute="centerY" secondItem="jg8-Cp-3dU" secondAttribute="centerY" id="hT8-R3-IwE"/>
@@ -1680,6 +1680,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="uZU-rR-M20"/>
                                                     </constraints>
+                                                    <color key="progressTintColor" red="0.2985876202583313" green="0.72199642658233643" blue="0.94276738166809082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="p6c-xT-UEd">
                                                     <rect key="frame" x="56" y="25" width="188" height="35"/>
@@ -1688,7 +1690,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="M2k-Mv-jjy" firstAttribute="leading" secondItem="4lA-me-DXZ" secondAttribute="leading" id="Fyg-Vy-TV3"/>
                                                 <constraint firstAttribute="bottom" secondItem="p6c-xT-UEd" secondAttribute="bottom" id="WmQ-Va-Kkd"/>
@@ -1701,7 +1703,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="0.3495303468" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="4lA-me-DXZ" secondAttribute="centerX" id="lcT-Rd-Qt6"/>
                                     <constraint firstAttribute="centerY" secondItem="4lA-me-DXZ" secondAttribute="centerY" id="o99-O0-pvE"/>
@@ -1726,7 +1728,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="1" alpha="0.3495303468" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="2Gf-dK-rmb" secondAttribute="centerX" id="Loo-3A-87p"/>
                                     <constraint firstAttribute="centerY" secondItem="2Gf-dK-rmb" secondAttribute="centerY" id="iPr-BG-fe5"/>
@@ -2952,7 +2954,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="1Pj-O0-8C6">
-                                <rect key="frame" x="460" y="100" width="1000" height="238"/>
+                                <rect key="frame" x="460" y="421" width="1000" height="238"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-Hp-g0J">
                                         <rect key="frame" x="0.0" y="0.0" width="1000" height="69"/>
@@ -3006,7 +3008,7 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="1Pj-O0-8C6" firstAttribute="top" secondItem="Efm-wT-TD4" secondAttribute="bottom" constant="100" id="s4k-em-Luh"/>
+                            <constraint firstItem="1Pj-O0-8C6" firstAttribute="centerY" secondItem="2Cv-xH-ach" secondAttribute="centerY" id="jaA-KM-pdc"/>
                             <constraint firstItem="1Pj-O0-8C6" firstAttribute="centerX" secondItem="2Cv-xH-ach" secondAttribute="centerX" id="yH6-6O-9DJ"/>
                         </constraints>
                     </view>
@@ -3028,7 +3030,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-gS-uAI">
-                                <rect key="frame" x="460" y="100" width="1000" height="192"/>
+                                <rect key="frame" x="460" y="444" width="1000" height="192"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="nX6-FD-LIQ">
                                         <rect key="frame" x="0.0" y="0.0" width="1000" height="46"/>
@@ -3076,7 +3078,7 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="1S7-gS-uAI" firstAttribute="top" secondItem="AQ1-DT-dmm" secondAttribute="bottom" constant="100" id="PuA-Bh-44u"/>
+                            <constraint firstItem="1S7-gS-uAI" firstAttribute="centerY" secondItem="xLp-Vi-Shb" secondAttribute="centerY" id="s6Y-Z5-gER"/>
                             <constraint firstItem="1S7-gS-uAI" firstAttribute="centerX" secondItem="xLp-Vi-Shb" secondAttribute="centerX" id="xya-Hf-7rf"/>
                         </constraints>
                     </view>
