@@ -252,7 +252,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-2G-eMc" customClass="RevertFocusableScrollView" customModule="Revert_tvOS">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="zEC-Nq-c8u">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="zEC-Nq-c8u">
                                         <rect key="frame" x="0.0" y="0.0" width="2160" height="2160"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zEC-Nq-c8u" secondAttribute="height" multiplier="1:1" id="3Kl-qz-Mgs"/>
