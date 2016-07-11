@@ -4,7 +4,7 @@
 
 import UIKit
 
-class RevertSplitViewController: UISplitViewController {
+final class RevertSplitViewController: UISplitViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
 
