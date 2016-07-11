@@ -483,7 +483,6 @@
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
 				BB66CC001CB74C6000954AD1 /* Models */,
-				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
 				BB3F8B501D338C5A0092E374 /* Extensions */,
@@ -611,16 +610,9 @@
 		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		BBB6FCC01CA9FBE300AF24F3 /* Subclasses */ = {
-			isa = PBXGroup;
-			children = (
 				BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */,
 			);
-			name = Subclasses;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		BBE51C801CB7377C006638B8 /* Data Sources */ = {
