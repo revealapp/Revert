@@ -5,6 +5,8 @@ import UIKit
 
 final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
   typealias CellConfigurator = (HomeCollectionCell, item: HomeItem) -> Void
+	typealias ItemFilterClosure = (HomeItem) -> Bool
+	typealias GroupFilterClosure = (CollectableGroup<HomeItem>) -> Bool
   
   required init(collection: CollectableCollection<HomeItem>, configureCell: CellConfigurator, cellIdentifier: String) {
     self.completeCollection = collection
@@ -34,20 +36,18 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
   }
 
   subscript(indexPath: NSIndexPath) -> HomeItem {
-    get {
-      return self.collection[indexPath]
-    }
+    return self.collection[indexPath]
   }
 
   func clearFilter() {
     self.collection = self.completeCollection
   }
 
-  func filter(filterClosure: ((HomeItem) -> Bool)) {
+  func filter(filterClosure: ItemFilterClosure) {
     self.collection = self.completeCollection.filteredCollectableCollection(filterClosure)
   }
 
-  func filterGroups(filterClosure: ((CollectableGroup<HomeItem>) -> Bool)) {
+  func filterGroups(filterClosure: GroupFilterClosure) {
     self.collection = self.completeCollection.groupFilteredCollectableCollection(filterClosure)
   }
   

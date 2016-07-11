@@ -53,9 +53,7 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
   }
 
   subscript(indexPath: NSIndexPath) -> Object {
-    get {
-      return self.collection[indexPath]
-    }
+    return self.collection[indexPath]
   }
 
   func clearFilter() {
