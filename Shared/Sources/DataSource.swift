@@ -8,7 +8,7 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
   typealias FooterTitleRetriever = ((CollectableGroup<Object>) -> String?)?
 
   required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
-    self.completeCollection = collection
+    self.unfilteredCollection = collection
     self.collection = collection
     self.configureCell = configureCell
     self.cellIdentifier = cellIdentifier
@@ -57,16 +57,16 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
   }
 
   func clearFilter() {
-    self.collection = self.completeCollection
+    self.collection = self.unfilteredCollection
   }
 
   func filter(filterClosure: ((Object) -> Bool)) {
-    self.collection = self.completeCollection.filteredCollectableCollection(filterClosure)
+    self.collection = self.unfilteredCollection.filteredCollectableCollection(filterClosure)
   }
 
   // MARK: Private
 
-  private let completeCollection: CollectableCollection<Object>
+  private let unfilteredCollection: CollectableCollection<Object>
   private var collection: CollectableCollection<Object>
   private let configureCell: CellConfigurator
   private let cellIdentifier: String

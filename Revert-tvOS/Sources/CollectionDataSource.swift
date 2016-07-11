@@ -9,7 +9,7 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
 	typealias GroupFilterClosure = (CollectableGroup<HomeItem>) -> Bool
 
 	required init(collection: CollectableCollection<HomeItem>, configureCell: CellConfigurator, cellIdentifier: String) {
-		self.completeCollection = collection
+		self.unfilteredCollection = collection
 		self.collection = collection
 		self.configureCell = configureCell
 		self.cellIdentifier = cellIdentifier
@@ -40,19 +40,19 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
 	}
 
 	func clearFilter() {
-		self.collection = self.completeCollection
+		self.collection = self.unfilteredCollection
 	}
 
 	func filter(filterClosure: ItemFilterClosure) {
-		self.collection = self.completeCollection.filteredCollectableCollection(filterClosure)
+		self.collection = self.unfilteredCollection.filteredCollectableCollection(filterClosure)
 	}
 
 	func filterGroups(filterClosure: GroupFilterClosure) {
-		self.collection = self.completeCollection.groupFilteredCollectableCollection(filterClosure)
+		self.collection = self.unfilteredCollection.groupFilteredCollectableCollection(filterClosure)
 	}
 
 	// MARK: Private
-	private let completeCollection: CollectableCollection<HomeItem>
+	private let unfilteredCollection: CollectableCollection<HomeItem>
 	private var collection: CollectableCollection<HomeItem>
 	private let configureCell: CellConfigurator
 	private let cellIdentifier: String
