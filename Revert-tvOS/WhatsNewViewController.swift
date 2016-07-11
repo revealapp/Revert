@@ -18,7 +18,6 @@ final class WhatsNewViewController: UIViewController {
     super.viewDidLoad()
 
     self.collectionView?.dataSource = self.dataSource
-    self.collectionView?.delegate = self
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
