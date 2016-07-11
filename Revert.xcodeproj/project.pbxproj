@@ -30,6 +30,7 @@
 		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
 		BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Assets.xcassets */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */; };
 		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
 		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
@@ -178,6 +179,7 @@
 		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+tvOSInsets.swift"; path = "Sources/UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
 		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Person.swift; sourceTree = "<group>"; };
 		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
+				BB3F8B501D338C5A0092E374 /* Extensions */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -569,6 +572,14 @@
 				BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB3F8B501D338C5A0092E374 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		BB66CC001CB74C6000954AD1 /* Models */ = {
@@ -943,6 +954,7 @@
 				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
 				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
+				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
 				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
