@@ -14,13 +14,13 @@ final class HomeViewController: UITableViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
     
-    if let destinationViewController = segue.destinationTopViewController as? SettableHomeCollectionGroup {
+    if let destinationViewController = segue.destinationTopViewController as? GroupFilterable {
       guard let indexPath = sender as? NSIndexPath else {
-        fatalError("`SettableHomeCollectionGroup` requires `indexPath` to be sent as the sender.")
+        fatalError("`GroupFilterable` requires `indexPath` to be sent as the sender.")
       }
 
       guard let groupTitle = self.collection[indexPath.row].title else {
-        fatalError("`SettableHomeCollectionGroup` requires a named group.")
+        fatalError("`GroupFilterable` requires a named group.")
       }
 
       destinationViewController.collectionGroup = groupTitle

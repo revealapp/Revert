@@ -3,7 +3,7 @@
 
 import UIKit
  
-final class HomeCollectionViewController: UICollectionViewController, SettableHomeCollectionGroup {
+final class HomeCollectionViewController: UICollectionViewController, GroupFilterable {
   var collectionGroup: String? {
     didSet {
       self.dataSource.filterGroups({
@@ -67,6 +67,6 @@ extension HomeCollectionViewController {
   }
 }
 
-protocol SettableHomeCollectionGroup: class {
+protocol GroupFilterable: class {
   var collectionGroup: String? { get set }
 }
