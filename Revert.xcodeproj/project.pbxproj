@@ -700,10 +700,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */;
 			buildPhases = (
+				9A9BD1E01BD65D66001A439D /* SwiftLint */,
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
-				9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */,
 			);
 			buildRules = (
 			);
@@ -718,6 +718,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
 			buildPhases = (
+				BB172A3C1D34BB4A00384185 /* SwiftLint */,
 				BB2720481C9B8E44002E53EE /* Sources */,
 				BB2720491C9B8E44002E53EE /* Frameworks */,
 				BB27204A1C9B8E44002E53EE /* Resources */,
@@ -801,14 +802,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */ = {
+		9A9BD1E01BD65D66001A439D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Lint Swift Source Code";
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./Scripts/swiftlint.sh;
+		};
+		BB172A3C1D34BB4A00384185 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
