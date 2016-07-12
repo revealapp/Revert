@@ -7,7 +7,7 @@ final class NonSerializableViewController: RevertViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.trailingConstraint.constant = CGFloat.min
+    self.labelTrailingConstraint.constant = CGFloat.min
 
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpOutside)
@@ -43,7 +43,7 @@ final class NonSerializableViewController: RevertViewController {
   @IBOutlet private var progressView: UIProgressView!
   @IBOutlet private var subView: UIView!
   @IBOutlet private var slider: UISlider!
-  @IBOutlet private var trailingConstraint: NSLayoutConstraint!
+  @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!
 
   private func makeSliderUnserializable() {
     // inf
