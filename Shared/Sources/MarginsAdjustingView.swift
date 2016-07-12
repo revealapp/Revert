@@ -12,23 +12,23 @@ class MarginsAdjustingView: UIView {
 }
 
 #if os(iOS)
-final class SliderMarginsAdjustingView: MarginsAdjustingView {
-  override func awakeFromNib() {
-    super.awakeFromNib()
+  final class SliderMarginsAdjustingView: MarginsAdjustingView {
+    override func awakeFromNib() {
+      super.awakeFromNib()
 
-    self.slider.value = 0
-    self.slider.minimumValue = 0
-    self.slider.maximumValue = 100
+      self.slider.value = 0
+      self.slider.minimumValue = 0
+      self.slider.maximumValue = 100
+    }
+
+    // MARK: Private
+    @IBOutlet private weak var slider: UISlider!
+
+    @IBAction private func sliderValueChanged(sender: UISlider) {
+      let margin = CGFloat(sender.value)
+      self.marginsDelegate?.didUpdateMargins(UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
+    }
   }
-
-  // MARK: Private
-  @IBOutlet private weak var slider: UISlider!
-
-  @IBAction private func sliderValueChanged(sender: UISlider) {
-    let margin = CGFloat(sender.value)
-    self.marginsDelegate?.didUpdateMargins(UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
-  }
-}
 #endif
 
 #if os(tvOS)

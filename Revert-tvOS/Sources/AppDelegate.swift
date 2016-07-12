@@ -5,7 +5,7 @@ import UIKit
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+  var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     guard let tabBarController = self.window?.rootViewController as? UITabBarController else {
@@ -14,7 +14,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // UISearchController can't be added through Storyboards as of tvOS 9
     tabBarController.viewControllers?.append(self.dynamicType.packagedSearchController())
-    
+
     return true
   }
 

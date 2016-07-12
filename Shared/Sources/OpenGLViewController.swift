@@ -31,7 +31,7 @@ final class OpenGLViewController: RevertGLKViewController {
 
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     self.toggleState()
-    
+
     super.touchesBegan(touches, withEvent: event)
   }
 
@@ -51,7 +51,7 @@ final class OpenGLViewController: RevertGLKViewController {
   private var glkView: GLKView {
     return self.view as! GLKView
   }
-  
+
   private func toggleState() {
     self.paused = self.paused == false
   }
@@ -63,7 +63,7 @@ final class OpenGLViewController: RevertGLKViewController {
   extension OpenGLViewController {
     override func pressesBegan(presses: Set<UIPress>, withEvent event: UIPressesEvent?) {
       self.toggleState()
-      
+
       super.pressesBegan(presses, withEvent:event)
     }
   }

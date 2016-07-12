@@ -31,13 +31,13 @@ extension UIAlertController {
 }
 
 #if os(iOS)
-extension AlertViewController {
-  static func showExampleAlertView() {
+  extension AlertViewController {
+    static func showExampleAlertView() {
       UIAlertView.exampleAlertView().show()
-  }
-  
-  static func showExampleActionsSheetInView(view : UIView) {
+    }
+
+    static func showExampleActionsSheetInView(view : UIView) {
       UIActionSheet.exampleActionSheet().showInView(view)
+    }
   }
-}
 #endif

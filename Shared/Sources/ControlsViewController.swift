@@ -36,7 +36,7 @@ final class ControlsViewController: RevertCollectionViewController {
 
   // MARK: Private
   #if os(iOS)
-    private let keyboardHandler = KeyboardHandler()
+  private let keyboardHandler = KeyboardHandler()
   #endif
 
   private var collection: CollectableCollection<Item>?

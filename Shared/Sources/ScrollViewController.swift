@@ -31,8 +31,8 @@ final class ScrollViewController: RevertViewController {
 
 final class RevertFocusableScrollView: UIScrollView {
   #if os(tvOS)
-    override func canBecomeFocused() -> Bool {
-      return true
-    }
+  override func canBecomeFocused() -> Bool {
+    return true
+  }
   #endif
 }

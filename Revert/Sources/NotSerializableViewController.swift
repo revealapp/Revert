@@ -48,7 +48,7 @@ final class NonSerializableViewController: RevertViewController {
 
     // nan
     self.progressView.contentScaleFactor = 0 / 0
-    
+
     // - inf
     self.subView.contentScaleFactor = -1 / 0
   }

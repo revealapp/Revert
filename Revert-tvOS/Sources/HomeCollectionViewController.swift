@@ -2,7 +2,7 @@
 //  Copyright © 2016 Itty Bitty Apps. All rights reserved.
 
 import UIKit
- 
+
 final class HomeCollectionViewController: UICollectionViewController, GroupFilterable {
   var collectionGroup: String? {
     didSet {
@@ -50,7 +50,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   // MARK: - Private
   private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
- 
+
 private extension HomeCollectionViewController {
   static func configureCell(cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title

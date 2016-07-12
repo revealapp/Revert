@@ -109,7 +109,7 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if segue.identifier == Storyboards.Segue.Info {
       self.prepareForInfoSegue(segue, item: self.item)
     }

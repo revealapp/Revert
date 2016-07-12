@@ -106,7 +106,7 @@ final class AutoResizingMaskViewSource {
   private(set) lazy var rightFlexibleTopBottomView: UIView = {
     let rightFlexibleTopBottomOrigin = CGPoint(x:
       self.flexibleWidthHeightView.bounds.width - self.dynamicType.innerPadding - self.dynamicType.leftRightWidth,
-      y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
+                                               y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
     )
 
     let frame = CGRect(origin: rightFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)

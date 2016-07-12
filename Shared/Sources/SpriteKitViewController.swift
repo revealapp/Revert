@@ -65,7 +65,7 @@ final private class IBAScene: SKScene {
   private static func packagedSpaceship(startingPosition: CGPoint) -> SKSpriteNode {
     let spaceship = SKSpriteNode(imageNamed: "spritekit_reveal")
     spaceship.position = startingPosition
-    
+
     return spaceship
   }
 
@@ -96,7 +96,7 @@ final class SpriteKitViewController: RevertViewController {
   }
 
   // MARK: Private
-
+  
   private var skView: SKView {
     return self.view as! SKView
   }

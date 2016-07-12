@@ -38,8 +38,8 @@ private enum Identifier: String {
   case ActionController = "actioncontroller"
 
   #if os(iOS)
-    case AlertView = "alertview"
-    case ActionSheet = "actionsheet"
+  case AlertView = "alertview"
+  case ActionSheet = "actionsheet"
   #endif
 }
 
@@ -76,13 +76,13 @@ extension AlertViewController {
       self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
     }
   }
-  
+
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let item = self.collection[indexPath]
 
     guard let cell = tableView.cellForRowAtIndexPath(indexPath),
       identifier = Identifier(rawValue: item.cellIdentifier) else {
-      fatalError("Unknown cellIdentifier or cell")
+        fatalError("Unknown cellIdentifier or cell")
     }
 
     self.displayCorrespondingAlertForIdentifier(identifier, fromView: cell)

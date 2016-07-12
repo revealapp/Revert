@@ -26,7 +26,7 @@ final class RevealOpenGLCube {
     #else
       glClearColor(0.156862745, 0.156862745, 0.156862745, 1)
     #endif
-    
+
     glClear(GLenum(GL_COLOR_BUFFER_BIT))
 
     self.effect.prepareToDraw()

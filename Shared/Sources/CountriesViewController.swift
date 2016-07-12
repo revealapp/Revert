@@ -48,7 +48,7 @@ extension CountriesViewController {
       self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
     }
   }
-  
+
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let cell = tableView.cellForRowAtIndexPath(indexPath)
     if cell?.accessoryType == .Checkmark {
@@ -56,7 +56,7 @@ extension CountriesViewController {
     } else {
       cell?.accessoryType = .Checkmark
     }
-    
+
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
 
@@ -69,7 +69,7 @@ extension CountriesViewController {
 private extension CountriesViewController {
   static func configureCell(cell: BasicCell, object: Country) {
     cell.accessoryType = .None
-    
+
     cell.titleLabel.text = object.name
     cell.subtitleLabel.text = object.capital
   }
@@ -81,21 +81,21 @@ private extension CountriesViewController {
 }
 
 #if os(iOS)
-extension CountriesViewController {
-  private func setupRefreshControl() {
-    self.refreshControl = UIRefreshControl()
-    self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
+  extension CountriesViewController {
+    private func setupRefreshControl() {
+      self.refreshControl = UIRefreshControl()
+      self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
+    }
+
+    func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
+      self.refreshTimer?.invalidate()
+
+      // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
+      self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
+    }
+
+    func didLoadDummyData(timer: NSTimer) {
+      self.refreshControl?.endRefreshing()
+    }
   }
-  
-  func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
-    self.refreshTimer?.invalidate()
-    
-    // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
-    self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
-  }
-  
-  func didLoadDummyData(timer: NSTimer) {
-    self.refreshControl?.endRefreshing()
-  }
-}
 #endif

@@ -72,7 +72,7 @@ final class HomeViewController: UITableViewController {
       self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
     }
   }
-  }
+}
 
 // MARK:- UITableViewDelegate
 extension HomeViewController {

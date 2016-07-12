@@ -6,14 +6,14 @@ import UIKit
 final class HomeViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     self.tableView.dataSource = self
-    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)    
+    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
   }
-  
+
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     super.prepareForSegue(segue, sender: sender)
-    
+
     if let destinationViewController = segue.destinationTopViewController as? GroupFilterable {
       guard let indexPath = sender as? NSIndexPath else {
         fatalError("`GroupFilterable` requires `indexPath` to be sent as the sender.")
@@ -26,9 +26,9 @@ final class HomeViewController: UITableViewController {
       destinationViewController.collectionGroup = groupTitle
     }
   }
-  
+
   //MARK: - Private
-  
+
   private let collection = CollectableCollection<HomeItem>(items: .Home)
 }
 
@@ -58,20 +58,20 @@ extension HomeViewController {
     cell.titleLabel.text = self.collection[indexPath.row].title
     return cell
   }
-  
+
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     guard let splitViewController = self.splitViewController as? RevertSplitViewController else {
       fatalError("tvOS `SplitViewController` should always be of type `RevertSplitViewController")
     }
-    
+
     splitViewController.focusDetailView()
   }
-  
+
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     guard let cell = cell as? HomeCell else {
       fatalError("Cell should be of type `HomeCollectionCell`")
     }
-    
+
     cell.accessoryType = .None
   }
 }
