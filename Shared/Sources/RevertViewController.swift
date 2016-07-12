@@ -5,113 +5,113 @@ import UIKit
 import GLKit
 
 private extension UIViewController {
-	func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem?) {
-		guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
-			destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
-				fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
-		}
+  func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem?) {
+    guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
+      destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
+        fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
+    }
 
-		guard let item = item else {
-			fatalError("There should be an item present")
-		}
+    guard let item = item else {
+      fatalError("There should be an item present")
+    }
 
-		destinationViewController.item = item
-	}
+    destinationViewController.item = item
+  }
 }
 
 // MARK:- UIViewController
 class RevertViewController: UIViewController, SettableHomeItem {
-	final var item: HomeItem?
+  final var item: HomeItem?
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-		assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
 
-		if self.item?.infoFilename == nil {
-			self.navigationItem.rightBarButtonItem = nil
-		}
-	}
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
+  }
 
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		super.prepareForSegue(segue, sender: sender)
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
 
-		if segue.identifier == Storyboards.Segue.Info {
-			self.prepareForInfoSegue(segue, item: self.item)
-		}
-	}
+    if segue.identifier == Storyboards.Segue.Info {
+      self.prepareForInfoSegue(segue, item: self.item)
+    }
+  }
 }
 
 // MARK:- UITableViewController
 class RevertTableViewController: UITableViewController, SettableHomeItem {
-	final var item: HomeItem?
+  final var item: HomeItem?
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-		assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
 
-		if self.item?.infoFilename == nil {
-			self.navigationItem.rightBarButtonItem = nil
-		}
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
 
-		#if os(tvOS)
-			self.tableView.adjustContentInsetsForTVOs()
-			self.automaticallyAdjustsScrollViewInsets = false
-		#endif
-	}
+    #if os(tvOS)
+      self.tableView.adjustContentInsetsForTVOs()
+      self.automaticallyAdjustsScrollViewInsets = false
+    #endif
+  }
 
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		super.prepareForSegue(segue, sender: sender)
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
 
-		if segue.identifier == Storyboards.Segue.Info {
-			self.prepareForInfoSegue(segue, item: self.item)
-		}
-	}
+    if segue.identifier == Storyboards.Segue.Info {
+      self.prepareForInfoSegue(segue, item: self.item)
+    }
+  }
 }
 
 // MARK:- UICollectionViewController
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
-	final var item: HomeItem?
+  final var item: HomeItem?
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-		assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
 
-		if self.item?.infoFilename == nil {
-			self.navigationItem.rightBarButtonItem = nil
-		}
-	}
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
+  }
 
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		super.prepareForSegue(segue, sender: sender)
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
 
-		if segue.identifier == Storyboards.Segue.Info {
-			self.prepareForInfoSegue(segue, item: self.item)
-		}
-	}
+    if segue.identifier == Storyboards.Segue.Info {
+      self.prepareForInfoSegue(segue, item: self.item)
+    }
+  }
 }
 
 // MARK:- GLKViewController
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
-	final var item: HomeItem?
+  final var item: HomeItem?
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-		assert(self.item != nil, "Item must be set before `viewDidLoad`")
+    assert(self.item != nil, "Item must be set before `viewDidLoad`")
 
-		if self.item?.infoFilename == nil {
-			self.navigationItem.rightBarButtonItem = nil
-		}
-	}
+    if self.item?.infoFilename == nil {
+      self.navigationItem.rightBarButtonItem = nil
+    }
+  }
 
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		super.prepareForSegue(segue, sender: sender)
-
-		if segue.identifier == Storyboards.Segue.Info {
-			self.prepareForInfoSegue(segue, item: self.item)
-		}
-	}
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
+    
+    if segue.identifier == Storyboards.Segue.Info {
+      self.prepareForInfoSegue(segue, item: self.item)
+    }
+  }
 }
