@@ -18,6 +18,7 @@
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6C75041BDE29DE00534680 /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75021BDE29DE00534680 /* Info */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
+		9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
@@ -292,14 +293,6 @@
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
 		};
-		9A17423C1B09CFAC00BEDFAB /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
-			);
-			name = Strings;
-			sourceTree = "<group>";
-		};
 		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +338,6 @@
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
-				9A17423C1B09CFAC00BEDFAB /* Strings */,
 			);
 			name = Resources;
 			path = Revert;
@@ -594,6 +586,7 @@
 			children = (
 				BB9F76911CB628C4006EA285 /* Data */,
 				BB735B451C9FD0490092FA6F /* Assets.xcassets */,
+				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
 			);
 			name = Resources;
 			path = ../..;
@@ -801,6 +794,7 @@
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				BB9F76931CB628C4006EA285 /* Data in Resources */,
+				9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +961,7 @@
 				9A0416CD1B02EAB300477E60 /* Base */,
 			);
 			name = Localizable.stringsdict;
+			path = Revert;
 			sourceTree = "<group>";
 		};
 		9A6850C31AD4A20E00ACCE29 /* Main.storyboard */ = {
