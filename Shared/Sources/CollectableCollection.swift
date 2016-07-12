@@ -13,7 +13,7 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
 
   init(items: RevertItems, flatten: Bool = false, sortClosure: TypedGroup.SortClosure? = nil) {
     if flatten == true {
-      let flattenedData = items.data.map(TypedGroup.rowDataForDictionary).flatMap{$0}
+      let flattenedData = items.data.map(TypedGroup.rowDataForDictionary).flatMap { $0 }
       self.items = [TypedGroup(items: flattenedData.map(CollectableCollectionObject.init), sortClosure: sortClosure)]
     } else {
       self.items = items.data
@@ -37,7 +37,7 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
         return TypedGroup(title: $0.title, items: items)
       })
       // After filtering items in each group, we need to filter out empty `CollectableGroup`s.
-      .filter{ $0.items.count > 0 }
+      .filter { $0.items.count > 0 }
 
     // Returns a new `CollectableCollection` with only matching items and groups containing them.
     return CollectableCollection(groups: groups)

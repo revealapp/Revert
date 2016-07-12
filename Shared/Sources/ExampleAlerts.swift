@@ -36,7 +36,7 @@ extension UIAlertController {
       UIAlertView.exampleAlertView().show()
     }
 
-    static func showExampleActionsSheetInView(view : UIView) {
+    static func showExampleActionsSheetInView(view: UIView) {
       UIActionSheet.exampleActionSheet().showInView(view)
     }
   }

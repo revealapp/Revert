@@ -96,7 +96,7 @@ final class SpriteKitViewController: RevertViewController {
   }
 
   // MARK: Private
-  
+
   private var skView: SKView {
     return self.view as! SKView
   }

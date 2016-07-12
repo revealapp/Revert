@@ -15,7 +15,7 @@ final class CATextLayerCell: CollectionViewCell {
   @IBOutlet private weak var textLayerView: CATextLayerView!
 
   private static func configureTextLayer(textLayer: CATextLayer) {
-    textLayer.string = "I am a quite long CATextLayer string."
+    textLayer.string = NSLocalizedString("I am a quite long CATextLayer string.", comment: "")
     textLayer.fontSize = 20
     textLayer.foregroundColor = UIColor.lightGrayColor().CGColor
     textLayer.alignmentMode = kCAAlignmentCenter
@@ -76,7 +76,7 @@ final class CAShapeLayerCell: CollectionViewCell {
 
   private static func configureShapeLayer(shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
-    let origin = CGPointMake((shapeLayer.bounds.width - minLength) / 2, 0)
+    let origin = CGPoint(x: (shapeLayer.bounds.width - minLength) / 2, y: 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
     shapeLayer.path = UIBezierPath(ovalInRect: rect).CGPath
     shapeLayer.fillColor = UIColor.revertOrangeColor().CGColor
