@@ -4105,16 +4105,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QO4-8o-dl4">
-                                <rect key="frame" x="0.0" y="150" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="125" width="600" height="350"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YM5-Nn-K2H">
                                         <rect key="frame" x="16" y="18" width="568" height="2"/>
                                     </progressView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IWv-Ws-oTi">
-                                        <rect key="frame" x="14" y="37" width="572" height="54"/>
+                                        <rect key="frame" x="14" y="37" width="572" height="31"/>
                                     </slider>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-ox-Vuz">
-                                        <rect key="frame" x="16" y="115" width="568" height="100"/>
+                                        <rect key="frame" x="16" y="92" width="568" height="100"/>
                                         <color key="backgroundColor" red="0.95564013719558716" green="0.62022560834884644" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="IDU-uR-5Qp"/>
@@ -4126,7 +4126,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmR-ZQ-FRv">
-                                        <rect key="frame" x="16" y="240" width="568" height="42"/>
+                                        <rect key="frame" x="16" y="217" width="568" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="qmv-6f-GIB"/>
                                         </constraints>
@@ -4136,18 +4136,34 @@ on this label</string>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-CA-yEe">
+                                        <rect key="frame" x="253" y="291" width="94" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="zxq-vJ-PZC"/>
+                                        </constraints>
+                                    </stepper>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NbY-CA-yEe" secondAttribute="bottom" constant="30" id="4Bc-OR-ij5"/>
+                                    <constraint firstItem="NbY-CA-yEe" firstAttribute="top" secondItem="GmR-ZQ-FRv" secondAttribute="bottom" constant="32" id="68M-MR-Cuz"/>
+                                    <constraint firstItem="NbY-CA-yEe" firstAttribute="centerX" secondItem="QO4-8o-dl4" secondAttribute="centerX" id="6V9-Lu-Gww"/>
                                     <constraint firstItem="GmR-ZQ-FRv" firstAttribute="leading" secondItem="QO4-8o-dl4" secondAttribute="leading" constant="16" id="BaS-mx-LmY"/>
-                                    <constraint firstAttribute="height" constant="300" id="JJp-yo-4EV"/>
+                                    <constraint firstAttribute="height" constant="350" id="JJp-yo-4EV"/>
+                                    <constraint firstItem="NbY-CA-yEe" firstAttribute="leading" secondItem="QO4-8o-dl4" secondAttribute="leading" constant="253" id="Mhw-bI-Tdi"/>
                                     <constraint firstItem="9bM-ox-Vuz" firstAttribute="top" secondItem="IWv-Ws-oTi" secondAttribute="bottom" constant="25" id="N45-AP-S74"/>
+                                    <constraint firstAttribute="trailing" secondItem="NbY-CA-yEe" secondAttribute="trailing" constant="253" id="ObR-0J-VoC"/>
                                     <constraint firstAttribute="trailing" secondItem="GmR-ZQ-FRv" secondAttribute="trailing" constant="16" id="URu-Qb-4Rd"/>
                                     <constraint firstItem="GmR-ZQ-FRv" firstAttribute="top" secondItem="9bM-ox-Vuz" secondAttribute="bottom" constant="25" id="Xp8-3O-DYa"/>
                                     <constraint firstItem="IWv-Ws-oTi" firstAttribute="top" secondItem="YM5-Nn-K2H" secondAttribute="bottom" constant="17" id="dqb-Vi-6d1"/>
                                     <constraint firstItem="YM5-Nn-K2H" firstAttribute="top" secondItem="QO4-8o-dl4" secondAttribute="top" constant="18" id="q3d-CF-eCX"/>
-                                    <constraint firstAttribute="bottom" secondItem="GmR-ZQ-FRv" secondAttribute="bottom" constant="18" id="yr5-qX-ydx"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mhw-bI-Tdi"/>
+                                        <exclude reference="ObR-0J-VoC"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94907671213150024" green="0.94865018129348755" blue="0.96507126092910767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4174,6 +4190,7 @@ on this label</string>
                         <outlet property="labelTrailingConstraint" destination="URu-Qb-4Rd" id="mAl-o5-XCv"/>
                         <outlet property="progressView" destination="YM5-Nn-K2H" id="a9q-bm-E1z"/>
                         <outlet property="slider" destination="IWv-Ws-oTi" id="kIc-nL-NbL"/>
+                        <outlet property="stepper" destination="NbY-CA-yEe" id="EfH-9D-FXG"/>
                         <outlet property="subView" destination="9bM-ox-Vuz" id="9SM-r3-crM"/>
                     </connections>
                 </viewController>
