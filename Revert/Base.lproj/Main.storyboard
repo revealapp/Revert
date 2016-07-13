@@ -4171,10 +4171,10 @@ on this label</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="labelTrailingConstraint" destination="URu-Qb-4Rd" id="mAl-o5-XCv"/>
                         <outlet property="progressView" destination="YM5-Nn-K2H" id="a9q-bm-E1z"/>
                         <outlet property="slider" destination="IWv-Ws-oTi" id="kIc-nL-NbL"/>
                         <outlet property="subView" destination="9bM-ox-Vuz" id="9SM-r3-crM"/>
-                        <outlet property="trailingConstraint" destination="URu-Qb-4Rd" id="f28-kX-vZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glU-WP-qud" userLabel="First Responder" sceneMemberID="firstResponder"/>
