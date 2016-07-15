@@ -4,78 +4,33 @@
 
 import UIKit
 
-class IconConstellationView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
+class IconConstellationView: UIView {
 
   var animatedIcons: [UIImage] = [] {
     didSet {
-      self.iconGrid.reloadData()
+      self.reloadIconViews()
     }
   }
 
   var iconSize = 100.0 as CGFloat {
     didSet {
-      self.iconGridLayout.itemSize = CGSize(width: self.iconSize, height: self.iconSize)
+      self.setNeedsLayout()
     }
   }
 
   var iconSpacing = 26.0 as CGFloat {
     didSet {
-      self.iconGridLayout.minimumLineSpacing = self.iconSpacing
-      self.iconGridLayout.minimumInteritemSpacing = self.iconSpacing
+      self.setNeedsLayout()
     }
-  }
-
-  private var iconGrid: UICollectionView!
-  private var iconGridLayout: UICollectionViewFlowLayout {
-    return self.iconGrid.collectionViewLayout as! UICollectionViewFlowLayout
-  }
-
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    self.commonInit()
-  }
-
-  required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    self.commonInit()
-  }
-
-  private func commonInit() {
-    let layout = UICollectionViewFlowLayout()
-    layout.scrollDirection = .Vertical
-    layout.itemSize = CGSizeMake(self.iconSize, self.iconSize)
-    layout.minimumLineSpacing = self.iconSpacing
-    layout.minimumInteritemSpacing = self.iconSpacing
-
-    let collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
-    collectionView.dataSource = self
-    collectionView.delegate = self
-    collectionView.userInteractionEnabled = false
-    collectionView.scrollEnabled = false
-    collectionView.showsVerticalScrollIndicator = false
-    collectionView.showsHorizontalScrollIndicator = false
-    collectionView.clipsToBounds = false
-    collectionView.registerClass(IconConstellationViewCell.self, forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
-    collectionView.translatesAutoresizingMaskIntoConstraints = false
-    self.addSubview(collectionView)
-
-    NSLayoutConstraint.activateConstraints([
-      self.topAnchor.constraintEqualToAnchor(collectionView.topAnchor),
-      self.bottomAnchor.constraintEqualToAnchor(collectionView.bottomAnchor),
-      self.leadingAnchor.constraintEqualToAnchor(collectionView.leadingAnchor),
-      self.trailingAnchor.constraintEqualToAnchor(collectionView.trailingAnchor)
-      ])
-
-    self.iconGrid = collectionView
   }
 
   var animating = false {
     didSet {
       if self.animating != oldValue && self.window != nil {
         if self.animating {
-          self.startAnimatingVisibleCells()
+          self.animateIconViews()
         } else {
-          self.stopAnimatingVisibleCells()
+          self.stopAnimatingIconViews()
         }
       }
     }
@@ -83,113 +38,96 @@ class IconConstellationView: UIView, UICollectionViewDataSource, UICollectionVie
 
   override func didMoveToWindow() {
     super.didMoveToWindow()
+    self.animateIconViewsIfNecessary()
+  }
 
-    if self.window != nil && self.animating {
-      self.startAnimatingVisibleCells()
+  override class func requiresConstraintBasedLayout() -> Bool {
+    return false
+  }
+
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    self.layoutIconViews()
+  }
+
+  // MARK: Icon views
+
+  private var iconViews: [UIImageView] = []
+
+  private func reloadIconViews() {
+    self.iconViews.forEach { $0.removeFromSuperview() }
+
+    self.iconViews = self.animatedIcons.map { image in
+      let imageView = UIImageView(image: image)
+      imageView.contentMode = .Center
+      imageView.translatesAutoresizingMaskIntoConstraints = false
+
+      return imageView
+    }
+
+    self.iconViews.forEach(self.addSubview)
+
+    self.setNeedsLayout()
+    self.animateIconViewsIfNecessary()
+  }
+
+  private func layoutIconViews() {
+    let bounds = self.bounds
+    let iconsPerLine = Int(floor((bounds.width + self.iconSpacing) / (self.iconSize + self.iconSpacing)))
+    let lineLayout = self.dynamicType.lineLayout(forWidth: bounds.width, iconSize: self.iconSize, iconsPerLine: iconsPerLine, contentsScale: self.window?.screen.scale ?? 1.0)
+
+    for (index, iconView) in self.iconViews.enumerate() {
+      let columnRect = lineLayout[index % iconsPerLine]
+      let lineOffset = CGFloat(index / iconsPerLine) * (self.iconSize + self.iconSpacing)
+      iconView.frame = columnRect.offsetBy(dx: 0.0, dy: lineOffset)
     }
   }
 
-  private func startAnimatingVisibleCells() {
-    for case let cell as IconConstellationViewCell in self.iconGrid.visibleCells() {
-      cell.startAnimatingWithRandomParameters()
+  private static func lineLayout(forWidth width: CGFloat, iconSize: CGFloat, iconsPerLine: Int, contentsScale: CGFloat) -> [CGRect] {
+    var rects = [CGRect]()
+    var remainingLineSpacing = width - iconSize * CGFloat(iconsPerLine)
+    var currentPosition = 0.0 as CGFloat
+    for remainingSpaces in (0..<iconsPerLine).reverse() {
+      rects.append(CGRect(x: currentPosition, y: 0.0, width: iconSize, height: iconSize))
+      currentPosition += iconSize
+
+      if remainingSpaces > 0 {
+        let spacing = floor((remainingLineSpacing / CGFloat(remainingSpaces)) * contentsScale) / contentsScale
+        currentPosition += spacing
+        remainingLineSpacing -= spacing
+      }
     }
-  }
 
-  private func stopAnimatingVisibleCells() {
-    for case let cell as IconConstellationViewCell in self.iconGrid.visibleCells() {
-      cell.stopAnimating()
-    }
-  }
-
-  // MARK: UICollectionViewDataSource
-
-  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return self.animatedIcons.count
-  }
-
-  func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Constants.cellReuseIdentifier, forIndexPath: indexPath) as! IconConstellationViewCell
-    cell.icon = self.animatedIcons[indexPath.row]
-
-    return cell
-  }
-
-  // MARK: UICollectionViewDelegate
-
-  func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-    if self.animating {
-      (cell as? IconConstellationViewCell)?.startAnimatingWithRandomParameters()
-    }
-  }
-
-  func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-    (cell as? IconConstellationViewCell)?.stopAnimating()
-  }
-
-  // MARK: Constants
-
-  private struct Constants {
-    static let cellReuseIdentifier = String(IconConstellationViewCell.self)
-  }
-
-}
-
-// MARK: - Cell class
-
-private class IconConstellationViewCell: UICollectionViewCell {
-
-  var icon: UIImage? {
-    get {
-      return self.iconView.image
-    }
-    set {
-      self.iconView.image = newValue
-    }
-  }
-
-  private var iconView: UIImageView!
-
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    self.commonInit()
-  }
-
-  required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    self.commonInit()
-  }
-
-  private func commonInit() {
-    let iconView = UIImageView(frame: self.bounds)
-    iconView.contentMode = .Center
-    iconView.translatesAutoresizingMaskIntoConstraints = false
-    self.addSubview(iconView)
-
-    NSLayoutConstraint.activateConstraints([
-      self.topAnchor.constraintEqualToAnchor(iconView.topAnchor),
-      self.bottomAnchor.constraintEqualToAnchor(iconView.bottomAnchor),
-      self.leadingAnchor.constraintEqualToAnchor(iconView.leadingAnchor),
-      self.trailingAnchor.constraintEqualToAnchor(iconView.trailingAnchor)
-    ])
-
-    self.iconView = iconView
-  }
-
-  private override func prepareForReuse() {
-    super.prepareForReuse()
-
-    self.stopAnimating()
-  }
-
-  /// This is a workaround for a performance issue in UICollectionView with non-dynamic item sizes
-  /// See http://www.openradar.appspot.com/26887172
-  override func preferredLayoutAttributesFittingAttributes(layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-    return layoutAttributes
+    return rects
   }
 
   // MARK: Animation
 
-  func startAnimating(withDuration duration: NSTimeInterval, initialPhase: Double) {
+  private func animateIconViewsIfNecessary() {
+    if self.animating && self.window != nil {
+      self.animateIconViews()
+    }
+  }
+
+  private func animateIconViews() {
+    self.iconViews.forEach { $0.animateTwinkleWithRandomParameters() }
+  }
+
+  private func stopAnimatingIconViews() {
+    self.iconViews.forEach { $0.stopTwinkleAnimation() }
+  }
+
+}
+
+// MARK: - Animation extension
+
+private extension UIView {
+
+  private struct Constants {
+    static let animationKey = "twinkle"
+  }
+
+  func animateTwinkle(withDuration duration: NSTimeInterval, initialPhase: Double) {
     let animation = CABasicAnimation(keyPath: "opacity")
     animation.duration = duration
     animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -199,22 +137,16 @@ private class IconConstellationViewCell: UICollectionViewCell {
     animation.repeatCount = FLT_MAX
     animation.timeOffset = duration * initialPhase * 2.0
 
-    self.iconView.layer.addAnimation(animation, forKey: Constants.animationKey)
+    self.layer.addAnimation(animation, forKey: Constants.animationKey)
   }
 
-  func startAnimatingWithRandomParameters() {
-    self.startAnimating(withDuration: Double.random(between: 1.0, and: 4.0),
+  func animateTwinkleWithRandomParameters() {
+    self.animateTwinkle(withDuration: Double.random(between: 1.0, and: 4.0),
                         initialPhase: Double.random(between: 0.0, and: 1.0))
   }
 
-  func stopAnimating() {
-    self.iconView.layer.removeAnimationForKey(Constants.animationKey)
-  }
-
-  // MARK: Constants
-
-  private struct Constants {
-    static let animationKey = "twinkle"
+  func stopTwinkleAnimation() {
+    self.layer.removeAnimationForKey(Constants.animationKey)
   }
 
 }
