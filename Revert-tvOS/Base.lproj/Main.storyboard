@@ -113,6 +113,10 @@
                                     <constraint firstAttribute="height" constant="600" id="oYg-vV-iT3"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIY-aY-HJa" customClass="IconConstellationView" customModule="Revert_tvOS" customModuleProvider="target">
+                                <rect key="frame" x="150" y="140" width="1620" height="460"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cro-LW-isO">
                                 <rect key="frame" x="0.0" y="700" width="1920" height="380"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="60" minimumInteritemSpacing="100" id="L04-pa-tnH">
@@ -162,17 +166,22 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="N2w-Ma-xKd" firstAttribute="top" secondItem="cro-LW-isO" secondAttribute="bottom" id="BAy-j2-ygS"/>
+                            <constraint firstAttribute="trailing" secondItem="CIY-aY-HJa" secondAttribute="trailing" constant="150" id="Ce7-fp-V9A"/>
                             <constraint firstAttribute="trailing" secondItem="cro-LW-isO" secondAttribute="trailing" id="LyH-XZ-ulq"/>
                             <constraint firstItem="qoL-Hj-9Hw" firstAttribute="leading" secondItem="h7e-bd-dHn" secondAttribute="leading" id="TcX-OB-1VV"/>
                             <constraint firstItem="cro-LW-isO" firstAttribute="leading" secondItem="h7e-bd-dHn" secondAttribute="leading" id="ZiJ-dF-kIq"/>
                             <constraint firstItem="cro-LW-isO" firstAttribute="top" secondItem="qoL-Hj-9Hw" secondAttribute="bottom" constant="100" id="gV9-aE-C1k"/>
+                            <constraint firstItem="CIY-aY-HJa" firstAttribute="top" secondItem="7KZ-vg-cnu" secondAttribute="bottom" constant="140" id="gv2-7j-fOe"/>
                             <constraint firstItem="qoL-Hj-9Hw" firstAttribute="top" secondItem="7KZ-vg-cnu" secondAttribute="bottom" id="hf1-tK-zRR"/>
+                            <constraint firstItem="CIY-aY-HJa" firstAttribute="leading" secondItem="h7e-bd-dHn" secondAttribute="leading" constant="150" id="iF2-wk-EPg"/>
                             <constraint firstAttribute="trailing" secondItem="qoL-Hj-9Hw" secondAttribute="trailing" id="izB-SJ-xQg"/>
+                            <constraint firstItem="CIY-aY-HJa" firstAttribute="bottom" secondItem="qoL-Hj-9Hw" secondAttribute="bottom" id="n43-A7-D5V"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="What's New" id="M4k-2j-oRx"/>
                     <connections>
                         <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
+                        <outlet property="constellationView" destination="CIY-aY-HJa" id="apj-xZ-XFK"/>
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>

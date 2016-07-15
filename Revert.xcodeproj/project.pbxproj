@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
+		7D3E6AB91D38E08D0071AE53 /* IconConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E6AB81D38E08D0071AE53 /* IconConstellationView.swift */; };
+		7D3E6ABB1D38E8BC0071AE53 /* Double+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E6ABA1D38E8BC0071AE53 /* Double+Random.swift */; };
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
@@ -149,6 +151,8 @@
 
 /* Begin PBXFileReference section */
 		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
+		7D3E6AB81D38E08D0071AE53 /* IconConstellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconConstellationView.swift; path = Sources/IconConstellationView.swift; sourceTree = "<group>"; };
+		7D3E6ABA1D38E8BC0071AE53 /* Double+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Random.swift"; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -564,6 +568,7 @@
 		BB3F8B501D338C5A0092E374 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7D3E6ABA1D38E8BC0071AE53 /* Double+Random.swift */,
 				BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */,
 			);
 			name = Extensions;
@@ -599,6 +604,7 @@
 		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7D3E6AB81D38E08D0071AE53 /* IconConstellationView.swift */,
 				BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */,
 			);
 			name = Views;
@@ -927,6 +933,7 @@
 				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
 				BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */,
 				BBE51CBC1CB73898006638B8 /* Country.swift in Sources */,
+				7D3E6ABB1D38E8BC0071AE53 /* Double+Random.swift in Sources */,
 				BBE51CA61CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */,
 				BBE51CE11CB73929006638B8 /* MapViewController.swift in Sources */,
 				BBE51CEB1CB73929006638B8 /* StackViewController.swift in Sources */,
@@ -940,6 +947,7 @@
 				BBE51CDD1CB73929006638B8 /* ControlsViewController.swift in Sources */,
 				BBE51D0A1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				BBE51CE51CB73929006638B8 /* RevertViewController.swift in Sources */,
+				7D3E6AB91D38E08D0071AE53 /* IconConstellationView.swift in Sources */,
 				BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */,
 				BBE51CD91CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
