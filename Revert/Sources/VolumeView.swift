@@ -10,7 +10,7 @@ final class VolumeView: MPVolumeView {
 
     // This removes the entrance animation of MPVolumeView on iOS8 whereby
     // the view animates from frame CGRectZero to final frame.
-    self.dynamicType.recursiveRemoveAnimationsOnView(self)
+    type(of: self).recursiveRemoveAnimationsOnView(self)
 
     if let superview = self.superview {
       self.center = CGPoint(x: superview.bounds.midX, y: self.center.y)
@@ -19,7 +19,7 @@ final class VolumeView: MPVolumeView {
 
   // MARK: Private
 
-  private static func recursiveRemoveAnimationsOnView(view: UIView) {
+  fileprivate static func recursiveRemoveAnimationsOnView(_ view: UIView) {
     view.layer.removeAllAnimations()
     view.subviews.forEach { self.recursiveRemoveAnimationsOnView($0) }
   }

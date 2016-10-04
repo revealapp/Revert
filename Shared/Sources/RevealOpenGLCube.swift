@@ -7,7 +7,7 @@ final class RevealOpenGLCube {
   let context: EAGLContext
 
   init() {
-    guard let context = EAGLContext(API: .OpenGLES2) else {
+    guard let context = EAGLContext(api: .openGLES2) else {
       fatalError("Failed to initialise context `.OpenGLES2`")
     }
 
@@ -32,7 +32,7 @@ final class RevealOpenGLCube {
     self.effect.prepareToDraw()
 
     glBindVertexArrayOES(self.vertexArray)
-    glDrawElements(GLenum(GL_TRIANGLES), GLsizei(sizeofValue(Indices) / sizeofValue(Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
+    glDrawElements(GLenum(GL_TRIANGLES), GLsizei(MemoryLayout.size(ofValue: Indices) / MemoryLayout.size(ofValue: Indices.0)), GLenum(GL_UNSIGNED_BYTE), nil)
   }
 
   func load() {
@@ -40,7 +40,7 @@ final class RevealOpenGLCube {
     self.loadGL()
   }
 
-  func updateWithAspectRatio(aspectRatio: Float, rotation: Float) {
+  func updateWithAspectRatio(_ aspectRatio: Float, rotation: Float) {
     self.effect.transform.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65), aspectRatio, 4, 10)
     self.rotation += rotation
     self.effect.transform.modelviewMatrix = self.computedModelViewMatrix
@@ -48,12 +48,12 @@ final class RevealOpenGLCube {
 
   // MARK: Private
 
-  private var vertexBuffer: GLuint = 0
-  private var indexBuffer: GLuint = 0
-  private var vertexArray: GLuint = 0
-  private let effect = GLKBaseEffect()
-  private var rotation: Float = 0
-  private var computedModelViewMatrix: GLKMatrix4 {
+  fileprivate var vertexBuffer: GLuint = 0
+  fileprivate var indexBuffer: GLuint = 0
+  fileprivate var vertexArray: GLuint = 0
+  fileprivate let effect = GLKBaseEffect()
+  fileprivate var rotation: Float = 0
+  fileprivate var computedModelViewMatrix: GLKMatrix4 {
     var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
     matrix = GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(25), 1, 0, 0)
     return GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(self.rotation), 0, 1, 0)
@@ -62,7 +62,7 @@ final class RevealOpenGLCube {
 
 private extension RevealOpenGLCube {
   func setCurrentContext() {
-    let isContextSet = EAGLContext.setCurrentContext(self.context)
+    let isContextSet = EAGLContext.setCurrent(self.context)
     assert(isContextSet, "Failed to set current context")
   }
 
@@ -73,7 +73,7 @@ private extension RevealOpenGLCube {
   }
 
   func unloadGL() {
-    let previousContext = EAGLContext.currentContext()
+    let previousContext = EAGLContext.current()
 
     self.setCurrentContext()
 
@@ -81,7 +81,7 @@ private extension RevealOpenGLCube {
     glDeleteBuffers(1, &self.indexBuffer)
     glDeleteVertexArraysOES(1, &self.vertexArray)
 
-    EAGLContext.setCurrentContext(previousContext != self.context ? previousContext : nil)
+    EAGLContext.setCurrent(previousContext != self.context ? previousContext : nil)
   }
 
   func generateBindVertex() {
@@ -93,22 +93,22 @@ private extension RevealOpenGLCube {
     // Generate and bind vertex buffer
     glGenBuffers(1, &self.vertexBuffer)
     glBindBuffer(GLenum(GL_ARRAY_BUFFER), self.vertexBuffer)
-    glBufferData(GLenum(GL_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Vertices)), &Vertices, GLenum(GL_STATIC_DRAW))
+    glBufferData(GLenum(GL_ARRAY_BUFFER), GLsizeiptr(MemoryLayout.size(ofValue: Vertices)), &Vertices, GLenum(GL_STATIC_DRAW))
 
     // Generate and bind index buffer
     glGenBuffers(1, &self.indexBuffer)
     glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), self.indexBuffer)
-    glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(sizeofValue(Indices)), &Indices, GLenum(GL_STATIC_DRAW))
+    glBufferData(GLenum(GL_ELEMENT_ARRAY_BUFFER), GLsizeiptr(MemoryLayout.size(ofValue: Indices)), &Indices, GLenum(GL_STATIC_DRAW))
   }
 
   func loadCube() {
-    let positionUnsafePointer = UnsafePointer<Void>(bitPattern: 0)
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))
-    glVertexAttribPointer(GLuint(GLKVertexAttrib.Position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), positionUnsafePointer)
+    let positionUnsafePointer = UnsafeRawPointer(bitPattern: 0)
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue))
+    glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<Vertex>.size), positionUnsafePointer)
 
-    let coordUnsafePointer = UnsafePointer<Void>(bitPattern: 3 * sizeof(Float))
-    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.TexCoord0.rawValue))
-    glVertexAttribPointer(GLuint(GLKVertexAttrib.TexCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(sizeof(Vertex)), coordUnsafePointer)
+    let coordUnsafePointer = UnsafeRawPointer(bitPattern: 3 * MemoryLayout<Float>.size)
+    glEnableVertexAttribArray(GLuint(GLKVertexAttrib.texCoord0.rawValue))
+    glVertexAttribPointer(GLuint(GLKVertexAttrib.texCoord0.rawValue), 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<Vertex>.size), coordUnsafePointer)
 
     glBindVertexArrayOES(0)
   }
@@ -122,7 +122,7 @@ private extension RevealOpenGLCube {
 
     let textureInfo: GLKTextureInfo
     do {
-      textureInfo = try GLKTextureLoader.textureWithCGImage(image.CGImage!, options: options)
+      textureInfo = try GLKTextureLoader.texture(with: image.cgImage!, options: options)
     } catch let error {
       fatalError("Unable to load texture \(error)")
     }

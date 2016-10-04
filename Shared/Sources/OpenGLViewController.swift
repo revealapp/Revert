@@ -23,19 +23,19 @@ final class OpenGLViewController: RevertGLKViewController {
     }
 
     #if os(tvOS)
-      self.view.layer.opaque = false
+      self.view.layer.isOpaque = false
     #endif
 
     super.viewWillLayoutSubviews()
   }
 
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.toggleState()
 
-    super.touchesBegan(touches, withEvent: event)
+    super.touchesBegan(touches, with: event)
   }
 
-  override func glkView(view: GLKView, drawInRect rect: CGRect) {
+  override func glkView(_ view: GLKView, drawIn rect: CGRect) {
     self.cube.draw()
   }
 
@@ -47,24 +47,24 @@ final class OpenGLViewController: RevertGLKViewController {
 
   // MARK: Private
 
-  private let cube = RevealOpenGLCube()
-  private var glkView: GLKView {
+  fileprivate let cube = RevealOpenGLCube()
+  fileprivate var glkView: GLKView {
     return self.view as! GLKView
   }
 
-  private func toggleState() {
-    self.paused = self.paused == false
+  fileprivate func toggleState() {
+    self.isPaused = self.isPaused == false
   }
 }
 
-// MARK:- tvOS Only
+// MARK: - tvOS Only
 
 #if os(tvOS)
   extension OpenGLViewController {
-    override func pressesBegan(presses: Set<UIPress>, withEvent event: UIPressesEvent?) {
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
       self.toggleState()
 
-      super.pressesBegan(presses, withEvent:event)
+      super.pressesBegan(presses, with:event)
     }
   }
 #endif

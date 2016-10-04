@@ -4,10 +4,10 @@
 import UIKit
 
 final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
-  typealias CellConfigurator = (Cell, object: Object) -> Void
+  typealias CellConfigurator = (Cell, _ object: Object) -> Void
   typealias FooterTitleRetriever = ((CollectableGroup<Object>) -> String?)?
 
-  required init(collection: CollectableCollection<Object>, configureCell: CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
+  required init(collection: CollectableCollection<Object>, configureCell: @escaping CellConfigurator, cellIdentifier: String, titleForFooter: FooterTitleRetriever = nil) {
     self.unfilteredCollection = collection
     self.collection = collection
     self.configureCell = configureCell
@@ -19,40 +19,42 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
 
   // MARK: UITableViewDataSource
 
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  func numberOfSections(in tableView: UITableView) -> Int {
     return self.collection.countOfItems
   }
 
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.collection[section].countOfItems
   }
 
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as? Cell else {
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier) as? Cell else {
       fatalError("Expecting to dequeue a `\(Cell.self)` from the tableView")
     }
 
-    self.configureCell(cell, object: self.collection[indexPath])
+    self.configureCell(cell, self.collection[indexPath])
     return cell
   }
 
-  func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return self.collection[section].title
   }
 
-  func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+  func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
     return self.titleForFooter?(self.collection[section])
   }
 
-  func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+#if os(iOS)
+  func sectionIndexTitles(for tableView: UITableView) -> [String]? {
     let items = self.collection.items
       .map { $0.title }
       .flatMap { $0 }
 
     return items.count > 0 ? items : nil
   }
+#endif
 
-  subscript(indexPath: NSIndexPath) -> Object {
+  subscript(indexPath: IndexPath) -> Object {
     return self.collection[indexPath]
   }
 
@@ -60,15 +62,15 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
     self.collection = self.unfilteredCollection
   }
 
-  func filter(filterClosure: ((Object) -> Bool)) {
+  func filter(_ filterClosure: ((Object) -> Bool)) {
     self.collection = self.unfilteredCollection.filteredCollectableCollection(filterClosure)
   }
 
   // MARK: Private
 
-  private let unfilteredCollection: CollectableCollection<Object>
-  private var collection: CollectableCollection<Object>
-  private let configureCell: CellConfigurator
-  private let cellIdentifier: String
-  private let titleForFooter: FooterTitleRetriever
+  fileprivate let unfilteredCollection: CollectableCollection<Object>
+  fileprivate var collection: CollectableCollection<Object>
+  fileprivate let configureCell: CellConfigurator
+  fileprivate let cellIdentifier: String
+  fileprivate let titleForFooter: FooterTitleRetriever
 }

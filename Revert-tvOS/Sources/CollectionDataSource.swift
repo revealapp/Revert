@@ -4,11 +4,11 @@
 import UIKit
 
 final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
-  typealias CellConfigurator = (HomeCollectionCell, item: HomeItem) -> Void
+  typealias CellConfigurator = (HomeCollectionCell, _ item: HomeItem) -> Void
   typealias ItemFilterClosure = (HomeItem) -> Bool
   typealias GroupFilterClosure = (CollectableGroup<HomeItem>) -> Bool
 
-  required init(collection: CollectableCollection<HomeItem>, configureCell: CellConfigurator, cellIdentifier: String) {
+  required init(collection: CollectableCollection<HomeItem>, configureCell: @escaping CellConfigurator, cellIdentifier: String) {
     self.unfilteredCollection = collection
     self.collection = collection
     self.configureCell = configureCell
@@ -17,25 +17,25 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
     super.init()
   }
 
-  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
     return self.collection.countOfItems
   }
 
-  func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return self.collection[section].countOfItems
   }
 
-  func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.cellIdentifier, forIndexPath: indexPath) as? HomeCollectionCell else {
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as? HomeCollectionCell else {
       fatalError("Expecting to dequeue a `CollectionViewCell` from the collectionView")
     }
 
     let item = self.collection[indexPath]
-    self.configureCell(cell, item: item)
+    self.configureCell(cell, item)
     return cell
   }
 
-  subscript(indexPath: NSIndexPath) -> HomeItem {
+  subscript(indexPath: IndexPath) -> HomeItem {
     return self.collection[indexPath]
   }
 
@@ -43,17 +43,17 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
     self.collection = self.unfilteredCollection
   }
 
-  func filter(filterClosure: ItemFilterClosure) {
+  func filter(_ filterClosure: ItemFilterClosure) {
     self.collection = self.unfilteredCollection.filteredCollectableCollection(filterClosure)
   }
 
-  func filterGroups(filterClosure: GroupFilterClosure) {
+  func filterGroups(_ filterClosure: GroupFilterClosure) {
     self.collection = self.unfilteredCollection.groupFilteredCollectableCollection(filterClosure)
   }
 
   // MARK: Private
-  private let unfilteredCollection: CollectableCollection<HomeItem>
-  private var collection: CollectableCollection<HomeItem>
-  private let configureCell: CellConfigurator
-  private let cellIdentifier: String
+  fileprivate let unfilteredCollection: CollectableCollection<HomeItem>
+  fileprivate var collection: CollectableCollection<HomeItem>
+  fileprivate let configureCell: CellConfigurator
+  fileprivate let cellIdentifier: String
 }

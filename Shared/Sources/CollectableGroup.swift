@@ -15,7 +15,7 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
   let items: [CollectableGroupObject]
   let title: String?
 
-  static func rowDataForDictionary(dictionary: [String: AnyObject]) -> [[String: AnyObject]] {
+  static func rowDataForDictionary(_ dictionary: [String: AnyObject]) -> [[String: AnyObject]] {
     guard let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] else {
       fatalError("Unable to deserialize `CollectableGroup` rows")
     }
@@ -24,7 +24,7 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
 
   init(dictionary: [String: AnyObject], sortClosure: SortClosure? = nil) {
     let title = dictionary[Attributes.Title.rawValue] as? String
-    let items = self.dynamicType.rowDataForDictionary(dictionary)
+    let items = type(of: self).rowDataForDictionary(dictionary)
       .map(CollectableGroupObject.init)
       .filter { item -> Bool in
         if let requirementItem = item as? Requirement {
@@ -40,9 +40,16 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
     self.title = title
 
     if let sorter = sortClosure {
-      self.items = items.sort(sorter)
+      self.items = items.sorted(by: sorter)
     } else {
       self.items = items
     }
   }
+
+  // MARK: IndexableBase
+
+  func index(after i: Int) -> Int {
+    return items.index(after: i)
+  }
+
 }

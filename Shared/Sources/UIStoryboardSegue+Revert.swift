@@ -5,10 +5,10 @@ import UIKit
 
 extension UIStoryboardSegue {
   var destinationTopViewController: UIViewController {
-    if let topViewController = (self.destinationViewController as? UINavigationController)?.topViewController {
+    if let topViewController = (self.destination as? UINavigationController)?.topViewController {
       return topViewController
     } else {
-      return self.destinationViewController
+      return self.destination
     }
   }
 }

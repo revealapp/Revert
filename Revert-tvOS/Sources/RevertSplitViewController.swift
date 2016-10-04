@@ -4,7 +4,7 @@
 import UIKit
 
 final class RevertSplitViewController: UISplitViewController {
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.setNeedsFocusUpdate()
@@ -30,6 +30,6 @@ final class RevertSplitViewController: UISplitViewController {
     return preferredView
   }
 
-  // MARK:- Private
-  private var preferDetailViewFocus = false
+  // MARK: - Private
+  fileprivate var preferDetailViewFocus = false
 }

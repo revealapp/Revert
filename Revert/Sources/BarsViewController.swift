@@ -18,13 +18,13 @@ final class BarsViewController: RevertViewController {
     self.tabBar.selectedItem = firstTabBarItem
   }
 
-  func viewTapped(gestureRecogniser: UITapGestureRecognizer) {
+  func viewTapped(_ gestureRecogniser: UITapGestureRecognizer) {
     self.searchBar.resignFirstResponder()
   }
 
   // MARK: Private
 
-  @IBOutlet private weak var searchBar: UISearchBar!
-  @IBOutlet private weak var dismissContainerView: UIView!
-  @IBOutlet private weak var tabBar: UITabBar!
+  @IBOutlet fileprivate weak var searchBar: UISearchBar!
+  @IBOutlet fileprivate weak var dismissContainerView: UIView!
+  @IBOutlet fileprivate weak var tabBar: UITabBar!
 }

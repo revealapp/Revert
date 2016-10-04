@@ -1,6 +1,9 @@
 //
 // Project-Shared.xcconfig
 
+// Use the latest Swift version
+
+SWIFT_VERSION = 3.0
 
 // Always Search User Paths
 // 
@@ -61,6 +64,9 @@ CLANG_WARN_UNREACHABLE_CODE = YES
 
 CODE_SIGN_IDENTITY = iPhone Developer
 
+PROVISIONING_PROFILE_SPECIFIER =
+
+DEVELOPMENT_TEAM = ""
 
 // Strip Debug Symbols During Copy
 // 

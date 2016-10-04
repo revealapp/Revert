@@ -7,7 +7,7 @@ final class SearchViewController: UICollectionViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .Home, flatten: true, sortClosure: {$0.title < $1.title}),
-      configureCell: self.dynamicType.configureCell,
+      configureCell: type(of: self).configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
 
@@ -21,11 +21,11 @@ final class SearchViewController: UICollectionViewController {
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
     if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
-      guard let indexPath = sender as? NSIndexPath else {
+      guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
@@ -35,18 +35,18 @@ final class SearchViewController: UICollectionViewController {
 
   // MARK: Private
 
-  private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 
-  private var searchText: String? {
+  fileprivate var searchText: String? {
     didSet {
       guard searchText != oldValue else {
         // We don't want to keep reloading content if the search text has not changed.
         return
       }
 
-      if let string = searchText where string.isEmpty == false {
+      if let string = searchText, string.isEmpty == false {
         self.dataSource.filter({
-          $0.title.localizedStandardContainsString(string)
+          $0.title.localizedStandardContains(string)
         })
       } else {
         self.dataSource.clearFilter()
@@ -58,7 +58,7 @@ final class SearchViewController: UICollectionViewController {
 }
 
 private extension SearchViewController {
-  static func configureCell(cell: HomeCollectionCell, withItem item: HomeItem) {
+  static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
   }
@@ -67,15 +67,15 @@ private extension SearchViewController {
 // MARK: UICollectionViewDelegate
 
 extension SearchViewController {
-  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 
-    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+    self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 }
 
 extension SearchViewController: UISearchResultsUpdating {
-  func updateSearchResultsForSearchController(searchController: UISearchController) {
+  func updateSearchResults(for searchController: UISearchController) {
     self.searchText = searchController.searchBar.text
   }
 }
