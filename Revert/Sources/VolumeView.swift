@@ -5,6 +5,7 @@ import UIKit
 import MediaPlayer
 
 final class VolumeView: MPVolumeView {
+
   override func layoutSubviews() {
     super.layoutSubviews()
 

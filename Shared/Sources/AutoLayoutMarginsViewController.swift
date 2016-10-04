@@ -4,6 +4,7 @@
 import UIKit
 
 final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingViewDelegate {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -45,6 +46,7 @@ final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjust
 }
 
 #if os(tvOS)
+
   extension AutoLayoutMarginsViewController {
     override var preferredFocusedView: UIView? {
       return self.marginsAdjustingView

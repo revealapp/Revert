@@ -5,6 +5,7 @@ import UIKit
 import GLKit
 
 final class TransformLayersViewController: RevertViewController {
+
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -51,6 +52,6 @@ final class TransformLayersViewController: RevertViewController {
       self.yRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 0, 1, 0)
       self.zRotateView.layer.transform = CATransform3DMakeRotation(tenDegreesInRadian, 0, 0, 1)
       self.xyRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 0.6, 0.4, 0)
-      }, completion: nil)
+    }, completion: nil)
   }
 }

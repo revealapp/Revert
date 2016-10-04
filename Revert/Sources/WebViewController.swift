@@ -5,6 +5,7 @@ import UIKit
 import WebKit
 
 final class WebViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -93,6 +94,7 @@ final class WebViewController: RevertViewController {
 
 // MARK: - UIWebViewDelegate
 extension WebViewController: UIWebViewDelegate {
+
   func webViewDidStartLoad(_ webView: UIWebView) {
     UIApplication.shared.isNetworkActivityIndicatorVisible = true
   }
@@ -104,6 +106,7 @@ extension WebViewController: UIWebViewDelegate {
 
 // MARK: - WKNavigationDelegate
 extension WebViewController: WKNavigationDelegate {
+
   func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
     UIApplication.shared.isNetworkActivityIndicatorVisible = true
   }

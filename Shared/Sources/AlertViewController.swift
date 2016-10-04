@@ -4,6 +4,7 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -26,6 +27,7 @@ final class AlertViewController: RevertTableViewController {
 
 // MARK: - UIAlertController Presenter
 extension AlertViewController {
+
   fileprivate func displayAlertControllerForWithStyle(_ style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
@@ -38,13 +40,15 @@ private enum Identifier: String {
   case ActionController = "actioncontroller"
 
   #if os(iOS)
-  case AlertView = "alertview"
-  case ActionSheet = "actionsheet"
+    case AlertView = "alertview"
+    case ActionSheet = "actionsheet"
   #endif
 }
 
 #if os(iOS)
+
   extension AlertViewController {
+
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       switch identifier {
       case .AlertView:
@@ -60,7 +64,9 @@ private enum Identifier: String {
 #endif
 
 #if os(tvOS)
+
   extension AlertViewController {
+
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .alert : .actionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
@@ -70,6 +76,7 @@ private enum Identifier: String {
 
 // MARK: - UITableViewDelegate
 extension AlertViewController {
+
   @available(iOS 9.0, *)
   override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
@@ -80,9 +87,11 @@ extension AlertViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let item = self.collection[indexPath]
 
-    guard let cell = tableView.cellForRow(at: indexPath),
-      let identifier = Identifier(rawValue: item.cellIdentifier) else {
-        fatalError("Unknown cellIdentifier or cell")
+    guard
+      let cell = tableView.cellForRow(at: indexPath),
+      let identifier = Identifier(rawValue: item.cellIdentifier)
+    else {
+      fatalError("Unknown cellIdentifier or cell")
     }
 
     self.displayCorrespondingAlertForIdentifier(identifier, fromView: cell)
@@ -91,6 +100,7 @@ extension AlertViewController {
 }
 
 extension AlertViewController {
+
   static func configureCell(_ cell: BasicCell, object: Item) {
     cell.titleLabel.text = object.title
   }

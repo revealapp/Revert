@@ -4,6 +4,7 @@
 import UIKit
 
 final class TransformViewsViewController: RevertViewController {
+
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -43,7 +44,6 @@ final class TransformViewsViewController: RevertViewController {
       self.translateView.transform = CGAffineTransform(translationX: -20, y: 20)
       self.rotateView.transform = CGAffineTransform(rotationAngle: CGFloat(15 * M_PI / 180))
       self.scaleView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-      }, completion: nil)
+    }, completion: nil)
   }
-
 }

@@ -44,15 +44,16 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
     return self.titleForFooter?(self.collection[section])
   }
 
-#if os(iOS)
-  func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-    let items = self.collection.items
-      .map { $0.title }
-      .flatMap { $0 }
+  #if os(iOS)
 
-    return items.count > 0 ? items : nil
-  }
-#endif
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+      let items = self.collection.items
+        .map { $0.title }
+        .flatMap { $0 }
+
+      return items.count > 0 ? items : nil
+    }
+  #endif
 
   subscript(indexPath: IndexPath) -> Object {
     return self.collection[indexPath]

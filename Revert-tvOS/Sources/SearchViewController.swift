@@ -4,9 +4,10 @@
 import UIKit
 
 final class SearchViewController: UICollectionViewController {
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true, sortClosure: {$0.title < $1.title}),
+      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true, sortClosure: { $0.title < $1.title }),
       configureCell: type(of: self).configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
@@ -58,6 +59,7 @@ final class SearchViewController: UICollectionViewController {
 }
 
 private extension SearchViewController {
+
   static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
@@ -67,6 +69,7 @@ private extension SearchViewController {
 // MARK: UICollectionViewDelegate
 
 extension SearchViewController {
+
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 
@@ -75,6 +78,7 @@ extension SearchViewController {
 }
 
 extension SearchViewController: UISearchResultsUpdating {
+
   func updateSearchResults(for searchController: UISearchController) {
     self.searchText = searchController.searchBar.text
   }

@@ -42,6 +42,7 @@ final class CountriesViewController: RevertTableViewController {
 
 // MARK: - UITableViewDelegate
 extension CountriesViewController {
+
   @available(iOS 9.0, *)
   override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
@@ -67,6 +68,7 @@ extension CountriesViewController {
 }
 
 private extension CountriesViewController {
+
   static func configureCell(_ cell: BasicCell, object: Country) {
     cell.accessoryType = .none
 
@@ -81,7 +83,9 @@ private extension CountriesViewController {
 }
 
 #if os(iOS)
+
   extension CountriesViewController {
+
     fileprivate func setupRefreshControl() {
       self.refreshControl = UIRefreshControl()
       self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), for: .valueChanged)

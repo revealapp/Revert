@@ -28,14 +28,16 @@ final class KeyboardHandler: NSObject {
   }
 
   func keyboardWillShowHideNotification(_ notification: Notification) {
-    guard let scrollView = self.scrollView,
+    guard
+      let scrollView = self.scrollView,
       let scrollViewSuperview = scrollView.superview,
       let viewController = self.viewController,
       let animationDuration = (notification as NSNotification).userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval,
       let animationCurveInt = (notification as NSNotification).userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? Int,
       let animationCurve = UIViewAnimationCurve(rawValue: animationCurveInt),
-      let keyboardFrameValue = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue else {
-        return
+      let keyboardFrameValue = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue
+    else {
+      return
     }
 
     let keyboardFrame = keyboardFrameValue.cgRectValue
@@ -52,6 +54,6 @@ final class KeyboardHandler: NSObject {
     UIView.animate(withDuration: animationDuration, delay: 0, options: animationOptions, animations: {
       scrollView.contentInset = contentInsets
       scrollView.scrollIndicatorInsets = scrollIndicatorInsets
-      }, completion: nil)
+    }, completion: nil)
   }
 }

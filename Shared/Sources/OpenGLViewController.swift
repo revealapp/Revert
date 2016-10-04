@@ -5,6 +5,7 @@ import UIKit
 import GLKit
 
 final class OpenGLViewController: RevertGLKViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -60,11 +61,13 @@ final class OpenGLViewController: RevertGLKViewController {
 // MARK: - tvOS Only
 
 #if os(tvOS)
+
   extension OpenGLViewController {
+
     override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
       self.toggleState()
 
-      super.pressesBegan(presses, with:event)
+      super.pressesBegan(presses, with: event)
     }
   }
 #endif

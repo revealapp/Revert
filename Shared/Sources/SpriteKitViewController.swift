@@ -4,8 +4,9 @@
 import UIKit
 import SpriteKit
 
-final private class IBAScene: SKScene {
-  override required init(size: CGSize) {
+private final class IBAScene: SKScene {
+
+  required override init(size: CGSize) {
     super.init(size: size)
 
     self.addChild(self.helloWorldLabel)
@@ -76,6 +77,7 @@ final private class IBAScene: SKScene {
 }
 
 final class SpriteKitViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 

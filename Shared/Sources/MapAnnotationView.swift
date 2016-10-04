@@ -17,11 +17,13 @@ final class MapAnnotation: NSObject, MKAnnotation {
   }
 
   init(dictionary: [String: AnyObject]) {
-    guard let latitude = dictionary[Attributes.Latitude.rawValue] as? Double,
+    guard
+      let latitude = dictionary[Attributes.Latitude.rawValue] as? Double,
       let longitude = dictionary[Attributes.Longitude.rawValue] as? Double,
       let title = dictionary[Attributes.Title.rawValue] as? String,
-      let subtitle = dictionary[Attributes.Subtitle.rawValue] as? String else {
-        fatalError("Invalid `MapAnnotation` attributes")
+      let subtitle = dictionary[Attributes.Subtitle.rawValue] as? String
+    else {
+      fatalError("Invalid `MapAnnotation` attributes")
     }
 
     self.title = title

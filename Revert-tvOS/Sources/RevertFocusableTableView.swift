@@ -4,6 +4,7 @@
 import UIKit
 
 final class RevertFocusableTableView: UITableView {
+
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 

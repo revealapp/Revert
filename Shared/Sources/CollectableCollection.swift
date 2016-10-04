@@ -52,5 +52,4 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
   func index(after i: Int) -> Int {
     return items.index(after: i)
   }
-
 }

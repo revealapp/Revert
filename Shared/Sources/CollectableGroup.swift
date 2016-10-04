@@ -31,7 +31,7 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
           return requirementItem.isAvailable
         }
         return true
-    }
+      }
 
     self.init(title: title, items: items, sortClosure: sortClosure)
   }
@@ -51,5 +51,4 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
   func index(after i: Int) -> Int {
     return self.items.index(after: i)
   }
-
 }
