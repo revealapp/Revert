@@ -9,7 +9,7 @@ final class AlertViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.Alert
+      cellIdentifier: StoryboardIdentifiers.Cell.alert
     )
 
     super.init(coder: aDecoder)
@@ -21,7 +21,7 @@ final class AlertViewController: RevertTableViewController {
     self.tableView.dataSource = self.dataSource
   }
 
-  fileprivate var collection = CollectableCollection<Item>(items: .Alert)
+  fileprivate var collection = CollectableCollection<Item>(items: .alert)
   fileprivate var dataSource: DataSource<Item, BasicCell>
 }
 
@@ -36,12 +36,12 @@ extension AlertViewController {
 }
 
 private enum Identifier: String {
-  case AlertController = "alertcontroller"
-  case ActionController = "actioncontroller"
+  case alertController = "alertcontroller"
+  case actionController = "actioncontroller"
 
   #if os(iOS)
-    case AlertView = "alertview"
-    case ActionSheet = "actionsheet"
+    case alertView = "alertview"
+    case actionSheet = "actionsheet"
   #endif
 }
 
@@ -51,12 +51,12 @@ private enum Identifier: String {
 
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       switch identifier {
-      case .AlertView:
+      case .alertView:
         AlertViewController.showExampleAlertView()
-      case .ActionSheet:
+      case .actionSheet:
         AlertViewController.showExampleActionsSheetInView(fromView)
       default:
-        let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .alert : .actionSheet
+        let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
         self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
       }
     }
@@ -68,7 +68,7 @@ private enum Identifier: String {
   extension AlertViewController {
 
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
-      let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .alert : .actionSheet
+      let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
     }
   }

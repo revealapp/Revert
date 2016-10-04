@@ -7,9 +7,9 @@ final class WhatsNewViewController: UIViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .WhatsNew),
+      collection: CollectableCollection<HomeItem>(items: .whatsNew),
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.HomeCollection
+      cellIdentifier: StoryboardIdentifiers.Cell.homeCollection
     )
 
     super.init(coder: aDecoder)

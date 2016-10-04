@@ -23,7 +23,7 @@ final class MapViewController: RevertViewController {
   @IBOutlet fileprivate weak var mapView: MKMapView!
 
   fileprivate func addAnnotations() {
-    let locations = RevertItems.MapLocations.data
+    let locations = RevertItems.mapLocations.data
     let annotations = locations.map(MapAnnotation.init)
     var coordinates = annotations.map { $0.coordinate }
 

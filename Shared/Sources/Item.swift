@@ -10,22 +10,22 @@ struct Item: Collectable, Requirement {
 
   init(dictionary: [String: AnyObject]) {
     guard
-      let title = dictionary[Attributes.Title.rawValue] as? String,
-      let cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String
+      let title = dictionary[Attributes.title.rawValue] as? String,
+      let cellIdentifier = dictionary[Attributes.cellIdentifier.rawValue] as? String
     else {
       fatalError("Invalid `Item` attributes")
     }
 
     self.title = title
     self.cellIdentifier = cellIdentifier
-    self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+    self.requiredClassName = dictionary[Attributes.requiredClassName.rawValue] as? String
   }
 
   // MARK: Private
 
   fileprivate enum Attributes: String {
-    case Title = "title"
-    case Cell = "cellIdentifier"
-    case RequiredClassName = "requiredClassName"
+    case title = "title"
+    case cellIdentifier = "cellIdentifier"
+    case requiredClassName = "requiredClassName"
   }
 }

@@ -18,10 +18,10 @@ final class MapAnnotation: NSObject, MKAnnotation {
 
   init(dictionary: [String: AnyObject]) {
     guard
-      let latitude = dictionary[Attributes.Latitude.rawValue] as? Double,
-      let longitude = dictionary[Attributes.Longitude.rawValue] as? Double,
-      let title = dictionary[Attributes.Title.rawValue] as? String,
-      let subtitle = dictionary[Attributes.Subtitle.rawValue] as? String
+      let latitude = dictionary[Attributes.latitude.rawValue] as? Double,
+      let longitude = dictionary[Attributes.longitude.rawValue] as? Double,
+      let title = dictionary[Attributes.title.rawValue] as? String,
+      let subtitle = dictionary[Attributes.subtitle.rawValue] as? String
     else {
       fatalError("Invalid `MapAnnotation` attributes")
     }
@@ -36,9 +36,9 @@ final class MapAnnotation: NSObject, MKAnnotation {
   // MARK: Private
 
   fileprivate enum Attributes: String {
-    case Title = "title"
-    case Subtitle = "subtitle"
-    case Latitude = "latitude"
-    case Longitude = "longitude"
+    case title = "title"
+    case subtitle = "subtitle"
+    case latitude = "latitude"
+    case longitude = "longitude"
   }
 }

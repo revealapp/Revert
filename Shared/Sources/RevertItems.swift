@@ -4,16 +4,16 @@
 import Foundation
 
 enum RevertItems: String {
-  case CountriesCapitals
-  case Alert = "AlertItems"
-  case Home = "HomeItems"
-  case HomeCollection = "HomeCollectionItems"
-  case Control = "ControlItems"
-  case MapLocations = "MapLocations"
-  case LayerProperties = "LayerPropertiesItems"
-  case Persons = "Persons"
-  case View = "ViewItems"
-  case WhatsNew = "NewItems"
+  case capitalCities
+  case alert = "AlertItems"
+  case home = "HomeItems"
+  case homeCollection = "HomeCollectionItems"
+  case control = "ControlItems"
+  case mapLocations = "MapLocations"
+  case layerProperties = "LayerPropertiesItems"
+  case persons = "Persons"
+  case view = "ViewItems"
+  case whatsNew = "NewItems"
 
   var data: [[String: AnyObject]] {
     guard let data = NSArray(contentsOf: self.URL) as? [[String: AnyObject]] else {

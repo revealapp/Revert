@@ -4,7 +4,7 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  fileprivate let collection = CollectableCollection<Country>(items: .CountriesCapitals)
+  fileprivate let collection = CollectableCollection<Country>(items: .capitalCities)
   fileprivate let dataSource: DataSource<Country, BasicCell>
   fileprivate var refreshTimer: Timer?
 
@@ -12,7 +12,7 @@ final class CountriesViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.TableViewController,
+      cellIdentifier: StoryboardIdentifiers.Cell.tableViewController,
       titleForFooter: type(of: self).titleForFooter
     )
 

@@ -1,24 +1,24 @@
 //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-struct Storyboards {
+struct StoryboardIdentifiers {
 
   struct Cell {
-    static let CollectionViewController = "CollectionViewControllerCell"
-    static let TableViewController = "TableViewControllerCell"
-    static let Home = "HomeCell"
-    static let HomeCollection = "HomeCollectionCell"
-    static let Stress = "StressCell"
-    static let Alert = "AlertCell"
+    static let collectionViewController = "CollectionViewControllerCell"
+    static let tableViewController = "TableViewControllerCell"
+    static let home = "HomeCell"
+    static let homeCollection = "HomeCollectionCell"
+    static let stress = "StressCell"
+    static let alert = "AlertCell"
   }
 
   struct Segue {
-    static let Info = "ShowInfoViewControllerSegue"
-    static let DetailsCollectionView = "ShowDetailsCollectionViewSegue"
+    static let info = "ShowInfoViewControllerSegue"
+    static let detailsCollectionView = "ShowDetailsCollectionViewSegue"
   }
 
   struct VC {
-    static let Help = "HelpViewController"
-    static let SearchController = "SearchViewController"
+    static let help = "HelpViewController"
+    static let searchController = "SearchViewController"
   }
 }

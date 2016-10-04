@@ -4,8 +4,8 @@
 import Foundation
 
 private enum Attributes: String {
-  case Title = "title"
-  case Rows = "rows"
+  case title = "title"
+  case rows = "rows"
 }
 
 struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
@@ -16,14 +16,14 @@ struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
   let title: String?
 
   static func rowDataForDictionary(_ dictionary: [String: AnyObject]) -> [[String: AnyObject]] {
-    guard let rowsData = dictionary[Attributes.Rows.rawValue] as? [[String: AnyObject]] else {
+    guard let rowsData = dictionary[Attributes.rows.rawValue] as? [[String: AnyObject]] else {
       fatalError("Unable to deserialize `CollectableGroup` rows")
     }
     return rowsData
   }
 
   init(dictionary: [String: AnyObject], sortClosure: SortClosure? = nil) {
-    let title = dictionary[Attributes.Title.rawValue] as? String
+    let title = dictionary[Attributes.title.rawValue] as? String
     let items = type(of: self).rowDataForDictionary(dictionary)
       .map(CollectableGroupObject.init)
       .filter { item -> Bool in

@@ -9,7 +9,7 @@ final class HomeViewController: UITableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.Home
+      cellIdentifier: StoryboardIdentifiers.Cell.home
     )
 
     super.init(coder: aDecoder)
@@ -23,7 +23,8 @@ final class HomeViewController: UITableViewController {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-    self.tableView.register(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
+    let homeNib = UINib(nibName: StoryboardIdentifiers.Cell.home, bundle: nil)
+    self.tableView.register(homeNib, forCellReuseIdentifier: StoryboardIdentifiers.Cell.home)
 
     NotificationCenter.default.addObserver(self, selector: #selector(self.showDetailTargetDidChange(_:)), name: NSNotification.Name.UIViewControllerShowDetailTargetDidChange, object: nil)
   }
@@ -57,7 +58,7 @@ final class HomeViewController: UITableViewController {
 
   // MARK: Private
 
-  fileprivate var collection = CollectableCollection<HomeItem>(items: .Home)
+  fileprivate var collection = CollectableCollection<HomeItem>(items: .home)
   fileprivate var dataSource: DataSource<HomeItem, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true

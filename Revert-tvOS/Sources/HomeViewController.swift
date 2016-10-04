@@ -9,7 +9,9 @@ final class HomeViewController: UITableViewController {
     super.viewDidLoad()
 
     self.tableView.dataSource = self
-    self.tableView.register(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
+
+    let cellNib = UINib(nibName: StoryboardIdentifiers.Cell.home, bundle: nil)
+    self.tableView.register(cellNib, forCellReuseIdentifier: StoryboardIdentifiers.Cell.home)
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,7 +32,7 @@ final class HomeViewController: UITableViewController {
 
   // MARK: - Private
 
-  fileprivate let collection = CollectableCollection<HomeItem>(items: .Home)
+  fileprivate let collection = CollectableCollection<HomeItem>(items: .home)
 }
 
 extension HomeViewController {
@@ -46,7 +48,7 @@ extension HomeViewController {
       return
     }
 
-    self.performSegue(withIdentifier: Storyboards.Segue.DetailsCollectionView, sender: nextFocusedIndexPath)
+    self.performSegue(withIdentifier: StoryboardIdentifiers.Segue.detailsCollectionView, sender: nextFocusedIndexPath)
 
     self.tableView.selectRow(at: nextFocusedIndexPath, animated: true, scrollPosition: .none)
   }
@@ -56,7 +58,7 @@ extension HomeViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: Storyboards.Cell.Home) as? HomeCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: StoryboardIdentifiers.Cell.home) as? HomeCell else {
       fatalError("Expecting to dequeue a `\(HomeCell.self)` from the tableView")
     }
 

@@ -7,9 +7,9 @@ final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home, flatten: true, sortClosure: { $0.title < $1.title }),
+      collection: CollectableCollection<HomeItem>(items: .home, flatten: true, sortClosure: { $0.title < $1.title }),
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.HomeCollection
+      cellIdentifier: StoryboardIdentifiers.Cell.homeCollection
     )
 
     super.init(coder: aDecoder)

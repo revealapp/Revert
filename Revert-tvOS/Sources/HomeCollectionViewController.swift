@@ -20,9 +20,9 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home, sortClosure: { $0.title < $1.title }),
+      collection: CollectableCollection<HomeItem>(items: .home, sortClosure: { $0.title < $1.title }),
       configureCell: type(of: self).configureCell,
-      cellIdentifier: Storyboards.Cell.HomeCollection
+      cellIdentifier: StoryboardIdentifiers.Cell.homeCollection
     )
 
     super.init(coder: aDecoder)
