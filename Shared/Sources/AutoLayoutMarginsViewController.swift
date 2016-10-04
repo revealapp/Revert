@@ -22,24 +22,24 @@ final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjust
   }
 
   // MARK: MarginsAdjustingViewDelegate
-  func didUpdateMargins(updatedLayoutMargins: UIEdgeInsets) {
+  func didUpdateMargins(_ updatedLayoutMargins: UIEdgeInsets) {
     self.centerView.layoutMargins = updatedLayoutMargins
   }
 
   // MARK: Private
-  private static let interSquareSpacing: CGFloat = 20
+  fileprivate static let interSquareSpacing: CGFloat = 20
 
-  private var lastUpdateSquaresWidthSize: CGSize?
+  fileprivate var lastUpdateSquaresWidthSize: CGSize?
 
-  @IBOutlet private var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet private var containerViewBottomConstraint: NSLayoutConstraint!
-  @IBOutlet private var marginsAdjustingView: MarginsAdjustingView!
-  @IBOutlet private var centerView: UIView!
-  @IBOutlet private var containerView: UIView!
+  @IBOutlet fileprivate var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet fileprivate var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet fileprivate var marginsAdjustingView: MarginsAdjustingView!
+  @IBOutlet fileprivate var centerView: UIView!
+  @IBOutlet fileprivate var containerView: UIView!
 
-  private func updateSquareWidths() {
+  fileprivate func updateSquareWidths() {
     let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
-    let centerWidth = (minDistance - (4 * self.dynamicType.interSquareSpacing)) / 3
+    let centerWidth = (minDistance - (4 * type(of: self).interSquareSpacing)) / 3
     self.centerViewWidthConstraint.constant = centerWidth
   }
 }

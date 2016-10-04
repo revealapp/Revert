@@ -5,30 +5,30 @@ import UIKit
 
 final class CollectionViewController: RevertCollectionViewController { }
 
-// MARK:- UICollectionViewDataSource
+// MARK: - UICollectionViewDataSource
 extension CollectionViewController {
-  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+  override func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
   }
 
-  override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return 100
   }
 
-  override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Storyboards.Cell.CollectionViewController, forIndexPath: indexPath)
-    cell.contentView.backgroundColor = cell.selected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
+  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboards.Cell.CollectionViewController, for: indexPath)
+    cell.contentView.backgroundColor = cell.isSelected ? UIColor.graySelectionColor() : UIColor.whitesmokeColor()
     return cell
   }
 }
 
-// MARK:- UICollectionViewDelegate
+// MARK: - UICollectionViewDelegate
 extension CollectionViewController {
-  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.graySelectionColor()
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = UIColor.graySelectionColor()
   }
 
-  override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-    collectionView.cellForItemAtIndexPath(indexPath)?.contentView.backgroundColor = UIColor.whitesmokeColor()
+  override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = UIColor.whitesmokeColor()
   }
 }

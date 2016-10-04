@@ -4,7 +4,7 @@
 import Foundation
 
 struct Country: Collectable {
-  private enum Attributes: String {
+  fileprivate enum Attributes: String {
     case Name = "name"
     case Capital = "capital"
   }

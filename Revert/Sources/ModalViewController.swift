@@ -4,7 +4,7 @@
 import UIKit
 
 final class ModalViewController: RevertViewController {
-  @IBAction private func dismiss(sender: UIBarButtonItem) {
-    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+  @IBAction fileprivate func dismiss(_ sender: UIBarButtonItem) {
+    self.presentingViewController?.dismiss(animated: true, completion: nil)
   }
 }

@@ -7,8 +7,8 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   var collectionGroup: String? {
     didSet {
       self.dataSource.filterGroups({
-        if let groupTitle = $0.title, collectionTitle = self.collectionGroup {
-          return groupTitle.localizedStandardContainsString(collectionTitle)
+        if let groupTitle = $0.title, let collectionTitle = self.collectionGroup {
+          return groupTitle.localizedStandardContains(collectionTitle)
         } else {
           return false
         }
@@ -21,7 +21,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .Home, sortClosure: {$0.title < $1.title}),
-      configureCell: self.dynamicType.configureCell,
+      configureCell: type(of: self).configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
 
@@ -35,11 +35,11 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
     if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
-      guard let indexPath = sender as? NSIndexPath else {
+      guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
@@ -48,22 +48,22 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   // MARK: - Private
-  private let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
 
 private extension HomeCollectionViewController {
-  static func configureCell(cell: HomeCollectionCell, withItem item: HomeItem) {
+  static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
   }
 }
 
-// MARK:- UICollectionViewDelegate
+// MARK: - UICollectionViewDelegate
 extension HomeCollectionViewController {
-  override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 
-    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+    self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 }
 

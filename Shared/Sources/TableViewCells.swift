@@ -5,7 +5,7 @@ import UIKit
 
 final class HomeCell: BasicCell {
 
-  func updateSelectedBackgroundColor(isBlue isBlue: Bool) {
+  func updateSelectedBackgroundColor(_ isBlue: Bool) {
     if isBlue {
       let selectedBackgroundView = UIView()
       selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
@@ -17,19 +17,19 @@ final class HomeCell: BasicCell {
 
   // MARK: Private
 
-  @IBOutlet private(set) weak var iconImageView: UIImageView!
+  @IBOutlet fileprivate(set) weak var iconImageView: UIImageView!
 }
 
 class BasicCell: UITableViewCell {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
-      UIContentSizeCategoryDidChangeNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
+      NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
   }
 
   override func awakeFromNib() {
@@ -38,13 +38,13 @@ class BasicCell: UITableViewCell {
     self.applyDynamicType()
   }
 
-  func applyDynamicType(notification: NSNotification? = nil) {
-    self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    self.subtitleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  func applyDynamicType(_ notification: Notification? = nil) {
+    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+    self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
   }
 
   // MARK: Private
 
-  @IBOutlet private(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subtitleLabel: UILabel!
+  @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
+  @IBOutlet fileprivate(set) weak var subtitleLabel: UILabel!
 }

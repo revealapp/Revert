@@ -17,27 +17,27 @@ final private class IBAScene: SKScene {
     self.addChild(self.helloWorldLabel)
   }
 
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let firstTouch = touches.first {
-      let location = firstTouch.locationInNode(self)
-      let spaceship = self.dynamicType.packagedSpaceship(location)
+      let location = firstTouch.location(in: self)
+      let spaceship = type(of: self).packagedSpaceship(location)
 
       self.spaceship = spaceship
       self.addChild(spaceship)
     }
   }
 
-  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let firstTouch = touches.first {
-      let location = firstTouch.locationInNode(self)
+      let location = firstTouch.location(in: self)
 
       self.spaceship?.position = location
     }
   }
 
-  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let spaceship = self.spaceship {
-      self.dynamicType.actionSpaceship(spaceship)
+      type(of: self).actionSpaceship(spaceship)
 
       self.spaceship = nil
     }
@@ -45,9 +45,9 @@ final private class IBAScene: SKScene {
 
   // MARK: Private
 
-  private var spaceship: SKSpriteNode?
+  fileprivate var spaceship: SKSpriteNode?
 
-  private lazy var helloWorldLabel: SKLabelNode = {
+  fileprivate lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
     label.text = NSLocalizedString("Tap to add sprite", comment: "SpriteKitViewController background label")
     label.fontSize = 28
@@ -55,23 +55,23 @@ final private class IBAScene: SKScene {
 
     #if os(tvOS)
       label.text = NSLocalizedString("Touch the trackpad to add sprite, drag and release to animate it", comment: "SpriteKitViewController background label")
-      label.fontColor = UIColor.darkGrayColor()
+      label.fontColor = UIColor.darkGray
       label.fontSize = 60
     #endif
 
     return label
   }()
 
-  private static func packagedSpaceship(startingPosition: CGPoint) -> SKSpriteNode {
+  fileprivate static func packagedSpaceship(_ startingPosition: CGPoint) -> SKSpriteNode {
     let spaceship = SKSpriteNode(imageNamed: "spritekit_reveal")
     spaceship.position = startingPosition
 
     return spaceship
   }
 
-  private static func actionSpaceship(spaceship: SKSpriteNode) {
-    let action = SKAction.rotateByAngle(CGFloat(M_PI), duration: 1)
-    spaceship.runAction(SKAction.repeatActionForever(action))
+  fileprivate static func actionSpaceship(_ spaceship: SKSpriteNode) {
+    let action = SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)
+    spaceship.run(SKAction.repeatForever(action))
   }
 }
 
@@ -85,11 +85,11 @@ final class SpriteKitViewController: RevertViewController {
 
     // Create and configure the scene
     let scene = IBAScene(size: self.skView.bounds.size)
-    scene.scaleMode = .AspectFill
+    scene.scaleMode = .aspectFill
 
     #if os(tvOS)
       self.skView.allowsTransparency = true
-      scene.backgroundColor = UIColor.clearColor()
+      scene.backgroundColor = UIColor.clear
     #endif
 
     self.skView.presentScene(scene)
@@ -97,7 +97,7 @@ final class SpriteKitViewController: RevertViewController {
 
   // MARK: Private
 
-  private var skView: SKView {
+  fileprivate var skView: SKView {
     return self.view as! SKView
   }
 }

@@ -10,7 +10,7 @@ struct Item: Collectable, Requirement {
 
   init(dictionary: [String : AnyObject]) {
     guard let title = dictionary[Attributes.Title.rawValue] as? String,
-      cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
+      let cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
         fatalError("Invalid `Item` attributes")
     }
 
@@ -21,7 +21,7 @@ struct Item: Collectable, Requirement {
 
   // MARK: Private
 
-  private enum Attributes: String {
+  fileprivate enum Attributes: String {
     case Title = "title"
     case Cell = "cellIdentifier"
     case RequiredClassName = "requiredClassName"

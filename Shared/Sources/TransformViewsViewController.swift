@@ -4,7 +4,7 @@
 import UIKit
 
 final class TransformViewsViewController: RevertViewController {
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.animateViewsIfNecessary()
@@ -15,23 +15,23 @@ final class TransformViewsViewController: RevertViewController {
 
     // Update the scrollview' subview's height to match the screen height with a minimum value
     let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length
-    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
+    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(type(of: self).numberOfItems))
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, type(of: self).minimumItemHeight)
   }
 
   // MARK: Private
 
-  private static let minimumItemHeight: CGFloat = 150
-  private static let numberOfItems = 3
+  fileprivate static let minimumItemHeight: CGFloat = 150
+  fileprivate static let numberOfItems = 3
 
-  private var wasAnimated = false
+  fileprivate var wasAnimated = false
 
-  @IBOutlet private weak var translateView: UIView!
-  @IBOutlet private weak var rotateView: UIView!
-  @IBOutlet private weak var scaleView: UIView!
-  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet fileprivate weak var translateView: UIView!
+  @IBOutlet fileprivate weak var rotateView: UIView!
+  @IBOutlet fileprivate weak var scaleView: UIView!
+  @IBOutlet fileprivate weak var scrollViewItemHeight: NSLayoutConstraint!
 
-  private func animateViewsIfNecessary() {
+  fileprivate func animateViewsIfNecessary() {
     // Only perform this action once
     if self.wasAnimated {
       return
@@ -39,10 +39,10 @@ final class TransformViewsViewController: RevertViewController {
 
     self.wasAnimated = true
 
-    UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
-      self.translateView.transform = CGAffineTransformMakeTranslation(-20, 20)
-      self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15 * M_PI / 180))
-      self.scaleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
+    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+      self.translateView.transform = CGAffineTransform(translationX: -20, y: 20)
+      self.rotateView.transform = CGAffineTransform(rotationAngle: CGFloat(15 * M_PI / 180))
+      self.scaleView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
       }, completion: nil)
   }
 

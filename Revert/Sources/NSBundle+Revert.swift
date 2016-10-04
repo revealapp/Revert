@@ -3,9 +3,9 @@
 
 import Foundation
 
-extension NSBundle {
-  var revealWebsiteURL: NSURL {
-    guard let URLString = infoDictionary?["revealWebsiteURL"] as? String, URL = NSURL(string: URLString) else {
+extension Bundle {
+  var revealWebsiteURL: URL {
+    guard let URLString = infoDictionary?["revealWebsiteURL"] as? String, let URL = URL(string: URLString) else {
       fatalError("Reveal website URL missing or invalid")
     }
     return URL

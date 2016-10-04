@@ -4,7 +4,7 @@
 import UIKit
 
 final class AlignmentInsetView: UIView {
-  override func alignmentRectInsets() -> UIEdgeInsets {
+  override var alignmentRectInsets: UIEdgeInsets {
     return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
   }
 }

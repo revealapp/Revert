@@ -38,9 +38,9 @@ extension UIColor {
 
   static func borderColor() -> UIColor {
     #if os(tvOS)
-      return UIColor.blackColor()
+      return UIColor.black
     #else
-      return UIColor.whiteColor()
+      return UIColor.white
     #endif
   }
 }

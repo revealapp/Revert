@@ -7,12 +7,12 @@ class CollectionViewCell: UICollectionViewCell {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
-      UIContentSizeCategoryDidChangeNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
+      NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
   }
 
   override func awakeFromNib() {
@@ -21,21 +21,21 @@ class CollectionViewCell: UICollectionViewCell {
     self.applyDynamicType()
   }
 
-  func applyDynamicType(notification: NSNotification? = nil) {
-    self.titleLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    self.subheadLabel?.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+  func applyDynamicType(_ notification: Notification? = nil) {
+    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+    self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
   }
 
   // MARK: Private
 
-  @IBOutlet private(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subheadLabel: UILabel!
+  @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
+  @IBOutlet fileprivate(set) weak var subheadLabel: UILabel!
 }
 
 class TextFieldControlCell: CollectionViewCell {
-  @IBOutlet private weak var textField: UITextField!
+  @IBOutlet fileprivate weak var textField: UITextField!
 
-  @IBAction private func textFieldDidEndOnExit(sender: UITextField) {
+  @IBAction fileprivate func textFieldDidEndOnExit(_ sender: UITextField) {
     sender.resignFirstResponder()
   }
 }
@@ -49,29 +49,29 @@ class TextFieldControlCell: CollectionViewCell {
       self.textField.inputAccessoryView = self.textFieldInputAccessoryView
     }
 
-    func doneButtonTapped(sender: UIBarButtonItem) {
+    func doneButtonTapped(_ sender: UIBarButtonItem) {
       self.textField.resignFirstResponder()
     }
 
-    func datePickerChanged(datePicker: UIDatePicker) {
-      self.textField.text = Static.Formatter.ddmmyy.stringFromDate(datePicker.date)
+    func datePickerChanged(_ datePicker: UIDatePicker) {
+      self.textField.text = Static.Formatter.ddmmyy.string(from: datePicker.date)
     }
 
     // MARK: Private
 
-    private var textFieldInputView: UIDatePicker {
+    fileprivate var textFieldInputView: UIDatePicker {
       let picker = UIDatePicker()
-      picker.datePickerMode = .Date
-      picker.addTarget(self, action: #selector(self.datePickerChanged(_:)), forControlEvents: .ValueChanged)
-      picker.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+      picker.datePickerMode = .date
+      picker.addTarget(self, action: #selector(self.datePickerChanged(_:)), for: .valueChanged)
+      picker.autoresizingMask = [.flexibleHeight, .flexibleWidth]
       return picker
     }
 
-    private var textFieldInputAccessoryView: UIView {
-      let size = CGSize(width: UIScreen.mainScreen().bounds.size.width, height: 44)
+    fileprivate var textFieldInputAccessoryView: UIView {
+      let size = CGSize(width: UIScreen.main.bounds.size.width, height: 44)
       let toolBar = UIToolbar(frame: CGRect(origin: .zero, size: size))
-      let doneBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done alert title"), style: .Done, target: self, action: #selector(self.doneButtonTapped(_:)))
-      let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+      let doneBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done alert title"), style: .done, target: self, action: #selector(self.doneButtonTapped(_:)))
+      let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 
       doneBarButtonItem.tintColor = UIColor.revertTintColor()
       toolBar.items = [
@@ -85,19 +85,19 @@ class TextFieldControlCell: CollectionViewCell {
 
 #if os(tvOS)
   final class HomeCollectionCell: CollectionViewCell {
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
-      super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+      super.didUpdateFocus(in: context, with: coordinator)
 
       coordinator.addCoordinatedAnimations({
-        if self.focused {
-          self.titleLabel.textColor = UIColor.whiteColor()
+        if self.isFocused {
+          self.titleLabel.textColor = UIColor.white
         } else {
-          self.titleLabel.textColor = UIColor.blackColor()
+          self.titleLabel.textColor = UIColor.black
         }
       }, completion: nil)
     }
 
     // MARK: Private
-    @IBOutlet private(set) weak var imageView: UIImageView!
+    @IBOutlet fileprivate(set) weak var imageView: UIImageView!
   }
 #endif

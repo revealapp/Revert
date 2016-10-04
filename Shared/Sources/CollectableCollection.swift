@@ -26,11 +26,11 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
     self.items = groups
   }
 
-  subscript(indexPath: NSIndexPath) -> CollectableCollectionObject {
-    return self[indexPath.section][indexPath.row]
+  subscript(indexPath: IndexPath) -> CollectableCollectionObject {
+    return self[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
   }
 
-  func filteredCollectableCollection(itemFilter: FilterClosure) -> CollectableCollection {
+  func filteredCollectableCollection(_ itemFilter: FilterClosure) -> CollectableCollection {
     let groups: [TypedGroup] = self.items
       .map({
         let items = $0.items.filter(itemFilter)
@@ -43,7 +43,14 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
     return CollectableCollection(groups: groups)
   }
 
-  func groupFilteredCollectableCollection(groupFilter: GroupFilterClosure) -> CollectableCollection {
+  func groupFilteredCollectableCollection(_ groupFilter: GroupFilterClosure) -> CollectableCollection {
     return CollectableCollection(groups: self.items.filter(groupFilter))
   }
+
+  // MARK: IndexableBase
+
+  func index(after i: Int) -> Int {
+    return items.index(after: i)
+  }
+
 }

@@ -4,7 +4,7 @@
 import UIKit
 
 final class CustomIntrinsicContentSizeView: UIView {
-  override func intrinsicContentSize() -> CGSize {
+  override var intrinsicContentSize: CGSize {
     return CGSize(width: 80, height: 80)
   }
 }

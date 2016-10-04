@@ -4,10 +4,10 @@
 import Foundation
 
 extension UITableView {
-  private static let tvOverscanInsets = UIEdgeInsets(top: 60, left: 90, bottom: 60, right: 90)
+  fileprivate static let tvOverscanInsets = UIEdgeInsets(top: 60, left: 90, bottom: 60, right: 90)
 
   func adjustContentInsetsForTVOs() {
-    self.layoutMargins = self.dynamicType.tvOverscanInsets
+    self.layoutMargins = type(of: self).tvOverscanInsets
 
     // We also have to account for overscan on the top and the bottom of the table view itself.
     // Content is initially offset so the table view doesn't jump when the inset update takes place.

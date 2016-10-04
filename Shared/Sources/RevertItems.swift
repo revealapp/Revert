@@ -16,33 +16,33 @@ enum RevertItems: String {
   case WhatsNew = "NewItems"
 
   var data: [[String: AnyObject]] {
-    guard let data = NSArray(contentsOfURL: self.URL) as? [[String: AnyObject]] else {
+    guard let data = NSArray(contentsOf: self.URL) as? [[String: AnyObject]] else {
       fatalError(self.invalidContentError)
     }
     return data
   }
 
   // MARK: Private
-  private static let fileExtension = "plist"
-  private static let subfolder = "Data"
+  fileprivate static let fileExtension = "plist"
+  fileprivate static let subfolder = "Data"
 
-  private var invalidContentError: String {
-    return "Invalid content: \(self.rawValue).\(self.dynamicType.fileExtension)"
+  fileprivate var invalidContentError: String {
+    return "Invalid content: \(self.rawValue).\(type(of: self).fileExtension)"
   }
 
-  private var invalidFileError: String {
+  fileprivate var invalidFileError: String {
     return "Invalid file: No common or platform-specific \(self.rawValue) files exist"
   }
 
-  private var URL: NSURL {
-    var URL: NSURL? {
-      let commonPath = "\(self.dynamicType.subfolder)/\(self.rawValue)"
-      let platformPath = "\(commonPath)\(self.dynamicType.platformSuffix)"
+  fileprivate var URL: Foundation.URL {
+    var URL: Foundation.URL? {
+      let commonPath = "\(type(of: self).subfolder)/\(self.rawValue)"
+      let platformPath = "\(commonPath)\(type(of: self).platformSuffix)"
 
-      if let platformURL = NSBundle.mainBundle().URLForResource(platformPath, withExtension: self.dynamicType.fileExtension) {
+      if let platformURL = Bundle.main.url(forResource: platformPath, withExtension: type(of: self).fileExtension) {
         return platformURL
       } else {
-        let commonURL = NSBundle.mainBundle().URLForResource(commonPath, withExtension: self.dynamicType.fileExtension)
+        let commonURL = Bundle.main.url(forResource: commonPath, withExtension: type(of: self).fileExtension)
         return commonURL
       }
     }
@@ -56,10 +56,10 @@ enum RevertItems: String {
 
 extension RevertItems {
   #if os(iOS)
-  private static let platformSuffix = "_iOS"
+  fileprivate static let platformSuffix = "_iOS"
   #endif
 
   #if os(tvOS)
-  private static let platformSuffix = "_tvOS"
+  fileprivate static let platformSuffix = "_tvOS"
   #endif
 }

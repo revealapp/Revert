@@ -4,16 +4,16 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  private let collection = CollectableCollection<Country>(items: .CountriesCapitals)
-  private let dataSource: DataSource<Country, BasicCell>
-  private var refreshTimer: NSTimer?
+  fileprivate let collection = CollectableCollection<Country>(items: .CountriesCapitals)
+  fileprivate let dataSource: DataSource<Country, BasicCell>
+  fileprivate var refreshTimer: Timer?
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
-      configureCell: self.dynamicType.configureCell,
+      configureCell: type(of: self).configureCell,
       cellIdentifier: Storyboards.Cell.TableViewController,
-      titleForFooter: self.dynamicType.titleForFooter
+      titleForFooter: type(of: self).titleForFooter
     )
 
     super.init(coder: aDecoder)
@@ -29,72 +29,72 @@ final class CountriesViewController: RevertTableViewController {
     #endif
   }
 
-  private static func footerLabelWithText(text: String?) -> UILabel {
+  fileprivate static func footerLabelWithText(_ text: String?) -> UILabel {
     let label = UILabel()
-    label.backgroundColor = UIColor.whiteColor()
+    label.backgroundColor = UIColor.white
     label.text = text
-    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
+    label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.caption1)
     label.textColor = UIColor.revertLightBlackColor()
-    label.textAlignment = .Center
+    label.textAlignment = .center
     return label
   }
 }
 
-// MARK:- UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension CountriesViewController {
   @available(iOS 9.0, *)
-  override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+  override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
-      self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
+      self.tableView.selectRow(at: nextFocusedIndexPath, animated: true, scrollPosition: .none)
     }
   }
 
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let cell = tableView.cellForRowAtIndexPath(indexPath)
-    if cell?.accessoryType == .Checkmark {
-      cell?.accessoryType = .None
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let cell = tableView.cellForRow(at: indexPath)
+    if cell?.accessoryType == .checkmark {
+      cell?.accessoryType = .none
     } else {
-      cell?.accessoryType = .Checkmark
+      cell?.accessoryType = .checkmark
     }
 
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    tableView.deselectRow(at: indexPath, animated: true)
   }
 
-  override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+  override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     let text = self.dataSource.tableView(tableView, titleForFooterInSection: section)
-    return self.dynamicType.footerLabelWithText(text)
+    return type(of: self).footerLabelWithText(text)
   }
 }
 
 private extension CountriesViewController {
-  static func configureCell(cell: BasicCell, object: Country) {
-    cell.accessoryType = .None
+  static func configureCell(_ cell: BasicCell, object: Country) {
+    cell.accessoryType = .none
 
     cell.titleLabel.text = object.name
     cell.subtitleLabel.text = object.capital
   }
 
-  static func titleForFooter(group: CollectableGroup<Country>) -> String? {
+  static func titleForFooter(_ group: CollectableGroup<Country>) -> String? {
     let count = group.countOfItems
-    return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format"), count) as String
+    return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format") as NSString, count) as String
   }
 }
 
 #if os(iOS)
   extension CountriesViewController {
-    private func setupRefreshControl() {
+    fileprivate func setupRefreshControl() {
       self.refreshControl = UIRefreshControl()
-      self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), forControlEvents: .ValueChanged)
+      self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), for: .valueChanged)
     }
 
-    func tableViewPulledToRefresh(refreshControl: UIRefreshControl) {
+    func tableViewPulledToRefresh(_ refreshControl: UIRefreshControl) {
       self.refreshTimer?.invalidate()
 
       // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
-      self.refreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
+      self.refreshTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
     }
 
-    func didLoadDummyData(timer: NSTimer) {
+    func didLoadDummyData(_ timer: Timer) {
       self.refreshControl?.endRefreshing()
     }
   }

@@ -12,11 +12,11 @@ final class AutoResizingMaskViewController: RevertViewController {
 
   // MARK: Private
 
-  private var viewsReady = false
+  fileprivate var viewsReady = false
 
-  @IBOutlet private weak var outterView: UIView!
+  @IBOutlet fileprivate weak var outterView: UIView!
 
-  private func addSubViewsIfNeeded() {
+  fileprivate func addSubViewsIfNeeded() {
     // Only perform this action once
     if self.viewsReady {
       return
