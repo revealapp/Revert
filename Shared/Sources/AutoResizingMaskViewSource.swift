@@ -4,6 +4,7 @@
 import UIKit
 
 final class AutoResizingMaskViewSource {
+
   init(bounds: CGRect) {
     self.flexibleWidthHeightSize = CGSize(
       width: bounds.width - (2 * type(of: self).horizontalPadding),
@@ -104,9 +105,9 @@ final class AutoResizingMaskViewSource {
   }()
 
   fileprivate(set) lazy var rightFlexibleTopBottomView: UIView = {
-    let rightFlexibleTopBottomOrigin = CGPoint(x:
-      self.flexibleWidthHeightView.bounds.width - type(of: self).innerPadding - type(of: self).leftRightWidth,
-                                               y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
+    let rightFlexibleTopBottomOrigin = CGPoint(
+      x: self.flexibleWidthHeightView.bounds.width - type(of: self).innerPadding - type(of: self).leftRightWidth,
+      y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
     )
 
     let frame = CGRect(origin: rightFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)

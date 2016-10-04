@@ -4,6 +4,7 @@
 import UIKit
 
 final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
+
   override func prepare() {
     super.prepare()
 

@@ -20,7 +20,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .Home, sortClosure: {$0.title < $1.title}),
+      collection: CollectableCollection<HomeItem>(items: .Home, sortClosure: { $0.title < $1.title }),
       configureCell: type(of: self).configureCell,
       cellIdentifier: Storyboards.Cell.HomeCollection
     )
@@ -52,6 +52,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 }
 
 private extension HomeCollectionViewController {
+
   static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
@@ -60,6 +61,7 @@ private extension HomeCollectionViewController {
 
 // MARK: - UICollectionViewDelegate
 extension HomeCollectionViewController {
+
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 

@@ -4,6 +4,7 @@
 import UIKit
 
 final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
+
   func configureSplitViewController(_ splitViewController: UISplitViewController) {
     splitViewController.delegate = self
     splitViewController.preferredDisplayMode = .allVisible

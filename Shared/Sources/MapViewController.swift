@@ -5,6 +5,7 @@ import UIKit
 import MapKit
 
 final class MapViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -33,6 +34,7 @@ final class MapViewController: RevertViewController {
 
 // MARK: - MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate {
+
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKPolygon {
       let pr = MKPolygonRenderer(overlay: overlay)

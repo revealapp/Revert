@@ -4,6 +4,7 @@
 import UIKit
 
 final class AutoResizingMaskViewController: RevertViewController {
+
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 

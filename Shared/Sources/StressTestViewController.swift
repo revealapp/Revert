@@ -3,7 +3,7 @@
 
 import UIKit
 
-final class StressTestViewController: RevertCollectionViewController { }
+final class StressTestViewController: RevertCollectionViewController {}
 
 // MARK: - UICollectionViewDataSource
 extension StressTestViewController {

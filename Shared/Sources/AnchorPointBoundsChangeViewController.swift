@@ -4,6 +4,7 @@
 import UIKit
 
 final class AnchorPointBoundsChangeViewController: RevertViewController {
+
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -57,7 +58,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
     let offset: CGFloat = -self.quarterBoundsHeight
     UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: {
       self.boundsChangeView.bounds = self.boundsChangeView.bounds.offsetBy(dx: offset, dy: offset)
-      }, completion: nil)
+    }, completion: nil)
 
     // Anchor Point Testing
 
@@ -68,6 +69,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 }
 
 private extension AnchorPointBoundsChangeViewController {
+
   static func basicAnimationWithFromValue(_ fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
     basicAnimation.duration = 1

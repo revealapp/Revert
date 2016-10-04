@@ -4,6 +4,7 @@
 import UIKit
 
 final class CATextLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -25,6 +26,7 @@ final class CATextLayerCell: CollectionViewCell {
 }
 
 final class CAEmitterLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -63,12 +65,12 @@ final class CAEmitterLayerCell: CollectionViewCell {
 }
 
 final class CAShapeLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
     type(of: self).configureShapeLayer(self.shapeLayerView.shapeLayer)
   }
-
 
   // MARK: Private
 
@@ -110,6 +112,7 @@ final class CAScrollLayerCell: CollectionViewCell {
 }
 
 final class CATiledLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -131,6 +134,7 @@ final class CATiledLayerCell: CollectionViewCell {
 }
 
 final class CAGradientLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -158,12 +162,13 @@ final class CAGradientLayerCell: CollectionViewCell {
       UIColor(red: 0.894, green: 1.000, blue: 0.996, alpha: 1).cgColor,
       UIColor(red: 0.784, green: 1.000, blue: 0.996, alpha: 1).cgColor,
       UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1).cgColor,
-      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1).cgColor
+      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1).cgColor,
     ]
   }
 }
 
 final class CAReplicatorLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -197,6 +202,7 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 }
 
 final class CAEAGLLayerCell: CollectionViewCell {
+
   override func awakeFromNib() {
     super.awakeFromNib()
 

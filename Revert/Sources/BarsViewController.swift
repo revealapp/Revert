@@ -4,6 +4,7 @@
 import UIKit
 
 final class BarsViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 

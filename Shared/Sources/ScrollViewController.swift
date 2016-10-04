@@ -4,6 +4,7 @@
 import UIKit
 
 final class ScrollViewController: RevertViewController {
+
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -20,7 +21,9 @@ final class ScrollViewController: RevertViewController {
 }
 
 #if os(tvOS)
+
   extension ScrollViewController {
+
     override func viewDidLoad() {
       super.viewDidLoad()
 
@@ -31,8 +34,8 @@ final class ScrollViewController: RevertViewController {
 
 final class RevertFocusableScrollView: UIScrollView {
   #if os(tvOS)
-  override var canBecomeFocused: Bool {
-    return true
-  }
+    override var canBecomeFocused: Bool {
+      return true
+    }
   #endif
 }

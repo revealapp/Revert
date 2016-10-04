@@ -3,10 +3,11 @@
 
 import UIKit
 
-final class CollectionViewController: RevertCollectionViewController { }
+final class CollectionViewController: RevertCollectionViewController {}
 
 // MARK: - UICollectionViewDataSource
 extension CollectionViewController {
+
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -24,6 +25,7 @@ extension CollectionViewController {
 
 // MARK: - UICollectionViewDelegate
 extension CollectionViewController {
+
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = UIColor.graySelectionColor()
   }

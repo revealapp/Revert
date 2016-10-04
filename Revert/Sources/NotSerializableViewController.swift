@@ -4,6 +4,7 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -29,11 +30,11 @@ final class NonSerializableViewController: RevertViewController {
     let continueAction = UIAlertAction(
       title: NSLocalizedString("Ok", comment: "Alert Ok button title"),
       style: .default) { [weak self] _ in
-        self?.makeSliderUnserializable()
+      self?.makeSliderUnserializable()
 
-        // Only show the alert once
-        self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpInside)
-        self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpOutside)
+      // Only show the alert once
+      self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpInside)
+      self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpOutside)
     }
 
     alertViewController.addAction(continueAction)

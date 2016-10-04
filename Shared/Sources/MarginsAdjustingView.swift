@@ -12,7 +12,9 @@ class MarginsAdjustingView: UIView {
 }
 
 #if os(iOS)
+
   final class SliderMarginsAdjustingView: MarginsAdjustingView {
+
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -32,7 +34,9 @@ class MarginsAdjustingView: UIView {
 #endif
 
 #if os(tvOS)
+
   final class ButtonsMarginsAdjustingView: MarginsAdjustingView {
+
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -92,6 +96,7 @@ class MarginsAdjustingView: UIView {
   }
 
   private struct MarginValue {
+
     mutating func changeValue(_ changeType: ChangeType) {
       let computedDelta = CGFloat(changeType.rawValue) * type(of: self).delta
       self.value = type(of: self).cappedMarginForMargin(self.value, delta: computedDelta)
@@ -102,7 +107,7 @@ class MarginsAdjustingView: UIView {
       case increment = 1
     }
 
-    let progress = Progress(totalUnitCount:Int64(MarginValue.maxValue))
+    let progress = Progress(totalUnitCount: Int64(MarginValue.maxValue))
 
     var isOnUpperLimit: Bool {
       return self.value == type(of: self).maxValue

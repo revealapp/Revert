@@ -12,10 +12,12 @@ struct HomeItem: Collectable, Requirement {
   let requiredClassName: String?
 
   init(dictionary: [String: AnyObject]) {
-    guard let title = dictionary[Attributes.Title.rawValue] as? String,
+    guard
+      let title = dictionary[Attributes.Title.rawValue] as? String,
       let iconName = dictionary[Attributes.Icon.rawValue] as? String,
-      let segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String else {
-        fatalError("Invalid `HomeItem` attributes")
+      let segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String
+    else {
+      fatalError("Invalid `HomeItem` attributes")
     }
 
     self.title = title

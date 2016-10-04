@@ -4,6 +4,7 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
+
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -41,7 +42,9 @@ class TextFieldControlCell: CollectionViewCell {
 }
 
 #if os(iOS)
+
   final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
+
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -76,7 +79,7 @@ class TextFieldControlCell: CollectionViewCell {
       doneBarButtonItem.tintColor = UIColor.revertTintColor()
       toolBar.items = [
         flexibleBarButtonItem,
-        doneBarButtonItem
+        doneBarButtonItem,
       ]
       return toolBar
     }
@@ -84,7 +87,9 @@ class TextFieldControlCell: CollectionViewCell {
 #endif
 
 #if os(tvOS)
+
   final class HomeCollectionCell: CollectionViewCell {
+
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
       super.didUpdateFocus(in: context, with: coordinator)
 
