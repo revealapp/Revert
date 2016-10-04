@@ -41,7 +41,7 @@ class IconConstellationView: UIView {
     self.animateIconViewsIfNecessary()
   }
 
-  override class func requiresConstraintBasedLayout() -> Bool {
+  override class var requiresConstraintBasedLayout: Bool {
     return false
   }
 
@@ -59,7 +59,7 @@ class IconConstellationView: UIView {
 
     self.iconViews = self.animatedIcons.map { image in
       let imageView = UIImageView(image: image)
-      imageView.contentMode = .Center
+      imageView.contentMode = .center
       imageView.translatesAutoresizingMaskIntoConstraints = false
 
       return imageView
@@ -74,9 +74,9 @@ class IconConstellationView: UIView {
   private func layoutIconViews() {
     let bounds = self.bounds
     let iconsPerLine = Int(floor((bounds.width + self.iconSpacing) / (self.iconSize + self.iconSpacing)))
-    let lineLayout = self.dynamicType.lineLayout(forWidth: bounds.width, iconSize: self.iconSize, iconsPerLine: iconsPerLine, contentsScale: self.window?.screen.scale ?? 1.0)
+    let lineLayout = type(of: self).lineLayout(forWidth: bounds.width, iconSize: self.iconSize, iconsPerLine: iconsPerLine, contentsScale: self.window?.screen.scale ?? 1.0)
 
-    for (index, iconView) in self.iconViews.enumerate() {
+    for (index, iconView) in self.iconViews.enumerated() {
       let columnRect = lineLayout[index % iconsPerLine]
       let lineOffset = CGFloat(index / iconsPerLine) * (self.iconSize + self.iconSpacing)
       iconView.frame = columnRect.offsetBy(dx: 0.0, dy: lineOffset)
@@ -87,7 +87,7 @@ class IconConstellationView: UIView {
     var rects = [CGRect]()
     var remainingLineSpacing = width - iconSize * CGFloat(iconsPerLine)
     var currentPosition = 0.0 as CGFloat
-    for remainingSpaces in (0..<iconsPerLine).reverse() {
+    for remainingSpaces in (0..<iconsPerLine).reversed() {
       rects.append(CGRect(x: currentPosition, y: 0.0, width: iconSize, height: iconSize))
       currentPosition += iconSize
 
@@ -127,7 +127,7 @@ private extension UIView {
     static let animationKey = "twinkle"
   }
 
-  func animateTwinkle(withDuration duration: NSTimeInterval, initialPhase: Double) {
+  func animateTwinkle(withDuration duration: TimeInterval, initialPhase: Double) {
     let animation = CABasicAnimation(keyPath: "opacity")
     animation.duration = duration
     animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -137,7 +137,7 @@ private extension UIView {
     animation.repeatCount = FLT_MAX
     animation.timeOffset = duration * initialPhase * 2.0
 
-    self.layer.addAnimation(animation, forKey: Constants.animationKey)
+    self.layer.add(animation, forKey: Constants.animationKey)
   }
 
   func animateTwinkleWithRandomParameters() {
@@ -146,7 +146,7 @@ private extension UIView {
   }
 
   func stopTwinkleAnimation() {
-    self.layer.removeAnimationForKey(Constants.animationKey)
+    self.layer.removeAnimation(forKey: Constants.animationKey)
   }
 
 }

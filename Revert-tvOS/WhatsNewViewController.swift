@@ -18,7 +18,7 @@ final class WhatsNewViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.constellationView.animatedIcons = Array(count: 52, repeatedValue: UIImage(named: "icon-generic")!)
+    self.constellationView.animatedIcons = Array(repeating: UIImage(named: "icon-generic")!, count: 52)
     self.constellationView.animating = true
 
     self.collectionView?.dataSource = self.dataSource
