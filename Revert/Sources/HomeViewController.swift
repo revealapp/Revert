@@ -9,7 +9,7 @@ final class HomeViewController: UITableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: StoryboardIdentifiers.Cell.home
+      cellIdentifier: CellIdentifiers.home
     )
 
     super.init(coder: aDecoder)
@@ -23,8 +23,8 @@ final class HomeViewController: UITableViewController {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-    let homeNib = UINib(nibName: StoryboardIdentifiers.Cell.home, bundle: nil)
-    self.tableView.register(homeNib, forCellReuseIdentifier: StoryboardIdentifiers.Cell.home)
+    let homeNib = UINib(nibName: CellIdentifiers.home, bundle: nil)
+    self.tableView.register(homeNib, forCellReuseIdentifier: CellIdentifiers.home)
 
     NotificationCenter.default.addObserver(self, selector: #selector(self.showDetailTargetDidChange(_:)), name: NSNotification.Name.UIViewControllerShowDetailTargetDidChange, object: nil)
   }

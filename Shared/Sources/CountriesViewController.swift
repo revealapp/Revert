@@ -12,7 +12,7 @@ final class CountriesViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: StoryboardIdentifiers.Cell.tableViewController,
+      cellIdentifier: CellIdentifiers.tableViewController,
       titleForFooter: type(of: self).titleForFooter
     )
 

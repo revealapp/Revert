@@ -9,7 +9,7 @@ final class WhatsNewViewController: UIViewController {
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .whatsNew),
       configureCell: type(of: self).configureCell,
-      cellIdentifier: StoryboardIdentifiers.Cell.homeCollection
+      cellIdentifier: CellIdentifiers.homeCollection
     )
 
     super.init(coder: aDecoder)

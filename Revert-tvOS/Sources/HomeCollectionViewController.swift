@@ -22,7 +22,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .home, sortClosure: { $0.title < $1.title }),
       configureCell: type(of: self).configureCell,
-      cellIdentifier: StoryboardIdentifiers.Cell.homeCollection
+      cellIdentifier: CellIdentifiers.homeCollection
     )
 
     super.init(coder: aDecoder)

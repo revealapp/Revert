@@ -9,7 +9,7 @@ final class AlertViewController: RevertTableViewController {
     self.dataSource = DataSource(
       collection: self.collection,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: StoryboardIdentifiers.Cell.alert
+      cellIdentifier: CellIdentifiers.alert
     )
 
     super.init(coder: aDecoder)
@@ -90,7 +90,7 @@ extension AlertViewController {
     guard
       let cell = tableView.cellForRow(at: indexPath),
       let identifier = Identifier(rawValue: item.cellIdentifier)
-    else {
+      else {
       fatalError("Unknown cellIdentifier or cell")
     }
 

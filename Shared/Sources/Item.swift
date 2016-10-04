@@ -12,7 +12,7 @@ struct Item: Collectable, Requirement {
     guard
       let title = dictionary[Attributes.title.rawValue] as? String,
       let cellIdentifier = dictionary[Attributes.cellIdentifier.rawValue] as? String
-    else {
+      else {
       fatalError("Invalid `Item` attributes")
     }
 

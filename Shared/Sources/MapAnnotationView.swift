@@ -22,7 +22,7 @@ final class MapAnnotation: NSObject, MKAnnotation {
       let longitude = dictionary[Attributes.longitude.rawValue] as? Double,
       let title = dictionary[Attributes.title.rawValue] as? String,
       let subtitle = dictionary[Attributes.subtitle.rawValue] as? String
-    else {
+      else {
       fatalError("Invalid `MapAnnotation` attributes")
     }
 

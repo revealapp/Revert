@@ -10,7 +10,7 @@ private extension UIViewController {
     guard
       let destinationNavigationController = segue.destination as? UINavigationController,
       let destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem
-    else {
+      else {
       fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
     }
 
@@ -39,7 +39,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == StoryboardIdentifiers.Segue.info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -67,7 +67,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == StoryboardIdentifiers.Segue.info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -90,7 +90,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == StoryboardIdentifiers.Segue.info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
@@ -113,7 +113,7 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == StoryboardIdentifiers.Segue.info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }

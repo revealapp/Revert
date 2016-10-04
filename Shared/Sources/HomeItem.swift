@@ -16,7 +16,7 @@ struct HomeItem: Collectable, Requirement {
       let title = dictionary[Attributes.title.rawValue] as? String,
       let iconName = dictionary[Attributes.iconName.rawValue] as? String,
       let segueIdentifier = dictionary[Attributes.segueIdentifier.rawValue] as? String
-    else {
+      else {
       fatalError("Invalid `HomeItem` attributes")
     }
 

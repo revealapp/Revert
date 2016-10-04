@@ -10,8 +10,8 @@ final class HomeViewController: UITableViewController {
 
     self.tableView.dataSource = self
 
-    let cellNib = UINib(nibName: StoryboardIdentifiers.Cell.home, bundle: nil)
-    self.tableView.register(cellNib, forCellReuseIdentifier: StoryboardIdentifiers.Cell.home)
+    let cellNib = UINib(nibName: CellIdentifiers.home, bundle: nil)
+    self.tableView.register(cellNib, forCellReuseIdentifier: CellIdentifiers.home)
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,14 +41,14 @@ extension HomeViewController {
     guard
       let nextFocusedIndexPath = context.nextFocusedIndexPath,
       nextFocusedIndexPath != context.previouslyFocusedIndexPath
-    else {
+      else {
       // We don't want to perform unnecessary segues when moving back from the detail view.
       // This also helps the detail collection view to remember the last focused item.
 
       return
     }
 
-    self.performSegue(withIdentifier: StoryboardIdentifiers.Segue.detailsCollectionView, sender: nextFocusedIndexPath)
+    self.performSegue(withIdentifier: SegueIdentifiers.detailsCollectionView, sender: nextFocusedIndexPath)
 
     self.tableView.selectRow(at: nextFocusedIndexPath, animated: true, scrollPosition: .none)
   }
@@ -58,7 +58,7 @@ extension HomeViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: StoryboardIdentifiers.Cell.home) as? HomeCell else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.home) as? HomeCell else {
       fatalError("Expecting to dequeue a `\(HomeCell.self)` from the tableView")
     }
 
