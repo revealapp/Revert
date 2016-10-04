@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Group One</string>
+		<string>Containers</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -43,7 +43,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Group Two</string>
+		<string>Controls</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -102,7 +102,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Group Three</string>
+		<string>Dynamic</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -139,7 +139,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Group Four</string>
+		<string>Layout</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -236,7 +236,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Group Five</string>
+		<string>Benchmarking</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -259,13 +259,6 @@
 				<key>infoFilename</key>
 				<string>stress_test</string>
 			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Group Six</string>
-		<key>rows</key>
-		<array>
 			<dict>
 				<key>title</key>
 				<string>Not Serializable</string>
