@@ -353,13 +353,6 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
-		9A94E3F41AD63F040005BA44 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +388,6 @@
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
 				9A07D8DD1AE4B8260099C4CB /* Layouts */,
 				9ABEBA161AD4AEC900E3D998 /* Miscellaneous */,
-				9A94E3F41AD63F040005BA44 /* Models */,
 				9ABEBA0F1AD4ABE600E3D998 /* View Controllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 			);
