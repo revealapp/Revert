@@ -41,7 +41,7 @@ class BasicCell: UITableViewCell {
 
   func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-    self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
+    self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.footnote)
   }
 
   // MARK: Private
