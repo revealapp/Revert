@@ -3,7 +3,19 @@
 
 import UIKit
 
-final class CATextLayerCell: CollectionViewCell {
+class LayerBackedCollectionViewCell: CollectionViewCell {
+
+#if os(tvOS)
+  override func awakeFromNib() {
+    // Ensure that there is a valid frame for the cell before trying to configure the layer effects/contents
+    self.layoutIfNeeded()
+    super.awakeFromNib()
+  }
+#endif
+
+}
+
+final class CATextLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -25,7 +37,7 @@ final class CATextLayerCell: CollectionViewCell {
   }
 }
 
-final class CAEmitterLayerCell: CollectionViewCell {
+final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -64,7 +76,7 @@ final class CAEmitterLayerCell: CollectionViewCell {
   }
 }
 
-final class CAShapeLayerCell: CollectionViewCell {
+final class CAShapeLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -95,7 +107,7 @@ final class CAShapeLayerCell: CollectionViewCell {
   }
 }
 
-final class CAScrollLayerCell: CollectionViewCell {
+final class CAScrollLayerCell: LayerBackedCollectionViewCell {
   @IBOutlet private weak var scrollLayerView: CAScrollLayerView!
 
   override func awakeFromNib() {
@@ -111,7 +123,7 @@ final class CAScrollLayerCell: CollectionViewCell {
   }
 }
 
-final class CATiledLayerCell: CollectionViewCell {
+final class CATiledLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -133,7 +145,7 @@ final class CATiledLayerCell: CollectionViewCell {
   }
 }
 
-final class CAGradientLayerCell: CollectionViewCell {
+final class CAGradientLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -167,7 +179,7 @@ final class CAGradientLayerCell: CollectionViewCell {
   }
 }
 
-final class CAReplicatorLayerCell: CollectionViewCell {
+final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -201,7 +213,7 @@ final class CAReplicatorLayerCell: CollectionViewCell {
   }
 }
 
-final class CAEAGLLayerCell: CollectionViewCell {
+final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
