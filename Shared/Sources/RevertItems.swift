@@ -4,7 +4,7 @@
 import Foundation
 
 enum RevertItems: String {
-  case capitalCities
+  case capitalCities = "CountriesCapitals"
   case alert = "AlertItems"
   case home = "HomeItems"
   case homeCollection = "HomeCollectionItems"
