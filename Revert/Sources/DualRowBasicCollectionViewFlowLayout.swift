@@ -17,9 +17,9 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
   // MARK: Private
 
-  fileprivate static let noOfItemsInRow = 2
+  private static let noOfItemsInRow = 2
 
-  fileprivate var availableWidth: CGFloat {
+  private var availableWidth: CGFloat {
     guard let collectionView = self.collectionView else {
       return 0
     }
@@ -27,7 +27,7 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
     return collectionView.bounds.width - self.sectionInset.left - self.sectionInset.right
   }
 
-  fileprivate var computedItemSize: CGSize {
+  private var computedItemSize: CGSize {
     let itemWidth = floor((self.availableWidth - self.minimumInteritemSpacing * (CGFloat(type(of: self).noOfItemsInRow) - 1)) / CGFloat(type(of: self).noOfItemsInRow))
     return CGSize(width: itemWidth, height: self.itemSize.height)
   }

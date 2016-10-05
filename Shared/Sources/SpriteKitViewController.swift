@@ -46,9 +46,9 @@ private final class IBAScene: SKScene {
 
   // MARK: Private
 
-  fileprivate var spaceship: SKSpriteNode?
+  private var spaceship: SKSpriteNode?
 
-  fileprivate lazy var helloWorldLabel: SKLabelNode = {
+  private lazy var helloWorldLabel: SKLabelNode = {
     let label = SKLabelNode(fontNamed: "HelveticaNeue-Light")
     label.text = NSLocalizedString("Tap to add sprite", comment: "SpriteKitViewController background label")
     label.fontSize = 28
@@ -63,14 +63,14 @@ private final class IBAScene: SKScene {
     return label
   }()
 
-  fileprivate static func packagedSpaceship(_ startingPosition: CGPoint) -> SKSpriteNode {
+  private static func packagedSpaceship(_ startingPosition: CGPoint) -> SKSpriteNode {
     let spaceship = SKSpriteNode(imageNamed: "spritekit_reveal")
     spaceship.position = startingPosition
 
     return spaceship
   }
 
-  fileprivate static func actionSpaceship(_ spaceship: SKSpriteNode) {
+  private static func actionSpaceship(_ spaceship: SKSpriteNode) {
     let action = SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)
     spaceship.run(SKAction.repeatForever(action))
   }
@@ -99,7 +99,7 @@ final class SpriteKitViewController: RevertViewController {
 
   // MARK: Private
 
-  fileprivate var skView: SKView {
+  private var skView: SKView {
     return self.view as! SKView
   }
 }

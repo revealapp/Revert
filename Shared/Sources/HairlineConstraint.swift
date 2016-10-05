@@ -13,7 +13,7 @@ final class HairlineConstraint: NSLayoutConstraint {
 
   // MARK: Private
 
-  fileprivate static var constantValue: CGFloat {
+  private static var constantValue: CGFloat {
     return 1 / UIScreen.main.scale
   }
 }

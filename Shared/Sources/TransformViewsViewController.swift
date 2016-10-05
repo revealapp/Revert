@@ -22,17 +22,17 @@ final class TransformViewsViewController: RevertViewController {
 
   // MARK: Private
 
-  fileprivate static let minimumItemHeight: CGFloat = 150
-  fileprivate static let numberOfItems = 3
+  private static let minimumItemHeight: CGFloat = 150
+  private static let numberOfItems = 3
 
-  fileprivate var wasAnimated = false
+  private var wasAnimated = false
 
-  @IBOutlet fileprivate weak var translateView: UIView!
-  @IBOutlet fileprivate weak var rotateView: UIView!
-  @IBOutlet fileprivate weak var scaleView: UIView!
-  @IBOutlet fileprivate weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private weak var translateView: UIView!
+  @IBOutlet private weak var rotateView: UIView!
+  @IBOutlet private weak var scaleView: UIView!
+  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
 
-  fileprivate func animateViewsIfNecessary() {
+  private func animateViewsIfNecessary() {
     // Only perform this action once
     if self.wasAnimated {
       return

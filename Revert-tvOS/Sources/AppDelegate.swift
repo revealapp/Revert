@@ -19,7 +19,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   // MARK: Private
-  fileprivate static func packagedSearchController() -> UIViewController {
+
+  private static func packagedSearchController() -> UIViewController {
     // Load the view controller that will act as data source from its storyboard, so we don't have to do layout programmatically.
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     guard let searchViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.searchController) as? SearchViewController else {

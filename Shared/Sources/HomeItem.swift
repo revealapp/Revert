@@ -30,7 +30,7 @@ struct HomeItem: Collectable, Requirement {
 
   // MARK: Private
 
-  fileprivate enum Attributes: String {
+  private enum Attributes: String {
     case title = "title"
     case infoFilename = "infoFilename"
     case iconName = "iconName"

@@ -26,18 +26,18 @@ final class TransformLayersViewController: RevertViewController {
 
   // MARK: Private
 
-  fileprivate static let minimumItemHeight: CGFloat = 150
-  fileprivate static let numberOfItems = 4
+  private static let minimumItemHeight: CGFloat = 150
+  private static let numberOfItems = 4
 
-  fileprivate var wasAnimated = false
+  private var wasAnimated = false
 
-  @IBOutlet fileprivate weak var yRotateView: UIView!
-  @IBOutlet fileprivate weak var xRotateView: UIView!
-  @IBOutlet fileprivate weak var zRotateView: UIView!
-  @IBOutlet fileprivate weak var xyRotateView: UIView!
-  @IBOutlet fileprivate weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private weak var yRotateView: UIView!
+  @IBOutlet private weak var xRotateView: UIView!
+  @IBOutlet private weak var zRotateView: UIView!
+  @IBOutlet private weak var xyRotateView: UIView!
+  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
 
-  fileprivate func animateViewsIfNecessarry() {
+  private func animateViewsIfNecessarry() {
     // Only perform this action once
     if self.wasAnimated {
       return

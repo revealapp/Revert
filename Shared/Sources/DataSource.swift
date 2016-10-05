@@ -69,9 +69,9 @@ final class DataSource<Object: Collectable, Cell: UITableViewCell>: NSObject, UI
 
   // MARK: Private
 
-  fileprivate let unfilteredCollection: CollectableCollection<Object>
-  fileprivate var collection: CollectableCollection<Object>
-  fileprivate let configureCell: CellConfigurator
-  fileprivate let cellIdentifier: String
-  fileprivate let titleForFooter: FooterTitleRetriever
+  private let unfilteredCollection: CollectableCollection<Object>
+  private var collection: CollectableCollection<Object>
+  private let configureCell: CellConfigurator
+  private let cellIdentifier: String
+  private let titleForFooter: FooterTitleRetriever
 }

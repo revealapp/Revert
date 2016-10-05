@@ -4,7 +4,7 @@
 import Foundation
 
 extension UITableView {
-  fileprivate static let tvOverscanInsets = UIEdgeInsets(top: 60, left: 90, bottom: 60, right: 90)
+  private static let tvOverscanInsets = UIEdgeInsets(top: 60, left: 90, bottom: 60, right: 90)
 
   func adjustContentInsetsForTVOs() {
     self.layoutMargins = type(of: self).tvOverscanInsets

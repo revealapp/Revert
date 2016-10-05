@@ -15,7 +15,8 @@ final class NonSerializableViewController: RevertViewController {
   }
 
   // Mark: Private
-  @IBOutlet fileprivate var infSpacingStackView: UIStackView!
-  @IBOutlet fileprivate var nanSpacingStackView: UIStackView!
-  @IBOutlet fileprivate var labelTrailingConstraint: NSLayoutConstraint!
+
+  @IBOutlet private var infSpacingStackView: UIStackView!
+  @IBOutlet private var nanSpacingStackView: UIStackView!
+  @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!
 }

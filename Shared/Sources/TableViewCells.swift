@@ -17,7 +17,7 @@ final class HomeCell: BasicCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate(set) weak var iconImageView: UIImageView!
+  @IBOutlet private(set) weak var iconImageView: UIImageView!
 }
 
 class BasicCell: UITableViewCell {
@@ -46,6 +46,6 @@ class BasicCell: UITableViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
-  @IBOutlet fileprivate(set) weak var subtitleLabel: UILabel!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var subtitleLabel: UILabel!
 }

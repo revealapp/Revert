@@ -17,7 +17,8 @@ struct Person: Collectable {
   }
 
   // MARK: Private
-  fileprivate enum Attributes: String {
+
+  private enum Attributes: String {
     case name = "name"
     case city = "city"
   }

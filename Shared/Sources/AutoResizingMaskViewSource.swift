@@ -20,19 +20,19 @@ final class AutoResizingMaskViewSource {
 
   // MARK: Private
 
-  fileprivate static let innerPadding: CGFloat = 20
-  fileprivate static let cornerRadius: CGFloat = 2
-  fileprivate static let borderWidth: CGFloat = 1
-  fileprivate static let borderColor = UIColor.borderColor().withAlphaComponent(0.5).cgColor
-  fileprivate static let defaultViewSideLength: CGFloat = 50
-  fileprivate static let leftRightWidth: CGFloat = 80
+  private static let innerPadding: CGFloat = 20
+  private static let cornerRadius: CGFloat = 2
+  private static let borderWidth: CGFloat = 1
+  private static let borderColor = UIColor.borderColor().withAlphaComponent(0.5).cgColor
+  private static let defaultViewSideLength: CGFloat = 50
+  private static let leftRightWidth: CGFloat = 80
 
-  fileprivate let outerOrigin: CGPoint
-  fileprivate let innerOrigin: CGPoint
-  fileprivate let flexibleWidthHeightSize: CGSize
-  fileprivate let flexibleTopBottomSize: CGSize
+  private let outerOrigin: CGPoint
+  private let innerOrigin: CGPoint
+  private let flexibleWidthHeightSize: CGSize
+  private let flexibleTopBottomSize: CGSize
 
-  fileprivate static var horizontalPadding: CGFloat = {
+  private static var horizontalPadding: CGFloat = {
     #if os(tvOS)
       return CGFloat(90)
     #else
@@ -40,7 +40,7 @@ final class AutoResizingMaskViewSource {
     #endif
   }()
 
-  fileprivate static let verticalPadding: CGFloat = {
+  private static let verticalPadding: CGFloat = {
     #if os(tvOS)
       return CGFloat(60)
     #else
@@ -48,7 +48,7 @@ final class AutoResizingMaskViewSource {
     #endif
   }()
 
-  fileprivate(set) lazy var flexibleWidthHeightView: UIView = {
+  private(set) lazy var flexibleWidthHeightView: UIView = {
     // Back: Flexible Height / Width View
     let frame = CGRect(origin: self.outerOrigin, size: self.flexibleWidthHeightSize)
     let flexibleWidthHeightView = self.bakeViewWithFrame(frame)
@@ -59,7 +59,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthHeightView
   }()
 
-  fileprivate(set) lazy var flexibleWidthView: UIView = {
+  private(set) lazy var flexibleWidthView: UIView = {
     let flexibleWidthSize = CGSize(
       width: self.flexibleWidthHeightSize.width - (2 * type(of: self).innerPadding),
       height: type(of: self).defaultViewSideLength
@@ -72,7 +72,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthView
   }()
 
-  fileprivate(set) lazy var flexibleHeightLeftRightView: UIView = {
+  private(set) lazy var flexibleHeightLeftRightView: UIView = {
     let flexibleHeightLeftRightSize = CGSize(
       width: type(of: self).defaultViewSideLength,
       height: self.flexibleWidthHeightSize.height - self.flexibleWidthView.frame.maxY - (2 * type(of: self).innerPadding)
@@ -91,7 +91,7 @@ final class AutoResizingMaskViewSource {
     return flexibleHeightLeftRightView
   }()
 
-  fileprivate(set) lazy var leftFlexibleTopBottomView: UIView = {
+  private(set) lazy var leftFlexibleTopBottomView: UIView = {
     let leftFlexibleTopBottomOrigin = CGPoint(
       x: type(of: self).innerPadding,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
@@ -104,7 +104,7 @@ final class AutoResizingMaskViewSource {
     return leftFlexibleTopBottomView
   }()
 
-  fileprivate(set) lazy var rightFlexibleTopBottomView: UIView = {
+  private(set) lazy var rightFlexibleTopBottomView: UIView = {
     let rightFlexibleTopBottomOrigin = CGPoint(
       x: self.flexibleWidthHeightView.bounds.width - type(of: self).innerPadding - type(of: self).leftRightWidth,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
@@ -118,7 +118,7 @@ final class AutoResizingMaskViewSource {
     return rightFlexibleTopBottomView
   }()
 
-  fileprivate func bakeViewWithFrame(_ frame: CGRect) -> UIView {
+  private func bakeViewWithFrame(_ frame: CGRect) -> UIView {
     let view = UIView(frame: frame)
     view.layer.cornerRadius = type(of: self).cornerRadius
     view.layer.borderWidth = type(of: self).borderWidth

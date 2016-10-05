@@ -31,23 +31,23 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 
   // MARK: Private
 
-  fileprivate static let anchorOffset = CGPoint(x: 0.25, y: 0.25)
-  fileprivate static let minimumItemHeight: CGFloat = 150
-  fileprivate static let numberOfItems = 2
+  private static let anchorOffset = CGPoint(x: 0.25, y: 0.25)
+  private static let minimumItemHeight: CGFloat = 150
+  private static let numberOfItems = 2
 
-  fileprivate var wasAnimated = false
+  private var wasAnimated = false
 
-  fileprivate lazy var quarterBoundsHeight: CGFloat = {
+  private lazy var quarterBoundsHeight: CGFloat = {
     return self.boundsChangeView.frame.height / 4
   }()
 
-  @IBOutlet fileprivate var boundsChangeView: HairlineBorderView!
-  @IBOutlet fileprivate var anchorPointView: HairlineBorderView!
-  @IBOutlet fileprivate var scrollViewItemHeight: NSLayoutConstraint!
-  @IBOutlet fileprivate var boundsChangeLabel: UILabel!
-  @IBOutlet fileprivate var anchorChangeLabel: UILabel!
+  @IBOutlet private var boundsChangeView: HairlineBorderView!
+  @IBOutlet private var anchorPointView: HairlineBorderView!
+  @IBOutlet private var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private var boundsChangeLabel: UILabel!
+  @IBOutlet private var anchorChangeLabel: UILabel!
 
-  fileprivate func animateIfNecessary() {
+  private func animateIfNecessary() {
     if self.wasAnimated {
       return
     }

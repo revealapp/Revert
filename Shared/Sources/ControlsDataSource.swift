@@ -5,7 +5,7 @@ import UIKit
 
 final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   typealias CellConfigurator = (CollectionViewCell) -> Void
-  fileprivate let collection: CollectableCollection<Item>
+  private let collection: CollectableCollection<Item>
 
   required init(collection: CollectableCollection<Item>) {
     self.collection = collection

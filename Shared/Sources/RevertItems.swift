@@ -23,18 +23,19 @@ enum RevertItems: String {
   }
 
   // MARK: Private
-  fileprivate static let fileExtension = "plist"
-  fileprivate static let subfolder = "Data"
 
-  fileprivate var invalidContentError: String {
+  private static let fileExtension = "plist"
+  private static let subfolder = "Data"
+
+  private var invalidContentError: String {
     return "Invalid content: \(self.rawValue).\(type(of: self).fileExtension)"
   }
 
-  fileprivate var invalidFileError: String {
+  private var invalidFileError: String {
     return "Invalid file: No common or platform-specific \(self.rawValue) files exist"
   }
 
-  fileprivate var URL: Foundation.URL {
+  private var URL: Foundation.URL {
     var URL: Foundation.URL? {
       let commonPath = "\(type(of: self).subfolder)/\(self.rawValue)"
       let platformPath = "\(commonPath)\(type(of: self).platformSuffix)"

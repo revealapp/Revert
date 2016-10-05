@@ -20,9 +20,9 @@ final class MapViewController: RevertViewController {
   fileprivate static let overlayFillColor = UIColor.revertTintColor().withAlphaComponent(0.5)
   fileprivate static let overlayStrokeColor = UIColor.revertDarkblueColor()
 
-  @IBOutlet fileprivate weak var mapView: MKMapView!
+  @IBOutlet private weak var mapView: MKMapView!
 
-  fileprivate func addAnnotations() {
+  private func addAnnotations() {
     let locations = RevertItems.mapLocations.data
     let annotations = locations.map(MapAnnotation.init)
     var coordinates = annotations.map { $0.coordinate }

@@ -13,9 +13,9 @@ final class CATextLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var textLayerView: CATextLayerView!
+  @IBOutlet private weak var textLayerView: CATextLayerView!
 
-  fileprivate static func configureTextLayer(_ textLayer: CATextLayer) {
+  private static func configureTextLayer(_ textLayer: CATextLayer) {
     textLayer.string = NSLocalizedString("I am a quite long CATextLayer string.", comment: "")
     textLayer.fontSize = 20
     textLayer.foregroundColor = UIColor.lightGray.cgColor
@@ -35,9 +35,9 @@ final class CAEmitterLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var emitterLayerView: CAEmitterLayerView!
+  @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
 
-  fileprivate static func configureEmitterLayer(_ emitterLayer: CAEmitterLayer) {
+  private static func configureEmitterLayer(_ emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
     emitterLayer.emitterZPosition = 5
     emitterLayer.emitterSize = CGSize(width: 1, height: 1)
@@ -49,7 +49,7 @@ final class CAEmitterLayerCell: CollectionViewCell {
     emitterLayer.emitterCells = [self.emitterCell]
   }
 
-  fileprivate static var emitterCell: CAEmitterCell {
+  private static var emitterCell: CAEmitterCell {
     let emitterCell = CAEmitterCell()
     emitterCell.scale = 0.05
     emitterCell.scaleRange = 0.02
@@ -74,9 +74,9 @@ final class CAShapeLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var shapeLayerView: CAShapeLayerView!
+  @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
 
-  fileprivate static func configureShapeLayer(_ shapeLayer: CAShapeLayer) {
+  private static func configureShapeLayer(_ shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
     let origin = CGPoint(x: (shapeLayer.bounds.width - minLength) / 2, y: 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
@@ -96,7 +96,7 @@ final class CAShapeLayerCell: CollectionViewCell {
 }
 
 final class CAScrollLayerCell: CollectionViewCell {
-  @IBOutlet fileprivate weak var scrollLayerView: CAScrollLayerView!
+  @IBOutlet private weak var scrollLayerView: CAScrollLayerView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -104,7 +104,7 @@ final class CAScrollLayerCell: CollectionViewCell {
     type(of: self).configureScrollLayer(self.scrollLayerView.scrollLayer)
   }
 
-  fileprivate static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
+  private static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
     scrollLayer.backgroundColor = UIColor.revertDarkblueColor().cgColor
     scrollLayer.cornerRadius = 5
@@ -121,9 +121,9 @@ final class CATiledLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var tiledLayerView: CATiledLayerView!
+  @IBOutlet private weak var tiledLayerView: CATiledLayerView!
 
-  fileprivate static func configureTiledLayer(_ tiledLayer: CATiledLayer) {
+  private static func configureTiledLayer(_ tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
     tiledLayer.levelsOfDetailBias = 10
     tiledLayer.tileSize = tiledLayer.bounds.size
@@ -143,9 +143,9 @@ final class CAGradientLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var gradientLayerView: CAGradientLayerView!
+  @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
 
-  fileprivate static func configureGradientLayer(_ gradientLayer: CAGradientLayer) {
+  private static func configureGradientLayer(_ gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
     gradientLayer.locations = [0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1]
     gradientLayer.startPoint = CGPoint(x: 0, y: 0)
@@ -177,9 +177,9 @@ final class CAReplicatorLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var replicatorLayerView: CAReplicatorLayerView!
+  @IBOutlet private weak var replicatorLayerView: CAReplicatorLayerView!
 
-  fileprivate static func configureReplicatorLayer(_ replicatorLayer: CAReplicatorLayer) {
+  private static func configureReplicatorLayer(_ replicatorLayer: CAReplicatorLayer) {
     let circleWidth: CGFloat = 20
     let circlePadding: CGFloat = 10
     let circleRect = CGRect(x: circlePadding / 2, y: replicatorLayer.bounds.midY - circleWidth / 2, width: circleWidth, height: circleWidth)
@@ -211,9 +211,9 @@ final class CAEAGLLayerCell: CollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var aegLayerView: CAEAGLLayerView!
+  @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
 
-  fileprivate static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
+  private static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1
     aeglLayer.borderColor = UIColor.revertLightBlackColor().cgColor

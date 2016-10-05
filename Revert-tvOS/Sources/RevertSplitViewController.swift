@@ -32,5 +32,5 @@ final class RevertSplitViewController: UISplitViewController {
   }
 
   // MARK: - Private
-  fileprivate var preferDetailViewFocus = false
+  private var preferDetailViewFocus = false
 }

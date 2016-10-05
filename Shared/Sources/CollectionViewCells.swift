@@ -30,13 +30,13 @@ class CollectionViewCell: UICollectionViewCell {
   // MARK: Private
 
   @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
-  @IBOutlet fileprivate(set) weak var subheadLabel: UILabel!
+  @IBOutlet private(set) weak var subheadLabel: UILabel!
 }
 
 class TextFieldControlCell: CollectionViewCell {
   @IBOutlet fileprivate weak var textField: UITextField!
 
-  @IBAction fileprivate func textFieldDidEndOnExit(_ sender: UITextField) {
+  @IBAction private func textFieldDidEndOnExit(_ sender: UITextField) {
     sender.resignFirstResponder()
   }
 }
@@ -62,7 +62,7 @@ class TextFieldControlCell: CollectionViewCell {
 
     // MARK: Private
 
-    fileprivate var textFieldInputView: UIDatePicker {
+    private var textFieldInputView: UIDatePicker {
       let picker = UIDatePicker()
       picker.datePickerMode = .date
       picker.addTarget(self, action: #selector(self.datePickerChanged(_:)), for: .valueChanged)
@@ -70,7 +70,7 @@ class TextFieldControlCell: CollectionViewCell {
       return picker
     }
 
-    fileprivate var textFieldInputAccessoryView: UIView {
+    private var textFieldInputAccessoryView: UIView {
       let size = CGSize(width: UIScreen.main.bounds.size.width, height: 44)
       let toolBar = UIToolbar(frame: CGRect(origin: .zero, size: size))
       let doneBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done alert title"), style: .done, target: self, action: #selector(self.doneButtonTapped(_:)))
@@ -103,6 +103,7 @@ class TextFieldControlCell: CollectionViewCell {
     }
 
     // MARK: Private
-    @IBOutlet fileprivate(set) weak var imageView: UIImageView!
+
+    @IBOutlet private(set) weak var imageView: UIImageView!
   }
 #endif

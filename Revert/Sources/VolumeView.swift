@@ -20,7 +20,7 @@ final class VolumeView: MPVolumeView {
 
   // MARK: Private
 
-  fileprivate static func recursiveRemoveAnimationsOnView(_ view: UIView) {
+  private static func recursiveRemoveAnimationsOnView(_ view: UIView) {
     view.layer.removeAllAnimations()
     view.subviews.forEach { self.recursiveRemoveAnimationsOnView($0) }
   }

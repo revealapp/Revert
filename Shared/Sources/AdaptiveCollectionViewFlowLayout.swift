@@ -18,15 +18,15 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
   // MARK: Private
 
-  fileprivate static let minimumColumnsForLayout = 2
-  fileprivate static let maximumColumnsForLayout = 3
-  fileprivate static let minimumCellWidth: CGFloat = 150
+  private static let minimumColumnsForLayout = 2
+  private static let maximumColumnsForLayout = 3
+  private static let minimumCellWidth: CGFloat = 150
 
-  fileprivate var itemWidth: CGFloat {
+  private var itemWidth: CGFloat {
     return self.itemWidthForNumberOfColumns(self.numberOfColumns)
   }
 
-  fileprivate var numberOfColumns: Int {
+  private var numberOfColumns: Int {
     if self.itemWidthForNumberOfColumns(type(of: self).maximumColumnsForLayout) >= type(of: self).minimumCellWidth {
       return type(of: self).maximumColumnsForLayout
     } else {
@@ -34,7 +34,7 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
   }
 
-  fileprivate func itemWidthForNumberOfColumns(_ numberOfColumns: Int) -> CGFloat {
+  private func itemWidthForNumberOfColumns(_ numberOfColumns: Int) -> CGFloat {
     guard let collectionView = self.collectionView else {
       return 0
     }

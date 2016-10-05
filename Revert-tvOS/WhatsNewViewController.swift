@@ -38,7 +38,7 @@ final class WhatsNewViewController: UIViewController {
 
   fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 
-  @IBOutlet fileprivate var collectionView: UICollectionView!
+  @IBOutlet private var collectionView: UICollectionView!
 }
 
 private extension WhatsNewViewController {

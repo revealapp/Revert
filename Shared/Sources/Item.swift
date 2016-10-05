@@ -23,7 +23,7 @@ struct Item: Collectable, Requirement {
 
   // MARK: Private
 
-  fileprivate enum Attributes: String {
+  private enum Attributes: String {
     case title = "title"
     case cellIdentifier = "cellIdentifier"
     case requiredClassName = "requiredClassName"

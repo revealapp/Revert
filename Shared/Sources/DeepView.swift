@@ -23,16 +23,16 @@ final class DeepView: UIView {
 
   // MARK: Private
 
-  fileprivate static let subviewSpacing: CGFloat = 5
+  private static let subviewSpacing: CGFloat = 5
 
-  fileprivate static func colorForIndex(_ index: Int) -> UIColor {
+  private static func colorForIndex(_ index: Int) -> UIColor {
     if index % 5 == 0 {
       return [UIColor.revertDarkblueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()][(index / 5) % 3]
     }
     return UIColor.white
   }
 
-  fileprivate static func constraintsForSubview(_ subview: UIView, constant: CGFloat, priority: UILayoutPriority) -> [NSLayoutConstraint] {
+  private static func constraintsForSubview(_ subview: UIView, constant: CGFloat, priority: UILayoutPriority) -> [NSLayoutConstraint] {
     let bindingViews = ["subview": subview]
     let horizontalConstraints = NSLayoutConstraint.constraints(
       withVisualFormat: "H:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
@@ -47,7 +47,7 @@ final class DeepView: UIView {
     return horizontalConstraints + verticalConstraints
   }
 
-  fileprivate static func updateSubviewsRecursively(_ view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
+  private static func updateSubviewsRecursively(_ view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
     if length > 2 * constant {
       // Enough space for subviews
       if view.subviews.count == 0 {
@@ -68,7 +68,7 @@ final class DeepView: UIView {
     }
   }
 
-  fileprivate func updateSubViews() {
+  private func updateSubViews() {
     let length = min(self.bounds.size.width, self.bounds.size.height)
     type(of: self).updateSubviewsRecursively(self, length: length, constant: type(of: self).subviewSpacing)
   }

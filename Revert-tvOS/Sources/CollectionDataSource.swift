@@ -52,8 +52,9 @@ final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell
   }
 
   // MARK: Private
-  fileprivate let unfilteredCollection: CollectableCollection<HomeItem>
-  fileprivate var collection: CollectableCollection<HomeItem>
-  fileprivate let configureCell: CellConfigurator
-  fileprivate let cellIdentifier: String
+
+  private let unfilteredCollection: CollectableCollection<HomeItem>
+  private var collection: CollectableCollection<HomeItem>
+  private let configureCell: CellConfigurator
+  private let cellIdentifier: String
 }

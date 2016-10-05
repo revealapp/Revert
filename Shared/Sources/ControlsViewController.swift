@@ -33,12 +33,13 @@ final class ControlsViewController: RevertCollectionViewController {
   }
 
   // MARK: Private
+
   #if os(iOS)
     fileprivate let keyboardHandler = KeyboardHandler()
   #endif
 
   fileprivate var collection: CollectableCollection<Item>?
-  fileprivate var dataSource: ControlsDataSource?
+  private var dataSource: ControlsDataSource?
 }
 
 #if os(iOS)

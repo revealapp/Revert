@@ -25,7 +25,7 @@ final class BarsViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var searchBar: UISearchBar!
-  @IBOutlet fileprivate weak var dismissContainerView: UIView!
-  @IBOutlet fileprivate weak var tabBar: UITabBar!
+  @IBOutlet private weak var searchBar: UISearchBar!
+  @IBOutlet private weak var dismissContainerView: UIView!
+  @IBOutlet private weak var tabBar: UITabBar!
 }

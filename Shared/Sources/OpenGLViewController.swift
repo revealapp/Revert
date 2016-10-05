@@ -48,8 +48,8 @@ final class OpenGLViewController: RevertGLKViewController {
 
   // MARK: Private
 
-  fileprivate let cube = RevealOpenGLCube()
-  fileprivate var glkView: GLKView {
+  private let cube = RevealOpenGLCube()
+  private var glkView: GLKView {
     return self.view as! GLKView
   }
 

@@ -31,36 +31,36 @@ final class WebViewController: RevertViewController {
 
   // MARK: Private
 
-  fileprivate enum WebViewType: Int {
+  private enum WebViewType: Int {
     case uiWebView = 0
     case wkWebView = 1
   }
 
-  fileprivate let request = URLRequest(url: Bundle.main.revealWebsiteURL)
-  fileprivate var currentWebView: UIView?
-  fileprivate var topConstraint: NSLayoutConstraint?
+  private let request = URLRequest(url: Bundle.main.revealWebsiteURL)
+  private var currentWebView: UIView?
+  private var topConstraint: NSLayoutConstraint?
 
-  fileprivate lazy var uiWebView: UIWebView = {
+  private lazy var uiWebView: UIWebView = {
     let webView = UIWebView()
     webView.delegate = self
     webView.loadRequest(self.request)
     return webView
   }()
 
-  fileprivate lazy var wkWebView: WKWebView = {
+  private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
     webView.load(self.request)
     return webView
   }()
 
-  @IBAction fileprivate func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+  @IBAction private func segmentedControlValueChanged(_ sender: UISegmentedControl) {
     let nextWebView = sender.selectedSegmentIndex == WebViewType.uiWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView?.removeFromSuperview()
     self.setupWebView(nextWebView)
   }
 
-  fileprivate func setupWebView(_ webView: UIView) {
+  private func setupWebView(_ webView: UIView) {
     webView.translatesAutoresizingMaskIntoConstraints = false
 
     let leftConstraint = NSLayoutConstraint(item: webView, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 0)

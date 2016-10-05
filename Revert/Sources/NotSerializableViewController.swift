@@ -44,13 +44,13 @@ final class NonSerializableViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet fileprivate var progressView: UIProgressView!
-  @IBOutlet fileprivate var subView: UIView!
-  @IBOutlet fileprivate var slider: UISlider!
-  @IBOutlet fileprivate var stepper: UIStepper!
-  @IBOutlet fileprivate var labelTrailingConstraint: NSLayoutConstraint!
+  @IBOutlet private var progressView: UIProgressView!
+  @IBOutlet private var subView: UIView!
+  @IBOutlet private var slider: UISlider!
+  @IBOutlet private var stepper: UIStepper!
+  @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!
 
-  fileprivate func makeSliderUnserializable() {
+  private func makeSliderUnserializable() {
     // inf
     self.slider.maximumValue = 1 / 0
 

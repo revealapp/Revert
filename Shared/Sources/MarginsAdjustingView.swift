@@ -24,9 +24,10 @@ class MarginsAdjustingView: UIView {
     }
 
     // MARK: Private
-    @IBOutlet fileprivate weak var slider: UISlider!
 
-    @IBAction fileprivate func sliderValueChanged(_ sender: UISlider) {
+    @IBOutlet private weak var slider: UISlider!
+
+    @IBAction private func sliderValueChanged(_ sender: UISlider) {
       let margin = CGFloat(sender.value)
       self.marginsDelegate?.didUpdateMargins(UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
     }
@@ -50,14 +51,15 @@ class MarginsAdjustingView: UIView {
     }
 
     // MARK: Private
-    fileprivate var margin = MarginValue()
-    fileprivate var preferredFocusedButton: UIView?
 
-    @IBOutlet fileprivate var incrementButton: UIButton!
-    @IBOutlet fileprivate var decrementButton: UIButton!
-    @IBOutlet fileprivate var progressView: UIProgressView!
+    private var margin = MarginValue()
+    private var preferredFocusedButton: UIView?
 
-    @IBAction fileprivate func buttonPressed(_ sender: UIButton) {
+    @IBOutlet private var incrementButton: UIButton!
+    @IBOutlet private var decrementButton: UIButton!
+    @IBOutlet private var progressView: UIProgressView!
+
+    @IBAction private func buttonPressed(_ sender: UIButton) {
       self.margin.changeValue(sender == self.incrementButton ? .increment : .decrement)
 
       self.marginsDelegate?.didUpdateMargins(self.margin.layoutMarginsForCurrentValue)
@@ -65,7 +67,7 @@ class MarginsAdjustingView: UIView {
       self.updateStepButtonState(sender)
     }
 
-    fileprivate func updateStepButtonState(_ sender: UIButton) {
+    private func updateStepButtonState(_ sender: UIButton) {
       if sender == self.incrementButton {
         self.decrementButton.isEnabled = true
 
@@ -81,7 +83,7 @@ class MarginsAdjustingView: UIView {
       }
     }
 
-    fileprivate func disableStepButton(_ button: UIButton) {
+    private func disableStepButton(_ button: UIButton) {
       button.isEnabled = false
 
       if button == self.incrementButton {
@@ -122,17 +124,18 @@ class MarginsAdjustingView: UIView {
     }
 
     // MARK: Private
-    fileprivate static let maxValue: CGFloat = 150
-    fileprivate static let minValue: CGFloat = 0
-    fileprivate static let delta: CGFloat = 10
 
-    fileprivate(set) var value: CGFloat = 0 {
+    private static let maxValue: CGFloat = 150
+    private static let minValue: CGFloat = 0
+    private static let delta: CGFloat = 10
+
+    private(set) var value: CGFloat = 0 {
       didSet {
         self.progress.completedUnitCount = Int64(self.value)
       }
     }
 
-    fileprivate static func cappedMarginForMargin(_ margin: CGFloat, delta: CGFloat) -> CGFloat {
+    private static func cappedMarginForMargin(_ margin: CGFloat, delta: CGFloat) -> CGFloat {
       let margin = margin + delta
       return margin < self.minValue ? self.minValue : min(margin, self.maxValue)
     }

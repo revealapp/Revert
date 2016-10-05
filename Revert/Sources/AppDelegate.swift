@@ -20,9 +20,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: Private
 
-  fileprivate var splitViewControllerDelegate = SplitViewControllerDelegate()
+  private var splitViewControllerDelegate = SplitViewControllerDelegate()
 
-  fileprivate static func configureAppearance() {
+  private static func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
     UINavigationBar.appearance().barTintColor = UIColor.revertTintColor()
   }

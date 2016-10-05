@@ -20,5 +20,6 @@ final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate
   }
 
   // MARK: Private
-  fileprivate var didShowDetailViewController = false
+
+  private var didShowDetailViewController = false
 }

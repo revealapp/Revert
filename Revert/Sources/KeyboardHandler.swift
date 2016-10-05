@@ -17,12 +17,12 @@ final class KeyboardHandler: NSObject {
     self.unregisterNotifications()
   }
 
-  fileprivate func registerNotifications() {
+  private func registerNotifications() {
     NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
   }
 
-  fileprivate func unregisterNotifications() {
+  private func unregisterNotifications() {
     NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
   }

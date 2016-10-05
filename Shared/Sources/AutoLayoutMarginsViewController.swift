@@ -28,17 +28,18 @@ final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjust
   }
 
   // MARK: Private
-  fileprivate static let interSquareSpacing: CGFloat = 20
 
-  fileprivate var lastUpdateSquaresWidthSize: CGSize?
+  private static let interSquareSpacing: CGFloat = 20
 
-  @IBOutlet fileprivate var centerViewWidthConstraint: NSLayoutConstraint!
-  @IBOutlet fileprivate var containerViewBottomConstraint: NSLayoutConstraint!
+  private var lastUpdateSquaresWidthSize: CGSize?
+
   @IBOutlet fileprivate var marginsAdjustingView: MarginsAdjustingView!
-  @IBOutlet fileprivate var centerView: UIView!
-  @IBOutlet fileprivate var containerView: UIView!
+  @IBOutlet private var centerViewWidthConstraint: NSLayoutConstraint!
+  @IBOutlet private var containerViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet private var centerView: UIView!
+  @IBOutlet private var containerView: UIView!
 
-  fileprivate func updateSquareWidths() {
+  private func updateSquareWidths() {
     let minDistance = min(self.containerView.bounds.width, self.containerView.bounds.height)
     let centerWidth = (minDistance - (4 * type(of: self).interSquareSpacing)) / 3
     self.centerViewWidthConstraint.constant = centerWidth

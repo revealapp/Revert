@@ -27,11 +27,11 @@ final class InfoViewController: UIViewController, SettableHomeItem {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var imageView: UIImageView!
-  @IBOutlet fileprivate weak var webView: UIWebView!
-  @IBOutlet fileprivate weak var titleLabel: UILabel!
+  @IBOutlet private weak var imageView: UIImageView!
+  @IBOutlet private weak var webView: UIWebView!
+  @IBOutlet private weak var titleLabel: UILabel!
 
-  @IBAction fileprivate func dismiss(_ sender: UIBarButtonItem) {
+  @IBAction private func dismiss(_ sender: UIBarButtonItem) {
     self.presentingViewController?.dismiss(animated: true, completion: nil)
   }
 }

@@ -59,12 +59,12 @@ final class HomeViewController: UITableViewController {
   // MARK: Private
 
   fileprivate var collection = CollectableCollection<HomeItem>(items: .home)
-  fileprivate var dataSource: DataSource<HomeItem, HomeCell>
+  private var dataSource: DataSource<HomeItem, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
   }
 
-  fileprivate func deselectSelectedRowIfNeeded() {
+  private func deselectSelectedRowIfNeeded() {
     // Deselects the selected cell if the split view controller is collapsed
     guard self.isSplitViewControllerCollapsed else {
       return

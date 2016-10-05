@@ -52,8 +52,8 @@ final class RevealOpenGLCube {
   fileprivate var indexBuffer: GLuint = 0
   fileprivate var vertexArray: GLuint = 0
   fileprivate let effect = GLKBaseEffect()
-  fileprivate var rotation: Float = 0
-  fileprivate var computedModelViewMatrix: GLKMatrix4 {
+  private var rotation: Float = 0
+  private var computedModelViewMatrix: GLKMatrix4 {
     var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
     matrix = GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(25), 1, 0, 0)
     return GLKMatrix4Rotate(matrix, GLKMathDegreesToRadians(self.rotation), 0, 1, 0)
