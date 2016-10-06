@@ -4,6 +4,7 @@
 import UIKit
 
 final class BarsViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -18,7 +19,7 @@ final class BarsViewController: RevertViewController {
     self.tabBar.selectedItem = firstTabBarItem
   }
 
-  func viewTapped(gestureRecogniser: UITapGestureRecognizer) {
+  func viewTapped(_ gestureRecogniser: UITapGestureRecognizer) {
     self.searchBar.resignFirstResponder()
   }
 

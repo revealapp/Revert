@@ -4,13 +4,14 @@
 import UIKit
 
 final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
-  override func prepareLayout() {
-    super.prepareLayout()
+
+  override func prepare() {
+    super.prepare()
 
     self.itemSize = self.computedItemSize
   }
 
-  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+  override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return newBounds.size != self.collectionView?.bounds.size
   }
 
@@ -27,7 +28,7 @@ final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
   }
 
   private var computedItemSize: CGSize {
-    let itemWidth = floor((self.availableWidth - self.minimumInteritemSpacing * (CGFloat(self.dynamicType.noOfItemsInRow) - 1)) / CGFloat(self.dynamicType.noOfItemsInRow))
+    let itemWidth = floor((self.availableWidth - self.minimumInteritemSpacing * (CGFloat(type(of: self).noOfItemsInRow) - 1)) / CGFloat(type(of: self).noOfItemsInRow))
     return CGSize(width: itemWidth, height: self.itemSize.height)
   }
 }

@@ -4,41 +4,51 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
+    self.labelTrailingConstraint.constant = CGFloat.leastNormalMagnitude
+
+    self.stepper.minimumValue = -DBL_MAX
+    self.stepper.maximumValue = DBL_MAX
+
+    self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), for: .touchUpInside)
+    self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), for: .touchUpOutside)
   }
 
-  func warnBeforeCrash(sender: UISlider?) {
+  func warnBeforeCrash(_ sender: UISlider?) {
     let alertTitle = NSLocalizedString("Modifying the UISlider again will cause the app to crash", comment: "Unserializable slider title")
     let alertMessage = NSLocalizedString("This is intentional, and demonstrates what happens when a property is not serializable.", comment: "Unserializable slider message")
 
     let alertViewController = UIAlertController(
       title: alertTitle,
       message: alertMessage,
-      preferredStyle: .Alert
+      preferredStyle: .alert
     )
-    
+
     let continueAction = UIAlertAction(
       title: NSLocalizedString("Ok", comment: "Alert Ok button title"),
-      style: .Default) { [weak self] _ in
-        self?.makeSliderUnserializable()
-        
-        // Only show the alert once
-        self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), forControlEvents: .TouchUpInside)
+      style: .default) { [weak self] _ in
+      self?.makeSliderUnserializable()
+
+      // Only show the alert once
+      self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpInside)
+      self?.slider.removeTarget(self, action: #selector(self?.warnBeforeCrash(_:)), for: .touchUpOutside)
     }
-    
+
     alertViewController.addAction(continueAction)
-    
-    self.presentViewController(alertViewController, animated: true, completion: nil)
+
+    self.present(alertViewController, animated: true, completion: nil)
   }
 
   // MARK: Private
 
-  @IBOutlet private weak var progressView: UIProgressView!
-  @IBOutlet private weak var subView: UIView!
-  @IBOutlet private weak var slider: UISlider!
+  @IBOutlet private var progressView: UIProgressView!
+  @IBOutlet private var subView: UIView!
+  @IBOutlet private var slider: UISlider!
+  @IBOutlet private var stepper: UIStepper!
+  @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!
 
   private func makeSliderUnserializable() {
     // inf

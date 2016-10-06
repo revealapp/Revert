@@ -1,0 +1,102 @@
+//
+// Project-Shared.xcconfig
+
+// Use the latest Swift version
+
+SWIFT_VERSION = 3.0
+
+// Always Search User Paths
+// 
+// If enabled both #include <header.h>-style and #include "header.h"-style directives
+// will search the paths in "User Header Search Paths" before "Header Search Paths", with
+// the consequence that user headers (such as your own String.h header) would have
+// precedence over system headers when using #include <header.h>. This is done using the
+// -iquote flag for the paths provided in "User Header Search Paths". If disabled and
+// your compiler fully supports separate user paths, user headers will only be accessible
+// with #include "header.h"-style preprocessor directives.
+// 
+// For backwards compatibility reasons, this setting is enabled by default, but disabling
+// it is strongly recommended.
+
+ALWAYS_SEARCH_USER_PATHS = NO
+
+
+CLANG_CXX_LIBRARY = libc++
+
+
+CLANG_ENABLE_MODULES = YES
+
+
+CLANG_ENABLE_OBJC_ARC = YES
+
+
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+
+
+CLANG_WARN_BOOL_CONVERSION = YES
+
+
+CLANG_WARN_CONSTANT_CONVERSION = YES
+
+
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+
+
+CLANG_WARN_EMPTY_BODY = YES
+
+
+CLANG_WARN_ENUM_CONVERSION = YES
+
+
+CLANG_WARN_INT_CONVERSION = YES
+
+
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
+
+
+CLANG_WARN_UNREACHABLE_CODE = YES
+
+
+// Code Signing Identity
+// 
+// The name ("common name") of a valid code-signing certificate in a keychain within your
+// keychain path. A missing or invalid certificate will cause a build error.
+
+CODE_SIGN_IDENTITY = iPhone Developer
+
+PROVISIONING_PROFILE_SPECIFIER =
+
+DEVELOPMENT_TEAM =
+
+// Strip Debug Symbols During Copy
+// 
+// Activating this setting causes binary files which are copied during the build (e.g.,
+// in a Copy Bundle Resources or Copy Files build phase) to be stripped of debugging
+// symbols.  It does not cause the linked product of a target to be stripped (use Strip
+// Linked Product for that).
+
+COPY_PHASE_STRIP = NO
+
+
+ENABLE_STRICT_OBJC_MSGSEND = YES
+
+
+GCC_C_LANGUAGE_STANDARD = gnu99
+
+
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES
+
+
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
+
+
+GCC_WARN_UNDECLARED_SELECTOR = YES
+
+
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE
+
+
+GCC_WARN_UNUSED_FUNCTION = YES
+
+
+GCC_WARN_UNUSED_VARIABLE = YES

@@ -9,159 +9,251 @@
 /* Begin PBXBuildFile section */
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
-		9A0416D21B03048B00477E60 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416D11B03048B00477E60 /* DeepView.swift */; };
-		9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
 		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
-		9A1D66CC1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */; };
-		9A28739A1AD76863006466BE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873991AD76863006466BE /* Country.swift */; };
-		9A28739F1AD76EA2006466BE /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28739E1AD76EA2006466BE /* CollectableCollection.swift */; };
-		9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */; };
-		9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2873A81AD7AA1D006466BE /* AlertViewController.swift */; };
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
-		9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24031AEE110C007B17CE /* StressTestViewController.swift */; };
-		9A2F943F1B12A760007E51B1 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */; };
-		9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */; };
-		9A3B4BC21B0230B300F6117D /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4BC11B0230B300F6117D /* RevertViewController.swift */; };
-		9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */; };
-		9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */; };
-		9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */; };
-		9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */; };
-		9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A535C481ADB563B0082778A /* ControlsViewController.swift */; };
-		9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */; };
-		9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */; };
-		9A63DFFF1BD6811B006D0A82 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63DFFE1BD6811B006D0A82 /* DataSource.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
-		9A6C75031BDE29DE00534680 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75011BDE29DE00534680 /* Data */; };
 		9A6C75041BDE29DE00534680 /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75021BDE29DE00534680 /* Info */; };
-		9A7345C61BB2B25700768DAA /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */; };
-		9A7345C81BB2BA4D00768DAA /* RevertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7345C71BB2BA4D00768DAA /* RevertItems.swift */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
-		9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */; };
-		9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */; };
-		9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94E3F51AD63F160005BA44 /* HomeItem.swift */; };
-		9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */; };
-		9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */; };
-		9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */; };
-		9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */; };
-		9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */; };
-		9AA02A921B0C235D000750E5 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */; };
-		9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */; };
-		9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB0D0E1AEDCBC700F74ABB /* Static.swift */; };
-		9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */; };
+		9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
-		9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */; };
-		9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */; };
-		9ACFC5071BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */; };
-		9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
-		9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */; };
-		9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE300211AEF09AA00E81377 /* LayerViews.swift */; };
-		9AE511761BB2F51C0087A68D /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE511751BB2F51C0087A68D /* Collectable.swift */; };
-		9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */; };
-		9AE87D451AE7401900213E7D /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */; };
-		9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AA1ADB77BE0033DAA2 /* Item.swift */; };
-		9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
-		9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */; };
 		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
 		B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55841181BD496AB009725C5 /* NSBundle+Revert.swift */; };
 		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; };
-		B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59998EB1BC3848D002FE92C /* Requirement.swift */; };
-		B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
+		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
+		BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Images.xcassets */; };
+		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */; };
+		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
+		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
+		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
+		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
+		BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
+		BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
+		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
+		BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */; };
+		BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */; };
+		BB9F768A1CB61F45006EA285 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */; };
+		BB9F768E1CB61F57006EA285 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */; };
+		BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */; };
+		BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */; };
+		BB9F76921CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
+		BB9F76931CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
+		BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */; };
+		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
+		BBE51C831CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
+		BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
+		BBE51C851CB737C1006638B8 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C821CB737C1006638B8 /* DataSource.swift */; };
+		BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C821CB737C1006638B8 /* DataSource.swift */; };
+		BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */; };
+		BBE51C8D1CB737FE006638B8 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */; };
+		BBE51C8E1CB737FE006638B8 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */; };
+		BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */; };
+		BBE51C901CB737FE006638B8 /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */; };
+		BBE51C911CB737FE006638B8 /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */; };
+		BBE51C921CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */; };
+		BBE51C931CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */; };
+		BBE51C961CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */; };
+		BBE51C971CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */; };
+		BBE51C9F1CB7384D006638B8 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C991CB7384D006638B8 /* HairlineConstraint.swift */; };
+		BBE51CA01CB7384D006638B8 /* HairlineConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C991CB7384D006638B8 /* HairlineConstraint.swift */; };
+		BBE51CA11CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9A1CB7384D006638B8 /* RevealOpenGLCube.swift */; };
+		BBE51CA21CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9A1CB7384D006638B8 /* RevealOpenGLCube.swift */; };
+		BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9B1CB7384D006638B8 /* RevertItems.swift */; };
+		BBE51CA41CB7384D006638B8 /* RevertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9B1CB7384D006638B8 /* RevertItems.swift */; };
+		BBE51CA51CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */; };
+		BBE51CA61CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */; };
+		BBE51CA71CB7384D006638B8 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9D1CB7384D006638B8 /* Static.swift */; };
+		BBE51CA81CB7384D006638B8 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9D1CB7384D006638B8 /* Static.swift */; };
+		BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
+		BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
+		BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
+		BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
+		BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
+		BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
+		BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
+		BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
+		BBE51CBB1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
+		BBE51CBC1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
+		BBE51CBF1CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
+		BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
+		BBE51CC11CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
+		BBE51CC21CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
+		BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
+		BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
+		BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
+		BBE51CD51CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
+		BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */; };
+		BBE51CD71CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */; };
+		BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */; };
+		BBE51CD91CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */; };
+		BBE51CDA1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */; };
+		BBE51CDB1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */; };
+		BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC91CB73929006638B8 /* ControlsViewController.swift */; };
+		BBE51CDD1CB73929006638B8 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC91CB73929006638B8 /* ControlsViewController.swift */; };
+		BBE51CE01CB73929006638B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCB1CB73929006638B8 /* MapViewController.swift */; };
+		BBE51CE11CB73929006638B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCB1CB73929006638B8 /* MapViewController.swift */; };
+		BBE51CE21CB73929006638B8 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCC1CB73929006638B8 /* OpenGLViewController.swift */; };
+		BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCC1CB73929006638B8 /* OpenGLViewController.swift */; };
+		BBE51CE41CB73929006638B8 /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCD1CB73929006638B8 /* RevertViewController.swift */; };
+		BBE51CE51CB73929006638B8 /* RevertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCD1CB73929006638B8 /* RevertViewController.swift */; };
+		BBE51CE61CB73929006638B8 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCE1CB73929006638B8 /* ScrollViewController.swift */; };
+		BBE51CE71CB73929006638B8 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCE1CB73929006638B8 /* ScrollViewController.swift */; };
+		BBE51CE81CB73929006638B8 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCF1CB73929006638B8 /* SpriteKitViewController.swift */; };
+		BBE51CE91CB73929006638B8 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CCF1CB73929006638B8 /* SpriteKitViewController.swift */; };
+		BBE51CEA1CB73929006638B8 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD01CB73929006638B8 /* StackViewController.swift */; };
+		BBE51CEB1CB73929006638B8 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD01CB73929006638B8 /* StackViewController.swift */; };
+		BBE51CEC1CB73929006638B8 /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD11CB73929006638B8 /* StressTestViewController.swift */; };
+		BBE51CED1CB73929006638B8 /* StressTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD11CB73929006638B8 /* StressTestViewController.swift */; };
+		BBE51CEE1CB73929006638B8 /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */; };
+		BBE51CEF1CB73929006638B8 /* TransformLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */; };
+		BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */; };
+		BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */; };
+		BBE51CF41CB73955006638B8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF21CB73955006638B8 /* CollectionViewController.swift */; };
+		BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF21CB73955006638B8 /* CollectionViewController.swift */; };
+		BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF31CB73955006638B8 /* CountriesViewController.swift */; };
+		BBE51CF71CB73955006638B8 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF31CB73955006638B8 /* CountriesViewController.swift */; };
+		BBE51D031CB73996006638B8 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF91CB73996006638B8 /* AlignmentInsetView.swift */; };
+		BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CF91CB73996006638B8 /* AlignmentInsetView.swift */; };
+		BBE51D051CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFA1CB73996006638B8 /* AutoResizingMaskViewSource.swift */; };
+		BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFA1CB73996006638B8 /* AutoResizingMaskViewSource.swift */; };
+		BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFB1CB73996006638B8 /* CollectionViewCells.swift */; };
+		BBE51D081CB73996006638B8 /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFB1CB73996006638B8 /* CollectionViewCells.swift */; };
+		BBE51D091CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFC1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift */; };
+		BBE51D0A1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFC1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift */; };
+		BBE51D0B1CB73996006638B8 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFD1CB73996006638B8 /* DeepView.swift */; };
+		BBE51D0C1CB73996006638B8 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFD1CB73996006638B8 /* DeepView.swift */; };
+		BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFE1CB73996006638B8 /* HairlineBorderView.swift */; };
+		BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFE1CB73996006638B8 /* HairlineBorderView.swift */; };
+		BBE51D0F1CB73996006638B8 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFF1CB73996006638B8 /* LayerPropertiesCells.swift */; };
+		BBE51D101CB73996006638B8 /* LayerPropertiesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CFF1CB73996006638B8 /* LayerPropertiesCells.swift */; };
+		BBE51D111CB73996006638B8 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D001CB73996006638B8 /* LayerViews.swift */; };
+		BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D001CB73996006638B8 /* LayerViews.swift */; };
+		BBE51D131CB73996006638B8 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D011CB73996006638B8 /* MapAnnotationView.swift */; };
+		BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D011CB73996006638B8 /* MapAnnotationView.swift */; };
+		BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
+		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
+		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		9A0416D11B03048B00477E60 /* DeepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepView.swift; path = Revert/Sources/DeepView.swift; sourceTree = "<group>"; };
-		9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Revert/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomIntrinsicContentSizeView.swift; path = Revert/Sources/CustomIntrinsicContentSizeView.swift; sourceTree = "<group>"; };
-		9A2873991AD76863006466BE /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Revert/Sources/Country.swift; sourceTree = "<group>"; };
-		9A28739E1AD76EA2006466BE /* CollectableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollection.swift; path = Revert/Sources/CollectableCollection.swift; sourceTree = "<group>"; };
-		9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Revert/Sources/ScrollViewController.swift; sourceTree = "<group>"; };
-		9A2873A81AD7AA1D006466BE /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Revert/Sources/AlertViewController.swift; sourceTree = "<group>"; };
 		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = Revert/Sources/ModalViewController.swift; sourceTree = "<group>"; };
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
-		9A2C24031AEE110C007B17CE /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Revert/Sources/StressTestViewController.swift; sourceTree = "<group>"; };
-		9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Revert/Sources/CollectableGroup.swift; sourceTree = "<group>"; };
-		9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Revert/Sources/HairlineConstraint.swift; sourceTree = "<group>"; };
-		9A3B4BC11B0230B300F6117D /* RevertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertViewController.swift; path = Revert/Sources/RevertViewController.swift; sourceTree = "<group>"; };
-		9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Revert/Sources/AutoResizingMaskViewController.swift; sourceTree = "<group>"; };
-		9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineBorderView.swift; path = Revert/Sources/HairlineBorderView.swift; sourceTree = "<group>"; };
-		9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlignmentInsetView.swift; path = Revert/Sources/AlignmentInsetView.swift; sourceTree = "<group>"; };
-		9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Revert/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = "<group>"; };
-		9A535C481ADB563B0082778A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Revert/Sources/ControlsViewController.swift; sourceTree = "<group>"; };
-		9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealOpenGLCube.swift; path = Revert/Sources/RevealOpenGLCube.swift; sourceTree = "<group>"; };
-		9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Revert/Sources/SplitViewControllerDelegate.swift; sourceTree = "<group>"; };
-		9A63DFFE1BD6811B006D0A82 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Revert/Sources/DataSource.swift; sourceTree = "<group>"; };
-		9A6850B81AD4A20E00ACCE29 /* Revert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6850C61AD4A20E00ACCE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A6C74FF1BDE297800534680 /* INFO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = INFO.md; sourceTree = SOURCE_ROOT; };
-		9A6C75011BDE29DE00534680 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Resources/Data; sourceTree = "<group>"; };
 		9A6C75021BDE29DE00534680 /* Info */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Info; path = Resources/Info; sourceTree = "<group>"; };
-		9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboardSegue+Revert.swift"; path = "Revert/Sources/UIStoryboardSegue+Revert.swift"; sourceTree = "<group>"; };
-		9A7345C71BB2BA4D00768DAA /* RevertItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertItems.swift; path = Revert/Sources/RevertItems.swift; sourceTree = "<group>"; };
 		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHandler.swift; path = Revert/Sources/KeyboardHandler.swift; sourceTree = "<group>"; };
-		9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Revert/Sources/MapAnnotationView.swift; sourceTree = "<group>"; };
-		9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Revert/Sources/TableViewCells.swift; sourceTree = "<group>"; };
-		9A94E3F51AD63F160005BA44 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Revert/Sources/HomeItem.swift; sourceTree = "<group>"; };
-		9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Debug.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Release.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
-		9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Revert/Sources/ExampleAlerts.swift; sourceTree = "<group>"; };
-		9A9E6B4D1B0CBB0700A22270 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Revert/Sources/Cube.m; sourceTree = "<group>"; };
-		9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Revert/Sources/StoryboardIdentifiers.swift; sourceTree = "<group>"; };
-		9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Revert/Sources/CountriesViewController.swift; sourceTree = "<group>"; };
-		9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Revert/Sources/UIColor+Revert.swift"; sourceTree = "<group>"; };
-		9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Revert/Sources/MapViewController.swift; sourceTree = "<group>"; };
-		9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenGLViewController.swift; path = Revert/Sources/OpenGLViewController.swift; sourceTree = "<group>"; };
-		9AA02A931B0C5C50000750E5 /* Cube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Revert/Sources/Cube.h; sourceTree = "<group>"; };
-		9AA02A941B0C5C83000750E5 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Revert/Sources/Revert-Bridging-Header.h"; sourceTree = "<group>"; };
-		9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Revert/Sources/AutoLayoutMarginsViewController.swift; sourceTree = "<group>"; };
-		9AAB0D0E1AEDCBC700F74ABB /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Revert/Sources/Static.swift; sourceTree = "<group>"; };
-		9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Revert/Sources/CALayer+Revert.swift"; sourceTree = "<group>"; };
+		9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Shared.xcconfig"; sourceTree = "<group>"; };
 		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
-		9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
-		9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Revert/Sources/CollectionViewController.swift; sourceTree = "<group>"; };
-		9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Revert/Sources/AutoResizingMaskViewSource.swift; sourceTree = "<group>"; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
 		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
-		9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Revert/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
 		9AE252501B18211A002B596C /* InfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoBuilder.swift; path = Revert/Sources/InfoBuilder.swift; sourceTree = "<group>"; };
-		9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Revert/Sources/LayerPropertiesCells.swift; sourceTree = "<group>"; };
-		9AE300211AEF09AA00E81377 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Revert/Sources/LayerViews.swift; sourceTree = "<group>"; };
-		9AE511751BB2F51C0087A68D /* Collectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collectable.swift; path = Revert/Sources/Collectable.swift; sourceTree = "<group>"; };
-		9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformViewsViewController.swift; path = Revert/Sources/TransformViewsViewController.swift; sourceTree = "<group>"; };
-		9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformLayersViewController.swift; path = Revert/Sources/TransformLayersViewController.swift; sourceTree = "<group>"; };
-		9AEE22AA1ADB77BE0033DAA2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Revert/Sources/Item.swift; sourceTree = "<group>"; };
-		9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCells.swift; path = Revert/Sources/CollectionViewCells.swift; sourceTree = "<group>"; };
 		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
-		9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Revert/Sources/SpriteKitViewController.swift; sourceTree = "<group>"; };
 		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
 		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualRowBasicCollectionViewFlowLayout.swift; path = Revert/Sources/DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
 		B55841181BD496AB009725C5 /* NSBundle+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSBundle+Revert.swift"; path = "Revert/Sources/NSBundle+Revert.swift"; sourceTree = "<group>"; };
 		B59998E71BC36092002FE92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
-		B59998EB1BC3848D002FE92C /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Revert/Sources/Requirement.swift; sourceTree = "<group>"; };
-		B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Revert/Sources/StackViewController.swift; sourceTree = "<group>"; };
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
+		BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB2720551C9B8E44002E53EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+tvOSInsets.swift"; path = "Sources/UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
+		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Person.swift; sourceTree = "<group>"; };
+		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
+		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Sources/HomeViewController.swift; sourceTree = "<group>"; };
+		BB735B451C9FD0490092FA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Shared/Assets.xcassets; sourceTree = "<group>"; };
+		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
+		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
+		BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleLegacyAlerts.swift; path = Revert/Sources/ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
+		BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionDataSource.swift; path = Sources/CollectionDataSource.swift; sourceTree = "<group>"; };
+		BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertFocusableTableView.swift; path = Sources/RevertFocusableTableView.swift; sourceTree = "<group>"; };
+		BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewController.swift; path = Sources/HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
+		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertSplitViewController.swift; path = Sources/RevertSplitViewController.swift; sourceTree = "<group>"; };
+		BB9F76911CB628C4006EA285 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Shared/Resources/Data; sourceTree = "<group>"; };
+		BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewViewController.swift; sourceTree = "<group>"; };
+		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-Shared.xcconfig"; path = "Shared/Configurations/Revert-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Debug.xcconfig"; path = "Shared/Configurations/Project-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Release.xcconfig"; path = "Shared/Configurations/Project-Release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Shared.xcconfig"; path = "Shared/Configurations/Project-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Shared/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
+		BBE51C821CB737C1006638B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Shared/Sources/DataSource.swift; sourceTree = "<group>"; };
+		BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Shared/Sources/CALayer+Revert.swift"; sourceTree = SOURCE_ROOT; };
+		BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Shared/Sources/ExampleAlerts.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Shared/Sources/UIColor+Revert.swift"; sourceTree = SOURCE_ROOT; };
+		BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboardSegue+Revert.swift"; path = "Shared/Sources/UIStoryboardSegue+Revert.swift"; sourceTree = SOURCE_ROOT; };
+		BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Shared/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C991CB7384D006638B8 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Shared/Sources/HairlineConstraint.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C9A1CB7384D006638B8 /* RevealOpenGLCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealOpenGLCube.swift; path = Shared/Sources/RevealOpenGLCube.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C9B1CB7384D006638B8 /* RevertItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertItems.swift; path = Shared/Sources/RevertItems.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Shared/Sources/SplitViewControllerDelegate.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C9D1CB7384D006638B8 /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Shared/Sources/Static.swift; sourceTree = SOURCE_ROOT; };
+		BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Shared/Sources/StoryboardIdentifiers.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CAC1CB73898006638B8 /* Collectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collectable.swift; path = Shared/Sources/Collectable.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollection.swift; path = Shared/Sources/CollectableCollection.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Shared/Sources/CollectableGroup.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CAF1CB73898006638B8 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Shared/Sources/Country.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CB01CB73898006638B8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Shared/Sources/Cube.h; sourceTree = SOURCE_ROOT; };
+		BBE51CB11CB73898006638B8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Shared/Sources/Cube.m; sourceTree = SOURCE_ROOT; };
+		BBE51CB21CB73898006638B8 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Shared/Sources/HomeItem.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CB31CB73898006638B8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Shared/Sources/Item.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CB41CB73898006638B8 /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Shared/Sources/Requirement.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CC51CB73929006638B8 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Shared/Sources/AlertViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Shared/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Shared/Sources/AutoLayoutMarginsViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewController.swift; path = Shared/Sources/AutoResizingMaskViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CC91CB73929006638B8 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsViewController.swift; path = Shared/Sources/ControlsViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CCB1CB73929006638B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Shared/Sources/MapViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CCC1CB73929006638B8 /* OpenGLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenGLViewController.swift; path = Shared/Sources/OpenGLViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CCD1CB73929006638B8 /* RevertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertViewController.swift; path = Shared/Sources/RevertViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CCE1CB73929006638B8 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Shared/Sources/ScrollViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CCF1CB73929006638B8 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteKitViewController.swift; path = Shared/Sources/SpriteKitViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CD01CB73929006638B8 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StackViewController.swift; path = Shared/Sources/StackViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CD11CB73929006638B8 /* StressTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StressTestViewController.swift; path = Shared/Sources/StressTestViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformLayersViewController.swift; path = Shared/Sources/TransformLayersViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransformViewsViewController.swift; path = Shared/Sources/TransformViewsViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CF21CB73955006638B8 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Shared/Sources/CollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CF31CB73955006638B8 /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Shared/Sources/CountriesViewController.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CF91CB73996006638B8 /* AlignmentInsetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlignmentInsetView.swift; path = Shared/Sources/AlignmentInsetView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFA1CB73996006638B8 /* AutoResizingMaskViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoResizingMaskViewSource.swift; path = Shared/Sources/AutoResizingMaskViewSource.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFB1CB73996006638B8 /* CollectionViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCells.swift; path = Shared/Sources/CollectionViewCells.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFC1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomIntrinsicContentSizeView.swift; path = Shared/Sources/CustomIntrinsicContentSizeView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFD1CB73996006638B8 /* DeepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepView.swift; path = Shared/Sources/DeepView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFE1CB73996006638B8 /* HairlineBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineBorderView.swift; path = Shared/Sources/HairlineBorderView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51CFF1CB73996006638B8 /* LayerPropertiesCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerPropertiesCells.swift; path = Shared/Sources/LayerPropertiesCells.swift; sourceTree = SOURCE_ROOT; };
+		BBE51D001CB73996006638B8 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Shared/Sources/LayerViews.swift; sourceTree = SOURCE_ROOT; };
+		BBE51D011CB73996006638B8 /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Shared/Sources/MapAnnotationView.swift; sourceTree = SOURCE_ROOT; };
+		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
+		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
+		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,13 +265,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB2720491C9B8E44002E53EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9A07D8DD1AE4B8260099C4CB /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				9A07D8DE1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift */,
 				9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */,
 			);
 			name = Layouts;
@@ -193,14 +291,6 @@
 				B59998E61BC36092002FE92C /* StackView.xib */,
 			);
 			name = "Storyboards & XIBs";
-			sourceTree = "<group>";
-		};
-		9A17423C1B09CFAC00BEDFAB /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
-			);
-			name = Strings;
 			sourceTree = "<group>";
 		};
 		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
@@ -218,18 +308,15 @@
 				9AD8295B1BD7048C0049C996 /* swiftlint.sh */,
 			);
 			name = Scripts;
-			path = Revert/Scripts;
+			path = ../Scripts;
 			sourceTree = "<group>";
 		};
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
-				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
-				9A9BD1E31BD67B17001A439D /* Configurations */,
-				9A2F94701B140B0E007E51B1 /* Scripts */,
-				9A6850BA1AD4A20E00ACCE29 /* Resources */,
-				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
-				9A6850B91AD4A20E00ACCE29 /* Products */,
+				BB27205B1C9B8E9E002E53EE /* Revert */,
+				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
+				BB2720BD1C9F8DAE002E53EE /* Shared */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -238,7 +325,7 @@
 		9A6850B91AD4A20E00ACCE29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A6850B81AD4A20E00ACCE29 /* Revert.app */,
+				9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,13 +333,11 @@
 		9A6850BA1AD4A20E00ACCE29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A6C75011BDE29DE00534680 /* Data */,
 				9A6C75051BDE2A0200534680 /* Documentation */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
-				9A17423C1B09CFAC00BEDFAB /* Strings */,
 			);
 			name = Resources;
 			path = Revert;
@@ -268,31 +353,12 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
-		9A94E3F41AD63F040005BA44 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9AE511751BB2F51C0087A68D /* Collectable.swift */,
-				9A28739E1AD76EA2006466BE /* CollectableCollection.swift */,
-				9A2F943E1B12A760007E51B1 /* CollectableGroup.swift */,
-				9A2873991AD76863006466BE /* Country.swift */,
-				9AA02A931B0C5C50000750E5 /* Cube.h */,
-				9A9E6B4D1B0CBB0700A22270 /* Cube.m */,
-				9A94E3F51AD63F160005BA44 /* HomeItem.swift */,
-				9AEE22AA1ADB77BE0033DAA2 /* Item.swift */,
-				B59998EB1BC3848D002FE92C /* Requirement.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */,
-				9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */,
-				9A9BD1E61BD67B17001A439D /* Project-Shared.xcconfig */,
-				9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */,
-				9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */,
-				9A9BD1E91BD67B17001A439D /* Revert-Shared.xcconfig */,
+				9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */,
+				9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */,
+				9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */,
 			);
 			name = Configurations;
 			path = Revert/Configurations;
@@ -301,16 +367,6 @@
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A4F0AC11AEDDA30004D9682 /* AlignmentInsetView.swift */,
-				9ACFC5061BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift */,
-				9AEE22AF1ADBA6960033DAA2 /* CollectionViewCells.swift */,
-				9A1D66CB1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift */,
-				9A0416D11B03048B00477E60 /* DeepView.swift */,
-				9A48E1981AEA1F7D00CDFEAD /* HairlineBorderView.swift */,
-				9AE3001F1AEF06A000E81377 /* LayerPropertiesCells.swift */,
-				9AE300211AEF09AA00E81377 /* LayerViews.swift */,
-				9A87FA791ADC975C00290F7A /* MapAnnotationView.swift */,
-				9A94E3F01AD63BFD0005BA44 /* TableViewCells.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
 			);
 			name = Views;
@@ -319,11 +375,8 @@
 		9A9F59A91AD4C17400A8CB4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9ABCC15A1B0A16C9009A0665 /* CALayer+Revert.swift */,
-				9A9BD1F01BD67BFE001A439D /* ExampleAlerts.swift */,
+				BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */,
 				B55841181BD496AB009725C5 /* NSBundle+Revert.swift */,
-				9A9F59AC1AD4C86F00A8CB4B /* UIColor+Revert.swift */,
-				9A7345C51BB2B25700768DAA /* UIStoryboardSegue+Revert.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -332,11 +385,9 @@
 			isa = PBXGroup;
 			children = (
 				9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */,
-				9ADAA3C51ADC8D1F008CC87B /* Data Sources */,
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
 				9A07D8DD1AE4B8260099C4CB /* Layouts */,
 				9ABEBA161AD4AEC900E3D998 /* Miscellaneous */,
-				9A94E3F41AD63F040005BA44 /* Models */,
 				9ABEBA0F1AD4ABE600E3D998 /* View Controllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 			);
@@ -346,29 +397,13 @@
 		9ABEBA0F1AD4ABE600E3D998 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A2873A81AD7AA1D006466BE /* AlertViewController.swift */,
-				9A4F0AC81AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift */,
-				9AA33F681AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift */,
-				9A48E1961AE9F91800CDFEAD /* AutoResizingMaskViewController.swift */,
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
-				9ABEBA141AD4ADF100E3D998 /* CollectionViewController.swift */,
-				9A535C481ADB563B0082778A /* ControlsViewController.swift */,
-				9A9F59A31AD4B7EF00A8CB4B /* CountriesViewController.swift */,
-				9ABEBA121AD4ACA800E3D998 /* HomeViewController.swift */,
 				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
-				9A9F59B31AD4D55000A8CB4B /* MapViewController.swift */,
+				BBE51D181CB73A4A006638B8 /* HomeViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
-				9AA02A911B0C235D000750E5 /* OpenGLViewController.swift */,
 				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
-				9A3B4BC11B0230B300F6117D /* RevertViewController.swift */,
 				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
-				9A2873A61AD7A5D8006466BE /* ScrollViewController.swift */,
-				9AEE955B1AD4E2680003E636 /* SpriteKitViewController.swift */,
-				B5DCC9EF1BBCF048004EA327 /* StackViewController.swift */,
-				9A2C24031AEE110C007B17CE /* StressTestViewController.swift */,
-				9AE87D441AE7401900213E7D /* TransformLayersViewController.swift */,
-				9AE87D421AE737D900213E7D /* TransformViewsViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 			);
 			name = "View Controllers";
@@ -377,47 +412,316 @@
 		9ABEBA161AD4AEC900E3D998 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				9A34799A1AEDD217002103C0 /* HairlineConstraint.swift */,
 				9AE252501B18211A002B596C /* InfoBuilder.swift */,
 				9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */,
-				9A56A4871BF4D309002EB8D1 /* RevealOpenGLCube.swift */,
-				9AA02A941B0C5C83000750E5 /* Revert-Bridging-Header.h */,
-				9A7345C71BB2BA4D00768DAA /* RevertItems.swift */,
-				9A6072B91AFC345600F9E168 /* SplitViewControllerDelegate.swift */,
-				9AAB0D0E1AEDCBC700F74ABB /* Static.swift */,
-				9A9F599B1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
 		};
-		9ADAA3C51ADC8D1F008CC87B /* Data Sources */ = {
+		BB27204D1C9B8E44002E53EE /* Revert-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				9ADAA3C61ADC8D3B008CC87B /* ControlsDataSource.swift */,
-				9A63DFFE1BD6811B006D0A82 /* DataSource.swift */,
+				BB27205E1C9B9160002E53EE /* Sources */,
+				BB2720C01C9F8F57002E53EE /* Configurations */,
+				BB27205D1C9B8ECF002E53EE /* Resources */,
+				BBE51D171CB739DF006638B8 /* Products */,
+			);
+			path = "Revert-tvOS";
+			sourceTree = "<group>";
+		};
+		BB27205B1C9B8E9E002E53EE /* Revert */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
+				9A9BD1E31BD67B17001A439D /* Configurations */,
+				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
+				9A6850BA1AD4A20E00ACCE29 /* Resources */,
+				9A6850B91AD4A20E00ACCE29 /* Products */,
+			);
+			name = Revert;
+			sourceTree = "<group>";
+		};
+		BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
+				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
+			);
+			name = "Storyboards & XIBs";
+			sourceTree = "<group>";
+		};
+		BB27205D1C9B8ECF002E53EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720551C9B8E44002E53EE /* Images.xcassets */,
+				BB735B3D1C9FCC290092FA6F /* Info.plist */,
+				BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB27205E1C9B9160002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
+				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BB66CC001CB74C6000954AD1 /* Models */,
+				BB2720A11C9B92BD002E53EE /* View Controllers */,
+				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
+				BB3F8B501D338C5A0092E374 /* Extensions */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720A11C9B92BD002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
+				BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */,
+				BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */,
+				BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */,
+				BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */,
+				BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB2720BD1C9F8DAE002E53EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB2720BF1C9F8DD0002E53EE /* Sources */,
+				BB2720BE1C9F8DBA002E53EE /* Configurations */,
+				BB735B481C9FD0500092FA6F /* Resources */,
+				9A2F94701B140B0E007E51B1 /* Scripts */,
+			);
+			name = Shared;
+			path = Revert/Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BE1C9F8DBA002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */,
+				BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */,
+				BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */,
+				BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720BF1C9F8DD0002E53EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C801CB7377C006638B8 /* Data Sources */,
+				BBE51C871CB737DD006638B8 /* Extensions */,
+				BBE51C941CB7380A006638B8 /* Layouts */,
+				BBE51C981CB73820006638B8 /* Miscellaneous */,
+				BBE51CAB1CB73859006638B8 /* Models */,
+				BB2720C81C9F9265002E53EE /* View Controllers */,
+				BBE51CF81CB73962006638B8 /* Views */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BB2720C01C9F8F57002E53EE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */,
+				BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */,
+				BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		BB2720C81C9F9265002E53EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51CC51CB73929006638B8 /* AlertViewController.swift */,
+				BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */,
+				BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */,
+				BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */,
+				BBE51CF21CB73955006638B8 /* CollectionViewController.swift */,
+				BBE51CC91CB73929006638B8 /* ControlsViewController.swift */,
+				BBE51CF31CB73955006638B8 /* CountriesViewController.swift */,
+				BBE51CCB1CB73929006638B8 /* MapViewController.swift */,
+				BBE51CCC1CB73929006638B8 /* OpenGLViewController.swift */,
+				BBE51CCD1CB73929006638B8 /* RevertViewController.swift */,
+				BBE51CCE1CB73929006638B8 /* ScrollViewController.swift */,
+				BBE51CCF1CB73929006638B8 /* SpriteKitViewController.swift */,
+				BBE51CD01CB73929006638B8 /* StackViewController.swift */,
+				BBE51CD11CB73929006638B8 /* StressTestViewController.swift */,
+				BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */,
+				BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB3F8B501D338C5A0092E374 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BB66CC001CB74C6000954AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB66CC011CB74C8900954AD1 /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB735B481C9FD0500092FA6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F76911CB628C4006EA285 /* Data */,
+				BB735B451C9FD0490092FA6F /* Assets.xcassets */,
+				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
+			);
+			name = Resources;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */,
 			);
 			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BBE51C801CB7377C006638B8 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */,
+				BBE51C821CB737C1006638B8 /* DataSource.swift */,
+			);
+			name = "Data Sources";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BBE51C871CB737DD006638B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */,
+				BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */,
+				BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */,
+				BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BBE51C941CB7380A006638B8 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		BBE51C981CB73820006638B8 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51C991CB7384D006638B8 /* HairlineConstraint.swift */,
+				BBE51C9A1CB7384D006638B8 /* RevealOpenGLCube.swift */,
+				BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */,
+				BBE51C9B1CB7384D006638B8 /* RevertItems.swift */,
+				BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */,
+				BBE51C9D1CB7384D006638B8 /* Static.swift */,
+				BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		BBE51CAB1CB73859006638B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51CAC1CB73898006638B8 /* Collectable.swift */,
+				BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */,
+				BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */,
+				BBE51CAF1CB73898006638B8 /* Country.swift */,
+				BBE51CB01CB73898006638B8 /* Cube.h */,
+				BBE51CB11CB73898006638B8 /* Cube.m */,
+				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
+				BBE51CB31CB73898006638B8 /* Item.swift */,
+				BBE51CB41CB73898006638B8 /* Requirement.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BBE51CF81CB73962006638B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBE51CF91CB73996006638B8 /* AlignmentInsetView.swift */,
+				BBE51CFA1CB73996006638B8 /* AutoResizingMaskViewSource.swift */,
+				BBE51CFB1CB73996006638B8 /* CollectionViewCells.swift */,
+				BBE51CFC1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift */,
+				BBE51CFD1CB73996006638B8 /* DeepView.swift */,
+				BBE51CFE1CB73996006638B8 /* HairlineBorderView.swift */,
+				BBE51CFF1CB73996006638B8 /* LayerPropertiesCells.swift */,
+				BBE51D001CB73996006638B8 /* LayerViews.swift */,
+				BBE51D011CB73996006638B8 /* MapAnnotationView.swift */,
+				BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */,
+				BBE51D021CB73996006638B8 /* TableViewCells.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BBE51D171CB739DF006638B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A6850B71AD4A20E00ACCE29 /* Revert */ = {
+		9A6850B71AD4A20E00ACCE29 /* Revert-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert" */;
+			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */;
 			buildPhases = (
+				9A9BD1E01BD65D66001A439D /* SwiftLint */,
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
-				9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Revert;
+			name = "Revert-iOS";
 			productName = Revert;
-			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert.app */;
+			productReference = 9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB27204B1C9B8E44002E53EE /* Revert-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
+			buildPhases = (
+				BB172A3C1D34BB4A00384185 /* SwiftLint */,
+				BB2720481C9B8E44002E53EE /* Sources */,
+				BB2720491C9B8E44002E53EE /* Frameworks */,
+				BB27204A1C9B8E44002E53EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Revert-tvOS";
+			productName = "Revert-tvOS";
+			productReference = BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -426,12 +730,17 @@
 		9A6850B01AD4A20E00ACCE29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
+					};
+					BB27204B1C9B8E44002E53EE = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -448,7 +757,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A6850B71AD4A20E00ACCE29 /* Revert */,
+				9A6850B71AD4A20E00ACCE29 /* Revert-iOS */,
+				BB27204B1C9B8E44002E53EE /* Revert-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -458,27 +768,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
-				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
-				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
-				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
-				9A6C75031BDE29DE00534680 /* Data in Resources */,
+				BB9F76921CB628C4006EA285 /* Data in Resources */,
+				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
+				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
+				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB27204A1C9B8E44002E53EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
+				BB9F76931CB628C4006EA285 /* Data in Resources */,
+				9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */,
+				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
+				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
+				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */ = {
+		9A9BD1E01BD65D66001A439D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Lint Swift Source Code";
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./Scripts/swiftlint.sh;
+		};
+		BB172A3C1D34BB4A00384185 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,66 +831,133 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADAA3C71ADC8D3B008CC87B /* ControlsDataSource.swift in Sources */,
-				9A7345C61BB2B25700768DAA /* UIStoryboardSegue+Revert.swift in Sources */,
-				9ABEBA151AD4ADF100E3D998 /* CollectionViewController.swift in Sources */,
-				9ABCC15B1B0A16C9009A0665 /* CALayer+Revert.swift in Sources */,
-				9A28739F1AD76EA2006466BE /* CollectableCollection.swift in Sources */,
-				9AA02A921B0C235D000750E5 /* OpenGLViewController.swift in Sources */,
+				BBE51CE81CB73929006638B8 /* SpriteKitViewController.swift in Sources */,
+				BBE51C831CB737C1006638B8 /* ControlsDataSource.swift in Sources */,
+				BBE51C921CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */,
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
-				9A6072BA1AFC345600F9E168 /* SplitViewControllerDelegate.swift in Sources */,
+				BBE51CA51CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */,
+				BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */,
 				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
-				9A2F943F1B12A760007E51B1 /* CollectableGroup.swift in Sources */,
-				9AE300221AEF09AA00E81377 /* LayerViews.swift in Sources */,
-				9AAB0D0F1AEDCBC700F74ABB /* Static.swift in Sources */,
-				9A07D8DF1AE4B83F0099C4CB /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
+				BBE51D131CB73996006638B8 /* MapAnnotationView.swift in Sources */,
+				BBE51D091CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
-				9A7345C81BB2BA4D00768DAA /* RevertItems.swift in Sources */,
-				9AE87D431AE737D900213E7D /* TransformViewsViewController.swift in Sources */,
-				9A535C491ADB563B0082778A /* ControlsViewController.swift in Sources */,
-				B59998EC1BC3848D002FE92C /* Requirement.swift in Sources */,
-				9AE87D451AE7401900213E7D /* TransformLayersViewController.swift in Sources */,
-				9A3B4BC21B0230B300F6117D /* RevertViewController.swift in Sources */,
-				9A63DFFF1BD6811B006D0A82 /* DataSource.swift in Sources */,
-				9A9F599C1AD4B25C00A8CB4B /* StoryboardIdentifiers.swift in Sources */,
-				9AA33F691AE62CF0005F69C2 /* AutoLayoutMarginsViewController.swift in Sources */,
+				BBE51CEC1CB73929006638B8 /* StressTestViewController.swift in Sources */,
+				BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */,
+				BBE51CE01CB73929006638B8 /* MapViewController.swift in Sources */,
+				BBE51CF41CB73955006638B8 /* CollectionViewController.swift in Sources */,
+				BBE51CDA1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */,
+				BBE51C851CB737C1006638B8 /* DataSource.swift in Sources */,
+				BBE51C9F1CB7384D006638B8 /* HairlineConstraint.swift in Sources */,
+				BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */,
+				BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
+				BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
-				9A48E1971AE9F91800CDFEAD /* AutoResizingMaskViewController.swift in Sources */,
-				9A48E1991AEA1F7D00CDFEAD /* HairlineBorderView.swift in Sources */,
-				9A4F0AC21AEDDA30004D9682 /* AlignmentInsetView.swift in Sources */,
-				9AEE22B01ADBA6960033DAA2 /* CollectionViewCells.swift in Sources */,
-				9ACFC5071BDF8B7900D10F07 /* AutoResizingMaskViewSource.swift in Sources */,
-				9A0416D21B03048B00477E60 /* DeepView.swift in Sources */,
+				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
+				BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */,
+				BBE51CE41CB73929006638B8 /* RevertViewController.swift in Sources */,
+				BBE51CE61CB73929006638B8 /* ScrollViewController.swift in Sources */,
+				BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */,
+				BBE51D051CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
+				BBE51C961CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
-				9A94E3F61AD63F160005BA44 /* HomeItem.swift in Sources */,
-				9A4F0AC91AEDDCF4004D9682 /* AnchorPointBoundsChangeViewController.swift in Sources */,
-				9ABEBA131AD4ACA800E3D998 /* HomeViewController.swift in Sources */,
+				BBE51CEE1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
+				BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */,
+				BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
+				BBE51CA71CB7384D006638B8 /* Static.swift in Sources */,
+				BBE51C901CB737FE006638B8 /* UIColor+Revert.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
-				9AE511761BB2F51C0087A68D /* Collectable.swift in Sources */,
-				9A9BD1F11BD67BFE001A439D /* ExampleAlerts.swift in Sources */,
+				BBE51C8E1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
+				BBE51CBB1CB73898006638B8 /* Country.swift in Sources */,
 				9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */,
-				9A28739A1AD76863006466BE /* Country.swift in Sources */,
-				9A2C24041AEE110C007B17CE /* StressTestViewController.swift in Sources */,
-				9A34799B1AEDD217002103C0 /* HairlineConstraint.swift in Sources */,
-				9A9F59B41AD4D55000A8CB4B /* MapViewController.swift in Sources */,
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
-				9AE300201AEF06A000E81377 /* LayerPropertiesCells.swift in Sources */,
-				9A56A4881BF4D309002EB8D1 /* RevealOpenGLCube.swift in Sources */,
-				9A2873A91AD7AA1D006466BE /* AlertViewController.swift in Sources */,
+				BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */,
+				BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
+				BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */,
+				BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
+				BBE51D0F1CB73996006638B8 /* LayerPropertiesCells.swift in Sources */,
+				BBE51CC11CB73898006638B8 /* Item.swift in Sources */,
+				BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */,
+				BBE51D031CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
+				BBE51CEA1CB73929006638B8 /* StackViewController.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
-				9A9F59A41AD4B7EF00A8CB4B /* CountriesViewController.swift in Sources */,
+				BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */,
+				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
+				BBE51CA11CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */,
+				BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */,
+				BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
-				9AEE955C1AD4E2680003E636 /* SpriteKitViewController.swift in Sources */,
 				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
-				9A1D66CC1B0977E800A20F99 /* CustomIntrinsicContentSizeView.swift in Sources */,
-				9AEE22AB1ADB77BE0033DAA2 /* Item.swift in Sources */,
+				BBE51D0B1CB73996006638B8 /* DeepView.swift in Sources */,
 				B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */,
-				9A87FA7A1ADC975C00290F7A /* MapAnnotationView.swift in Sources */,
-				9A94E3F11AD63BFD0005BA44 /* TableViewCells.swift in Sources */,
-				9A9F59AD1AD4C86F00A8CB4B /* UIColor+Revert.swift in Sources */,
-				B5DCC9F01BBCF048004EA327 /* StackViewController.swift in Sources */,
-				9A2873A71AD7A5D8006466BE /* ScrollViewController.swift in Sources */,
+				BBE51CE21CB73929006638B8 /* OpenGLViewController.swift in Sources */,
+				BBE51D111CB73996006638B8 /* LayerViews.swift in Sources */,
+				BBE51CBF1CB73898006638B8 /* HomeItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2720481C9B8E44002E53EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE51C911CB737FE006638B8 /* UIColor+Revert.swift in Sources */,
+				BBE51C971CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
+				BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */,
+				BBE51CE71CB73929006638B8 /* ScrollViewController.swift in Sources */,
+				BB9F768E1CB61F57006EA285 /* HomeCollectionViewController.swift in Sources */,
+				BB9F768A1CB61F45006EA285 /* RevertFocusableTableView.swift in Sources */,
+				BBE51CA01CB7384D006638B8 /* HairlineConstraint.swift in Sources */,
+				BBE51CA41CB7384D006638B8 /* RevertItems.swift in Sources */,
+				BBE51CEF1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
+				BBE51CE91CB73929006638B8 /* SpriteKitViewController.swift in Sources */,
+				BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */,
+				BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */,
+				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
+				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
+				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
+				BB66CC021CB74C8900954AD1 /* Person.swift in Sources */,
+				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
+				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
+				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
+				BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */,
+				BBE51CBC1CB73898006638B8 /* Country.swift in Sources */,
+				BBE51CA61CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */,
+				BBE51CE11CB73929006638B8 /* MapViewController.swift in Sources */,
+				BBE51CEB1CB73929006638B8 /* StackViewController.swift in Sources */,
+				BBE51CDB1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */,
+				BBE51C931CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */,
+				BBE51CA81CB7384D006638B8 /* Static.swift in Sources */,
+				BBE51CA21CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */,
+				BBE51D101CB73996006638B8 /* LayerPropertiesCells.swift in Sources */,
+				BBE51CD71CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */,
+				BBE51D081CB73996006638B8 /* CollectionViewCells.swift in Sources */,
+				BBE51CDD1CB73929006638B8 /* ControlsViewController.swift in Sources */,
+				BBE51D0A1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
+				BBE51CE51CB73929006638B8 /* RevertViewController.swift in Sources */,
+				BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */,
+				BBE51CD91CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
+				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
+				BBE51CED1CB73929006638B8 /* StressTestViewController.swift in Sources */,
+				BBE51C8D1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
+				BBE51CD51CB73929006638B8 /* AlertViewController.swift in Sources */,
+				BBE51CF71CB73955006638B8 /* CountriesViewController.swift in Sources */,
+				BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
+				BBE51CC21CB73898006638B8 /* Item.swift in Sources */,
+				BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */,
+				BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */,
+				BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */,
+				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
+				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
+				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
+				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
+				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
+				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
+				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
+				BBE51D0C1CB73996006638B8 /* DeepView.swift in Sources */,
+				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
+				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,
+				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
+				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +970,7 @@
 				9A0416CD1B02EAB300477E60 /* Base */,
 			);
 			name = Localizable.stringsdict;
+			path = Revert;
 			sourceTree = "<group>";
 		};
 		9A6850C31AD4A20E00ACCE29 /* Main.storyboard */ = {
@@ -590,33 +997,71 @@
 			name = StackView.xib;
 			sourceTree = "<group>";
 		};
+		BB2720521C9B8E44002E53EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720531C9B8E44002E53EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2720BB1C9F8BE5002E53EE /* Base */,
+			);
+			name = HomeCell.xib;
+			sourceTree = "<group>";
+		};
+		BB957F8D1CA0B57C000F09CA /* StackView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB957F8E1CA0B57C000F09CA /* Base */,
+			);
+			name = StackView.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9A6850D71AD4A20E00ACCE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E41BD67B17001A439D /* Project-Debug.xcconfig */;
+			baseConfigurationReference = BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		9A6850D81AD4A20E00ACCE29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E51BD67B17001A439D /* Project-Release.xcconfig */;
+			baseConfigurationReference = BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		9A6850DA1AD4A20E00ACCE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-Debug.xcconfig */;
+			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		9A6850DB1AD4A20E00ACCE29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-Release.xcconfig */;
+			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BB2ED9DB1C9FB8F8002BFD74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BB2ED9DC1C9FB8F8002BFD74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
@@ -633,11 +1078,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert" */ = {
+		9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A6850DA1AD4A20E00ACCE29 /* Debug */,
 				9A6850DB1AD4A20E00ACCE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB2ED9DB1C9FB8F8002BFD74 /* Debug */,
+				BB2ED9DC1C9FB8F8002BFD74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
