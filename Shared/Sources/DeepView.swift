@@ -4,10 +4,11 @@
 import UIKit
 
 final class DeepView: UIView {
+
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
-    assert(self.dynamicType.subviewSpacing > 0, "Subview spacing must be a positive number")
+    assert(type(of: self).subviewSpacing > 0, "Subview spacing must be a positive number")
   }
 
   override func layoutSubviews() {
@@ -16,7 +17,7 @@ final class DeepView: UIView {
     super.layoutSubviews()
   }
 
-  override static func requiresConstraintBasedLayout() -> Bool {
+  override static var requiresConstraintBasedLayout: Bool {
     return true
   }
 
@@ -24,34 +25,34 @@ final class DeepView: UIView {
 
   private static let subviewSpacing: CGFloat = 5
 
-  private static func colorForIndex(index: Int) -> UIColor {
+  private static func colorForIndex(_ index: Int) -> UIColor {
     if index % 5 == 0 {
       return [UIColor.revertDarkblueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()][(index / 5) % 3]
     }
-    return UIColor.whiteColor()
+    return UIColor.white
   }
 
-  private static func constraintsForSubview(subview: UIView, constant: CGFloat, priority: UILayoutPriority) -> [NSLayoutConstraint] {
+  private static func constraintsForSubview(_ subview: UIView, constant: CGFloat, priority: UILayoutPriority) -> [NSLayoutConstraint] {
     let bindingViews = ["subview": subview]
-    let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
-      "H:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
+    let horizontalConstraints = NSLayoutConstraint.constraints(
+      withVisualFormat: "H:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
       options: NSLayoutFormatOptions(rawValue: 0),
       metrics: nil,
       views: bindingViews)
-    let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(
-      "V:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
+    let verticalConstraints = NSLayoutConstraint.constraints(
+      withVisualFormat: "V:|-\(constant)@\(priority)-[subview]-\(constant)@\(priority)-|",
       options: NSLayoutFormatOptions(rawValue: 0),
       metrics: nil,
       views: bindingViews)
     return horizontalConstraints + verticalConstraints
   }
 
-  private static func updateSubviewsRecursively(view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
+  private static func updateSubviewsRecursively(_ view: UIView, length: CGFloat, constant: CGFloat, depth: Int = 0) {
     if length > 2 * constant {
       // Enough space for subviews
       if view.subviews.count == 0 {
         let subview = UIView()
-        subview.backgroundColor = self.colorForIndex(Int(depth)).colorWithAlphaComponent(0.5)
+        subview.backgroundColor = self.colorForIndex(Int(depth)).withAlphaComponent(0.5)
         subview.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(subview)
@@ -69,6 +70,6 @@ final class DeepView: UIView {
 
   private func updateSubViews() {
     let length = min(self.bounds.size.width, self.bounds.size.height)
-    self.dynamicType.updateSubviewsRecursively(self, length: length, constant: self.dynamicType.subviewSpacing)
+    type(of: self).updateSubviewsRecursively(self, length: length, constant: type(of: self).subviewSpacing)
   }
 }

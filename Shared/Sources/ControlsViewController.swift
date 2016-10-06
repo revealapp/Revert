@@ -6,7 +6,7 @@ import UIKit
 final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable var resourceFilename: String? {
     didSet {
-      if let resourceFilename = self.resourceFilename, items = RevertItems(rawValue: resourceFilename) {
+      if let resourceFilename = self.resourceFilename, let items = RevertItems(rawValue: resourceFilename) {
         let collection = CollectableCollection<Item>(items: items)
         self.dataSource = ControlsDataSource(collection: collection)
         self.collection = collection
@@ -32,20 +32,21 @@ final class ControlsViewController: RevertCollectionViewController {
     #endif
   }
 
-
-
   // MARK: Private
+
   #if os(iOS)
-    private let keyboardHandler = KeyboardHandler()
+    fileprivate let keyboardHandler = KeyboardHandler()
   #endif
 
-  private var collection: CollectableCollection<Item>?
+  fileprivate var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
 }
 
 #if os(iOS)
+
   extension ControlsViewController {
-    private func setupKeyboardHandler() {
+
+    fileprivate func setupKeyboardHandler() {
       // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
       // The behaviour is not perfect, but there is no way to opt-out
       if NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_4 {
@@ -59,7 +60,7 @@ final class ControlsViewController: RevertCollectionViewController {
       self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
     }
 
-    func collectionViewTapped(gestureRecogniser: UITapGestureRecognizer) {
+    func collectionViewTapped(_ gestureRecogniser: UITapGestureRecognizer) {
       self.collectionView?.endEditing(true)
     }
   }

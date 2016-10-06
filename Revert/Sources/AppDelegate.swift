@@ -7,13 +7,13 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     guard let splitViewController = self.window?.rootViewController as? UISplitViewController else {
       fatalError("Root view controller should always be a `UISplitViewController`")
     }
     self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
 
-    self.dynamicType.configureAppearance()
+    type(of: self).configureAppearance()
 
     return true
   }

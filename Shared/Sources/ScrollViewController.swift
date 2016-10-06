@@ -4,7 +4,8 @@
 import UIKit
 
 final class ScrollViewController: RevertViewController {
-  override func viewDidAppear(animated: Bool) {
+
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.scrollView.flashScrollIndicators()
@@ -16,22 +17,24 @@ final class ScrollViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet private weak var scrollView: RevertFocusableScrollView!
+  @IBOutlet fileprivate weak var scrollView: RevertFocusableScrollView!
 }
 
 #if os(tvOS)
+
   extension ScrollViewController {
+
     override func viewDidLoad() {
       super.viewDidLoad()
 
-      self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
+      self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouchType.indirect.rawValue as NSNumber]
     }
   }
 #endif
 
 final class RevertFocusableScrollView: UIScrollView {
   #if os(tvOS)
-    override func canBecomeFocused() -> Bool {
+    override var canBecomeFocused: Bool {
       return true
     }
   #endif

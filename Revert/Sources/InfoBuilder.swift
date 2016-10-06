@@ -1,11 +1,10 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import Foundation
 
-private func contentOfFile(filename: String) -> String {
-  guard let path = NSBundle.mainBundle().pathForResource(filename, ofType: "html") else {
+private func contentOfFile(_ filename: String) -> String {
+  guard let path = Bundle.main.path(forResource: filename, ofType: "html") else {
     fatalError("Cannot find file \(filename)")
   }
 
@@ -13,7 +12,7 @@ private func contentOfFile(filename: String) -> String {
   let content: String?
 
   do {
-    content = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+    content = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
   } catch let error1 as NSError {
     error = error1
     content = nil
@@ -26,9 +25,9 @@ private func contentOfFile(filename: String) -> String {
   return unwrappedContent
 }
 
-func infoHTMLWithContent(filename: String) -> String {
+func infoHTMLWithContent(_ filename: String) -> String {
   let contentHTML = contentOfFile("Info/\(filename)")
   let containerHTML = contentOfFile("Info/container")
 
-  return containerHTML.stringByReplacingOccurrencesOfString("<REPLACE>", withString: contentHTML, options: [])
+  return containerHTML.replacingOccurrences(of: "<REPLACE>", with: contentHTML, options: [])
 }

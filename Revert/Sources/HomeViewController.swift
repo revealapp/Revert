@@ -4,62 +4,64 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
-      configureCell: self.dynamicType.configureCell,
-      cellIdentifier: Storyboards.Cell.Home
+      configureCell: type(of: self).configureCell,
+      cellIdentifier: CellIdentifiers.home
     )
 
     super.init(coder: aDecoder)
   }
 
   deinit {
-    NSNotificationCenter.defaultCenter().removeObserver(self, name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIViewControllerShowDetailTargetDidChange, object: nil)
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     self.tableView.dataSource = self.dataSource
-    self.tableView.registerNib(UINib(nibName: Storyboards.Cell.Home, bundle: nil), forCellReuseIdentifier: Storyboards.Cell.Home)
+    let homeNib = UINib(nibName: CellIdentifiers.home, bundle: nil)
+    self.tableView.register(homeNib, forCellReuseIdentifier: CellIdentifiers.home)
 
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.showDetailTargetDidChange(_:)), name: UIViewControllerShowDetailTargetDidChangeNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.showDetailTargetDidChange(_:)), name: NSNotification.Name.UIViewControllerShowDetailTargetDidChange, object: nil)
   }
 
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
     self.deselectSelectedRowIfNeeded()
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
     // Sets the item object on the destination view controller required for a potential later transition to `InfoViewController`.
     if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
-      guard let indexPath = sender as? NSIndexPath else {
+      guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
       destinationViewController.item = self.collection[indexPath]
     }
   }
 
-  func showDetailTargetDidChange(notification: NSNotification) {
+  func showDetailTargetDidChange(_ notification: Notification) {
     // Updates the cell's accessoryType and selected background color when the split view collapses / expands
     self.tableView.visibleCells.forEach { cell in
-      if let indexPath = self.tableView.indexPathForCell(cell) {
-        self.tableView(self.tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
+      if let indexPath = self.tableView.indexPath(for: cell) {
+        self.tableView(self.tableView, willDisplay: cell, forRowAt: indexPath)
       }
     }
   }
 
   // MARK: Private
 
-  private var collection = CollectableCollection<HomeItem>(items: .Home)
+  fileprivate var collection = CollectableCollection<HomeItem>(items: .home)
   private var dataSource: DataSource<HomeItem, HomeCell>
-  private var isSplitViewControllerCollapsed: Bool {
-    return self.splitViewController?.collapsed ?? true
+  fileprivate var isSplitViewControllerCollapsed: Bool {
+    return self.splitViewController?.isCollapsed ?? true
   }
 
   private func deselectSelectedRowIfNeeded() {
@@ -69,31 +71,33 @@ final class HomeViewController: UITableViewController {
     }
 
     if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
-      self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+      self.tableView.deselectRow(at: selectedIndexPath, animated: true)
     }
   }
-  }
+}
 
-// MARK:- UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension HomeViewController {
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let item = self.collection[indexPath]
-    self.performSegueWithIdentifier(item.segueIdentifier, sender: indexPath)
+    self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 
-  override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     guard let cell = cell as? HomeCell else {
       fatalError("Cell should be of type `HomeCell`")
     }
 
     let item = self.collection[indexPath]
-    cell.accessoryType = self.isSplitViewControllerCollapsed && item.isPush ? .DisclosureIndicator : .None
-    cell.updateSelectedBackgroundColor(isBlue: self.isSplitViewControllerCollapsed == false)
+    cell.accessoryType = self.isSplitViewControllerCollapsed && item.isPush ? .disclosureIndicator : .none
+    cell.updateSelectedBackgroundColor(self.isSplitViewControllerCollapsed == false)
   }
 }
 
 private extension HomeViewController {
-  static func configureCell(cell: HomeCell, withItem item: HomeItem) {
+
+  static func configureCell(_ cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.iconImageView.image = UIImage(named: item.iconName)
   }

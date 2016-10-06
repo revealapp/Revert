@@ -5,6 +5,7 @@ import UIKit
 import WebKit
 
 final class WebViewController: RevertViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -16,26 +17,26 @@ final class WebViewController: RevertViewController {
     self.setupWebView(self.uiWebView)
   }
 
-  override func viewDidDisappear(animated: Bool) {
+  override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
 
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
   }
 
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
 
-    self.topConstraint?.constant = self.currentWebView?.isKindOfClass(UIWebView.self) == true ? -self.topLayoutGuide.length : 0
+    self.topConstraint?.constant = self.currentWebView?.isKind(of: UIWebView.self) == true ? -self.topLayoutGuide.length : 0
   }
 
   // MARK: Private
 
-  private enum Type: Int {
-    case UIWebView = 0
-    case WKWebView = 1
+  private enum WebViewType: Int {
+    case uiWebView = 0
+    case wkWebView = 1
   }
 
-  private let request = NSURLRequest(URL: NSBundle.mainBundle().revealWebsiteURL)
+  private let request = URLRequest(url: Bundle.main.revealWebsiteURL)
   private var currentWebView: UIView?
   private var topConstraint: NSLayoutConstraint?
 
@@ -49,23 +50,23 @@ final class WebViewController: RevertViewController {
   private lazy var wkWebView: WKWebView = {
     let webView = WKWebView()
     webView.navigationDelegate = self
-    webView.loadRequest(self.request)
+    webView.load(self.request)
     return webView
   }()
 
-  @IBAction private func segmentedControlValueChanged(sender: UISegmentedControl) {
-    let nextWebView = sender.selectedSegmentIndex == Type.UIWebView.rawValue ? self.uiWebView : self.wkWebView
+  @IBAction private func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+    let nextWebView = sender.selectedSegmentIndex == WebViewType.uiWebView.rawValue ? self.uiWebView : self.wkWebView
     self.currentWebView?.removeFromSuperview()
     self.setupWebView(nextWebView)
   }
 
-  private func setupWebView(webView: UIView) {
+  private func setupWebView(_ webView: UIView) {
     webView.translatesAutoresizingMaskIntoConstraints = false
 
-    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0)
-    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
-    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0)
-    let topConstraint = NSLayoutConstraint(item: webView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0)
+    let leftConstraint = NSLayoutConstraint(item: webView, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 0)
+    let rightConstraint = NSLayoutConstraint(item: webView, attribute: .right, relatedBy: .equal, toItem: self.view, attribute: .right, multiplier: 1, constant: 0)
+    let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .bottom, relatedBy: .equal, toItem: self.bottomLayoutGuide, attribute: .top, multiplier: 1, constant: 0)
+    let topConstraint = NSLayoutConstraint(item: webView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1, constant: 0)
 
     self.currentWebView = webView
     self.view.addSubview(webView)
@@ -73,52 +74,54 @@ final class WebViewController: RevertViewController {
     self.topConstraint = topConstraint
   }
 
-  private func showFailAlert() {
+  fileprivate func showFailAlert() {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
       message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet and try again.", comment: "Alert message on content failed loading"),
-      preferredStyle: .Alert
+      preferredStyle: .alert
     )
-    
+
     alertViewController.addAction(UIAlertAction(
       title: NSLocalizedString("Ok", comment: "Alert dismiss button on content failed loading"),
-      style: .Cancel,
+      style: .cancel,
       handler: nil)
     )
-    
+
     alertViewController.popoverPresentationController?.sourceView = self.view
-    self.presentViewController(alertViewController, animated: true, completion: nil)
+    self.present(alertViewController, animated: true, completion: nil)
   }
 }
 
-// MARK:- UIWebViewDelegate
+// MARK: - UIWebViewDelegate
 extension WebViewController: UIWebViewDelegate {
-  func webViewDidStartLoad(webView: UIWebView) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+
+  func webViewDidStartLoad(_ webView: UIWebView) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
   }
 
-  func webViewDidFinishLoad(webView: UIWebView) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+  func webViewDidFinishLoad(_ webView: UIWebView) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
   }
 }
 
-// MARK:- WKNavigationDelegate
+// MARK: - WKNavigationDelegate
 extension WebViewController: WKNavigationDelegate {
-  func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+
+  func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
   }
 
-  func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
   }
 
-  func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+  func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
     self.showFailAlert()
   }
 
-  func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+  func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = false
     self.showFailAlert()
   }
 }

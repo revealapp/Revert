@@ -3,12 +3,13 @@
 
 import UIKit
 
-final class SearchViewController: UITableViewController {
+final class SearchViewController: UICollectionViewController {
+
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(
-      collection: self.collection,
-      configureCell: self.dynamicType.configureCell,
-      cellIdentifier: Storyboards.Cell.TableViewController
+    self.dataSource = CollectionDataSource(
+      collection: CollectableCollection<HomeItem>(items: .home, flatten: true, sortClosure: { $0.title < $1.title }),
+      configureCell: type(of: self).configureCell,
+      cellIdentifier: CellIdentifiers.homeCollection
     )
 
     super.init(coder: aDecoder)
@@ -17,44 +18,68 @@ final class SearchViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.tableView.dataSource = self.dataSource
+    self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
-  //MARK: Private
-  private let collection = CollectableCollection<Person>(items: .Persons)
-  private let dataSource: DataSource<Person, BasicCell>
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
-  private var searchText: String? {
+    if let destinationViewController = segue.destinationTopViewController as? SettableHomeItem {
+      guard let indexPath = sender as? IndexPath else {
+        fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
+      }
+
+      destinationViewController.item = self.dataSource[indexPath]
+    }
+  }
+
+  // MARK: Private
+
+  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+
+  fileprivate var searchText: String? {
     didSet {
       guard searchText != oldValue else {
-        // We don't want to keep reloading contents if the search text has not changed
+        // We don't want to keep reloading content if the search text has not changed.
         return
       }
 
-      if let string = searchText where string.isEmpty == false {
+      if let string = searchText, string.isEmpty == false {
         self.dataSource.filter({
-          $0.city.localizedStandardContainsString(string) || $0.name.localizedStandardContainsString(string)
+          $0.title.localizedStandardContains(string)
         })
       } else {
-        self.dataSource.filter(nil)
+        self.dataSource.clearFilter()
       }
 
-      self.tableView.reloadData()
+      self.collectionView?.reloadData()
     }
   }
 }
 
 private extension SearchViewController {
-  static func configureCell(cell: BasicCell, object: Person) {
-    cell.accessoryType = .None
 
-    cell.titleLabel.text = object.name
-    cell.subtitleLabel.text = object.city
+  static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
+    cell.titleLabel.text = item.title
+    cell.imageView.image = UIImage(named: item.iconName)
+  }
+}
+
+// MARK: UICollectionViewDelegate
+
+extension SearchViewController {
+
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let item = self.dataSource[indexPath]
+
+    self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 }
 
 extension SearchViewController: UISearchResultsUpdating {
-  func updateSearchResultsForSearchController(searchController: UISearchController) {
+
+  func updateSearchResults(for searchController: UISearchController) {
     self.searchText = searchController.searchBar.text
   }
 }

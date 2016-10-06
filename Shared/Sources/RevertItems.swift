@@ -1,48 +1,49 @@
 //
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
-//
 
 import Foundation
 
 enum RevertItems: String {
-  case CountriesCapitals
-  case Alert = "AlertItems"
-  case Home = "HomeItems"
-  case HomeCollection = "HomeCollectionItems"
-  case Control = "ControlItems"
-  case MapLocations = "MapLocations"
-  case LayerProperties = "LayerPropertiesItems"
-  case Persons = "Persons"
-  case View = "ViewItems"
+  case capitalCities = "CountriesCapitals"
+  case alert = "AlertItems"
+  case home = "HomeItems"
+  case homeCollection = "HomeCollectionItems"
+  case control = "ControlItems"
+  case mapLocations = "MapLocations"
+  case layerProperties = "LayerPropertiesItems"
+  case persons = "Persons"
+  case view = "ViewItems"
+  case whatsNew = "NewItems"
 
   var data: [[String: AnyObject]] {
-    guard let data = NSArray(contentsOfURL: self.URL) as? [[String: AnyObject]] else {
+    guard let data = NSArray(contentsOf: self.URL) as? [[String: AnyObject]] else {
       fatalError(self.invalidContentError)
     }
     return data
   }
 
   // MARK: Private
+
   private static let fileExtension = "plist"
   private static let subfolder = "Data"
 
   private var invalidContentError: String {
-    return "Invalid content: \(self.rawValue).\(self.dynamicType.fileExtension)"
+    return "Invalid content: \(self.rawValue).\(type(of: self).fileExtension)"
   }
 
   private var invalidFileError: String {
     return "Invalid file: No common or platform-specific \(self.rawValue) files exist"
   }
 
-  private var URL: NSURL {
-    var URL: NSURL? {
-      let commonPath = "\(self.dynamicType.subfolder)/\(self.rawValue)"
-      let platformPath = "\(commonPath)\(self.dynamicType.platformSuffix)"
+  private var URL: Foundation.URL {
+    var URL: Foundation.URL? {
+      let commonPath = "\(type(of: self).subfolder)/\(self.rawValue)"
+      let platformPath = "\(commonPath)\(type(of: self).platformSuffix)"
 
-      if let platformURL = NSBundle.mainBundle().URLForResource(platformPath, withExtension: self.dynamicType.fileExtension) {
+      if let platformURL = Bundle.main.url(forResource: platformPath, withExtension: type(of: self).fileExtension) {
         return platformURL
       } else {
-        let commonURL = NSBundle.mainBundle().URLForResource(commonPath, withExtension: self.dynamicType.fileExtension)
+        let commonURL = Bundle.main.url(forResource: commonPath, withExtension: type(of: self).fileExtension)
         return commonURL
       }
     }
@@ -56,10 +57,10 @@ enum RevertItems: String {
 
 extension RevertItems {
   #if os(iOS)
-    private static let platformSuffix = "_iOS"
+    fileprivate static let platformSuffix = "_iOS"
   #endif
 
   #if os(tvOS)
-    private static let platformSuffix = "_tvOS"
+    fileprivate static let platformSuffix = "_tvOS"
   #endif
 }

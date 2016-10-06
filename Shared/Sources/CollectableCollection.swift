@@ -5,40 +5,51 @@ import Foundation
 
 struct CollectableCollection<CollectableCollectionObject: Collectable>: Collection {
   typealias CollectionObject = CollectableGroup<CollectableCollectionObject>
+  typealias FilterClosure = ((CollectableCollectionObject) -> Bool)
+  typealias GroupFilterClosure = ((TypedGroup) -> Bool)
+  typealias TypedGroup = CollectableGroup<CollectableCollectionObject>
 
   let items: [CollectableGroup<CollectableCollectionObject>]
 
-  init(items: RevertItems) {
-    self.items = items.data
-      .map(CollectableGroup<CollectableCollectionObject>.init)
-      .filter { $0.countOfItems > 0 }
+  init(items: RevertItems, flatten: Bool = false, sortClosure: TypedGroup.SortClosure? = nil) {
+    if flatten == true {
+      let flattenedData = items.data.map(TypedGroup.rowDataForDictionary).flatMap { $0 }
+      self.items = [TypedGroup(items: flattenedData.map(CollectableCollectionObject.init), sortClosure: sortClosure)]
+    } else {
+      self.items = items.data
+        .map({ TypedGroup(dictionary: $0, sortClosure: sortClosure) })
+        .filter { $0.countOfItems > 0 }
+    }
   }
 
-  init(groups: [CollectableGroup<CollectableCollectionObject>]) {
+  init(groups: [TypedGroup]) {
     self.items = groups
   }
 
-  subscript(indexPath: NSIndexPath) -> CollectableCollectionObject {
-    return self[indexPath.section][indexPath.row]
+  subscript(indexPath: IndexPath) -> CollectableCollectionObject {
+    return self[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
   }
 
-  typealias FilterClosure = ((CollectableCollectionObject) -> Bool)?
-  func filteredCollectableCollection(itemFilter: FilterClosure = nil) -> CollectableCollection {
-    if let itemFilter = itemFilter {
-      let groups = self.items.map({ group -> CollectableGroup<CollectableCollectionObject> in
-        // Runs through every `CollectableGroup` in order to filter items using the received closure.
-        let items = group.items.filter({ object -> Bool in
-          itemFilter(object)
-        })
-        return CollectableGroup<CollectableCollectionObject>(title: group.title, items: items)
-        // After filtering items in each group, we need to filter out empty `CollectableGroup`s.
-        }).filter({ group -> Bool in
-          return group.items.count > 0
-        })
-      // Returns a new `CollectableCollection` with only matching items and groups containing them.
-      return CollectableCollection(groups: groups)
-    } else {
-      return self
-    }
+  func filteredCollectableCollection(_ itemFilter: FilterClosure) -> CollectableCollection {
+    let groups: [TypedGroup] = self.items
+      .map({
+        let items = $0.items.filter(itemFilter)
+        return TypedGroup(title: $0.title, items: items)
+      })
+      // After filtering items in each group, we need to filter out empty `CollectableGroup`s.
+      .filter { $0.items.count > 0 }
+
+    // Returns a new `CollectableCollection` with only matching items and groups containing them.
+    return CollectableCollection(groups: groups)
+  }
+
+  func groupFilteredCollectableCollection(_ groupFilter: GroupFilterClosure) -> CollectableCollection {
+    return CollectableCollection(groups: self.items.filter(groupFilter))
+  }
+
+  // MARK: IndexableBase
+
+  func index(after i: Int) -> Int {
+    return items.index(after: i)
   }
 }

@@ -4,15 +4,19 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.infAlphaView.alpha = 1/0
-    self.nanAlphaView.alpha = 0/0
+
+    self.labelTrailingConstraint.constant = CGFloat.leastNormalMagnitude
+
+    self.infSpacingStackView.spacing = 1 / 0
+    self.nanSpacingStackView.spacing = 0 / 0
   }
-  
+
   // Mark: Private
-  @IBOutlet private var infAlphaView: UIView!
-  @IBOutlet private var nanAlphaView: UIView!
+
+  @IBOutlet private var infSpacingStackView: UIStackView!
+  @IBOutlet private var nanSpacingStackView: UIStackView!
+  @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!
 }

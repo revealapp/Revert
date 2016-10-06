@@ -1,24 +1,25 @@
 //
-//  Copyright (c) 2015 Itty Bitty Apps. All rights reserved.
-//
+//  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
 import UIKit
 
 final class SplitViewControllerDelegate: NSObject, UISplitViewControllerDelegate {
-  func configureSplitViewController(splitViewController: UISplitViewController) {
+
+  func configureSplitViewController(_ splitViewController: UISplitViewController) {
     splitViewController.delegate = self
-    splitViewController.preferredDisplayMode = .AllVisible
+    splitViewController.preferredDisplayMode = .allVisible
   }
 
-  func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -> Bool {
+  func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
     self.didShowDetailViewController = true
     return false
   }
 
-  func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+  func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
     return self.didShowDetailViewController == false
   }
 
   // MARK: Private
+
   private var didShowDetailViewController = false
 }

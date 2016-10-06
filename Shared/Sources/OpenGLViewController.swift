@@ -5,6 +5,7 @@ import UIKit
 import GLKit
 
 final class OpenGLViewController: RevertGLKViewController {
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -22,16 +23,20 @@ final class OpenGLViewController: RevertGLKViewController {
       self.view.layer.bounds.size.width = self.view.layer.bounds.size.height
     }
 
+    #if os(tvOS)
+      self.view.layer.isOpaque = false
+    #endif
+
     super.viewWillLayoutSubviews()
   }
 
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.toggleState()
-    
-    super.touchesBegan(touches, withEvent: event)
+
+    super.touchesBegan(touches, with: event)
   }
 
-  override func glkView(view: GLKView, drawInRect rect: CGRect) {
+  override func glkView(_ view: GLKView, drawIn rect: CGRect) {
     self.cube.draw()
   }
 
@@ -47,20 +52,22 @@ final class OpenGLViewController: RevertGLKViewController {
   private var glkView: GLKView {
     return self.view as! GLKView
   }
-  
-  private func toggleState() {
-    self.paused = self.paused == false
+
+  fileprivate func toggleState() {
+    self.isPaused = self.isPaused == false
   }
 }
 
-// MARK:- tvOS Only
+// MARK: - tvOS Only
 
 #if os(tvOS)
+
   extension OpenGLViewController {
-    override func pressesBegan(presses: Set<UIPress>, withEvent event: UIPressesEvent?) {
+
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
       self.toggleState()
-      
-      super.pressesBegan(presses, withEvent:event)
+
+      super.pressesBegan(presses, with: event)
     }
   }
 #endif

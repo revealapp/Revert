@@ -4,7 +4,8 @@
 import UIKit
 
 extension UIAlertController {
-  static func exampleAlertControllerWithStyle(style: UIAlertControllerStyle) -> UIAlertController {
+
+  static func exampleAlertControllerWithStyle(_ style: UIAlertControllerStyle) -> UIAlertController {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("This is a UIAlertController", comment: "Alert title"),
       message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),
@@ -13,17 +14,17 @@ extension UIAlertController {
 
     alertViewController.addAction(UIAlertAction(
       title: NSLocalizedString("Ok", comment: "Alert Ok button title"),
-      style: .Default,
+      style: .default,
       handler: nil)
     )
     alertViewController.addAction(UIAlertAction(
       title: NSLocalizedString("Cancel", comment: "Alert Cancel button title"),
-      style: .Cancel,
+      style: .cancel,
       handler: nil)
     )
     alertViewController.addAction(UIAlertAction(
       title: NSLocalizedString("Delete", comment: "Alert Delete button title"),
-      style: .Destructive,
+      style: .destructive,
       handler: nil)
     )
     return alertViewController
@@ -31,13 +32,15 @@ extension UIAlertController {
 }
 
 #if os(iOS)
-extension AlertViewController {
-  static func showExampleAlertView() {
+
+  extension AlertViewController {
+
+    static func showExampleAlertView() {
       UIAlertView.exampleAlertView().show()
+    }
+
+    static func showExampleActionsSheetInView(_ view: UIView) {
+      UIActionSheet.exampleActionSheet().show(in: view)
+    }
   }
-  
-  static func showExampleActionsSheetInView(view : UIView) {
-      UIActionSheet.exampleActionSheet().showInView(view)
-  }
-}
 #endif

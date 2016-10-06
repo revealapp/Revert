@@ -12,29 +12,31 @@ struct HomeItem: Collectable, Requirement {
   let requiredClassName: String?
 
   init(dictionary: [String: AnyObject]) {
-    guard let title = dictionary[Attributes.Title.rawValue] as? String,
-      iconName = dictionary[Attributes.Icon.rawValue] as? String,
-      segueIdentifier = dictionary[Attributes.Segue.rawValue] as? String else {
-        fatalError("Invalid `HomeItem` attributes")
+    guard
+      let title = dictionary[Attributes.title.rawValue] as? String,
+      let iconName = dictionary[Attributes.iconName.rawValue] as? String,
+      let segueIdentifier = dictionary[Attributes.segueIdentifier.rawValue] as? String
+      else {
+      fatalError("Invalid `HomeItem` attributes")
     }
 
     self.title = title
-    self.infoFilename = dictionary[Attributes.InfoFilename.rawValue] as? String
+    self.infoFilename = dictionary[Attributes.infoFilename.rawValue] as? String
     self.iconName = iconName
     self.segueIdentifier = segueIdentifier
-    self.isPush = dictionary[Attributes.Push.rawValue] as? Bool ?? true
-    self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+    self.isPush = dictionary[Attributes.push.rawValue] as? Bool ?? true
+    self.requiredClassName = dictionary[Attributes.requiredClassName.rawValue] as? String
   }
 
   // MARK: Private
 
   private enum Attributes: String {
-    case Title = "title"
-    case InfoFilename = "infoFilename"
-    case Icon = "iconName"
-    case Segue = "segueIdentifier"
-    case Push = "isPush"
-    case RequiredClassName = "requiredClassName"
+    case title = "title"
+    case infoFilename = "infoFilename"
+    case iconName = "iconName"
+    case segueIdentifier = "segueIdentifier"
+    case push = "isPush"
+    case requiredClassName = "requiredClassName"
   }
 }
 

@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>title</key>
+		<string>Containers</string>
 		<key>rows</key>
 		<array>
 			<dict>
@@ -17,14 +19,33 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Alert View</string>
+				<string>Scroll View</string>
 				<key>iconName</key>
-				<string>icon_AlertView</string>
+				<string>icon_ScrollView</string>
 				<key>segueIdentifier</key>
-				<string>ShowAlertViewControllerSegue</string>
+				<string>ShowScrollViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>alert_views</string>
+				<string>scroll_view</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stack View</string>
+				<key>iconName</key>
+				<string>icon_UIStackView</string>
+				<key>segueIdentifier</key>
+				<string>ShowStackViewViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stack_view</string>
+				<key>requiredClassName</key>
+				<string>UIStackView</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Controls</string>
+		<key>rows</key>
+		<array>
 			<dict>
 				<key>resourceFilename</key>
 				<string>ViewItems</string>
@@ -39,6 +60,160 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Buttons</string>
+				<key>iconName</key>
+				<string>icon_Buttons</string>
+				<key>segueIdentifier</key>
+				<string>ShowButtonsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>buttons</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Segmented Controls</string>
+				<key>iconName</key>
+				<string>icon_SegmentedControls</string>
+				<key>segueIdentifier</key>
+				<string>ShowSegmentedControlsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>segmented_controls</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Text Fields</string>
+				<key>iconName</key>
+				<string>icon_TextFields</string>
+				<key>segueIdentifier</key>
+				<string>ShowTextFieldsControllerSegue</string>
+				<key>infoFilename</key>
+				<string>text_fields</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Alert View</string>
+				<key>iconName</key>
+				<string>icon_AlertView</string>
+				<key>segueIdentifier</key>
+				<string>ShowAlertViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>alert_views</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Dynamic</string>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Map View</string>
+				<key>iconName</key>
+				<string>icon_MapView</string>
+				<key>segueIdentifier</key>
+				<string>ShowMapViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>map_view</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>SpriteKit</string>
+				<key>iconName</key>
+				<string>icon_SpriteKit</string>
+				<key>segueIdentifier</key>
+				<string>ShowSpriteKitViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>sprite_kit</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>OpenGL</string>
+				<key>iconName</key>
+				<string>icon_GLkit</string>
+				<key>segueIdentifier</key>
+				<string>ShowGLKViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>open_gl</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Layout</string>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Arranged Views</string>
+				<key>iconName</key>
+				<string>icon_Views</string>
+				<key>segueIdentifier</key>
+				<string>ShowViewsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>arranged_views</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout</string>
+				<key>iconName</key>
+				<string>icon_Autolayout</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Alignments</string>
+				<key>iconName</key>
+				<string>icon_AutolayoutAlignment</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout_alignments</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Layout Margins</string>
+				<key>iconName</key>
+				<string>icon_AutolayoutMargin</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout_margins</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Auto Resizing Masks</string>
+				<key>iconName</key>
+				<string>icon_AutoResizing</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoResizingMasksViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_resizing_masks</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Transformed Views</string>
+				<key>iconName</key>
+				<string>icon_TransformViews</string>
+				<key>segueIdentifier</key>
+				<string>ShowTransformViewsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>transformed_views</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Transformed Layers</string>
+				<key>iconName</key>
+				<string>icon_TransformLayers</string>
+				<key>segueIdentifier</key>
+				<string>ShowTransformLayersViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>transformed_layers</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Layer Properties</string>
 				<key>iconName</key>
 				<string>icon_Layerproperties</string>
@@ -49,6 +224,43 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Bounds &amp; Anchor Point Changes</string>
+				<key>iconName</key>
+				<string>icon_Squares</string>
+				<key>segueIdentifier</key>
+				<string>ShowAnchorBoundsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>bounds_anchor_point_changes</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Benchmarking</string>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Super Deep View Hierarchy</string>
+				<key>iconName</key>
+				<string>icon_Superdeep</string>
+				<key>segueIdentifier</key>
+				<string>ShowSuperDeepViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>super_deep</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stress Test</string>
+				<key>iconName</key>
+				<string>icon_StressTest</string>
+				<key>segueIdentifier</key>
+				<string>ShowStressTestViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>stress_test</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Not Serializable</string>
 				<key>iconName</key>
 				<string>icon_Serialize</string>
@@ -56,18 +268,6 @@
 				<string>ShowNotSerializableViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>not_serializable</string>
-			</dict>
-			<dict>
-				<key>resourceFilename</key>
-				<string>ControlItems</string>
-				<key>title</key>
-				<string>Controls</string>
-				<key>iconName</key>
-				<string>icon_Controls</string>
-				<key>segueIdentifier</key>
-				<string>ShowControlsControllerSegue</string>
-				<key>infoFilename</key>
-				<string>controls</string>
 			</dict>
 		</array>
 	</dict>

@@ -8,22 +8,24 @@ struct Item: Collectable, Requirement {
   let cellIdentifier: String
   let requiredClassName: String?
 
-  init(dictionary: [String : AnyObject]) {
-    guard let title = dictionary[Attributes.Title.rawValue] as? String,
-      cellIdentifier = dictionary[Attributes.Cell.rawValue] as? String else {
-        fatalError("Invalid `Item` attributes")
+  init(dictionary: [String: AnyObject]) {
+    guard
+      let title = dictionary[Attributes.title.rawValue] as? String,
+      let cellIdentifier = dictionary[Attributes.cellIdentifier.rawValue] as? String
+      else {
+      fatalError("Invalid `Item` attributes")
     }
 
     self.title = title
     self.cellIdentifier = cellIdentifier
-    self.requiredClassName = dictionary[Attributes.RequiredClassName.rawValue] as? String
+    self.requiredClassName = dictionary[Attributes.requiredClassName.rawValue] as? String
   }
 
   // MARK: Private
 
   private enum Attributes: String {
-    case Title = "title"
-    case Cell = "cellIdentifier"
-    case RequiredClassName = "requiredClassName"
+    case title = "title"
+    case cellIdentifier = "cellIdentifier"
+    case requiredClassName = "requiredClassName"
   }
 }

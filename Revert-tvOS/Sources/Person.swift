@@ -8,7 +8,7 @@ struct Person: Collectable {
   let city: String
 
   init(dictionary: [String: AnyObject]) {
-    guard let name = dictionary[Attributes.Name.rawValue] as? String, let city = dictionary[Attributes.City.rawValue] as? String else {
+    guard let name = dictionary[Attributes.name.rawValue] as? String, let city = dictionary[Attributes.city.rawValue] as? String else {
       fatalError("Unable to deserialize `Person`")
     }
 
@@ -17,8 +17,9 @@ struct Person: Collectable {
   }
 
   // MARK: Private
+
   private enum Attributes: String {
-    case Name = "name"
-    case City = "city"
+    case name = "name"
+    case city = "city"
   }
 }

@@ -4,11 +4,12 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
+
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
-      configureCell: self.dynamicType.configureCell,
-      cellIdentifier: Storyboards.Cell.Alert
+      configureCell: type(of: self).configureCell,
+      cellIdentifier: CellIdentifiers.alert
     )
 
     super.init(coder: aDecoder)
@@ -20,39 +21,42 @@ final class AlertViewController: RevertTableViewController {
     self.tableView.dataSource = self.dataSource
   }
 
-  private var collection = CollectableCollection<Item>(items: .Alert)
-  private var dataSource: DataSource<Item, BasicCell>
+  fileprivate var collection = CollectableCollection<Item>(items: .alert)
+  fileprivate var dataSource: DataSource<Item, BasicCell>
 }
 
-// MARK:- UIAlertController Presenter
+// MARK: - UIAlertController Presenter
 extension AlertViewController {
-  private func displayAlertControllerForWithStyle(style: UIAlertControllerStyle, fromView: UIView) {
+
+  fileprivate func displayAlertControllerForWithStyle(_ style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
-    self.presentViewController(alertViewController, animated: true, completion: nil)
+    self.present(alertViewController, animated: true, completion: nil)
   }
 }
 
 private enum Identifier: String {
-  case AlertController = "alertcontroller"
-  case ActionController = "actioncontroller"
+  case alertController = "alertcontroller"
+  case actionController = "actioncontroller"
 
   #if os(iOS)
-    case AlertView = "alertview"
-    case ActionSheet = "actionsheet"
+    case alertView = "alertview"
+    case actionSheet = "actionsheet"
   #endif
 }
 
 #if os(iOS)
+
   extension AlertViewController {
-    private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
+
+    fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       switch identifier {
-      case .AlertView:
+      case .alertView:
         AlertViewController.showExampleAlertView()
-      case .ActionSheet:
+      case .actionSheet:
         AlertViewController.showExampleActionsSheetInView(fromView)
       default:
-        let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
+        let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
         self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
       }
     }
@@ -60,38 +64,44 @@ private enum Identifier: String {
 #endif
 
 #if os(tvOS)
+
   extension AlertViewController {
-    private func displayCorrespondingAlertForIdentifier(identifier: Identifier, fromView: UIView) {
-      let alertStyle: UIAlertControllerStyle = identifier == .AlertController ? .Alert : .ActionSheet
+
+    fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
+      let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
     }
   }
 #endif
 
-// MARK:- UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension AlertViewController {
+
   @available(iOS 9.0, *)
-  override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+  override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
-      self.tableView.selectRowAtIndexPath(nextFocusedIndexPath, animated: true, scrollPosition: .None)
+      self.tableView.selectRow(at: nextFocusedIndexPath, animated: true, scrollPosition: .none)
     }
   }
-  
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let item = self.collection[indexPath]
 
-    guard let cell = tableView.cellForRowAtIndexPath(indexPath),
-      identifier = Identifier(rawValue: item.cellIdentifier) else {
+    guard
+      let cell = tableView.cellForRow(at: indexPath),
+      let identifier = Identifier(rawValue: item.cellIdentifier)
+      else {
       fatalError("Unknown cellIdentifier or cell")
     }
 
     self.displayCorrespondingAlertForIdentifier(identifier, fromView: cell)
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    tableView.deselectRow(at: indexPath, animated: true)
   }
 }
 
 extension AlertViewController {
-  static func configureCell(cell: BasicCell, object: Item) {
+
+  static func configureCell(_ cell: BasicCell, object: Item) {
     cell.titleLabel.text = object.title
   }
 }

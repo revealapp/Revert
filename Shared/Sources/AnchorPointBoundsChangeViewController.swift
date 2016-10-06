@@ -4,7 +4,8 @@
 import UIKit
 
 final class AnchorPointBoundsChangeViewController: RevertViewController {
-  override func viewDidAppear(animated: Bool) {
+
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.animateIfNecessary()
@@ -15,15 +16,15 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 
     // Update the scrollview' subview's height to match the screen height with a minimum value
     let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length
-    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
+    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(type(of: self).numberOfItems))
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, type(of: self).minimumItemHeight)
 
-    if let boundsOffset = Static.Formatter.decimal.stringFromNumber(-self.quarterBoundsHeight) {
+    if let boundsOffset = Static.Formatter.decimal.string(from: -self.quarterBoundsHeight as NSNumber) {
       self.boundsChangeLabel.text = NSLocalizedString("Bounds Change: (\(boundsOffset), \(boundsOffset))", comment: "Bounds change description")
     }
 
-    if let anchorOffsetX = Static.Formatter.decimal.stringFromNumber(self.dynamicType.anchorOffset.x),
-      let anchorOffsetY = Static.Formatter.decimal.stringFromNumber(self.dynamicType.anchorOffset.y) {
+    if let anchorOffsetX = Static.Formatter.decimal.string(from: type(of: self).anchorOffset.x as NSNumber),
+      let anchorOffsetY = Static.Formatter.decimal.string(from: type(of: self).anchorOffset.y as NSNumber) {
       self.anchorChangeLabel.text = NSLocalizedString("Anchor Point: (\(anchorOffsetX), \(anchorOffsetY))", comment: "Anchor point description")
     }
   }
@@ -55,25 +56,26 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 
     // Bounds Change testing
     let offset: CGFloat = -self.quarterBoundsHeight
-    UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: {
-      self.boundsChangeView.bounds = CGRectOffset(self.boundsChangeView.bounds, offset, offset)
-      }, completion: nil)
+    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: {
+      self.boundsChangeView.bounds = self.boundsChangeView.bounds.offsetBy(dx: offset, dy: offset)
+    }, completion: nil)
 
     // Anchor Point Testing
 
-    let basicAnimation = self.dynamicType.basicAnimationWithFromValue(self.anchorPointView.layer.anchorPoint, toValue: self.dynamicType.anchorOffset)
-    self.anchorPointView.layer.addAnimation(basicAnimation, forKey: "anchorPoint")
-    self.anchorPointView.layer.anchorPoint = self.dynamicType.anchorOffset
+    let basicAnimation = type(of: self).basicAnimationWithFromValue(self.anchorPointView.layer.anchorPoint, toValue: type(of: self).anchorOffset)
+    self.anchorPointView.layer.add(basicAnimation, forKey: "anchorPoint")
+    self.anchorPointView.layer.anchorPoint = type(of: self).anchorOffset
   }
 }
 
 private extension AnchorPointBoundsChangeViewController {
-  static func basicAnimationWithFromValue(fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
+
+  static func basicAnimationWithFromValue(_ fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
     basicAnimation.duration = 1
-    basicAnimation.fromValue = NSValue(CGPoint: fromValue)
+    basicAnimation.fromValue = NSValue(cgPoint: fromValue)
     basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-    basicAnimation.toValue = NSValue(CGPoint: toValue)
+    basicAnimation.toValue = NSValue(cgPoint: toValue)
     return basicAnimation
   }
 }

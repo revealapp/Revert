@@ -5,10 +5,13 @@ import UIKit
 import GLKit
 
 private extension UIViewController {
-  func prepareForInfoSegue(segue: UIStoryboardSegue, item: HomeItem?) {
-    guard let destinationNavigationController = segue.destinationViewController as? UINavigationController,
-      destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem else {
-        fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
+
+  func prepareForInfoSegue(_ segue: UIStoryboardSegue, item: HomeItem?) {
+    guard
+      let destinationNavigationController = segue.destination as? UINavigationController,
+      let destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem
+      else {
+      fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
     }
 
     guard let item = item else {
@@ -19,7 +22,7 @@ private extension UIViewController {
   }
 }
 
-// MARK:- UIViewController
+// MARK: - UIViewController
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -33,16 +36,16 @@ class RevertViewController: UIViewController, SettableHomeItem {
     }
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == Storyboards.Segue.Info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
 
-// MARK:- UITableViewController
+// MARK: - UITableViewController
 class RevertTableViewController: UITableViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -54,18 +57,23 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
     if self.item?.infoFilename == nil {
       self.navigationItem.rightBarButtonItem = nil
     }
+
+    #if os(tvOS)
+      self.tableView.adjustContentInsetsForTVOs()
+      self.automaticallyAdjustsScrollViewInsets = false
+    #endif
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == Storyboards.Segue.Info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
 
-// MARK:- UICollectionViewController
+// MARK: - UICollectionViewController
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -79,16 +87,16 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
     }
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == Storyboards.Segue.Info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }
 }
 
-// MARK:- GLKViewController
+// MARK: - GLKViewController
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -102,10 +110,10 @@ class RevertGLKViewController: GLKViewController, SettableHomeItem {
     }
   }
 
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    super.prepareForSegue(segue, sender: sender)
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
 
-    if segue.identifier == Storyboards.Segue.Info {
+    if segue.identifier == SegueIdentifiers.info {
       self.prepareForInfoSegue(segue, item: self.item)
     }
   }

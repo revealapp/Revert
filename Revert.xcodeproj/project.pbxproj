@@ -18,6 +18,7 @@
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6C75041BDE29DE00534680 /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75021BDE29DE00534680 /* Info */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
+		9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
@@ -28,8 +29,9 @@
 		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
 		BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2720521C9B8E44002E53EE /* Main.storyboard */; };
-		BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Assets.xcassets */; };
+		BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Images.xcassets */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
+		BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */; };
 		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
 		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
@@ -45,6 +47,7 @@
 		BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */; };
 		BB9F76921CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
 		BB9F76931CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
+		BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */; };
 		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBE51C831CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
@@ -175,8 +178,9 @@
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
 		BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BB2720551C9B8E44002E53EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB2720551C9B8E44002E53EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
+		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+tvOSInsets.swift"; path = "Sources/UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
 		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Person.swift; sourceTree = "<group>"; };
 		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
 		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertSplitViewController.swift; path = Sources/RevertSplitViewController.swift; sourceTree = "<group>"; };
 		BB9F76911CB628C4006EA285 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Shared/Resources/Data; sourceTree = "<group>"; };
+		BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewViewController.swift; sourceTree = "<group>"; };
 		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-Shared.xcconfig"; path = "Shared/Configurations/Revert-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
 		BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Debug.xcconfig"; path = "Shared/Configurations/Project-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -288,14 +293,6 @@
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
 		};
-		9A17423C1B09CFAC00BEDFAB /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
-			);
-			name = Strings;
-			sourceTree = "<group>";
-		};
 		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,7 +338,6 @@
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
-				9A17423C1B09CFAC00BEDFAB /* Strings */,
 			);
 			name = Resources;
 			path = Revert;
@@ -355,13 +351,6 @@
 				9A1742381B09CCA100BEDFAB /* README.md */,
 			);
 			name = Documentation;
-			sourceTree = "<group>";
-		};
-		9A94E3F41AD63F040005BA44 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		9A9BD1E31BD67B17001A439D /* Configurations */ = {
@@ -399,7 +388,6 @@
 				9A9F59A91AD4C17400A8CB4B /* Extensions */,
 				9A07D8DD1AE4B8260099C4CB /* Layouts */,
 				9ABEBA161AD4AEC900E3D998 /* Miscellaneous */,
-				9A94E3F41AD63F040005BA44 /* Models */,
 				9ABEBA0F1AD4ABE600E3D998 /* View Controllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 			);
@@ -466,7 +454,7 @@
 		BB27205D1C9B8ECF002E53EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB2720551C9B8E44002E53EE /* Assets.xcassets */,
+				BB2720551C9B8E44002E53EE /* Images.xcassets */,
 				BB735B3D1C9FCC290092FA6F /* Info.plist */,
 				BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */,
 			);
@@ -479,9 +467,9 @@
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
 				BB66CC001CB74C6000954AD1 /* Models */,
-				BBB6FCC01CA9FBE300AF24F3 /* Subclasses */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
+				BB3F8B501D338C5A0092E374 /* Extensions */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -494,6 +482,7 @@
 				BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */,
 				BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */,
 				BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */,
+				BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -568,6 +557,14 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		BB3F8B501D338C5A0092E374 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		BB66CC001CB74C6000954AD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +578,7 @@
 			children = (
 				BB9F76911CB628C4006EA285 /* Data */,
 				BB735B451C9FD0490092FA6F /* Assets.xcassets */,
+				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
 			);
 			name = Resources;
 			path = ../..;
@@ -597,16 +595,9 @@
 		BBB6FCBB1CA3A2F800AF24F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		BBB6FCC01CA9FBE300AF24F3 /* Subclasses */ = {
-			isa = PBXGroup;
-			children = (
 				BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */,
 			);
-			name = Subclasses;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		BBE51C801CB7377C006638B8 /* Data Sources */ = {
@@ -701,10 +692,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A6850D91AD4A20E00ACCE29 /* Build configuration list for PBXNativeTarget "Revert-iOS" */;
 			buildPhases = (
+				9A9BD1E01BD65D66001A439D /* SwiftLint */,
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
-				9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */,
 			);
 			buildRules = (
 			);
@@ -719,6 +710,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB6DAA731C9FB25B002B1B0C /* Build configuration list for PBXNativeTarget "Revert-tvOS" */;
 			buildPhases = (
+				BB172A3C1D34BB4A00384185 /* SwiftLint */,
 				BB2720481C9B8E44002E53EE /* Sources */,
 				BB2720491C9B8E44002E53EE /* Frameworks */,
 				BB27204A1C9B8E44002E53EE /* Resources */,
@@ -739,14 +731,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
 					9A6850B71AD4A20E00ACCE29 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 					};
 					BB27204B1C9B8E44002E53EE = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -774,14 +768,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
-				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
-				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
-				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
 				BB9F76921CB628C4006EA285 /* Data in Resources */,
-				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
+				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
+				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,26 +783,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2720561C9B8E44002E53EE /* Assets.xcassets in Resources */,
-				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
+				BB9F76931CB628C4006EA285 /* Data in Resources */,
+				9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
-				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
-				BB9F76931CB628C4006EA285 /* Data in Resources */,
+				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9A9BD1E01BD65D66001A439D /* Lint Swift Source Code */ = {
+		9A9BD1E01BD65D66001A439D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Lint Swift Source Code";
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./Scripts/swiftlint.sh;
+		};
+		BB172A3C1D34BB4A00384185 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,6 +934,7 @@
 				BBE51CDD1CB73929006638B8 /* ControlsViewController.swift in Sources */,
 				BBE51D0A1CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				BBE51CE51CB73929006638B8 /* RevertViewController.swift in Sources */,
+				BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */,
 				BBE51CD91CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
 				BBE51CED1CB73929006638B8 /* StressTestViewController.swift in Sources */,
@@ -939,6 +949,7 @@
 				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
 				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
+				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
 				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
@@ -959,6 +970,7 @@
 				9A0416CD1B02EAB300477E60 /* Base */,
 			);
 			name = Localizable.stringsdict;
+			path = Revert;
 			sourceTree = "<group>";
 		};
 		9A6850C31AD4A20E00ACCE29 /* Main.storyboard */ = {

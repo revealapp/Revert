@@ -4,7 +4,8 @@
 import UIKit
 
 final class TransformViewsViewController: RevertViewController {
-  override func viewDidAppear(animated: Bool) {
+
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.animateViewsIfNecessary()
@@ -15,8 +16,8 @@ final class TransformViewsViewController: RevertViewController {
 
     // Update the scrollview' subview's height to match the screen height with a minimum value
     let totalAvailableHeight = self.view.bounds.height - self.topLayoutGuide.length - self.bottomLayoutGuide.length
-    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(self.dynamicType.numberOfItems))
-    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, self.dynamicType.minimumItemHeight)
+    let scrollViewItemHeight = floor(totalAvailableHeight / CGFloat(type(of: self).numberOfItems))
+    self.scrollViewItemHeight.constant = max(scrollViewItemHeight, type(of: self).minimumItemHeight)
   }
 
   // MARK: Private
@@ -39,11 +40,10 @@ final class TransformViewsViewController: RevertViewController {
 
     self.wasAnimated = true
 
-    UIView.animateWithDuration(1, delay: 0, options: .CurveEaseInOut, animations: { () -> Void in
-      self.translateView.transform = CGAffineTransformMakeTranslation(-20, 20)
-      self.rotateView.transform = CGAffineTransformMakeRotation(CGFloat(15 * M_PI / 180))
-      self.scaleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
-      }, completion: nil)
+    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+      self.translateView.transform = CGAffineTransform(translationX: -20, y: 20)
+      self.rotateView.transform = CGAffineTransform(rotationAngle: CGFloat(15 * M_PI / 180))
+      self.scaleView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+    }, completion: nil)
   }
-
 }

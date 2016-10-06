@@ -4,14 +4,15 @@
 import UIKit
 
 final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
-  override func prepareLayout() {
-    super.prepareLayout()
+
+  override func prepare() {
+    super.prepare()
 
     let itemWidth = self.itemWidth
     self.itemSize = CGSize(width: itemWidth, height: itemWidth)
   }
 
-  override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+  override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return newBounds.size != self.collectionView?.bounds.size
   }
 
@@ -26,14 +27,14 @@ final class AdaptiveCollectionViewFlowLayout: UICollectionViewFlowLayout {
   }
 
   private var numberOfColumns: Int {
-    if self.itemWidthForNumberOfColumns(self.dynamicType.maximumColumnsForLayout) >= self.dynamicType.minimumCellWidth {
-      return self.dynamicType.maximumColumnsForLayout
+    if self.itemWidthForNumberOfColumns(type(of: self).maximumColumnsForLayout) >= type(of: self).minimumCellWidth {
+      return type(of: self).maximumColumnsForLayout
     } else {
-      return self.dynamicType.minimumColumnsForLayout
+      return type(of: self).minimumColumnsForLayout
     }
   }
 
-  private func itemWidthForNumberOfColumns(numberOfColumns: Int) -> CGFloat {
+  private func itemWidthForNumberOfColumns(_ numberOfColumns: Int) -> CGFloat {
     guard let collectionView = self.collectionView else {
       return 0
     }
