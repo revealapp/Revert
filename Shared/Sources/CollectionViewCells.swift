@@ -90,20 +90,40 @@ class TextFieldControlCell: CollectionViewCell {
 
   final class HomeCollectionCell: CollectionViewCell {
 
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      if #available(tvOS 10.0, *) {
+        if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+          self.configureTitleLabelTextColor()
+        }
+      }
+    }
+
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
       super.didUpdateFocus(in: context, with: coordinator)
 
       coordinator.addCoordinatedAnimations({
-        if self.isFocused {
-          self.titleLabel.textColor = UIColor.white
-        } else {
-          self.titleLabel.textColor = UIColor.black
-        }
-      }, completion: nil)
+        self.configureTitleLabelTextColor()
+        }, completion: nil)
     }
 
     // MARK: Private
 
     @IBOutlet private(set) weak var imageView: UIImageView!
+
+    private func configureTitleLabelTextColor() {
+      if self.isFocused {
+        self.titleLabel.textColor = UIColor.white
+      } else {
+        if #available(tvOS 10.0, *) {
+          if traitCollection.userInterfaceStyle == .dark {
+            self.titleLabel.textColor = UIColor.lightGray
+          } else {
+            self.titleLabel.textColor = UIColor.black
+          }
+        } else {
+          self.titleLabel.textColor = UIColor.black
+        }
+      }
+    }
   }
 #endif
