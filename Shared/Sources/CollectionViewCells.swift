@@ -91,10 +91,9 @@ class TextFieldControlCell: CollectionViewCell {
   final class HomeCollectionCell: CollectionViewCell {
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-      if #available(tvOS 10.0, *) {
-        if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
-          self.configureTitleLabelTextColor()
-        }
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.configureTitleLabelTextColor()
       }
     }
 
@@ -114,13 +113,15 @@ class TextFieldControlCell: CollectionViewCell {
       if self.isFocused {
         self.titleLabel.textColor = UIColor.white
       } else {
-        if #available(tvOS 10.0, *) {
-          if traitCollection.userInterfaceStyle == .dark {
-            self.titleLabel.textColor = UIColor.lightGray
-          } else {
-            self.titleLabel.textColor = UIColor.black
-          }
-        } else {
+        guard #available(tvOS 10.0, *) else {
+          self.titleLabel.textColor = UIColor.black
+          return
+        }
+
+        switch self.traitCollection.userInterfaceStyle {
+        case .dark:
+          self.titleLabel.textColor = UIColor.lightGray
+        case .light, .unspecified:
           self.titleLabel.textColor = UIColor.black
         }
       }
