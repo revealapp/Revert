@@ -39,6 +39,21 @@ class BasicCell: UITableViewCell {
     self.applyDynamicType()
   }
 
+  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    guard #available(tvOS 10.0, *) else { return }
+    if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+      self.configureTitleLabelTextColor()
+    }
+  }
+
+  override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    super.didUpdateFocus(in: context, with: coordinator)
+
+    coordinator.addCoordinatedAnimations({
+      self.configureTitleLabelTextColor()
+      }, completion: nil)
+  }
+
   func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
     self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.footnote)
@@ -48,4 +63,21 @@ class BasicCell: UITableViewCell {
 
   @IBOutlet private(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subtitleLabel: UILabel!
+
+  private func configureTitleLabelTextColor() {
+    guard #available(tvOS 10.0, *) else {
+      return
+    }
+
+    switch self.traitCollection.userInterfaceStyle {
+    case .dark:
+      if self.isFocused {
+        self.titleLabel.textColor = UIColor.darkGray
+      } else {
+        self.titleLabel.textColor = UIColor.white
+      }
+    case .light, .unspecified:
+      self.titleLabel.textColor = UIColor.black
+    }
+  }
 }
