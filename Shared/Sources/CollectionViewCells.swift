@@ -22,6 +22,13 @@ class CollectionViewCell: UICollectionViewCell {
     self.applyDynamicType()
   }
 
+  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    guard #available(tvOS 10.0, *) else { return }
+    if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+      self.configureTitleLabelTextColor()
+    }
+  }
+
   func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
     self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
@@ -31,6 +38,24 @@ class CollectionViewCell: UICollectionViewCell {
 
   @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subheadLabel: UILabel!
+
+  fileprivate func configureTitleLabelTextColor() {
+    if self.isFocused {
+      self.titleLabel.textColor = UIColor.white
+    } else {
+      guard #available(tvOS 10.0, *) else {
+        self.titleLabel.textColor = UIColor.black
+        return
+      }
+
+      switch self.traitCollection.userInterfaceStyle {
+      case .dark:
+        self.titleLabel.textColor = UIColor.lightGray
+      case .light, .unspecified:
+        self.titleLabel.textColor = UIColor.black
+      }
+    }
+  }
 }
 
 class TextFieldControlCell: CollectionViewCell {
@@ -90,13 +115,6 @@ class TextFieldControlCell: CollectionViewCell {
 
   final class HomeCollectionCell: CollectionViewCell {
 
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-      guard #available(tvOS 10.0, *) else { return }
-      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
-        self.configureTitleLabelTextColor()
-      }
-    }
-
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
       super.didUpdateFocus(in: context, with: coordinator)
 
@@ -109,22 +127,5 @@ class TextFieldControlCell: CollectionViewCell {
 
     @IBOutlet private(set) weak var imageView: UIImageView!
 
-    private func configureTitleLabelTextColor() {
-      if self.isFocused {
-        self.titleLabel.textColor = UIColor.white
-      } else {
-        guard #available(tvOS 10.0, *) else {
-          self.titleLabel.textColor = UIColor.black
-          return
-        }
-
-        switch self.traitCollection.userInterfaceStyle {
-        case .dark:
-          self.titleLabel.textColor = UIColor.lightGray
-        case .light, .unspecified:
-          self.titleLabel.textColor = UIColor.black
-        }
-      }
-    }
   }
 #endif
