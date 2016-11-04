@@ -144,10 +144,16 @@ class UserInterfaceStyleAwareView: UIView {
     #endif
   }
 
-  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    guard #available(tvOS 10.0, *) else { return }
-    if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
-      self.layer.borderColor = self.borderColor
+  #if os(tvOS)
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.layer.borderColor = self.borderColor
+      }
     }
-  }
+  
+  #endif
 }

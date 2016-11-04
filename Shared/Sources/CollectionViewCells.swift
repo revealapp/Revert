@@ -22,13 +22,6 @@ class CollectionViewCell: UICollectionViewCell {
     self.applyDynamicType()
   }
 
-  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    guard #available(tvOS 10.0, *) else { return }
-    if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
-      self.configureTitleLabelTextColor()
-    }
-  }
-
   func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
     self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
@@ -39,23 +32,37 @@ class CollectionViewCell: UICollectionViewCell {
   @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subheadLabel: UILabel!
 
-  fileprivate func configureTitleLabelTextColor() {
-    if self.isFocused {
-      self.titleLabel.textColor = UIColor.white
-    } else {
-      guard #available(tvOS 10.0, *) else {
-        self.titleLabel.textColor = UIColor.black
-        return
-      }
+  #if os(tvOS)
 
-      switch self.traitCollection.userInterfaceStyle {
-      case .dark:
-        self.titleLabel.textColor = UIColor.lightGray
-      case .light, .unspecified:
-        self.titleLabel.textColor = UIColor.black
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.configureTitleLabelTextColor()
       }
     }
-  }
+
+    fileprivate func configureTitleLabelTextColor() {
+      if self.isFocused {
+        self.titleLabel.textColor = UIColor.white
+      } else {
+        guard #available(tvOS 10.0, *) else {
+          self.titleLabel.textColor = UIColor.black
+          return
+        }
+
+        switch self.traitCollection.userInterfaceStyle {
+        case .dark:
+          self.titleLabel.textColor = UIColor.lightGray
+        case .light, .unspecified:
+          self.titleLabel.textColor = UIColor.black
+        }
+      }
+    }
+
+  #endif
+
 }
 
 class TextFieldControlCell: CollectionViewCell {
