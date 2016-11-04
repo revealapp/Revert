@@ -127,7 +127,7 @@ class TextFieldControlCell: CollectionViewCell {
 
       coordinator.addCoordinatedAnimations({
         self.configureTitleLabelTextColor()
-        }, completion: nil)
+      }, completion: nil)
     }
 
     // MARK: Private
