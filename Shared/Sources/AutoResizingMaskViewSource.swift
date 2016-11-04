@@ -128,7 +128,9 @@ final class AutoResizingMaskViewSource {
 class UserInterfaceStyleAwareView: UIView {
 
   var borderColor: CGColor {
+    
     #if os(tvOS)
+
       guard #available(tvOS 10.0, *) else {
         return UIColor.black.cgColor
       }
@@ -139,9 +141,13 @@ class UserInterfaceStyleAwareView: UIView {
       case .light, .unspecified:
         return UIColor.black.cgColor
       }
+
     #else
+
       return UIColor.white.cgColor
+
     #endif
+
   }
 
   #if os(tvOS)
