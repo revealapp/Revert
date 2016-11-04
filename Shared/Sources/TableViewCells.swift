@@ -76,12 +76,12 @@ class BasicCell: UITableViewCell {
       switch self.traitCollection.userInterfaceStyle {
       case .dark:
         if self.isFocused {
-          self.titleLabel.textColor = UIColor.darkGray
+          self.titleLabel.textColor = .darkGray
         } else {
-          self.titleLabel.textColor = UIColor.white
+          self.titleLabel.textColor = .white
         }
       case .light, .unspecified:
-        self.titleLabel.textColor = UIColor.black
+        self.titleLabel.textColor = .black
       }
     }
 

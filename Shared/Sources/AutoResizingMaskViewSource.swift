@@ -47,7 +47,7 @@ final class AutoResizingMaskViewSource {
     #endif
   }()
 
-  private(set) lazy var flexibleWidthHeightView: UserInterfaceStyleAwareView = {
+  private(set) lazy var flexibleWidthHeightView: UIView = {
     // Back: Flexible Height / Width View
     let frame = CGRect(origin: self.outerOrigin, size: self.flexibleWidthHeightSize)
     let flexibleWidthHeightView = self.bakeViewWithFrame(frame)
@@ -57,7 +57,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthHeightView
   }()
 
-  private(set) lazy var flexibleWidthView: UserInterfaceStyleAwareView = {
+  private(set) lazy var flexibleWidthView: UIView = {
     let flexibleWidthSize = CGSize(
       width: self.flexibleWidthHeightSize.width - (2 * type(of: self).innerPadding),
       height: type(of: self).defaultViewSideLength
@@ -70,7 +70,7 @@ final class AutoResizingMaskViewSource {
     return flexibleWidthView
   }()
 
-  private(set) lazy var flexibleHeightLeftRightView: UserInterfaceStyleAwareView = {
+  private(set) lazy var flexibleHeightLeftRightView: UIView = {
     let flexibleHeightLeftRightSize = CGSize(
       width: type(of: self).defaultViewSideLength,
       height: self.flexibleWidthHeightSize.height - self.flexibleWidthView.frame.maxY - (2 * type(of: self).innerPadding)
@@ -89,7 +89,7 @@ final class AutoResizingMaskViewSource {
     return flexibleHeightLeftRightView
   }()
 
-  private(set) lazy var leftFlexibleTopBottomView: UserInterfaceStyleAwareView = {
+  private(set) lazy var leftFlexibleTopBottomView: UIView = {
     let leftFlexibleTopBottomOrigin = CGPoint(
       x: type(of: self).innerPadding,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
@@ -102,7 +102,7 @@ final class AutoResizingMaskViewSource {
     return leftFlexibleTopBottomView
   }()
 
-  private(set) lazy var rightFlexibleTopBottomView: UserInterfaceStyleAwareView = {
+  private(set) lazy var rightFlexibleTopBottomView: UIView = {
     let rightFlexibleTopBottomOrigin = CGPoint(
       x: self.flexibleWidthHeightView.bounds.width - type(of: self).innerPadding - type(of: self).leftRightWidth,
       y: self.flexibleHeightLeftRightView.frame.midY - self.flexibleTopBottomSize.height / 2
@@ -120,15 +120,26 @@ final class AutoResizingMaskViewSource {
     let view = UserInterfaceStyleAwareView(frame: frame)
     view.layer.cornerRadius = type(of: self).cornerRadius
     view.layer.borderWidth = type(of: self).borderWidth
-    view.layer.borderColor = view.borderColor
     return view
   }
 }
 
-class UserInterfaceStyleAwareView: UIView {
+private class UserInterfaceStyleAwareView: UIView {
 
-  var borderColor: CGColor {
-    
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+
+    self.layer.borderColor = self.borderColor
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  // MARK: Private
+
+  private var borderColor: CGColor {
+
     #if os(tvOS)
 
       guard #available(tvOS 10.0, *) else {
@@ -160,6 +171,6 @@ class UserInterfaceStyleAwareView: UIView {
         self.layer.borderColor = self.borderColor
       }
     }
-  
+
   #endif
 }
