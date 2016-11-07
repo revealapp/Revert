@@ -31,6 +31,38 @@ class CollectionViewCell: UICollectionViewCell {
 
   @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subheadLabel: UILabel!
+
+  #if os(tvOS)
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.configureTitleLabelTextColor()
+      }
+    }
+
+    fileprivate func configureTitleLabelTextColor() {
+      if self.isFocused {
+        self.titleLabel.textColor = UIColor.white
+      } else {
+        guard #available(tvOS 10.0, *) else {
+          self.titleLabel.textColor = UIColor.black
+          return
+        }
+
+        switch self.traitCollection.userInterfaceStyle {
+        case .dark:
+          self.titleLabel.textColor = UIColor.lightGray
+        case .light, .unspecified:
+          self.titleLabel.textColor = UIColor.black
+        }
+      }
+    }
+
+  #endif
+
 }
 
 class TextFieldControlCell: CollectionViewCell {
@@ -94,16 +126,13 @@ class TextFieldControlCell: CollectionViewCell {
       super.didUpdateFocus(in: context, with: coordinator)
 
       coordinator.addCoordinatedAnimations({
-        if self.isFocused {
-          self.titleLabel.textColor = UIColor.white
-        } else {
-          self.titleLabel.textColor = UIColor.black
-        }
+        self.configureTitleLabelTextColor()
       }, completion: nil)
     }
 
     // MARK: Private
 
     @IBOutlet private(set) weak var imageView: UIImageView!
+
   }
 #endif

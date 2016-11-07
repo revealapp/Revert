@@ -23,7 +23,6 @@ final class AutoResizingMaskViewSource {
   private static let innerPadding: CGFloat = 20
   private static let cornerRadius: CGFloat = 2
   private static let borderWidth: CGFloat = 1
-  private static let borderColor = UIColor.borderColor().withAlphaComponent(0.5).cgColor
   private static let defaultViewSideLength: CGFloat = 50
   private static let leftRightWidth: CGFloat = 80
 
@@ -55,7 +54,6 @@ final class AutoResizingMaskViewSource {
 
     flexibleWidthHeightView.backgroundColor = UIColor.clear
     flexibleWidthHeightView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    flexibleWidthHeightView.layer.borderColor = UIColor.borderColor().cgColor
     return flexibleWidthHeightView
   }()
 
@@ -118,11 +116,61 @@ final class AutoResizingMaskViewSource {
     return rightFlexibleTopBottomView
   }()
 
-  private func bakeViewWithFrame(_ frame: CGRect) -> UIView {
-    let view = UIView(frame: frame)
+  private func bakeViewWithFrame(_ frame: CGRect) -> UserInterfaceStyleAwareView {
+    let view = UserInterfaceStyleAwareView(frame: frame)
     view.layer.cornerRadius = type(of: self).cornerRadius
     view.layer.borderWidth = type(of: self).borderWidth
-    view.layer.borderColor = type(of: self).borderColor
     return view
   }
+}
+
+private class UserInterfaceStyleAwareView: UIView {
+
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+
+    self.layer.borderColor = self.borderColor
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  // MARK: Private
+
+  private var borderColor: CGColor {
+
+    #if os(tvOS)
+
+      guard #available(tvOS 10.0, *) else {
+        return UIColor.black.cgColor
+      }
+
+      switch self.traitCollection.userInterfaceStyle {
+      case .dark:
+        return UIColor.white.cgColor
+      case .light, .unspecified:
+        return UIColor.black.cgColor
+      }
+
+    #else
+
+      return UIColor.white.cgColor
+
+    #endif
+
+  }
+
+  #if os(tvOS)
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.layer.borderColor = self.borderColor
+      }
+    }
+
+  #endif
 }

@@ -48,4 +48,42 @@ class BasicCell: UITableViewCell {
 
   @IBOutlet private(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subtitleLabel: UILabel!
+
+  #if os(tvOS)
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+      guard #available(tvOS 10.0, *) else { return }
+      if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+        self.configureTitleLabelTextColor()
+      }
+    }
+
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+      super.didUpdateFocus(in: context, with: coordinator)
+
+      coordinator.addCoordinatedAnimations({
+        self.configureTitleLabelTextColor()
+      }, completion: nil)
+    }
+
+    private func configureTitleLabelTextColor() {
+      guard #available(tvOS 10.0, *) else {
+        return
+      }
+
+      switch self.traitCollection.userInterfaceStyle {
+      case .dark:
+        if self.isFocused {
+          self.titleLabel.textColor = .darkGray
+        } else {
+          self.titleLabel.textColor = .white
+        }
+      case .light, .unspecified:
+        self.titleLabel.textColor = .black
+      }
+    }
+
+  #endif
 }
