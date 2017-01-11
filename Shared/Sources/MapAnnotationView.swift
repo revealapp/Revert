@@ -36,9 +36,9 @@ final class MapAnnotation: NSObject, MKAnnotation {
   // MARK: Private
 
   private enum Attributes: String {
-    case title = "title"
-    case subtitle = "subtitle"
-    case latitude = "latitude"
-    case longitude = "longitude"
+    case title
+    case subtitle
+    case latitude
+    case longitude
   }
 }
