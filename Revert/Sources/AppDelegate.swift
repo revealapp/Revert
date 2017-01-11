@@ -20,7 +20,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: Private
 
+  // swiftlint:disable weak_delegate
   private var splitViewControllerDelegate = SplitViewControllerDelegate()
+  // swiftlint:enable weak_delegate
 
   private static func configureAppearance() {
     UITabBar.appearance().tintColor = UIColor.revertTintColor()
