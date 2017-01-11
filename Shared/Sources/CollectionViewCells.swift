@@ -111,7 +111,7 @@ class TextFieldControlCell: CollectionViewCell {
       doneBarButtonItem.tintColor = UIColor.revertTintColor()
       toolBar.items = [
         flexibleBarButtonItem,
-        doneBarButtonItem,
+        doneBarButtonItem
       ]
       return toolBar
     }
