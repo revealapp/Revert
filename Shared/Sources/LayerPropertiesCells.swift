@@ -174,7 +174,7 @@ final class CAGradientLayerCell: LayerBackedCollectionViewCell {
       UIColor(red: 0.894, green: 1.000, blue: 0.996, alpha: 1).cgColor,
       UIColor(red: 0.784, green: 1.000, blue: 0.996, alpha: 1).cgColor,
       UIColor(red: 0.223, green: 0.694, blue: 0.894, alpha: 1).cgColor,
-      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1).cgColor,
+      UIColor(red: 0.011, green: 0.360, blue: 0.576, alpha: 1).cgColor
     ]
   }
 }
