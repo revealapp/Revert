@@ -65,7 +65,7 @@ final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
     let emitterCell = CAEmitterCell()
     emitterCell.scale = 0.05
     emitterCell.scaleRange = 0.02
-    emitterCell.emissionRange = CGFloat(2 * M_PI)
+    emitterCell.emissionRange = 2.0 * .pi
     emitterCell.lifetime = 10
     emitterCell.birthRate = 5
     emitterCell.velocity = 50

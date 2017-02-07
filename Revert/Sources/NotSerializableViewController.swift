@@ -10,8 +10,8 @@ final class NonSerializableViewController: RevertViewController {
 
     self.labelTrailingConstraint.constant = CGFloat.leastNormalMagnitude
 
-    self.stepper.minimumValue = -DBL_MAX
-    self.stepper.maximumValue = DBL_MAX
+    self.stepper.minimumValue = -.greatestFiniteMagnitude
+    self.stepper.maximumValue = .greatestFiniteMagnitude
 
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), for: .touchUpInside)
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), for: .touchUpOutside)
