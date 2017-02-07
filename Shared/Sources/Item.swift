@@ -24,8 +24,8 @@ struct Item: Collectable, Requirement {
   // MARK: Private
 
   private enum Attributes: String {
-    case title = "title"
-    case cellIdentifier = "cellIdentifier"
-    case requiredClassName = "requiredClassName"
+    case title
+    case cellIdentifier
+    case requiredClassName
   }
 }

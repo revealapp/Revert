@@ -4,8 +4,8 @@
 import Foundation
 
 private enum Attributes: String {
-  case title = "title"
-  case rows = "rows"
+  case title
+  case rows
 }
 
 struct CollectableGroup<CollectableGroupObject: Collectable>: Collection {
