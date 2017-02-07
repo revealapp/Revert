@@ -8,3 +8,8 @@ included:
   - Revert/Sources
   - Revert-tvOS/Sources
   - Shared/Sources
+
+generic_type_name:
+  max_length:
+    warning: 32
+    error: 1000
