@@ -71,7 +71,7 @@ private final class IBAScene: SKScene {
   }
 
   private static func actionSpaceship(_ spaceship: SKSpriteNode) {
-    let action = SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)
+    let action = SKAction.rotate(byAngle: .pi, duration: 1)
     spaceship.run(SKAction.repeatForever(action))
   }
 }
