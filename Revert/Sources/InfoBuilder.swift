@@ -19,7 +19,7 @@ private func contentOfFile(_ filename: String) -> String {
   }
 
   guard let unwrappedContent = content else {
-    fatalError("Cannot load \(filename): \(error)")
+    fatalError("Cannot load \(filename): \(String(describing: error))")
   }
 
   return unwrappedContent
