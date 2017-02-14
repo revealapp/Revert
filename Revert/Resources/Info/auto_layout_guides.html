@@ -1,8 +1,9 @@
-<p>TODO</p>
+<p>Demonstrates several Auto Layout Guides usage scenarios:</p>
 <ul class="list">
-	<li>TODO</li>
-	<li>TODO</li>
-	<li>TODO</li>
-	<li>TODO</li>
+    <li>Top / Bottom layout guides as views: Square views in the corners are attached to the view controller&#39;s top and bottom layout guides. Since iOS 9, they <em>can</em> be represented as <code>UILayoutGuide</code> objects, but in certain cases <code>_UILayoutGuide</code> views are used instead – a legacy behavior inherited from iOS 7. As of iOS 10, view controllers decoded from Storyboards still have this behavior.</li>
+    <li>Top / Bottom layout guides as <code>UILayoutGuide</code>: Square view on the top-center edge is embedded in a manually instantiated child view controller, and it&#39;s constrained between its top and bottom layout guides. In this case iOS chooses to use actual <code>UILayoutGuide</code> objects, so they show up among the view controller view&#39;s layout guides.</li>
+    <li>Layout Margins guide: Square views in the corners are also attached to their superview&#39;s layout margins guide. Effectively, this constrains them inside layout margins of that view.</li>
+    <li>Readable Content guide: Two multi-line labels in the center are horizontally constrained inside their superview&#39;s readable content guide. On most devices they would appear simply constrained by the layout margins, as readable content guide of a view cannot be wider than those. However, when running on iPad Pro 12.9 inch in landscape, the labels will be narrower than the view&#39;s layout margins guide, as readable width would be less than that.</li>
+    <li>Custom layout guide: Labels are also constrained vertically to a custom layout guide added to their superview. This layout guide is attached to the view&#39;s leading and trailing edges, vertically centered in it, and has a height of 50, which makes the labels appear aligned to the view&#39;s vertical center with some extra spacing.</li>
 </ul>
-<p>TODO</p>
+<p>Try updating the constant value of the height constraint of the custom layout guide separating the labels and see the changes being reflected in <em>Reveal</em> and on your device or simulator.</p>
