@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
@@ -146,6 +147,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -539,6 +541,7 @@
 			children = (
 				BBE51CC51CB73929006638B8 /* AlertViewController.swift */,
 				BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */,
+				7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */,
 				BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */,
 				BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */,
 				BBE51CF21CB73955006638B8 /* CollectionViewController.swift */,
@@ -875,6 +878,7 @@
 				BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
+				7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D0F1CB73996006638B8 /* LayerPropertiesCells.swift in Sources */,
 				BBE51CC11CB73898006638B8 /* Item.swift in Sources */,
 				BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */,
