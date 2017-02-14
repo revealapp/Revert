@@ -13,6 +13,10 @@ extension UIColor {
     return UIColor(red: 46 / 255, green: 213 / 255, blue: 195 / 255, alpha: 1)
   }
 
+  static func vividGreenColor() -> UIColor {
+    return UIColor(red: 0.796, green: 1, blue: 0.235, alpha: 1)
+  }
+
   static func revertOrangeColor() -> UIColor {
     return UIColor(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
   }
