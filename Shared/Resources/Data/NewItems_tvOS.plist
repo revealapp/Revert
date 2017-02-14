@@ -7,13 +7,15 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Scroll View</string>
+				<string>Auto Layout Guides</string>
+				<key>requiredClassName</key>
+				<string>UILayoutGuide</string>
 				<key>iconName</key>
-				<string>icon_ScrollView</string>
+				<string>icon_LayoutGuides</string>
 				<key>segueIdentifier</key>
-				<string>ShowScrollViewControllerSegue</string>
+				<string>ShowAutoLayoutGuidesViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>scroll_view</string>
+				<string>auto_layout_guides</string>
 			</dict>
 			<dict>
 				<key>title</key>

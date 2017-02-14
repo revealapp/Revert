@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kps-Wr-dkW">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kps-Wr-dkW">
     <device id="appleTV" orientation="landscape">
         <adaptation id="light"/>
     </device>
@@ -173,11 +173,11 @@
                     <tabBarItem key="tabBarItem" title="What's New" id="M4k-2j-oRx"/>
                     <connections>
                         <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
-                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="qzC-v2-4zL"/>
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
                         <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
+                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -710,6 +710,121 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO8-Gt-ODy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5719" y="14985"/>
+        </scene>
+        <!--Auto Layout Guides View Controller-->
+        <scene sceneID="oyG-cl-IEw">
+            <objects>
+                <viewController id="zjf-OV-6jT" customClass="AutoLayoutGuidesViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FWf-81-mBT"/>
+                        <viewControllerLayoutGuide type="bottom" id="nIh-hh-fw9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kE5-Lf-YFO">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpY-il-KuX">
+                                <rect key="frame" x="110" y="60" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.35848003630000003" green="0.70734065769999999" blue="0.99879956250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="gLE-N7-slb"/>
+                                    <constraint firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="height" multiplier="1:1" id="w7b-qS-0Ug"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEX-ad-pHf">
+                                <rect key="frame" x="1510" y="60" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.98700940609999999" green="0.62185144420000005" blue="0.034429375079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rEX-ad-pHf" secondAttribute="height" multiplier="1:1" id="no4-Ii-QyM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-qe-doX">
+                                <rect key="frame" x="110" y="720" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.75690394640000003" green="0.17739748950000001" blue="0.99884581569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="height" multiplier="1:1" id="VZc-or-dL1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neW-U9-LcG">
+                                <rect key="frame" x="1510" y="720" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.1755222827" green="0.80860555170000004" blue="0.71378350260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="neW-U9-LcG" secondAttribute="height" multiplier="1:1" id="QaG-Fk-Dby"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMp-KQ-AZw">
+                                <rect key="frame" x="20" y="439" width="1880" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="userInterfaceStyle=dark">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5e-i2-qlG">
+                                <rect key="frame" x="20" y="540" width="1880" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="userInterfaceStyle=dark">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rEX-ad-pHf" secondAttribute="trailing" constant="90" placeholder="YES" id="0hM-2b-yZ1"/>
+                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="neW-U9-LcG" secondAttribute="bottom" constant="60" id="4m3-18-dm6"/>
+                            <constraint firstItem="n5e-i2-qlG" firstAttribute="top" secondItem="kE5-Lf-YFO" secondAttribute="centerY" placeholder="YES" id="CvW-VG-4dg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n5e-i2-qlG" secondAttribute="trailing" placeholder="YES" id="Dvy-D1-2jT"/>
+                            <constraint firstItem="neW-U9-LcG" firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="width" id="Lwg-tW-JT7"/>
+                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="Tud-qe-doX" secondAttribute="bottom" constant="60" id="M5C-dO-hql"/>
+                            <constraint firstItem="fpY-il-KuX" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="NUE-R1-ni5"/>
+                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="bottom" secondItem="kE5-Lf-YFO" secondAttribute="centerY" placeholder="YES" id="R4h-oN-XGB"/>
+                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" placeholder="YES" id="RDg-Mu-Sbf"/>
+                            <constraint firstItem="fpY-il-KuX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="Srr-eu-8ew"/>
+                            <constraint firstItem="Tud-qe-doX" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="VBe-JZ-keG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="n5e-i2-qlG" secondAttribute="leading" placeholder="YES" id="VyK-qj-CUS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="neW-U9-LcG" secondAttribute="trailing" constant="90" placeholder="YES" id="Yg6-6v-N8s"/>
+                            <constraint firstItem="rEX-ad-pHf" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="ZUp-tl-xtR"/>
+                            <constraint firstItem="rEX-ad-pHf" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="bQG-xE-gW8"/>
+                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fpY-il-KuX" secondAttribute="bottom" constant="8" symbolic="YES" id="bhd-0R-LsX"/>
+                            <constraint firstItem="Tud-qe-doX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n5e-i2-qlG" secondAttribute="bottom" constant="8" symbolic="YES" id="fup-Dk-RAD"/>
+                            <constraint firstItem="Tud-qe-doX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="nsQ-vV-HhT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMp-KQ-AZw" secondAttribute="trailing" placeholder="YES" id="oTG-vA-tpe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="n5e-i2-qlG" id="xLA-kG-vJy"/>
+                        <outlet property="bottomLeftView" destination="Tud-qe-doX" id="p89-9k-XJT"/>
+                        <outlet property="bottomRightView" destination="neW-U9-LcG" id="SkE-h7-FsQ"/>
+                        <outlet property="topLabel" destination="gMp-KQ-AZw" id="n0D-Yz-sNN"/>
+                        <outlet property="topLeftView" destination="fpY-il-KuX" id="RV1-JC-fZ7"/>
+                        <outlet property="topRightView" destination="rEX-ad-pHf" id="v3s-Fg-9nW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBi-I1-RZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="16471"/>
         </scene>
         <!--Auto Layout Alignments-->
         <scene sceneID="3i2-N8-Ty5">
@@ -2899,6 +3014,7 @@
                         <segue destination="byO-5E-OvQ" kind="presentation" identifier="ShowButtonsControllerSegue" id="cwj-qC-tGp"/>
                         <segue destination="fht-Wc-Pns" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="SEa-Im-agc"/>
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
+                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg3-jq-6cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2984,6 +3100,7 @@
                         <segue destination="byO-5E-OvQ" kind="presentation" identifier="ShowButtonsControllerSegue" id="kmn-Ux-9Fc"/>
                         <segue destination="fht-Wc-Pns" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="evt-aZ-EZs"/>
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
+                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-yE-1wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3147,28 +3264,29 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9eS-Oe-XOH"/>
+        <segue reference="TNP-CT-4h2"/>
+        <segue reference="SIv-Cp-spB"/>
+        <segue reference="rJr-K8-5YV"/>
+        <segue reference="IsZ-cs-9Gn"/>
+        <segue reference="4hY-3r-U1F"/>
         <segue reference="Fb8-BI-6uh"/>
-        <segue reference="hsh-dy-nEy"/>
-        <segue reference="4Zw-Q9-imf"/>
         <segue reference="dek-3j-uaJ"/>
+        <segue reference="C6t-OM-qMf"/>
+        <segue reference="saQ-hI-FT8"/>
+        <segue reference="Tqf-V4-xDk"/>
         <segue reference="E3N-aw-4qX"/>
         <segue reference="sQz-c6-PNe"/>
-        <segue reference="16b-Sd-dJ0"/>
-        <segue reference="bKg-Tw-bma"/>
         <segue reference="Ad2-lN-jOy"/>
-        <segue reference="kzC-lO-nop"/>
-        <segue reference="1kx-aV-tGU"/>
-        <segue reference="C6t-OM-qMf"/>
-        <segue reference="kJb-0f-6j4"/>
-        <segue reference="leq-yV-WZf"/>
-        <segue reference="aLP-vy-qaj"/>
-        <segue reference="cwj-qC-tGp"/>
-        <segue reference="2sN-Om-l3s"/>
-        <segue reference="Tqf-V4-xDk"/>
-        <segue reference="saQ-hI-FT8"/>
+        <segue reference="bKg-Tw-bma"/>
         <segue reference="SEa-Im-agc"/>
-        <segue reference="HVs-14-jRy"/>
         <segue reference="s71-DX-UNb"/>
+        <segue reference="aLP-vy-qaj"/>
+        <segue reference="2sN-Om-l3s"/>
+        <segue reference="HVs-14-jRy"/>
+        <segue reference="leq-yV-WZf"/>
+        <segue reference="hsh-dy-nEy"/>
+        <segue reference="16b-Sd-dJ0"/>
+        <segue reference="cwj-qC-tGp"/>
+        <segue reference="kJb-0f-6j4"/>
     </inferredMetricsTieBreakers>
 </document>
