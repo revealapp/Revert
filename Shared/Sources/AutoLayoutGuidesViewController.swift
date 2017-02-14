@@ -50,10 +50,34 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       embeddedView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
     ])
 
-    // Add tvOS-specific constraints
+    // Add tvOS-specific guides and constraints
     #if os(tvOS)
+      let leftFocusGuide = UIFocusGuide()
+      self.view.addLayoutGuide(leftFocusGuide)
+
+      let rightFocusGuide = UIFocusGuide()
+      self.view.addLayoutGuide(rightFocusGuide)
+
+      if #available(tvOS 10.0, *) {
+        leftFocusGuide.preferredFocusEnvironments = [ embeddedViewController.centerView ]
+        rightFocusGuide.preferredFocusEnvironments = [ self.focusableView ]
+      } else {
+        leftFocusGuide.preferredFocusedView = embeddedViewController.centerView
+        rightFocusGuide.preferredFocusedView = self.focusableView
+      }
+
       NSLayoutConstraint.activate([
-        self.bottomLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.focusableImageView.focusedFrameGuide.topAnchor, constant: -8)
+        self.bottomLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.focusableImageView.focusedFrameGuide.topAnchor, constant: -8),
+
+        leftFocusGuide.topAnchor.constraint(equalTo: self.view.topAnchor),
+        leftFocusGuide.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+        leftFocusGuide.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+        leftFocusGuide.rightAnchor.constraint(equalTo: readableContentGuide.leftAnchor),
+
+        rightFocusGuide.topAnchor.constraint(equalTo: self.view.topAnchor),
+        rightFocusGuide.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+        rightFocusGuide.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+        rightFocusGuide.leftAnchor.constraint(equalTo: readableContentGuide.rightAnchor),
       ])
     #endif
   }
@@ -68,6 +92,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
   @IBOutlet private weak var bottomLabel: UILabel!
 
   #if os(tvOS)
+    @IBOutlet private weak var focusableView: UIView!
     @IBOutlet private weak var focusableImageView: UIImageView!
   #endif
 
@@ -89,6 +114,8 @@ final class AutoLayoutGuidesViewController: RevertViewController {
 
   final private class EmbeddedViewController: UIViewController {
 
+    var centerView: UIView!
+
     override func viewDidLoad() {
       super.viewDidLoad()
 
@@ -102,6 +129,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       centerView.layer.cornerRadius = 2
       centerView.translatesAutoresizingMaskIntoConstraints = false
       self.view.addSubview(centerView)
+      self.centerView = centerView
 
       NSLayoutConstraint.activate([
         centerView.bottomAnchor.constraint(equalTo: self.bottomLayoutGuide.topAnchor),
@@ -121,7 +149,6 @@ final class AutoLayoutGuidesViewController: RevertViewController {
         ])
       #endif
     }
-    
   }
 
 }

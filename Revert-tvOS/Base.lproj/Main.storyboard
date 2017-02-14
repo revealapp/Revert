@@ -842,6 +842,7 @@
                         <outlet property="bottomLeftView" destination="Tud-qe-doX" id="p89-9k-XJT"/>
                         <outlet property="bottomRightView" destination="neW-U9-LcG" id="SkE-h7-FsQ"/>
                         <outlet property="focusableImageView" destination="eNA-bS-QCH" id="D8J-15-y2n"/>
+                        <outlet property="focusableView" destination="FWi-v4-6aF" id="zBb-aw-3ar"/>
                         <outlet property="preferredFocusedView" destination="FWi-v4-6aF" id="YWy-Yz-oKl"/>
                         <outlet property="topLabel" destination="gMp-KQ-AZw" id="n0D-Yz-sNN"/>
                         <outlet property="topLeftView" destination="fpY-il-KuX" id="RV1-JC-fZ7"/>
