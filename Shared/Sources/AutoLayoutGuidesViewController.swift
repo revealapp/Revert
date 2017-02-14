@@ -14,11 +14,18 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     let readableContentGuide = self.view.readableContentGuide
     let customLayoutGuide = AutoLayoutGuidesViewController.customLayoutGuide(addedTo: self.view)
 
+    let sideMargin: CGFloat
+    #if os(iOS)
+      sideMargin = 0
+    #else
+      sideMargin = 60
+    #endif
+
     NSLayoutConstraint.activate([
-      self.topLeftView.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor),
-      self.topRightView.rightAnchor.constraint(equalTo: layoutMarginsGuide.rightAnchor),
-      self.bottomLeftView.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor),
-      self.bottomRightView.rightAnchor.constraint(equalTo: layoutMarginsGuide.rightAnchor),
+      self.topLeftView.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor, constant: sideMargin),
+      self.topRightView.rightAnchor.constraint(equalTo: layoutMarginsGuide.rightAnchor, constant: -sideMargin),
+      self.bottomLeftView.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor, constant: sideMargin),
+      self.bottomRightView.rightAnchor.constraint(equalTo: layoutMarginsGuide.rightAnchor, constant: -sideMargin),
 
       self.topLabel.leadingAnchor.constraint(equalTo: readableContentGuide.leadingAnchor),
       self.topLabel.trailingAnchor.constraint(equalTo: readableContentGuide.trailingAnchor),
