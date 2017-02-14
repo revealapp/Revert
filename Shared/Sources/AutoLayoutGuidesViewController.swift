@@ -42,6 +42,13 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       embeddedView.topAnchor.constraint(equalTo: self.view.topAnchor),
       embeddedView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
     ])
+
+    // Add tvOS-specific constraints
+    #if os(tvOS)
+      NSLayoutConstraint.activate([
+        self.bottomLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.focusableImageView.focusedFrameGuide.topAnchor, constant: -8)
+      ])
+    #endif
   }
 
   // MARK: - Private
@@ -52,6 +59,10 @@ final class AutoLayoutGuidesViewController: RevertViewController {
   @IBOutlet private weak var bottomRightView: UIView!
   @IBOutlet private weak var topLabel: UILabel!
   @IBOutlet private weak var bottomLabel: UILabel!
+
+  #if os(tvOS)
+    @IBOutlet private weak var focusableImageView: UIImageView!
+  #endif
 
   private static func customLayoutGuide(addedTo view: UIView) -> UILayoutGuide {
     let guide = UILayoutGuide()
@@ -74,7 +85,12 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
 
-      let centerView = CustomIntrinsicContentSizeView()
+      #if os(iOS)
+        let centerView = CustomIntrinsicContentSizeView()
+      #else
+        let centerView = FocusableView()
+      #endif
+
       centerView.backgroundColor = UIColor.vividGreenColor()
       centerView.layer.cornerRadius = 2
       centerView.translatesAutoresizingMaskIntoConstraints = false
@@ -99,6 +115,23 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       #endif
     }
     
+  }
+
+}
+
+// MARK: - Focusable view (tvOS)
+
+@available(tvOS 9.0, *)
+final class FocusableView: UIView {
+
+  override var canBecomeFocused: Bool {
+    return true
+  }
+
+  override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    coordinator.addCoordinatedAnimations({ 
+      self.alpha = self.isFocused ? 0.5 : 1.0
+    })
   }
 
 }
