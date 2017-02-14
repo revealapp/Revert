@@ -790,12 +790,34 @@
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWi-v4-6aF" customClass="FocusableView" customModule="Revert_tvOS" customModuleProvider="target">
+                                <rect key="frame" x="810" y="720" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reveal_pretty" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNA-bS-QCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79607843140000001" green="1" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eNA-bS-QCH" secondAttribute="trailing" id="CbK-dk-7fk"/>
+                                    <constraint firstAttribute="bottom" secondItem="eNA-bS-QCH" secondAttribute="bottom" id="OIJ-M8-grN"/>
+                                    <constraint firstItem="eNA-bS-QCH" firstAttribute="top" secondItem="FWi-v4-6aF" secondAttribute="top" id="cRG-k6-O8L"/>
+                                    <constraint firstAttribute="width" secondItem="FWi-v4-6aF" secondAttribute="height" multiplier="1:1" id="kHe-JN-KRR"/>
+                                    <constraint firstItem="eNA-bS-QCH" firstAttribute="leading" secondItem="FWi-v4-6aF" secondAttribute="leading" id="n2f-5T-ZXk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="rEX-ad-pHf" secondAttribute="trailing" constant="90" placeholder="YES" id="0hM-2b-yZ1"/>
                             <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="neW-U9-LcG" secondAttribute="bottom" constant="60" id="4m3-18-dm6"/>
                             <constraint firstItem="n5e-i2-qlG" firstAttribute="top" secondItem="kE5-Lf-YFO" secondAttribute="centerY" placeholder="YES" id="CvW-VG-4dg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n5e-i2-qlG" secondAttribute="trailing" placeholder="YES" id="Dvy-D1-2jT"/>
+                            <constraint firstItem="FWi-v4-6aF" firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="width" id="IJl-lh-Usx"/>
                             <constraint firstItem="neW-U9-LcG" firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="width" id="Lwg-tW-JT7"/>
                             <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="Tud-qe-doX" secondAttribute="bottom" constant="60" id="M5C-dO-hql"/>
                             <constraint firstItem="fpY-il-KuX" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="NUE-R1-ni5"/>
@@ -804,6 +826,7 @@
                             <constraint firstItem="fpY-il-KuX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="Srr-eu-8ew"/>
                             <constraint firstItem="Tud-qe-doX" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="VBe-JZ-keG"/>
                             <constraint firstAttribute="leadingMargin" secondItem="n5e-i2-qlG" secondAttribute="leading" placeholder="YES" id="VyK-qj-CUS"/>
+                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="FWi-v4-6aF" secondAttribute="bottom" constant="60" id="WOJ-OL-bAk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="neW-U9-LcG" secondAttribute="trailing" constant="90" placeholder="YES" id="Yg6-6v-N8s"/>
                             <constraint firstItem="rEX-ad-pHf" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="ZUp-tl-xtR"/>
                             <constraint firstItem="rEX-ad-pHf" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="bQG-xE-gW8"/>
@@ -811,12 +834,15 @@
                             <constraint firstItem="Tud-qe-doX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n5e-i2-qlG" secondAttribute="bottom" constant="8" symbolic="YES" id="fup-Dk-RAD"/>
                             <constraint firstItem="Tud-qe-doX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="nsQ-vV-HhT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gMp-KQ-AZw" secondAttribute="trailing" placeholder="YES" id="oTG-vA-tpe"/>
+                            <constraint firstItem="FWi-v4-6aF" firstAttribute="centerX" secondItem="kE5-Lf-YFO" secondAttribute="centerX" id="wsg-eg-DBl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="n5e-i2-qlG" id="xLA-kG-vJy"/>
                         <outlet property="bottomLeftView" destination="Tud-qe-doX" id="p89-9k-XJT"/>
                         <outlet property="bottomRightView" destination="neW-U9-LcG" id="SkE-h7-FsQ"/>
+                        <outlet property="focusableImageView" destination="eNA-bS-QCH" id="D8J-15-y2n"/>
+                        <outlet property="preferredFocusedView" destination="FWi-v4-6aF" id="YWy-Yz-oKl"/>
                         <outlet property="topLabel" destination="gMp-KQ-AZw" id="n0D-Yz-sNN"/>
                         <outlet property="topLeftView" destination="fpY-il-KuX" id="RV1-JC-fZ7"/>
                         <outlet property="topRightView" destination="rEX-ad-pHf" id="v3s-Fg-9nW"/>
