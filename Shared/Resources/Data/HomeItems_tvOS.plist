@@ -184,6 +184,18 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Auto Layout Guides</string>
+				<key>requiredClassName</key>
+				<string>UILayoutGuide</string>
+				<key>iconName</key>
+				<string>icon_LayoutGuides</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutGuidesViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout_guides</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Auto Resizing Masks</string>
 				<key>iconName</key>
 				<string>icon_AutoResizing</string>

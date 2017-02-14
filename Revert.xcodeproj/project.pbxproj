@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
 		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
@@ -921,6 +922,7 @@
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
 				BB66CC021CB74C8900954AD1 /* Person.swift in Sources */,
 				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
+				7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
 				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
 				BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */,

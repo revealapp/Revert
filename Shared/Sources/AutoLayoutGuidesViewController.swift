@@ -41,8 +41,6 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     NSLayoutConstraint.activate([
       embeddedView.topAnchor.constraint(equalTo: self.view.topAnchor),
       embeddedView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-      embeddedView.widthAnchor.constraint(equalToConstant: 128),
-      embeddedView.heightAnchor.constraint(equalToConstant: 160),
     ])
   }
 
@@ -83,10 +81,22 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       self.view.addSubview(centerView)
 
       NSLayoutConstraint.activate([
-        centerView.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 8),
-        centerView.bottomAnchor.constraint(equalTo: self.bottomLayoutGuide.topAnchor, constant: -8),
+        centerView.bottomAnchor.constraint(equalTo: self.bottomLayoutGuide.topAnchor),
         centerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+        centerView.widthAnchor.constraint(equalTo: self.view.widthAnchor),
       ])
+
+      #if os(iOS)
+        NSLayoutConstraint.activate([
+          centerView.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 8),
+        ])
+      #else
+        NSLayoutConstraint.activate([
+          centerView.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 60),
+          centerView.widthAnchor.constraint(equalToConstant: 300),
+          centerView.heightAnchor.constraint(equalTo: centerView.widthAnchor),
+        ])
+      #endif
     }
     
   }
