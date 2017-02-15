@@ -716,7 +716,7 @@
             </objects>
             <point key="canvasLocation" x="1625" y="2628"/>
         </scene>
-        <!--Layout Guides-->
+        <!--Auto Layout Guides-->
         <scene sceneID="Dm6-tM-1aY">
             <objects>
                 <viewController id="StG-Ow-5CX" customClass="AutoLayoutGuidesViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -802,7 +802,7 @@
                             <constraint firstItem="yF3-Il-iyv" firstAttribute="leading" secondItem="r5A-rt-kTL" secondAttribute="leadingMargin" placeholder="YES" id="yO5-wS-Sjd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Layout Guides" id="dFW-76-eMN">
+                    <navigationItem key="navigationItem" title="Auto Layout Guides" id="dFW-76-eMN">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="D5s-WD-xet">
                             <connections>
                                 <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="Yhe-kA-Tfr"/>
