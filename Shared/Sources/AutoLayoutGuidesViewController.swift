@@ -155,7 +155,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
 
 // MARK: - Focusable view (tvOS)
 
-@available(tvOS 9.0, *)
+@available(tvOS 9.0, iOS 9.0, *)
 final class FocusableView: UIView {
 
   override var canBecomeFocused: Bool {
