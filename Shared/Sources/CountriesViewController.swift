@@ -34,7 +34,7 @@ final class CountriesViewController: RevertTableViewController {
     label.backgroundColor = UIColor.white
     label.text = text
     label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.caption1)
-    label.textColor = UIColor.revertLightBlackColor()
+    label.textColor = .revertLightBlack
     label.textAlignment = .center
     return label
   }

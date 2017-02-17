@@ -108,7 +108,7 @@ class TextFieldControlCell: CollectionViewCell {
       let doneBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Done", comment: "Done alert title"), style: .done, target: self, action: #selector(self.doneButtonTapped(_:)))
       let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 
-      doneBarButtonItem.tintColor = UIColor.revertTintColor()
+      doneBarButtonItem.tintColor = .revertTint
       toolBar.items = [
         flexibleBarButtonItem,
         doneBarButtonItem

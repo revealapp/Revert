@@ -93,8 +93,8 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
     let origin = CGPoint(x: (shapeLayer.bounds.width - minLength) / 2, y: 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
     shapeLayer.path = UIBezierPath(ovalIn: rect).cgPath
-    shapeLayer.fillColor = UIColor.revertOrangeColor().cgColor
-    shapeLayer.strokeColor = UIColor.revertLightBlackColor().cgColor
+    shapeLayer.fillColor = UIColor.revertOrange.cgColor
+    shapeLayer.strokeColor = UIColor.revertLightBlack.cgColor
     shapeLayer.strokeStart = 0
     shapeLayer.strokeEnd = 1
     shapeLayer.fillRule = kCAFillRuleEvenOdd
@@ -118,7 +118,7 @@ final class CAScrollLayerCell: LayerBackedCollectionViewCell {
 
   private static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = kCAScrollHorizontally
-    scrollLayer.backgroundColor = UIColor.revertDarkblueColor().cgColor
+    scrollLayer.backgroundColor = UIColor.revertDarkBlue.cgColor
     scrollLayer.cornerRadius = 5
   }
 }
@@ -141,7 +141,7 @@ final class CATiledLayerCell: LayerBackedCollectionViewCell {
     tiledLayer.tileSize = tiledLayer.bounds.size
     tiledLayer.cornerRadius = 5
     tiledLayer.borderWidth = 1
-    tiledLayer.borderColor = UIColor.revertLightBlackColor().cgColor
+    tiledLayer.borderColor = UIColor.revertLightBlack.cgColor
   }
 }
 
@@ -198,7 +198,7 @@ final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
     let circleLayer = CAShapeLayer()
 
     circleLayer.path = UIBezierPath(ovalIn: circleRect).cgPath
-    circleLayer.fillColor = UIColor.revertOrangeColor().cgColor
+    circleLayer.fillColor = UIColor.revertOrange.cgColor
 
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
@@ -228,6 +228,6 @@ final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
   private static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1
-    aeglLayer.borderColor = UIColor.revertLightBlackColor().cgColor
+    aeglLayer.borderColor = UIColor.revertLightBlack.cgColor
   }
 }
