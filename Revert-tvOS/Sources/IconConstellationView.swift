@@ -60,7 +60,6 @@ class IconConstellationView: UIView {
     self.iconViews = self.animatedIcons.map { image in
       let imageView = UIImageView(image: image)
       imageView.contentMode = .center
-      imageView.translatesAutoresizingMaskIntoConstraints = false
 
       return imageView
     }
