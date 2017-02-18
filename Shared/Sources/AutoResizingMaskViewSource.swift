@@ -65,7 +65,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: self.innerOrigin, size: flexibleWidthSize)
     let flexibleWidthView = self.bakeViewWithFrame(frame)
 
-    flexibleWidthView.backgroundColor = UIColor.revertDarkblueColor()
+    flexibleWidthView.backgroundColor = .revertDarkBlue
     flexibleWidthView.autoresizingMask = .flexibleWidth
     return flexibleWidthView
   }()
@@ -84,7 +84,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: flexibleHeightLeftRightOrigin, size: flexibleHeightLeftRightSize)
     let flexibleHeightLeftRightView = self.bakeViewWithFrame(frame)
 
-    flexibleHeightLeftRightView.backgroundColor = UIColor.revertOrangeColor()
+    flexibleHeightLeftRightView.backgroundColor = .revertOrange
     flexibleHeightLeftRightView.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin]
     return flexibleHeightLeftRightView
   }()
@@ -97,7 +97,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: leftFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
     let leftFlexibleTopBottomView = self.bakeViewWithFrame(frame)
 
-    leftFlexibleTopBottomView.backgroundColor = UIColor.awesgreenColor()
+    leftFlexibleTopBottomView.backgroundColor = .awesGreen
     leftFlexibleTopBottomView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
     return leftFlexibleTopBottomView
   }()
@@ -111,7 +111,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: rightFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
     let rightFlexibleTopBottomView = self.bakeViewWithFrame(frame)
 
-    rightFlexibleTopBottomView.backgroundColor = UIColor.revertPinkColor()
+    rightFlexibleTopBottomView.backgroundColor = .revertPink
     rightFlexibleTopBottomView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleLeftMargin]
     return rightFlexibleTopBottomView
   }()

@@ -8,7 +8,7 @@ final class HomeCell: BasicCell {
   func updateSelectedBackgroundColor(_ isBlue: Bool) {
     if isBlue {
       let selectedBackgroundView = UIView()
-      selectedBackgroundView.backgroundColor = UIColor.revertTintColor()
+      selectedBackgroundView.backgroundColor = .revertTint
       self.selectedBackgroundView = selectedBackgroundView
     } else {
       self.selectedBackgroundView = nil

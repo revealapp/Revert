@@ -126,7 +126,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
         let centerView = FocusableView()
       #endif
 
-      centerView.backgroundColor = UIColor.vividGreenColor()
+      centerView.backgroundColor = .vividGreen
       centerView.layer.cornerRadius = 2
       centerView.translatesAutoresizingMaskIntoConstraints = false
       self.view.addSubview(centerView)

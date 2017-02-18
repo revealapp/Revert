@@ -27,7 +27,7 @@ final class DeepView: UIView {
 
   private static func colorForIndex(_ index: Int) -> UIColor {
     if index % 5 == 0 {
-      return [UIColor.revertDarkblueColor(), UIColor.revertOrangeColor(), UIColor.revertPinkColor()][(index / 5) % 3]
+      return [.revertDarkBlue, .revertOrange, .revertPink][(index / 5) % 3]
     }
     return UIColor.white
   }
