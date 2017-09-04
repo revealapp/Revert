@@ -39,7 +39,7 @@ class BasicCell: UITableViewCell {
     self.applyDynamicType()
   }
 
-  func applyDynamicType(_ notification: Notification? = nil) {
+  @objc func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
     self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.footnote)
   }

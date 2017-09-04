@@ -91,14 +91,14 @@ private extension CountriesViewController {
       self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), for: .valueChanged)
     }
 
-    func tableViewPulledToRefresh(_ refreshControl: UIRefreshControl) {
+    @objc func tableViewPulledToRefresh(_ refreshControl: UIRefreshControl) {
       self.refreshTimer?.invalidate()
 
       // Simulating data loading, 10 secs to be sure that there's enough time to Reveal the view before it ends
       self.refreshTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.didLoadDummyData(_:)), userInfo: nil, repeats: false)
     }
 
-    func didLoadDummyData(_ timer: Timer) {
+    @objc func didLoadDummyData(_ timer: Timer) {
       self.refreshControl?.endRefreshing()
     }
   }

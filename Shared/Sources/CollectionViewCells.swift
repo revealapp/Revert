@@ -22,7 +22,7 @@ class CollectionViewCell: UICollectionViewCell {
     self.applyDynamicType()
   }
 
-  func applyDynamicType(_ notification: Notification? = nil) {
+  @objc func applyDynamicType(_ notification: Notification? = nil) {
     self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
     self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
   }
@@ -84,11 +84,11 @@ class TextFieldControlCell: CollectionViewCell {
       self.textField.inputAccessoryView = self.textFieldInputAccessoryView
     }
 
-    func doneButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func doneButtonTapped(_ sender: UIBarButtonItem) {
       self.textField.resignFirstResponder()
     }
 
-    func datePickerChanged(_ datePicker: UIDatePicker) {
+    @objc func datePickerChanged(_ datePicker: UIDatePicker) {
       self.textField.text = Static.Formatter.ddmmyy.string(from: datePicker.date)
     }
 
