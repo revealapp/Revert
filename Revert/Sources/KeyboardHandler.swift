@@ -27,7 +27,7 @@ final class KeyboardHandler: NSObject {
     NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
   }
 
-  func keyboardWillShowHideNotification(_ notification: Notification) {
+  @objc func keyboardWillShowHideNotification(_ notification: Notification) {
     guard
       let scrollView = self.scrollView,
       let scrollViewSuperview = scrollView.superview,

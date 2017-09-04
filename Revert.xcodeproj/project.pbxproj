@@ -9,18 +9,19 @@
 /* Begin PBXBuildFile section */
 		7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
+		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
+		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
+		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
+		90E99D301F5D293F00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
-		9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
-		9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */; };
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
 		9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C31AD4A20E00ACCE29 /* Main.storyboard */; };
 		9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6850C61AD4A20E00ACCE29 /* Images.xcassets */; };
 		9A6C75041BDE29DE00534680 /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75021BDE29DE00534680 /* Info */; };
 		9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */; };
-		9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */; };
 		9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */; };
 		9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE252501B18211A002B596C /* InfoBuilder.swift */; };
 		9AEE22B21ADBADB10033DAA2 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */; };
@@ -47,8 +48,6 @@
 		BB9F768E1CB61F57006EA285 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */; };
 		BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */; };
 		BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */; };
-		BB9F76921CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
-		BB9F76931CB628C4006EA285 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = BB9F76911CB628C4006EA285 /* Data */; };
 		BBAB1A681CBCD168000139DE /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */; };
 		BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
@@ -149,66 +148,65 @@
 
 /* Begin PBXFileReference section */
 		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
-		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeView.swift; path = Revert/Sources/VolumeView.swift; sourceTree = "<group>"; };
-		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		9A0416CD1B02EAB300477E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = Revert/Sources/PickerViewController.swift; sourceTree = "<group>"; };
-		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Revert/Sources/WebViewController.swift; sourceTree = "<group>"; };
-		9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = Revert/Sources/ModalViewController.swift; sourceTree = "<group>"; };
-		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Revert/Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
+		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
 		9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6850C41AD4A20E00ACCE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A6850C61AD4A20E00ACCE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9A6C74FF1BDE297800534680 /* INFO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = INFO.md; sourceTree = SOURCE_ROOT; };
-		9A6C75021BDE29DE00534680 /* Info */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Info; path = Resources/Info; sourceTree = "<group>"; };
-		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHandler.swift; path = Revert/Sources/KeyboardHandler.swift; sourceTree = "<group>"; };
+		9A6C74FF1BDE297800534680 /* INFO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = INFO.md; sourceTree = "<group>"; };
+		9A6C75021BDE29DE00534680 /* Info */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Info; sourceTree = "<group>"; };
+		9A87FA751ADC91B800290F7A /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Debug.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Release.xcconfig"; sourceTree = "<group>"; };
 		9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-iOS-Shared.xcconfig"; sourceTree = "<group>"; };
-		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Revert/Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		9ABEBA101AD4AC1400E3D998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD829591BD7048C0049C996 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = ci.sh; path = Scripts/ci.sh; sourceTree = SOURCE_ROOT; };
 		9AD8295B1BD7048C0049C996 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = Scripts/swiftlint.sh; sourceTree = SOURCE_ROOT; };
-		9AE252501B18211A002B596C /* InfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoBuilder.swift; path = Revert/Sources/InfoBuilder.swift; sourceTree = "<group>"; };
-		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsViewController.swift; path = Revert/Sources/BarsViewController.swift; sourceTree = "<group>"; };
+		9AE252501B18211A002B596C /* InfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBuilder.swift; sourceTree = "<group>"; };
+		9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarsViewController.swift; sourceTree = "<group>"; };
 		9AF1B3181AE5EBE400BB626B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
-		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DualRowBasicCollectionViewFlowLayout.swift; path = Revert/Sources/DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
-		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Revert/Sources/InfoViewController.swift; sourceTree = "<group>"; };
-		B55841181BD496AB009725C5 /* NSBundle+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSBundle+Revert.swift"; path = "Revert/Sources/NSBundle+Revert.swift"; sourceTree = "<group>"; };
+		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B55841181BD496AB009725C5 /* NSBundle+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Revert.swift"; sourceTree = "<group>"; };
 		B59998E71BC36092002FE92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
-		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafariViewController.swift; path = Revert/Sources/SafariViewController.swift; sourceTree = "<group>"; };
+		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Revert-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2720531C9B8E44002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB2720551C9B8E44002E53EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
-		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+tvOSInsets.swift"; path = "Sources/UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
-		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Person.swift; sourceTree = "<group>"; };
-		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Sources/SearchViewController.swift; sourceTree = "<group>"; };
-		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
-		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Sources/HomeViewController.swift; sourceTree = "<group>"; };
-		BB735B451C9FD0490092FA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Shared/Assets.xcassets; sourceTree = "<group>"; };
-		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Shared.xcconfig"; path = "Configurations/Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
-		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Debug.xcconfig"; path = "Configurations/Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
-		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-tvOS-Release.xcconfig"; path = "Configurations/Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
+		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
+		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB735B411C9FCC590092FA6F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB735B451C9FD0490092FA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
-		BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleLegacyAlerts.swift; path = Revert/Sources/ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
-		BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionDataSource.swift; path = Sources/CollectionDataSource.swift; sourceTree = "<group>"; };
-		BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertFocusableTableView.swift; path = Sources/RevertFocusableTableView.swift; sourceTree = "<group>"; };
-		BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewController.swift; path = Sources/HomeCollectionViewController.swift; sourceTree = "<group>"; };
-		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotSerializableViewController.swift; path = Sources/NotSerializableViewController.swift; sourceTree = "<group>"; };
-		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevertSplitViewController.swift; path = Sources/RevertSplitViewController.swift; sourceTree = "<group>"; };
-		BB9F76911CB628C4006EA285 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Shared/Resources/Data; sourceTree = "<group>"; };
+		BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
+		BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
+		BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
+		BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertSplitViewController.swift; sourceTree = "<group>"; };
 		BBAB1A671CBCD168000139DE /* WhatsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewViewController.swift; sourceTree = "<group>"; };
 		BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarginsAdjustingView.swift; path = Shared/Sources/MarginsAdjustingView.swift; sourceTree = SOURCE_ROOT; };
-		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Revert-Shared.xcconfig"; path = "Shared/Configurations/Revert-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
-		BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Debug.xcconfig"; path = "Shared/Configurations/Project-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
-		BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Release.xcconfig"; path = "Shared/Configurations/Project-Release.xcconfig"; sourceTree = SOURCE_ROOT; };
-		BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Project-Shared.xcconfig"; path = "Shared/Configurations/Project-Shared.xcconfig"; sourceTree = SOURCE_ROOT; };
-		BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlsDataSource.swift; path = Shared/Sources/ControlsDataSource.swift; sourceTree = "<group>"; };
-		BBE51C821CB737C1006638B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Shared/Sources/DataSource.swift; sourceTree = "<group>"; };
+		BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-Shared.xcconfig"; sourceTree = "<group>"; };
+		BBE51C751CB7351B006638B8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDataSource.swift; sourceTree = "<group>"; };
+		BBE51C821CB737C1006638B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Shared/Sources/CALayer+Revert.swift"; sourceTree = SOURCE_ROOT; };
 		BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Shared/Sources/ExampleAlerts.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Shared/Sources/UIColor+Revert.swift"; sourceTree = SOURCE_ROOT; };
@@ -255,7 +253,7 @@
 		BBE51D001CB73996006638B8 /* LayerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerViews.swift; path = Shared/Sources/LayerViews.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D011CB73996006638B8 /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapAnnotationView.swift; path = Shared/Sources/MapAnnotationView.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
-		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Revert/Sources/HomeViewController.swift; sourceTree = "<group>"; };
+		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -264,7 +262,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1B1AC01ADCEFE70016B793 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,29 +293,22 @@
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
 		};
-		9A1B1AC11ADCF2BA0016B793 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9A1B1ABF1ADCEFE70016B793 /* WebKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9A2F94701B140B0E007E51B1 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
 				9AD829591BD7048C0049C996 /* ci.sh */,
 				9AD8295B1BD7048C0049C996 /* swiftlint.sh */,
 			);
-			name = Scripts;
-			path = ../Scripts;
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 		9A6850AF1AD4A20E00ACCE29 = {
 			isa = PBXGroup;
 			children = (
+				9A6C75051BDE2A0200534680 /* Documentation */,
 				BB27205B1C9B8E9E002E53EE /* Revert */,
 				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
+				9A2F94701B140B0E007E51B1 /* Scripts */,
 				BB2720BD1C9F8DAE002E53EE /* Shared */,
 			);
 			indentWidth = 2;
@@ -336,14 +326,12 @@
 		9A6850BA1AD4A20E00ACCE29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A6C75051BDE2A0200534680 /* Documentation */,
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
 			);
-			name = Resources;
-			path = Revert;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9A6C75051BDE2A0200534680 /* Documentation */ = {
@@ -363,8 +351,7 @@
 				9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */,
 				9A9BD1E91BD67B17001A439D /* Revert-iOS-Shared.xcconfig */,
 			);
-			name = Configurations;
-			path = Revert/Configurations;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
@@ -394,15 +381,15 @@
 				9ABEBA0F1AD4ABE600E3D998 /* View Controllers */,
 				9A9F599D1AD4B33C00A8CB4B /* Views */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		9ABEBA0F1AD4ABE600E3D998 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9AEE22B11ADBADB10033DAA2 /* BarsViewController.swift */,
-				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
 				BBE51D181CB73A4A006638B8 /* HomeViewController.swift */,
+				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
 				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
@@ -437,11 +424,10 @@
 			children = (
 				9ABEBA0E1AD4ABDB00E3D998 /* Sources */,
 				9A9BD1E31BD67B17001A439D /* Configurations */,
-				9A1B1AC11ADCF2BA0016B793 /* Frameworks */,
 				9A6850BA1AD4A20E00ACCE29 /* Resources */,
 				9A6850B91AD4A20E00ACCE29 /* Products */,
 			);
-			name = Revert;
+			path = Revert;
 			sourceTree = "<group>";
 		};
 		BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */ = {
@@ -461,7 +447,7 @@
 				BB735B3D1C9FCC290092FA6F /* Info.plist */,
 				BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BB27205E1C9B9160002E53EE /* Sources */ = {
@@ -469,19 +455,19 @@
 			children = (
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
+				BB3F8B501D338C5A0092E374 /* Extensions */,
 				BB66CC001CB74C6000954AD1 /* Models */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
-				BB3F8B501D338C5A0092E374 /* Extensions */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		BB2720A11C9B92BD002E53EE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
 				BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */,
+				BB735B411C9FCC590092FA6F /* HomeViewController.swift */,
 				BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */,
 				BB9F768D1CB61F57006EA285 /* RevertSplitViewController.swift */,
 				BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */,
@@ -493,13 +479,11 @@
 		BB2720BD1C9F8DAE002E53EE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BB2720BF1C9F8DD0002E53EE /* Sources */,
 				BB2720BE1C9F8DBA002E53EE /* Configurations */,
 				BB735B481C9FD0500092FA6F /* Resources */,
-				9A2F94701B140B0E007E51B1 /* Scripts */,
+				BB2720BF1C9F8DD0002E53EE /* Sources */,
 			);
-			name = Shared;
-			path = Revert/Configurations;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		BB2720BE1C9F8DBA002E53EE /* Configurations */ = {
@@ -510,7 +494,7 @@
 				BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */,
 				BBE51C721CB7309A006638B8 /* Revert-Shared.xcconfig */,
 			);
-			name = Configurations;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		BB2720BF1C9F8DD0002E53EE /* Sources */ = {
@@ -524,17 +508,17 @@
 				BB2720C81C9F9265002E53EE /* View Controllers */,
 				BBE51CF81CB73962006638B8 /* Views */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		BB2720C01C9F8F57002E53EE /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */,
 				BB92F13B1C9FBC4000ECD9CB /* Revert-tvOS-Debug.xcconfig */,
 				BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */,
+				BB92F1391C9FBBFD00ECD9CB /* Revert-tvOS-Shared.xcconfig */,
 			);
-			name = Configurations;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		BB2720C81C9F9265002E53EE /* View Controllers */ = {
@@ -580,12 +564,11 @@
 		BB735B481C9FD0500092FA6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB9F76911CB628C4006EA285 /* Data */,
 				BB735B451C9FD0490092FA6F /* Assets.xcassets */,
-				9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */,
+				9021D96E1F5CFFC700A6A93E /* Data */,
+				9021D9701F5D010800A6A93E /* Localizable.stringsdict */,
 			);
-			name = Resources;
-			path = ../..;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
@@ -611,7 +594,6 @@
 				BBE51C821CB737C1006638B8 /* DataSource.swift */,
 			);
 			name = "Data Sources";
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BBE51C871CB737DD006638B8 /* Extensions */ = {
@@ -775,11 +757,11 @@
 				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
-				BB9F76921CB628C4006EA285 /* Data in Resources */,
-				9A0416CE1B02EAB300477E60 /* Localizable.stringsdict in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
+				90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */,
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
+				90E99D2D1F5D293600053684 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,11 +771,11 @@
 			files = (
 				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
-				BB9F76931CB628C4006EA285 /* Data in Resources */,
-				9AABB7251D2E0D8300D162B2 /* Localizable.stringsdict in Resources */,
+				90E99D2E1F5D293700053684 /* Data in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				90E99D301F5D293F00053684 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -970,13 +952,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9A0416CC1B02EAB300477E60 /* Localizable.stringsdict */ = {
+		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9A0416CD1B02EAB300477E60 /* Base */,
+				9021D9711F5D010800A6A93E /* Base */,
 			);
 			name = Localizable.stringsdict;
-			path = Revert;
 			sourceTree = "<group>";
 		};
 		9A6850C31AD4A20E00ACCE29 /* Main.storyboard */ = {
