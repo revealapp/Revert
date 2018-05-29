@@ -58,7 +58,7 @@ final class DeepView: UIView {
         view.addSubview(subview)
 
         // Prevents constraints from being invalid on rotation. Subviews added/removed on `layoutSubviews`
-        let priority = UILayoutPriority(Float(1000 - CGFloat(depth)))
+        let priority = UILayoutPriority(rawValue: Float(1000 - CGFloat(depth)))
         let constraints = self.constraintsForSubview(subview, constant: constant, priority: priority)
         view.addConstraints(constraints)
       }
