@@ -1,115 +1,60 @@
 //
-// Project-Shared.xcconfig
+// Xcode configuration shared across the entire project, for all build configuration types.
 
-// Use the latest Swift version
+// Packaging
+PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.$(PRODUCT_NAME:rfc1034identifier)
 
-SWIFT_SWIFT3_OBJC_INFERENCE =
-SWIFT_VERSION = 4.0
+// Deployment
+COPY_PHASE_STRIP = NO
 
-// Always Search User Paths
-// 
-// If enabled both #include <header.h>-style and #include "header.h"-style directives
-// will search the paths in "User Header Search Paths" before "Header Search Paths", with
-// the consequence that user headers (such as your own String.h header) would have
-// precedence over system headers when using #include <header.h>. This is done using the
-// -iquote flag for the paths provided in "User Header Search Paths". If disabled and
-// your compiler fully supports separate user paths, user headers will only be accessible
-// with #include "header.h"-style preprocessor directives.
-// 
-// For backwards compatibility reasons, this setting is enabled by default, but disabling
-// it is strongly recommended.
+// Signing
+CODE_SIGN_IDENTITY = iPhone Developer
+PROVISIONING_PROFILE_SPECIFIER =
+DEVELOPMENT_TEAM =
 
+// Search Paths
 ALWAYS_SEARCH_USER_PATHS = NO
 
+// Language
+GCC_C_LANGUAGE_STANDARD = gnu99
 
+// Language: C++
 CLANG_CXX_LIBRARY = libc++
 
-
+// Language: Modules
 CLANG_ENABLE_MODULES = YES
 
-
+// Language: Objective-C
 CLANG_ENABLE_OBJC_ARC = YES
 
 // Language: Swift
 SWIFT_VERSION = 4.1
 SWIFT_SWIFT3_OBJC_INFERENCE =
 
-CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
-
-
-CLANG_WARN_BOOL_CONVERSION = YES
-
-
-CLANG_WARN_CONSTANT_CONVERSION = YES
-
-
-CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
-
-
-CLANG_WARN_EMPTY_BODY = YES
-
-
-CLANG_WARN_ENUM_CONVERSION = YES
-
-
-CLANG_WARN_INFINITE_RECURSION = YES
-
-
-CLANG_WARN_INT_CONVERSION = YES
-
-
-CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
-
-
-CLANG_WARN_SUSPICIOUS_MOVE = YES
-
-
-CLANG_WARN_UNREACHABLE_CODE = YES
-
-
-// Code Signing Identity
-// 
-// The name ("common name") of a valid code-signing certificate in a keychain within your
-// keychain path. A missing or invalid certificate will cause a build error.
-
-CODE_SIGN_IDENTITY = iPhone Developer
-
-PROVISIONING_PROFILE_SPECIFIER =
-
-DEVELOPMENT_TEAM =
-
-// Strip Debug Symbols During Copy
-// 
-// Activating this setting causes binary files which are copied during the build (e.g.,
-// in a Copy Bundle Resources or Copy Files build phase) to be stripped of debugging
-// symbols.  It does not cause the linked product of a target to be stripped (use Strip
-// Linked Product for that).
-
-COPY_PHASE_STRIP = NO
-
-
+// Preprocessing
 ENABLE_STRICT_OBJC_MSGSEND = YES
 
-
-GCC_C_LANGUAGE_STANDARD = gnu99
-
-
+// Code Generation
 GCC_NO_COMMON_BLOCKS = YES
 
-
+// Warnings
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+CLANG_WARN_BOOL_CONVERSION = YES
+CLANG_WARN_CONSTANT_CONVERSION = YES
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
+CLANG_WARN_EMPTY_BODY = YES
+CLANG_WARN_ENUM_CONVERSION = YES
+CLANG_WARN_INFINITE_RECURSION = YES
+CLANG_WARN_INT_CONVERSION = YES
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
+CLANG_WARN_SUSPICIOUS_MOVE = YES
+CLANG_WARN_UNREACHABLE_CODE = YES
 GCC_WARN_64_TO_32_BIT_CONVERSION = YES
-
-
 GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
-
-
 GCC_WARN_UNDECLARED_SELECTOR = YES
-
-
 GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE
-
-
 GCC_WARN_UNUSED_FUNCTION = YES
-
-
+GCC_WARN_UNUSED_LABEL = YES
+GCC_WARN_UNUSED_PARAMETER = YES
 GCC_WARN_UNUSED_VARIABLE = YES

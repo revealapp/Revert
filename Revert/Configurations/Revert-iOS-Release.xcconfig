@@ -1,15 +1,4 @@
 //
-// Revert-iOS-Release.xcconfig
+// Xcode configuration for the Revert iOS target, targeting the release configuration.
 
 #include "Revert-iOS-Shared.xcconfig"
-
-
-// Swift Optimization Level
-// 
-// None: Compile without any optimization. [-Onone]
-// 
-// Fast [-O]
-// 
-// Fast, Whole Module Optimization  [-O -whole-module-optimization]
-
-SWIFT_OPTIMIZATION_LEVEL = -Owholemodule

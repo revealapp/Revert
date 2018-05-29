@@ -1,4 +1,4 @@
 //
-// Revert-iOS-Debug.xcconfig
+// Xcode configuration for the Revert iOS target, targeting the debug configuration.
 
 #include "Revert-iOS-Shared.xcconfig"
