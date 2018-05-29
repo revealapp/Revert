@@ -1,13 +1,26 @@
 opt_out_usage
+opt_out_crash_reporting
 
 fastlane_version "1.35.0"
 
 default_platform :ios
 
 platform :ios do
-  desc "Builds Revert"
+  desc "Builds Revert for iOS"
   lane :build do
     xcodebuild(
+      scheme: "Revert",
+      configuration: "Debug",
+      clean: true
+    )
+  end
+end
+
+platform :tvOS do
+  desc "Builds Revert for tvOS"
+  lane :build do
+    xcodebuild(
+      scheme: "Revert-tvOS",
       configuration: "Debug",
       clean: true
     )
