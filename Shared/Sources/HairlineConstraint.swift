@@ -3,7 +3,6 @@
 import UIKit
 
 final class HairlineConstraint: NSLayoutConstraint {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 

@@ -3,7 +3,6 @@
 import UIKit
 
 final class AutoResizingMaskViewController: RevertViewController {
-
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
@@ -14,7 +13,7 @@ final class AutoResizingMaskViewController: RevertViewController {
 
   private var viewsReady = false
 
-  @IBOutlet private weak var outterView: UIView!
+  @IBOutlet private var outterView: UIView!
 
   private func addSubViewsIfNeeded() {
     // Only perform this action once

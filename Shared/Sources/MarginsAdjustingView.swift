@@ -13,7 +13,6 @@ class MarginsAdjustingView: UIView {
 #if os(iOS)
 
   final class SliderMarginsAdjustingView: MarginsAdjustingView {
-
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -24,7 +23,7 @@ class MarginsAdjustingView: UIView {
 
     // MARK: Private
 
-    @IBOutlet private weak var slider: UISlider!
+    @IBOutlet private var slider: UISlider!
 
     @IBAction private func sliderValueChanged(_ sender: UISlider) {
       let margin = CGFloat(sender.value)
@@ -36,7 +35,6 @@ class MarginsAdjustingView: UIView {
 #if os(tvOS)
 
   final class ButtonsMarginsAdjustingView: MarginsAdjustingView {
-
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -97,7 +95,6 @@ class MarginsAdjustingView: UIView {
   }
 
   private struct MarginValue {
-
     mutating func changeValue(_ changeType: ChangeType) {
       let computedDelta = CGFloat(changeType.rawValue) * type(of: self).delta
       self.value = type(of: self).cappedMarginForMargin(self.value, delta: computedDelta)

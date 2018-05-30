@@ -4,7 +4,6 @@ import Foundation
 
 @available(iOS 9.0, tvOS 9.0, *)
 final class AutoLayoutGuidesViewController: RevertViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -62,16 +61,16 @@ final class AutoLayoutGuidesViewController: RevertViewController {
 
   // MARK: - Private
 
-  @IBOutlet private weak var topLeftView: UIView!
-  @IBOutlet private weak var topRightView: UIView!
-  @IBOutlet private weak var bottomLeftView: UIView!
-  @IBOutlet private weak var bottomRightView: UIView!
-  @IBOutlet private weak var topLabel: UILabel!
-  @IBOutlet private weak var bottomLabel: UILabel!
+  @IBOutlet private var topLeftView: UIView!
+  @IBOutlet private var topRightView: UIView!
+  @IBOutlet private var bottomLeftView: UIView!
+  @IBOutlet private var bottomRightView: UIView!
+  @IBOutlet private var topLabel: UILabel!
+  @IBOutlet private var bottomLabel: UILabel!
 
   #if os(tvOS)
-    @IBOutlet private weak var focusableView: UIView!
-    @IBOutlet private weak var focusableImageView: UIImageView!
+    @IBOutlet private var focusableView: UIView!
+    @IBOutlet private var focusableImageView: UIImageView!
   #endif
 
   @discardableResult
@@ -95,7 +94,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     view.addLayoutGuide(guide)
 
     if #available(iOS 10.0, tvOS 10.0, *) {
-      guide.preferredFocusEnvironments = [ focusedView ]
+      guide.preferredFocusEnvironments = [focusedView]
     } else {
       guide.preferredFocusedView = focusedView
     }
@@ -112,8 +111,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
 
   // MARK: - Manually embedded view controller
 
-  final private class EmbeddedViewController: UIViewController {
-
+  private final class EmbeddedViewController: UIViewController {
     var centerView: UIView!
 
     override func viewDidLoad() {
@@ -150,14 +148,12 @@ final class AutoLayoutGuidesViewController: RevertViewController {
       #endif
     }
   }
-
 }
 
 // MARK: - Focusable view (tvOS)
 
 @available(tvOS 9.0, iOS 9.0, *)
 final class FocusableView: UIView {
-
   override var canBecomeFocused: Bool {
     return true
   }
@@ -167,5 +163,4 @@ final class FocusableView: UIView {
       self.alpha = self.isFocused ? 0.5 : 1.0
     })
   }
-
 }

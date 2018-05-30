@@ -1,10 +1,9 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import GLKit
+import UIKit
 
 final class OpenGLViewController: RevertGLKViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -62,7 +61,6 @@ final class OpenGLViewController: RevertGLKViewController {
 #if os(tvOS)
 
   extension OpenGLViewController {
-
     override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
       self.toggleState()
 

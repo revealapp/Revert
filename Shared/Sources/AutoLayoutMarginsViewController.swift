@@ -3,7 +3,6 @@
 import UIKit
 
 final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjustingViewDelegate {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -22,6 +21,7 @@ final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjust
   }
 
   // MARK: MarginsAdjustingViewDelegate
+
   func didUpdateMargins(_ updatedLayoutMargins: UIEdgeInsets) {
     self.centerView.layoutMargins = updatedLayoutMargins
   }

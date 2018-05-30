@@ -3,7 +3,6 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -35,12 +34,11 @@ final class HomeViewController: UITableViewController {
 }
 
 extension HomeViewController {
-
   override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     guard
       let nextFocusedIndexPath = context.nextFocusedIndexPath,
       nextFocusedIndexPath != context.previouslyFocusedIndexPath
-      else {
+    else {
       // We don't want to perform unnecessary segues when moving back from the detail view.
       // This also helps the detail collection view to remember the last focused item.
 
@@ -83,7 +81,6 @@ extension HomeViewController {
 }
 
 private extension HomeViewController {
-
   static func configureCell(_ cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
   }

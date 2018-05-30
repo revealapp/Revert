@@ -3,7 +3,6 @@
 import UIKit
 
 final class WhatsNewViewController: UIViewController {
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .whatsNew),
@@ -41,7 +40,6 @@ final class WhatsNewViewController: UIViewController {
 }
 
 private extension WhatsNewViewController {
-
   static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
@@ -51,7 +49,6 @@ private extension WhatsNewViewController {
 // MARK: - UICollectionViewDelegate
 
 extension WhatsNewViewController: UICollectionViewDelegate {
-
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 

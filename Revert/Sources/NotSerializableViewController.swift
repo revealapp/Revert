@@ -3,7 +3,6 @@
 import UIKit
 
 final class NonSerializableViewController: RevertViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 

@@ -3,7 +3,6 @@
 import UIKit
 
 final class AutoResizingMaskViewSource {
-
   init(bounds: CGRect) {
     self.flexibleWidthHeightSize = CGSize(
       width: bounds.width - (2 * type(of: self).horizontalPadding),
@@ -124,7 +123,6 @@ final class AutoResizingMaskViewSource {
 }
 
 private class UserInterfaceStyleAwareView: UIView {
-
   override init(frame: CGRect) {
     super.init(frame: frame)
 
@@ -138,7 +136,6 @@ private class UserInterfaceStyleAwareView: UIView {
   // MARK: Private
 
   private var borderColor: CGColor {
-
     #if os(tvOS)
 
       guard #available(tvOS 10.0, *) else {
@@ -157,7 +154,6 @@ private class UserInterfaceStyleAwareView: UIView {
       return UIColor.white.cgColor
 
     #endif
-
   }
 
   #if os(tvOS)

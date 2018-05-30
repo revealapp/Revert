@@ -5,8 +5,8 @@ import UIKit
 final class CollectionViewController: RevertCollectionViewController {}
 
 // MARK: - UICollectionViewDataSource
-extension CollectionViewController {
 
+extension CollectionViewController {
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
   }
@@ -23,8 +23,8 @@ extension CollectionViewController {
 }
 
 // MARK: - UICollectionViewDelegate
-extension CollectionViewController {
 
+extension CollectionViewController {
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = .graySelection
   }

@@ -3,7 +3,6 @@
 import UIKit
 
 extension UIAlertController {
-
   static func exampleAlertControllerWithStyle(_ style: UIAlertControllerStyle) -> UIAlertController {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("This is a UIAlertController", comment: "Alert title"),
@@ -33,7 +32,6 @@ extension UIAlertController {
 #if os(iOS)
 
   extension AlertViewController {
-
     static func showExampleAlertView() {
       UIAlertView.exampleAlertView().show()
     }

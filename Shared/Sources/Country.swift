@@ -3,9 +3,8 @@
 import Foundation
 
 struct Country: Collectable {
-
   private enum Attributes: String {
-    case name = "name"
+    case name
     case capitalCity = "capital"
   }
 

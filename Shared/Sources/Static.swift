@@ -4,7 +4,6 @@ import Foundation
 import MapKit
 
 struct Static {
-
   struct Formatter {
     static var ddmmyy: DateFormatter = {
       let dateFormatter = DateFormatter()

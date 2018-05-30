@@ -3,7 +3,6 @@
 import UIKit
 
 final class HomeCell: BasicCell {
-
   func updateSelectedBackgroundColor(_ isBlue: Bool) {
     if isBlue {
       let selectedBackgroundView = UIView()
@@ -16,11 +15,10 @@ final class HomeCell: BasicCell {
 
   // MARK: Private
 
-  @IBOutlet private(set) weak var iconImageView: UIImageView!
+  @IBOutlet private(set) var iconImageView: UIImageView!
 }
 
 class BasicCell: UITableViewCell {
-
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -45,8 +43,8 @@ class BasicCell: UITableViewCell {
 
   // MARK: Private
 
-  @IBOutlet private(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subtitleLabel: UILabel!
+  @IBOutlet private(set) var titleLabel: UILabel!
+  @IBOutlet private(set) var subtitleLabel: UILabel!
 
   #if os(tvOS)
 

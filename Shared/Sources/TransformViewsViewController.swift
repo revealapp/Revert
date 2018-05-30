@@ -3,7 +3,6 @@
 import UIKit
 
 final class TransformViewsViewController: RevertViewController {
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -26,10 +25,10 @@ final class TransformViewsViewController: RevertViewController {
 
   private var wasAnimated = false
 
-  @IBOutlet private weak var translateView: UIView!
-  @IBOutlet private weak var rotateView: UIView!
-  @IBOutlet private weak var scaleView: UIView!
-  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private var translateView: UIView!
+  @IBOutlet private var rotateView: UIView!
+  @IBOutlet private var scaleView: UIView!
+  @IBOutlet private var scrollViewItemHeight: NSLayoutConstraint!
 
   private func animateViewsIfNecessary() {
     // Only perform this action once

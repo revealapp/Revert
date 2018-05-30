@@ -3,7 +3,6 @@
 import UIKit
 
 extension UIColor {
-
   static var whiteSmoke: UIColor {
     return UIColor(red: 254 / 255, green: 254 / 255, blue: 254 / 255, alpha: 1)
   }
@@ -39,5 +38,4 @@ extension UIColor {
   static var graySelection: UIColor {
     return UIColor(white: 215 / 255, alpha: 1)
   }
-
 }

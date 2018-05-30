@@ -3,7 +3,6 @@
 import UIKit
 
 final class HairlineBorderView: UIView {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 

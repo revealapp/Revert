@@ -1,10 +1,9 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import MediaPlayer
+import UIKit
 
 final class VolumeView: MPVolumeView {
-
   override func layoutSubviews() {
     super.layoutSubviews()
 

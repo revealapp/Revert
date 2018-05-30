@@ -15,7 +15,7 @@ struct HomeItem: Collectable, Requirement {
       let title = dictionary[Attributes.title.rawValue] as? String,
       let iconName = dictionary[Attributes.iconName.rawValue] as? String,
       let segueIdentifier = dictionary[Attributes.segueIdentifier.rawValue] as? String
-      else {
+    else {
       fatalError("Invalid `HomeItem` attributes")
     }
 
@@ -30,12 +30,12 @@ struct HomeItem: Collectable, Requirement {
   // MARK: Private
 
   private enum Attributes: String {
-    case title = "title"
-    case infoFilename = "infoFilename"
-    case iconName = "iconName"
-    case segueIdentifier = "segueIdentifier"
+    case title
+    case infoFilename
+    case iconName
+    case segueIdentifier
     case push = "isPush"
-    case requiredClassName = "requiredClassName"
+    case requiredClassName
   }
 }
 

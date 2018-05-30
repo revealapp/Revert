@@ -3,7 +3,6 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
 
@@ -28,8 +27,8 @@ class CollectionViewCell: UICollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
-  @IBOutlet private(set) weak var subheadLabel: UILabel!
+  @IBOutlet fileprivate(set) var titleLabel: UILabel!
+  @IBOutlet private(set) var subheadLabel: UILabel!
 
   #if os(tvOS)
 
@@ -61,11 +60,10 @@ class CollectionViewCell: UICollectionViewCell {
     }
 
   #endif
-
 }
 
 class TextFieldControlCell: CollectionViewCell {
-  @IBOutlet fileprivate weak var textField: UITextField!
+  @IBOutlet fileprivate var textField: UITextField!
 
   @IBAction private func textFieldDidEndOnExit(_ sender: UITextField) {
     sender.resignFirstResponder()
@@ -75,7 +73,6 @@ class TextFieldControlCell: CollectionViewCell {
 #if os(iOS)
 
   final class TextFieldControlCustomInputCell: TextFieldControlCell, UIPickerViewDelegate {
-
     override func awakeFromNib() {
       super.awakeFromNib()
 
@@ -120,7 +117,6 @@ class TextFieldControlCell: CollectionViewCell {
 #if os(tvOS)
 
   final class HomeCollectionCell: CollectionViewCell {
-
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
       super.didUpdateFocus(in: context, with: coordinator)
 
@@ -131,7 +127,6 @@ class TextFieldControlCell: CollectionViewCell {
 
     // MARK: Private
 
-    @IBOutlet private(set) weak var imageView: UIImageView!
-
+    @IBOutlet private(set) var imageView: UIImageView!
   }
 #endif

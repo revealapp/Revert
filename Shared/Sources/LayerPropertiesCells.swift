@@ -3,19 +3,16 @@
 import UIKit
 
 class LayerBackedCollectionViewCell: CollectionViewCell {
-
-#if os(tvOS)
-  override func awakeFromNib() {
-    // Ensure that there is a valid frame for the cell before trying to configure the layer effects/contents
-    self.layoutIfNeeded()
-    super.awakeFromNib()
-  }
-#endif
-
+  #if os(tvOS)
+    override func awakeFromNib() {
+      // Ensure that there is a valid frame for the cell before trying to configure the layer effects/contents
+      self.layoutIfNeeded()
+      super.awakeFromNib()
+    }
+  #endif
 }
 
 final class CATextLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -24,7 +21,7 @@ final class CATextLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var textLayerView: CATextLayerView!
+  @IBOutlet private var textLayerView: CATextLayerView!
 
   private static func configureTextLayer(_ textLayer: CATextLayer) {
     textLayer.string = NSLocalizedString("I am a quite long CATextLayer string.", comment: "")
@@ -37,7 +34,6 @@ final class CATextLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -46,7 +42,7 @@ final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var emitterLayerView: CAEmitterLayerView!
+  @IBOutlet private var emitterLayerView: CAEmitterLayerView!
 
   private static func configureEmitterLayer(_ emitterLayer: CAEmitterLayer) {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
@@ -76,7 +72,6 @@ final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAShapeLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -85,7 +80,7 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var shapeLayerView: CAShapeLayerView!
+  @IBOutlet private var shapeLayerView: CAShapeLayerView!
 
   private static func configureShapeLayer(_ shapeLayer: CAShapeLayer) {
     let minLength = min(shapeLayer.frame.height, shapeLayer.frame.width)
@@ -107,7 +102,7 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAScrollLayerCell: LayerBackedCollectionViewCell {
-  @IBOutlet private weak var scrollLayerView: CAScrollLayerView!
+  @IBOutlet private var scrollLayerView: CAScrollLayerView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -123,7 +118,6 @@ final class CAScrollLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CATiledLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -132,7 +126,7 @@ final class CATiledLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var tiledLayerView: CATiledLayerView!
+  @IBOutlet private var tiledLayerView: CATiledLayerView!
 
   private static func configureTiledLayer(_ tiledLayer: CATiledLayer) {
     tiledLayer.levelsOfDetail = 10
@@ -145,7 +139,6 @@ final class CATiledLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAGradientLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -154,7 +147,7 @@ final class CAGradientLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
+  @IBOutlet private var gradientLayerView: CAGradientLayerView!
 
   private static func configureGradientLayer(_ gradientLayer: CAGradientLayer) {
     gradientLayer.type = kCAGradientLayerAxial
@@ -179,7 +172,6 @@ final class CAGradientLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -188,7 +180,7 @@ final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var replicatorLayerView: CAReplicatorLayerView!
+  @IBOutlet private var replicatorLayerView: CAReplicatorLayerView!
 
   private static func configureReplicatorLayer(_ replicatorLayer: CAReplicatorLayer) {
     let circleWidth: CGFloat = 20
@@ -213,7 +205,6 @@ final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
 }
 
 final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
-
   override func awakeFromNib() {
     super.awakeFromNib()
 
@@ -222,7 +213,7 @@ final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet private weak var aegLayerView: CAEAGLLayerView!
+  @IBOutlet private var aegLayerView: CAEAGLLayerView!
 
   private static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5

@@ -3,7 +3,6 @@
 import UIKit
 
 final class AlertViewController: RevertTableViewController {
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -25,8 +24,8 @@ final class AlertViewController: RevertTableViewController {
 }
 
 // MARK: - UIAlertController Presenter
-extension AlertViewController {
 
+extension AlertViewController {
   fileprivate func displayAlertControllerForWithStyle(_ style: UIAlertControllerStyle, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
@@ -47,7 +46,6 @@ private enum Identifier: String {
 #if os(iOS)
 
   extension AlertViewController {
-
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       switch identifier {
       case .alertView:
@@ -65,7 +63,6 @@ private enum Identifier: String {
 #if os(tvOS)
 
   extension AlertViewController {
-
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
       let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
@@ -74,8 +71,8 @@ private enum Identifier: String {
 #endif
 
 // MARK: - UITableViewDelegate
-extension AlertViewController {
 
+extension AlertViewController {
   @available(iOS 9.0, *)
   override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
     if let nextFocusedIndexPath = context.nextFocusedIndexPath {
@@ -89,7 +86,7 @@ extension AlertViewController {
     guard
       let cell = tableView.cellForRow(at: indexPath),
       let identifier = Identifier(rawValue: item.cellIdentifier)
-      else {
+    else {
       fatalError("Unknown cellIdentifier or cell")
     }
 
@@ -99,7 +96,6 @@ extension AlertViewController {
 }
 
 extension AlertViewController {
-
   static func configureCell(_ cell: BasicCell, object: Item) {
     cell.titleLabel.text = object.title
   }

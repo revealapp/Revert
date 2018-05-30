@@ -3,7 +3,6 @@
 import UIKit
 
 final class AnchorPointBoundsChangeViewController: RevertViewController {
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -37,7 +36,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
   private var wasAnimated = false
 
   private lazy var quarterBoundsHeight: CGFloat = {
-    return self.boundsChangeView.frame.height / 4
+    self.boundsChangeView.frame.height / 4
   }()
 
   @IBOutlet private var boundsChangeView: HairlineBorderView!
@@ -68,7 +67,6 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 }
 
 private extension AnchorPointBoundsChangeViewController {
-
   static func basicAnimationWithFromValue(_ fromValue: CGPoint, toValue: CGPoint) -> CABasicAnimation {
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
     basicAnimation.duration = 1

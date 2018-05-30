@@ -26,9 +26,9 @@ final class InfoViewController: UIViewController, SettableHomeItem {
 
   // MARK: Private
 
-  @IBOutlet private weak var imageView: UIImageView!
-  @IBOutlet private weak var webView: UIWebView!
-  @IBOutlet private weak var titleLabel: UILabel!
+  @IBOutlet private var imageView: UIImageView!
+  @IBOutlet private var webView: UIWebView!
+  @IBOutlet private var titleLabel: UILabel!
 
   @IBAction private func dismiss(_ sender: UIBarButtonItem) {
     self.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -36,8 +36,8 @@ final class InfoViewController: UIViewController, SettableHomeItem {
 }
 
 // MARK: - UIWebViewDelegate
-extension InfoViewController: UIWebViewDelegate {
 
+extension InfoViewController: UIWebViewDelegate {
   func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
     if let URL = request.url, URL != Foundation.URL(string: "about:blank") {
       UIApplication.shared.openURL(URL)

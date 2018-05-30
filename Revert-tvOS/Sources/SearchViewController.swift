@@ -3,7 +3,6 @@
 import UIKit
 
 final class SearchViewController: UICollectionViewController {
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       collection: CollectableCollection<HomeItem>(items: .home, flatten: true, sortClosure: { $0.title < $1.title }),
@@ -39,7 +38,7 @@ final class SearchViewController: UICollectionViewController {
 
   fileprivate var searchText: String? {
     didSet {
-      guard searchText != oldValue else {
+      guard self.searchText != oldValue else {
         // We don't want to keep reloading content if the search text has not changed.
         return
       }
@@ -58,7 +57,6 @@ final class SearchViewController: UICollectionViewController {
 }
 
 private extension SearchViewController {
-
   static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
@@ -68,7 +66,6 @@ private extension SearchViewController {
 // MARK: UICollectionViewDelegate
 
 extension SearchViewController {
-
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 
@@ -77,7 +74,6 @@ extension SearchViewController {
 }
 
 extension SearchViewController: UISearchResultsUpdating {
-
   func updateSearchResults(for searchController: UISearchController) {
     self.searchText = searchController.searchBar.text
   }

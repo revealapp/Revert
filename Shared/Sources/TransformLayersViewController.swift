@@ -1,10 +1,9 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import GLKit
+import UIKit
 
 final class TransformLayersViewController: RevertViewController {
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -30,11 +29,11 @@ final class TransformLayersViewController: RevertViewController {
 
   private var wasAnimated = false
 
-  @IBOutlet private weak var yRotateView: UIView!
-  @IBOutlet private weak var xRotateView: UIView!
-  @IBOutlet private weak var zRotateView: UIView!
-  @IBOutlet private weak var xyRotateView: UIView!
-  @IBOutlet private weak var scrollViewItemHeight: NSLayoutConstraint!
+  @IBOutlet private var yRotateView: UIView!
+  @IBOutlet private var xRotateView: UIView!
+  @IBOutlet private var zRotateView: UIView!
+  @IBOutlet private var xyRotateView: UIView!
+  @IBOutlet private var scrollViewItemHeight: NSLayoutConstraint!
 
   private func animateViewsIfNecessarry() {
     // Only perform this action once

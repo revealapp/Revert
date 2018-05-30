@@ -1,11 +1,10 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import MapKit
+import UIKit
 
 @available(tvOS 9.2, *)
 final class MapViewController: RevertViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -20,7 +19,7 @@ final class MapViewController: RevertViewController {
   fileprivate static let overlayFillColor = UIColor.revertTint.withAlphaComponent(0.5)
   fileprivate static let overlayStrokeColor = UIColor.revertDarkBlue
 
-  @IBOutlet private weak var mapView: MKMapView!
+  @IBOutlet private var mapView: MKMapView!
 
   private func addAnnotations() {
     let locations = RevertItems.mapLocations.data
@@ -33,9 +32,9 @@ final class MapViewController: RevertViewController {
 }
 
 // MARK: - MKMapViewDelegate
+
 @available(tvOS 9.2, *)
 extension MapViewController: MKMapViewDelegate {
-
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKPolygon {
       let pr = MKPolygonRenderer(overlay: overlay)

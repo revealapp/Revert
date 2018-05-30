@@ -1,15 +1,14 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import GLKit
+import UIKit
 
 private extension UIViewController {
-
   func prepareForInfoSegue(_ segue: UIStoryboardSegue, item: HomeItem?) {
     guard
       let destinationNavigationController = segue.destination as? UINavigationController,
       let destinationViewController = destinationNavigationController.topViewController as? SettableHomeItem
-      else {
+    else {
       fatalError("Destination view controller isn't a `UINavigationController` or its `topViewController` doesn't conform to `SettableHomeItem`")
     }
 
@@ -22,6 +21,7 @@ private extension UIViewController {
 }
 
 // MARK: - UIViewController
+
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -45,6 +45,7 @@ class RevertViewController: UIViewController, SettableHomeItem {
 }
 
 // MARK: - UITableViewController
+
 class RevertTableViewController: UITableViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -73,6 +74,7 @@ class RevertTableViewController: UITableViewController, SettableHomeItem {
 }
 
 // MARK: - UICollectionViewController
+
 class RevertCollectionViewController: UICollectionViewController, SettableHomeItem {
   final var item: HomeItem?
 
@@ -96,6 +98,7 @@ class RevertCollectionViewController: UICollectionViewController, SettableHomeIt
 }
 
 // MARK: - GLKViewController
+
 class RevertGLKViewController: GLKViewController, SettableHomeItem {
   final var item: HomeItem?
 

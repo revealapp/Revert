@@ -7,8 +7,8 @@ final class PickerViewController: RevertViewController {
 }
 
 // MARK: - UIPickerViewDataSource
-extension PickerViewController: UIPickerViewDataSource {
 
+extension PickerViewController: UIPickerViewDataSource {
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
   }
@@ -19,8 +19,8 @@ extension PickerViewController: UIPickerViewDataSource {
 }
 
 // MARK: - UIPickerViewDelegate
-extension PickerViewController: UIPickerViewDelegate {
 
+extension PickerViewController: UIPickerViewDelegate {
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return self.collection.items.first?[row].name
   }

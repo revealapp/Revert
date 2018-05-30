@@ -35,7 +35,7 @@ final class KeyboardHandler: NSObject {
       let animationCurveInt = (notification as NSNotification).userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? Int,
       let animationCurve = UIViewAnimationCurve(rawValue: animationCurveInt),
       let keyboardFrameValue = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue
-      else {
+    else {
       return
     }
 

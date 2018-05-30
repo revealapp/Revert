@@ -49,6 +49,6 @@ struct CollectableCollection<CollectableCollectionObject: Collectable>: Collecti
   // MARK: IndexableBase
 
   func index(after i: Int) -> Int {
-    return items.index(after: i)
+    return self.items.index(after: i)
   }
 }

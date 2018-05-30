@@ -44,7 +44,6 @@ final class ControlsViewController: RevertCollectionViewController {
 #if os(iOS)
 
   extension ControlsViewController {
-
     fileprivate func setupKeyboardHandler() {
       // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
       // The behaviour is not perfect, but there is no way to opt-out

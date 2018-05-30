@@ -3,7 +3,6 @@
 import UIKit
 
 final class BarsViewController: RevertViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -24,7 +23,7 @@ final class BarsViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet private weak var searchBar: UISearchBar!
-  @IBOutlet private weak var dismissContainerView: UIView!
-  @IBOutlet private weak var tabBar: UITabBar!
+  @IBOutlet private var searchBar: UISearchBar!
+  @IBOutlet private var dismissContainerView: UIView!
+  @IBOutlet private var tabBar: UITabBar!
 }

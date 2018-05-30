@@ -3,7 +3,6 @@
 import UIKit
 
 final class DualRowBasicCollectionViewFlowLayout: UICollectionViewFlowLayout {
-
   override func prepare() {
     super.prepare()
 

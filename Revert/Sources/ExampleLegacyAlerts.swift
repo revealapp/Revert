@@ -3,7 +3,6 @@
 import UIKit
 
 extension UIAlertView {
-
   static func exampleAlertView() -> UIAlertView {
     return UIAlertView(
       title: NSLocalizedString("This is a UIAlertView", comment: "Alert title"),
@@ -16,7 +15,6 @@ extension UIAlertView {
 }
 
 extension UIActionSheet {
-
   static func exampleActionSheet() -> UIActionSheet {
     let actionSheet = UIActionSheet(
       title: NSLocalizedString("This is a UIActionSheet", comment: "Alert title"),

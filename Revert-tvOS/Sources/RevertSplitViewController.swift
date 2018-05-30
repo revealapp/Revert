@@ -3,7 +3,6 @@
 import UIKit
 
 final class RevertSplitViewController: UISplitViewController {
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -31,5 +30,6 @@ final class RevertSplitViewController: UISplitViewController {
   }
 
   // MARK: - Private
+
   private var preferDetailViewFocus = false
 }

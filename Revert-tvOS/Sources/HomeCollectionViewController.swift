@@ -47,11 +47,11 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   // MARK: - Private
+
   fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
 }
 
 private extension HomeCollectionViewController {
-
   static func configureCell(_ cell: HomeCollectionCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.imageView.image = UIImage(named: item.iconName)
@@ -59,8 +59,8 @@ private extension HomeCollectionViewController {
 }
 
 // MARK: - UICollectionViewDelegate
-extension HomeCollectionViewController {
 
+extension HomeCollectionViewController {
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let item = self.dataSource[indexPath]
 

@@ -1,10 +1,9 @@
 //  Copyright © 2015 Itty Bitty Apps. All rights reserved.
 
-import UIKit
 import SpriteKit
+import UIKit
 
 private final class IBAScene: SKScene {
-
   required override init(size: CGSize) {
     super.init(size: size)
 
@@ -76,7 +75,6 @@ private final class IBAScene: SKScene {
 }
 
 final class SpriteKitViewController: RevertViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 

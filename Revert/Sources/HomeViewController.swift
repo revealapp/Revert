@@ -3,7 +3,6 @@
 import UIKit
 
 final class HomeViewController: UITableViewController {
-
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
       collection: self.collection,
@@ -76,8 +75,8 @@ final class HomeViewController: UITableViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension HomeViewController {
 
+extension HomeViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let item = self.collection[indexPath]
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
@@ -95,7 +94,6 @@ extension HomeViewController {
 }
 
 private extension HomeViewController {
-
   static func configureCell(_ cell: HomeCell, withItem item: HomeItem) {
     cell.titleLabel.text = item.title
     cell.iconImageView.image = UIImage(named: item.iconName)

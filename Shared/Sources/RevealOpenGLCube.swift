@@ -60,7 +60,6 @@ final class RevealOpenGLCube {
 }
 
 private extension RevealOpenGLCube {
-
   func setCurrentContext() {
     let isContextSet = EAGLContext.setCurrent(self.context)
     assert(isContextSet, "Failed to set current context")
