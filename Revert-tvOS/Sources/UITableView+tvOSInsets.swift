@@ -1,4 +1,3 @@
-//
 //  Copyright © 2016 Itty Bitty Apps. All rights reserved.
 
 import Foundation
