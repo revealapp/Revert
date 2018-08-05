@@ -1,48 +1,14 @@
 //
-// Revert-Shared.xcconfig
+// Xcode configuration to be shared between Revert application targets.
 
-
-// Asset Catalog Launch Image Set Name
-//
-// Name of the asset catalog launch image set whose contents will be merged into the
-// Info.plist.
-
+// Asset Catalog Compiler
 ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage
 
-
-GCC_WARN_UNUSED_LABEL = YES
-
-
-GCC_WARN_UNUSED_PARAMETER = YES
-
-
-// Runpath Search Paths
-//
-// This is a list of paths to be added to the runpath search path list for the image
-// being created.  At runtime, dyld uses the runpath when searching for dylibs whose load
-// path begins with '@rpath/'. [-rpath]
-
+// Linking
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
 
-PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.$(PRODUCT_NAME:rfc1034identifier:lower)
-
-
-// Product Name
-//
-// This is the basename of the product generated.
-
-PRODUCT_NAME = $(TARGET_NAME)
-
-
-// Revert Bundle Display Name
-//
-// This is the name that will be displayed under Revert icons.
-
-REVERT_BUNDLE_DISPLAY_NAME = Revert
-
-
-// Objective-C Bridging Header
-//
-//
-
+// Swift Compiler
 SWIFT_OBJC_BRIDGING_HEADER = $(SRCROOT)/Shared/Sources/Revert-Bridging-Header.h
+
+// User-Defined
+REVERT_BUNDLE_DISPLAY_NAME = Revert

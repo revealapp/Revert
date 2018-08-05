@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -19,11 +23,11 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw0-xR-6tB">
                                     <rect key="frame" x="0.0" y="0.0" width="960" height="860"/>
-                                    <color key="backgroundColor" red="0.41569492219999998" green="0.87322348360000002" blue="0.79264503720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.36042991280555725" green="0.85367739200592041" blue="0.7465558648109436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-AG-y3G">
                                     <rect key="frame" x="0.0" y="880" width="960" height="200"/>
-                                    <color key="backgroundColor" red="0.99020928139999997" green="0.75412577390000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.98193800449371338" green="0.70870310068130493" blue="0.03561173751950264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="DpW-UD-8Ee"/>
                                     </constraints>
@@ -35,14 +39,14 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-ne-r0Q">
                                     <rect key="frame" x="0.0" y="0.0" width="940" height="200"/>
-                                    <color key="backgroundColor" red="0.78327852490000005" green="0.90873157979999997" blue="0.97590535879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.73981767892837524" green="0.88617193698883057" blue="0.96917629241943359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="k08-Sk-Ejj"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqN-Se-waB">
                                     <rect key="frame" x="0.0" y="220" width="940" height="860"/>
-                                    <color key="backgroundColor" red="0.29858762030000002" green="0.72199642659999996" blue="0.94276738169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.24911218881607056" green="0.66095209121704102" blue="0.92716234922409058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                             </subviews>
                         </stackView>
@@ -54,7 +58,7 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="lfp-5i-f58" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="9Lx-mn-RmR"/>
                 <constraint firstItem="AYz-7P-cQw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X99-Gg-WCS"/>

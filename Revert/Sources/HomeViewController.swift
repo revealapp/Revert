@@ -47,7 +47,7 @@ final class HomeViewController: UITableViewController {
     }
   }
 
-  func showDetailTargetDidChange(_ notification: Notification) {
+  @objc func showDetailTargetDidChange(_ notification: Notification) {
     // Updates the cell's accessoryType and selected background color when the split view collapses / expands
     self.tableView.visibleCells.forEach { cell in
       if let indexPath = self.tableView.indexPath(for: cell) {

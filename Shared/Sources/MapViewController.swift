@@ -4,6 +4,7 @@
 import UIKit
 import MapKit
 
+@available(tvOS 9.2, *)
 final class MapViewController: RevertViewController {
 
   override func viewDidLoad() {
@@ -33,6 +34,7 @@ final class MapViewController: RevertViewController {
 }
 
 // MARK: - MKMapViewDelegate
+@available(tvOS 9.2, *)
 extension MapViewController: MKMapViewDelegate {
 
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {

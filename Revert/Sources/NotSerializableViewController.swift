@@ -17,7 +17,7 @@ final class NonSerializableViewController: RevertViewController {
     self.slider.addTarget(self, action: #selector(self.warnBeforeCrash(_:)), for: .touchUpOutside)
   }
 
-  func warnBeforeCrash(_ sender: UISlider?) {
+  @objc func warnBeforeCrash(_ sender: UISlider?) {
     let alertTitle = NSLocalizedString("Modifying the UISlider again will cause the app to crash", comment: "Unserializable slider title")
     let alertMessage = NSLocalizedString("This is intentional, and demonstrates what happens when a property is not serializable.", comment: "Unserializable slider message")
 

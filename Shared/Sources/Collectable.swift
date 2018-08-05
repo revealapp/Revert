@@ -7,7 +7,7 @@ protocol Collectable {
   init(dictionary: [String: AnyObject])
 }
 
-protocol Collection: Swift.Collection, Sequence {
+protocol Collection: Swift.Collection {
   associatedtype CollectionObject
 
   var items: [CollectionObject] { get }

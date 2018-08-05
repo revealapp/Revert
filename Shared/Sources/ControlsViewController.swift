@@ -60,7 +60,7 @@ final class ControlsViewController: RevertCollectionViewController {
       self.collectionView!.addGestureRecognizer(dismissKeyboardGestureRecogniser)
     }
 
-    func collectionViewTapped(_ gestureRecogniser: UITapGestureRecognizer) {
+    @objc func collectionViewTapped(_ gestureRecogniser: UITapGestureRecognizer) {
       self.collectionView?.endEditing(true)
     }
   }

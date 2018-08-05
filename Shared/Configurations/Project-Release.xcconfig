@@ -1,19 +1,12 @@
 //
-// Project-Release.xcconfig
+// Xcode configuration shared across the entire project, for release configuration types.
 
 #include "Project-Shared.xcconfig"
 
-
-// Produce debugging information
-// 
-// Produce debugging information. This information is required for shader profiling.
-
-MTL_ENABLE_DEBUG_INFO = NO
-
-
-// Validate Built Product
-// 
-// Activating this setting will cause Xcode to perform validation checks on the product
-// as part of the build process.
-
+// Build Options
+ENABLE_TESTABILITY = NO
 VALIDATE_PRODUCT = YES
+
+// Code Generation
+MTL_ENABLE_DEBUG_INFO = NO
+SWIFT_COMPILATION_MODE = wholemodule

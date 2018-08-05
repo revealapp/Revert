@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,14 +19,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mpT-Ft-keW">
-                            <rect key="frame" x="0.0" y="0.0" width="184" height="667"/>
+                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="667"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epy-6Z-Fy5">
-                                    <rect key="frame" x="0.0" y="0.0" width="184" height="459"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="183.5" height="459"/>
                                     <color key="backgroundColor" red="0.36042991280555725" green="0.85367739200592041" blue="0.7465558648109436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-YH-U3H">
-                                    <rect key="frame" x="0.0" y="467" width="184" height="200"/>
+                                    <rect key="frame" x="0.0" y="467" width="183.5" height="200"/>
                                     <color key="backgroundColor" red="0.98193800449371338" green="0.70870310068130493" blue="0.03561173751950264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="0rb-To-qNm"/>
@@ -35,17 +35,17 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Ne-Ps-05d">
-                            <rect key="frame" x="192" y="0.0" width="183" height="667"/>
+                            <rect key="frame" x="191.5" y="0.0" width="183.5" height="667"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwe-u6-nVa">
-                                    <rect key="frame" x="0.0" y="0.0" width="183" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="183.5" height="200"/>
                                     <color key="backgroundColor" red="0.73981767892837524" green="0.88617193698883057" blue="0.96917629241943359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="Wy8-yY-AJD"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhG-0Z-QlL">
-                                    <rect key="frame" x="0.0" y="208" width="183" height="459"/>
+                                    <rect key="frame" x="0.0" y="208" width="183.5" height="459"/>
                                     <color key="backgroundColor" red="0.24911218881607056" green="0.66095209121704102" blue="0.92716234922409058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                             </subviews>

@@ -14,8 +14,6 @@ final class NonSerializableViewController: RevertViewController {
     self.nanSpacingStackView.spacing = 0 / 0
   }
 
-  // Mark: Private
-
   @IBOutlet private var infSpacingStackView: UIStackView!
   @IBOutlet private var nanSpacingStackView: UIStackView!
   @IBOutlet private var labelTrailingConstraint: NSLayoutConstraint!

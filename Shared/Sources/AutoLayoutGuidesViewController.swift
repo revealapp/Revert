@@ -95,7 +95,7 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     let guide = UIFocusGuide()
     view.addLayoutGuide(guide)
 
-    if #available(tvOS 10.0, iOS 10.0, *) {
+    if #available(iOS 10.0, tvOS 10.0, *) {
       guide.preferredFocusEnvironments = [ focusedView ]
     } else {
       guide.preferredFocusedView = focusedView
