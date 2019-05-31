@@ -164,6 +164,16 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Auto Layout Broken Constraints</string>
+				<key>iconName</key>
+				<string>icon_Autolayout</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutBrokenConstraintsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>auto_layout</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Auto Layout Alignments</string>
 				<key>iconName</key>
 				<string>icon_AutolayoutAlignment</string>
