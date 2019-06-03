@@ -164,7 +164,7 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Auto Layout Broken Constraints</string>
+				<string>Broken Constraints</string>
 				<key>iconName</key>
 				<string>icon_Autolayout</string>
 				<key>segueIdentifier</key>
