@@ -85,7 +85,7 @@
 				<key>segueIdentifier</key>
 				<string>ShowAutoLayoutBrokenConstraintsViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>auto_layout</string>
+				<string>broken_constraints</string>
 			</dict>
 			<dict>
 				<key>title</key>
