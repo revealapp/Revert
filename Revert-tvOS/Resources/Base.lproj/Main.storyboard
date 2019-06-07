@@ -3320,10 +3320,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7J-hW-IDE">
-                                        <rect key="frame" x="20" y="53" width="734" height="734"/>
+                                        <rect key="frame" x="20" y="54" width="732" height="732"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DU-km-CJe">
-                                                <rect key="frame" x="183" y="184" width="366" height="367"/>
+                                                <rect key="frame" x="183" y="183" width="366" height="366"/>
                                                 <color key="backgroundColor" red="0.34494423870000002" green="0.70911610130000002" blue="0.9961668253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8DU-km-CJe" secondAttribute="height" multiplier="1:1" id="X8f-Aw-gEP"/>
@@ -3348,10 +3348,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTN-Wh-Rsn">
-                                        <rect key="frame" x="986" y="53" width="734" height="734"/>
+                                        <rect key="frame" x="988" y="54" width="732" height="732"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FqA-CQ-UP7">
-                                                <rect key="frame" x="90" y="183" width="461" height="366"/>
+                                                <rect key="frame" x="90" y="183" width="459" height="367"/>
                                                 <color key="backgroundColor" red="1" green="0.1434641351" blue="0.059151377650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -3366,9 +3366,9 @@
                                             <constraint firstItem="FqA-CQ-UP7" firstAttribute="centerX" secondItem="rTN-Wh-Rsn" secondAttribute="centerX" id="Arz-O7-dHi"/>
                                             <constraint firstItem="FqA-CQ-UP7" firstAttribute="centerY" secondItem="rTN-Wh-Rsn" secondAttribute="centerY" id="R3B-ur-HoC"/>
                                             <constraint firstAttribute="width" secondItem="rTN-Wh-Rsn" secondAttribute="height" multiplier="1:1" id="f0G-9I-6Ax"/>
-                                            <constraint firstItem="FqA-CQ-UP7" firstAttribute="top" secondItem="rTN-Wh-Rsn" secondAttribute="top" constant="184" id="hYv-9Y-Wh2"/>
+                                            <constraint firstItem="FqA-CQ-UP7" firstAttribute="top" secondItem="rTN-Wh-Rsn" secondAttribute="top" constant="183" id="hYv-9Y-Wh2"/>
                                             <constraint firstItem="FqA-CQ-UP7" firstAttribute="height" secondItem="rTN-Wh-Rsn" secondAttribute="height" multiplier="0.5" id="isu-Cr-ymQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="FqA-CQ-UP7" secondAttribute="trailing" constant="183" id="obz-DL-QI4"/>
+                                            <constraint firstAttribute="trailing" secondItem="FqA-CQ-UP7" secondAttribute="trailing" constant="90" id="obz-DL-QI4"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
