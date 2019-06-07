@@ -3308,7 +3308,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzy-6Q-uug">
-                                        <rect key="frame" x="20" y="795" width="1700" height="25"/>
+                                        <rect key="frame" x="8" y="795" width="1700" height="25"/>
                                         <color key="backgroundColor" red="0.34494423870000002" green="0.70911610130000002" blue="0.9961668253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Mme-O8-4uw"/>
@@ -3320,10 +3320,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7J-hW-IDE">
-                                        <rect key="frame" x="20" y="54" width="732" height="732"/>
+                                        <rect key="frame" x="20" y="53" width="734" height="734"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DU-km-CJe">
-                                                <rect key="frame" x="183" y="183" width="366" height="366"/>
+                                                <rect key="frame" x="183" y="184" width="366" height="367"/>
                                                 <color key="backgroundColor" red="0.34494423870000002" green="0.70911610130000002" blue="0.9961668253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8DU-km-CJe" secondAttribute="height" multiplier="1:1" id="X8f-Aw-gEP"/>
@@ -3348,7 +3348,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTN-Wh-Rsn">
-                                        <rect key="frame" x="988" y="54" width="732" height="732"/>
+                                        <rect key="frame" x="986" y="53" width="734" height="734"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FqA-CQ-UP7">
                                                 <rect key="frame" x="90" y="183" width="461" height="366"/>
@@ -3378,16 +3378,17 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Mzy-6Q-uug" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="20" symbolic="YES" id="2WQ-Ff-YYf"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mzy-6Q-uug" secondAttribute="trailing" constant="20" symbolic="YES" id="46Q-1Y-7oJ"/>
                                     <constraint firstItem="rTN-Wh-Rsn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BKI-Ut-y1n" secondAttribute="bottom" constant="8" symbolic="YES" id="AMi-Mx-06G"/>
                                     <constraint firstItem="BKI-Ut-y1n" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="20" symbolic="YES" id="Ab6-PI-y8K"/>
                                     <constraint firstItem="W7J-hW-IDE" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="20" symbolic="YES" id="EiB-pG-hOu"/>
                                     <constraint firstItem="rTN-Wh-Rsn" firstAttribute="height" secondItem="W7J-hW-IDE" secondAttribute="height" id="Eji-QR-PKQ"/>
+                                    <constraint firstItem="Mzy-6Q-uug" firstAttribute="centerX" secondItem="bQO-gs-dYs" secondAttribute="centerX" id="Sxq-u8-Sic"/>
+                                    <constraint firstItem="Mzy-6Q-uug" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="8" id="Tuc-AY-N4Y"/>
                                     <constraint firstAttribute="trailing" secondItem="rTN-Wh-Rsn" secondAttribute="trailing" constant="20" symbolic="YES" id="Xcd-KT-tDY"/>
                                     <constraint firstItem="rTN-Wh-Rsn" firstAttribute="leading" secondItem="W7J-hW-IDE" secondAttribute="trailing" priority="750" constant="8" symbolic="YES" id="bmW-iT-W8H"/>
                                     <constraint firstItem="BKI-Ut-y1n" firstAttribute="top" secondItem="bQO-gs-dYs" secondAttribute="top" constant="20" symbolic="YES" id="cUF-lq-NHZ"/>
                                     <constraint firstAttribute="centerY" secondItem="W7J-hW-IDE" secondAttribute="centerY" id="dCG-d8-i22"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mzy-6Q-uug" secondAttribute="trailing" constant="32" id="jFF-TF-PDv"/>
                                     <constraint firstItem="Mzy-6Q-uug" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rTN-Wh-Rsn" secondAttribute="bottom" constant="8" symbolic="YES" id="k4I-nr-hqf"/>
                                     <constraint firstItem="rTN-Wh-Rsn" firstAttribute="width" secondItem="W7J-hW-IDE" secondAttribute="width" id="lHG-pW-Rah"/>
                                     <constraint firstAttribute="bottom" secondItem="Mzy-6Q-uug" secondAttribute="bottom" constant="20" symbolic="YES" id="ngz-9H-Hpz"/>
