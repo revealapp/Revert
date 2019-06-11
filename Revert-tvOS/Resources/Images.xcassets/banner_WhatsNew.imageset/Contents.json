@@ -4,6 +4,10 @@
       "idiom" : "tv",
       "filename" : "banner_WhatsNew.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "2x"
     }
   ],
   "info" : {

@@ -79,6 +79,16 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Broken Constraints</string>
+				<key>iconName</key>
+				<string>icon_BrokenConstraints</string>
+				<key>segueIdentifier</key>
+				<string>ShowAutoLayoutBrokenConstraintsViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>broken_constraints</string>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Auto Layout Alignments</string>
 				<key>iconName</key>
 				<string>icon_AutolayoutAlignment</string>
