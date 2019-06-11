@@ -7,7 +7,7 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     guard let tabBarController = self.window?.rootViewController as? UITabBarController else {
       fatalError("Root view controller should be a `UITabBarController`")
     }

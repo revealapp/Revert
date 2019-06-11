@@ -39,7 +39,7 @@ final class InfoViewController: UIViewController, SettableHomeItem {
 // MARK: - UIWebViewDelegate
 extension InfoViewController: UIWebViewDelegate {
 
-  func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+  func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
     if let URL = request.url, URL != Foundation.URL(string: "about:blank") {
       UIApplication.shared.openURL(URL)
       return false

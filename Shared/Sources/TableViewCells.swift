@@ -26,11 +26,11 @@ class BasicCell: UITableViewCell {
     super.init(coder: aDecoder)
 
     NotificationCenter.default.addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
-      NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+      UIContentSizeCategory.didChangeNotification, object: nil)
   }
 
   deinit {
-    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+    NotificationCenter.default.removeObserver(self, name: UIContentSizeCategory.didChangeNotification, object: nil)
   }
 
   override func awakeFromNib() {
@@ -40,8 +40,8 @@ class BasicCell: UITableViewCell {
   }
 
   @objc func applyDynamicType(_ notification: Notification? = nil) {
-    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-    self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.footnote)
+    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+    self.subtitleLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
   }
 
   // MARK: Private
@@ -81,6 +81,8 @@ class BasicCell: UITableViewCell {
           self.titleLabel.textColor = .white
         }
       case .light, .unspecified:
+        self.titleLabel.textColor = .black
+      @unknown default:
         self.titleLabel.textColor = .black
       }
     }

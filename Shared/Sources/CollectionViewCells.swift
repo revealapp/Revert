@@ -9,11 +9,11 @@ class CollectionViewCell: UICollectionViewCell {
     super.init(coder: aDecoder)
 
     NotificationCenter.default.addObserver(self, selector: #selector(self.applyDynamicType(_:)), name:
-      NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+      UIContentSizeCategory.didChangeNotification, object: nil)
   }
 
   deinit {
-    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+    NotificationCenter.default.removeObserver(self, name: UIContentSizeCategory.didChangeNotification, object: nil)
   }
 
   override func awakeFromNib() {
@@ -23,8 +23,8 @@ class CollectionViewCell: UICollectionViewCell {
   }
 
   @objc func applyDynamicType(_ notification: Notification? = nil) {
-    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-    self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
+    self.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+    self.subheadLabel?.font = UIFont.preferredFont(forTextStyle: .subheadline)
   }
 
   // MARK: Private
@@ -56,6 +56,8 @@ class CollectionViewCell: UICollectionViewCell {
         case .dark:
           self.titleLabel.textColor = UIColor.lightGray
         case .light, .unspecified:
+          self.titleLabel.textColor = UIColor.black
+        @unknown default:
           self.titleLabel.textColor = UIColor.black
         }
       }

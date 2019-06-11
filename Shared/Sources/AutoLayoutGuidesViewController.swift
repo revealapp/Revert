@@ -40,10 +40,10 @@ final class AutoLayoutGuidesViewController: RevertViewController {
     let embeddedViewController = EmbeddedViewController()
     let embeddedView = embeddedViewController.view!
 
-    self.addChildViewController(embeddedViewController)
+    self.addChild(embeddedViewController)
     embeddedView.translatesAutoresizingMaskIntoConstraints = false
     self.view.addSubview(embeddedView)
-    embeddedViewController.didMove(toParentViewController: self)
+    embeddedViewController.didMove(toParent: self)
 
     NSLayoutConstraint.activate([
       embeddedView.topAnchor.constraint(equalTo: self.view.topAnchor),

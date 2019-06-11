@@ -5,7 +5,7 @@ import UIKit
 
 extension UIAlertController {
 
-  static func exampleAlertControllerWithStyle(_ style: UIAlertControllerStyle) -> UIAlertController {
+  static func exampleAlertControllerWithStyle(_ style: UIAlertController.Style) -> UIAlertController {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("This is a UIAlertController", comment: "Alert title"),
       message: NSLocalizedString("How are you feeling today?", comment: "Alert message"),

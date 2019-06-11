@@ -56,7 +56,7 @@ final class AnchorPointBoundsChangeViewController: RevertViewController {
 
     // Bounds Change testing
     let offset: CGFloat = -self.quarterBoundsHeight
-    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: {
+    UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
       self.boundsChangeView.bounds = self.boundsChangeView.bounds.offsetBy(dx: offset, dy: offset)
     }, completion: nil)
 
@@ -74,7 +74,7 @@ private extension AnchorPointBoundsChangeViewController {
     let basicAnimation = CABasicAnimation(keyPath: "anchorPoint")
     basicAnimation.duration = 1
     basicAnimation.fromValue = NSValue(cgPoint: fromValue)
-    basicAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+    basicAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
     basicAnimation.toValue = NSValue(cgPoint: toValue)
     return basicAnimation
   }

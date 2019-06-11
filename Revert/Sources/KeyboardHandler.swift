@@ -18,13 +18,13 @@ final class KeyboardHandler: NSObject {
   }
 
   private func registerNotifications() {
-    NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShowHideNotification(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
   }
 
   private func unregisterNotifications() {
-    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
   }
 
   @objc func keyboardWillShowHideNotification(_ notification: Notification) {
@@ -32,10 +32,10 @@ final class KeyboardHandler: NSObject {
       let scrollView = self.scrollView,
       let scrollViewSuperview = scrollView.superview,
       let viewController = self.viewController,
-      let animationDuration = (notification as NSNotification).userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval,
-      let animationCurveInt = (notification as NSNotification).userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? Int,
-      let animationCurve = UIViewAnimationCurve(rawValue: animationCurveInt),
-      let keyboardFrameValue = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue
+      let animationDuration = (notification as NSNotification).userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
+      let animationCurveInt = (notification as NSNotification).userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int,
+      let animationCurve = UIView.AnimationCurve(rawValue: animationCurveInt),
+      let keyboardFrameValue = (notification as NSNotification).userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
       else {
       return
     }
@@ -43,7 +43,7 @@ final class KeyboardHandler: NSObject {
     let keyboardFrame = keyboardFrameValue.cgRectValue
     let keyboardFrameInView = scrollViewSuperview.convert(keyboardFrame, from: nil)
     let bottomInset = max(scrollView.frame.maxY - keyboardFrameInView.minY, viewController.bottomLayoutGuide.length)
-    let animationOptions = UIViewAnimationOptions(rawValue: UInt(animationCurve.rawValue) << 16)
+    let animationOptions = UIView.AnimationOptions(rawValue: UInt(animationCurve.rawValue) << 16)
 
     var contentInsets = scrollView.contentInset
     var scrollIndicatorInsets = scrollView.scrollIndicatorInsets

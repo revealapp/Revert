@@ -27,7 +27,7 @@ final class ScrollViewController: RevertViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
 
-      self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouchType.indirect.rawValue as NSNumber]
+      self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.indirect.rawValue as NSNumber]
     }
   }
 #endif

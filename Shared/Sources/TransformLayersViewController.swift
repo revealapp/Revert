@@ -47,7 +47,7 @@ final class TransformLayersViewController: RevertViewController {
     let fortyFiveDegreesInRadian = CGFloat(GLKMathDegreesToRadians(45))
     let tenDegreesInRadian = CGFloat(GLKMathDegreesToRadians(10))
 
-    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: {
+    UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
       self.xRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 1, 0, 0)
       self.yRotateView.layer.transform = CATransform3DMakeRotation(fortyFiveDegreesInRadian, 0, 1, 0)
       self.zRotateView.layer.transform = CATransform3DMakeRotation(tenDegreesInRadian, 0, 0, 1)

@@ -31,8 +31,8 @@ final class CATextLayerCell: LayerBackedCollectionViewCell {
     textLayer.string = NSLocalizedString("I am a quite long CATextLayer string.", comment: "")
     textLayer.fontSize = 20
     textLayer.foregroundColor = UIColor.lightGray.cgColor
-    textLayer.alignmentMode = kCAAlignmentCenter
-    textLayer.truncationMode = kCATruncationMiddle
+    textLayer.alignmentMode = .center
+    textLayer.truncationMode = .middle
     textLayer.isWrapped = true
   }
 }
@@ -53,11 +53,11 @@ final class CAEmitterLayerCell: LayerBackedCollectionViewCell {
     emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.midX, y: emitterLayer.bounds.midY)
     emitterLayer.emitterZPosition = 5
     emitterLayer.emitterSize = CGSize(width: 1, height: 1)
-    emitterLayer.emitterShape = kCAEmitterLayerSphere
+    emitterLayer.emitterShape = .sphere
     emitterLayer.emitterDepth = 1.9
-    emitterLayer.emitterShape = kCAEmitterLayerPoint
-    emitterLayer.emitterMode = kCAEmitterLayerPoints
-    emitterLayer.renderMode = kCAEmitterLayerAdditive
+    emitterLayer.emitterShape = .point
+    emitterLayer.emitterMode = .points
+    emitterLayer.renderMode = .additive
     emitterLayer.emitterCells = [self.emitterCell]
   }
 
@@ -97,11 +97,11 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
     shapeLayer.strokeColor = UIColor.revertLightBlack.cgColor
     shapeLayer.strokeStart = 0
     shapeLayer.strokeEnd = 1
-    shapeLayer.fillRule = kCAFillRuleEvenOdd
+    shapeLayer.fillRule = .evenOdd
     shapeLayer.lineWidth = 2
     shapeLayer.miterLimit = 5
-    shapeLayer.lineCap = kCALineCapRound
-    shapeLayer.lineJoin = kCALineCapRound
+    shapeLayer.lineCap = .round
+    shapeLayer.lineJoin = .round
     shapeLayer.lineDashPhase = 1
     shapeLayer.lineDashPattern = [1, 3, 4, 2]
   }
@@ -117,7 +117,7 @@ final class CAScrollLayerCell: LayerBackedCollectionViewCell {
   }
 
   private static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
-    scrollLayer.scrollMode = kCAScrollHorizontally
+    scrollLayer.scrollMode = .horizontally
     scrollLayer.backgroundColor = UIColor.revertDarkBlue.cgColor
     scrollLayer.cornerRadius = 5
   }
@@ -158,7 +158,7 @@ final class CAGradientLayerCell: LayerBackedCollectionViewCell {
   @IBOutlet private weak var gradientLayerView: CAGradientLayerView!
 
   private static func configureGradientLayer(_ gradientLayer: CAGradientLayer) {
-    gradientLayer.type = kCAGradientLayerAxial
+    gradientLayer.type = .axial
     gradientLayer.locations = [0, 0.16, 0.31, 0.43, 0.5, 0.57, 0.69, 0.69, 0.69, 0.83, 1]
     gradientLayer.startPoint = CGPoint(x: 0, y: 0)
     gradientLayer.endPoint = CGPoint(x: 0, y: 1)

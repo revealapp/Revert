@@ -151,6 +151,8 @@ private class UserInterfaceStyleAwareView: UIView {
         return UIColor.white.cgColor
       case .light, .unspecified:
         return UIColor.black.cgColor
+      @unknown default:
+        return UIColor.black.cgColor
       }
 
     #else
