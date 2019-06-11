@@ -8,14 +8,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    guard let splitViewController = self.window?.rootViewController as? UISplitViewController else {
-      fatalError("Root view controller should always be a `UISplitViewController`")
+    if let splitViewController = self.window?.rootViewController as? UISplitViewController {
+      self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
     }
-    self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
 
     type(of: self).configureAppearance()
 
     return true
+  }
+
+  @available(iOS 13.0, *)
+  func sceneWillEnterForeground(_ scene: UIScene) {
+    if let splitViewController = self.window?.rootViewController as? UISplitViewController {
+      self.splitViewControllerDelegate.configureSplitViewController(splitViewController)
+    }
+
+    type(of: self).configureAppearance()
   }
 
   // MARK: Private
@@ -28,4 +36,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     UITabBar.appearance().tintColor = .revertTint
     UINavigationBar.appearance().barTintColor = .revertTint
   }
+}
+
+@available(iOS 13.0, *)
+extension AppDelegate: UIWindowSceneDelegate {
+
 }
