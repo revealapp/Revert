@@ -732,7 +732,7 @@
 			};
 			buildConfigurationList = 9A6850B31AD4A20E00ACCE29 /* Build configuration list for PBXProject "Revert" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
