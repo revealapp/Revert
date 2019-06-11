@@ -36,12 +36,12 @@ final class DeepView: UIView {
     let bindingViews = ["subview": subview]
     let horizontalConstraints = NSLayoutConstraint.constraints(
       withVisualFormat: "H:|-\(constant)@\(priority.rawValue)-[subview]-\(constant)@\(priority.rawValue)-|",
-      options: NSLayoutFormatOptions(rawValue: 0),
+      options: NSLayoutConstraint.FormatOptions(rawValue: 0),
       metrics: nil,
       views: bindingViews)
     let verticalConstraints = NSLayoutConstraint.constraints(
       withVisualFormat: "V:|-\(constant)@\(priority.rawValue)-[subview]-\(constant)@\(priority.rawValue)-|",
-      options: NSLayoutFormatOptions(rawValue: 0),
+      options: NSLayoutConstraint.FormatOptions(rawValue: 0),
       metrics: nil,
       views: bindingViews)
     return horizontalConstraints + verticalConstraints

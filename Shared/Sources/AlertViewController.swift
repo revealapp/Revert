@@ -28,7 +28,7 @@ final class AlertViewController: RevertTableViewController {
 // MARK: - UIAlertController Presenter
 extension AlertViewController {
 
-  fileprivate func displayAlertControllerForWithStyle(_ style: UIAlertControllerStyle, fromView: UIView) {
+  fileprivate func displayAlertControllerForWithStyle(_ style: UIAlertController.Style, fromView: UIView) {
     let alertViewController = UIAlertController.exampleAlertControllerWithStyle(style)
     alertViewController.popoverPresentationController?.sourceView = fromView
     self.present(alertViewController, animated: true, completion: nil)
@@ -56,7 +56,7 @@ private enum Identifier: String {
       case .actionSheet:
         AlertViewController.showExampleActionsSheetInView(fromView)
       default:
-        let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
+        let alertStyle: UIAlertController.Style = identifier == .alertController ? .alert : .actionSheet
         self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
       }
     }
@@ -68,7 +68,7 @@ private enum Identifier: String {
   extension AlertViewController {
 
     fileprivate func displayCorrespondingAlertForIdentifier(_ identifier: Identifier, fromView: UIView) {
-      let alertStyle: UIAlertControllerStyle = identifier == .alertController ? .alert : .actionSheet
+      let alertStyle: UIAlertController.Style = identifier == .alertController ? .alert : .actionSheet
       self.displayAlertControllerForWithStyle(alertStyle, fromView: fromView)
     }
   }

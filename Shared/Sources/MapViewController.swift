@@ -29,7 +29,7 @@ final class MapViewController: RevertViewController {
     var coordinates = annotations.map { $0.coordinate }
 
     self.mapView.addAnnotations(annotations)
-    self.mapView.add(MKPolygon(coordinates: &coordinates, count: coordinates.count))
+    self.mapView.addOverlay(MKPolygon(coordinates: &coordinates, count: coordinates.count))
   }
 }
 

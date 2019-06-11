@@ -40,7 +40,7 @@ final class TransformViewsViewController: RevertViewController {
 
     self.wasAnimated = true
 
-    UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions(), animations: { () -> Void in
+    UIView.animate(withDuration: 1, delay: 0, options: [], animations: { () -> Void in
       self.translateView.transform = CGAffineTransform(translationX: -20, y: 20)
       self.rotateView.transform = CGAffineTransform(rotationAngle: 15.0 * .pi / 180.0)
       self.scaleView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
