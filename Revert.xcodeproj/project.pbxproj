@@ -144,6 +144,9 @@
 		BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
+		FA65013D22B0BF90005B2ED1 /* VisualEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA65013F22B0BF90005B2ED1 /* VisualEffectView.xib */; };
+		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
+		FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +258,8 @@
 		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		FA65013E22B0BF90005B2ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VisualEffectView.xib; sourceTree = "<group>"; };
+		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +294,7 @@
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
 				B59998E61BC36092002FE92C /* StackView.xib */,
+				FA65013F22B0BF90005B2ED1 /* VisualEffectView.xib */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -541,6 +547,7 @@
 				BBE51CD11CB73929006638B8 /* StressTestViewController.swift */,
 				BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */,
 				BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */,
+				FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -757,6 +764,7 @@
 				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
+				FA65013D22B0BF90005B2ED1 /* VisualEffectView.xib in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
 				90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */,
@@ -871,6 +879,7 @@
 				BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BBE51CA11CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */,
+				FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
@@ -945,6 +954,7 @@
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,
 				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
+				FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1006,6 +1016,14 @@
 				BB957F8E1CA0B57C000F09CA /* Base */,
 			);
 			name = StackView.xib;
+			sourceTree = "<group>";
+		};
+		FA65013F22B0BF90005B2ED1 /* VisualEffectView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA65013E22B0BF90005B2ED1 /* Base */,
+			);
+			name = VisualEffectView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -2470,6 +2470,7 @@
                         <segue destination="iFc-DU-kqi" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                         <segue destination="4EZ-DV-1G0" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="m1X-OC-0Ac" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
+                        <segue destination="nkM-O2-0Ym" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -4995,6 +4996,58 @@ on this label</string>
             </objects>
             <point key="canvasLocation" x="1625" y="-7590"/>
         </scene>
+        <!--Visual Effect View Controller-->
+        <scene sceneID="eY9-HO-Gif">
+            <objects>
+                <viewController id="2bc-fI-EKP" userLabel="Visual Effect View Controller" customClass="VisualEffectViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KkT-mB-2Wi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ub7-6K-HkL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LaI-zI-QN5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Visual Effect View" id="6R3-Lg-yn5">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Lm3-ce-nTi">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="3Vb-8a-szO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5R-il-Lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6366" y="-4146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5HN-40-xdK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkM-O2-0Ym" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JQu-CY-Nc0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.17116099600000001" green="0.60321605209999996" blue="0.91919529440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2bc-fI-EKP" kind="relationship" relationship="rootViewController" id="6xt-RR-V1D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1P-HN-ecd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3246" y="-7592"/>
+        </scene>
     </scenes>
     <resources>
         <image name="default_reveal" width="130" height="110"/>
@@ -5006,7 +5059,7 @@ on this label</string>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fOQ-ym-lLv"/>
+        <segue reference="3Vb-8a-szO"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
