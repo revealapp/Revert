@@ -26,7 +26,11 @@ private extension UIViewController {
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
-  override func viewDidLoad() {
+    @IBAction func breakBlueViewButtonTapped(_ sender: Any) {
+        self.blueViewLeadingConstraint.constant = 0
+    }
+    @IBOutlet weak var blueViewLeadingConstraint: NSLayoutConstraint!
+    override func viewDidLoad() {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
