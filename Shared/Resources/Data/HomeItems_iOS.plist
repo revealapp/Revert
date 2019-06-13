@@ -308,7 +308,7 @@
 				<key>title</key>
 				<string>Visual Effect View</string>
 				<key>iconName</key>
-				<string>icon_BrokenConstraints</string>
+				<string>icon_VisualEffectView</string>
 				<key>segueIdentifier</key>
 				<string>ShowVisualEffectViewControllerSegue</string>
 				<key>infoFilename</key>
