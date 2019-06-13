@@ -4996,34 +4996,6 @@ on this label</string>
             </objects>
             <point key="canvasLocation" x="1625" y="-7590"/>
         </scene>
-        <!--Visual Effect View Controller-->
-        <scene sceneID="eY9-HO-Gif">
-            <objects>
-                <viewController id="2bc-fI-EKP" userLabel="Visual Effect View Controller" customClass="VisualEffectViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KkT-mB-2Wi"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ub7-6K-HkL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LaI-zI-QN5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Visual Effect View" id="6R3-Lg-yn5">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Lm3-ce-nTi">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="3Vb-8a-szO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5R-il-Lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6366" y="-4146"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5HN-40-xdK">
             <objects>
@@ -5041,12 +5013,69 @@ on this label</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2bc-fI-EKP" kind="relationship" relationship="rootViewController" id="6xt-RR-V1D"/>
+                        <segue destination="QYQ-qB-q86" kind="relationship" relationship="rootViewController" id="b9s-Pz-QA8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1P-HN-ecd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3246" y="-7592"/>
+        </scene>
+        <!--Visual Effect View-->
+        <scene sceneID="ezg-eJ-nqg">
+            <objects>
+                <viewController title="Visual Effect View" id="QYQ-qB-q86" customClass="VisualEffectViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nbQ-wf-KdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rmF-Fd-CBj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cz2-5v-hYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aC-Uu-eI9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-QI-7fq">
+                                        <rect key="frame" x="0.0" y="0.0" width="1334" height="1334"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eGO-QI-7fq" secondAttribute="height" multiplier="1:1" id="7YJ-MV-XPA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="height" secondItem="6aC-Uu-eI9" secondAttribute="height" multiplier="2" id="Bgc-2l-61r"/>
+                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="leading" secondItem="6aC-Uu-eI9" secondAttribute="leading" id="IxV-px-uVD"/>
+                                    <constraint firstAttribute="bottom" secondItem="eGO-QI-7fq" secondAttribute="bottom" id="SEl-HH-jAV"/>
+                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="top" secondItem="6aC-Uu-eI9" secondAttribute="top" id="jgj-tx-sLM"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGO-QI-7fq" secondAttribute="trailing" id="vcB-63-4c8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6aC-Uu-eI9" secondAttribute="trailing" id="8Xp-Cf-nqN"/>
+                            <constraint firstItem="6aC-Uu-eI9" firstAttribute="top" secondItem="cz2-5v-hYX" secondAttribute="top" id="AfX-8l-Aax"/>
+                            <constraint firstAttribute="bottom" secondItem="6aC-Uu-eI9" secondAttribute="bottom" id="lbV-11-lCw"/>
+                            <constraint firstItem="6aC-Uu-eI9" firstAttribute="leading" secondItem="cz2-5v-hYX" secondAttribute="leading" id="rd7-RK-vmi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Visual Effect View" id="832-10-uxh">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="UL2-It-oRn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="6aC-Uu-eI9" id="UFD-LN-96d"/>
+                        <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="cp8-n3-7E6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLB-1o-LaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4066" y="-7593"/>
         </scene>
     </scenes>
     <resources>
@@ -5059,7 +5088,7 @@ on this label</string>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Vb-8a-szO"/>
+        <segue reference="cp8-n3-7E6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

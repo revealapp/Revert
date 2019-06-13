@@ -3,7 +3,7 @@
 
 import UIKit
 
-final class ScrollViewController: RevertViewController {
+class ScrollViewController: RevertViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -17,7 +17,7 @@ final class ScrollViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var scrollView: RevertFocusableScrollView!
+  @IBOutlet weak var scrollView: RevertFocusableScrollView!
 }
 
 #if os(tvOS)
