@@ -147,6 +147,7 @@
 		FA65013D22B0BF90005B2ED1 /* VisualEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA65013F22B0BF90005B2ED1 /* VisualEffectView.xib */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 		FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
+		FAA5E72522B1C15C00D65F2A /* VisualEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA5E72722B1C15C00D65F2A /* VisualEffectView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -260,6 +261,7 @@
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		FA65013E22B0BF90005B2ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VisualEffectView.xib; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
+		FAA5E72622B1C15C00D65F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VisualEffectView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +444,7 @@
 				BB2720521C9B8E44002E53EE /* Main.storyboard */,
 				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
 				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
+				FAA5E72722B1C15C00D65F2A /* VisualEffectView.xib */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -778,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				FAA5E72522B1C15C00D65F2A /* VisualEffectView.xib in Resources */,
 				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
 				90E99D2E1F5D293700053684 /* Data in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
@@ -1022,6 +1026,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA65013E22B0BF90005B2ED1 /* Base */,
+			);
+			name = VisualEffectView.xib;
+			sourceTree = "<group>";
+		};
+		FAA5E72722B1C15C00D65F2A /* VisualEffectView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA5E72622B1C15C00D65F2A /* Base */,
 			);
 			name = VisualEffectView.xib;
 			sourceTree = "<group>";

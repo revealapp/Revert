@@ -3039,6 +3039,7 @@
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
                         <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="6fJ-po-YLM"/>
+                        <segue destination="CWg-fK-PAV" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="Mbv-as-1cj"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg3-jq-6cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3126,6 +3127,7 @@
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
                         <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="Smw-db-KKH"/>
+                        <segue destination="CWg-fK-PAV" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="Vgy-n5-h6c"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-yE-1wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3411,6 +3413,24 @@
             </objects>
             <point key="canvasLocation" x="8071" y="16471"/>
         </scene>
+        <!--Visual Effect View-->
+        <scene sceneID="blQ-J9-hYU">
+            <objects>
+                <viewController title="Visual Effect View" id="CWg-fK-PAV" customClass="VisualEffectViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ppn-du-XK4"/>
+                        <viewControllerLayoutGuide type="bottom" id="TnK-yJ-43W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ux7-Pa-4Rv">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Pn-tN-7hj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUF-l5-yTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10415" y="16471"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -3420,30 +3440,31 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Smw-db-KKH"/>
-        <segue reference="o3C-W5-eps"/>
-        <segue reference="evt-aZ-EZs"/>
-        <segue reference="ZuO-qJ-3KH"/>
-        <segue reference="EA6-HN-coe"/>
-        <segue reference="5nw-8H-DJ6"/>
-        <segue reference="3ya-Xa-ejL"/>
-        <segue reference="DMn-a2-SDu"/>
-        <segue reference="ePP-G8-d2j"/>
-        <segue reference="fT7-7t-zD6"/>
-        <segue reference="A3G-Ah-Elw"/>
-        <segue reference="uRr-Hb-cuq"/>
-        <segue reference="kmn-Ux-9Fc"/>
-        <segue reference="pdL-yi-YIS"/>
-        <segue reference="4s0-rw-FfM"/>
-        <segue reference="vbS-XY-Q0Q"/>
-        <segue reference="CWR-H1-Ubd"/>
-        <segue reference="1aO-ZH-che"/>
-        <segue reference="hSD-sW-MUc"/>
-        <segue reference="Ct7-dL-JYR"/>
-        <segue reference="bV5-PX-hJM"/>
-        <segue reference="Qd6-iH-n0w"/>
-        <segue reference="XWV-wL-1gp"/>
-        <segue reference="RRh-BP-TQ7"/>
-        <segue reference="aVG-NZ-NKb"/>
+        <segue reference="Mbv-as-1cj"/>
+        <segue reference="6fJ-po-YLM"/>
+        <segue reference="bKg-Tw-bma"/>
+        <segue reference="SEa-Im-agc"/>
+        <segue reference="kJb-0f-6j4"/>
+        <segue reference="4Zw-Q9-imf"/>
+        <segue reference="9eS-Oe-XOH"/>
+        <segue reference="aLP-vy-qaj"/>
+        <segue reference="sQz-c6-PNe"/>
+        <segue reference="Tqf-V4-xDk"/>
+        <segue reference="16b-Sd-dJ0"/>
+        <segue reference="HVs-14-jRy"/>
+        <segue reference="C6t-OM-qMf"/>
+        <segue reference="cwj-qC-tGp"/>
+        <segue reference="Fb8-BI-6uh"/>
+        <segue reference="hsh-dy-nEy"/>
+        <segue reference="leq-yV-WZf"/>
+        <segue reference="Ad2-lN-jOy"/>
+        <segue reference="eYK-HC-bv0"/>
+        <segue reference="E3N-aw-4qX"/>
+        <segue reference="saQ-hI-FT8"/>
+        <segue reference="kzC-lO-nop"/>
+        <segue reference="dek-3j-uaJ"/>
+        <segue reference="1kx-aV-tGU"/>
+        <segue reference="s71-DX-UNb"/>
+        <segue reference="2sN-Om-l3s"/>
     </inferredMetricsTieBreakers>
 </document>
