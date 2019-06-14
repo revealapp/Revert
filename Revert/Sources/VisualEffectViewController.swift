@@ -8,27 +8,29 @@
 
 import UIKit
 
-final class VisualEffectViewController: ScrollViewController {
+final class VisualEffectViewController: RevertViewController {
 
   private var path: [CGPoint] = []
+
+  override var preferredFocusedView: UIView? {
+    return self.scrollView
+  }
+
+  // MARK: Private
+
+  @IBOutlet weak var scrollView: RevertFocusableScrollView!
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
-    let bottomEdge = self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.scrollView.contentInset.bottom
-    let rightEdge = self.scrollView.contentSize.width - self.scrollView.bounds.size.width + self.scrollView.contentInset.right
-    let topEdge = self.scrollView.contentInset.top
-    let leftEdge = self.scrollView.contentInset.left
+    self.scrollView.flashScrollIndicators()
 
-    let bottomRight = CGPoint(x: rightEdge, y: bottomEdge)
-    let topLeft = CGPoint(x: rightEdge, y: bottomEdge)
-    let topRight = CGPoint(x: rightEdge, y: topEdge)
+    let bottomRight = CGPoint(x: self.scrollView.rightEdge, y: self.scrollView.bottomEdge)
+    let bottomLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.bottomEdge)
+    let topLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.topEdge)
+    let topRight = CGPoint(x: self.scrollView.rightEdge, y: self.scrollView.topEdge)
 
-    let bottomLeft = CGPoint(x: 0, y: bottomEdge)
-    let bottomMiddle = CGPoint(x: self.scrollView.contentSize.width / 2, y: bottomEdge)
-
-
-    self.path = [bottomRight, topRight]
+    self.path = [bottomRight, topRight, bottomLeft, topLeft]
 
     self.move(to: 0)
   }
@@ -39,21 +41,42 @@ final class VisualEffectViewController: ScrollViewController {
     }
 
     let point = self.path[pathIndex]
-    UIView.animate(withDuration: 6, animations: {
-
-      self.scrollView.setContentOffset(point, animated: false)
-
-    }) { finished in
-      self.move(to: pathIndex + 1)
-    }
+    UIView.animate(withDuration: 6,
+                   animations: {
+                    self.scrollView.setContentOffset(point, animated: false)
+    },
+                   completion: { _ in
+                    self.move(to: pathIndex + 1)
+    })
   }
 }
-//TODO
-//extension UIScrollView {
-//  enum Position {
-//    case top
-//    case bottom
-//    case left
-//    case right
-//  }
-//}
+
+#if os(tvOS)
+
+extension VisualEffectViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.indirect.rawValue as NSNumber]
+  }
+}
+#endif
+
+private extension UIScrollView {
+  var bottomEdge: CGFloat {
+    return self.contentSize.height - self.bounds.size.height + self.contentInset.bottom
+  }
+
+  var rightEdge: CGFloat {
+    return self.contentSize.width - self.bounds.size.width + self.contentInset.right
+  }
+
+  var topEdge: CGFloat {
+    return self.contentInset.top
+  }
+
+  var leftEdge: CGFloat {
+    return self.contentInset.left
+  }
+}
