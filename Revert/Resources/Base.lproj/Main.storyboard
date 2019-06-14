@@ -5061,13 +5061,13 @@ on this label</string>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oK8-Er-9nI" userLabel="Separator">
                                         <rect key="frame" x="155" y="0.0" width="1" height="128"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="RUL-AB-lhR"/>
                                         </constraints>
                                     </view>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdP-Gr-ECr">
-                                        <rect key="frame" x="155.5" y="0.0" width="155" height="128"/>
+                                        <rect key="frame" x="156" y="0.0" width="155" height="128"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9DY-FG-7JV">
                                             <rect key="frame" x="0.0" y="0.0" width="155" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5129,11 +5129,11 @@ on this label</string>
                                     <constraint firstItem="rfA-LQ-g10" firstAttribute="top" secondItem="g6B-Rg-Jie" secondAttribute="top" id="Fdm-Zl-mnh"/>
                                     <constraint firstItem="cdP-Gr-ECr" firstAttribute="top" secondItem="g6B-Rg-Jie" secondAttribute="top" id="Jdc-dH-t5h"/>
                                     <constraint firstItem="oK8-Er-9nI" firstAttribute="centerX" secondItem="g6B-Rg-Jie" secondAttribute="centerX" id="PPF-wY-7bD"/>
-                                    <constraint firstItem="cdP-Gr-ECr" firstAttribute="leading" secondItem="oK8-Er-9nI" secondAttribute="trailing" constant="-0.5" id="VxZ-zk-MqH"/>
+                                    <constraint firstItem="cdP-Gr-ECr" firstAttribute="leading" secondItem="oK8-Er-9nI" secondAttribute="trailing" id="VxZ-zk-MqH"/>
                                     <constraint firstItem="rfA-LQ-g10" firstAttribute="height" secondItem="g6B-Rg-Jie" secondAttribute="height" id="YAL-Vv-DZe"/>
                                     <constraint firstItem="cdP-Gr-ECr" firstAttribute="height" secondItem="g6B-Rg-Jie" secondAttribute="height" id="Z9i-jG-PcI"/>
                                     <constraint firstItem="oK8-Er-9nI" firstAttribute="leading" secondItem="rfA-LQ-g10" secondAttribute="trailing" id="d2a-bt-wgA"/>
-                                    <constraint firstAttribute="trailing" secondItem="cdP-Gr-ECr" secondAttribute="trailing" constant="0.5" id="itn-rd-A3V"/>
+                                    <constraint firstAttribute="trailing" secondItem="cdP-Gr-ECr" secondAttribute="trailing" id="itn-rd-A3V"/>
                                     <constraint firstItem="rfA-LQ-g10" firstAttribute="leading" secondItem="g6B-Rg-Jie" secondAttribute="leading" id="wnk-sf-Whl"/>
                                     <constraint firstItem="oK8-Er-9nI" firstAttribute="height" secondItem="g6B-Rg-Jie" secondAttribute="height" id="xye-R5-ojV"/>
                                     <constraint firstItem="oK8-Er-9nI" firstAttribute="centerY" secondItem="g6B-Rg-Jie" secondAttribute="centerY" id="yhI-JJ-PwC"/>
