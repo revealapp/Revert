@@ -5079,8 +5079,8 @@ on this label</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="155" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypP-h7-19h">
-                                                                <rect key="frame" x="47.5" y="53.5" width="60" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypP-h7-19h">
+                                                                <rect key="frame" x="47.5" y="53.5" width="59" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -5107,8 +5107,8 @@ on this label</string>
                                             <rect key="frame" x="0.0" y="0.0" width="155" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-96-clN">
-                                                    <rect key="frame" x="48" y="53.5" width="59" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-96-clN">
+                                                    <rect key="frame" x="48" y="53.5" width="60" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -5118,7 +5118,7 @@ on this label</string>
                                                 <constraint firstItem="K8O-96-clN" firstAttribute="leading" secondItem="r7I-Vg-DYm" secondAttribute="leading" constant="48" id="5nu-hi-cwn"/>
                                                 <constraint firstAttribute="bottom" secondItem="K8O-96-clN" secondAttribute="bottom" constant="53.5" id="OQR-02-UKh"/>
                                                 <constraint firstItem="K8O-96-clN" firstAttribute="top" secondItem="r7I-Vg-DYm" secondAttribute="top" constant="53.5" id="gPh-86-xQZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="K8O-96-clN" secondAttribute="trailing" constant="48" id="gjh-kf-G4F"/>
+                                                <constraint firstAttribute="trailing" secondItem="K8O-96-clN" secondAttribute="trailing" constant="47" id="gjh-kf-G4F"/>
                                             </constraints>
                                         </view>
                                         <blurEffect style="light"/>

@@ -3459,8 +3459,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="796" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPf-1u-4bA">
-                                                    <rect key="frame" x="335" y="77" width="127" height="46"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPf-1u-4bA">
+                                                    <rect key="frame" x="334" y="77" width="128" height="46"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -3470,7 +3470,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="QPf-1u-4bA" secondAttribute="bottom" constant="77" id="I2b-60-SFR"/>
                                                 <constraint firstItem="QPf-1u-4bA" firstAttribute="top" secondItem="VGq-ph-9eh" secondAttribute="top" constant="77" id="V9a-7t-XLA"/>
                                                 <constraint firstAttribute="trailing" secondItem="QPf-1u-4bA" secondAttribute="trailing" constant="334" id="eSo-9h-Jxv"/>
-                                                <constraint firstItem="QPf-1u-4bA" firstAttribute="leading" secondItem="VGq-ph-9eh" secondAttribute="leading" constant="335" id="jZd-24-rBD"/>
+                                                <constraint firstItem="QPf-1u-4bA" firstAttribute="leading" secondItem="VGq-ph-9eh" secondAttribute="leading" constant="334" id="jZd-24-rBD"/>
                                             </constraints>
                                         </view>
                                         <blurEffect style="regular"/>
@@ -3488,8 +3488,8 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="795" height="200"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sp-yF-vPw">
-                                                                <rect key="frame" x="334" y="77" width="128" height="46"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sp-yF-vPw">
+                                                                <rect key="frame" x="334" y="77" width="127" height="46"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
