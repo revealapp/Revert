@@ -19,12 +19,20 @@ final class VisualEffectViewController: RevertViewController {
   // MARK: Private
 
   @IBOutlet weak var scrollView: RevertFocusableScrollView!
+  private var isAnimationLoaded = false
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     self.scrollView.flashScrollIndicators()
 
+    if !self.isAnimationLoaded {
+      self.performMoveAnimation()
+      self.isAnimationLoaded = true
+    }
+  }
+
+  private func performMoveAnimation() {
     let bottomRight = CGPoint(x: self.scrollView.rightEdge, y: self.scrollView.bottomEdge)
     let bottomLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.bottomEdge)
     let topLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.topEdge)
@@ -35,7 +43,7 @@ final class VisualEffectViewController: RevertViewController {
     self.move(to: 0)
   }
 
-  func move(to pathIndex: Int) {
+  private func move(to pathIndex: Int) {
     if !self.path.indices.contains(pathIndex) {
       return
     }
