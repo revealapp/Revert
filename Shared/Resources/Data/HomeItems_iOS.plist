@@ -106,6 +106,16 @@
 				<key>infoFilename</key>
 				<string>picker_views</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Visual Effect View</string>
+				<key>iconName</key>
+				<string>icon_VisualEffectView</string>
+				<key>segueIdentifier</key>
+				<string>ShowVisualEffectViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>broken_constraints</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -303,16 +313,6 @@
 				<string>ShowAnchorBoundsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>bounds_anchor_point_changes</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Visual Effect View</string>
-				<key>iconName</key>
-				<string>icon_VisualEffectView</string>
-				<key>segueIdentifier</key>
-				<string>ShowVisualEffectViewControllerSegue</string>
-				<key>infoFilename</key>
-				<string>broken_constraints</string>
 			</dict>
 		</array>
 	</dict>

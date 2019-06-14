@@ -5152,16 +5152,19 @@ on this label</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Visual Effect View" id="832-10-uxh">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="UL2-It-oRn"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="UL2-It-oRn">
+                            <connections>
+                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="76F-UK-KaE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="6aC-Uu-eI9" id="UFD-LN-96d"/>
-                        <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="cp8-n3-7E6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLB-1o-LaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4069.5999999999999" y="-7593.5532233883068"/>
+            <point key="canvasLocation" x="4066" y="-7593"/>
         </scene>
     </scenes>
     <resources>
@@ -5175,7 +5178,7 @@ on this label</string>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cp8-n3-7E6"/>
+        <segue reference="76F-UK-KaE"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
