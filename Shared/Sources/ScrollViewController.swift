@@ -3,7 +3,7 @@
 
 import UIKit
 
-class ScrollViewController: RevertViewController {
+final class ScrollViewController: RevertViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)

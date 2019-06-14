@@ -10,16 +10,28 @@ import UIKit
 
 final class VisualEffectViewController: RevertViewController {
 
-  private var path: [CGPoint] = []
+  // MARK: - Types
+
+  fileprivate enum Corner: CaseIterable {
+    case bottomRight
+    case bottomLeft
+    case topLeft
+    case topRight
+  }
+
+  // MARK: - UIViewController
 
   override var preferredFocusedView: UIView? {
     return self.scrollView
   }
 
-  // MARK: Private
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-  @IBOutlet weak var scrollView: RevertFocusableScrollView!
-  private var isAnimationLoaded = false
+    #if os(tvOS)
+    self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.indirect.rawValue as NSNumber]
+    #endif
+  }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -32,52 +44,54 @@ final class VisualEffectViewController: RevertViewController {
     }
   }
 
+  // MARK: - Private
+
+  @IBOutlet private weak var scrollView: RevertFocusableScrollView!
+  private var isAnimationLoaded = false
+
   private func performMoveAnimation() {
-    let bottomRight = CGPoint(x: self.scrollView.rightEdge, y: self.scrollView.bottomEdge)
-    let bottomLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.bottomEdge)
-    let topLeft = CGPoint(x: self.scrollView.leftEdge, y: self.scrollView.topEdge)
-    let topRight = CGPoint(x: self.scrollView.rightEdge, y: self.scrollView.topEdge)
-
-    self.path = [bottomRight, topRight, bottomLeft, topLeft]
-
-    self.move(to: 0)
+    self.move(to: Corner.allCases.makeIterator())
   }
 
-  private func move(to pathIndex: Int) {
-    if !self.path.indices.contains(pathIndex) {
+  private func move(to pathIterator: IndexingIterator<[Corner]>) {
+    var pathIterator = pathIterator
+    guard let corner = pathIterator.next() else {
       return
     }
 
-    let point = self.path[pathIndex]
-    UIView.animate(withDuration: 6,
-                   animations: {
-                    self.scrollView.setContentOffset(point, animated: false)
-    },
-                   completion: { _ in
-                    self.move(to: pathIndex + 1)
-    })
+    UIView.animate(
+      withDuration: 6,
+      animations: {
+        // Something
+        self.scrollView.setContentOffset(self.scrollView.contentOffset(for: corner), animated: false)
+      },
+      completion: { _ in
+        self.move(to: pathIterator)
+      }
+    )
   }
 }
-
-#if os(tvOS)
-
-extension VisualEffectViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.indirect.rawValue as NSNumber]
-  }
-}
-#endif
 
 private extension UIScrollView {
+  func contentOffset(for corner: VisualEffectViewController.Corner) -> CGPoint {
+    switch corner {
+    case .bottomRight:
+      return CGPoint(x: rightEdge, y: bottomEdge)
+    case .bottomLeft:
+      return CGPoint(x: leftEdge, y: bottomEdge)
+    case .topLeft:
+      return CGPoint(x: leftEdge, y: topEdge)
+    case .topRight:
+      return CGPoint(x: rightEdge, y: topEdge)
+    }
+  }
+
   var bottomEdge: CGFloat {
-    return self.contentSize.height - self.bounds.size.height + self.contentInset.bottom
+    return self.contentSize.height - self.bounds.size.height + self.contentInset.top
   }
 
   var rightEdge: CGFloat {
-    return self.contentSize.width - self.bounds.size.width + self.contentInset.right
+    return self.contentSize.width - self.bounds.size.width + self.contentInset.left
   }
 
   var topEdge: CGFloat {
