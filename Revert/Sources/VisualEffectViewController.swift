@@ -14,9 +14,9 @@ final class VisualEffectViewController: RevertViewController {
 
   fileprivate enum Corner: CaseIterable {
     case bottomRight
+    case topRight
     case bottomLeft
     case topLeft
-    case topRight
   }
 
   // MARK: - UIViewController
