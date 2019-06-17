@@ -17,7 +17,7 @@ final class ScrollViewController: RevertViewController {
 
   // MARK: Private
 
-  @IBOutlet fileprivate weak var scrollView: RevertFocusableScrollView!
+  @IBOutlet weak var scrollView: RevertFocusableScrollView!
 }
 
 #if os(tvOS)

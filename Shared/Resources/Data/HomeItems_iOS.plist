@@ -106,6 +106,16 @@
 				<key>infoFilename</key>
 				<string>picker_views</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Visual Effect View</string>
+				<key>iconName</key>
+				<string>icon_VisualEffectView</string>
+				<key>segueIdentifier</key>
+				<string>ShowVisualEffectViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>visual_effect_view</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
