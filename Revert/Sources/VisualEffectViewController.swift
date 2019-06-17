@@ -1,10 +1,5 @@
 //
-//  VisualEffectViewController.swift
-//  Revert-iOS
-//
-//  Created by june chen on 12/6/19.
 //  Copyright © 2019 Itty Bitty Apps. All rights reserved.
-//
 
 import UIKit
 
@@ -62,7 +57,6 @@ final class VisualEffectViewController: RevertViewController {
     UIView.animate(
       withDuration: 6,
       animations: {
-        // Something
         self.scrollView.setContentOffset(self.scrollView.contentOffset(for: corner), animated: false)
       },
       completion: { _ in
