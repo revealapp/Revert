@@ -3285,7 +3285,7 @@
         <!--Broken Constraints-->
         <scene sceneID="Xy0-yN-K7b">
             <objects>
-                <viewController id="hSd-Xk-083" userLabel="Broken Constraints" customClass="RevertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                <viewController id="hSd-Xk-083" userLabel="Broken Constraints" customClass="BrokenConstraintsViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bdr-b3-NSU"/>
                         <viewControllerLayoutGuide type="bottom" id="e7a-Dr-RYq"/>
