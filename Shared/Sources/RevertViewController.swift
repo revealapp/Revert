@@ -26,11 +26,9 @@ private extension UIViewController {
 class RevertViewController: UIViewController, SettableHomeItem {
   final var item: HomeItem?
 
-    @IBAction func breakBlueViewButtonTapped(_ sender: Any) {
-        self.blueViewLeadingConstraint.constant = 0
-    }
-    @IBOutlet weak var blueViewLeadingConstraint: NSLayoutConstraint!
-    override func viewDidLoad() {
+  @IBOutlet weak var blueViewWidth: NSLayoutConstraint!
+
+  override func viewDidLoad() {
     super.viewDidLoad()
 
     assert(self.item != nil, "Item must be set before `viewDidLoad`")
@@ -38,6 +36,10 @@ class RevertViewController: UIViewController, SettableHomeItem {
     if self.item?.infoFilename == nil {
       self.navigationItem.rightBarButtonItem = nil
     }
+  }
+
+  @IBAction func breakBlueViewButtonTapped(_ sender: Any) {
+    self.blueViewWidth.constant = 0
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
