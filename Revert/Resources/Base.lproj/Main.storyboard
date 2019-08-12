@@ -1338,69 +1338,6 @@
             </objects>
             <point key="canvasLocation" x="2443" y="484"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EQA-va-EfF">
-            <objects>
-                <navigationController storyboardIdentifier="WebViewController" id="gX7-Yl-LVe" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rEL-kE-Bd2">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="zbC-XF-QPg" kind="relationship" relationship="rootViewController" id="ou0-7R-7oB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1y0-LI-6MP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3250" y="-233"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="hhK-5P-fIh">
-            <objects>
-                <viewController id="zbC-XF-QPg" customClass="WebViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RT8-lc-X3a"/>
-                        <viewControllerLayoutGuide type="bottom" id="WrG-Rz-40G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WEQ-7w-QE3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.9361116886138916" green="0.93489384651184082" blue="0.95602846145629883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="h0T-dt-WNG">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="LBF-J0-iUK">
-                            <rect key="frame" x="87" y="7" width="240" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            <segments>
-                                <segment title="UIWebView"/>
-                                <segment title="WKWebView"/>
-                            </segments>
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="segmentedControlValueChanged:" destination="zbC-XF-QPg" eventType="valueChanged" id="ow7-zQ-7YY"/>
-                            </connections>
-                        </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="RB4-YL-jvu">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="OwL-GG-XTi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-rF-vMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4067" y="-233"/>
-        </scene>
         <!--Open GL-->
         <scene sceneID="mtZ-YC-uYA">
             <objects>
@@ -1615,7 +1552,7 @@
                         <segue destination="Q46-4J-2QX" kind="showDetail" identifier="ShowBarsViewControllerSegue" id="jaS-C4-ZP8"/>
                         <segue destination="jBZ-a1-bab" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
                         <segue destination="vLH-W2-axe" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
-                        <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
+                        <segue destination="tyr-c9-kEI" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
                         <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
                         <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                         <segue destination="wsb-8b-MuL" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
@@ -1980,6 +1917,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ym-HV-gpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="-233"/>
+        </scene>
+        <!--WebViewController-->
+        <scene sceneID="WN3-o9-riV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WebViewController" storyboardName="Web View" referencedIdentifier="WebViewController" id="tyr-c9-kEI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPZ-hL-kET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3250" y="-233"/>
         </scene>
     </scenes>
     <resources>
