@@ -169,7 +169,7 @@
                     <tabBarItem key="tabBarItem" title="What's New" id="M4k-2j-oRx"/>
                     <connections>
                         <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
-                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
+                        <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
@@ -1011,24 +1011,6 @@
             </objects>
             <point key="canvasLocation" x="-5379" y="8201"/>
         </scene>
-        <!--Sprite Kit View Controller-->
-        <scene sceneID="D9e-7X-BGJ">
-            <objects>
-                <viewController id="2bX-AO-Trr" customClass="SpriteKitViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JJc-se-U0c"/>
-                        <viewControllerLayoutGuide type="bottom" id="6WD-l9-Yqe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R6B-ro-T4x" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="00P-L0-Olt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bnK-kZ-Ej6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="12145"/>
-        </scene>
         <!--Auto Layout Margins-->
         <scene sceneID="9oB-lF-eno">
             <objects>
@@ -1284,7 +1266,7 @@
                         <segue destination="5V6-0g-bpC" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="16b-Sd-dJ0"/>
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
-                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
+                        <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
                         <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
@@ -1372,7 +1354,7 @@
                         <segue destination="5V6-0g-bpC" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="fT7-7t-zD6"/>
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
-                        <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
+                        <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
                         <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
@@ -1805,6 +1787,14 @@
             </objects>
             <point key="canvasLocation" x="10415" y="10739"/>
         </scene>
+        <!--SpriteKit-->
+        <scene sceneID="0hw-em-CmX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SpriteKit" id="hyF-pL-MLi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGm-cB-W2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="12145"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -1812,6 +1802,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4Zw-Q9-imf"/>
         <segue reference="ePP-G8-d2j"/>
         <segue reference="SIv-Cp-spB"/>
         <segue reference="fT7-7t-zD6"/>
@@ -1829,7 +1820,6 @@
         <segue reference="jBG-yk-csM"/>
         <segue reference="6fJ-po-YLM"/>
         <segue reference="kJb-0f-6j4"/>
-        <segue reference="4Zw-Q9-imf"/>
         <segue reference="aLP-vy-qaj"/>
         <segue reference="sQz-c6-PNe"/>
         <segue reference="leq-yV-WZf"/>
