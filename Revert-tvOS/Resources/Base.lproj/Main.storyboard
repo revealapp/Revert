@@ -282,7 +282,7 @@
                         <segue destination="2mN-ph-Ujr" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="SEa-Im-agc"/>
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
                         <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
-                        <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="6fJ-po-YLM"/>
+                        <segue destination="CMv-Wy-1Ft" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="6fJ-po-YLM"/>
                         <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="jBG-yk-csM"/>
                     </connections>
                 </collectionViewController>
@@ -370,180 +370,13 @@
                         <segue destination="2mN-ph-Ujr" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="evt-aZ-EZs"/>
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
                         <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
-                        <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="Smw-db-KKH"/>
+                        <segue destination="CMv-Wy-1Ft" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="Smw-db-KKH"/>
                         <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="1t7-4N-Dqp"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-yE-1wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1399" y="10548"/>
-        </scene>
-        <!--Broken Constraints-->
-        <scene sceneID="Xy0-yN-K7b">
-            <objects>
-                <viewController id="hSd-Xk-083" userLabel="Broken Constraints" customClass="BrokenConstraintsViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bdr-b3-NSU"/>
-                        <viewControllerLayoutGuide type="bottom" id="e7a-Dr-RYq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gqw-qL-s4Y">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-gs-dYs" userLabel="Content View">
-                                <rect key="frame" x="20" y="80" width="1880" height="920"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" restorationIdentifier="Blue View" translatesAutoresizingMaskIntoConstraints="NO" id="8DU-km-CJe" userLabel="Blue View">
-                                        <rect key="frame" x="815" y="335" width="250" height="250"/>
-                                        <color key="backgroundColor" red="0.34494423870000002" green="0.70911610130000002" blue="0.9961668253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="8DU-km-CJe" secondAttribute="height" multiplier="1:1" id="8GP-uv-o36"/>
-                                            <constraint firstAttribute="height" constant="250" id="AfE-eF-La5"/>
-                                            <constraint firstAttribute="width" constant="250" id="m60-Wg-4HQ"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Horizontal Position Missing" translatesAutoresizingMaskIntoConstraints="NO" id="Mzy-6Q-uug" userLabel="Horizontal Position Missing View">
-                                        <rect key="frame" x="55" y="781" width="1770" height="25"/>
-                                        <color key="backgroundColor" red="0.93857973809999995" green="0.6397663951" blue="0.23123157019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="1770" id="Fg4-Ko-a0Y"/>
-                                            <constraint firstAttribute="height" constant="25" id="Mme-O8-4uw"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Vertical Position Missing" translatesAutoresizingMaskIntoConstraints="NO" id="y0L-EV-5a4" userLabel="Vertical Position Missing View">
-                                        <rect key="frame" x="55" y="838" width="1770" height="25"/>
-                                        <color key="backgroundColor" red="0.6963587403" green="0.23020553590000001" blue="0.96475833649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="cKt-9H-iBp"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Width Missing" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-Pn-mkQ" userLabel="Width Horizontal Missing View">
-                                        <rect key="frame" x="55" y="895" width="1770" height="25"/>
-                                        <color key="backgroundColor" red="0.83723682170000002" green="0.99456053970000002" blue="0.38807255029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="jKC-HD-rgN"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Missing Height" translatesAutoresizingMaskIntoConstraints="NO" id="CGU-ZI-E7e" userLabel="Height Vertical Missing View">
-                                        <rect key="frame" x="55" y="724" width="1770" height="25"/>
-                                        <color key="backgroundColor" red="0.39936247470000003" green="0.7971643209" blue="0.71764200929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj6-wL-CuU">
-                                        <rect key="frame" x="700" y="605" width="481" height="86"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="86" id="MWr-qj-8Lz"/>
-                                            <constraint firstAttribute="width" constant="481" id="R7D-SM-gbM"/>
-                                        </constraints>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Break Blue View Layout"/>
-                                        <connections>
-                                            <action selector="breakBlueViewButtonTapped:" destination="hSd-Xk-083" eventType="primaryActionTriggered" id="UDU-sD-yfF"/>
-                                        </connections>
-                                    </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaV-XK-UTD" userLabel="Scroll View Missing Width">
-                                        <rect key="frame" x="55" y="32" width="526" height="229"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Ambiguous Content Width" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-qQ-kzL">
-                                                <rect key="frame" x="0.0" y="0.0" width="526" height="229"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="229" id="kEH-H7-b4w"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.28216883539999998" green="0.59982115030000005" blue="0.24697881939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="PO0-qQ-kzL" secondAttribute="trailing" id="6Iy-lD-aJa"/>
-                                            <constraint firstAttribute="width" constant="526" id="8FC-ka-jXz"/>
-                                            <constraint firstItem="PO0-qQ-kzL" firstAttribute="leading" secondItem="XaV-XK-UTD" secondAttribute="leading" id="D7I-dd-tc8"/>
-                                            <constraint firstAttribute="bottom" secondItem="PO0-qQ-kzL" secondAttribute="bottom" id="HO9-hP-AKq"/>
-                                            <constraint firstItem="PO0-qQ-kzL" firstAttribute="top" secondItem="XaV-XK-UTD" secondAttribute="top" id="ILx-HG-ATi"/>
-                                            <constraint firstAttribute="height" constant="229" id="Wcu-yI-Yyh"/>
-                                        </constraints>
-                                    </scrollView>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wic-7v-YIf" userLabel="Scroll View Missing Height">
-                                        <rect key="frame" x="1299" y="32" width="526" height="229"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="Content View Missing Height" translatesAutoresizingMaskIntoConstraints="NO" id="VWK-iB-7xf">
-                                                <rect key="frame" x="0.0" y="0.0" width="526" height="229"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="526" id="HyE-aH-oeT"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.18634480240000001" green="0.25329223280000002" blue="0.96083933119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="526" id="79R-ge-pee"/>
-                                            <constraint firstAttribute="bottom" secondItem="VWK-iB-7xf" secondAttribute="bottom" id="IeF-WF-mfi"/>
-                                            <constraint firstAttribute="height" constant="229" id="Wla-Nm-Adr"/>
-                                            <constraint firstItem="VWK-iB-7xf" firstAttribute="leading" secondItem="wic-7v-YIf" secondAttribute="leading" id="khK-vc-zYM"/>
-                                            <constraint firstAttribute="trailing" secondItem="VWK-iB-7xf" secondAttribute="trailing" id="p7D-WA-zBQ"/>
-                                            <constraint firstItem="VWK-iB-7xf" firstAttribute="top" secondItem="wic-7v-YIf" secondAttribute="top" id="rLG-RP-C3a"/>
-                                        </constraints>
-                                    </scrollView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="8DU-km-CJe" firstAttribute="centerY" secondItem="bQO-gs-dYs" secondAttribute="centerY" id="2lQ-qV-6Y9"/>
-                                    <constraint firstAttribute="trailing" secondItem="CGU-ZI-E7e" secondAttribute="trailing" constant="55" id="Bzn-xD-quz"/>
-                                    <constraint firstItem="CGU-ZI-E7e" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="55" id="DD6-mO-5jH"/>
-                                    <constraint firstAttribute="trailing" secondItem="xVn-Pn-mkQ" secondAttribute="trailing" constant="55" id="Dfk-xk-Cw8"/>
-                                    <constraint firstAttribute="bottom" secondItem="CGU-ZI-E7e" secondAttribute="bottom" constant="171" id="Lp7-7U-8k5"/>
-                                    <constraint firstAttribute="bottom" secondItem="xVn-Pn-mkQ" secondAttribute="bottom" id="N7j-kC-6f4"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mzy-6Q-uug" secondAttribute="bottom" constant="114" id="Raf-Mj-2uj"/>
-                                    <constraint firstAttribute="trailing" secondItem="wic-7v-YIf" secondAttribute="trailing" constant="55" id="S01-iF-xFK"/>
-                                    <constraint firstItem="8DU-km-CJe" firstAttribute="centerX" secondItem="bQO-gs-dYs" secondAttribute="centerX" id="SfC-HJ-e4D"/>
-                                    <constraint firstItem="XaV-XK-UTD" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="55" id="UjH-BE-l5c"/>
-                                    <constraint firstItem="gj6-wL-CuU" firstAttribute="centerX" secondItem="bQO-gs-dYs" secondAttribute="centerX" id="Us3-WG-GMI"/>
-                                    <constraint firstItem="gj6-wL-CuU" firstAttribute="top" secondItem="8DU-km-CJe" secondAttribute="bottom" constant="20" id="VVN-2A-gbH"/>
-                                    <constraint firstItem="wic-7v-YIf" firstAttribute="top" secondItem="bQO-gs-dYs" secondAttribute="top" constant="32" id="bAT-m4-gaO"/>
-                                    <constraint firstAttribute="trailing" secondItem="y0L-EV-5a4" secondAttribute="trailing" constant="55" id="cxZ-Nk-SPX"/>
-                                    <constraint firstItem="XaV-XK-UTD" firstAttribute="top" secondItem="bQO-gs-dYs" secondAttribute="top" constant="32" id="nvH-0G-QJu"/>
-                                    <constraint firstItem="y0L-EV-5a4" firstAttribute="leading" secondItem="bQO-gs-dYs" secondAttribute="leading" constant="55" id="uNI-gv-c9l"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="e7a-Dr-RYq" firstAttribute="top" secondItem="bQO-gs-dYs" secondAttribute="bottom" constant="20" id="6yf-sA-o9x"/>
-                            <constraint firstItem="bQO-gs-dYs" firstAttribute="leading" secondItem="gqw-qL-s4Y" secondAttribute="leading" constant="20" id="HTd-GV-LQR"/>
-                            <constraint firstAttribute="trailing" secondItem="bQO-gs-dYs" secondAttribute="trailing" constant="20" id="ICN-Qe-Kft"/>
-                            <constraint firstItem="bQO-gs-dYs" firstAttribute="top" secondItem="bdr-b3-NSU" secondAttribute="bottom" constant="20" id="hdI-kS-bJy"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="blueViewWidth" destination="m60-Wg-4HQ" id="SpF-zL-Ivh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IS0-OU-Jh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8071" y="16471"/>
         </scene>
         <!--Visual Effect View Controller-->
         <scene sceneID="iCw-yP-SsF">
@@ -870,12 +703,21 @@
             </objects>
             <point key="canvasLocation" x="5719" y="16471"/>
         </scene>
+        <!--Broken Constraints-->
+        <scene sceneID="hA8-yC-BYe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Broken Constraints" id="CMv-Wy-1Ft" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4V-LU-6p1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8071" y="16471"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
         <image name="office" width="1276" height="850.5"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Smw-db-KKH"/>
         <segue reference="eYK-HC-bv0"/>
         <segue reference="vbS-XY-Q0Q"/>
         <segue reference="Ad2-lN-jOy"/>
@@ -901,6 +743,5 @@
         <segue reference="bKg-Tw-bma"/>
         <segue reference="kmn-Ux-9Fc"/>
         <segue reference="jBG-yk-csM"/>
-        <segue reference="6fJ-po-YLM"/>
     </inferredMetricsTieBreakers>
 </document>
