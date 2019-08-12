@@ -1242,28 +1242,6 @@
             <point key="canvasLocation" x="2443" y="1202"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="G3Q-gw-kgY">
-            <objects>
-                <navigationController storyboardIdentifier="AlertsViewController" id="SEz-lg-6Yy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wxh-xN-QLn">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gLA-bY-UPx" kind="relationship" relationship="rootViewController" id="3QV-tA-goa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vXj-jo-U8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3250" y="-1653"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="LFM-n0-uef">
             <objects>
                 <navigationController storyboardIdentifier="PickerViewController" id="2fy-QS-Sus" sceneMemberID="viewController">
@@ -1284,59 +1262,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ca-hH-XRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3250" y="-947"/>
-        </scene>
-        <!--Alert View-->
-        <scene sceneID="onv-b7-C5t">
-            <objects>
-                <tableViewController id="gLA-bY-UPx" customClass="AlertViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="10" sectionFooterHeight="10" id="y5T-aE-26T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.17552228271961212" green="0.80860555171966553" blue="0.71378350257873535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="9K8-gr-8GN" customClass="BasicCell" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9K8-gr-8GN" id="sl6-ps-oHs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="49.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-Ft-pAH">
-                                            <rect key="frame" x="15" y="15" width="33.666666666666664" height="20"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" red="0.16617307066917419" green="0.1662043035030365" blue="0.16616508364677429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Rz-Ft-pAH" secondAttribute="trailing" constant="15" id="MPS-qh-6LG"/>
-                                        <constraint firstAttribute="centerY" secondItem="8Rz-Ft-pAH" secondAttribute="centerY" id="gzI-tR-01X"/>
-                                        <constraint firstItem="8Rz-Ft-pAH" firstAttribute="leading" secondItem="sl6-ps-oHs" secondAttribute="leading" constant="15" id="tF1-UI-Egk"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="titleLabel" destination="8Rz-Ft-pAH" id="lxv-v0-ZPH"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="gLA-bY-UPx" id="XnT-MX-B45"/>
-                            <outlet property="delegate" destination="gLA-bY-UPx" id="5rc-Sx-8ju"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Alert View" id="kDE-Ri-dPl">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="7LL-HU-5QN">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="67G-2a-8iB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xVu-nX-7FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4067" y="-1653"/>
         </scene>
         <!--Picker View-->
         <scene sceneID="kpq-zZ-wqE">
@@ -2038,7 +1963,7 @@
                         <segue destination="ivy-GA-fkp" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="gI8-Qe-nLe"/>
                         <segue destination="eCE-K6-DSo" kind="showDetail" identifier="ShowSpriteKitViewControllerSegue" id="Jzs-pC-ZOB"/>
                         <segue destination="Q46-4J-2QX" kind="showDetail" identifier="ShowBarsViewControllerSegue" id="jaS-C4-ZP8"/>
-                        <segue destination="SEz-lg-6Yy" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
+                        <segue destination="jBZ-a1-bab" kind="showDetail" identifier="ShowAlertViewControllerSegue" id="hNa-A5-cti"/>
                         <segue destination="2fy-QS-Sus" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
                         <segue destination="gX7-Yl-LVe" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
                         <segue destination="8lC-6o-1R7" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
@@ -2374,6 +2299,14 @@
             </objects>
             <point key="canvasLocation" x="1626" y="-1653"/>
         </scene>
+        <!--AlertsViewController-->
+        <scene sceneID="Mb7-if-ywD">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AlertsViewController" storyboardName="Alert View" referencedIdentifier="AlertsViewController" id="jBZ-a1-bab" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BC-Sc-geb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3250" y="-1653"/>
+        </scene>
     </scenes>
     <resources>
         <image name="default_reveal" width="130" height="110"/>
@@ -2385,7 +2318,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="67G-2a-8iB"/>
+        <segue reference="mpH-Ny-qJv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
