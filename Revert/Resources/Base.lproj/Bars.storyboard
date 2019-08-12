@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bars-->
+        <scene sceneID="ip3-U8-Acg">
+            <objects>
+                <viewController id="vVt-7j-5QX" customClass="BarsViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uoj-Fd-V2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pgp-LK-lBc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QWk-af-Bo6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Filter by Name" translatesAutoresizingMaskIntoConstraints="NO" id="6jK-ik-p74">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-cY-InN">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-02-jzJ" userLabel="ToolBar Container">
+                                        <rect key="frame" x="15" y="40" width="384" height="578"/>
+                                        <subviews>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-zU-juz">
+                                                <rect key="frame" x="0.0" y="534" width="384" height="44"/>
+                                                <items>
+                                                    <barButtonItem systemItem="add" id="SX2-Ne-GXU"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="s2C-rw-0DX"/>
+                                                    <barButtonItem systemItem="search" id="cNL-8o-5L1"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="omK-CK-Nty"/>
+                                                    <barButtonItem systemItem="refresh" id="duN-54-xDF"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5cr-VZ-Hhu"/>
+                                                    <barButtonItem systemItem="compose" id="6WZ-Xc-jxF"/>
+                                                </items>
+                                            </toolbar>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1cQ-zU-juz" secondAttribute="bottom" id="3h8-zL-IdK"/>
+                                            <constraint firstItem="1cQ-zU-juz" firstAttribute="leading" secondItem="bUw-02-jzJ" secondAttribute="leading" id="SdA-Fj-3FV"/>
+                                            <constraint firstAttribute="trailing" secondItem="1cQ-zU-juz" secondAttribute="trailing" id="sF6-Dt-DP2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bUw-02-jzJ" firstAttribute="top" secondItem="Xwu-cY-InN" secondAttribute="top" constant="40" id="DiY-oq-ocX"/>
+                                    <constraint firstItem="bUw-02-jzJ" firstAttribute="leading" secondItem="Xwu-cY-InN" secondAttribute="leading" constant="15" id="SZc-60-ejQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bUw-02-jzJ" secondAttribute="trailing" constant="15" id="acS-WE-9S5"/>
+                                    <constraint firstAttribute="bottom" secondItem="bUw-02-jzJ" secondAttribute="bottom" constant="100" id="ggJ-ra-KSU"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-al-unb">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="YQG-oH-vVZ"/>
+                                    <tabBarItem systemItem="more" id="4cq-QO-GdK"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xwu-cY-InN" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="19M-JV-379"/>
+                            <constraint firstAttribute="trailing" secondItem="Xwu-cY-InN" secondAttribute="trailing" id="6fk-OQ-UoQ"/>
+                            <constraint firstAttribute="trailing" secondItem="XyU-al-unb" secondAttribute="trailing" id="Hj4-ep-2tc"/>
+                            <constraint firstItem="Pgp-LK-lBc" firstAttribute="top" secondItem="Xwu-cY-InN" secondAttribute="bottom" id="IHe-cn-Kyk"/>
+                            <constraint firstItem="6jK-ik-p74" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="SCr-e8-nwE"/>
+                            <constraint firstItem="Xwu-cY-InN" firstAttribute="top" secondItem="6jK-ik-p74" secondAttribute="bottom" id="Wyb-na-e3L"/>
+                            <constraint firstItem="6jK-ik-p74" firstAttribute="top" secondItem="Uoj-Fd-V2E" secondAttribute="bottom" id="eJn-iH-WfS"/>
+                            <constraint firstItem="Pgp-LK-lBc" firstAttribute="top" secondItem="XyU-al-unb" secondAttribute="bottom" id="eM3-Be-X0w"/>
+                            <constraint firstItem="XyU-al-unb" firstAttribute="leading" secondItem="QWk-af-Bo6" secondAttribute="leading" id="kQP-Ac-yCk"/>
+                            <constraint firstAttribute="trailing" secondItem="6jK-ik-p74" secondAttribute="trailing" id="pYL-Gh-xP2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bars" id="AOo-sw-j24">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="DRG-Gs-3WK">
+                            <connections>
+                                <segue destination="7Am-RN-TYr" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="mpH-Ny-qJv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dismissContainerView" destination="Xwu-cY-InN" id="LAS-ka-pSF"/>
+                        <outlet property="searchBar" destination="6jK-ik-p74" id="LNB-iL-sUK"/>
+                        <outlet property="tabBar" destination="XyU-al-unb" id="FFS-g1-ybt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOA-3v-C0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="1908"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0we-gd-nKN">
+            <objects>
+                <navigationController storyboardIdentifier="BarsViewController" id="Q46-4J-2QX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oeg-bk-0J2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vVt-7j-5QX" kind="relationship" relationship="rootViewController" id="Vin-2Y-Cab"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cS0-Fd-X6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="1908"/>
+        </scene>
+        <!--HelpViewController-->
+        <scene sceneID="XHn-qa-erc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="7Am-RN-TYr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLA-qA-3Al" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3236" y="1908"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info_icon" width="22" height="22"/>
+    </resources>
+    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
