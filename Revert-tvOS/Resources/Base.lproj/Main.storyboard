@@ -172,7 +172,7 @@
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
-                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
+                        <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
                     </connections>
                 </viewController>
@@ -1493,27 +1493,6 @@
             </objects>
             <point key="canvasLocation" x="5719" y="13577"/>
         </scene>
-        <!--GLKit View Controller-->
-        <scene sceneID="lgi-Wg-TAr">
-            <objects>
-                <glkViewController preferredFramesPerSecond="30" id="3b2-Pq-NFS" customClass="OpenGLViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1KQ-ig-LWM"/>
-                        <viewControllerLayoutGuide type="bottom" id="oc9-6m-xpW"/>
-                    </layoutGuides>
-                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="nkC-Ks-rTq">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <connections>
-                            <outlet property="delegate" destination="3b2-Pq-NFS" id="AnW-WL-X03"/>
-                        </connections>
-                    </glkView>
-                    <navigationItem key="navigationItem" id="qlf-ym-iJi"/>
-                </glkViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-FX-1n6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10415" y="9409"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
             <objects>
@@ -1802,7 +1781,7 @@
                         <segue destination="mGR-tk-LOt" kind="presentation" identifier="ShowDefaultsControllerSegue" id="C6t-OM-qMf"/>
                         <segue destination="GVC-zp-DpK" kind="presentation" identifier="ShowScrollViewControllerSegue" id="s71-DX-UNb"/>
                         <segue destination="kEF-hE-3Tr" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="HVs-14-jRy"/>
-                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="9eS-Oe-XOH"/>
+                        <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="9eS-Oe-XOH"/>
                         <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="16b-Sd-dJ0"/>
                         <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
                         <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
@@ -1890,7 +1869,7 @@
                         <segue destination="mGR-tk-LOt" kind="presentation" identifier="ShowDefaultsControllerSegue" id="uRr-Hb-cuq"/>
                         <segue destination="GVC-zp-DpK" kind="presentation" identifier="ShowScrollViewControllerSegue" id="RRh-BP-TQ7"/>
                         <segue destination="kEF-hE-3Tr" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="A3G-Ah-Elw"/>
-                        <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="5nw-8H-DJ6"/>
+                        <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="5nw-8H-DJ6"/>
                         <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="fT7-7t-zD6"/>
                         <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
                         <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
@@ -2295,6 +2274,14 @@
             </objects>
             <point key="canvasLocation" x="8071" y="9409"/>
         </scene>
+        <!--GLKit-->
+        <scene sceneID="vLh-Ry-6Sd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GLKit" id="egh-hO-0eW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1X-uH-JB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10415" y="9409"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -2302,6 +2289,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TNP-CT-4h2"/>
         <segue reference="A3G-Ah-Elw"/>
         <segue reference="RRh-BP-TQ7"/>
         <segue reference="uRr-Hb-cuq"/>
@@ -2316,7 +2304,6 @@
         <segue reference="6fJ-po-YLM"/>
         <segue reference="kJb-0f-6j4"/>
         <segue reference="4Zw-Q9-imf"/>
-        <segue reference="9eS-Oe-XOH"/>
         <segue reference="aLP-vy-qaj"/>
         <segue reference="sQz-c6-PNe"/>
         <segue reference="Tqf-V4-xDk"/>
