@@ -23,139 +23,6 @@
             </objects>
             <point key="canvasLocation" x="-1158" y="-3161"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="KRb-Vg-EBI">
-            <objects>
-                <navigationController toolbarHidden="NO" id="4EZ-DV-1G0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VFx-Xq-S4c">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.17116099600000001" green="0.60321605209999996" blue="0.91919529440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9Li-3p-ogE">
-                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="StG-Ow-5CX" kind="relationship" relationship="rootViewController" id="2Yd-7a-lbn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khu-NU-IHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1625" y="2628"/>
-        </scene>
-        <!--Auto Layout Guides-->
-        <scene sceneID="Dm6-tM-1aY">
-            <objects>
-                <viewController id="StG-Ow-5CX" customClass="AutoLayoutGuidesViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OYE-kr-Ypz"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tz7-UU-fA9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r5A-rt-kTL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="Yzg-bW-Kr7" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="72" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.35848003630000003" green="0.70734065769999999" blue="0.99879956250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Top View"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="waB-j2-yBV" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="314" y="72" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.98700940609999999" green="0.62185144420000005" blue="0.034429375079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Right View"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="zwL-rD-hDU" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="604" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.75690394640000003" green="0.17739748950000001" blue="0.99884581569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Left View"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="XT6-hH-q5S" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="314" y="604" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.1755222827" green="0.80860555170000004" blue="0.71378350260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Bottom View"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="These two labels are horizontally constrained inside the readable content area, and vertically constrained to a custom guide." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-Il-iyv">
-                                <rect key="frame" x="20" y="307" width="374" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkt-hd-wVG">
-                                <rect key="frame" x="20" y="368" width="374" height="61"/>
-                                <string key="text">Each square view is attached to the top or bottom layout guide, and squares in the corners are constrained inside the layout margins area.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.1167182922" green="0.1167407036" blue="0.1167145297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="jkt-hd-wVG" firstAttribute="top" secondItem="r5A-rt-kTL" secondAttribute="centerY" placeholder="YES" id="07t-mb-Qlg"/>
-                            <constraint firstItem="Yzg-bW-Kr7" firstAttribute="top" secondItem="OYE-kr-Ypz" secondAttribute="bottom" constant="8" symbolic="YES" id="EiP-jo-lTj"/>
-                            <constraint firstItem="yF3-Il-iyv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yzg-bW-Kr7" secondAttribute="bottom" constant="8" symbolic="YES" id="Jpg-mb-NAO"/>
-                            <constraint firstItem="yF3-Il-iyv" firstAttribute="bottom" secondItem="r5A-rt-kTL" secondAttribute="centerY" placeholder="YES" id="PP9-tz-s8g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yF3-Il-iyv" secondAttribute="trailing" placeholder="YES" id="UKM-Bd-kkw"/>
-                            <constraint firstItem="zwL-rD-hDU" firstAttribute="leading" secondItem="r5A-rt-kTL" secondAttribute="leadingMargin" placeholder="YES" id="UdD-O8-jfz"/>
-                            <constraint firstItem="Tz7-UU-fA9" firstAttribute="top" secondItem="XT6-hH-q5S" secondAttribute="bottom" constant="8" symbolic="YES" id="XTu-kj-ErC"/>
-                            <constraint firstItem="zwL-rD-hDU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jkt-hd-wVG" secondAttribute="bottom" constant="8" symbolic="YES" id="h1G-OW-H1e"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="waB-j2-yBV" secondAttribute="trailing" placeholder="YES" id="hvQ-Bl-MJg"/>
-                            <constraint firstItem="waB-j2-yBV" firstAttribute="top" secondItem="OYE-kr-Ypz" secondAttribute="bottom" constant="8" symbolic="YES" id="k6E-as-W3z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jkt-hd-wVG" secondAttribute="trailing" placeholder="YES" id="kLH-0g-cHL"/>
-                            <constraint firstItem="Tz7-UU-fA9" firstAttribute="top" secondItem="zwL-rD-hDU" secondAttribute="bottom" constant="8" symbolic="YES" id="mvW-2Z-Ko2"/>
-                            <constraint firstItem="Yzg-bW-Kr7" firstAttribute="leading" secondItem="r5A-rt-kTL" secondAttribute="leadingMargin" placeholder="YES" id="nAP-oA-mUw"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="jkt-hd-wVG" secondAttribute="leading" placeholder="YES" id="ojP-3e-4k8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XT6-hH-q5S" secondAttribute="trailing" placeholder="YES" id="t1w-Ov-utw"/>
-                            <constraint firstItem="yF3-Il-iyv" firstAttribute="leading" secondItem="r5A-rt-kTL" secondAttribute="leadingMargin" placeholder="YES" id="yO5-wS-Sjd"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Auto Layout Guides" id="dFW-76-eMN">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="D5s-WD-xet">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="Yhe-kA-Tfr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="bottomLabel" destination="jkt-hd-wVG" id="aod-gg-5ZF"/>
-                        <outlet property="bottomLeftView" destination="zwL-rD-hDU" id="DXO-gO-4sr"/>
-                        <outlet property="bottomRightView" destination="XT6-hH-q5S" id="bYk-Lr-qc0"/>
-                        <outlet property="topLabel" destination="yF3-Il-iyv" id="DUI-r2-X5e"/>
-                        <outlet property="topLeftView" destination="Yzg-bW-Kr7" id="hop-d6-TOT"/>
-                        <outlet property="topRightView" destination="waB-j2-yBV" id="FSr-sQ-TcI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LjX-en-ayz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2451" y="2627"/>
-        </scene>
         <!--Scenes-->
         <scene sceneID="0gy-8T-nxI">
             <objects>
@@ -229,7 +96,7 @@
                         <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                         <segue destination="eGz-cp-dda" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
                         <segue destination="oKL-aA-Yf6" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
-                        <segue destination="4EZ-DV-1G0" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
+                        <segue destination="QJM-V8-cvh" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="ebC-TP-Awc" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
                         <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
                     </connections>
@@ -624,14 +491,18 @@
             </objects>
             <point key="canvasLocation" x="3247" y="1908"/>
         </scene>
+        <!--Auto Layout Guides-->
+        <scene sceneID="CNk-FZ-WWV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auto Layout Guides" id="QJM-V8-cvh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OR-NN-2WH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="2628"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="info_icon" width="22" height="22"/>
         <image name="tab_scenes" width="26" height="26"/>
         <image name="tab_scenes_selected" width="26" height="26"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Yhe-kA-Tfr"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
