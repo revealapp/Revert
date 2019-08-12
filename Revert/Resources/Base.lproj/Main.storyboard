@@ -156,76 +156,6 @@
             </objects>
             <point key="canvasLocation" x="2451" y="2627"/>
         </scene>
-        <!--Safari View Controller-->
-        <scene sceneID="nvz-qa-Yob">
-            <objects>
-                <viewController id="8wk-Ae-Mic" customClass="SafariViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VHq-HQ-xAf"/>
-                        <viewControllerLayoutGuide type="bottom" id="NiO-MZ-vhL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tTU-TA-RpD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-m9-5sq">
-                                <rect key="frame" x="114" y="351" width="186" height="34"/>
-                                <color key="backgroundColor" red="0.26666666666666666" green="0.66666666666666663" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Show Sample Webpage"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="showSafariViewController:" destination="8wk-Ae-Mic" eventType="touchUpInside" id="ZG3-zI-Y2r"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="k8W-m9-5sq" firstAttribute="centerY" secondItem="tTU-TA-RpD" secondAttribute="centerY" id="a5t-pE-Y1F"/>
-                            <constraint firstItem="k8W-m9-5sq" firstAttribute="centerX" secondItem="tTU-TA-RpD" secondAttribute="centerX" id="ehj-Tv-Ite"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Safari View Controller" id="ecP-uP-xtI">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="1xy-Qx-HkR">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="1WC-Dc-4rD"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sAV-7O-TQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4067" y="1908"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1D5-Yg-iWZ">
-            <objects>
-                <navigationController id="iFc-DU-kqi" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VVB-jt-7hc">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="8wk-Ae-Mic" kind="relationship" relationship="rootViewController" id="EIF-5I-Foq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8HG-oU-yfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3247" y="1908"/>
-        </scene>
         <!--Scenes-->
         <scene sceneID="0gy-8T-nxI">
             <objects>
@@ -298,7 +228,7 @@
                         <segue destination="cdg-7h-NmH" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
                         <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                         <segue destination="eGz-cp-dda" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
-                        <segue destination="iFc-DU-kqi" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
+                        <segue destination="oKL-aA-Yf6" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                         <segue destination="4EZ-DV-1G0" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="ebC-TP-Awc" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
                         <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
@@ -686,6 +616,14 @@
             </objects>
             <point key="canvasLocation" x="1626" y="1908"/>
         </scene>
+        <!--Safari-->
+        <scene sceneID="kaX-KD-gNC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Safari" id="oKL-aA-Yf6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5t-3n-lgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3247" y="1908"/>
+        </scene>
     </scenes>
     <resources>
         <image name="info_icon" width="22" height="22"/>
@@ -693,7 +631,7 @@
         <image name="tab_scenes_selected" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1WC-Dc-4rD"/>
+        <segue reference="Yhe-kA-Tfr"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
