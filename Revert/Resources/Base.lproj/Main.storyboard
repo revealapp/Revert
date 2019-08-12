@@ -9,47 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View-->
-        <scene sceneID="D4X-ca-JVA">
-            <objects>
-                <collectionViewController id="V4s-a2-462" customClass="CollectionViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7bY-VM-wmY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="1iK-vo-exA" customClass="DualRowBasicCollectionViewFlowLayout" customModule="Revert_iOS" customModuleProvider="target">
-                            <size key="itemSize" width="200" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewControllerCell" id="wSv-p1-n8t">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="V4s-a2-462" id="N6f-cH-Ghi"/>
-                            <outlet property="delegate" destination="V4s-a2-462" id="TIJ-Rx-q29"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Collection View" id="NEq-LZ-dnr">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="seo-wV-GyD">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="uRU-Kc-gHf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0le-8r-gvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2443" y="-2355"/>
-        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -63,30 +22,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1158" y="-3161"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bXf-1A-70U">
-            <objects>
-                <navigationController storyboardIdentifier="CollectionViewController" automaticallyAdjustsScrollViewInsets="NO" id="lRp-dE-mbB" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GiB-kp-XyO">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="V4s-a2-462" kind="relationship" relationship="rootViewController" id="dkQ-Pf-qRb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I6v-c9-PQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626" y="-2355"/>
         </scene>
         <!--Table View-->
         <scene sceneID="SSy-q8-ncv">
@@ -2239,7 +2174,7 @@
                         <segue destination="VVa-bk-Tvq" kind="showDetail" identifier="ShowStressTestViewControllerSegue" id="mFf-pG-CRr"/>
                         <segue destination="c3o-7U-4js" kind="showDetail" identifier="ShowLayerPropertiesViewControllerSegue" id="27i-Wb-Una"/>
                         <segue destination="O9S-s4-ZME" kind="showDetail" identifier="ShowTableViewControllerSegue" id="u6c-Af-462"/>
-                        <segue destination="lRp-dE-mbB" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
+                        <segue destination="lA2-vg-u0T" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
                         <segue destination="JqW-0C-HaP" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
                         <segue destination="Qsf-lL-H8g" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ddl-66-5sP"/>
                         <segue destination="0zK-FW-Cx0" kind="showDetail" identifier="ShowControlsControllerSegue" id="vub-Ix-iiq"/>
@@ -2557,6 +2492,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rX8-bL-KDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3250" y="-3295"/>
+        </scene>
+        <!--CollectionViewController-->
+        <scene sceneID="D8o-mu-Ayn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CollectionViewController" storyboardName="Collection View" referencedIdentifier="CollectionViewController" id="lA2-vg-u0T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m4-I8-kw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-2355"/>
         </scene>
     </scenes>
     <resources>
