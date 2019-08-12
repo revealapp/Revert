@@ -55,6 +55,7 @@
 		90125DED23012C03003363CA /* Anchor Point Bounds Change.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */; };
 		90125DF023012C27003363CA /* SpriteKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DEE23012C27003363CA /* SpriteKit.storyboard */; };
 		90125DF323012C46003363CA /* Super Deep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF123012C46003363CA /* Super Deep.storyboard */; };
+		90125DF623012C69003363CA /* Map View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF423012C69003363CA /* Map View.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -244,6 +245,7 @@
 		90125DEC23012C03003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Anchor Point Bounds Change.storyboard"; sourceTree = "<group>"; };
 		90125DEF23012C27003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpriteKit.storyboard; sourceTree = "<group>"; };
 		90125DF223012C46003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Super Deep.storyboard"; sourceTree = "<group>"; };
+		90125DF523012C69003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Map View.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
 				90125DD023012937003363CA /* Layers.storyboard */,
 				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				90125DF423012C69003363CA /* Map View.storyboard */,
 				90125DD3230129C5003363CA /* Not Serializable.storyboard */,
 				90125DDC23012B44003363CA /* Scroll View.storyboard */,
 				90125DCA230128CB003363CA /* Segmented Controls.storyboard */,
@@ -957,6 +960,7 @@
 				90125DC923012862003363CA /* Text Fields.storyboard in Resources */,
 				90125DD223012937003363CA /* Layers.storyboard in Resources */,
 				90125DF323012C46003363CA /* Super Deep.storyboard in Resources */,
+				90125DF623012C69003363CA /* Map View.storyboard in Resources */,
 				90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */,
 				90125DD823012A66003363CA /* Alert View.storyboard in Resources */,
 				90125DED23012C03003363CA /* Anchor Point Bounds Change.storyboard in Resources */,
@@ -1515,6 +1519,14 @@
 				90125DF223012C46003363CA /* Base */,
 			);
 			name = "Super Deep.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DF423012C69003363CA /* Map View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DF523012C69003363CA /* Base */,
+			);
+			name = "Map View.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {

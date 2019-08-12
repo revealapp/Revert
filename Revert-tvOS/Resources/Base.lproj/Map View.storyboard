@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dak-gW-7g8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="Kg5-9c-nEa">
+            <objects>
+                <viewController id="Dak-gW-7g8" customClass="MapViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5rl-19-p1B"/>
+                        <viewControllerLayoutGuide type="bottom" id="6if-m7-8Al"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pd0-Gt-Ooz">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-P5-zsv">
+                                <rect key="frame" x="0.0" y="60" width="1920" height="960"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dak-gW-7g8" id="z67-aU-01I"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3l0-P5-zsv" firstAttribute="top" secondItem="5rl-19-p1B" secondAttribute="bottom" id="DxK-Sa-zMB"/>
+                            <constraint firstAttribute="trailing" secondItem="3l0-P5-zsv" secondAttribute="trailing" id="S7F-70-UfR"/>
+                            <constraint firstItem="6if-m7-8Al" firstAttribute="top" secondItem="3l0-P5-zsv" secondAttribute="bottom" id="T2w-dA-CMG"/>
+                            <constraint firstItem="3l0-P5-zsv" firstAttribute="leading" secondItem="Pd0-Gt-Ooz" secondAttribute="leading" id="jTA-or-afe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cmA-Kv-vig"/>
+                    <connections>
+                        <outlet property="mapView" destination="3l0-P5-zsv" id="7EI-Wi-ETn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugJ-Ne-hXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10415" y="12145"/>
+        </scene>
+    </scenes>
+</document>

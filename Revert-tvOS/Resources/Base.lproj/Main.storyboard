@@ -170,7 +170,7 @@
                     <connections>
                         <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
-                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
+                        <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
@@ -179,41 +179,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="6584"/>
-        </scene>
-        <!--Map View Controller-->
-        <scene sceneID="Kg5-9c-nEa">
-            <objects>
-                <viewController id="Dak-gW-7g8" customClass="MapViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5rl-19-p1B"/>
-                        <viewControllerLayoutGuide type="bottom" id="6if-m7-8Al"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pd0-Gt-Ooz">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-P5-zsv">
-                                <rect key="frame" x="0.0" y="60" width="1920" height="960"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Dak-gW-7g8" id="z67-aU-01I"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="3l0-P5-zsv" firstAttribute="top" secondItem="5rl-19-p1B" secondAttribute="bottom" id="DxK-Sa-zMB"/>
-                            <constraint firstAttribute="trailing" secondItem="3l0-P5-zsv" secondAttribute="trailing" id="S7F-70-UfR"/>
-                            <constraint firstItem="6if-m7-8Al" firstAttribute="top" secondItem="3l0-P5-zsv" secondAttribute="bottom" id="T2w-dA-CMG"/>
-                            <constraint firstItem="3l0-P5-zsv" firstAttribute="leading" secondItem="Pd0-Gt-Ooz" secondAttribute="leading" id="jTA-or-afe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="cmA-Kv-vig"/>
-                    <connections>
-                        <outlet property="mapView" destination="3l0-P5-zsv" id="7EI-Wi-ETn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ugJ-Ne-hXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10415" y="12145"/>
         </scene>
         <!--Arranged Views-->
         <scene sceneID="5g5-Ff-0lS">
@@ -1240,7 +1205,7 @@
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
                         <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
-                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
+                        <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="saQ-hI-FT8"/>
                         <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="kJb-0f-6j4"/>
@@ -1328,7 +1293,7 @@
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
                         <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
-                        <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
+                        <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="Ct7-dL-JYR"/>
                         <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="ZuO-qJ-3KH"/>
@@ -1775,6 +1740,14 @@
             </objects>
             <point key="canvasLocation" x="8071" y="12145"/>
         </scene>
+        <!--Map View-->
+        <scene sceneID="IXE-JW-xlK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map View" id="7Fr-YX-nEp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aH-DB-rDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10415" y="12145"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -1782,6 +1755,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bV5-PX-hJM"/>
         <segue reference="DMn-a2-SDu"/>
         <segue reference="4Zw-Q9-imf"/>
         <segue reference="ePP-G8-d2j"/>
@@ -1807,6 +1781,5 @@
         <segue reference="eYK-HC-bv0"/>
         <segue reference="E3N-aw-4qX"/>
         <segue reference="saQ-hI-FT8"/>
-        <segue reference="kzC-lO-nop"/>
     </inferredMetricsTieBreakers>
 </document>
