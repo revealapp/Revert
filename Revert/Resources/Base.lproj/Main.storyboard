@@ -2470,7 +2470,7 @@
                         <segue destination="iFc-DU-kqi" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                         <segue destination="4EZ-DV-1G0" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="m1X-OC-0Ac" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
-                        <segue destination="nkM-O2-0Ym" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
+                        <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -5033,172 +5033,26 @@ on this label</string>
             </objects>
             <point key="canvasLocation" x="1625" y="-7590"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5HN-40-xdK">
+        <!--Visual Effect View-->
+        <scene sceneID="VGz-GI-Dwj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkM-O2-0Ym" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JQu-CY-Nc0">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.17116099600000001" green="0.60321605209999996" blue="0.91919529440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QYQ-qB-q86" kind="relationship" relationship="rootViewController" id="b9s-Pz-QA8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V1P-HN-ecd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Visual Effect View" id="poD-ER-UJd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzc-1s-gX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3246" y="-7592"/>
-        </scene>
-        <!--Visual Effect View-->
-        <scene sceneID="ezg-eJ-nqg">
-            <objects>
-                <viewController title="Visual Effect View" id="QYQ-qB-q86" customClass="VisualEffectViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nbQ-wf-KdJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="rmF-Fd-CBj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cz2-5v-hYX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="6aC-Uu-eI9">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="office" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-QI-7fq">
-                                        <rect key="frame" x="0.0" y="0.0" width="1344" height="1344"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="eGO-QI-7fq" secondAttribute="height" multiplier="1:1" id="7YJ-MV-XPA"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="height" secondItem="6aC-Uu-eI9" secondAttribute="height" multiplier="2" id="Bgc-2l-61r"/>
-                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="leading" secondItem="6aC-Uu-eI9" secondAttribute="leading" id="IxV-px-uVD"/>
-                                    <constraint firstAttribute="bottom" secondItem="eGO-QI-7fq" secondAttribute="bottom" id="SEl-HH-jAV"/>
-                                    <constraint firstItem="eGO-QI-7fq" firstAttribute="top" secondItem="6aC-Uu-eI9" secondAttribute="top" id="jgj-tx-sLM"/>
-                                    <constraint firstAttribute="trailing" secondItem="eGO-QI-7fq" secondAttribute="trailing" id="vcB-63-4c8"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6B-Rg-Jie">
-                                <rect key="frame" x="32" y="304" width="350" height="128"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oK8-Er-9nI" userLabel="Separator">
-                                        <rect key="frame" x="174.66666666666666" y="0.0" width="1" height="128"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="RUL-AB-lhR"/>
-                                        </constraints>
-                                    </view>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfA-LQ-g10" userLabel="Visual Effect View A">
-                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="128"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="r7I-Vg-DYm">
-                                            <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-96-clN">
-                                                    <rect key="frame" x="57.333333333333329" y="53.666666666666686" width="60" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="K8O-96-clN" firstAttribute="centerY" secondItem="r7I-Vg-DYm" secondAttribute="centerY" id="BFs-gb-ctH"/>
-                                                <constraint firstItem="K8O-96-clN" firstAttribute="centerX" secondItem="r7I-Vg-DYm" secondAttribute="centerX" id="zmy-i5-fkd"/>
-                                            </constraints>
-                                        </view>
-                                        <blurEffect style="light"/>
-                                    </visualEffectView>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fu-o0-LQp" userLabel="Visual Effect View B">
-                                        <rect key="frame" x="175" y="0.0" width="175" height="128"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mss-1Z-xv2">
-                                            <rect key="frame" x="0.0" y="0.0" width="175" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs0-b6-vjG">
-                                                    <rect key="frame" x="58" y="53.666666666666686" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="bs0-b6-vjG" firstAttribute="centerX" secondItem="5fu-o0-LQp" secondAttribute="centerX" id="fmp-xm-UJn"/>
-                                            <constraint firstItem="bs0-b6-vjG" firstAttribute="centerY" secondItem="5fu-o0-LQp" secondAttribute="centerY" id="pNm-Z3-n03"/>
-                                        </constraints>
-                                        <blurEffect style="light"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="BYA-uG-7Gx"/>
-                                    <constraint firstItem="5fu-o0-LQp" firstAttribute="bottom" secondItem="g6B-Rg-Jie" secondAttribute="bottom" id="CMy-6m-YEA"/>
-                                    <constraint firstItem="rfA-LQ-g10" firstAttribute="top" secondItem="g6B-Rg-Jie" secondAttribute="top" id="Fdm-Zl-mnh"/>
-                                    <constraint firstAttribute="trailing" secondItem="5fu-o0-LQp" secondAttribute="trailing" id="OUe-1L-FyW"/>
-                                    <constraint firstItem="oK8-Er-9nI" firstAttribute="centerX" secondItem="g6B-Rg-Jie" secondAttribute="centerX" id="PPF-wY-7bD"/>
-                                    <constraint firstItem="rfA-LQ-g10" firstAttribute="height" secondItem="g6B-Rg-Jie" secondAttribute="height" id="YAL-Vv-DZe"/>
-                                    <constraint firstItem="oK8-Er-9nI" firstAttribute="leading" secondItem="rfA-LQ-g10" secondAttribute="trailing" id="d2a-bt-wgA"/>
-                                    <constraint firstItem="5fu-o0-LQp" firstAttribute="leading" secondItem="g6B-Rg-Jie" secondAttribute="centerX" id="e9X-yL-anZ"/>
-                                    <constraint firstItem="rfA-LQ-g10" firstAttribute="leading" secondItem="g6B-Rg-Jie" secondAttribute="leading" id="wnk-sf-Whl"/>
-                                    <constraint firstItem="oK8-Er-9nI" firstAttribute="height" secondItem="g6B-Rg-Jie" secondAttribute="height" id="xye-R5-ojV"/>
-                                    <constraint firstItem="oK8-Er-9nI" firstAttribute="centerY" secondItem="g6B-Rg-Jie" secondAttribute="centerY" id="yhI-JJ-PwC"/>
-                                    <constraint firstItem="5fu-o0-LQp" firstAttribute="top" secondItem="g6B-Rg-Jie" secondAttribute="top" id="zik-Rm-K2l"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="g6B-Rg-Jie" firstAttribute="centerY" secondItem="cz2-5v-hYX" secondAttribute="centerY" id="83Q-Uj-NNq"/>
-                            <constraint firstAttribute="trailing" secondItem="6aC-Uu-eI9" secondAttribute="trailing" id="8Xp-Cf-nqN"/>
-                            <constraint firstItem="g6B-Rg-Jie" firstAttribute="leading" secondItem="cz2-5v-hYX" secondAttribute="leading" constant="32" id="8eS-3Y-3sg"/>
-                            <constraint firstItem="g6B-Rg-Jie" firstAttribute="centerX" secondItem="cz2-5v-hYX" secondAttribute="centerX" id="k1Q-oy-Kff"/>
-                            <constraint firstAttribute="bottom" secondItem="6aC-Uu-eI9" secondAttribute="bottom" id="lbV-11-lCw"/>
-                            <constraint firstItem="6aC-Uu-eI9" firstAttribute="top" secondItem="nbQ-wf-KdJ" secondAttribute="bottom" id="q4M-wU-fvq"/>
-                            <constraint firstItem="6aC-Uu-eI9" firstAttribute="leading" secondItem="cz2-5v-hYX" secondAttribute="leading" id="rd7-RK-vmi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Visual Effect View" id="832-10-uxh">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="UL2-It-oRn">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="76F-UK-KaE"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="scrollView" destination="6aC-Uu-eI9" id="UFD-LN-96d"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kLB-1o-LaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4066" y="-7593"/>
         </scene>
     </scenes>
     <resources>
         <image name="default_reveal" width="130" height="110"/>
         <image name="delorian" width="45" height="16"/>
         <image name="info_icon" width="22" height="22"/>
-        <image name="office" width="1276" height="850.5"/>
         <image name="reveal_pretty" width="800" height="600"/>
         <image name="tab_scenes" width="26" height="26"/>
         <image name="tab_scenes_selected" width="26" height="26"/>
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="76F-UK-KaE"/>
+        <segue reference="fOQ-ym-lLv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
