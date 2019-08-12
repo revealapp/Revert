@@ -144,6 +144,8 @@
 		BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
+		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
+		FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 		FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
@@ -257,6 +259,7 @@
 		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -532,6 +535,7 @@
 				7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */,
 				BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */,
 				BBE51CC81CB73929006638B8 /* AutoResizingMaskViewController.swift */,
+				FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */,
 				BBE51CF21CB73955006638B8 /* CollectionViewController.swift */,
 				BBE51CC91CB73929006638B8 /* ControlsViewController.swift */,
 				BBE51CF31CB73955006638B8 /* CountriesViewController.swift */,
@@ -878,6 +882,7 @@
 				FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
+				FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
 				BBE51D0B1CB73996006638B8 /* DeepView.swift in Sources */,
@@ -892,6 +897,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */,
 				BBE51C911CB737FE006638B8 /* UIColor+Revert.swift in Sources */,
 				BBE51C971CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */,

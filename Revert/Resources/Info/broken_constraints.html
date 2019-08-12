@@ -1,11 +1,13 @@
 <p>A scenario demonstrating the following Broken Constraints attributes:</p>
 <ul class="list">
-  <li>Top / Bottom space: Red view has its top edge pinned to a common superview.</li>
-  <li>Leading / Trailing space: Red view has its trailing edge pinned to a common superview. Bottom blue bar has its trailing and leading edge pinned to a common superview.</li>
-  <li>Horizontal spacing: Blue view misses constraints for horizontal position.</li>
-  <li>Align Centre X / Y: Red view is centered within its superview. Blue view only has Align Centre Y. Bottom blue bar only has Align Centre X.</li>
-  <li>Ratio: Both inner views width and height are constrained a ratio of 1:1.</li>
-  <li>Both inner views&#39; heights are constrainted to be half of their white container&#39;s height.</li>
-  <li>Equals: Both white views are constrained to have equal widths and heights. Bottom blue bar&#39;s height is constrainted to a fixed value.</li>
+  <li>The green scroll view has missing scrollable content width.</li>
+  <li>The blue scroll view has missing scrollable content height.</li>
+  <li>The orange view bar has missing constraints for horizontal position.</li>
+  <li>The green view bar has missing constraints for height and vertical position.</li>
+  <li>The purple view bar has missing constraints for vertical position.</li>
+  <li>The yellow view bar has missing constraints for width and horizontal position.</li>
+  <li>The blue view in the center does not have any constraint issues until a user clicks on the buttton below to break its constraint. Clicking on the button will change the value of the blue view&#39;s width to zero.</li>
+  <li>A layout guide is added programmatically which has missing constraints for height and vertical position.</li>
 </ul>
-<p>Broken constraints happen on the Red view, Blue view and Bottom blue bar. For Red view, conflict constraints are Align Center Y, Trailing and Top Space to superview. For Blue view, constraints for horizontal position are missing. For Bottom blue bar, conflict constraints are Align Center X, Leading Space and Trailing Space to superview. Inspect the issues in <em>Reveal</em> and on your device or simulator.</p>
+<p>This view includes missing constraints for width, height, horizontal position, vertical position, scrollable content width, scrollable content height and a layout guide with missing constraints. Inspect the issues in <em>Reveal</em> and on your device or simulator.</p>
+
