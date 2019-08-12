@@ -274,34 +274,6 @@
             </objects>
             <point key="canvasLocation" x="2451" y="2627"/>
         </scene>
-        <!--Stack View-->
-        <scene sceneID="IpS-42-uzs">
-            <objects>
-                <viewController id="Zpy-1F-xWH" customClass="StackViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eSr-1k-dch"/>
-                        <viewControllerLayoutGuide type="bottom" id="TBh-Ck-rMw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RXb-AY-kh8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Stack View" id="Gbf-pa-9Uq">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="gIO-f8-H2S">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" id="fDs-Id-oev"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FIC-9g-Qj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4067" y="1202"/>
-        </scene>
         <!--Safari View Controller-->
         <scene sceneID="nvz-qa-Yob">
             <objects>
@@ -371,26 +343,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8HG-oU-yfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3247" y="1908"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5ao-aQ-aAm">
-            <objects>
-                <navigationController id="wsb-8b-MuL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zu1-6D-um0">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Zpy-1F-xWH" kind="relationship" relationship="rootViewController" id="8Ki-Wv-g0U"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b1C-tF-Yyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3247" y="1202"/>
         </scene>
         <!--Scenes-->
         <scene sceneID="0gy-8T-nxI">
@@ -463,7 +415,7 @@
                         <segue destination="tyr-c9-kEI" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
                         <segue destination="cdg-7h-NmH" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
                         <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
-                        <segue destination="wsb-8b-MuL" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
+                        <segue destination="eGz-cp-dda" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
                         <segue destination="iFc-DU-kqi" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                         <segue destination="4EZ-DV-1G0" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="ebC-TP-Awc" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
@@ -835,6 +787,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rx6-mW-x8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="1202"/>
+        </scene>
+        <!--Stack View-->
+        <scene sceneID="Uno-kZ-gFF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stack View" id="eGz-cp-dda" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCs-6y-GDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3247" y="1202"/>
         </scene>
     </scenes>
     <resources>
