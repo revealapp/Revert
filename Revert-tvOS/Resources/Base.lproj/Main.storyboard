@@ -924,34 +924,6 @@
             </objects>
             <point key="canvasLocation" x="10415" y="14985"/>
         </scene>
-        <!--Super Deep-->
-        <scene sceneID="vWS-e5-x9X">
-            <objects>
-                <viewController id="hhn-ff-Cay" userLabel="Super Deep" customClass="RevertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lIb-EX-hHx"/>
-                        <viewControllerLayoutGuide type="bottom" id="tf9-FK-G90"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XeV-Gy-C05">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-rV-fjz" customClass="DeepView" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="90" y="120" width="1740" height="840"/>
-                            </view>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="gFt-rV-fjz" firstAttribute="top" secondItem="lIb-EX-hHx" secondAttribute="bottom" constant="60" id="2kg-if-3gw"/>
-                            <constraint firstAttribute="trailing" secondItem="gFt-rV-fjz" secondAttribute="trailing" constant="90" id="K9c-if-U3u"/>
-                            <constraint firstItem="gFt-rV-fjz" firstAttribute="leading" secondItem="XeV-Gy-C05" secondAttribute="leading" constant="90" id="gOx-vk-ccY"/>
-                            <constraint firstItem="tf9-FK-G90" firstAttribute="top" secondItem="gFt-rV-fjz" secondAttribute="bottom" constant="60" id="itc-SK-fzc"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKa-zd-REC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8071" y="12145"/>
-        </scene>
         <!--Stress Test View Controller-->
         <scene sceneID="SMY-SU-ijv">
             <objects>
@@ -1267,7 +1239,7 @@
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
-                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
+                        <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="saQ-hI-FT8"/>
@@ -1355,7 +1327,7 @@
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
                         <segue destination="2FO-O7-fcg" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
-                        <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
+                        <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
                         <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="Ct7-dL-JYR"/>
@@ -1795,6 +1767,14 @@
             </objects>
             <point key="canvasLocation" x="5719" y="12145"/>
         </scene>
+        <!--Super Deep-->
+        <scene sceneID="v4l-hO-b9c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Super Deep" id="Wka-1y-Efy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVc-ed-2zw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8071" y="12145"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -1802,6 +1782,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="DMn-a2-SDu"/>
         <segue reference="4Zw-Q9-imf"/>
         <segue reference="ePP-G8-d2j"/>
         <segue reference="SIv-Cp-spB"/>
@@ -1821,7 +1802,6 @@
         <segue reference="6fJ-po-YLM"/>
         <segue reference="kJb-0f-6j4"/>
         <segue reference="aLP-vy-qaj"/>
-        <segue reference="sQz-c6-PNe"/>
         <segue reference="leq-yV-WZf"/>
         <segue reference="Ad2-lN-jOy"/>
         <segue reference="eYK-HC-bv0"/>
