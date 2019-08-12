@@ -2445,7 +2445,7 @@
                         <segue destination="ml1-R4-Rye" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
                         <segue destination="SQ0-JK-GIi" kind="showDetail" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Vh9-0V-Cxg"/>
                         <segue destination="EYK-kX-1qH" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
-                        <segue destination="AcI-lZ-yPg" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
+                        <segue destination="TZa-bh-WS3" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
                         <segue destination="w5P-fI-XI8" kind="showDetail" identifier="ShowTransformViewsViewControllerSegue" id="O6s-k0-xH1"/>
                         <segue destination="edO-42-jjt" kind="showDetail" identifier="ShowSuperDeepViewControllerSegue" id="IuR-jS-hlr"/>
                         <segue destination="yLp-2G-q9G" kind="showDetail" identifier="ShowTransformLayersViewControllerSegue" id="Rgn-Ca-Pye"/>
@@ -3060,28 +3060,6 @@
             <point key="canvasLocation" x="2443" y="-4703"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="hKB-BQ-5eM">
-            <objects>
-                <navigationController id="AcI-lZ-yPg" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="26P-QD-9SJ">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="6aA-pS-GGk" kind="relationship" relationship="rootViewController" id="fqD-n8-Tcq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PEm-hl-j6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626" y="-6142"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="so4-P1-0qU">
             <objects>
                 <navigationController storyboardIdentifier="HelpViewController" id="Ite-6q-oTP" sceneMemberID="viewController">
@@ -3201,48 +3179,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekb-JT-57A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6187" y="-3286"/>
-        </scene>
-        <!--Autoresizing Masks-->
-        <scene sceneID="xgI-cv-kN2">
-            <objects>
-                <viewController id="6aA-pS-GGk" customClass="AutoResizingMaskViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nCn-Qh-UB2"/>
-                        <viewControllerLayoutGuide type="bottom" id="JGO-5Q-n72"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aCQ-F8-eg0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-tU-cGi">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <color key="backgroundColor" red="0.11758433282375336" green="0.11760644614696503" blue="0.11757867783308029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Plp-tU-cGi" firstAttribute="leading" secondItem="aCQ-F8-eg0" secondAttribute="leading" id="2GW-eZ-Xg0"/>
-                            <constraint firstItem="JGO-5Q-n72" firstAttribute="top" secondItem="Plp-tU-cGi" secondAttribute="bottom" id="3zE-8a-2tv"/>
-                            <constraint firstItem="Plp-tU-cGi" firstAttribute="top" secondItem="nCn-Qh-UB2" secondAttribute="bottom" id="nGp-pf-SwP"/>
-                            <constraint firstAttribute="trailing" secondItem="Plp-tU-cGi" secondAttribute="trailing" id="qvU-ig-6Aj"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Autoresizing Masks" id="naJ-ge-Ydo">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="t6f-hh-cmW"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="outterView" destination="Plp-tU-cGi" id="vKB-AR-aBM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iNu-TD-OCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2443" y="-6142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vGr-eJ-ryx">
@@ -4333,6 +4269,14 @@ on this label</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWa-6P-hP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3250" y="-6873"/>
+        </scene>
+        <!--Autoresizing Masks-->
+        <scene sceneID="L1Z-Jd-rCD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Autoresizing Masks" id="TZa-bh-WS3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7j-v8-Qfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-6142"/>
         </scene>
     </scenes>
     <resources>

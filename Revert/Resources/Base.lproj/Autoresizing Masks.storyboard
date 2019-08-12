@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AcI-lZ-yPg">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hKB-BQ-5eM">
+            <objects>
+                <navigationController id="AcI-lZ-yPg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="26P-QD-9SJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6aA-pS-GGk" kind="relationship" relationship="rootViewController" id="fqD-n8-Tcq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEm-hl-j6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-6142"/>
+        </scene>
+        <!--Autoresizing Masks-->
+        <scene sceneID="xgI-cv-kN2">
+            <objects>
+                <viewController id="6aA-pS-GGk" customClass="AutoResizingMaskViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nCn-Qh-UB2"/>
+                        <viewControllerLayoutGuide type="bottom" id="JGO-5Q-n72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aCQ-F8-eg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-tU-cGi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.11758433282375336" green="0.11760644614696503" blue="0.11757867783308029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Plp-tU-cGi" firstAttribute="leading" secondItem="aCQ-F8-eg0" secondAttribute="leading" id="2GW-eZ-Xg0"/>
+                            <constraint firstItem="JGO-5Q-n72" firstAttribute="top" secondItem="Plp-tU-cGi" secondAttribute="bottom" id="3zE-8a-2tv"/>
+                            <constraint firstItem="Plp-tU-cGi" firstAttribute="top" secondItem="nCn-Qh-UB2" secondAttribute="bottom" id="nGp-pf-SwP"/>
+                            <constraint firstAttribute="trailing" secondItem="Plp-tU-cGi" secondAttribute="trailing" id="qvU-ig-6Aj"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Autoresizing Masks" id="naJ-ge-Ydo">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="Mjc-Zo-Ut3">
+                            <connections>
+                                <segue destination="uAc-2D-iBc" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="t6f-hh-cmW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="outterView" destination="Plp-tU-cGi" id="vKB-AR-aBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNu-TD-OCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-6142"/>
+        </scene>
+        <!--HelpViewController-->
+        <scene sceneID="rrm-78-BCT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="uAc-2D-iBc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7my-n9-s1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3139" y="-6143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info_icon" width="22" height="22"/>
+    </resources>
+    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
