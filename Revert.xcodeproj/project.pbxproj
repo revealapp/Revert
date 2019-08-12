@@ -21,6 +21,8 @@
 		90125D82230119F9003363CA /* Super Deep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D80230119F9003363CA /* Super Deep.storyboard */; };
 		90125D8523011A1F003363CA /* Auto Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8323011A1F003363CA /* Auto Layout.storyboard */; };
 		90125D8A23011A84003363CA /* Transform Layers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8823011A84003363CA /* Transform Layers.storyboard */; };
+		90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8B23011AB2003363CA /* Arranged Views.storyboard */; };
+		90125D9023011AF2003363CA /* Transform Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8E23011AF2003363CA /* Transform Views.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -176,6 +178,8 @@
 		90125D81230119F9003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Super Deep.storyboard"; sourceTree = "<group>"; };
 		90125D8423011A1F003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout.storyboard"; sourceTree = "<group>"; };
 		90125D8923011A84003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Layers.storyboard"; sourceTree = "<group>"; };
+		90125D8C23011AB2003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Arranged Views.storyboard"; sourceTree = "<group>"; };
+		90125D8F23011AF2003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Views.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 		9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				90125D8B23011AB2003363CA /* Arranged Views.storyboard */,
 				90125D7D230119C4003363CA /* Auto Layout Alignments.storyboard */,
 				90125D772301192A003363CA /* Auto Layout Margins.storyboard */,
 				90125D8323011A1F003363CA /* Auto Layout.storyboard */,
@@ -330,6 +335,7 @@
 				90125D6B230117ED003363CA /* Stress Test.storyboard */,
 				90125D80230119F9003363CA /* Super Deep.storyboard */,
 				90125D8823011A84003363CA /* Transform Layers.storyboard */,
+				90125D8E23011AF2003363CA /* Transform Views.storyboard */,
 				90125D652301166F003363CA /* Visual Effect View.storyboard */,
 			);
 			name = "Storyboards & XIBs";
@@ -813,8 +819,10 @@
 				90125D82230119F9003363CA /* Super Deep.storyboard in Resources */,
 				90125D6A2301176B003363CA /* Broken Constraints.storyboard in Resources */,
 				90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */,
+				90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */,
 				90125D6D230117ED003363CA /* Stress Test.storyboard in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
+				90125D9023011AF2003363CA /* Transform Views.storyboard in Resources */,
 				90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */,
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
 				90125D73230118AB003363CA /* Autoresizing Masks.storyboard in Resources */,
@@ -1107,6 +1115,22 @@
 				90125D8923011A84003363CA /* Base */,
 			);
 			name = "Transform Layers.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8B23011AB2003363CA /* Arranged Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8C23011AB2003363CA /* Base */,
+			);
+			name = "Arranged Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8E23011AF2003363CA /* Transform Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8F23011AF2003363CA /* Base */,
+			);
+			name = "Transform Views.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
