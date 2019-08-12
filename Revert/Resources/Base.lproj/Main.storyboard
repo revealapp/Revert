@@ -23,48 +23,6 @@
             </objects>
             <point key="canvasLocation" x="-1158" y="-3161"/>
         </scene>
-        <!--Map View-->
-        <scene sceneID="Vd8-iN-gNO">
-            <objects>
-                <viewController id="OzG-CK-fgG" customClass="MapViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LtO-Cz-6mw"/>
-                        <viewControllerLayoutGuide type="bottom" id="ouM-xa-wey"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7hY-Sg-d1g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2U2-Tm-AjW">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <connections>
-                                    <outlet property="delegate" destination="OzG-CK-fgG" id="krB-Z6-djH"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2U2-Tm-AjW" secondAttribute="trailing" id="Oig-wm-gKA"/>
-                            <constraint firstItem="2U2-Tm-AjW" firstAttribute="leading" secondItem="7hY-Sg-d1g" secondAttribute="leading" id="SeG-DU-ofu"/>
-                            <constraint firstItem="ouM-xa-wey" firstAttribute="top" secondItem="2U2-Tm-AjW" secondAttribute="bottom" id="h3g-Ia-OI1"/>
-                            <constraint firstItem="2U2-Tm-AjW" firstAttribute="top" secondItem="LtO-Cz-6mw" secondAttribute="bottom" id="iHl-YV-zw2"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Map View" id="ru1-BN-P8N">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="our-SB-UtA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="mapView" destination="2U2-Tm-AjW" id="2Av-d6-PLW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r4R-1G-a28" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2443" y="-947"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WNl-qW-2GY">
             <objects>
@@ -168,28 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dY-57-CK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="484"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="lVD-Tc-Rsr">
-            <objects>
-                <navigationController storyboardIdentifier="MapViewController" id="JqW-0C-HaP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y5g-MM-hCF">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="OzG-CK-fgG" kind="relationship" relationship="rootViewController" id="BeI-FJ-cN7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="olr-m0-vcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626" y="-947"/>
         </scene>
         <!--Bars-->
         <scene sceneID="ip3-U8-Acg">
@@ -1957,7 +1893,7 @@
                         <segue destination="c3o-7U-4js" kind="showDetail" identifier="ShowLayerPropertiesViewControllerSegue" id="27i-Wb-Una"/>
                         <segue destination="P6G-jd-ELz" kind="showDetail" identifier="ShowTableViewControllerSegue" id="u6c-Af-462"/>
                         <segue destination="lA2-vg-u0T" kind="showDetail" identifier="ShowCollectionViewControllerSegue" id="uWO-bG-azq"/>
-                        <segue destination="JqW-0C-HaP" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
+                        <segue destination="wIO-6Q-NQi" kind="showDetail" identifier="ShowMapViewControllerSegue" id="wtQ-TV-adC"/>
                         <segue destination="Qsf-lL-H8g" kind="showDetail" identifier="ShowDefaultsControllerSegue" id="Ddl-66-5sP"/>
                         <segue destination="0zK-FW-Cx0" kind="showDetail" identifier="ShowControlsControllerSegue" id="vub-Ix-iiq"/>
                         <segue destination="ivy-GA-fkp" kind="showDetail" identifier="ShowScrollViewControllerSegue" id="gI8-Qe-nLe"/>
@@ -2306,6 +2242,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BC-Sc-geb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3250" y="-1653"/>
+        </scene>
+        <!--MapViewController-->
+        <scene sceneID="gAd-59-QZc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MapViewController" storyboardName="Map View" referencedIdentifier="MapViewController" id="wIO-6Q-NQi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihk-CB-ey6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-947"/>
         </scene>
     </scenes>
     <resources>
