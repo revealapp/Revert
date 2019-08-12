@@ -47,6 +47,7 @@
 		90125DD5230129C5003363CA /* Not Serializable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD3230129C5003363CA /* Not Serializable.storyboard */; };
 		90125DD823012A66003363CA /* Alert View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD623012A66003363CA /* Alert View.storyboard */; };
 		90125DDB23012B1C003363CA /* Controls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD923012B1C003363CA /* Controls.storyboard */; };
+		90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DDC23012B44003363CA /* Scroll View.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -228,6 +229,7 @@
 		90125DD4230129C5003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Not Serializable.storyboard"; sourceTree = "<group>"; };
 		90125DD723012A66003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Alert View.storyboard"; sourceTree = "<group>"; };
 		90125DDA23012B1C003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Controls.storyboard; sourceTree = "<group>"; };
+		90125DDD23012B44003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Scroll View.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 				90125DD023012937003363CA /* Layers.storyboard */,
 				BB2720521C9B8E44002E53EE /* Main.storyboard */,
 				90125DD3230129C5003363CA /* Not Serializable.storyboard */,
+				90125DDC23012B44003363CA /* Scroll View.storyboard */,
 				90125DCA230128CB003363CA /* Segmented Controls.storyboard */,
 				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
 				90125DC723012862003363CA /* Text Fields.storyboard */,
@@ -929,6 +932,7 @@
 				90E99D2E1F5D293700053684 /* Data in Resources */,
 				90125DC923012862003363CA /* Text Fields.storyboard in Resources */,
 				90125DD223012937003363CA /* Layers.storyboard in Resources */,
+				90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */,
 				90125DD823012A66003363CA /* Alert View.storyboard in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
@@ -1419,6 +1423,14 @@
 				90125DDA23012B1C003363CA /* Base */,
 			);
 			name = Controls.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DDC23012B44003363CA /* Scroll View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DDD23012B44003363CA /* Base */,
+			);
+			name = "Scroll View.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {

@@ -180,53 +180,6 @@
             </objects>
             <point key="canvasLocation" x="-348" y="6584"/>
         </scene>
-        <!--Scroll View Controller-->
-        <scene sceneID="Qdk-Wu-4UX">
-            <objects>
-                <viewController id="OUl-Wk-Rz3" customClass="ScrollViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="72W-gS-xzk"/>
-                        <viewControllerLayoutGuide type="bottom" id="vY7-N2-Zfr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YrI-tz-vNF">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-2G-eMc" customClass="RevertFocusableScrollView" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="reveal_pretty" translatesAutoresizingMaskIntoConstraints="NO" id="zEC-Nq-c8u">
-                                        <rect key="frame" x="0.0" y="0.0" width="2160" height="2160"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="zEC-Nq-c8u" secondAttribute="height" multiplier="1:1" id="3Kl-qz-Mgs"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="leading" secondItem="bxo-2G-eMc" secondAttribute="leading" id="E6v-q5-abT"/>
-                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="height" secondItem="bxo-2G-eMc" secondAttribute="height" multiplier="2" id="EQG-mj-uV7"/>
-                                    <constraint firstAttribute="bottom" secondItem="zEC-Nq-c8u" secondAttribute="bottom" id="Lsj-3V-6wN"/>
-                                    <constraint firstItem="zEC-Nq-c8u" firstAttribute="top" secondItem="bxo-2G-eMc" secondAttribute="top" id="lva-5y-TW4"/>
-                                    <constraint firstAttribute="trailing" secondItem="zEC-Nq-c8u" secondAttribute="trailing" id="zZf-4e-E0y"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bxo-2G-eMc" secondAttribute="bottom" id="81u-5C-Q44"/>
-                            <constraint firstItem="bxo-2G-eMc" firstAttribute="leading" secondItem="YrI-tz-vNF" secondAttribute="leading" id="kJg-rd-KmE"/>
-                            <constraint firstAttribute="trailing" secondItem="bxo-2G-eMc" secondAttribute="trailing" id="nOr-uY-1zM"/>
-                            <constraint firstItem="bxo-2G-eMc" firstAttribute="top" secondItem="YrI-tz-vNF" secondAttribute="top" id="tKV-aC-3gO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="ltQ-dx-239"/>
-                    <connections>
-                        <outlet property="scrollView" destination="bxo-2G-eMc" id="ATp-9X-WLX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qf2-Bd-Wpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="9417"/>
-        </scene>
         <!--Stack View Controller-->
         <scene sceneID="ToS-Rw-Jop">
             <objects>
@@ -2100,7 +2053,7 @@
                         <segue destination="IQS-Bd-SOI" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="Fb8-BI-6uh"/>
                         <segue destination="a9K-2K-s67" kind="presentation" identifier="ShowAlertViewControllerSegue" id="dek-3j-uaJ"/>
                         <segue destination="mGR-tk-LOt" kind="presentation" identifier="ShowDefaultsControllerSegue" id="C6t-OM-qMf"/>
-                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="s71-DX-UNb"/>
+                        <segue destination="GVC-zp-DpK" kind="presentation" identifier="ShowScrollViewControllerSegue" id="s71-DX-UNb"/>
                         <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="HVs-14-jRy"/>
                         <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="9eS-Oe-XOH"/>
                         <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="16b-Sd-dJ0"/>
@@ -2188,7 +2141,7 @@
                         <segue destination="IQS-Bd-SOI" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="pdL-yi-YIS"/>
                         <segue destination="a9K-2K-s67" kind="presentation" identifier="ShowAlertViewControllerSegue" id="Qd6-iH-n0w"/>
                         <segue destination="mGR-tk-LOt" kind="presentation" identifier="ShowDefaultsControllerSegue" id="uRr-Hb-cuq"/>
-                        <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="RRh-BP-TQ7"/>
+                        <segue destination="GVC-zp-DpK" kind="presentation" identifier="ShowScrollViewControllerSegue" id="RRh-BP-TQ7"/>
                         <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="A3G-Ah-Elw"/>
                         <segue destination="3b2-Pq-NFS" kind="presentation" identifier="ShowGLKViewControllerSegue" id="5nw-8H-DJ6"/>
                         <segue destination="sBY-yx-FIR" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="fT7-7t-zD6"/>
@@ -2579,6 +2532,14 @@
             </objects>
             <point key="canvasLocation" x="8071" y="8005"/>
         </scene>
+        <!--Scroll View-->
+        <scene sceneID="dGN-XA-VTH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Scroll View" id="GVC-zp-DpK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZV-lR-Ew0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="9417"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -2586,6 +2547,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="RRh-BP-TQ7"/>
         <segue reference="uRr-Hb-cuq"/>
         <segue reference="dek-3j-uaJ"/>
         <segue reference="pdL-yi-YIS"/>
@@ -2611,6 +2573,5 @@
         <segue reference="saQ-hI-FT8"/>
         <segue reference="kzC-lO-nop"/>
         <segue reference="1kx-aV-tGU"/>
-        <segue reference="s71-DX-UNb"/>
     </inferredMetricsTieBreakers>
 </document>
