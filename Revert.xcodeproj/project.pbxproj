@@ -64,6 +64,7 @@
 		90125E0823012D3D003363CA /* Auto Resizing Masks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0623012D3D003363CA /* Auto Resizing Masks.storyboard */; };
 		90125E0B23012D61003363CA /* Auto Layout Guides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0923012D61003363CA /* Auto Layout Guides.storyboard */; };
 		90125E0E23012D81003363CA /* Broken Constraints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0C23012D81003363CA /* Broken Constraints.storyboard */; };
+		90125E1123012DA0003363CA /* Visual Effect View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0F23012DA0003363CA /* Visual Effect View.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -262,6 +263,7 @@
 		90125E0723012D3D003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Resizing Masks.storyboard"; sourceTree = "<group>"; };
 		90125E0A23012D61003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Guides.storyboard"; sourceTree = "<group>"; };
 		90125E0D23012D81003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Broken Constraints.storyboard"; sourceTree = "<group>"; };
+		90125E1023012DA0003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Visual Effect View.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -608,6 +610,7 @@
 				90125DC723012862003363CA /* Text Fields.storyboard */,
 				90125DE523012BB4003363CA /* Transform Layers.storyboard */,
 				90125DDF23012B6D003363CA /* Transform Views.storyboard */,
+				90125E0F23012DA0003363CA /* Visual Effect View.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -976,6 +979,7 @@
 				90125DC62301220C003363CA /* Buttons.storyboard in Resources */,
 				90125DEA23012BD3003363CA /* Stack View.storyboard in Resources */,
 				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				90125E1123012DA0003363CA /* Visual Effect View.storyboard in Resources */,
 				90125DE723012BB4003363CA /* Transform Layers.storyboard in Resources */,
 				90125E0223012CFC003363CA /* Auto Layout.storyboard in Resources */,
 				90125DCC230128CB003363CA /* Segmented Controls.storyboard in Resources */,
@@ -1623,6 +1627,14 @@
 				90125E0D23012D81003363CA /* Base */,
 			);
 			name = "Broken Constraints.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0F23012DA0003363CA /* Visual Effect View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E1023012DA0003363CA /* Base */,
+			);
+			name = "Visual Effect View.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {

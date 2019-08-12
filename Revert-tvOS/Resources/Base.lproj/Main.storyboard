@@ -283,7 +283,7 @@
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
                         <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
                         <segue destination="CMv-Wy-1Ft" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="6fJ-po-YLM"/>
-                        <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="jBG-yk-csM"/>
+                        <segue destination="6ML-kc-in0" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="jBG-yk-csM"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg3-jq-6cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,145 +371,12 @@
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
                         <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
                         <segue destination="CMv-Wy-1Ft" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="Smw-db-KKH"/>
-                        <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="1t7-4N-Dqp"/>
+                        <segue destination="6ML-kc-in0" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="1t7-4N-Dqp"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlL-yE-1wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1399" y="10548"/>
-        </scene>
-        <!--Visual Effect View Controller-->
-        <scene sceneID="iCw-yP-SsF">
-            <objects>
-                <viewController id="TIS-Hl-rzN" customClass="VisualEffectViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3cR-rM-yj0"/>
-                        <viewControllerLayoutGuide type="bottom" id="rgp-ws-wmq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="szP-ZC-tts">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaF-CS-xgU" customClass="RevertFocusableScrollView" customModule="Revert_tvOS">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="office" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-OJ-Yo3">
-                                        <rect key="frame" x="0.0" y="0.0" width="2160" height="2160"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="QmO-OJ-Yo3" secondAttribute="height" multiplier="1:1" id="6Ux-dQ-ueR"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="QmO-OJ-Yo3" firstAttribute="top" secondItem="SaF-CS-xgU" secondAttribute="top" id="lqU-Kd-6uD"/>
-                                    <constraint firstAttribute="trailing" secondItem="QmO-OJ-Yo3" secondAttribute="trailing" id="sbk-4c-mbu"/>
-                                    <constraint firstAttribute="bottom" secondItem="QmO-OJ-Yo3" secondAttribute="bottom" id="wen-m4-9TS"/>
-                                    <constraint firstItem="QmO-OJ-Yo3" firstAttribute="leading" secondItem="SaF-CS-xgU" secondAttribute="leading" id="xfr-sz-RLJ"/>
-                                    <constraint firstItem="QmO-OJ-Yo3" firstAttribute="height" secondItem="SaF-CS-xgU" secondAttribute="height" multiplier="2" id="yyg-6o-BU9"/>
-                                </constraints>
-                            </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st8-aW-98U">
-                                <rect key="frame" x="164" y="440" width="1592" height="200"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1p-KI-waI" userLabel="Separator">
-                                        <rect key="frame" x="796" y="0.0" width="1" height="200"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="b3K-o4-0kr"/>
-                                        </constraints>
-                                    </view>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OE-0p-9qo">
-                                        <rect key="frame" x="0.0" y="0.0" width="796" height="200"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VGq-ph-9eh">
-                                            <rect key="frame" x="0.0" y="0.0" width="796" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPf-1u-4bA">
-                                                    <rect key="frame" x="334" y="77" width="128" height="46"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="QPf-1u-4bA" secondAttribute="bottom" constant="77" id="I2b-60-SFR"/>
-                                                <constraint firstItem="QPf-1u-4bA" firstAttribute="top" secondItem="VGq-ph-9eh" secondAttribute="top" constant="77" id="V9a-7t-XLA"/>
-                                                <constraint firstAttribute="trailing" secondItem="QPf-1u-4bA" secondAttribute="trailing" constant="334" id="eSo-9h-Jxv"/>
-                                                <constraint firstItem="QPf-1u-4bA" firstAttribute="leading" secondItem="VGq-ph-9eh" secondAttribute="leading" constant="334" id="jZd-24-rBD"/>
-                                            </constraints>
-                                        </view>
-                                        <blurEffect style="regular"/>
-                                    </visualEffectView>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-6P-9Ag">
-                                        <rect key="frame" x="797" y="0.0" width="795" height="200"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kR0-Xw-itf">
-                                            <rect key="frame" x="0.0" y="0.0" width="795" height="200"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-ue-OpW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="795" height="200"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W9O-4b-UZd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="795" height="200"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sp-yF-vPw">
-                                                                <rect key="frame" x="334" y="77" width="127" height="46"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="8sp-yF-vPw" secondAttribute="bottom" constant="77" id="L2k-tP-9LQ"/>
-                                                            <constraint firstAttribute="trailing" secondItem="8sp-yF-vPw" secondAttribute="trailing" constant="333" id="l6k-xW-tKe"/>
-                                                            <constraint firstItem="8sp-yF-vPw" firstAttribute="leading" secondItem="W9O-4b-UZd" secondAttribute="leading" constant="334" id="liK-HS-Jj6"/>
-                                                            <constraint firstItem="8sp-yF-vPw" firstAttribute="top" secondItem="W9O-4b-UZd" secondAttribute="top" constant="77" id="oes-kc-FWm"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <vibrancyEffect>
-                                                        <blurEffect style="regular"/>
-                                                    </vibrancyEffect>
-                                                </visualEffectView>
-                                            </subviews>
-                                        </view>
-                                        <blurEffect style="regular"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="s1p-KI-waI" firstAttribute="centerY" secondItem="st8-aW-98U" secondAttribute="centerY" id="ASt-JT-QZu"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oyi-6P-9Ag" secondAttribute="trailing" id="Rar-Pj-FOP"/>
-                                    <constraint firstItem="s1p-KI-waI" firstAttribute="centerX" secondItem="st8-aW-98U" secondAttribute="centerX" id="TKh-gc-tmF"/>
-                                    <constraint firstItem="2OE-0p-9qo" firstAttribute="top" secondItem="st8-aW-98U" secondAttribute="top" id="WE7-9p-RF3"/>
-                                    <constraint firstItem="Oyi-6P-9Ag" firstAttribute="leading" secondItem="s1p-KI-waI" secondAttribute="leading" constant="1" id="Yvg-gR-hWE"/>
-                                    <constraint firstItem="Oyi-6P-9Ag" firstAttribute="height" secondItem="st8-aW-98U" secondAttribute="height" id="ZUu-ea-fa0"/>
-                                    <constraint firstItem="s1p-KI-waI" firstAttribute="height" secondItem="st8-aW-98U" secondAttribute="height" id="mHR-A2-UXD"/>
-                                    <constraint firstItem="s1p-KI-waI" firstAttribute="leading" secondItem="2OE-0p-9qo" secondAttribute="trailing" id="mjG-ie-suo"/>
-                                    <constraint firstAttribute="height" constant="200" id="nAi-kw-zOa"/>
-                                    <constraint firstItem="2OE-0p-9qo" firstAttribute="leading" secondItem="st8-aW-98U" secondAttribute="leading" id="qKx-zR-t9i"/>
-                                    <constraint firstItem="Oyi-6P-9Ag" firstAttribute="top" secondItem="st8-aW-98U" secondAttribute="top" id="qma-MN-c7B"/>
-                                    <constraint firstItem="2OE-0p-9qo" firstAttribute="height" secondItem="st8-aW-98U" secondAttribute="height" id="sfX-As-Fsm"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="st8-aW-98U" firstAttribute="centerY" secondItem="szP-ZC-tts" secondAttribute="centerY" id="23m-xK-2d7"/>
-                            <constraint firstItem="st8-aW-98U" firstAttribute="centerX" secondItem="szP-ZC-tts" secondAttribute="centerX" id="7eg-TV-l04"/>
-                            <constraint firstAttribute="bottom" secondItem="SaF-CS-xgU" secondAttribute="bottom" id="9Dq-cr-WkO"/>
-                            <constraint firstItem="SaF-CS-xgU" firstAttribute="top" secondItem="szP-ZC-tts" secondAttribute="top" id="BWd-gu-rRK"/>
-                            <constraint firstItem="st8-aW-98U" firstAttribute="leading" secondItem="szP-ZC-tts" secondAttribute="leading" constant="164" id="W9S-YJ-vaq"/>
-                            <constraint firstAttribute="trailing" secondItem="SaF-CS-xgU" secondAttribute="trailing" id="iYx-1J-Vjg"/>
-                            <constraint firstItem="SaF-CS-xgU" firstAttribute="leading" secondItem="szP-ZC-tts" secondAttribute="leading" id="qzF-b5-DbB"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="qTf-1q-0Sy"/>
-                    <connections>
-                        <outlet property="scrollView" destination="SaF-CS-xgU" id="thg-ES-9Yy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xp-da-UUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10415" y="16471"/>
         </scene>
         <!--Buttons-->
         <scene sceneID="ImU-0o-Fq4">
@@ -711,12 +578,20 @@
             </objects>
             <point key="canvasLocation" x="8071" y="16471"/>
         </scene>
+        <!--Visual Effect View-->
+        <scene sceneID="it5-2w-QJ1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Visual Effect View" id="6ML-kc-in0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C47-gb-hM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10415" y="16471"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
-        <image name="office" width="1276" height="850.5"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="1t7-4N-Dqp"/>
         <segue reference="Smw-db-KKH"/>
         <segue reference="eYK-HC-bv0"/>
         <segue reference="vbS-XY-Q0Q"/>
@@ -742,6 +617,5 @@
         <segue reference="SEa-Im-agc"/>
         <segue reference="bKg-Tw-bma"/>
         <segue reference="kmn-Ux-9Fc"/>
-        <segue reference="jBG-yk-csM"/>
     </inferredMetricsTieBreakers>
 </document>
