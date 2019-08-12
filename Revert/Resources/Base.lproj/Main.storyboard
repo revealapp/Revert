@@ -2444,7 +2444,7 @@
                         <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
                         <segue destination="ml1-R4-Rye" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
                         <segue destination="SQ0-JK-GIi" kind="showDetail" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Vh9-0V-Cxg"/>
-                        <segue destination="EYK-kX-1qH" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
+                        <segue destination="vrt-Fi-02E" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
                         <segue destination="TZa-bh-WS3" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
                         <segue destination="w5P-fI-XI8" kind="showDetail" identifier="ShowTransformViewsViewControllerSegue" id="O6s-k0-xH1"/>
                         <segue destination="edO-42-jjt" kind="showDetail" identifier="ShowSuperDeepViewControllerSegue" id="IuR-jS-hlr"/>
@@ -2658,198 +2658,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1f-Yd-9NB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="-4703"/>
-        </scene>
-        <!--Auto Layout Margins-->
-        <scene sceneID="6ot-VI-ZcG">
-            <objects>
-                <viewController id="AT1-f1-sr1" customClass="AutoLayoutMarginsViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="E4Y-ED-xsm"/>
-                        <viewControllerLayoutGuide type="bottom" id="yQj-bT-zyr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="i1S-l0-cJP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-fA-4GD" userLabel="Container">
-                                <rect key="frame" x="0.0" y="64" width="414" height="626"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="ml3-CY-mgV" userLabel="Center View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="167" y="273" width="80" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-85-dhz">
-                                                <rect key="frame" x="8" y="8" width="64" height="64"/>
-                                                <color key="backgroundColor" red="0.79589802026748657" green="1" blue="0.23661470413208008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.79589802026748657" green="1" blue="0.23661470413208008" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <accessibility key="accessibilityConfiguration" label="Center View"/>
-                                        <constraints>
-                                            <constraint firstItem="ebx-85-dhz" firstAttribute="top" secondItem="ml3-CY-mgV" secondAttribute="topMargin" id="56t-fJ-sbi"/>
-                                            <constraint firstAttribute="width" constant="80" id="7h9-Sy-hh0"/>
-                                            <constraint firstItem="ebx-85-dhz" firstAttribute="leading" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" id="CMK-lM-LAv"/>
-                                            <constraint firstAttribute="width" secondItem="ml3-CY-mgV" secondAttribute="height" multiplier="1:1" id="Ce5-60-ts5"/>
-                                            <constraint firstItem="ebx-85-dhz" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="Jny-xE-9qn"/>
-                                            <constraint firstItem="ebx-85-dhz" firstAttribute="trailing" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" id="Pbd-wk-hdn"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou0-qC-1Pb" userLabel="Right View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="271" y="265" width="80" height="80"/>
-                                        <color key="backgroundColor" red="0.98700940608978271" green="0.62185144424438477" blue="0.03442937508225441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <accessibility key="accessibilityConfiguration" label="Right View"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="height" multiplier="1:1" id="SyP-sB-2uK"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-hW-wrq" userLabel="Bottom View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="175" y="377" width="80" height="80"/>
-                                        <color key="backgroundColor" red="0.17552228271961212" green="0.80860555171966553" blue="0.71378350257873535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <accessibility key="accessibilityConfiguration" label="Bottom View"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="height" multiplier="1:1" id="Mz1-QH-5yE"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-F2-dD7" userLabel="Left View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="63" y="281" width="80" height="80"/>
-                                        <color key="backgroundColor" red="0.75690394639968872" green="0.17739748954772949" blue="0.99884581565856934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <accessibility key="accessibilityConfiguration" label="Left View"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="height" multiplier="1:1" id="Vhs-ob-anv"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-f5-C5V" userLabel="Top View" customClass="CustomIntrinsicContentSizeView" customModule="Revert_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="159" y="169" width="80" height="80"/>
-                                        <color key="backgroundColor" red="0.35848003625869751" green="0.70734065771102905" blue="0.99879956245422363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <accessibility key="accessibilityConfiguration" label="Top View"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="height" multiplier="1:1" id="b75-0L-bm5"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.11758433282375336" green="0.11760644614696503" blue="0.11757867783308029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="ml3-CY-mgV" secondAttribute="centerY" id="67p-Qk-XfP"/>
-                                    <constraint firstAttribute="centerX" secondItem="ml3-CY-mgV" secondAttribute="centerX" id="S1p-mL-VeN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="790-cb-XJk" customClass="SliderMarginsAdjustingView" customModule="Revert_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="690" width="374" height="46"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-2Q-Zto">
-                                        <rect key="frame" x="87" y="8" width="200" height="31"/>
-                                        <color key="tintColor" red="0.16628792881965637" green="0.59304779767990112" blue="0.92976486682891846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="196" id="AEV-d5-ECz"/>
-                                        </constraints>
-                                        <connections>
-                                            <action selector="sliderValueChanged:" destination="790-cb-XJk" eventType="valueChanged" id="mHc-od-UbP"/>
-                                        </connections>
-                                    </slider>
-                                </subviews>
-                                <color key="backgroundColor" red="0.11758433282375336" green="0.11760644614696503" blue="0.11757867783308029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="rfO-2Q-Zto" firstAttribute="centerX" secondItem="790-cb-XJk" secondAttribute="centerX" id="DyJ-lr-4XX"/>
-                                    <constraint firstItem="rfO-2Q-Zto" firstAttribute="centerY" secondItem="790-cb-XJk" secondAttribute="centerY" id="VWL-js-EOa"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="slider" destination="rfO-2Q-Zto" id="QlD-7d-C2J"/>
-                                </connections>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.11758433282375336" green="0.11760644614696503" blue="0.11757867783308029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7V2-f5-C5V" firstAttribute="right" secondItem="ml3-CY-mgV" secondAttribute="rightMargin" id="13q-Wb-m6p"/>
-                            <constraint firstItem="yQj-bT-zyr" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" constant="46" id="3uA-BM-GyP"/>
-                            <constraint firstItem="790-cb-XJk" firstAttribute="top" secondItem="Q3k-fA-4GD" secondAttribute="bottom" id="8PD-Ej-BH5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="790-cb-XJk" secondAttribute="bottom" id="Al2-de-2ki"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="qSc-hW-wrq" secondAttribute="width" id="DXV-w7-fVS"/>
-                            <constraint firstItem="qSc-hW-wrq" firstAttribute="left" secondItem="ml3-CY-mgV" secondAttribute="leftMargin" id="Dbg-t1-pBe"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="Ou0-qC-1Pb" secondAttribute="width" id="NjY-0q-Ulp"/>
-                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leading" id="ZW7-Hr-Krh"/>
-                            <constraint firstItem="n6U-F2-dD7" firstAttribute="trailingMargin" secondItem="ml3-CY-mgV" secondAttribute="leadingMargin" constant="-40" id="bTt-HP-l84"/>
-                            <constraint firstItem="790-cb-XJk" firstAttribute="leading" secondItem="i1S-l0-cJP" secondAttribute="leadingMargin" id="bvB-mv-e56"/>
-                            <constraint firstItem="Ou0-qC-1Pb" firstAttribute="bottom" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" id="dc2-HH-PLN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="790-cb-XJk" secondAttribute="trailing" id="ij0-oq-jfZ"/>
-                            <constraint firstAttribute="trailing" secondItem="Q3k-fA-4GD" secondAttribute="trailing" id="jwX-4j-WcT"/>
-                            <constraint firstItem="Q3k-fA-4GD" firstAttribute="top" secondItem="E4Y-ED-xsm" secondAttribute="bottom" id="k1C-Is-1yM"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="n6U-F2-dD7" secondAttribute="width" id="lHv-pG-70x"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="width" secondItem="7V2-f5-C5V" secondAttribute="width" id="pxA-J9-wFj"/>
-                            <constraint firstItem="ml3-CY-mgV" firstAttribute="topMargin" secondItem="n6U-F2-dD7" secondAttribute="top" id="r87-63-SM3"/>
-                            <constraint firstItem="qSc-hW-wrq" firstAttribute="topMargin" secondItem="ml3-CY-mgV" secondAttribute="bottomMargin" constant="40" id="rpi-aw-KUj"/>
-                            <constraint firstItem="Ou0-qC-1Pb" firstAttribute="leadingMargin" secondItem="ml3-CY-mgV" secondAttribute="trailingMargin" constant="40" id="tTn-xT-ReG"/>
-                            <constraint firstItem="7V2-f5-C5V" firstAttribute="bottomMargin" secondItem="ml3-CY-mgV" secondAttribute="topMargin" constant="-40" id="vQh-Fy-wXe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Auto Layout Margins" id="UMb-kM-Bd1">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="5QS-F7-fpe">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="KGq-sa-9db"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="centerView" destination="ml3-CY-mgV" id="sST-GT-cHJ"/>
-                        <outlet property="centerViewWidthConstraint" destination="7h9-Sy-hh0" id="JGP-RS-YsJ"/>
-                        <outlet property="containerView" destination="Q3k-fA-4GD" id="ni2-VQ-4s9"/>
-                        <outlet property="containerViewBottomConstraint" destination="3uA-BM-GyP" id="P9P-E0-cGD"/>
-                        <outlet property="marginsAdjustingView" destination="790-cb-XJk" id="h4q-i8-7Eq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DzC-S5-dcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2443" y="-5436"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="QAy-Z2-ulk">
-            <objects>
-                <navigationController id="EYK-kX-1qH" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KUi-eU-8pn">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="AT1-f1-sr1" kind="relationship" relationship="rootViewController" id="Ysu-E0-XoZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nus-Ob-aSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626" y="-5436"/>
         </scene>
         <!--Auto Layout Alignments-->
         <scene sceneID="ET9-ag-1Ke">
@@ -4157,6 +3965,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS3-42-4zN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3250" y="-6142"/>
+        </scene>
+        <!--Auto Layout Margins-->
+        <scene sceneID="ErR-Ge-TvE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auto Layout Margins" id="vrt-Fi-02E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xd1-Mh-QuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-5436"/>
         </scene>
     </scenes>
     <resources>

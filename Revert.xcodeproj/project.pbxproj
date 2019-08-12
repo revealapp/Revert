@@ -15,6 +15,7 @@
 		90125D702301184D003363CA /* Layer Properties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D6E2301184D003363CA /* Layer Properties.storyboard */; };
 		90125D73230118AB003363CA /* Autoresizing Masks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D71230118AB003363CA /* Autoresizing Masks.storyboard */; };
 		90125D76230118EB003363CA /* Not Serializable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D74230118EB003363CA /* Not Serializable.storyboard */; };
+		90125D792301192A003363CA /* Auto Layout Margins.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D772301192A003363CA /* Auto Layout Margins.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -164,6 +165,7 @@
 		90125D6F2301184D003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Layer Properties.storyboard"; sourceTree = "<group>"; };
 		90125D72230118AB003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Autoresizing Masks.storyboard"; sourceTree = "<group>"; };
 		90125D75230118EB003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Not Serializable.storyboard"; sourceTree = "<group>"; };
+		90125D782301192A003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Margins.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				90125D772301192A003363CA /* Auto Layout Margins.storyboard */,
 				90125D71230118AB003363CA /* Autoresizing Masks.storyboard */,
 				90125D682301176B003363CA /* Broken Constraints.storyboard */,
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
@@ -785,6 +788,7 @@
 				90125D672301166F003363CA /* Visual Effect View.storyboard in Resources */,
 				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
+				90125D792301192A003363CA /* Auto Layout Margins.storyboard in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
 				90125D702301184D003363CA /* Layer Properties.storyboard in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
@@ -1035,6 +1039,14 @@
 				90125D75230118EB003363CA /* Base */,
 			);
 			name = "Not Serializable.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D772301192A003363CA /* Auto Layout Margins.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D782301192A003363CA /* Base */,
+			);
+			name = "Auto Layout Margins.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
