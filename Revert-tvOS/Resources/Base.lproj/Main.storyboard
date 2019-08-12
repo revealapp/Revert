@@ -245,51 +245,6 @@
             </objects>
             <point key="canvasLocation" x="8071" y="10739"/>
         </scene>
-        <!--Alert View Controller-->
-        <scene sceneID="Jfb-nc-Bed">
-            <objects>
-                <tableViewController id="eit-dp-6nz" customClass="AlertViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="Jjc-n8-cSK" customClass="RevertFocusableTableView" customModule="Revert_tvOS">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertCell" id="ZHJ-mv-O1d" customClass="BasicCell" customModule="Revert_tvOS">
-                                <rect key="frame" x="388" y="40" width="1144" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHJ-mv-O1d" id="yhS-pc-0F4">
-                                    <rect key="frame" x="0.0" y="0.0" width="1144" height="66"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjr-J3-SwP">
-                                            <rect key="frame" x="23" y="23" width="34" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Hjr-J3-SwP" firstAttribute="leading" secondItem="yhS-pc-0F4" secondAttribute="leadingMargin" constant="15" id="B7W-Vg-fhH"/>
-                                        <constraint firstItem="Hjr-J3-SwP" firstAttribute="centerY" secondItem="yhS-pc-0F4" secondAttribute="centerY" id="nUI-b8-KEA"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Hjr-J3-SwP" secondAttribute="trailing" constant="15" id="zLC-6U-Khb"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="titleLabel" destination="Hjr-J3-SwP" id="p1M-gT-Dos"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="eit-dp-6nz" id="a9v-i3-WPx"/>
-                            <outlet property="delegate" destination="eit-dp-6nz" id="PC0-Jx-cr7"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="4fQ-ZR-weK"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AmU-yh-yul" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="8005"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="Kg5-9c-nEa">
             <objects>
@@ -2331,7 +2286,7 @@
                         <segue destination="khg-ul-WeI" kind="presentation" identifier="ShowTableViewControllerSegue" id="2sN-Om-l3s"/>
                         <segue destination="CRP-5B-1th" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="hsh-dy-nEy"/>
                         <segue destination="IQS-Bd-SOI" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="Fb8-BI-6uh"/>
-                        <segue destination="eit-dp-6nz" kind="presentation" identifier="ShowAlertViewControllerSegue" id="dek-3j-uaJ"/>
+                        <segue destination="a9K-2K-s67" kind="presentation" identifier="ShowAlertViewControllerSegue" id="dek-3j-uaJ"/>
                         <segue destination="ElL-2W-GMq" kind="presentation" identifier="ShowDefaultsControllerSegue" id="C6t-OM-qMf"/>
                         <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="s71-DX-UNb"/>
                         <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="HVs-14-jRy"/>
@@ -2419,7 +2374,7 @@
                         <segue destination="khg-ul-WeI" kind="presentation" identifier="ShowTableViewControllerSegue" id="aVG-NZ-NKb"/>
                         <segue destination="CRP-5B-1th" kind="presentation" identifier="ShowLayerPropertiesViewControllerSegue" id="4s0-rw-FfM"/>
                         <segue destination="IQS-Bd-SOI" kind="presentation" identifier="ShowNotSerializableViewControllerSegue" id="pdL-yi-YIS"/>
-                        <segue destination="eit-dp-6nz" kind="presentation" identifier="ShowAlertViewControllerSegue" id="Qd6-iH-n0w"/>
+                        <segue destination="a9K-2K-s67" kind="presentation" identifier="ShowAlertViewControllerSegue" id="Qd6-iH-n0w"/>
                         <segue destination="ElL-2W-GMq" kind="presentation" identifier="ShowDefaultsControllerSegue" id="uRr-Hb-cuq"/>
                         <segue destination="OUl-Wk-Rz3" kind="presentation" identifier="ShowScrollViewControllerSegue" id="RRh-BP-TQ7"/>
                         <segue destination="ntU-xe-67R" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="A3G-Ah-Elw"/>
@@ -2796,6 +2751,14 @@
             </objects>
             <point key="canvasLocation" x="10415" y="6584"/>
         </scene>
+        <!--Alert View-->
+        <scene sceneID="dGj-Ms-TRV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Alert View" id="a9K-2K-s67" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsR-00-h8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="8005"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -2804,6 +2767,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dek-3j-uaJ"/>
         <segue reference="pdL-yi-YIS"/>
         <segue reference="hsh-dy-nEy"/>
         <segue reference="2sN-Om-l3s"/>
@@ -2827,7 +2791,6 @@
         <segue reference="E3N-aw-4qX"/>
         <segue reference="saQ-hI-FT8"/>
         <segue reference="kzC-lO-nop"/>
-        <segue reference="dek-3j-uaJ"/>
         <segue reference="1kx-aV-tGU"/>
         <segue reference="s71-DX-UNb"/>
     </inferredMetricsTieBreakers>
