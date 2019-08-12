@@ -58,6 +58,7 @@
 		90125DF623012C69003363CA /* Map View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF423012C69003363CA /* Map View.storyboard */; };
 		90125DF923012C91003363CA /* Stress Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF723012C91003363CA /* Stress Test.storyboard */; };
 		90125DFC23012CB7003363CA /* Arranged Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DFA23012CB7003363CA /* Arranged Views.storyboard */; };
+		90125DFF23012CDA003363CA /* Auto Layout Margins.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -250,6 +251,7 @@
 		90125DF523012C69003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Map View.storyboard"; sourceTree = "<group>"; };
 		90125DF823012C91003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stress Test.storyboard"; sourceTree = "<group>"; };
 		90125DFB23012CB7003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Arranged Views.storyboard"; sourceTree = "<group>"; };
+		90125DFE23012CDA003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Margins.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 				90125DD623012A66003363CA /* Alert View.storyboard */,
 				90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */,
 				90125DFA23012CB7003363CA /* Arranged Views.storyboard */,
+				90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */,
 				90125DC42301220C003363CA /* Buttons.storyboard */,
 				90125DD923012B1C003363CA /* Controls.storyboard */,
 				90125DCD23012903003363CA /* Countries.storyboard */,
@@ -962,6 +965,7 @@
 				90125DCC230128CB003363CA /* Segmented Controls.storyboard in Resources */,
 				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
 				90125DE423012B90003363CA /* GLKit.storyboard in Resources */,
+				90125DFF23012CDA003363CA /* Auto Layout Margins.storyboard in Resources */,
 				90E99D2E1F5D293700053684 /* Data in Resources */,
 				90125DC923012862003363CA /* Text Fields.storyboard in Resources */,
 				90125DD223012937003363CA /* Layers.storyboard in Resources */,
@@ -1551,6 +1555,14 @@
 				90125DFB23012CB7003363CA /* Base */,
 			);
 			name = "Arranged Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DFE23012CDA003363CA /* Base */,
+			);
+			name = "Auto Layout Margins.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
