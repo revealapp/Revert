@@ -31,6 +31,7 @@
 		90125DA223011C09003363CA /* Picker View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA023011C09003363CA /* Picker View.storyboard */; };
 		90125DA523011C38003363CA /* Scroll View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA323011C38003363CA /* Scroll View.storyboard */; };
 		90125DA823011C60003363CA /* Web View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA623011C60003363CA /* Web View.storyboard */; };
+		90125DAB23011C84003363CA /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA923011C84003363CA /* Views.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -196,6 +197,7 @@
 		90125DA123011C09003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Picker View.storyboard"; sourceTree = "<group>"; };
 		90125DA423011C38003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Scroll View.storyboard"; sourceTree = "<group>"; };
 		90125DA723011C60003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Web View.storyboard"; sourceTree = "<group>"; };
+		90125DAA23011C84003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Views.storyboard; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 				90125D9723011B88003363CA /* Table View.storyboard */,
 				90125D8823011A84003363CA /* Transform Layers.storyboard */,
 				90125D8E23011AF2003363CA /* Transform Views.storyboard */,
+				90125DA923011C84003363CA /* Views.storyboard */,
 				90125D652301166F003363CA /* Visual Effect View.storyboard */,
 				90125DA623011C60003363CA /* Web View.storyboard */,
 			);
@@ -840,6 +843,7 @@
 				90125D9C23011BB4003363CA /* Alert View.storyboard in Resources */,
 				90125D9F23011BE6003363CA /* Map View.storyboard in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
+				90125DAB23011C84003363CA /* Views.storyboard in Resources */,
 				90125D8A23011A84003363CA /* Transform Layers.storyboard in Resources */,
 				90125D7F230119C4003363CA /* Auto Layout Alignments.storyboard in Resources */,
 				90125D702301184D003363CA /* Layer Properties.storyboard in Resources */,
@@ -1227,6 +1231,14 @@
 				90125DA723011C60003363CA /* Base */,
 			);
 			name = "Web View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DA923011C84003363CA /* Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DAA23011C84003363CA /* Base */,
+			);
+			name = Views.storyboard;
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
