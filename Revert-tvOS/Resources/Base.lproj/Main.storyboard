@@ -171,7 +171,7 @@
                         <outlet property="collectionView" destination="cro-LW-isO" id="tjl-d9-uaL"/>
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="rJr-K8-5YV"/>
                         <segue destination="Dak-gW-7g8" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
-                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
+                        <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
                     </connections>
@@ -179,24 +179,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="6584"/>
-        </scene>
-        <!--Stack View Controller-->
-        <scene sceneID="ToS-Rw-Jop">
-            <objects>
-                <viewController id="kwX-zB-gqk" customClass="StackViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DSV-8E-PtN"/>
-                        <viewControllerLayoutGuide type="bottom" id="lM9-kK-T9G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vpk-7q-Pqd">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gtx-af-YWS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ud-rc-9E1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8071" y="10739"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Kg5-9c-nEa">
@@ -1459,7 +1441,7 @@
                         <segue destination="kEF-hE-3Tr" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="HVs-14-jRy"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="9eS-Oe-XOH"/>
                         <segue destination="5V6-0g-bpC" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="16b-Sd-dJ0"/>
-                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
+                        <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="1kx-aV-tGU"/>
                         <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="Tqf-V4-xDk"/>
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
                         <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
@@ -1547,7 +1529,7 @@
                         <segue destination="kEF-hE-3Tr" kind="presentation" identifier="ShowTransformViewsViewControllerSegue" id="A3G-Ah-Elw"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="5nw-8H-DJ6"/>
                         <segue destination="5V6-0g-bpC" kind="presentation" identifier="ShowTransformLayersViewControllerSegue" id="fT7-7t-zD6"/>
-                        <segue destination="kwX-zB-gqk" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
+                        <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="XWV-wL-1gp"/>
                         <segue destination="daz-S4-wUY" kind="presentation" identifier="ShowAnchorBoundsViewControllerSegue" id="ePP-G8-d2j"/>
                         <segue destination="2bX-AO-Trr" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
                         <segue destination="hhn-ff-Cay" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
@@ -1966,6 +1948,14 @@
             </objects>
             <point key="canvasLocation" x="5719" y="10739"/>
         </scene>
+        <!--Stack View-->
+        <scene sceneID="72n-xd-sSI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stack View" id="x7I-uU-BTr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXf-f7-QlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8071" y="10739"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -1973,6 +1963,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="SIv-Cp-spB"/>
         <segue reference="fT7-7t-zD6"/>
         <segue reference="TNP-CT-4h2"/>
         <segue reference="A3G-Ah-Elw"/>
@@ -1998,6 +1989,5 @@
         <segue reference="E3N-aw-4qX"/>
         <segue reference="saQ-hI-FT8"/>
         <segue reference="kzC-lO-nop"/>
-        <segue reference="1kx-aV-tGU"/>
     </inferredMetricsTieBreakers>
 </document>
