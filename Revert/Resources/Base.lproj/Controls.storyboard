@@ -808,10 +808,10 @@
             </objects>
             <point key="canvasLocation" x="2443" y="1202"/>
         </scene>
-        <!--HelpViewController-->
+        <!--Info-->
         <scene sceneID="yVl-qG-JFq">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="i6Z-wK-Pfq" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Info" id="i6Z-wK-Pfq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc6-4g-Gry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3303" y="1201"/>

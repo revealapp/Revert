@@ -137,10 +137,10 @@ on this label</string>
             </objects>
             <point key="canvasLocation" x="4070" y="-6142"/>
         </scene>
-        <!--HelpViewController-->
+        <!--Info-->
         <scene sceneID="Mdw-Vn-Zot">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="icf-dE-ffm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Info" id="icf-dE-ffm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWJ-LP-wDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4786" y="-6143"/>

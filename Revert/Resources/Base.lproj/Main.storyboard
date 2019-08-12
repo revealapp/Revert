@@ -93,7 +93,6 @@
                         <segue destination="vLH-W2-axe" kind="showDetail" identifier="ShowPickerViewControllerSegue" id="s1w-9N-gLi"/>
                         <segue destination="tyr-c9-kEI" kind="showDetail" identifier="ShowWebViewControllerSegue" id="fDj-xA-AbB"/>
                         <segue destination="cdg-7h-NmH" kind="showDetail" identifier="ShowGLKViewControllerSegue" id="dli-SX-fFP"/>
-                        <segue destination="n9P-Pl-PS9" kind="presentation" identifier="ShowModalViewController" id="gSb-RG-pTo"/>
                         <segue destination="eGz-cp-dda" kind="showDetail" identifier="ShowStackViewViewControllerSegue" id="O56-GU-GWY"/>
                         <segue destination="oKL-aA-Yf6" kind="showDetail" identifier="ShowSFSafariViewControllerSegue" id="N6t-fx-UdU"/>
                         <segue destination="QJM-V8-cvh" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
@@ -377,14 +376,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OR-NN-2WH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2783" y="-1981"/>
-        </scene>
-        <!--HelpViewController-->
-        <scene sceneID="OYw-94-zWR">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Info" referencedIdentifier="HelpViewController" id="n9P-Pl-PS9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kgO-Mv-3dA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1574" y="-3167"/>
         </scene>
     </scenes>
     <resources>

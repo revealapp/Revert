@@ -82,7 +82,7 @@
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfA-LQ-g10" userLabel="Visual Effect View A">
                                         <rect key="frame" x="0.0" y="0.0" width="174.5" height="128"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="r7I-Vg-DYm">
-                                            <rect key="frame" x="0.0" y="0.0" width="175" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="174.5" height="128"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-96-clN">
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="4066" y="-7593"/>
         </scene>
-        <!--HelpViewController-->
+        <!--Info-->
         <scene sceneID="UaV-F6-HAe">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="orH-sh-c1s" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Info" id="orH-sh-c1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bge-ke-ZkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4938" y="-7592"/>

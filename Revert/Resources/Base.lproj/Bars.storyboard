@@ -66,7 +66,7 @@
                                 </constraints>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-al-unb">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="YQG-oH-vVZ"/>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1626" y="1908"/>
         </scene>
-        <!--HelpViewController-->
+        <!--Info-->
         <scene sceneID="XHn-qa-erc">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HelpViewController" storyboardName="Main" referencedIdentifier="HelpViewController" id="7Am-RN-TYr" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Info" id="7Am-RN-TYr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLA-qA-3Al" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3236" y="1908"/>
