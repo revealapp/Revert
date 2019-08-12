@@ -889,46 +889,6 @@
             </objects>
             <point key="canvasLocation" x="10415" y="14985"/>
         </scene>
-        <!--Stress Test View Controller-->
-        <scene sceneID="SMY-SU-ijv">
-            <objects>
-                <collectionViewController id="VVc-wb-2KU" customClass="StressTestViewController" customModule="Revert_tvOS" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VHO-V4-ra3">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="raa-mz-quy">
-                            <size key="itemSize" width="170" height="170"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="90" minY="60" maxX="90" maxY="60"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StressCell" id="Lrz-3n-xMd">
-                                <rect key="frame" x="90" y="60" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncx-lw-kCg" customClass="DeepView" customModule="Revert_tvOS" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
-                                        </view>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ncx-lw-kCg" secondAttribute="trailing" id="1us-Ro-Nq7"/>
-                                    <constraint firstItem="ncx-lw-kCg" firstAttribute="leading" secondItem="Lrz-3n-xMd" secondAttribute="leading" id="GZx-XV-Gmu"/>
-                                    <constraint firstAttribute="bottom" secondItem="ncx-lw-kCg" secondAttribute="bottom" id="NGV-2c-9x6"/>
-                                    <constraint firstItem="ncx-lw-kCg" firstAttribute="top" secondItem="Lrz-3n-xMd" secondAttribute="top" id="snW-JO-ZQ1"/>
-                                </constraints>
-                            </collectionViewCell>
-                        </cells>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gTX-mh-Rdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="13577"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
             <objects>
@@ -1206,7 +1166,7 @@
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="4Zw-Q9-imf"/>
                         <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="sQz-c6-PNe"/>
                         <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="kzC-lO-nop"/>
-                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
+                        <segue destination="IOZ-bI-iuF" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="aLP-vy-qaj"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="saQ-hI-FT8"/>
                         <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="kJb-0f-6j4"/>
                         <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="E3N-aw-4qX"/>
@@ -1294,7 +1254,7 @@
                         <segue destination="hyF-pL-MLi" kind="presentation" identifier="ShowSpriteKitViewControllerSegue" id="EA6-HN-coe"/>
                         <segue destination="Wka-1y-Efy" kind="presentation" identifier="ShowSuperDeepViewControllerSegue" id="DMn-a2-SDu"/>
                         <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="bV5-PX-hJM"/>
-                        <segue destination="VVc-wb-2KU" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
+                        <segue destination="IOZ-bI-iuF" kind="presentation" identifier="ShowStressTestViewControllerSegue" id="3ya-Xa-ejL"/>
                         <segue destination="K8O-85-JUK" kind="presentation" identifier="ShowViewsViewControllerSegue" id="Ct7-dL-JYR"/>
                         <segue destination="M69-5z-vrU" kind="presentation" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="ZuO-qJ-3KH"/>
                         <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="hSD-sW-MUc"/>
@@ -1748,6 +1708,14 @@
             </objects>
             <point key="canvasLocation" x="10415" y="12145"/>
         </scene>
+        <!--Stress Test-->
+        <scene sceneID="bH3-nI-qh2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stress Test" id="IOZ-bI-iuF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiz-0G-GF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="13577"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -1755,6 +1723,7 @@
         <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="3ya-Xa-ejL"/>
         <segue reference="bV5-PX-hJM"/>
         <segue reference="DMn-a2-SDu"/>
         <segue reference="4Zw-Q9-imf"/>
@@ -1775,7 +1744,6 @@
         <segue reference="jBG-yk-csM"/>
         <segue reference="6fJ-po-YLM"/>
         <segue reference="kJb-0f-6j4"/>
-        <segue reference="aLP-vy-qaj"/>
         <segue reference="leq-yV-WZf"/>
         <segue reference="Ad2-lN-jOy"/>
         <segue reference="eYK-HC-bv0"/>
