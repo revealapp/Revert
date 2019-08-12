@@ -1612,114 +1612,6 @@
             </objects>
             <point key="canvasLocation" x="10415" y="6584"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Jy7-8q-GLj">
-            <objects>
-                <viewController id="byO-5E-OvQ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ziw-UX-Hr3"/>
-                        <viewControllerLayoutGuide type="bottom" id="EGh-CO-esf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OZP-hg-8yD">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-uU-KMG">
-                                <rect key="frame" x="660" y="227" width="600" height="626"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-qS-iH4">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlC-6U-NBK">
-                                                <rect key="frame" x="0.0" y="0.0" width="316" height="86"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-P1-SPz">
-                                                <rect key="frame" x="405" y="0.0" width="195" height="86"/>
-                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="T8Z-0S-fXZ">
-                                        <rect key="frame" x="0.0" y="186" width="600" height="86"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-ax-Q0c">
-                                                <rect key="frame" x="0.0" y="0.0" width="316" height="86"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-7a-AdB">
-                                                <rect key="frame" x="405" y="0.0" width="195" height="86"/>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                                <state key="normal" title="Button"/>
-                                                <state key="focused">
-                                                    <color key="titleColor" red="1" green="0.95749700790000003" blue="0.15573519790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="LCT-Cd-TCW">
-                                        <rect key="frame" x="0.0" y="372" width="600" height="77"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Disclosure Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr9-W4-1yi">
-                                                <rect key="frame" x="0.0" y="0.0" width="316" height="77"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fft-eb-6w8">
-                                                <rect key="frame" x="483" y="0.0" width="117" height="77"/>
-                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-0a-maY">
-                                        <rect key="frame" x="0.0" y="549" width="600" height="77"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Contact Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-IJ-kB8">
-                                                <rect key="frame" x="0.0" y="0.0" width="316" height="77"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-YB-T5f">
-                                                <rect key="frame" x="483" y="0.0" width="117" height="77"/>
-                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="hr9-W4-1yi" firstAttribute="width" secondItem="xlC-6U-NBK" secondAttribute="width" id="81Q-J0-Wx8"/>
-                                    <constraint firstItem="DMs-qS-iH4" firstAttribute="leading" secondItem="xLv-uU-KMG" secondAttribute="leading" id="DdZ-4k-djD"/>
-                                    <constraint firstItem="gnO-0a-maY" firstAttribute="leading" secondItem="xLv-uU-KMG" secondAttribute="leading" id="GCJ-LT-oUa"/>
-                                    <constraint firstAttribute="trailing" secondItem="gnO-0a-maY" secondAttribute="trailing" id="Gxi-sE-0iG"/>
-                                    <constraint firstItem="xLd-IJ-kB8" firstAttribute="width" secondItem="xlC-6U-NBK" secondAttribute="width" id="I0Z-in-JQD"/>
-                                    <constraint firstAttribute="trailing" secondItem="LCT-Cd-TCW" secondAttribute="trailing" id="bNQ-lp-pp0"/>
-                                    <constraint firstItem="Odm-ax-Q0c" firstAttribute="width" secondItem="xlC-6U-NBK" secondAttribute="width" id="hgr-Lk-zpO"/>
-                                    <constraint firstItem="T8Z-0S-fXZ" firstAttribute="leading" secondItem="xLv-uU-KMG" secondAttribute="leading" id="iwy-KC-Riz"/>
-                                    <constraint firstAttribute="trailing" secondItem="T8Z-0S-fXZ" secondAttribute="trailing" id="ndJ-7v-Iqb"/>
-                                    <constraint firstAttribute="trailing" secondItem="DMs-qS-iH4" secondAttribute="trailing" id="pc2-1B-UV1"/>
-                                    <constraint firstItem="LCT-Cd-TCW" firstAttribute="leading" secondItem="xLv-uU-KMG" secondAttribute="leading" id="u9S-PK-WtC"/>
-                                    <constraint firstAttribute="width" constant="600" id="zZn-Ge-xJ8"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="xLv-uU-KMG" firstAttribute="centerX" secondItem="OZP-hg-8yD" secondAttribute="centerX" id="GHZ-NC-f6J"/>
-                            <constraint firstItem="xLv-uU-KMG" firstAttribute="centerY" secondItem="OZP-hg-8yD" secondAttribute="centerY" id="Zg5-1t-eh6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C3D-yb-sU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="4885"/>
-        </scene>
         <!--Controls View Controller-->
         <scene sceneID="8h6-vh-PSe">
             <objects>
@@ -3034,7 +2926,7 @@
                         <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="E3N-aw-4qX"/>
                         <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Ad2-lN-jOy"/>
                         <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="leq-yV-WZf"/>
-                        <segue destination="byO-5E-OvQ" kind="presentation" identifier="ShowButtonsControllerSegue" id="cwj-qC-tGp"/>
+                        <segue destination="B9Z-5J-L0o" kind="presentation" identifier="ShowButtonsControllerSegue" id="cwj-qC-tGp"/>
                         <segue destination="fht-Wc-Pns" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="SEa-Im-agc"/>
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
@@ -3122,7 +3014,7 @@
                         <segue destination="B3Q-u2-yev" kind="presentation" identifier="ShowAutoLayoutViewControllerSegue" id="hSD-sW-MUc"/>
                         <segue destination="YTP-b7-xvD" kind="presentation" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="CWR-H1-Ubd"/>
                         <segue destination="JQj-gw-CfQ" kind="presentation" identifier="ShowAutoResizingMasksViewControllerSegue" id="vbS-XY-Q0Q"/>
-                        <segue destination="byO-5E-OvQ" kind="presentation" identifier="ShowButtonsControllerSegue" id="kmn-Ux-9Fc"/>
+                        <segue destination="B9Z-5J-L0o" kind="presentation" identifier="ShowButtonsControllerSegue" id="kmn-Ux-9Fc"/>
                         <segue destination="fht-Wc-Pns" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="evt-aZ-EZs"/>
                         <segue destination="Z9o-co-Puy" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
                         <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
@@ -3582,6 +3474,14 @@
             </objects>
             <point key="canvasLocation" x="10415" y="16471"/>
         </scene>
+        <!--Buttons-->
+        <scene sceneID="ImU-0o-Fq4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Buttons" id="B9Z-5J-L0o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZu-ce-Hbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="4885"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
@@ -3592,6 +3492,7 @@
         <image name="x-wing" width="45" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kmn-Ux-9Fc"/>
         <segue reference="jBG-yk-csM"/>
         <segue reference="6fJ-po-YLM"/>
         <segue reference="bKg-Tw-bma"/>
@@ -3605,7 +3506,6 @@
         <segue reference="16b-Sd-dJ0"/>
         <segue reference="HVs-14-jRy"/>
         <segue reference="C6t-OM-qMf"/>
-        <segue reference="cwj-qC-tGp"/>
         <segue reference="Fb8-BI-6uh"/>
         <segue reference="hsh-dy-nEy"/>
         <segue reference="leq-yV-WZf"/>
