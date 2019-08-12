@@ -57,6 +57,7 @@
 		90125DF323012C46003363CA /* Super Deep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF123012C46003363CA /* Super Deep.storyboard */; };
 		90125DF623012C69003363CA /* Map View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF423012C69003363CA /* Map View.storyboard */; };
 		90125DF923012C91003363CA /* Stress Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF723012C91003363CA /* Stress Test.storyboard */; };
+		90125DFC23012CB7003363CA /* Arranged Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DFA23012CB7003363CA /* Arranged Views.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -248,6 +249,7 @@
 		90125DF223012C46003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Super Deep.storyboard"; sourceTree = "<group>"; };
 		90125DF523012C69003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Map View.storyboard"; sourceTree = "<group>"; };
 		90125DF823012C91003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stress Test.storyboard"; sourceTree = "<group>"; };
+		90125DFB23012CB7003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Arranged Views.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 			children = (
 				90125DD623012A66003363CA /* Alert View.storyboard */,
 				90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */,
+				90125DFA23012CB7003363CA /* Arranged Views.storyboard */,
 				90125DC42301220C003363CA /* Buttons.storyboard */,
 				90125DD923012B1C003363CA /* Controls.storyboard */,
 				90125DCD23012903003363CA /* Countries.storyboard */,
@@ -972,6 +975,7 @@
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
 				90125DCF23012903003363CA /* Countries.storyboard in Resources */,
 				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				90125DFC23012CB7003363CA /* Arranged Views.storyboard in Resources */,
 				90125DDB23012B1C003363CA /* Controls.storyboard in Resources */,
 				90125DD5230129C5003363CA /* Not Serializable.storyboard in Resources */,
 				90125DF923012C91003363CA /* Stress Test.storyboard in Resources */,
@@ -1539,6 +1543,14 @@
 				90125DF823012C91003363CA /* Base */,
 			);
 			name = "Stress Test.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DFA23012CB7003363CA /* Arranged Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DFB23012CB7003363CA /* Base */,
+			);
+			name = "Arranged Views.storyboard";
 			sourceTree = "<group>";
 		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
