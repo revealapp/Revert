@@ -173,154 +173,12 @@
                         <segue destination="7Fr-YX-nEp" kind="presentation" identifier="ShowMapViewControllerSegue" id="4hY-3r-U1F"/>
                         <segue destination="x7I-uU-BTr" kind="presentation" identifier="ShowStackViewViewControllerSegue" id="SIv-Cp-spB"/>
                         <segue destination="egh-hO-0eW" kind="presentation" identifier="ShowGLKViewControllerSegue" id="TNP-CT-4h2"/>
-                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
+                        <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="IsZ-cs-9Gn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcb-Ss-98t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="6584"/>
-        </scene>
-        <!--Auto Layout Guides View Controller-->
-        <scene sceneID="oyG-cl-IEw">
-            <objects>
-                <viewController id="zjf-OV-6jT" customClass="AutoLayoutGuidesViewController" customModule="Revert_tvOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FWf-81-mBT"/>
-                        <viewControllerLayoutGuide type="bottom" id="nIh-hh-fw9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kE5-Lf-YFO">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpY-il-KuX">
-                                <rect key="frame" x="200" y="120" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.35848003630000003" green="0.70734065769999999" blue="0.99879956250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="gLE-N7-slb"/>
-                                    <constraint firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="height" multiplier="1:1" id="w7b-qS-0Ug"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEX-ad-pHf">
-                                <rect key="frame" x="1420" y="120" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.98700940609999999" green="0.62185144420000005" blue="0.034429375079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rEX-ad-pHf" secondAttribute="height" multiplier="1:1" id="no4-Ii-QyM"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-qe-doX">
-                                <rect key="frame" x="200" y="660" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.75690394640000003" green="0.17739748950000001" blue="0.99884581569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="height" multiplier="1:1" id="VZc-or-dL1"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neW-U9-LcG">
-                                <rect key="frame" x="1420" y="660" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.1755222827" green="0.80860555170000004" blue="0.71378350260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="neW-U9-LcG" secondAttribute="height" multiplier="1:1" id="QaG-Fk-Dby"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="These two labels are horizontally constrained inside the readable content area, and vertically constrained to a custom guide." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMp-KQ-AZw">
-                                <rect key="frame" x="110" y="444" width="1700" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="userInterfaceStyle=dark">
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are custom focus guides on the sides that redirect focus to the top and bottom squares." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5e-i2-qlG">
-                                <rect key="frame" x="110" y="540" width="1700" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="userInterfaceStyle=dark">
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </variation>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWi-v4-6aF" customClass="FocusableView" customModule="Revert_tvOS" customModuleProvider="target">
-                                <rect key="frame" x="810" y="660" width="300" height="300"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reveal_pretty" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNA-bS-QCH">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.79607843140000001" green="1" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="eNA-bS-QCH" secondAttribute="trailing" id="CbK-dk-7fk"/>
-                                    <constraint firstAttribute="bottom" secondItem="eNA-bS-QCH" secondAttribute="bottom" id="OIJ-M8-grN"/>
-                                    <constraint firstItem="eNA-bS-QCH" firstAttribute="top" secondItem="FWi-v4-6aF" secondAttribute="top" id="cRG-k6-O8L"/>
-                                    <constraint firstAttribute="width" secondItem="FWi-v4-6aF" secondAttribute="height" multiplier="1:1" id="kHe-JN-KRR"/>
-                                    <constraint firstItem="eNA-bS-QCH" firstAttribute="leading" secondItem="FWi-v4-6aF" secondAttribute="leading" id="n2f-5T-ZXk"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="rEX-ad-pHf" secondAttribute="trailing" constant="90" placeholder="YES" id="0hM-2b-yZ1"/>
-                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="neW-U9-LcG" secondAttribute="bottom" constant="60" id="4m3-18-dm6"/>
-                            <constraint firstItem="n5e-i2-qlG" firstAttribute="top" secondItem="kE5-Lf-YFO" secondAttribute="centerY" placeholder="YES" id="CvW-VG-4dg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="n5e-i2-qlG" secondAttribute="trailing" placeholder="YES" id="Dvy-D1-2jT"/>
-                            <constraint firstItem="FWi-v4-6aF" firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="width" id="IJl-lh-Usx"/>
-                            <constraint firstItem="neW-U9-LcG" firstAttribute="width" secondItem="Tud-qe-doX" secondAttribute="width" id="Lwg-tW-JT7"/>
-                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="Tud-qe-doX" secondAttribute="bottom" constant="60" id="M5C-dO-hql"/>
-                            <constraint firstItem="fpY-il-KuX" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="NUE-R1-ni5"/>
-                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="bottom" secondItem="kE5-Lf-YFO" secondAttribute="centerY" placeholder="YES" id="R4h-oN-XGB"/>
-                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" placeholder="YES" id="RDg-Mu-Sbf"/>
-                            <constraint firstItem="fpY-il-KuX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="Srr-eu-8ew"/>
-                            <constraint firstItem="Tud-qe-doX" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="VBe-JZ-keG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="n5e-i2-qlG" secondAttribute="leading" placeholder="YES" id="VyK-qj-CUS"/>
-                            <constraint firstItem="nIh-hh-fw9" firstAttribute="top" secondItem="FWi-v4-6aF" secondAttribute="bottom" constant="60" id="WOJ-OL-bAk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="neW-U9-LcG" secondAttribute="trailing" constant="90" placeholder="YES" id="Yg6-6v-N8s"/>
-                            <constraint firstItem="rEX-ad-pHf" firstAttribute="width" secondItem="fpY-il-KuX" secondAttribute="width" id="ZUp-tl-xtR"/>
-                            <constraint firstItem="rEX-ad-pHf" firstAttribute="top" secondItem="FWf-81-mBT" secondAttribute="bottom" constant="60" id="bQG-xE-gW8"/>
-                            <constraint firstItem="gMp-KQ-AZw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fpY-il-KuX" secondAttribute="bottom" constant="8" symbolic="YES" id="bhd-0R-LsX"/>
-                            <constraint firstItem="Tud-qe-doX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n5e-i2-qlG" secondAttribute="bottom" constant="8" symbolic="YES" id="fup-Dk-RAD"/>
-                            <constraint firstItem="Tud-qe-doX" firstAttribute="leading" secondItem="kE5-Lf-YFO" secondAttribute="leadingMargin" constant="90" placeholder="YES" id="nsQ-vV-HhT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gMp-KQ-AZw" secondAttribute="trailing" placeholder="YES" id="oTG-vA-tpe"/>
-                            <constraint firstItem="FWi-v4-6aF" firstAttribute="centerX" secondItem="kE5-Lf-YFO" secondAttribute="centerX" id="wsg-eg-DBl"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="bottomLabel" destination="n5e-i2-qlG" id="xLA-kG-vJy"/>
-                        <outlet property="bottomLeftView" destination="Tud-qe-doX" id="p89-9k-XJT"/>
-                        <outlet property="bottomRightView" destination="neW-U9-LcG" id="SkE-h7-FsQ"/>
-                        <outlet property="focusableImageView" destination="eNA-bS-QCH" id="D8J-15-y2n"/>
-                        <outlet property="focusableView" destination="FWi-v4-6aF" id="zBb-aw-3ar"/>
-                        <outlet property="preferredFocusedView" destination="FWi-v4-6aF" id="YWy-Yz-oKl"/>
-                        <outlet property="topLabel" destination="gMp-KQ-AZw" id="n0D-Yz-sNN"/>
-                        <outlet property="topLeftView" destination="fpY-il-KuX" id="RV1-JC-fZ7"/>
-                        <outlet property="topRightView" destination="rEX-ad-pHf" id="v3s-Fg-9nW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MBi-I1-RZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5719" y="16471"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JnT-wT-a3x">
@@ -423,7 +281,7 @@
                         <segue destination="B9Z-5J-L0o" kind="presentation" identifier="ShowButtonsControllerSegue" id="cwj-qC-tGp"/>
                         <segue destination="2mN-ph-Ujr" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="SEa-Im-agc"/>
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="bKg-Tw-bma"/>
-                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
+                        <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="eYK-HC-bv0"/>
                         <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="6fJ-po-YLM"/>
                         <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="jBG-yk-csM"/>
                     </connections>
@@ -511,7 +369,7 @@
                         <segue destination="B9Z-5J-L0o" kind="presentation" identifier="ShowButtonsControllerSegue" id="kmn-Ux-9Fc"/>
                         <segue destination="2mN-ph-Ujr" kind="presentation" identifier="ShowSegmentedControlsControllerSegue" id="evt-aZ-EZs"/>
                         <segue destination="kkB-xb-e0d" kind="presentation" identifier="ShowTextFieldsControllerSegue" id="o3C-W5-eps"/>
-                        <segue destination="zjf-OV-6jT" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
+                        <segue destination="w24-1j-ugh" kind="presentation" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="1aO-ZH-che"/>
                         <segue destination="hSd-Xk-083" kind="presentation" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="Smw-db-KKH"/>
                         <segue destination="TIS-Hl-rzN" kind="presentation" identifier="ShowVisualEffectViewControllerSegue" id="1t7-4N-Dqp"/>
                     </connections>
@@ -1004,13 +862,21 @@
             </objects>
             <point key="canvasLocation" x="10415" y="14985"/>
         </scene>
+        <!--Auto Layout Guides-->
+        <scene sceneID="P1H-DI-zAc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auto Layout Guides" id="w24-1j-ugh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xw-7f-UM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="16471"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banner_WhatsNew" width="1920" height="720"/>
         <image name="office" width="1276" height="850.5"/>
-        <image name="reveal_pretty" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eYK-HC-bv0"/>
         <segue reference="vbS-XY-Q0Q"/>
         <segue reference="Ad2-lN-jOy"/>
         <segue reference="E3N-aw-4qX"/>
@@ -1036,6 +902,5 @@
         <segue reference="kmn-Ux-9Fc"/>
         <segue reference="jBG-yk-csM"/>
         <segue reference="6fJ-po-YLM"/>
-        <segue reference="eYK-HC-bv0"/>
     </inferredMetricsTieBreakers>
 </document>
