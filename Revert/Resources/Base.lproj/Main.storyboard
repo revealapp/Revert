@@ -2442,7 +2442,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="yFx-FN-ibI" kind="showDetail" identifier="ShowViewsViewControllerSegue" id="tHE-5V-EJW"/>
-                        <segue destination="ml1-R4-Rye" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
+                        <segue destination="oLV-AO-mtx" kind="showDetail" identifier="ShowAutoLayoutViewControllerSegue" id="uxp-Ve-O30"/>
                         <segue destination="87d-F4-gBz" kind="showDetail" identifier="ShowAutoLayoutAlignmentsViewControllerSegue" id="Vh9-0V-Cxg"/>
                         <segue destination="vrt-Fi-02E" kind="showDetail" identifier="ShowAutoLayoutMarginsViewControllerSegue" id="Esj-wD-Pfb"/>
                         <segue destination="TZa-bh-WS3" kind="showDetail" identifier="ShowAutoResizingMasksViewControllerSegue" id="Omc-HU-oDC"/>
@@ -2476,166 +2476,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="575" y="-3167"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="l8s-8R-D1H">
-            <objects>
-                <navigationController id="ml1-R4-Rye" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OyK-9W-Q4r">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Ae9-a4-dBl" kind="relationship" relationship="rootViewController" id="5rB-uA-8A1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ukX-hJ-Cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626" y="-4009"/>
-        </scene>
-        <!--Auto Layout-->
-        <scene sceneID="K1c-e7-lit">
-            <objects>
-                <viewController id="Ae9-a4-dBl" customClass="RevertViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kkf-X6-llX"/>
-                        <viewControllerLayoutGuide type="bottom" id="7Xj-bo-Bd6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="e2E-bh-HFh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eow-WP-D5J">
-                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPk-JU-Yv3">
-                                        <rect key="frame" x="20" y="20" width="374" height="25"/>
-                                        <color key="backgroundColor" red="0.34494423866271973" green="0.70911610126495361" blue="0.99616682529449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="SvM-AP-Sgc"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-js-vJS">
-                                        <rect key="frame" x="20" y="583" width="374" height="25"/>
-                                        <color key="backgroundColor" red="0.34494423866271973" green="0.70911610126495361" blue="0.99616682529449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="N1c-jK-Z64"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QI8-18-dJq">
-                                        <rect key="frame" x="20" y="222.66666666666669" width="183" height="183"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-pA-VYO">
-                                                <rect key="frame" x="45.666666666666664" y="45.666666666666622" width="91.666666666666686" height="91.333333333333314"/>
-                                                <color key="backgroundColor" red="0.34494423866271973" green="0.70911610126495361" blue="0.99616682529449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Etd-pA-VYO" secondAttribute="height" multiplier="1:1" id="hLT-gS-ifg"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.99987119436264038" green="0.99998223781585693" blue="0.99984109401702881" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="Etd-pA-VYO" secondAttribute="centerX" id="H8g-td-a7o"/>
-                                            <constraint firstItem="Etd-pA-VYO" firstAttribute="height" secondItem="QI8-18-dJq" secondAttribute="height" multiplier="0.5" id="LDJ-Ii-1G4"/>
-                                            <constraint firstAttribute="centerY" secondItem="Etd-pA-VYO" secondAttribute="centerY" id="gFK-6g-5Hd"/>
-                                            <constraint firstAttribute="width" secondItem="QI8-18-dJq" secondAttribute="height" multiplier="1:1" id="mo0-A2-Fd1"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eq-yE-ba2">
-                                        <rect key="frame" x="211" y="222.66666666666669" width="183" height="183"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lq-dQ-ALK">
-                                                <rect key="frame" x="45.666666666666693" y="45.666666666666622" width="91.666666666666686" height="91.333333333333314"/>
-                                                <color key="backgroundColor" red="0.34494423866271973" green="0.70911610126495361" blue="0.99616682529449463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.99987119436264038" green="0.99998223781585693" blue="0.99984109401702881" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="centerY" secondItem="5lq-dQ-ALK" secondAttribute="centerY" id="crj-Xp-UAE"/>
-                                            <constraint firstItem="5lq-dQ-ALK" firstAttribute="width" secondItem="5lq-dQ-ALK" secondAttribute="height" multiplier="1:1" id="gJr-Rl-gAg"/>
-                                            <constraint firstAttribute="centerX" secondItem="5lq-dQ-ALK" secondAttribute="centerX" id="gu0-lH-MJv"/>
-                                            <constraint firstItem="5lq-dQ-ALK" firstAttribute="height" secondItem="6eq-yE-ba2" secondAttribute="height" multiplier="0.5" id="jYI-Cw-WLg"/>
-                                            <constraint firstAttribute="width" secondItem="6eq-yE-ba2" secondAttribute="height" multiplier="1:1" id="zhW-SM-Xaw"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.11671829223632812" green="0.11674070358276367" blue="0.11671452969312668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="yPk-JU-Yv3" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="top" constant="20" symbolic="YES" id="3Yr-F6-Sgp"/>
-                                    <constraint firstItem="6eq-yE-ba2" firstAttribute="width" secondItem="QI8-18-dJq" secondAttribute="width" id="7wf-p5-PX6"/>
-                                    <constraint firstItem="ogi-js-vJS" firstAttribute="leading" secondItem="Eow-WP-D5J" secondAttribute="leading" constant="20" symbolic="YES" id="ElB-Ro-b7Q"/>
-                                    <constraint firstAttribute="trailing" secondItem="yPk-JU-Yv3" secondAttribute="trailing" constant="20" symbolic="YES" id="PEQ-I7-1lf"/>
-                                    <constraint firstAttribute="centerY" secondItem="QI8-18-dJq" secondAttribute="centerY" id="Yko-ff-EOE"/>
-                                    <constraint firstAttribute="centerY" secondItem="6eq-yE-ba2" secondAttribute="centerY" id="bFl-7I-bZY"/>
-                                    <constraint firstItem="6eq-yE-ba2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yPk-JU-Yv3" secondAttribute="bottom" constant="8" symbolic="YES" id="ee1-lW-N7a"/>
-                                    <constraint firstAttribute="trailing" secondItem="ogi-js-vJS" secondAttribute="trailing" constant="20" symbolic="YES" id="egK-xK-sH5"/>
-                                    <constraint firstAttribute="trailing" secondItem="6eq-yE-ba2" secondAttribute="trailing" constant="20" symbolic="YES" id="f0c-hZ-eYm"/>
-                                    <constraint firstItem="ogi-js-vJS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6eq-yE-ba2" secondAttribute="bottom" constant="8" symbolic="YES" id="fxV-Z9-vj2"/>
-                                    <constraint firstAttribute="bottom" secondItem="ogi-js-vJS" secondAttribute="bottom" constant="20" symbolic="YES" id="h5v-qO-atO"/>
-                                    <constraint firstItem="yPk-JU-Yv3" firstAttribute="leading" secondItem="Eow-WP-D5J" secondAttribute="leading" constant="20" symbolic="YES" id="huT-Bn-vmD"/>
-                                    <constraint firstItem="QI8-18-dJq" firstAttribute="leading" secondItem="Eow-WP-D5J" secondAttribute="leading" constant="20" symbolic="YES" id="qPf-wV-eNx"/>
-                                    <constraint firstItem="6eq-yE-ba2" firstAttribute="leading" secondItem="QI8-18-dJq" secondAttribute="trailing" priority="750" constant="8" symbolic="YES" id="udS-J2-ZQp"/>
-                                    <constraint firstItem="6eq-yE-ba2" firstAttribute="height" secondItem="QI8-18-dJq" secondAttribute="height" id="x47-Sr-54H"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Eow-WP-D5J" firstAttribute="leading" secondItem="e2E-bh-HFh" secondAttribute="leading" id="4n6-QH-cSr"/>
-                            <constraint firstItem="7Xj-bo-Bd6" firstAttribute="top" secondItem="Eow-WP-D5J" secondAttribute="bottom" id="UUL-5S-diC"/>
-                            <constraint firstItem="Eow-WP-D5J" firstAttribute="top" secondItem="Kkf-X6-llX" secondAttribute="bottom" id="cwq-Uc-AER"/>
-                            <constraint firstAttribute="trailing" secondItem="Eow-WP-D5J" secondAttribute="trailing" id="zH2-io-riw"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Auto Layout" id="IBB-fa-tPC">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="rfj-DI-bjb">
-                            <connections>
-                                <segue destination="Ite-6q-oTP" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="hh8-91-upr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hKf-VH-X0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2443" y="-4009"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="so4-P1-0qU">
@@ -3523,6 +3363,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1g1-uK-sde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3247" y="-4703"/>
+        </scene>
+        <!--Auto Layout-->
+        <scene sceneID="Aaj-J6-QkT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auto Layout" id="oLV-AO-mtx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zr6-ge-ZlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-4009"/>
         </scene>
     </scenes>
     <resources>
