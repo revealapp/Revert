@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# Load Testing Dependencies"
-source "./Scripts/install-gems.sh"
+set -eu
+set -o pipefail 
 
-# Build Revert
-bundle exec fastlane build
+export NSUnbufferedIO=YES
+
+xcodebuild -configuration Debug -scheme Revert -destination "platform=iOS Simulator,OS=13.0,name=iPhone 11" ENABLE_TESTABILITY=YES build
+xcodebuild -configuration Debug -scheme Revert-tvOS -destination "platform=tvOS Simulator,OS=13.0,name=Apple TV" ENABLE_TESTABILITY=YES build
