@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [master, release/*]
+  pull_request:
+    branches: [master]
+    
+jobs:
+  build:
+    name: Xcode Build
+    runs-on: macOS-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      env:
+        DEVELOPER_DIR: "/Applications/Xcode_11.app/Contents/Developer"
+      run: "Scripts/ci.sh"
