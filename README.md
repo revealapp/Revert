@@ -31,7 +31,7 @@ Revert has helped us isolate changes in behaviour between iOS versions and verif
 - [GitHub](https://github.com/revealapp)
 - [Support](http://support.revealapp.com)
 
-![Build status](https://github.com/revealapp/Revert/workflows/.github/workflows/continuous-integration.yml/badge.svg)
+![Build status](https://github.com/revealapp/Revert/workflows/CI/badge.svg)
 
 ## Licensing
 
