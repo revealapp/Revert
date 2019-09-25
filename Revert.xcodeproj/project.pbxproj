@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -320,6 +320,7 @@
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
+			wrapsLines = 1;
 		};
 		9A6850B91AD4A20E00ACCE29 /* Products */ = {
 			isa = PBXGroup;
@@ -739,7 +740,7 @@
 				};
 			};
 			buildConfigurationList = 9A6850B31AD4A20E00ACCE29 /* Build configuration list for PBXProject "Revert" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
