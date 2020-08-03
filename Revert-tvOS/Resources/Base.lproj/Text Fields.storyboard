@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z9o-co-Puy">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WiH-gn-raL">
+            <objects>
+                <viewController id="Z9o-co-Puy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AQ1-DT-dmm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lib-rM-WfO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xLp-Vi-Shb">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-gS-uAI">
+                                <rect key="frame" x="460" y="444" width="1000" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="nX6-FD-LIQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounded Rect TextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtL-2P-0n1">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="46"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmU-Hf-udV">
+                                                <rect key="frame" x="390" y="0.0" width="610" height="46"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-43-Pc7">
+                                        <rect key="frame" x="0.0" y="146" width="1000" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Border TextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcv-sx-8PK">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="46"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcC-lb-lZW">
+                                                <rect key="frame" x="390" y="0.0" width="610" height="46"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nX6-FD-LIQ" firstAttribute="leading" secondItem="1S7-gS-uAI" secondAttribute="leading" id="8Dt-bd-Aay"/>
+                                    <constraint firstAttribute="trailing" secondItem="h8b-43-Pc7" secondAttribute="trailing" id="AXR-bo-5pF"/>
+                                    <constraint firstItem="jcv-sx-8PK" firstAttribute="width" secondItem="jtL-2P-0n1" secondAttribute="width" id="SWr-hF-g8Z"/>
+                                    <constraint firstItem="h8b-43-Pc7" firstAttribute="leading" secondItem="1S7-gS-uAI" secondAttribute="leading" id="Svf-Iw-lEz"/>
+                                    <constraint firstItem="jcv-sx-8PK" firstAttribute="width" secondItem="jtL-2P-0n1" secondAttribute="width" id="XnO-Xk-5GM"/>
+                                    <constraint firstAttribute="trailing" secondItem="nX6-FD-LIQ" secondAttribute="trailing" id="eH3-xm-rpy"/>
+                                    <constraint firstItem="WcC-lb-lZW" firstAttribute="width" secondItem="LmU-Hf-udV" secondAttribute="width" id="jyb-ti-smV"/>
+                                    <constraint firstAttribute="width" constant="1000" id="wNg-eU-hmv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1S7-gS-uAI" firstAttribute="centerY" secondItem="xLp-Vi-Shb" secondAttribute="centerY" id="s6Y-Z5-gER"/>
+                            <constraint firstItem="1S7-gS-uAI" firstAttribute="centerX" secondItem="xLp-Vi-Shb" secondAttribute="centerX" id="xya-Hf-7rf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwE-z4-W03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8071" y="4885"/>
+        </scene>
+    </scenes>
+</document>

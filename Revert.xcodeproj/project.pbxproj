@@ -9,6 +9,62 @@
 /* Begin PBXBuildFile section */
 		7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
 		7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */; };
+		90125D672301166F003363CA /* Visual Effect View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D652301166F003363CA /* Visual Effect View.storyboard */; };
+		90125D6A2301176B003363CA /* Broken Constraints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D682301176B003363CA /* Broken Constraints.storyboard */; };
+		90125D6D230117ED003363CA /* Stress Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D6B230117ED003363CA /* Stress Test.storyboard */; };
+		90125D702301184D003363CA /* Layer Properties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D6E2301184D003363CA /* Layer Properties.storyboard */; };
+		90125D73230118AB003363CA /* Autoresizing Masks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D71230118AB003363CA /* Autoresizing Masks.storyboard */; };
+		90125D76230118EB003363CA /* Not Serializable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D74230118EB003363CA /* Not Serializable.storyboard */; };
+		90125D792301192A003363CA /* Auto Layout Margins.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D772301192A003363CA /* Auto Layout Margins.storyboard */; };
+		90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D7A2301198A003363CA /* Bounds Change and Anchor Point.storyboard */; };
+		90125D7F230119C4003363CA /* Auto Layout Alignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D7D230119C4003363CA /* Auto Layout Alignments.storyboard */; };
+		90125D82230119F9003363CA /* Super Deep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D80230119F9003363CA /* Super Deep.storyboard */; };
+		90125D8523011A1F003363CA /* Auto Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8323011A1F003363CA /* Auto Layout.storyboard */; };
+		90125D8A23011A84003363CA /* Transform Layers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8823011A84003363CA /* Transform Layers.storyboard */; };
+		90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8B23011AB2003363CA /* Arranged Views.storyboard */; };
+		90125D9023011AF2003363CA /* Transform Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D8E23011AF2003363CA /* Transform Views.storyboard */; };
+		90125D9323011B2B003363CA /* Collection View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D9123011B2B003363CA /* Collection View.storyboard */; };
+		90125D9623011B5A003363CA /* SpriteKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D9423011B5A003363CA /* SpriteKit.storyboard */; };
+		90125D9923011B88003363CA /* Table View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D9723011B88003363CA /* Table View.storyboard */; };
+		90125D9C23011BB4003363CA /* Alert View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D9A23011BB4003363CA /* Alert View.storyboard */; };
+		90125D9F23011BE6003363CA /* Map View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125D9D23011BE6003363CA /* Map View.storyboard */; };
+		90125DA223011C09003363CA /* Picker View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA023011C09003363CA /* Picker View.storyboard */; };
+		90125DA523011C38003363CA /* Scroll View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA323011C38003363CA /* Scroll View.storyboard */; };
+		90125DA823011C60003363CA /* Web View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA623011C60003363CA /* Web View.storyboard */; };
+		90125DAB23011C84003363CA /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DA923011C84003363CA /* Views.storyboard */; };
+		90125DAE23011CA7003363CA /* OpenGL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DAC23011CA7003363CA /* OpenGL.storyboard */; };
+		90125DB123011CCD003363CA /* Controls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DAF23011CCD003363CA /* Controls.storyboard */; };
+		90125DB423011CF1003363CA /* Stack View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DB223011CF1003363CA /* Stack View.storyboard */; };
+		90125DB723011D12003363CA /* Bars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DB523011D12003363CA /* Bars.storyboard */; };
+		90125DBA23011D45003363CA /* Safari.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DB823011D45003363CA /* Safari.storyboard */; };
+		90125DBD23011D6B003363CA /* Auto Layout Guides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DBB23011D6B003363CA /* Auto Layout Guides.storyboard */; };
+		90125DC023011D97003363CA /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DBE23011D97003363CA /* Info.storyboard */; };
+		90125DC62301220C003363CA /* Buttons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DC42301220C003363CA /* Buttons.storyboard */; };
+		90125DC923012862003363CA /* Text Fields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DC723012862003363CA /* Text Fields.storyboard */; };
+		90125DCC230128CB003363CA /* Segmented Controls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DCA230128CB003363CA /* Segmented Controls.storyboard */; };
+		90125DCF23012903003363CA /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DCD23012903003363CA /* Countries.storyboard */; };
+		90125DD223012937003363CA /* Layers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD023012937003363CA /* Layers.storyboard */; };
+		90125DD5230129C5003363CA /* Not Serializable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD3230129C5003363CA /* Not Serializable.storyboard */; };
+		90125DD823012A66003363CA /* Alert View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD623012A66003363CA /* Alert View.storyboard */; };
+		90125DDB23012B1C003363CA /* Controls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DD923012B1C003363CA /* Controls.storyboard */; };
+		90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DDC23012B44003363CA /* Scroll View.storyboard */; };
+		90125DE123012B6D003363CA /* Transform Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DDF23012B6D003363CA /* Transform Views.storyboard */; };
+		90125DE423012B90003363CA /* GLKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DE223012B90003363CA /* GLKit.storyboard */; };
+		90125DE723012BB4003363CA /* Transform Layers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DE523012BB4003363CA /* Transform Layers.storyboard */; };
+		90125DEA23012BD3003363CA /* Stack View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DE823012BD3003363CA /* Stack View.storyboard */; };
+		90125DED23012C03003363CA /* Anchor Point Bounds Change.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */; };
+		90125DF023012C27003363CA /* SpriteKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DEE23012C27003363CA /* SpriteKit.storyboard */; };
+		90125DF323012C46003363CA /* Super Deep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF123012C46003363CA /* Super Deep.storyboard */; };
+		90125DF623012C69003363CA /* Map View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF423012C69003363CA /* Map View.storyboard */; };
+		90125DF923012C91003363CA /* Stress Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DF723012C91003363CA /* Stress Test.storyboard */; };
+		90125DFC23012CB7003363CA /* Arranged Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DFA23012CB7003363CA /* Arranged Views.storyboard */; };
+		90125DFF23012CDA003363CA /* Auto Layout Margins.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */; };
+		90125E0223012CFC003363CA /* Auto Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0023012CFC003363CA /* Auto Layout.storyboard */; };
+		90125E0523012D1B003363CA /* Auto Layout Alignments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0323012D1B003363CA /* Auto Layout Alignments.storyboard */; };
+		90125E0823012D3D003363CA /* Auto Resizing Masks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0623012D3D003363CA /* Auto Resizing Masks.storyboard */; };
+		90125E0B23012D61003363CA /* Auto Layout Guides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0923012D61003363CA /* Auto Layout Guides.storyboard */; };
+		90125E0E23012D81003363CA /* Broken Constraints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0C23012D81003363CA /* Broken Constraints.storyboard */; };
+		90125E1123012DA0003363CA /* Visual Effect View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90125E0F23012DA0003363CA /* Visual Effect View.storyboard */; };
 		90E99D2D1F5D293600053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2E1F5D293700053684 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9021D96E1F5CFFC700A6A93E /* Data */; };
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
@@ -152,6 +208,62 @@
 
 /* Begin PBXFileReference section */
 		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
+		90125D662301166F003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Revert/Resources/Base.lproj/Visual Effect View.storyboard"; sourceTree = "<group>"; };
+		90125D692301176B003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Revert/Resources/Base.lproj/Broken Constraints.storyboard"; sourceTree = "<group>"; };
+		90125D6C230117ED003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stress Test.storyboard"; sourceTree = "<group>"; };
+		90125D6F2301184D003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Layer Properties.storyboard"; sourceTree = "<group>"; };
+		90125D72230118AB003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Autoresizing Masks.storyboard"; sourceTree = "<group>"; };
+		90125D75230118EB003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Not Serializable.storyboard"; sourceTree = "<group>"; };
+		90125D782301192A003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Margins.storyboard"; sourceTree = "<group>"; };
+		90125D7B2301198A003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Bounds Change and Anchor Point.storyboard"; sourceTree = "<group>"; };
+		90125D7E230119C4003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Alignments.storyboard"; sourceTree = "<group>"; };
+		90125D81230119F9003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Super Deep.storyboard"; sourceTree = "<group>"; };
+		90125D8423011A1F003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout.storyboard"; sourceTree = "<group>"; };
+		90125D8923011A84003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Layers.storyboard"; sourceTree = "<group>"; };
+		90125D8C23011AB2003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Arranged Views.storyboard"; sourceTree = "<group>"; };
+		90125D8F23011AF2003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Views.storyboard"; sourceTree = "<group>"; };
+		90125D9223011B2B003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Revert/Resources/Base.lproj/Collection View.storyboard"; sourceTree = "<group>"; };
+		90125D9523011B5A003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpriteKit.storyboard; sourceTree = "<group>"; };
+		90125D9823011B88003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Table View.storyboard"; sourceTree = "<group>"; };
+		90125D9B23011BB4003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Alert View.storyboard"; sourceTree = "<group>"; };
+		90125D9E23011BE6003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Map View.storyboard"; sourceTree = "<group>"; };
+		90125DA123011C09003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Picker View.storyboard"; sourceTree = "<group>"; };
+		90125DA423011C38003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Scroll View.storyboard"; sourceTree = "<group>"; };
+		90125DA723011C60003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Web View.storyboard"; sourceTree = "<group>"; };
+		90125DAA23011C84003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Views.storyboard; sourceTree = "<group>"; };
+		90125DAD23011CA7003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OpenGL.storyboard; sourceTree = "<group>"; };
+		90125DB023011CCD003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Controls.storyboard; sourceTree = "<group>"; };
+		90125DB323011CF1003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stack View.storyboard"; sourceTree = "<group>"; };
+		90125DB623011D12003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bars.storyboard; sourceTree = "<group>"; };
+		90125DB923011D45003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Safari.storyboard; sourceTree = "<group>"; };
+		90125DBC23011D6B003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Guides.storyboard"; sourceTree = "<group>"; };
+		90125DBF23011D97003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Info.storyboard; sourceTree = "<group>"; };
+		90125DC52301220C003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buttons.storyboard; sourceTree = "<group>"; };
+		90125DC823012862003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Text Fields.storyboard"; sourceTree = "<group>"; };
+		90125DCB230128CB003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Segmented Controls.storyboard"; sourceTree = "<group>"; };
+		90125DCE23012903003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Countries.storyboard; sourceTree = "<group>"; };
+		90125DD123012937003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Layers.storyboard; sourceTree = "<group>"; };
+		90125DD4230129C5003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Not Serializable.storyboard"; sourceTree = "<group>"; };
+		90125DD723012A66003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Alert View.storyboard"; sourceTree = "<group>"; };
+		90125DDA23012B1C003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Controls.storyboard; sourceTree = "<group>"; };
+		90125DDD23012B44003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Scroll View.storyboard"; sourceTree = "<group>"; };
+		90125DE023012B6D003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Views.storyboard"; sourceTree = "<group>"; };
+		90125DE323012B90003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GLKit.storyboard; sourceTree = "<group>"; };
+		90125DE623012BB4003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Transform Layers.storyboard"; sourceTree = "<group>"; };
+		90125DE923012BD3003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stack View.storyboard"; sourceTree = "<group>"; };
+		90125DEC23012C03003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Anchor Point Bounds Change.storyboard"; sourceTree = "<group>"; };
+		90125DEF23012C27003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpriteKit.storyboard; sourceTree = "<group>"; };
+		90125DF223012C46003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Super Deep.storyboard"; sourceTree = "<group>"; };
+		90125DF523012C69003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Map View.storyboard"; sourceTree = "<group>"; };
+		90125DF823012C91003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Stress Test.storyboard"; sourceTree = "<group>"; };
+		90125DFB23012CB7003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Arranged Views.storyboard"; sourceTree = "<group>"; };
+		90125DFE23012CDA003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Margins.storyboard"; sourceTree = "<group>"; };
+		90125E0123012CFC003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout.storyboard"; sourceTree = "<group>"; };
+		90125E0423012D1B003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Alignments.storyboard"; sourceTree = "<group>"; };
+		90125E0723012D3D003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Resizing Masks.storyboard"; sourceTree = "<group>"; };
+		90125E0A23012D61003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Auto Layout Guides.storyboard"; sourceTree = "<group>"; };
+		90125E0D23012D81003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Broken Constraints.storyboard"; sourceTree = "<group>"; };
+		90125E1023012DA0003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Visual Effect View.storyboard"; sourceTree = "<group>"; };
 		9021D96E1F5CFFC700A6A93E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		9021D9711F5D010800A6A93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -292,9 +404,39 @@
 		9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				90125D9A23011BB4003363CA /* Alert View.storyboard */,
+				90125D8B23011AB2003363CA /* Arranged Views.storyboard */,
+				90125D7D230119C4003363CA /* Auto Layout Alignments.storyboard */,
+				90125DBB23011D6B003363CA /* Auto Layout Guides.storyboard */,
+				90125D772301192A003363CA /* Auto Layout Margins.storyboard */,
+				90125D8323011A1F003363CA /* Auto Layout.storyboard */,
+				90125D71230118AB003363CA /* Autoresizing Masks.storyboard */,
+				90125DB523011D12003363CA /* Bars.storyboard */,
+				90125D7A2301198A003363CA /* Bounds Change and Anchor Point.storyboard */,
+				90125D682301176B003363CA /* Broken Constraints.storyboard */,
+				90125D9123011B2B003363CA /* Collection View.storyboard */,
+				90125DAF23011CCD003363CA /* Controls.storyboard */,
 				9AF1B3171AE5EBE400BB626B /* HomeCell.xib */,
+				90125DBE23011D97003363CA /* Info.storyboard */,
+				90125D6E2301184D003363CA /* Layer Properties.storyboard */,
 				9A6850C31AD4A20E00ACCE29 /* Main.storyboard */,
+				90125D9D23011BE6003363CA /* Map View.storyboard */,
+				90125D74230118EB003363CA /* Not Serializable.storyboard */,
+				90125DAC23011CA7003363CA /* OpenGL.storyboard */,
+				90125DA023011C09003363CA /* Picker View.storyboard */,
+				90125DB823011D45003363CA /* Safari.storyboard */,
+				90125DA323011C38003363CA /* Scroll View.storyboard */,
+				90125D9423011B5A003363CA /* SpriteKit.storyboard */,
+				90125DB223011CF1003363CA /* Stack View.storyboard */,
 				B59998E61BC36092002FE92C /* StackView.xib */,
+				90125D6B230117ED003363CA /* Stress Test.storyboard */,
+				90125D80230119F9003363CA /* Super Deep.storyboard */,
+				90125D9723011B88003363CA /* Table View.storyboard */,
+				90125D8823011A84003363CA /* Transform Layers.storyboard */,
+				90125D8E23011AF2003363CA /* Transform Views.storyboard */,
+				90125DA923011C84003363CA /* Views.storyboard */,
+				90125D652301166F003363CA /* Visual Effect View.storyboard */,
+				90125DA623011C60003363CA /* Web View.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -440,9 +582,35 @@
 		BB27205C1C9B8EAF002E53EE /* Storyboards & XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				90125DD623012A66003363CA /* Alert View.storyboard */,
+				90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */,
+				90125DFA23012CB7003363CA /* Arranged Views.storyboard */,
+				90125E0323012D1B003363CA /* Auto Layout Alignments.storyboard */,
+				90125E0923012D61003363CA /* Auto Layout Guides.storyboard */,
+				90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */,
+				90125E0023012CFC003363CA /* Auto Layout.storyboard */,
+				90125E0623012D3D003363CA /* Auto Resizing Masks.storyboard */,
+				90125E0C23012D81003363CA /* Broken Constraints.storyboard */,
+				90125DC42301220C003363CA /* Buttons.storyboard */,
+				90125DD923012B1C003363CA /* Controls.storyboard */,
+				90125DCD23012903003363CA /* Countries.storyboard */,
+				90125DE223012B90003363CA /* GLKit.storyboard */,
 				BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */,
+				90125DD023012937003363CA /* Layers.storyboard */,
+				BB2720521C9B8E44002E53EE /* Main.storyboard */,
+				90125DF423012C69003363CA /* Map View.storyboard */,
+				90125DD3230129C5003363CA /* Not Serializable.storyboard */,
+				90125DDC23012B44003363CA /* Scroll View.storyboard */,
+				90125DCA230128CB003363CA /* Segmented Controls.storyboard */,
+				90125DEE23012C27003363CA /* SpriteKit.storyboard */,
+				90125DE823012BD3003363CA /* Stack View.storyboard */,
 				BB957F8D1CA0B57C000F09CA /* StackView.xib */,
+				90125DF723012C91003363CA /* Stress Test.storyboard */,
+				90125DF123012C46003363CA /* Super Deep.storyboard */,
+				90125DC723012862003363CA /* Text Fields.storyboard */,
+				90125DE523012BB4003363CA /* Transform Layers.storyboard */,
+				90125DDF23012B6D003363CA /* Transform Views.storyboard */,
+				90125E0F23012DA0003363CA /* Visual Effect View.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -763,13 +931,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90125D76230118EB003363CA /* Not Serializable.storyboard in Resources */,
+				90125D672301166F003363CA /* Visual Effect View.storyboard in Resources */,
+				90125DA223011C09003363CA /* Picker View.storyboard in Resources */,
+				90125D9623011B5A003363CA /* SpriteKit.storyboard in Resources */,
 				BB735B461C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				90125D9923011B88003363CA /* Table View.storyboard in Resources */,
 				9A6850C71AD4A20E00ACCE29 /* Images.xcassets in Resources */,
+				90125D792301192A003363CA /* Auto Layout Margins.storyboard in Resources */,
+				90125DC023011D97003363CA /* Info.storyboard in Resources */,
+				90125D9C23011BB4003363CA /* Alert View.storyboard in Resources */,
+				90125D9F23011BE6003363CA /* Map View.storyboard in Resources */,
 				9A6C75041BDE29DE00534680 /* Info in Resources */,
+				90125DAB23011C84003363CA /* Views.storyboard in Resources */,
+				90125D8A23011A84003363CA /* Transform Layers.storyboard in Resources */,
+				90125DAE23011CA7003363CA /* OpenGL.storyboard in Resources */,
+				90125D7F230119C4003363CA /* Auto Layout Alignments.storyboard in Resources */,
+				90125D702301184D003363CA /* Layer Properties.storyboard in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
+				90125D8523011A1F003363CA /* Auto Layout.storyboard in Resources */,
+				90125DB723011D12003363CA /* Bars.storyboard in Resources */,
+				90125D9323011B2B003363CA /* Collection View.storyboard in Resources */,
+				90125D82230119F9003363CA /* Super Deep.storyboard in Resources */,
+				90125D6A2301176B003363CA /* Broken Constraints.storyboard in Resources */,
+				90125DBA23011D45003363CA /* Safari.storyboard in Resources */,
+				90125DB123011CCD003363CA /* Controls.storyboard in Resources */,
+				90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */,
+				90125DA523011C38003363CA /* Scroll View.storyboard in Resources */,
+				90125DA823011C60003363CA /* Web View.storyboard in Resources */,
+				90125DB423011CF1003363CA /* Stack View.storyboard in Resources */,
+				90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */,
+				90125D6D230117ED003363CA /* Stress Test.storyboard in Resources */,
+				90125DBD23011D6B003363CA /* Auto Layout Guides.storyboard in Resources */,
 				9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */,
+				90125D9023011AF2003363CA /* Transform Views.storyboard in Resources */,
 				90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */,
 				B59998E81BC36092002FE92C /* StackView.xib in Resources */,
+				90125D73230118AB003363CA /* Autoresizing Masks.storyboard in Resources */,
 				90E99D2D1F5D293600053684 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,12 +976,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90125DC62301220C003363CA /* Buttons.storyboard in Resources */,
+				90125DEA23012BD3003363CA /* Stack View.storyboard in Resources */,
 				BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */,
+				90125E1123012DA0003363CA /* Visual Effect View.storyboard in Resources */,
+				90125DE723012BB4003363CA /* Transform Layers.storyboard in Resources */,
+				90125E0223012CFC003363CA /* Auto Layout.storyboard in Resources */,
+				90125DCC230128CB003363CA /* Segmented Controls.storyboard in Resources */,
+				90125E0823012D3D003363CA /* Auto Resizing Masks.storyboard in Resources */,
 				BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */,
+				90125DE423012B90003363CA /* GLKit.storyboard in Resources */,
+				90125DFF23012CDA003363CA /* Auto Layout Margins.storyboard in Resources */,
 				90E99D2E1F5D293700053684 /* Data in Resources */,
+				90125DC923012862003363CA /* Text Fields.storyboard in Resources */,
+				90125DD223012937003363CA /* Layers.storyboard in Resources */,
+				90125E0E23012D81003363CA /* Broken Constraints.storyboard in Resources */,
+				90125DF323012C46003363CA /* Super Deep.storyboard in Resources */,
+				90125DF623012C69003363CA /* Map View.storyboard in Resources */,
+				90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */,
+				90125E0B23012D61003363CA /* Auto Layout Guides.storyboard in Resources */,
+				90125DD823012A66003363CA /* Alert View.storyboard in Resources */,
+				90125DED23012C03003363CA /* Anchor Point Bounds Change.storyboard in Resources */,
 				BB2720541C9B8E44002E53EE /* Main.storyboard in Resources */,
+				90125DE123012B6D003363CA /* Transform Views.storyboard in Resources */,
 				BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */,
+				90125DCF23012903003363CA /* Countries.storyboard in Resources */,
 				BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */,
+				90125DFC23012CB7003363CA /* Arranged Views.storyboard in Resources */,
+				90125DDB23012B1C003363CA /* Controls.storyboard in Resources */,
+				90125DD5230129C5003363CA /* Not Serializable.storyboard in Resources */,
+				90125DF923012C91003363CA /* Stress Test.storyboard in Resources */,
+				90125DF023012C27003363CA /* SpriteKit.storyboard in Resources */,
+				90125E0523012D1B003363CA /* Auto Layout Alignments.storyboard in Resources */,
 				90E99D301F5D293F00053684 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -965,6 +1189,454 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		90125D652301166F003363CA /* Visual Effect View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D662301166F003363CA /* Base */,
+			);
+			name = "Visual Effect View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D682301176B003363CA /* Broken Constraints.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D692301176B003363CA /* Base */,
+			);
+			name = "Broken Constraints.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D6B230117ED003363CA /* Stress Test.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D6C230117ED003363CA /* Base */,
+			);
+			name = "Stress Test.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D6E2301184D003363CA /* Layer Properties.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D6F2301184D003363CA /* Base */,
+			);
+			name = "Layer Properties.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D71230118AB003363CA /* Autoresizing Masks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D72230118AB003363CA /* Base */,
+			);
+			name = "Autoresizing Masks.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D74230118EB003363CA /* Not Serializable.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D75230118EB003363CA /* Base */,
+			);
+			name = "Not Serializable.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D772301192A003363CA /* Auto Layout Margins.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D782301192A003363CA /* Base */,
+			);
+			name = "Auto Layout Margins.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D7A2301198A003363CA /* Bounds Change and Anchor Point.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D7B2301198A003363CA /* Base */,
+			);
+			name = "Bounds Change and Anchor Point.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D7D230119C4003363CA /* Auto Layout Alignments.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D7E230119C4003363CA /* Base */,
+			);
+			name = "Auto Layout Alignments.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D80230119F9003363CA /* Super Deep.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D81230119F9003363CA /* Base */,
+			);
+			name = "Super Deep.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8323011A1F003363CA /* Auto Layout.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8423011A1F003363CA /* Base */,
+			);
+			name = "Auto Layout.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8823011A84003363CA /* Transform Layers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8923011A84003363CA /* Base */,
+			);
+			name = "Transform Layers.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8B23011AB2003363CA /* Arranged Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8C23011AB2003363CA /* Base */,
+			);
+			name = "Arranged Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D8E23011AF2003363CA /* Transform Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D8F23011AF2003363CA /* Base */,
+			);
+			name = "Transform Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D9123011B2B003363CA /* Collection View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D9223011B2B003363CA /* Base */,
+			);
+			name = "Collection View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D9423011B5A003363CA /* SpriteKit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D9523011B5A003363CA /* Base */,
+			);
+			name = SpriteKit.storyboard;
+			sourceTree = "<group>";
+		};
+		90125D9723011B88003363CA /* Table View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D9823011B88003363CA /* Base */,
+			);
+			name = "Table View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D9A23011BB4003363CA /* Alert View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D9B23011BB4003363CA /* Base */,
+			);
+			name = "Alert View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125D9D23011BE6003363CA /* Map View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125D9E23011BE6003363CA /* Base */,
+			);
+			name = "Map View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DA023011C09003363CA /* Picker View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DA123011C09003363CA /* Base */,
+			);
+			name = "Picker View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DA323011C38003363CA /* Scroll View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DA423011C38003363CA /* Base */,
+			);
+			name = "Scroll View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DA623011C60003363CA /* Web View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DA723011C60003363CA /* Base */,
+			);
+			name = "Web View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DA923011C84003363CA /* Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DAA23011C84003363CA /* Base */,
+			);
+			name = Views.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DAC23011CA7003363CA /* OpenGL.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DAD23011CA7003363CA /* Base */,
+			);
+			name = OpenGL.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DAF23011CCD003363CA /* Controls.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DB023011CCD003363CA /* Base */,
+			);
+			name = Controls.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DB223011CF1003363CA /* Stack View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DB323011CF1003363CA /* Base */,
+			);
+			name = "Stack View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DB523011D12003363CA /* Bars.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DB623011D12003363CA /* Base */,
+			);
+			name = Bars.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DB823011D45003363CA /* Safari.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DB923011D45003363CA /* Base */,
+			);
+			name = Safari.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DBB23011D6B003363CA /* Auto Layout Guides.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DBC23011D6B003363CA /* Base */,
+			);
+			name = "Auto Layout Guides.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DBE23011D97003363CA /* Info.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DBF23011D97003363CA /* Base */,
+			);
+			name = Info.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DC42301220C003363CA /* Buttons.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DC52301220C003363CA /* Base */,
+			);
+			name = Buttons.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DC723012862003363CA /* Text Fields.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DC823012862003363CA /* Base */,
+			);
+			name = "Text Fields.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DCA230128CB003363CA /* Segmented Controls.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DCB230128CB003363CA /* Base */,
+			);
+			name = "Segmented Controls.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DCD23012903003363CA /* Countries.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DCE23012903003363CA /* Base */,
+			);
+			name = Countries.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DD023012937003363CA /* Layers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DD123012937003363CA /* Base */,
+			);
+			name = Layers.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DD3230129C5003363CA /* Not Serializable.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DD4230129C5003363CA /* Base */,
+			);
+			name = "Not Serializable.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DD623012A66003363CA /* Alert View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DD723012A66003363CA /* Base */,
+			);
+			name = "Alert View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DD923012B1C003363CA /* Controls.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DDA23012B1C003363CA /* Base */,
+			);
+			name = Controls.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DDC23012B44003363CA /* Scroll View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DDD23012B44003363CA /* Base */,
+			);
+			name = "Scroll View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DDF23012B6D003363CA /* Transform Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DE023012B6D003363CA /* Base */,
+			);
+			name = "Transform Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DE223012B90003363CA /* GLKit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DE323012B90003363CA /* Base */,
+			);
+			name = GLKit.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DE523012BB4003363CA /* Transform Layers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DE623012BB4003363CA /* Base */,
+			);
+			name = "Transform Layers.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DE823012BD3003363CA /* Stack View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DE923012BD3003363CA /* Base */,
+			);
+			name = "Stack View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DEB23012C03003363CA /* Anchor Point Bounds Change.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DEC23012C03003363CA /* Base */,
+			);
+			name = "Anchor Point Bounds Change.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DEE23012C27003363CA /* SpriteKit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DEF23012C27003363CA /* Base */,
+			);
+			name = SpriteKit.storyboard;
+			sourceTree = "<group>";
+		};
+		90125DF123012C46003363CA /* Super Deep.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DF223012C46003363CA /* Base */,
+			);
+			name = "Super Deep.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DF423012C69003363CA /* Map View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DF523012C69003363CA /* Base */,
+			);
+			name = "Map View.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DF723012C91003363CA /* Stress Test.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DF823012C91003363CA /* Base */,
+			);
+			name = "Stress Test.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DFA23012CB7003363CA /* Arranged Views.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DFB23012CB7003363CA /* Base */,
+			);
+			name = "Arranged Views.storyboard";
+			sourceTree = "<group>";
+		};
+		90125DFD23012CDA003363CA /* Auto Layout Margins.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125DFE23012CDA003363CA /* Base */,
+			);
+			name = "Auto Layout Margins.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0023012CFC003363CA /* Auto Layout.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E0123012CFC003363CA /* Base */,
+			);
+			name = "Auto Layout.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0323012D1B003363CA /* Auto Layout Alignments.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E0423012D1B003363CA /* Base */,
+			);
+			name = "Auto Layout Alignments.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0623012D3D003363CA /* Auto Resizing Masks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E0723012D3D003363CA /* Base */,
+			);
+			name = "Auto Resizing Masks.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0923012D61003363CA /* Auto Layout Guides.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E0A23012D61003363CA /* Base */,
+			);
+			name = "Auto Layout Guides.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0C23012D81003363CA /* Broken Constraints.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E0D23012D81003363CA /* Base */,
+			);
+			name = "Broken Constraints.storyboard";
+			sourceTree = "<group>";
+		};
+		90125E0F23012DA0003363CA /* Visual Effect View.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90125E1023012DA0003363CA /* Base */,
+			);
+			name = "Visual Effect View.storyboard";
+			sourceTree = "<group>";
+		};
 		9021D9701F5D010800A6A93E /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (

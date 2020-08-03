@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View-->
+        <scene sceneID="Vd8-iN-gNO">
+            <objects>
+                <viewController id="OzG-CK-fgG" customClass="MapViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LtO-Cz-6mw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ouM-xa-wey"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hY-Sg-d1g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2U2-Tm-AjW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OzG-CK-fgG" id="krB-Z6-djH"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2U2-Tm-AjW" secondAttribute="trailing" id="Oig-wm-gKA"/>
+                            <constraint firstItem="2U2-Tm-AjW" firstAttribute="leading" secondItem="7hY-Sg-d1g" secondAttribute="leading" id="SeG-DU-ofu"/>
+                            <constraint firstItem="ouM-xa-wey" firstAttribute="top" secondItem="2U2-Tm-AjW" secondAttribute="bottom" id="h3g-Ia-OI1"/>
+                            <constraint firstItem="2U2-Tm-AjW" firstAttribute="top" secondItem="LtO-Cz-6mw" secondAttribute="bottom" id="iHl-YV-zw2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map View" id="ru1-BN-P8N">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="PfX-de-nST">
+                            <connections>
+                                <segue destination="SoZ-8s-sdX" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="our-SB-UtA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="2U2-Tm-AjW" id="2Av-d6-PLW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4R-1G-a28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-947"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lVD-Tc-Rsr">
+            <objects>
+                <navigationController storyboardIdentifier="MapViewController" id="JqW-0C-HaP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y5g-MM-hCF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OzG-CK-fgG" kind="relationship" relationship="rootViewController" id="BeI-FJ-cN7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olr-m0-vcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="-947"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="HO8-Lx-7o5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Info" id="SoZ-8s-sdX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="StT-5s-FOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3183" y="-948"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info_icon" width="22" height="22"/>
+    </resources>
+    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
