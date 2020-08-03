@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,7 +31,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VlX-im-uuz">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.1711609959602356" green="0.60321605205535889" blue="0.91919529438018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,6 +96,7 @@
                         <segue destination="QJM-V8-cvh" kind="showDetail" identifier="ShowAutoLayoutGuidesViewControllerSegue" id="ZZn-Tc-FYo"/>
                         <segue destination="ebC-TP-Awc" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
                         <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
+                        <segue destination="qKZ-D1-bJF" kind="presentation" identifier="ShowModalViewController" id="fgR-Dv-Ign"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -109,7 +108,7 @@
             <objects>
                 <navigationController id="we6-LP-cZY" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qZy-Ju-9xW">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.16367396712303162" green="0.58245766162872314" blue="0.93984043598175049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,6 +272,14 @@
             </objects>
             <point key="canvasLocation" x="3312" y="-2713"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="wZc-6t-vJI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Info" id="qKZ-D1-bJF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76V-Yq-ESX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3678" y="-2713"/>
+        </scene>
         <!--TableViewController-->
         <scene sceneID="POm-Pg-QXn">
             <objects>
@@ -378,9 +385,9 @@
             <point key="canvasLocation" x="2783" y="-1981"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="tab_scenes" width="26" height="26"/>
         <image name="tab_scenes_selected" width="26" height="26"/>
     </resources>
-    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
