@@ -200,6 +200,8 @@
 		BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
+		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
+		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
@@ -371,6 +373,7 @@
 		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -476,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6850C61AD4A20E00ACCE29 /* Images.xcassets */,
+				DDABB37824DB81D8008B2ECE /* Colors.xcassets */,
 				9A6C75021BDE29DE00534680 /* Info */,
 				9A0416C01B02EA7F00477E60 /* Info.plist */,
 				9A17423B1B09CF9C00BEDFAB /* Storyboards & XIBs */,
@@ -946,6 +950,7 @@
 				90125DAB23011C84003363CA /* Views.storyboard in Resources */,
 				90125D8A23011A84003363CA /* Transform Layers.storyboard in Resources */,
 				90125DAE23011CA7003363CA /* OpenGL.storyboard in Resources */,
+				DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */,
 				90125D7F230119C4003363CA /* Auto Layout Alignments.storyboard in Resources */,
 				90125D702301184D003363CA /* Layer Properties.storyboard in Resources */,
 				9A6850C51AD4A20E00ACCE29 /* Main.storyboard in Resources */,
@@ -991,6 +996,7 @@
 				90125DC923012862003363CA /* Text Fields.storyboard in Resources */,
 				90125DD223012937003363CA /* Layers.storyboard in Resources */,
 				90125E0E23012D81003363CA /* Broken Constraints.storyboard in Resources */,
+				DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */,
 				90125DF323012C46003363CA /* Super Deep.storyboard in Resources */,
 				90125DF623012C69003363CA /* Map View.storyboard in Resources */,
 				90125DDE23012B44003363CA /* Scroll View.storyboard in Resources */,
