@@ -115,8 +115,6 @@
 		BBE51C8D1CB737FE006638B8 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */; };
 		BBE51C8E1CB737FE006638B8 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */; };
 		BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */; };
-		BBE51C901CB737FE006638B8 /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */; };
-		BBE51C911CB737FE006638B8 /* UIColor+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */; };
 		BBE51C921CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */; };
 		BBE51C931CB737FE006638B8 /* UIStoryboardSegue+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */; };
 		BBE51C961CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */; };
@@ -327,7 +325,6 @@
 		BBE51C821CB737C1006638B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Shared/Sources/CALayer+Revert.swift"; sourceTree = SOURCE_ROOT; };
 		BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Shared/Sources/ExampleAlerts.swift; sourceTree = SOURCE_ROOT; };
-		BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Revert.swift"; path = "Shared/Sources/UIColor+Revert.swift"; sourceTree = SOURCE_ROOT; };
 		BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboardSegue+Revert.swift"; path = "Shared/Sources/UIStoryboardSegue+Revert.swift"; sourceTree = SOURCE_ROOT; };
 		BBE51C951CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewFlowLayout.swift; path = Shared/Sources/AdaptiveCollectionViewFlowLayout.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C991CB7384D006638B8 /* HairlineConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineConstraint.swift; path = Shared/Sources/HairlineConstraint.swift; sourceTree = SOURCE_ROOT; };
@@ -782,7 +779,6 @@
 			children = (
 				BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */,
 				BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */,
-				BBE51C8A1CB737FE006638B8 /* UIColor+Revert.swift */,
 				BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */,
 			);
 			name = Extensions;
@@ -1089,7 +1085,6 @@
 				BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */,
 				BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CA71CB7384D006638B8 /* Static.swift in Sources */,
-				BBE51C901CB737FE006638B8 /* UIColor+Revert.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
 				BBE51C8E1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
 				BBE51CBB1CB73898006638B8 /* Country.swift in Sources */,
@@ -1129,7 +1124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */,
-				BBE51C911CB737FE006638B8 /* UIColor+Revert.swift in Sources */,
 				BBE51C971CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */,
 				BBE51CE71CB73929006638B8 /* ScrollViewController.swift in Sources */,
