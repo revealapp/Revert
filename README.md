@@ -1,6 +1,6 @@
 # REVEal Rendering Test - REVERT
 
-Revert is a reference iOS project developed to help test the performance and accuracy of [Reveal](http://revealapp.com), a runtime view hierarchy inspection tool from [Itty Bitty Apps](http://ittybittyapps.com). It contains a number of examples which highlight both common and edge case scenarios. Revert is a universal iOS 7+ app that supports both portrait and landscape orientations.
+Revert is a reference iOS project developed to help test the performance and accuracy of [Reveal](https://revealapp.com), a runtime view hierarchy inspection tool from [Itty Bitty Apps](https://ittybittyapps.com). It contains a number of examples which highlight both common and edge case scenarios. Revert is a universal iOS 7+ app that supports both portrait and landscape orientations.
 
 We're releasing Revert so the community can compare the features and accuracy of the various view debuggers on the market and for our own regression and feature testing.
 
@@ -13,12 +13,12 @@ We've tried to include as many scenarios as possible, but if you'd like to add y
 
 Follow the steps below to start inspecting Revert with Reveal:
 
-- [Download Reveal](http://revealapp.com/download/).
+- [Download Reveal](https://revealapp.com/download/).
 - Download and clone the repository: `git clone https://github.com/revealapp/revert.git`
 - Open Revert: `open revert/Revert.xcodeproj`
-- Follow the [integration guide](http://support.revealapp.com/kb/getting-started/integrating-reveal-with-your-ios-app) to enable Revert to be inspected by Reveal. We'd suggest [dynamically loading the library via a User breakpoint](http://support.revealapp.com/kb/getting-started/integrating-reveal-load-reveal-without-changing-your-xcode-project) as the easiest and most flexible option.
+- Follow the [integration guide](https://support.revealapp.com/kb/getting-started/integrating-reveal-with-your-ios-app) to enable Revert to be inspected by Reveal. We'd suggest [dynamically loading the library via a User breakpoint](https://support.revealapp.com/kb/getting-started/integrating-reveal-load-reveal-without-changing-your-xcode-project) as the easiest and most flexible option.
 - Run the project: ⌘ + R
-- Launch [Reveal](http://revealapp.com) and connect to Revert.
+- Launch [Reveal](https://revealapp.com) and connect to Revert.
 
 ## Changes in behaviour between iOS Versions
 
