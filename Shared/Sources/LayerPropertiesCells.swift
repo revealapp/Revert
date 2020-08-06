@@ -94,7 +94,7 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
     shapeLayer.path = UIBezierPath(ovalIn: rect).cgPath
     shapeLayer.fillColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
-    shapeLayer.strokeColor = UIColor.revertLightBlack.cgColor
+    shapeLayer.strokeColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
     shapeLayer.strokeStart = 0
     shapeLayer.strokeEnd = 1
     shapeLayer.fillRule = .evenOdd
@@ -141,7 +141,7 @@ final class CATiledLayerCell: LayerBackedCollectionViewCell {
     tiledLayer.tileSize = tiledLayer.bounds.size
     tiledLayer.cornerRadius = 5
     tiledLayer.borderWidth = 1
-    tiledLayer.borderColor = UIColor.revertLightBlack.cgColor
+    tiledLayer.borderColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
   }
 }
 
@@ -228,6 +228,6 @@ final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
   private static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1
-    aeglLayer.borderColor = UIColor.revertLightBlack.cgColor
+    aeglLayer.borderColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
   }
 }
