@@ -111,7 +111,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: rightFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
     let rightFlexibleTopBottomView = self.bakeViewWithFrame(frame)
 
-    rightFlexibleTopBottomView.backgroundColor = .revertPink
+    rightFlexibleTopBottomView.backgroundColor = #colorLiteral(red: 0.81, green: 0.325, blue: 1, alpha: 1)
     rightFlexibleTopBottomView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleLeftMargin]
     return rightFlexibleTopBottomView
   }()
