@@ -18,7 +18,7 @@ extension CollectionViewController {
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.collectionViewController, for: indexPath)
-    cell.contentView.backgroundColor = cell.isSelected ? .graySelection : #colorLiteral(red: 0.996, green: 0.996, blue: 0.996, alpha: 1)
+    cell.contentView.backgroundColor = cell.isSelected ? #colorLiteral(red: 0.8429999948, green: 0.8429999948, blue: 0.8429999948, alpha: 1) : #colorLiteral(red: 0.996, green: 0.996, blue: 0.996, alpha: 1)
     return cell
   }
 }
@@ -27,7 +27,7 @@ extension CollectionViewController {
 extension CollectionViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = .graySelection
+    collectionView.cellForItem(at: indexPath)?.contentView.backgroundColor = #colorLiteral(red: 0.8429999948, green: 0.8429999948, blue: 0.8429999948, alpha: 1)
   }
 
   override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
