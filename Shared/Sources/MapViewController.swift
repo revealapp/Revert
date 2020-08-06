@@ -19,7 +19,7 @@ final class MapViewController: RevertViewController {
 
   fileprivate static let overlayLineWidth: CGFloat = 3
   fileprivate static let overlayFillColor = UIColor.revertTint.withAlphaComponent(0.5)
-  fileprivate static let overlayStrokeColor = UIColor.revertDarkBlue
+  fileprivate static let overlayStrokeColor = #colorLiteral(red: 0.217, green: 0.372, blue: 1, alpha: 1)
 
   @IBOutlet private weak var mapView: MKMapView!
 

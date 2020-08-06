@@ -118,7 +118,7 @@ final class CAScrollLayerCell: LayerBackedCollectionViewCell {
 
   private static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = .horizontally
-    scrollLayer.backgroundColor = UIColor.revertDarkBlue.cgColor
+    scrollLayer.backgroundColor = #colorLiteral(red: 0.217, green: 0.372, blue: 1, alpha: 1)
     scrollLayer.cornerRadius = 5
   }
 }
