@@ -8,7 +8,7 @@ final class HomeCell: BasicCell {
   func updateSelectedBackgroundColor(_ isBlue: Bool) {
     if isBlue {
       let selectedBackgroundView = UIView()
-      selectedBackgroundView.backgroundColor = .revertTint
+      selectedBackgroundView.backgroundColor = #colorLiteral(red: 0.208, green: 0.682, blue: 0.929, alpha: 1)
       self.selectedBackgroundView = selectedBackgroundView
     } else {
       self.selectedBackgroundView = nil
