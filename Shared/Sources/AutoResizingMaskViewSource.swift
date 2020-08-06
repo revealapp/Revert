@@ -84,7 +84,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: flexibleHeightLeftRightOrigin, size: flexibleHeightLeftRightSize)
     let flexibleHeightLeftRightView = self.bakeViewWithFrame(frame)
 
-    flexibleHeightLeftRightView.backgroundColor = .revertOrange
+    flexibleHeightLeftRightView.backgroundColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
     flexibleHeightLeftRightView.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin]
     return flexibleHeightLeftRightView
   }()

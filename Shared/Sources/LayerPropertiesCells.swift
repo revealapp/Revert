@@ -93,7 +93,7 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
     let origin = CGPoint(x: (shapeLayer.bounds.width - minLength) / 2, y: 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
     shapeLayer.path = UIBezierPath(ovalIn: rect).cgPath
-    shapeLayer.fillColor = UIColor.revertOrange.cgColor
+    shapeLayer.fillColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
     shapeLayer.strokeColor = UIColor.revertLightBlack.cgColor
     shapeLayer.strokeStart = 0
     shapeLayer.strokeEnd = 1
@@ -198,7 +198,7 @@ final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
     let circleLayer = CAShapeLayer()
 
     circleLayer.path = UIBezierPath(ovalIn: circleRect).cgPath
-    circleLayer.fillColor = UIColor.revertOrange.cgColor
+    circleLayer.fillColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
 
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
