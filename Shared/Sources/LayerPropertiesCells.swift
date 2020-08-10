@@ -93,8 +93,8 @@ final class CAShapeLayerCell: LayerBackedCollectionViewCell {
     let origin = CGPoint(x: (shapeLayer.bounds.width - minLength) / 2, y: 0)
     let rect = CGRect(origin: origin, size: CGSize(width: minLength, height: minLength))
     shapeLayer.path = UIBezierPath(ovalIn: rect).cgPath
-    shapeLayer.fillColor = UIColor.revertOrange.cgColor
-    shapeLayer.strokeColor = UIColor.revertLightBlack.cgColor
+    shapeLayer.fillColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
+    shapeLayer.strokeColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
     shapeLayer.strokeStart = 0
     shapeLayer.strokeEnd = 1
     shapeLayer.fillRule = .evenOdd
@@ -118,7 +118,7 @@ final class CAScrollLayerCell: LayerBackedCollectionViewCell {
 
   private static func configureScrollLayer(_ scrollLayer: CAScrollLayer) {
     scrollLayer.scrollMode = .horizontally
-    scrollLayer.backgroundColor = UIColor.revertDarkBlue.cgColor
+    scrollLayer.backgroundColor = #colorLiteral(red: 0.217, green: 0.372, blue: 1, alpha: 1)
     scrollLayer.cornerRadius = 5
   }
 }
@@ -141,7 +141,7 @@ final class CATiledLayerCell: LayerBackedCollectionViewCell {
     tiledLayer.tileSize = tiledLayer.bounds.size
     tiledLayer.cornerRadius = 5
     tiledLayer.borderWidth = 1
-    tiledLayer.borderColor = UIColor.revertLightBlack.cgColor
+    tiledLayer.borderColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
   }
 }
 
@@ -198,7 +198,7 @@ final class CAReplicatorLayerCell: LayerBackedCollectionViewCell {
     let circleLayer = CAShapeLayer()
 
     circleLayer.path = UIBezierPath(ovalIn: circleRect).cgPath
-    circleLayer.fillColor = UIColor.revertOrange.cgColor
+    circleLayer.fillColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
 
     replicatorLayer.instanceCount = 5
     replicatorLayer.preservesDepth = true
@@ -228,6 +228,6 @@ final class CAEAGLLayerCell: LayerBackedCollectionViewCell {
   private static func configureAeglLayer(_ aeglLayer: CAEAGLLayer) {
     aeglLayer.cornerRadius = 5
     aeglLayer.borderWidth = 1
-    aeglLayer.borderColor = UIColor.revertLightBlack.cgColor
+    aeglLayer.borderColor = #colorLiteral(red: 0.156, green: 0.156, blue: 0.156, alpha: 1)
   }
 }

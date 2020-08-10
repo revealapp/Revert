@@ -65,7 +65,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: self.innerOrigin, size: flexibleWidthSize)
     let flexibleWidthView = self.bakeViewWithFrame(frame)
 
-    flexibleWidthView.backgroundColor = .revertDarkBlue
+    flexibleWidthView.backgroundColor = #colorLiteral(red: 0.217, green: 0.372, blue: 1, alpha: 1)
     flexibleWidthView.autoresizingMask = .flexibleWidth
     return flexibleWidthView
   }()
@@ -84,7 +84,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: flexibleHeightLeftRightOrigin, size: flexibleHeightLeftRightSize)
     let flexibleHeightLeftRightView = self.bakeViewWithFrame(frame)
 
-    flexibleHeightLeftRightView.backgroundColor = .revertOrange
+    flexibleHeightLeftRightView.backgroundColor = #colorLiteral(red: 0.992, green: 0.663, blue: 0.161, alpha: 1)
     flexibleHeightLeftRightView.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin]
     return flexibleHeightLeftRightView
   }()
@@ -97,7 +97,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: leftFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
     let leftFlexibleTopBottomView = self.bakeViewWithFrame(frame)
 
-    leftFlexibleTopBottomView.backgroundColor = .awesGreen
+    leftFlexibleTopBottomView.backgroundColor = #colorLiteral(red: 0.18, green: 0.835, blue: 0.765, alpha: 1)
     leftFlexibleTopBottomView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleRightMargin]
     return leftFlexibleTopBottomView
   }()
@@ -111,7 +111,7 @@ final class AutoResizingMaskViewSource {
     let frame = CGRect(origin: rightFlexibleTopBottomOrigin, size: self.flexibleTopBottomSize)
     let rightFlexibleTopBottomView = self.bakeViewWithFrame(frame)
 
-    rightFlexibleTopBottomView.backgroundColor = .revertPink
+    rightFlexibleTopBottomView.backgroundColor = #colorLiteral(red: 0.81, green: 0.325, blue: 1, alpha: 1)
     rightFlexibleTopBottomView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleLeftMargin]
     return rightFlexibleTopBottomView
   }()

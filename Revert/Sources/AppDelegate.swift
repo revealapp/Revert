@@ -25,7 +25,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   // swiftlint:enable weak_delegate
 
   private static func configureAppearance() {
-    UITabBar.appearance().tintColor = .revertTint
-    UINavigationBar.appearance().barTintColor = .revertTint
+    UITabBar.appearance().tintColor = #colorLiteral(red: 0.208, green: 0.682, blue: 0.929, alpha: 1)
+    UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.208, green: 0.682, blue: 0.929, alpha: 1)
   }
 }
