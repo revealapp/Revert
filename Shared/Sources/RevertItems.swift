@@ -11,7 +11,6 @@ enum RevertItems: String {
   case control = "ControlItems"
   case mapLocations = "MapLocations"
   case layerProperties = "LayerPropertiesItems"
-  case persons = "Persons"
   case view = "ViewItems"
   case whatsNew = "NewItems"
 

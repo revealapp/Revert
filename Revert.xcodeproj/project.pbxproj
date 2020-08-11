@@ -91,7 +91,6 @@
 		BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Images.xcassets */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
 		BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */; };
-		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
 		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -299,7 +298,6 @@
 		BB2720551C9B8E44002E53EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
 		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
-		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -632,7 +630,6 @@
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
 				BB3F8B501D338C5A0092E374 /* Extensions */,
-				BB66CC001CB74C6000954AD1 /* Models */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
 			);
@@ -729,14 +726,6 @@
 				BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		BB66CC001CB74C6000954AD1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BB66CC011CB74C8900954AD1 /* Person.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		BB735B481C9FD0500092FA6F /* Resources */ = {
@@ -1138,7 +1127,6 @@
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
-				BB66CC021CB74C8900954AD1 /* Person.swift in Sources */,
 				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
 				7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
