@@ -6,10 +6,10 @@ import UIKit
 final class HomeViewController: UITableViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(
-      collection: self.collection,
-      configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.home
+    self.dataSource = NewDataSource(
+      collection: collection,
+      cellIdentifier: CellIdentifiers.home,
+      configureCell: type(of: self).configureCell
     )
 
     super.init(coder: aDecoder)
@@ -43,7 +43,7 @@ final class HomeViewController: UITableViewController {
       guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
-      destinationViewController.item = self.collection[indexPath]
+      destinationViewController.item = self.collection[indexPath.section][indexPath.row]
     }
   }
 
@@ -57,9 +57,10 @@ final class HomeViewController: UITableViewController {
   }
 
   // MARK: Private
+  typealias HomeItems = [[HomeItem]]
 
-  fileprivate var collection = CollectableCollection<HomeItem>(items: .home)
-  private var dataSource: DataSource<HomeItem, HomeCell>
+  private let collection: HomeItems = RevertItems.home.newData()
+  private let dataSource: NewDataSource<HomeItem, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
   }
@@ -80,7 +81,7 @@ final class HomeViewController: UITableViewController {
 extension HomeViewController {
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let item = self.collection[indexPath]
+    let item = collection[indexPath.section][indexPath.row]
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 
@@ -89,7 +90,7 @@ extension HomeViewController {
       fatalError("Cell should be of type `HomeCell`")
     }
 
-    let item = self.collection[indexPath]
+    let item = collection[indexPath.section][indexPath.row]
     cell.accessoryType = self.isSplitViewControllerCollapsed && item.isPush ? .disclosureIndicator : .none
     cell.updateSelectedBackgroundColor(self.isSplitViewControllerCollapsed == false)
   }
