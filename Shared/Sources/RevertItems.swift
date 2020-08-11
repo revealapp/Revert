@@ -22,6 +22,18 @@ enum RevertItems: String {
     return data
   }
 
+  func newData<T: Decodable>() -> T {
+    do {
+      let data = try Data(contentsOf: self.URL)
+      let decoder = PropertyListDecoder()
+      let decodedData = try decoder.decode(T.self, from: data)
+
+      return decodedData
+    } catch {
+      fatalError(invalidContentError)
+    }
+  }
+
   // MARK: Private
 
   private static let fileExtension = "plist"
