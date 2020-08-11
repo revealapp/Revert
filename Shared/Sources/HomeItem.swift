@@ -3,7 +3,7 @@
 
 import Foundation
 
-struct HomeItem: Collectable, Requirement {
+struct HomeItem: Collectable, Requirement, Decodable {
   let title: String
   let infoFilename: String?
   let iconName: String
