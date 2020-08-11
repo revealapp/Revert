@@ -2,6 +2,7 @@
 
 import UIKit
 
+/// The purpose of this class is to eventually the current custom data source class (`DataSource`). The existing custom class is more complex and incompatible with models that extend `Decodable`.
 final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias Models = [[Model]]
   typealias CellConfigurator = (Cell, _ object: Model) -> Void
