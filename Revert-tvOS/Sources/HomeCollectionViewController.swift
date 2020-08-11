@@ -6,8 +6,9 @@ import UIKit
 final class HomeCollectionViewController: UICollectionViewController, GroupFilterable {
   var collectionGroup: String? {
     didSet {
-      self.dataSource.filterGroups({
-        if let groupTitle = $0.title, let collectionTitle = self.collectionGroup {
+      self.newDataSource.filterGroups({
+        if let collectionTitle = self.collectionGroup {
+          let groupTitle = $0.title
           return groupTitle.localizedStandardContains(collectionTitle)
         } else {
           return false
@@ -19,11 +20,10 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .home, sortClosure: { $0.title < $1.title }),
+    self.newDataSource = NewCollectionDataSource(
+      sections: sections,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.homeCollection
-    )
+      cellIdentifier: CellIdentifiers.homeCollection)
 
     super.init(coder: aDecoder)
   }
@@ -31,7 +31,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.dataSource = self.newDataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
@@ -43,12 +43,13 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.dataSource[indexPath]
+      destinationViewController.item = sections[indexPath.section].rows[indexPath.row]
     }
   }
 
   // MARK: - Private
-  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let newDataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let sections: [HomeSectionItem] = RevertItems.home.newData()
 }
 
 private extension HomeCollectionViewController {
@@ -63,7 +64,7 @@ private extension HomeCollectionViewController {
 extension HomeCollectionViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = self.dataSource[indexPath]
+    let item = self.newDataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
