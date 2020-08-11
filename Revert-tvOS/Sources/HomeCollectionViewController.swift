@@ -6,7 +6,7 @@ import UIKit
 final class HomeCollectionViewController: UICollectionViewController, GroupFilterable {
   var collectionGroup: String? {
     didSet {
-      self.newDataSource.filterGroups({
+      self.dataSource.filterGroups({
         if let collectionTitle = self.collectionGroup {
           let groupTitle = $0.title
           return groupTitle.localizedStandardContains(collectionTitle)
@@ -20,7 +20,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   required init?(coder aDecoder: NSCoder) {
-    self.newDataSource = NewCollectionDataSource(
+    self.dataSource = NewCollectionDataSource(
       sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
@@ -31,7 +31,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.collectionView?.dataSource = self.newDataSource
+    self.collectionView?.dataSource = self.dataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
@@ -48,7 +48,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   // MARK: - Private
-  private let newDataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let dataSource: NewCollectionDataSource<HomeCollectionCell>
   private let sections: [HomeSectionItem] = RevertItems.home.newData()
 }
 
@@ -64,7 +64,7 @@ private extension HomeCollectionViewController {
 extension HomeCollectionViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = self.newDataSource[indexPath]
+    let item = self.dataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
