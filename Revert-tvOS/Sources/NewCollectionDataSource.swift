@@ -5,14 +5,17 @@ import Foundation
 final class NewCollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
   typealias CellConfigurator = (Cell, _ item: HomeItem) -> Void
   typealias GroupFilterClosure = ((HomeSectionItem) -> Bool)
+  typealias ItemFilterClosure = (HomeItem) -> Bool
 
   // MARK: - Private properties
+
   private let unfilteredSections: [HomeSectionItem]
   private var sections: [HomeSectionItem]
   private let cellIdentifier: String
   private let configureCell: CellConfigurator
 
   // MARK: - Init
+
   required init(sections: [HomeSectionItem], configureCell: @escaping CellConfigurator, cellIdentifier: String) {
     self.unfilteredSections = sections
     self.sections = sections
@@ -23,6 +26,7 @@ final class NewCollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICol
   }
 
   // MARK: - UICollectionViewDataSource
+
   func numberOfSections(in collectionView: UICollectionView) -> Int {
     sections.count
   }
@@ -42,15 +46,24 @@ final class NewCollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICol
   }
 
   // MARK: - Public methods
+  
   subscript(indexPath: IndexPath) -> HomeItem {
-    return self.sections[indexPath.section].rows[indexPath.row]
+    return sections[indexPath.section].rows[indexPath.row]
   }
 
   func clearFilter() {
-    self.sections = self.unfilteredSections
+    sections = unfilteredSections
+  }
+
+  func filter(_ filterClosure: ItemFilterClosure) {
+    sections = unfilteredSections.map { section in
+      let filteredRows = section.rows.filter(filterClosure)
+      return HomeSectionItem(title: section.title, rows: filteredRows)
+    }
+    .filter { $0.rows.count > 0 }
   }
 
   func filterGroups(_ filterClosure: GroupFilterClosure) {
-    self.sections = self.unfilteredSections.filter(filterClosure)
+    sections = unfilteredSections.filter(filterClosure)
   }
 }

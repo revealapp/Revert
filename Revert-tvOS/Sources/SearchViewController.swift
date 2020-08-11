@@ -6,8 +6,8 @@ import UIKit
 final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .home, flatten: true, sortClosure: { $0.title < $1.title }),
+    self.newDataSource = NewCollectionDataSource(
+      sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
     )
@@ -18,7 +18,7 @@ final class SearchViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.dataSource = self.newDataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
@@ -30,13 +30,14 @@ final class SearchViewController: UICollectionViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.dataSource[indexPath]
+      destinationViewController.item = newDataSource[indexPath]
     }
   }
 
   // MARK: Private
 
-  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let newDataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let sections: [HomeSectionItem] = RevertItems.home.newData()
 
   fileprivate var searchText: String? {
     didSet {
@@ -46,11 +47,11 @@ final class SearchViewController: UICollectionViewController {
       }
 
       if let string = searchText, string.isEmpty == false {
-        self.dataSource.filter({
+        self.newDataSource.filter({
           $0.title.localizedStandardContains(string)
         })
       } else {
-        self.dataSource.clearFilter()
+        self.newDataSource.clearFilter()
       }
 
       self.collectionView?.reloadData()
@@ -71,7 +72,7 @@ private extension SearchViewController {
 extension SearchViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = self.dataSource[indexPath]
+    let item = newDataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
