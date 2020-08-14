@@ -16,6 +16,8 @@
 				<string>ShowAutoLayoutGuidesViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_layout_guides</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -28,6 +30,8 @@
 				<string>stack_view</string>
 				<key>requiredClassName</key>
 				<string>UIStackView</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -38,6 +42,8 @@
 				<string>ShowMapViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>map_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -48,6 +54,8 @@
 				<string>ShowSpriteKitViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>sprite_kit</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -58,6 +66,8 @@
 				<string>ShowGLKViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>open_gl</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
