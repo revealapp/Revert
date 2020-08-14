@@ -7,8 +7,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   var collectionGroup: String? {
     didSet {
       self.dataSource.filterGroups({
-        if let collectionTitle = self.collectionGroup {
-          let groupTitle = $0.title
+        if let collectionTitle = self.collectionGroup, let groupTitle = $0.title {
           return groupTitle.localizedStandardContains(collectionTitle)
         } else {
           return false

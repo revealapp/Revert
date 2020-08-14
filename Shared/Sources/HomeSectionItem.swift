@@ -3,6 +3,6 @@
 import Foundation
 
 struct HomeSectionItem: Decodable {
-  let title: String
+  let title: String?
   let rows: [HomeItem]
 }
