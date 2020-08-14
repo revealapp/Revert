@@ -2,7 +2,7 @@
 
 import Foundation
 
-protocol SectionItem {
+protocol SectionItem: Decodable {
   associatedtype item
 
   var title: String? { get set }

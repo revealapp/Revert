@@ -2,7 +2,7 @@
 
 import Foundation
 
-struct HomeSectionItem: SectionItem, Decodable {
+struct HomeSectionItem: SectionItem {
   typealias item = HomeItem
 
   var title: String?

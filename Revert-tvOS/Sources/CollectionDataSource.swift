@@ -2,21 +2,21 @@
 
 import Foundation
 
-final class CollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
-  typealias CellConfigurator = (Cell, _ item: HomeItem) -> Void
-  typealias GroupFilterClosure = ((HomeSectionItem) -> Bool)
-  typealias ItemFilterClosure = (HomeItem) -> Bool
+final class CollectionDataSource<Section: SectionItem, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
+  typealias CellConfigurator = (Cell, Section.item) -> Void
+  typealias GroupFilterClosure = ((Section) -> Bool)
+  typealias ItemFilterClosure = (Section.item) -> Bool
 
   // MARK: - Private properties
 
-  private let unfilteredSections: [HomeSectionItem]
-  private var sections: [HomeSectionItem]
+  private let unfilteredSections: [Section]
+  private var sections: [Section]
   private let cellIdentifier: String
   private let configureCell: CellConfigurator
 
   // MARK: - Init
 
-  required init(sections: [HomeSectionItem], configureCell: @escaping CellConfigurator, cellIdentifier: String) {
+  required init(sections: [Section], configureCell: @escaping CellConfigurator, cellIdentifier: String) {
     self.unfilteredSections = sections
     self.sections = sections
     self.configureCell = configureCell
@@ -41,13 +41,14 @@ final class CollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICollec
     }
 
     let item = sections[indexPath.section].rows[indexPath.row]
+
     self.configureCell(cell, item)
     return cell
   }
 
   // MARK: - Public methods
   
-  subscript(indexPath: IndexPath) -> HomeItem {
+  subscript(indexPath: IndexPath) -> Section.item {
     return sections[indexPath.section].rows[indexPath.row]
   }
 
@@ -57,8 +58,9 @@ final class CollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICollec
 
   func filter(_ filterClosure: ItemFilterClosure) {
     sections = unfilteredSections.map { section in
-      let filteredRows = section.rows.filter(filterClosure)
-      return HomeSectionItem(title: section.title, rows: filteredRows)
+      var newSection = section
+      newSection.rows = newSection.rows.filter(filterClosure)
+      return newSection
     }
     .filter { $0.rows.count > 0 }
   }
