@@ -7,7 +7,6 @@ enum RevertItems: String {
   case capitalCities = "CountriesCapitals"
   case alert = "AlertItems"
   case home = "HomeItems"
-  case homeCollection = "HomeCollectionItems"
   case control = "ControlItems"
   case mapLocations = "MapLocations"
   case layerProperties = "LayerPropertiesItems"
