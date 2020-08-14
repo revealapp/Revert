@@ -6,11 +6,10 @@ import UIKit
 final class WhatsNewViewController: UIViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .whatsNew),
+    self.newDataSource = NewCollectionDataSource(
+      sections: sections,
       configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.homeCollection
-    )
+      cellIdentifier: CellIdentifiers.homeCollection)
 
     super.init(coder: aDecoder)
   }
@@ -18,7 +17,7 @@ final class WhatsNewViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.collectionView?.dataSource = self.dataSource
+    self.collectionView?.dataSource = self.newDataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
@@ -30,13 +29,14 @@ final class WhatsNewViewController: UIViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.dataSource[indexPath]
+      destinationViewController.item = newDataSource[indexPath]
     }
   }
 
   // MARK: Private
 
-  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let newDataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let sections: [HomeSectionItem] = RevertItems.whatsNew.newData()
 
   @IBOutlet private var collectionView: UICollectionView!
 }
@@ -54,7 +54,7 @@ private extension WhatsNewViewController {
 extension WhatsNewViewController: UICollectionViewDelegate {
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = self.dataSource[indexPath]
+    let item = newDataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
