@@ -6,7 +6,7 @@ import UIKit
 final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.newDataSource = NewCollectionDataSource(
+    self.dataSource = NewCollectionDataSource(
       sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
@@ -18,7 +18,7 @@ final class SearchViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.collectionView?.dataSource = self.newDataSource
+    self.collectionView?.dataSource = self.dataSource
     self.collectionView?.remembersLastFocusedIndexPath = true
   }
 
@@ -30,13 +30,13 @@ final class SearchViewController: UICollectionViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = newDataSource[indexPath]
+      destinationViewController.item = dataSource[indexPath]
     }
   }
 
   // MARK: Private
 
-  private let newDataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let dataSource: NewCollectionDataSource<HomeCollectionCell>
   private let sections: [HomeSectionItem] = RevertItems.home.newData()
 
   fileprivate var searchText: String? {
@@ -47,11 +47,11 @@ final class SearchViewController: UICollectionViewController {
       }
 
       if let string = searchText, string.isEmpty == false {
-        self.newDataSource.filter({
+        self.dataSource.filter({
           $0.title.localizedStandardContains(string)
         })
       } else {
-        self.newDataSource.clearFilter()
+        self.dataSource.clearFilter()
       }
 
       self.collectionView?.reloadData()
@@ -72,7 +72,7 @@ private extension SearchViewController {
 extension SearchViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = newDataSource[indexPath]
+    let item = dataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
