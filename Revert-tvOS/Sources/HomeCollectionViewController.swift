@@ -19,7 +19,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewCollectionDataSource(
+    self.dataSource = CollectionDataSource(
       sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
@@ -47,7 +47,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   }
 
   // MARK: - Private
-  private let dataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let dataSource: CollectionDataSource<HomeCollectionCell>
   private let sections: [HomeSectionItem] = RevertItems.home.newData()
 }
 

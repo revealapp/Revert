@@ -1,60 +1,69 @@
-//
-//  Copyright © 2016 Itty Bitty Apps. All rights reserved.
+// Copyright © 2020 Itty Bitty Apps. All rights reserved.
 
-import UIKit
+import Foundation
 
-final class CollectionDataSource<Object: Collectable, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
-  typealias CellConfigurator = (HomeCollectionCell, _ item: HomeItem) -> Void
+final class CollectionDataSource<Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
+  typealias CellConfigurator = (Cell, _ item: HomeItem) -> Void
+  typealias GroupFilterClosure = ((HomeSectionItem) -> Bool)
   typealias ItemFilterClosure = (HomeItem) -> Bool
-  typealias GroupFilterClosure = (CollectableGroup<HomeItem>) -> Bool
 
-  required init(collection: CollectableCollection<HomeItem>, configureCell: @escaping CellConfigurator, cellIdentifier: String) {
-    self.unfilteredCollection = collection
-    self.collection = collection
+  // MARK: - Private properties
+
+  private let unfilteredSections: [HomeSectionItem]
+  private var sections: [HomeSectionItem]
+  private let cellIdentifier: String
+  private let configureCell: CellConfigurator
+
+  // MARK: - Init
+
+  required init(sections: [HomeSectionItem], configureCell: @escaping CellConfigurator, cellIdentifier: String) {
+    self.unfilteredSections = sections
+    self.sections = sections
     self.configureCell = configureCell
     self.cellIdentifier = cellIdentifier
 
     super.init()
   }
 
+  // MARK: - UICollectionViewDataSource
+
   func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return self.collection.countOfItems
+    sections.count
   }
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return self.collection[section].countOfItems
+    sections[section].rows.count
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as? HomeCollectionCell else {
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? Cell else {
       fatalError("Expecting to dequeue a `CollectionViewCell` from the collectionView")
     }
 
-    let item = self.collection[indexPath]
+    let item = sections[indexPath.section].rows[indexPath.row]
     self.configureCell(cell, item)
     return cell
   }
 
+  // MARK: - Public methods
+  
   subscript(indexPath: IndexPath) -> HomeItem {
-    return self.collection[indexPath]
+    return sections[indexPath.section].rows[indexPath.row]
   }
 
   func clearFilter() {
-    self.collection = self.unfilteredCollection
+    sections = unfilteredSections
   }
 
   func filter(_ filterClosure: ItemFilterClosure) {
-    self.collection = self.unfilteredCollection.filteredCollectableCollection(filterClosure)
+    sections = unfilteredSections.map { section in
+      let filteredRows = section.rows.filter(filterClosure)
+      return HomeSectionItem(title: section.title, rows: filteredRows)
+    }
+    .filter { $0.rows.count > 0 }
   }
 
   func filterGroups(_ filterClosure: GroupFilterClosure) {
-    self.collection = self.unfilteredCollection.groupFilteredCollectableCollection(filterClosure)
+    sections = unfilteredSections.filter(filterClosure)
   }
-
-  // MARK: Private
-
-  private let unfilteredCollection: CollectableCollection<HomeItem>
-  private var collection: CollectableCollection<HomeItem>
-  private let configureCell: CellConfigurator
-  private let cellIdentifier: String
 }

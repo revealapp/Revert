@@ -6,7 +6,7 @@ import UIKit
 final class WhatsNewViewController: UIViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewCollectionDataSource(
+    self.dataSource = CollectionDataSource(
       sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
@@ -35,7 +35,7 @@ final class WhatsNewViewController: UIViewController {
 
   // MARK: Private
 
-  private let dataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let dataSource: CollectionDataSource<HomeCollectionCell>
   private let sections: [HomeSectionItem] = RevertItems.whatsNew.newData()
 
   @IBOutlet private var collectionView: UICollectionView!

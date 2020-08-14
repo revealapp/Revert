@@ -6,7 +6,7 @@ import UIKit
 final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewCollectionDataSource(
+    self.dataSource = CollectionDataSource(
       sections: sections,
       configureCell: type(of: self).configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
@@ -36,7 +36,7 @@ final class SearchViewController: UICollectionViewController {
 
   // MARK: Private
 
-  private let dataSource: NewCollectionDataSource<HomeCollectionCell>
+  private let dataSource: CollectionDataSource<HomeCollectionCell>
   private let sections: [HomeSectionItem] = RevertItems.home.newData()
 
   fileprivate var searchText: String? {

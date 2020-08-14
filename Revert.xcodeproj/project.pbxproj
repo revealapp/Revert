@@ -98,7 +98,6 @@
 		BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
 		BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */; };
-		BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */; };
 		BB9F768A1CB61F45006EA285 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */; };
 		BB9F768E1CB61F57006EA285 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */; };
 		BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */; };
@@ -200,7 +199,7 @@
 		DD48652624E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
 		DD48652724E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
 		DD48652924E25C0B00A21F7A /* HomeSectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSectionItem.swift */; };
-		DD48652D24E2754D00A21F7A /* NewCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652C24E2754D00A21F7A /* NewCollectionDataSource.swift */; };
+		DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
@@ -312,7 +311,6 @@
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
-		BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
 		BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
@@ -374,7 +372,7 @@
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DD48652524E2444300A21F7A /* NewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataSource.swift; sourceTree = "<group>"; };
 		DD48652824E25C0B00A21F7A /* HomeSectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionItem.swift; sourceTree = "<group>"; };
-		DD48652C24E2754D00A21F7A /* NewCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionDataSource.swift; sourceTree = "<group>"; };
+		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
@@ -748,8 +746,7 @@
 		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */,
-				DD48652C24E2754D00A21F7A /* NewCollectionDataSource.swift */,
+				DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -1141,7 +1138,6 @@
 				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
 				7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
-				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
 				BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */,
 				DD48652924E25C0B00A21F7A /* HomeSectionItem.swift in Sources */,
 				BBE51CBC1CB73898006638B8 /* Country.swift in Sources */,
@@ -1182,7 +1178,7 @@
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,
 				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
-				DD48652D24E2754D00A21F7A /* NewCollectionDataSource.swift in Sources */,
+				DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */,
 				FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
 			);
