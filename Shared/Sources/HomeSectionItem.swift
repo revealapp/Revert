@@ -2,7 +2,9 @@
 
 import Foundation
 
-struct HomeSectionItem: Decodable {
-  let title: String?
-  let rows: [HomeItem]
+struct HomeSectionItem: SectionItem, Decodable {
+  typealias item = HomeItem
+
+  var title: String?
+  var rows: [item]
 }
