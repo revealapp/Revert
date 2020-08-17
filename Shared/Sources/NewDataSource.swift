@@ -2,17 +2,20 @@
 
 import UIKit
 
-/// The purpose of this class is to eventually the current custom data source class (`DataSource`). The existing custom class is more complex and incompatible with models that extend `Decodable`.
+/// The purpose of this class is to eventually replace the current custom data source class (`DataSource`).
+/// The existing custom class is more complex and incompatible with models that extend `Decodable`.
 final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias Models = [[Model]]
   typealias CellConfigurator = (Cell, _ object: Model) -> Void
 
-  // MARK: - Properties
+  // MARK: - Private Properties
+
   private let data: Models
   private let cellIdentifier: String
   private let configureCell: CellConfigurator
 
   // MARK: - Init
+
   required init(collection: Models, cellIdentifier: String, configureCell: @escaping CellConfigurator) {
     self.data = collection
     self.cellIdentifier = cellIdentifier
