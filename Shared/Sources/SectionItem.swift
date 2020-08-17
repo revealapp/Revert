@@ -3,8 +3,8 @@
 import Foundation
 
 protocol SectionItem: Decodable {
-  associatedtype item
+  associatedtype Item
 
   var title: String? { get set }
-  var rows: [item] { get set }
+  var rows: [Item] { get set }
 }

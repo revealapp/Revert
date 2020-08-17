@@ -3,9 +3,9 @@
 import Foundation
 
 final class CollectionDataSource<Section: SectionItem, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
-  typealias CellConfigurator = (Cell, Section.item) -> Void
+  typealias CellConfigurator = (Cell, Section.Item) -> Void
   typealias GroupFilterClosure = ((Section) -> Bool)
-  typealias ItemFilterClosure = (Section.item) -> Bool
+  typealias ItemFilterClosure = (Section.Item) -> Bool
 
   // MARK: - Private properties
 
@@ -48,7 +48,7 @@ final class CollectionDataSource<Section: SectionItem, Cell: UICollectionViewCel
 
   // MARK: - Public methods
   
-  subscript(indexPath: IndexPath) -> Section.item {
+  subscript(indexPath: IndexPath) -> Section.Item {
     return sections[indexPath.section].rows[indexPath.row]
   }
 

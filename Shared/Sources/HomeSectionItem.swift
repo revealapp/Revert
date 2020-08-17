@@ -3,8 +3,8 @@
 import Foundation
 
 struct HomeSectionItem: SectionItem {
-  typealias item = HomeItem
+  typealias Item = HomeItem
 
   var title: String?
-  var rows: [item]
+  var rows: [Item]
 }
