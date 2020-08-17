@@ -6,10 +6,10 @@ import UIKit
 final class HomeViewController: UITableViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(
-      collection: self.collection,
-      configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.home
+    self.dataSource = NewDataSource(
+      sections: RevertItems.home.newData(),
+      cellIdentifier: CellIdentifiers.home,
+      configureCell: Self.configureCell
     )
 
     super.init(coder: aDecoder)
@@ -43,7 +43,7 @@ final class HomeViewController: UITableViewController {
       guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
-      destinationViewController.item = self.collection[indexPath]
+      destinationViewController.item = dataSource[indexPath]
     }
   }
 
@@ -57,9 +57,7 @@ final class HomeViewController: UITableViewController {
   }
 
   // MARK: Private
-
-  fileprivate var collection = CollectableCollection<HomeItem>(items: .home)
-  private var dataSource: DataSource<HomeItem, HomeCell>
+  private let dataSource: NewDataSource<HomeSection, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
   }
@@ -80,7 +78,7 @@ final class HomeViewController: UITableViewController {
 extension HomeViewController {
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let item = self.collection[indexPath]
+    let item = dataSource[indexPath]
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 
@@ -89,7 +87,7 @@ extension HomeViewController {
       fatalError("Cell should be of type `HomeCell`")
     }
 
-    let item = self.collection[indexPath]
+    let item = dataSource[indexPath]
     cell.accessoryType = self.isSplitViewControllerCollapsed && item.isPush ? .disclosureIndicator : .none
     cell.updateSelectedBackgroundColor(self.isSplitViewControllerCollapsed == false)
   }

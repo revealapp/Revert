@@ -91,7 +91,6 @@
 		BB2720561C9B8E44002E53EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2720551C9B8E44002E53EE /* Images.xcassets */; };
 		BB2720BC1C9F8BE5002E53EE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2720BA1C9F8BE5002E53EE /* HomeCell.xib */; };
 		BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */; };
-		BB66CC021CB74C8900954AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC011CB74C8900954AD1 /* Person.swift */; };
 		BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */; };
 		BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B401C9FCC590092FA6F /* AppDelegate.swift */; };
 		BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB735B411C9FCC590092FA6F /* HomeViewController.swift */; };
@@ -99,7 +98,6 @@
 		BB735B471C9FD0490092FA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB735B451C9FD0490092FA6F /* Assets.xcassets */; };
 		BB957F8F1CA0B57C000F09CA /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB957F8D1CA0B57C000F09CA /* StackView.xib */; };
 		BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */; };
-		BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */; };
 		BB9F768A1CB61F45006EA285 /* RevertFocusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */; };
 		BB9F768E1CB61F57006EA285 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */; };
 		BB9F768F1CB61F57006EA285 /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */; };
@@ -198,6 +196,13 @@
 		BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
+		DD124B8F24E6661000CF6272 /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
+		DD48652624E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
+		DD48652724E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
+		DD48652924E25C0B00A21F7A /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
+		DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */; };
+		DD8ECA4024EA4C56002E414E /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
+		DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
@@ -299,7 +304,6 @@
 		BB2720551C9B8E44002E53EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB2720BB1C9F8BE5002E53EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeCell.xib; sourceTree = "<group>"; };
 		BB3F8B511D338C7F0092E374 /* UITableView+tvOSInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+tvOSInsets.swift"; sourceTree = "<group>"; };
-		BB66CC011CB74C8900954AD1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BB66CC031CB74CEF00954AD1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BB735B3D1C9FCC290092FA6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB735B401C9FCC590092FA6F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -310,7 +314,6 @@
 		BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Revert-tvOS-Release.xcconfig"; sourceTree = "<group>"; };
 		BB957F8E1CA0B57C000F09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		BB9F76851CB61F0E006EA285 /* ExampleLegacyAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLegacyAlerts.swift; sourceTree = "<group>"; };
-		BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		BB9F76891CB61F45006EA285 /* RevertFocusableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevertFocusableTableView.swift; sourceTree = "<group>"; };
 		BB9F768B1CB61F57006EA285 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		BB9F768C1CB61F57006EA285 /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +373,10 @@
 		BBE51D021CB73996006638B8 /* TableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCells.swift; path = Shared/Sources/TableViewCells.swift; sourceTree = SOURCE_ROOT; };
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DD124B8D24E6661000CF6272 /* RevertSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertSection.swift; sourceTree = "<group>"; };
+		DD48652524E2444300A21F7A /* NewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataSource.swift; sourceTree = "<group>"; };
+		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
+		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
@@ -632,7 +639,6 @@
 				BB735B401C9FCC590092FA6F /* AppDelegate.swift */,
 				BBB6FCB81CA37CAD00AF24F3 /* Data Sources */,
 				BB3F8B501D338C5A0092E374 /* Extensions */,
-				BB66CC001CB74C6000954AD1 /* Models */,
 				BB2720A11C9B92BD002E53EE /* View Controllers */,
 				BBB6FCBB1CA3A2F800AF24F3 /* Views */,
 			);
@@ -731,14 +737,6 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		BB66CC001CB74C6000954AD1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BB66CC011CB74C8900954AD1 /* Person.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		BB735B481C9FD0500092FA6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,7 +750,7 @@
 		BBB6FCB81CA37CAD00AF24F3 /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BB9F76871CB61F36006EA285 /* CollectionDataSource.swift */,
+				DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -770,6 +768,7 @@
 			children = (
 				BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */,
 				BBE51C821CB737C1006638B8 /* DataSource.swift */,
+				DD48652524E2444300A21F7A /* NewDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -809,15 +808,17 @@
 		BBE51CAB1CB73859006638B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BBE51CB01CB73898006638B8 /* Cube.h */,
+				BBE51CB11CB73898006638B8 /* Cube.m */,
 				BBE51CAC1CB73898006638B8 /* Collectable.swift */,
 				BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */,
 				BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */,
 				BBE51CAF1CB73898006638B8 /* Country.swift */,
-				BBE51CB01CB73898006638B8 /* Cube.h */,
-				BBE51CB11CB73898006638B8 /* Cube.m */,
 				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
+				DD48652824E25C0B00A21F7A /* HomeSection.swift */,
 				BBE51CB31CB73898006638B8 /* Item.swift */,
 				BBE51CB41CB73898006638B8 /* Requirement.swift */,
+				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1094,7 +1095,10 @@
 				BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
 				BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */,
+				DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
+				DD8ECA4024EA4C56002E414E /* HomeSection.swift in Sources */,
+				DD48652624E2444300A21F7A /* NewDataSource.swift in Sources */,
 				7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D0F1CB73996006638B8 /* LayerPropertiesCells.swift in Sources */,
 				BBE51CC11CB73898006638B8 /* Item.swift in Sources */,
@@ -1138,12 +1142,11 @@
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
-				BB66CC021CB74C8900954AD1 /* Person.swift in Sources */,
 				BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */,
 				7D343B021E52CDEE0035E06E /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D141CB73996006638B8 /* MapAnnotationView.swift in Sources */,
-				BB9F76881CB61F36006EA285 /* CollectionDataSource.swift in Sources */,
 				BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */,
+				DD48652924E25C0B00A21F7A /* HomeSection.swift in Sources */,
 				BBE51CBC1CB73898006638B8 /* Country.swift in Sources */,
 				BBE51CA61CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */,
 				BBE51CE11CB73929006638B8 /* MapViewController.swift in Sources */,
@@ -1163,10 +1166,12 @@
 				BB735B431C9FCC590092FA6F /* HomeViewController.swift in Sources */,
 				BBE51CED1CB73929006638B8 /* StressTestViewController.swift in Sources */,
 				BBE51C8D1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
+				DD124B8F24E6661000CF6272 /* RevertSection.swift in Sources */,
 				BBE51CD51CB73929006638B8 /* AlertViewController.swift in Sources */,
 				BBE51CF71CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				BBE51CC21CB73898006638B8 /* Item.swift in Sources */,
+				DD48652724E2444300A21F7A /* NewDataSource.swift in Sources */,
 				BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */,
 				BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */,
@@ -1181,6 +1186,7 @@
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,
 				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
+				DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */,
 				FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
 			);

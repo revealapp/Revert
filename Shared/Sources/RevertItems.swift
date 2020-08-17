@@ -7,11 +7,9 @@ enum RevertItems: String {
   case capitalCities = "CountriesCapitals"
   case alert = "AlertItems"
   case home = "HomeItems"
-  case homeCollection = "HomeCollectionItems"
   case control = "ControlItems"
   case mapLocations = "MapLocations"
   case layerProperties = "LayerPropertiesItems"
-  case persons = "Persons"
   case view = "ViewItems"
   case whatsNew = "NewItems"
 
@@ -20,6 +18,18 @@ enum RevertItems: String {
       fatalError(self.invalidContentError)
     }
     return data
+  }
+
+  func newData<T: Decodable>() -> T {
+    do {
+      let data = try Data(contentsOf: self.URL)
+      let decoder = PropertyListDecoder()
+      let decodedData = try decoder.decode(T.self, from: data)
+
+      return decodedData
+    } catch {
+      fatalError(invalidContentError)
+    }
   }
 
   // MARK: Private

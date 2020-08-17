@@ -14,6 +14,8 @@
 				<string>ShowTableViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>table_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -24,6 +26,8 @@
 				<string>ShowCollectionViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>collection_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -34,6 +38,8 @@
 				<string>ShowScrollViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>scroll_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -46,6 +52,8 @@
 				<string>stack_view</string>
 				<key>requiredClassName</key>
 				<string>UIStackView</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -63,6 +71,8 @@
 				<string>ShowDefaultsControllerSegue</string>
 				<key>infoFilename</key>
 				<string>default_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>resourceFilename</key>
@@ -75,6 +85,8 @@
 				<string>ShowControlsControllerSegue</string>
 				<key>infoFilename</key>
 				<string>controls</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -85,6 +97,8 @@
 				<string>ShowBarsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>bars</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -95,6 +109,8 @@
 				<string>ShowAlertViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>alert_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -105,6 +121,8 @@
 				<string>ShowPickerViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>picker_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -115,6 +133,8 @@
 				<string>ShowVisualEffectViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>visual_effect_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -130,6 +150,8 @@
 				<string>ShowMapViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>map_view</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -140,6 +162,8 @@
 				<string>ShowSpriteKitViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>sprite_kit</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -150,6 +174,8 @@
 				<string>ShowGLKViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>open_gl</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -160,6 +186,8 @@
 				<string>ShowWebViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>web_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -211,6 +239,8 @@
 				<string>ShowViewsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>arranged_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -221,6 +251,8 @@
 				<string>ShowAutoLayoutViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_layout</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -231,6 +263,8 @@
 				<string>ShowAutoLayoutBrokenConstraintsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>broken_constraints</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -241,6 +275,8 @@
 				<string>ShowAutoLayoutAlignmentsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_layout_alignments</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -251,6 +287,8 @@
 				<string>ShowAutoLayoutMarginsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_layout_margins</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -263,6 +301,8 @@
 				<string>ShowAutoLayoutGuidesViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_layout_guides</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -273,6 +313,8 @@
 				<string>ShowAutoResizingMasksViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>auto_resizing_masks</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -283,6 +325,8 @@
 				<string>ShowTransformViewsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>transformed_views</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -293,6 +337,8 @@
 				<string>ShowTransformLayersViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>transformed_layers</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -303,6 +349,8 @@
 				<string>ShowLayerPropertiesViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>layer_properties</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -313,6 +361,8 @@
 				<string>ShowAnchorBoundsViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>bounds_anchor_point_changes</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -328,6 +378,8 @@
 				<string>ShowSuperDeepViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>super_deep</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -338,6 +390,8 @@
 				<string>ShowStressTestViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>stress_test</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -353,6 +407,8 @@
 				<string>ShowNotSerializableViewControllerSegue</string>
 				<key>infoFilename</key>
 				<string>not_serializable</string>
+				<key>isPush</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>

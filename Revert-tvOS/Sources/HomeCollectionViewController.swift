@@ -7,7 +7,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   var collectionGroup: String? {
     didSet {
       self.dataSource.filterGroups({
-        if let groupTitle = $0.title, let collectionTitle = self.collectionGroup {
+        if let collectionTitle = self.collectionGroup, let groupTitle = $0.title {
           return groupTitle.localizedStandardContains(collectionTitle)
         } else {
           return false
@@ -20,10 +20,9 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .home, sortClosure: { $0.title < $1.title }),
-      configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.homeCollection
-    )
+      sections: sections,
+      configureCell: Self.configureCell,
+      cellIdentifier: CellIdentifiers.homeCollection)
 
     super.init(coder: aDecoder)
   }
@@ -43,12 +42,13 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.dataSource[indexPath]
+      destinationViewController.item = sections[indexPath.section].rows[indexPath.row]
     }
   }
 
   // MARK: - Private
-  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let dataSource: CollectionDataSource<HomeSection, HomeCollectionCell>
+  private let sections: [HomeSection] = RevertItems.home.newData()
 }
 
 private extension HomeCollectionViewController {

@@ -7,8 +7,8 @@ final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      collection: CollectableCollection<HomeItem>(items: .home, flatten: true, sortClosure: { $0.title < $1.title }),
-      configureCell: type(of: self).configureCell,
+      sections: sections,
+      configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
     )
 
@@ -30,13 +30,14 @@ final class SearchViewController: UICollectionViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = self.dataSource[indexPath]
+      destinationViewController.item = dataSource[indexPath]
     }
   }
 
   // MARK: Private
 
-  fileprivate let dataSource: CollectionDataSource<HomeItem, HomeCollectionCell>
+  private let dataSource: CollectionDataSource<HomeSection, HomeCollectionCell>
+  private let sections: [HomeSection] = RevertItems.home.newData()
 
   fileprivate var searchText: String? {
     didSet {
@@ -71,7 +72,7 @@ private extension SearchViewController {
 extension SearchViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = self.dataSource[indexPath]
+    let item = dataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
