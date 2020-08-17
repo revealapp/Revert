@@ -47,7 +47,7 @@ final class CollectionDataSource<Section: SectionItem, Cell: UICollectionViewCel
   }
 
   // MARK: - Public methods
-  
+
   subscript(indexPath: IndexPath) -> Section.Item {
     return sections[indexPath.section].rows[indexPath.row]
   }
