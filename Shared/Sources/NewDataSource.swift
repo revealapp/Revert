@@ -4,20 +4,19 @@ import UIKit
 
 /// The purpose of this class is to eventually replace the current custom data source class (`DataSource`).
 /// The existing custom class is more complex and incompatible with models that extend `Decodable`.
-final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
-  typealias Models = [[Model]]
-  typealias CellConfigurator = (Cell, _ object: Model) -> Void
+final class NewDataSource<Section: SectionItem, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
+  typealias CellConfigurator = (Cell, Section.Item) -> Void
 
   // MARK: - Private Properties
 
-  private let data: Models
+  private var sections: [Section]
   private let cellIdentifier: String
   private let configureCell: CellConfigurator
 
   // MARK: - Init
 
-  required init(collection: Models, cellIdentifier: String, configureCell: @escaping CellConfigurator) {
-    self.data = collection
+  required init(sections: [Section], cellIdentifier: String, configureCell: @escaping CellConfigurator) {
+    self.sections = sections
     self.cellIdentifier = cellIdentifier
     self.configureCell = configureCell
 
@@ -26,18 +25,18 @@ final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UI
 
   // MARK: - Public methods
 
-  subscript(indexPath: IndexPath) -> Model {
-    return data[indexPath.section][indexPath.row]
+  subscript(indexPath: IndexPath) -> Section.Item {
+    return sections[indexPath.section].rows[indexPath.row]
   }
 
   // MARK: - UITableViewDataSource
 
   func numberOfSections(in tableView: UITableView) -> Int {
-    return data.count
+    return sections.count
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return data[section].count
+    return sections[section].rows.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,7 +44,7 @@ final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UI
       fatalError("Expecting to dequeue a `\(Cell.self)` from the tableView")
     }
 
-    self.configureCell(cell, data[indexPath.section][indexPath.row])
+    self.configureCell(cell, self[indexPath])
     return cell
   }
 }
