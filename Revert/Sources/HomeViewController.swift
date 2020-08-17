@@ -7,7 +7,7 @@ final class HomeViewController: UITableViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = NewDataSource(
-      collection: collection,
+      collection: RevertItems.home.newData(),
       cellIdentifier: CellIdentifiers.home,
       configureCell: type(of: self).configureCell
     )
@@ -43,7 +43,7 @@ final class HomeViewController: UITableViewController {
       guard let indexPath = sender as? IndexPath else {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
-      destinationViewController.item = self.collection[indexPath.section][indexPath.row]
+      destinationViewController.item = dataSource[indexPath]
     }
   }
 
@@ -59,7 +59,6 @@ final class HomeViewController: UITableViewController {
   // MARK: Private
   typealias HomeItems = [[HomeItem]]
 
-  private let collection: HomeItems = RevertItems.home.newData()
   private let dataSource: NewDataSource<HomeItem, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
@@ -81,7 +80,7 @@ final class HomeViewController: UITableViewController {
 extension HomeViewController {
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let item = collection[indexPath.section][indexPath.row]
+    let item = dataSource[indexPath]
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }
 
@@ -90,7 +89,7 @@ extension HomeViewController {
       fatalError("Cell should be of type `HomeCell`")
     }
 
-    let item = collection[indexPath.section][indexPath.row]
+    let item = dataSource[indexPath]
     cell.accessoryType = self.isSplitViewControllerCollapsed && item.isPush ? .disclosureIndicator : .none
     cell.updateSelectedBackgroundColor(self.isSplitViewControllerCollapsed == false)
   }

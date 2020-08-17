@@ -24,7 +24,13 @@ final class NewDataSource<Model: Decodable, Cell: UITableViewCell>: NSObject, UI
     super.init()
   }
 
-  // MARK: UITableViewDataSource
+  // MARK: - Public methods
+
+  subscript(indexPath: IndexPath) -> Model {
+    return data[indexPath.section][indexPath.row]
+  }
+
+  // MARK: - UITableViewDataSource
 
   func numberOfSections(in tableView: UITableView) -> Int {
     return data.count
