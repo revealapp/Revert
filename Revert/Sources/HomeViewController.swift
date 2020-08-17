@@ -9,7 +9,7 @@ final class HomeViewController: UITableViewController {
     self.dataSource = NewDataSource(
       collection: RevertItems.home.newData(),
       cellIdentifier: CellIdentifiers.home,
-      configureCell: type(of: self).configureCell
+      configureCell: Self.configureCell
     )
 
     super.init(coder: aDecoder)

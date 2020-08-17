@@ -21,7 +21,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       sections: sections,
-      configureCell: type(of: self).configureCell,
+      configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
 
     super.init(coder: aDecoder)

@@ -8,7 +8,7 @@ final class SearchViewController: UICollectionViewController {
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
       sections: sections,
-      configureCell: type(of: self).configureCell,
+      configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
     )
 
