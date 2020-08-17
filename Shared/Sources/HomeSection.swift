@@ -2,7 +2,7 @@
 
 import Foundation
 
-struct HomeSectionItem: SectionItem {
+struct HomeSection: RevertSection {
   var title: String?
   var rows: [HomeItem]
 }

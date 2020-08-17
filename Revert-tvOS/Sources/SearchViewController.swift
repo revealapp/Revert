@@ -36,8 +36,8 @@ final class SearchViewController: UICollectionViewController {
 
   // MARK: Private
 
-  private let dataSource: CollectionDataSource<HomeSectionItem, HomeCollectionCell>
-  private let sections: [HomeSectionItem] = RevertItems.home.newData()
+  private let dataSource: CollectionDataSource<HomeSection, HomeCollectionCell>
+  private let sections: [HomeSection] = RevertItems.home.newData()
 
   fileprivate var searchText: String? {
     didSet {

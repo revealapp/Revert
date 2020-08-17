@@ -2,7 +2,7 @@
 
 import Foundation
 
-protocol SectionItem: Decodable {
+protocol RevertSection: Decodable {
   associatedtype Item
 
   var title: String? { get set }

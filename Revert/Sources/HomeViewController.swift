@@ -57,7 +57,7 @@ final class HomeViewController: UITableViewController {
   }
 
   // MARK: Private
-  private let dataSource: NewDataSource<HomeSectionItem, HomeCell>
+  private let dataSource: NewDataSource<HomeSection, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
   }

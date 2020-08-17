@@ -2,7 +2,7 @@
 
 import Foundation
 
-final class CollectionDataSource<Section: SectionItem, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
+final class CollectionDataSource<Section: RevertSection, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource {
   typealias CellConfigurator = (Cell, Section.Item) -> Void
   typealias GroupFilterClosure = ((Section) -> Bool)
   typealias ItemFilterClosure = (Section.Item) -> Bool
