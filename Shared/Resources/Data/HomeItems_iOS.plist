@@ -57,6 +57,25 @@
 			</dict>
 		</array>
 	</dict>
+    <dict>
+        <key>rows</key>
+        <array>
+            <dict>
+                <key>resourceFilename</key>
+                <string>ViewItems</string>
+                <key>title</key>
+                <string>Dynamic Colours</string>
+                <key>iconName</key>
+                <string></string>
+                <key>segueIdentifier</key>
+                <string>ShowDynamicColoursViewControllerSegue</string>
+                <key>infoFilename</key>
+                <string>dynamic_colours</string>
+                <key>isPush</key>
+                <false/>
+            </dict>
+        </array>
+    </dict>
 	<dict>
 		<key>rows</key>
 		<array>

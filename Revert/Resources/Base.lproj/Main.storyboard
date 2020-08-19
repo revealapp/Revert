@@ -97,6 +97,7 @@
                         <segue destination="ebC-TP-Awc" kind="showDetail" identifier="ShowAutoLayoutBrokenConstraintsViewControllerSegue" id="qLX-TK-2Yz"/>
                         <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
                         <segue destination="qKZ-D1-bJF" kind="presentation" identifier="ShowModalViewController" id="fgR-Dv-Ign"/>
+                        <segue destination="53b-gV-b0b" kind="showDetail" identifier="ShowDynamicColoursViewControllerSegue" id="ziX-Wn-rFs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -255,6 +256,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rX8-bL-KDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="-2182"/>
+        </scene>
+        <!--DynamicColoursViewController-->
+        <scene sceneID="jHL-70-dKt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dynamic Colours" referencedIdentifier="DynamicColoursViewController" id="53b-gV-b0b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltK-kP-P7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="-2080"/>
         </scene>
         <!--CollectionViewController-->
         <scene sceneID="D8o-mu-Ayn">

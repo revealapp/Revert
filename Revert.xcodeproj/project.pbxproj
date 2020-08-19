@@ -84,6 +84,10 @@
 		9AF1B3191AE5EBE400BB626B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF1B3171AE5EBE400BB626B /* HomeCell.xib */; };
 		9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */; };
 		9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFD02681B0094DE00ACE85D /* InfoViewController.swift */; };
+		B3681C3824EB94F600FB88D4 /* Dynamic Colours.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */; };
+		B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3681C3924EB962000FB88D4 /* DynamicColourViewController.swift */; };
+		B3681C3C24EBB43B00FB88D4 /* ColourSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */; };
+		B3681C3E24EBB45700FB88D4 /* ColourItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3681C3D24EBB45700FB88D4 /* ColourItem.swift */; };
 		B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55841181BD496AB009725C5 /* NSBundle+Revert.swift */; };
 		B59998E81BC36092002FE92C /* StackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59998E61BC36092002FE92C /* StackView.xib */; };
 		B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */; };
@@ -296,6 +300,10 @@
 		9AFAB7471B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DualRowBasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		9AFAB7491B0DBDA00009707A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9AFD02681B0094DE00ACE85D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Dynamic Colours.storyboard"; sourceTree = "<group>"; };
+		B3681C3924EB962000FB88D4 /* DynamicColourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColourViewController.swift; sourceTree = "<group>"; };
+		B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourSection.swift; sourceTree = "<group>"; };
+		B3681C3D24EBB45700FB88D4 /* ColourItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourItem.swift; sourceTree = "<group>"; };
 		B55841181BD496AB009725C5 /* NSBundle+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Revert.swift"; sourceTree = "<group>"; };
 		B59998E71BC36092002FE92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StackView.xib; sourceTree = "<group>"; };
 		B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
@@ -444,6 +452,7 @@
 				90125DA923011C84003363CA /* Views.storyboard */,
 				90125D652301166F003363CA /* Visual Effect View.storyboard */,
 				90125DA623011C60003363CA /* Web View.storyboard */,
+				B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -725,6 +734,7 @@
 				BBE51CD21CB73929006638B8 /* TransformLayersViewController.swift */,
 				BBE51CD31CB73929006638B8 /* TransformViewsViewController.swift */,
 				FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */,
+				B3681C3924EB962000FB88D4 /* DynamicColourViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -819,6 +829,8 @@
 				BBE51CB31CB73898006638B8 /* Item.swift */,
 				BBE51CB41CB73898006638B8 /* Requirement.swift */,
 				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
+				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
+				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -961,6 +973,7 @@
 				90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */,
 				90125DA523011C38003363CA /* Scroll View.storyboard in Resources */,
 				90125DA823011C60003363CA /* Web View.storyboard in Resources */,
+				B3681C3824EB94F600FB88D4 /* Dynamic Colours.storyboard in Resources */,
 				90125DB423011CF1003363CA /* Stack View.storyboard in Resources */,
 				90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */,
 				90125D6D230117ED003363CA /* Stress Test.storyboard in Resources */,
@@ -1070,11 +1083,13 @@
 				BBE51CDA1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */,
 				BBE51C851CB737C1006638B8 /* DataSource.swift in Sources */,
 				BBE51C9F1CB7384D006638B8 /* HairlineConstraint.swift in Sources */,
+				B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */,
 				BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */,
 				BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
 				BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
 				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
+				B3681C3C24EBB43B00FB88D4 /* ColourSection.swift in Sources */,
 				BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */,
 				BBE51CE41CB73929006638B8 /* RevertViewController.swift in Sources */,
 				BBE51CE61CB73929006638B8 /* ScrollViewController.swift in Sources */,
@@ -1105,6 +1120,7 @@
 				BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */,
 				BBE51D031CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51CEA1CB73929006638B8 /* StackViewController.swift in Sources */,
+				B3681C3E24EBB45700FB88D4 /* ColourItem.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
