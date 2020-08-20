@@ -48,7 +48,7 @@ extension ColourItem {
       imageAttachment.image = circleSymbol
     }
 
-    let detailText = NSMutableAttributedString(string: "")
+    let detailText = NSMutableAttributedString()
     detailText.append(NSAttributedString(attachment: imageAttachment))
     detailText.append(NSAttributedString(string: " "))
     detailText.append(NSAttributedString(string: rgbaText))

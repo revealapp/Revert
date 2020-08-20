@@ -26,29 +26,11 @@ extension DynamicColourViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewControllerCell") else {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewControllerCell") as? DynamicColourCell else {
       fatalError("Unknown cellIdentifier or cell")
     }
 
-    let section = collection[indexPath.section]
-    let row = section.rows[indexPath.row]
-
-    if #available(iOS 10.0, *) {
-      let imageSize = CGSize(width: 50, height: 50)
-      cell.imageView?.image = UIGraphicsImageRenderer(size: imageSize)
-        .image { rendererContext in
-          row.color.setFill()
-          rendererContext.fill(CGRect(origin: .zero, size: imageSize))
-      }
-    }
-
-    cell.imageView?.clipsToBounds = true
-    cell.imageView?.layer.cornerRadius = 10
-
-    cell.detailTextLabel?.attributedText = row.detailText
-    cell.detailTextLabel?.textColor = .systemGray
-
-    cell.textLabel?.text = row.name
+    cell.setupCell(with: collection[indexPath.section].rows[indexPath.row])
 
     return cell
   }
