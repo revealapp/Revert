@@ -11,49 +11,63 @@ final class DynamicColourViewController: RevertTableViewController {
   @IBOutlet var headerTextView: UIView!
 
   @IBOutlet var accessibilityTextLabel: UILabel!
-  
-  override func viewWillAppear(_animated: Bool) {
+
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
     self.navigationController?.setToolbarHidden(false, animated: true)
-  }
-    
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    self.tableView.tableHeaderView = headerTextView
-    self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
-    invertColourDidChange()
-
-    NotificationCenter.default.addObserver(
-      self,
-      selector: #selector(invertColourDidChange),
-      name: UIAccessibility.invertColorsStatusDidChangeNotification,
-      object: nil
-    )
-  }
-
-  @objc func invertColourDidChange() {
-    if UIAccessibility.isInvertColorsEnabled {
-      accessibilityTextLabel?.text = "UIAccessibility: Invert colors"
-    } else {
-      accessibilityTextLabel?.text = "UIAccessibility: None"
-    }
-  }
-
-  deinit {
-    NotificationCenter.default.removeObserver(
-      self,
-      name: UIAccessibility.invertColorsStatusDidChangeNotification,
-      object: nil
-    )
   }
 
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
     self.navigationController?.setToolbarHidden(true, animated: true)
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    self.tableView.tableHeaderView = headerTextView
+    self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
+
+    accessibilityDidChange()
+    addAccessibilityObserver()
+  }
+
+  deinit {
+    [UIAccessibility.invertColorsStatusDidChangeNotification, UIAccessibility.darkerSystemColorsStatusDidChangeNotification].forEach {
+      NotificationCenter.default.removeObserver(
+        self,
+        name: $0,
+        object: nil
+      )
+    }
+  }
+
+  private func addAccessibilityObserver() {
+    [UIAccessibility.invertColorsStatusDidChangeNotification, UIAccessibility.darkerSystemColorsStatusDidChangeNotification].forEach {
+      NotificationCenter.default.addObserver(
+        self,
+        selector: #selector(accessibilityDidChange),
+        name: $0,
+        object: nil
+      )
+    }
+  }
+
+  @objc func accessibilityDidChange() {
+    var labelText: String = "Accessibility: "
+    switch (UIAccessibility.isInvertColorsEnabled, UIAccessibility.isDarkerSystemColorsEnabled) {
+    case (true, true):
+      labelText += "Invert colors, Increase contrast"
+    case (true, false):
+      labelText += "Invert colors"
+    case (false, true):
+      labelText += "Increase contrast"
+    case (false, false):
+      labelText += "None"
+    }
+    accessibilityTextLabel.text = labelText
   }
 
   @available(iOS 13, *)

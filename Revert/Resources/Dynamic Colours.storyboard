@@ -74,19 +74,18 @@
                     </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" id="yJY-7W-bcM">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jX-Eg-PoG">
-                            <rect key="frame" x="16" y="19.5" width="105" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <rect key="frame" x="65" y="14.5" width="110.5" height="21"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="7jX-Eg-PoG" firstAttribute="leading" secondItem="yJY-7W-bcM" secondAttribute="leading" constant="16" id="ACw-Au-bhV"/>
+                        <constraint firstItem="7jX-Eg-PoG" firstAttribute="centerX" secondItem="yJY-7W-bcM" secondAttribute="centerX" id="LAz-fL-c8U"/>
                         <constraint firstItem="7jX-Eg-PoG" firstAttribute="centerY" secondItem="yJY-7W-bcM" secondAttribute="centerY" id="Zrg-ff-8AV"/>
                     </constraints>
                 </view>
