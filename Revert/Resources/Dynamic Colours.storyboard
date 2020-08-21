@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dynamic Colour View Controller-->
+        <!--Dynamic Colour View-->
         <scene sceneID="OTA-uj-G7W">
             <objects>
-                <viewController id="neK-XH-vsk" customClass="DynamicColourViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="neK-XH-vsk" userLabel="Dynamic Colour View" customClass="DynamicColourViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p5w-it-vfl"/>
                         <viewControllerLayoutGuide type="bottom" id="gkv-A8-ipG"/>
@@ -45,18 +45,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B37-NE-uNL">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B37-NE-uNL">
                                                     <rect key="frame" x="20" y="15" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MiZ-V1-ZJZ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MiZ-V1-ZJZ">
                                                     <rect key="frame" x="20" y="38.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Subtitle">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="cellTitle"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -81,6 +86,13 @@
                             <constraint firstItem="beD-ea-lE5" firstAttribute="top" secondItem="yJY-7W-bcM" secondAttribute="bottom" id="gve-N6-cYL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Dynamic Colours" id="fhX-0f-49M" userLabel="Navigation Item">
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="tkA-FO-PY6" userLabel="Bar Button Item">
+                            <connections>
+                                <segue destination="FQa-SC-LTr" kind="presentation" identifier="ShowInfoViewControllerSegue" id="LqD-nl-3bk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="accessibilityTextLabel" destination="7jX-Eg-PoG" id="cuR-pA-C1B"/>
                         <outlet property="segmentedControl" destination="sMo-Jg-htv" id="4bZ-ED-nMa"/>
@@ -109,7 +121,10 @@
                 <viewControllerPlaceholder storyboardName="Info" id="FQa-SC-LTr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEF-sX-lvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="139"/>
+            <point key="canvasLocation" x="1075" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info_icon" width="22" height="22"/>
+    </resources>
 </document>
