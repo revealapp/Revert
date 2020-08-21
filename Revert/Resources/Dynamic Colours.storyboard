@@ -55,6 +55,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="accessibilityTextLabel" destination="7jX-Eg-PoG" id="fnQ-Bn-u6b"/>
+                        <outlet property="headerTextView" destination="yJY-7W-bcM" id="Wpp-sX-sen"/>
                         <outlet property="segmentedControl" destination="sMo-Jg-htv" id="ynb-bW-8he"/>
                     </connections>
                 </tableViewController>
@@ -71,6 +73,23 @@
                         <action selector="onSegmentValueChanged:" destination="7Jo-Sv-oFl" eventType="valueChanged" id="mJh-kK-Fb0"/>
                     </connections>
                 </segmentedControl>
+                <view contentMode="scaleToFill" id="yJY-7W-bcM">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jX-Eg-PoG">
+                            <rect key="frame" x="16" y="19.5" width="105" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7jX-Eg-PoG" firstAttribute="leading" secondItem="yJY-7W-bcM" secondAttribute="leading" constant="16" id="ACw-Au-bhV"/>
+                        <constraint firstItem="7jX-Eg-PoG" firstAttribute="centerY" secondItem="yJY-7W-bcM" secondAttribute="centerY" id="Zrg-ff-8AV"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="1108.6956521739132" y="138.61607142857142"/>
         </scene>

@@ -8,11 +8,46 @@ final class DynamicColourViewController: RevertTableViewController {
 
   @IBOutlet var segmentedControl: UISegmentedControl!
 
-  override func viewWillAppear(_ animated: Bool) {
+  @IBOutlet var headerTextView: UIView!
+
+  @IBOutlet var accessibilityTextLabel: UILabel!
+  
+  override func viewWillAppear(_animated: Bool) {
     super.viewWillAppear(animated)
 
     self.navigationController?.setToolbarHidden(false, animated: true)
-    setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: false)
+  }
+    
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    self.tableView.tableHeaderView = headerTextView
+    self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
+    invertColourDidChange()
+
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(invertColourDidChange),
+      name: UIAccessibility.invertColorsStatusDidChangeNotification,
+      object: nil
+    )
+  }
+
+  @objc func invertColourDidChange() {
+    if UIAccessibility.isInvertColorsEnabled {
+      accessibilityTextLabel?.text = "UIAccessibility: Invert colors"
+    } else {
+      accessibilityTextLabel?.text = "UIAccessibility: None"
+    }
+  }
+
+  deinit {
+    NotificationCenter.default.removeObserver(
+      self,
+      name: UIAccessibility.invertColorsStatusDidChangeNotification,
+      object: nil
+    )
   }
 
   override func viewWillDisappear(_ animated: Bool) {
@@ -49,6 +84,9 @@ extension DynamicColourViewController {
   override func numberOfSections(in tableView: UITableView) -> Int {
       collection.count
   }
+
+
+
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       collection[section].rows.count
   }
