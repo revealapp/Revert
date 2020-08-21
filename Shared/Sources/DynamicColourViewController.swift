@@ -2,15 +2,15 @@
 
 import Foundation
 
-final class DynamicColourViewController: RevertTableViewController {
+final class DynamicColourViewController: RevertViewController {
 
   private let collection: [ColourSection] = RevertItems.coloursData
 
   @IBOutlet var segmentedControl: UISegmentedControl!
 
-  @IBOutlet var headerTextView: UIView!
-
   @IBOutlet var accessibilityTextLabel: UILabel!
+
+  @IBOutlet var tableView: UITableView!
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -27,7 +27,6 @@ final class DynamicColourViewController: RevertTableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.tableView.tableHeaderView = headerTextView
     self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
 
     accessibilityDidChange()
@@ -93,23 +92,21 @@ final class DynamicColourViewController: RevertTableViewController {
 
 }
 
-extension DynamicColourViewController {
+extension DynamicColourViewController: UITableViewDataSource, UITableViewDelegate {
 
-  override func numberOfSections(in tableView: UITableView) -> Int {
+  func numberOfSections(in tableView: UITableView) -> Int {
       collection.count
   }
 
-
-
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       collection[section].rows.count
   }
 
-  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
       collection[section].title
   }
 
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewControllerCell") as? DynamicColourCell else {
       fatalError("Unknown cellIdentifier or cell")
     }
