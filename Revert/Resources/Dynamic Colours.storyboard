@@ -10,7 +10,7 @@
         <!--Dynamic Colours-->
         <scene sceneID="Q75-64-QsM">
             <objects>
-                <tableViewController id="7Jo-Sv-oFl" customClass="DynamicColourViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DynamicColoursViewController" id="7Jo-Sv-oFl" customClass="DynamicColourViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rzb-aH-Cyb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,32 +81,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEF-sX-lvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1804" y="139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="was-jB-hyu">
-            <objects>
-                <navigationController storyboardIdentifier="DynamicColoursViewController" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Wab-5o-Ca3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1mX-Er-wD8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.1843137255" green="0.60392156860000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nEl-Pt-Xm7">
-                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="7Jo-Sv-oFl" kind="relationship" relationship="rootViewController" id="SMa-6Z-AwQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bfR-9n-Ppw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="198.55072463768118" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>

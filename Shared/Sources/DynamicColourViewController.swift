@@ -8,10 +8,17 @@ final class DynamicColourViewController: RevertTableViewController {
 
   @IBOutlet var segmentedControl: UISegmentedControl!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override func viewWillAppear(_ animated: Bool) {
+    self.navigationController?.setToolbarHidden(false, animated: true)
+    setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: false)
 
-    self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
+    super.viewWillAppear(animated)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+
+    self.navigationController?.setToolbarHidden(true, animated: true)
   }
 
   @available(iOS 13, *)
