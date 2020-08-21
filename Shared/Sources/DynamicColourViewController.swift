@@ -6,8 +6,33 @@ final class DynamicColourViewController: RevertTableViewController {
 
   private let collection: [ColourSection] = RevertItems.coloursData
 
+  @IBOutlet var segmentedControl: UISegmentedControl!
+
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    self.setToolbarItems([UIBarButtonItem(customView: segmentedControl)], animated: true)
+  }
+
+  @available(iOS 13, *)
+  @IBAction func onSegmentValueChanged(_ sender: UISegmentedControl) {
+    switch sender.selectedSegmentIndex {
+    case 0:
+      overrideUserInterfaceStyle = .unspecified
+    case 1:
+      overrideUserInterfaceStyle = .light
+    case 2:
+      overrideUserInterfaceStyle = .dark
+    default:
+      break
+    }
+  }
+
+  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousTraitCollection)
+    if #available(iOS 13, *), traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+      tableView.reloadData()
+    }
   }
 
 }

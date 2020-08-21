@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -54,8 +54,23 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="sMo-Jg-htv" id="ynb-bW-8he"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FW7-W6-0iO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="sMo-Jg-htv">
+                    <rect key="frame" x="0.0" y="0.0" width="419" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Default"/>
+                        <segment title="Light"/>
+                        <segment title="Dark"/>
+                    </segments>
+                    <connections>
+                        <action selector="onSegmentValueChanged:" destination="7Jo-Sv-oFl" eventType="valueChanged" id="mJh-kK-Fb0"/>
+                    </connections>
+                </segmentedControl>
             </objects>
             <point key="canvasLocation" x="1108.6956521739132" y="138.61607142857142"/>
         </scene>
@@ -70,7 +85,7 @@
         <!--Navigation Controller-->
         <scene sceneID="was-jB-hyu">
             <objects>
-                <navigationController storyboardIdentifier="DynamicColoursViewController" automaticallyAdjustsScrollViewInsets="NO" id="Wab-5o-Ca3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DynamicColoursViewController" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Wab-5o-Ca3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1mX-Er-wD8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -81,6 +96,10 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nEl-Pt-Xm7">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="7Jo-Sv-oFl" kind="relationship" relationship="rootViewController" id="SMa-6Z-AwQ"/>
                     </connections>
