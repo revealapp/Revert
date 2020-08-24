@@ -42,7 +42,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = dataSource[indexPath]
+      destinationViewController.item = self.dataSource[indexPath]
     }
   }
 

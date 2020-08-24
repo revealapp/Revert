@@ -14,7 +14,7 @@ final class ControlsDataSource: NSObject, UICollectionViewDataSource {
   }
 
   subscript(indexPath: IndexPath) -> ItemSection.Item {
-    return sections[indexPath.section].rows[indexPath.row]
+    return self.sections[indexPath.section].rows[indexPath.row]
   }
 
   func numberOfSections(in collectionView: UICollectionView) -> Int {

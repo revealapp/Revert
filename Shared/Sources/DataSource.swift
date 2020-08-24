@@ -28,17 +28,17 @@ final class DataSource<Section: RevertSection, Cell: UITableViewCell>: NSObject,
   // MARK: - Public methods
 
   subscript(indexPath: IndexPath) -> Section.Item {
-    return sections[indexPath.section].rows[indexPath.row]
+    return self.sections[indexPath.section].rows[indexPath.row]
   }
 
   // MARK: - UITableViewDataSource
 
   func numberOfSections(in tableView: UITableView) -> Int {
-    return sections.count
+    return self.sections.count
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return sections[section].rows.count
+    return self.sections[section].rows.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,10 +51,10 @@ final class DataSource<Section: RevertSection, Cell: UITableViewCell>: NSObject,
   }
 
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return sections[section].title
+    return self.sections[section].title
   }
 
   func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-    return self.titleForFooter?(sections[section])
+    return self.titleForFooter?(self.sections[section])
   }
 }

@@ -21,7 +21,7 @@ enum RevertItems: String {
 
       return decodedData
     } catch {
-      fatalError(invalidContentError)
+      fatalError(self.invalidContentError)
     }
   }
 

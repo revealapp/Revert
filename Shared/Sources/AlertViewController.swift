@@ -85,7 +85,7 @@ extension AlertViewController {
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let item = dataSource[indexPath]
+    let item = self.dataSource[indexPath]
 
     guard
       let cell = tableView.cellForRow(at: indexPath),

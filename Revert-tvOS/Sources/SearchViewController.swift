@@ -7,7 +7,7 @@ final class SearchViewController: UICollectionViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      sections: sections,
+      sections: self.sections,
       configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection
     )
@@ -30,7 +30,7 @@ final class SearchViewController: UICollectionViewController {
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = dataSource[indexPath]
+      destinationViewController.item = self.dataSource[indexPath]
     }
   }
 
@@ -41,7 +41,7 @@ final class SearchViewController: UICollectionViewController {
 
   fileprivate var searchText: String? {
     didSet {
-      guard searchText != oldValue else {
+      guard self.searchText != oldValue else {
         // We don't want to keep reloading content if the search text has not changed.
         return
       }
@@ -72,7 +72,7 @@ private extension SearchViewController {
 extension SearchViewController {
 
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let item = dataSource[indexPath]
+    let item = self.dataSource[indexPath]
 
     self.performSegue(withIdentifier: item.segueIdentifier, sender: indexPath)
   }

@@ -15,7 +15,7 @@ extension PickerViewController: UIPickerViewDataSource {
   }
 
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return sections[component].rows.count
+    return self.sections[component].rows.count
   }
 }
 
@@ -23,6 +23,6 @@ extension PickerViewController: UIPickerViewDataSource {
 extension PickerViewController: UIPickerViewDelegate {
 
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return sections.first?.rows[row].name
+    return self.sections.first?.rows[row].name
   }
 }
