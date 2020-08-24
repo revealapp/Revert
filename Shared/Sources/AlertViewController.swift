@@ -6,11 +6,10 @@ import UIKit
 final class AlertViewController: RevertTableViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = DataSource(
-      collection: self.collection,
-      configureCell: type(of: self).configureCell,
-      cellIdentifier: CellIdentifiers.alert
-    )
+    self.dataSource = NewDataSource(
+      sections: RevertItems.alert.newData(),
+      cellIdentifier: CellIdentifiers.alert,
+      configureCell: Self.configureCell)
 
     super.init(coder: aDecoder)
   }
@@ -21,8 +20,8 @@ final class AlertViewController: RevertTableViewController {
     self.tableView.dataSource = self.dataSource
   }
 
-  fileprivate var collection = CollectableCollection<Item>(items: .alert)
-  fileprivate var dataSource: DataSource<Item, BasicCell>
+  // MARK: Private
+  private var dataSource: NewDataSource<ItemSection, BasicCell>
 }
 
 // MARK: - UIAlertController Presenter
@@ -85,7 +84,7 @@ extension AlertViewController {
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let item = self.collection[indexPath]
+    let item = dataSource[indexPath]
 
     guard
       let cell = tableView.cellForRow(at: indexPath),

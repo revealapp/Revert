@@ -210,6 +210,8 @@
 		DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
+		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
+		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
@@ -388,6 +390,7 @@
 		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -833,6 +836,7 @@
 				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
 				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
 				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
+				DDF45F6A24F3452700CC3844 /* ItemSection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1125,6 +1129,7 @@
 				BBE51D031CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51CEA1CB73929006638B8 /* StackViewController.swift in Sources */,
 				B3681C3E24EBB45700FB88D4 /* ColourItem.swift in Sources */,
+				DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
@@ -1158,6 +1163,7 @@
 				BBE51CEF1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
 				BBE51CE91CB73929006638B8 /* SpriteKitViewController.swift in Sources */,
 				BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */,
+				DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */,
 				BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */,
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,

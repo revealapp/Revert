@@ -3,7 +3,7 @@
 
 import Foundation
 
-struct Item: Collectable, Requirement {
+struct Item: Collectable, Requirement, Decodable {
   let title: String
   let cellIdentifier: String
   let requiredClassName: String?
