@@ -202,6 +202,8 @@
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
+		DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
+		DDF45F6F24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
@@ -376,6 +378,7 @@
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
+		DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationItem.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -809,14 +812,15 @@
 			children = (
 				BBE51CB01CB73898006638B8 /* Cube.h */,
 				BBE51CB11CB73898006638B8 /* Cube.m */,
+				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
+				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
 				BBE51CAF1CB73898006638B8 /* Country.swift */,
 				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
 				DD48652824E25C0B00A21F7A /* HomeSection.swift */,
 				BBE51CB31CB73898006638B8 /* Item.swift */,
-				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
-				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
-				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
 				DDF45F6A24F3452700CC3844 /* ItemSection.swift */,
+				DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */,
+				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1115,6 +1119,7 @@
 				FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
+				DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */,
 				BBE51D0B1CB73996006638B8 /* DeepView.swift in Sources */,
 				B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */,
 				BBE51CE21CB73929006638B8 /* OpenGLViewController.swift in Sources */,
@@ -1175,6 +1180,7 @@
 				BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */,
 				BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
+				DDF45F6F24F36DED00CC3844 /* MapLocationItem.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
 				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
