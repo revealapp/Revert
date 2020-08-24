@@ -13,7 +13,6 @@ final class DataSource<Section: RevertSection, Cell: UITableViewCell>: NSObject,
   private let configureCell: CellConfigurator
   private let titleForFooter: FooterTitleRetriever
 
-
   // MARK: - Init
 
   required init(sections: [Section], cellIdentifier: String, configureCell: @escaping CellConfigurator, titleForFooter: FooterTitleRetriever = nil) {
