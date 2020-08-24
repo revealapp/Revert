@@ -6,7 +6,7 @@ import UIKit
 final class HomeViewController: UITableViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewDataSource(
+    self.dataSource = DataSource(
       sections: RevertItems.home.newData(),
       cellIdentifier: CellIdentifiers.home,
       configureCell: Self.configureCell
@@ -57,7 +57,7 @@ final class HomeViewController: UITableViewController {
   }
 
   // MARK: Private
-  private let dataSource: NewDataSource<HomeSection, HomeCell>
+  private let dataSource: DataSource<HomeSection, HomeCell>
   fileprivate var isSplitViewControllerCollapsed: Bool {
     return self.splitViewController?.isCollapsed ?? true
   }

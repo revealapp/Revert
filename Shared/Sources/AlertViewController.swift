@@ -6,7 +6,7 @@ import UIKit
 final class AlertViewController: RevertTableViewController {
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewDataSource(
+    self.dataSource = DataSource(
       sections: RevertItems.alert.newData(),
       cellIdentifier: CellIdentifiers.alert,
       configureCell: Self.configureCell)
@@ -21,7 +21,7 @@ final class AlertViewController: RevertTableViewController {
   }
 
   // MARK: Private
-  private var dataSource: NewDataSource<ItemSection, BasicCell>
+  private var dataSource: DataSource<ItemSection, BasicCell>
 }
 
 // MARK: - UIAlertController Presenter

@@ -4,11 +4,11 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  fileprivate let dataSource: NewDataSource<CountrySection, BasicCell>
+  fileprivate let dataSource: DataSource<CountrySection, BasicCell>
   fileprivate var refreshTimer: Timer?
 
   required init?(coder aDecoder: NSCoder) {
-    self.dataSource = NewDataSource(
+    self.dataSource = DataSource(
       sections: RevertItems.capitalCities.newData(),
       cellIdentifier: CellIdentifiers.tableViewController,
       configureCell: Self.configureCell,
