@@ -2,8 +2,6 @@
 
 import UIKit
 
-/// The purpose of this class is to eventually replace the current custom data source class (`DataSource`).
-/// The existing custom class is more complex and incompatible with models that extend `Decodable`.
 final class DataSource<Section: RevertSection, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, Section.Item) -> Void
   typealias FooterTitleRetriever = ((Section) -> String?)?
