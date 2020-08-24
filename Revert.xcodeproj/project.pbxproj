@@ -138,8 +138,6 @@
 		BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
 		BBE51CC11CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
 		BBE51CC21CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
-		BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
-		BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
 		BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
 		BBE51CD51CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
 		BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */; };
@@ -344,7 +342,6 @@
 		BBE51CB11CB73898006638B8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Shared/Sources/Cube.m; sourceTree = SOURCE_ROOT; };
 		BBE51CB21CB73898006638B8 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Shared/Sources/HomeItem.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CB31CB73898006638B8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Shared/Sources/Item.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CB41CB73898006638B8 /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Shared/Sources/Requirement.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC51CB73929006638B8 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Shared/Sources/AlertViewController.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Shared/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Shared/Sources/AutoLayoutMarginsViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -816,7 +813,6 @@
 				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
 				DD48652824E25C0B00A21F7A /* HomeSection.swift */,
 				BBE51CB31CB73898006638B8 /* Item.swift */,
-				BBE51CB41CB73898006638B8 /* Requirement.swift */,
 				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
 				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
 				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
@@ -1076,7 +1072,6 @@
 				B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */,
 				BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */,
 				BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
-				BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
 				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				B3681C3C24EBB43B00FB88D4 /* ColourSection.swift in Sources */,
@@ -1187,7 +1182,6 @@
 				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
 				BBE51D0C1CB73996006638B8 /* DeepView.swift in Sources */,
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
-				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
 				DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */,
 				FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
