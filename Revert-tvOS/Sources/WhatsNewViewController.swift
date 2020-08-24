@@ -36,7 +36,7 @@ final class WhatsNewViewController: UIViewController {
   // MARK: Private
 
   private let dataSource: CollectionDataSource<HomeSection, HomeCollectionCell>
-  private let sections: [HomeSection] = RevertItems.whatsNew.newData()
+  private let sections: [HomeSection] = RevertItems.whatsNew.Data()
 
   @IBOutlet private var collectionView: UICollectionView!
 }

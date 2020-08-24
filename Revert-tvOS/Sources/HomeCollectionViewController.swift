@@ -20,7 +20,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      sections: RevertItems.home.newData(),
+      sections: RevertItems.home.Data(),
       configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
 

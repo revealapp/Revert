@@ -7,7 +7,7 @@ final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename, let items = RevertItems(rawValue: resourceFilename) {
-        self.dataSource = ControlsDataSource(sections: items.newData())
+        self.dataSource = ControlsDataSource(sections: items.Data())
       } else if let resourceFilename = resourceFilename {
         fatalError("Unable to load file: \(resourceFilename)")
       } else {

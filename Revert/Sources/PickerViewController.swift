@@ -4,7 +4,7 @@
 import UIKit
 
 final class PickerViewController: RevertViewController {
-  private let sections: [CountrySection] = RevertItems.capitalCities.newData()
+  private let sections: [CountrySection] = RevertItems.capitalCities.Data()
 }
 
 // MARK: - UIPickerViewDataSource

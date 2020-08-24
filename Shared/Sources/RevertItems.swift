@@ -13,16 +13,9 @@ enum RevertItems: String {
   case view = "ViewItems"
   case whatsNew = "NewItems"
 
-  var data: [[String: AnyObject]] {
-    guard let data = NSArray(contentsOf: self.URL) as? [[String: AnyObject]] else {
-      fatalError(self.invalidContentError)
-    }
-    return data
-  }
-
-  func newData<T: Decodable>() -> T {
+  func Data<T: Decodable>() -> T {
     do {
-      let data = try Data(contentsOf: self.URL)
+      let data = try Foundation.Data(contentsOf: self.URL)
       let decoder = PropertyListDecoder()
       let decodedData = try decoder.decode(T.self, from: data)
 
