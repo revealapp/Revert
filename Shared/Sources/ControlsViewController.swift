@@ -7,13 +7,10 @@ final class ControlsViewController: RevertCollectionViewController {
   @IBInspectable var resourceFilename: String? {
     didSet {
       if let resourceFilename = self.resourceFilename, let items = RevertItems(rawValue: resourceFilename) {
-        let collection = CollectableCollection<Item>(items: items)
-        self.dataSource = ControlsDataSource(collection: collection)
-        self.collection = collection
+        self.dataSource = ControlsDataSource(sections: items.newData())
       } else if let resourceFilename = resourceFilename {
         fatalError("Unable to load file: \(resourceFilename)")
       } else {
-        self.collection = nil
         self.dataSource = nil
       }
     }
@@ -38,7 +35,6 @@ final class ControlsViewController: RevertCollectionViewController {
     fileprivate let keyboardHandler = KeyboardHandler()
   #endif
 
-  fileprivate var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
 }
 
