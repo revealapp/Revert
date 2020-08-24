@@ -15,7 +15,7 @@ enum RevertItems: String {
 
   func data<T: Decodable>() -> T {
     do {
-      let data = try Foundation.Data(contentsOf: self.URL)
+      let data = try Data(contentsOf: self.URL)
       let decoder = PropertyListDecoder()
       let decodedData = try decoder.decode(T.self, from: data)
 
