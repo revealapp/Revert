@@ -132,12 +132,6 @@
 		BBE51CA81CB7384D006638B8 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9D1CB7384D006638B8 /* Static.swift */; };
 		BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
 		BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
-		BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
-		BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
-		BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
-		BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
-		BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
-		BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
 		BBE51CBB1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
 		BBE51CBC1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
 		BBE51CBF1CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
@@ -345,9 +339,6 @@
 		BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Shared/Sources/SplitViewControllerDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C9D1CB7384D006638B8 /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Shared/Sources/Static.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Shared/Sources/StoryboardIdentifiers.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAC1CB73898006638B8 /* Collectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collectable.swift; path = Shared/Sources/Collectable.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollection.swift; path = Shared/Sources/CollectableCollection.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Shared/Sources/CollectableGroup.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CAF1CB73898006638B8 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Shared/Sources/Country.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CB01CB73898006638B8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Shared/Sources/Cube.h; sourceTree = SOURCE_ROOT; };
 		BBE51CB11CB73898006638B8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Shared/Sources/Cube.m; sourceTree = SOURCE_ROOT; };
@@ -821,9 +812,6 @@
 			children = (
 				BBE51CB01CB73898006638B8 /* Cube.h */,
 				BBE51CB11CB73898006638B8 /* Cube.m */,
-				BBE51CAC1CB73898006638B8 /* Collectable.swift */,
-				BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */,
-				BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */,
 				BBE51CAF1CB73898006638B8 /* Country.swift */,
 				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
 				DD48652824E25C0B00A21F7A /* HomeSection.swift */,
@@ -1081,7 +1069,6 @@
 				BBE51D091CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				BBE51CEC1CB73929006638B8 /* StressTestViewController.swift in Sources */,
-				BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */,
 				BBE51CE01CB73929006638B8 /* MapViewController.swift in Sources */,
 				BBE51CF41CB73955006638B8 /* CollectionViewController.swift in Sources */,
 				BBE51CDA1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */,
@@ -1096,7 +1083,6 @@
 				BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */,
 				BBE51CE41CB73929006638B8 /* RevertViewController.swift in Sources */,
 				BBE51CE61CB73929006638B8 /* ScrollViewController.swift in Sources */,
-				BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */,
 				BBE51D051CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C961CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
@@ -1130,7 +1116,6 @@
 				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BBE51CA11CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */,
 				FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */,
-				BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
@@ -1159,7 +1144,6 @@
 				BBE51CE91CB73929006638B8 /* SpriteKitViewController.swift in Sources */,
 				BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */,
 				DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */,
-				BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */,
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
@@ -1194,11 +1178,9 @@
 				BBE51CC21CB73898006638B8 /* Item.swift in Sources */,
 				DD48652724E2444300A21F7A /* DataSource.swift in Sources */,
 				BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */,
-				BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
-				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
 				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
