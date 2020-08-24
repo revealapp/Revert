@@ -27,7 +27,7 @@ final class HomeViewController: UITableViewController {
   }
 
   // MARK: - Private
-  private let collection: [HomeSection] = RevertItems.home.Data()
+  private let collection: [HomeSection] = RevertItems.home.data()
 }
 
 extension HomeViewController {

@@ -13,7 +13,7 @@ enum RevertItems: String {
   case view = "ViewItems"
   case whatsNew = "NewItems"
 
-  func Data<T: Decodable>() -> T {
+  func data<T: Decodable>() -> T {
     do {
       let data = try Foundation.Data(contentsOf: self.URL)
       let decoder = PropertyListDecoder()

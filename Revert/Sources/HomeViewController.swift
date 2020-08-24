@@ -7,7 +7,7 @@ final class HomeViewController: UITableViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
-      sections: RevertItems.home.Data(),
+      sections: RevertItems.home.data(),
       cellIdentifier: CellIdentifiers.home,
       configureCell: Self.configureCell
     )

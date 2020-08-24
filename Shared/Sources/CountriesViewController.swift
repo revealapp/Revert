@@ -9,7 +9,7 @@ final class CountriesViewController: RevertTableViewController {
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
-      sections: RevertItems.capitalCities.Data(),
+      sections: RevertItems.capitalCities.data(),
       cellIdentifier: CellIdentifiers.tableViewController,
       configureCell: Self.configureCell,
       titleForFooter: Self.titleForFooter
