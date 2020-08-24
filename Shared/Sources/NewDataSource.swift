@@ -6,19 +6,23 @@ import UIKit
 /// The existing custom class is more complex and incompatible with models that extend `Decodable`.
 final class NewDataSource<Section: RevertSection, Cell: UITableViewCell>: NSObject, UITableViewDataSource {
   typealias CellConfigurator = (Cell, Section.Item) -> Void
+  typealias FooterTitleRetriever = ((Section) -> String?)?
 
   // MARK: - Private Properties
 
   private var sections: [Section]
   private let cellIdentifier: String
   private let configureCell: CellConfigurator
+  private let titleForFooter: FooterTitleRetriever
+
 
   // MARK: - Init
 
-  required init(sections: [Section], cellIdentifier: String, configureCell: @escaping CellConfigurator) {
+  required init(sections: [Section], cellIdentifier: String, configureCell: @escaping CellConfigurator, titleForFooter: FooterTitleRetriever = nil) {
     self.sections = sections
     self.cellIdentifier = cellIdentifier
     self.configureCell = configureCell
+    self.titleForFooter = titleForFooter
 
     super.init()
   }
@@ -46,5 +50,13 @@ final class NewDataSource<Section: RevertSection, Cell: UITableViewCell>: NSObje
 
     self.configureCell(cell, self[indexPath])
     return cell
+  }
+
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return sections[section].title
+  }
+
+  func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    return self.titleForFooter?(sections[section])
   }
 }
