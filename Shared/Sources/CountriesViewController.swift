@@ -4,16 +4,15 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  fileprivate let collection = CollectableCollection<Country>(items: .capitalCities)
-  fileprivate let dataSource: DataSource<Country, BasicCell>
+  fileprivate let dataSource: DataSource<CountrySection, BasicCell>
   fileprivate var refreshTimer: Timer?
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
-      collection: self.collection,
-      configureCell: type(of: self).configureCell,
+      sections: RevertItems.capitalCities.data(),
       cellIdentifier: CellIdentifiers.tableViewController,
-      titleForFooter: type(of: self).titleForFooter
+      configureCell: Self.configureCell,
+      titleForFooter: Self.titleForFooter
     )
 
     super.init(coder: aDecoder)
@@ -76,8 +75,8 @@ private extension CountriesViewController {
     cell.subtitleLabel.text = object.capital
   }
 
-  static func titleForFooter(_ group: CollectableGroup<Country>) -> String? {
-    let count = group.countOfItems
+  static func titleForFooter(_ group: CountrySection) -> String? {
+    let count = group.rows.count
     return NSString(format: NSLocalizedString("%lu Countries", comment: "CountriesViewController footer format") as NSString, count) as String
   }
 }

@@ -22,12 +22,12 @@ final class HomeViewController: UITableViewController {
         fatalError("`GroupFilterable` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.collectionGroup = collection[indexPath.row].title
+      destinationViewController.collectionGroup = self.collection[indexPath.row].title
     }
   }
 
   // MARK: - Private
-  private let collection: [HomeSection] = RevertItems.home.newData()
+  private let collection: [HomeSection] = RevertItems.home.data()
 }
 
 extension HomeViewController {
@@ -49,7 +49,7 @@ extension HomeViewController {
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    collection.count
+    self.collection.count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,7 +57,7 @@ extension HomeViewController {
       fatalError("Expecting to dequeue a `\(HomeCell.self)` from the tableView")
     }
 
-    cell.titleLabel.text = collection[indexPath.row].title
+    cell.titleLabel.text = self.collection[indexPath.row].title
     return cell
   }
 

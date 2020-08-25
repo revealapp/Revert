@@ -20,7 +20,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = CollectionDataSource(
-      sections: RevertItems.home.newData(),
+      sections: RevertItems.home.data(),
       configureCell: Self.configureCell,
       cellIdentifier: CellIdentifiers.homeCollection)
 
@@ -42,7 +42,7 @@ final class HomeCollectionViewController: UICollectionViewController, GroupFilte
         fatalError("`SettableHomeItem` requires `indexPath` to be sent as the sender.")
       }
 
-      destinationViewController.item = dataSource[indexPath]
+      destinationViewController.item = self.dataSource[indexPath]
     }
   }
 

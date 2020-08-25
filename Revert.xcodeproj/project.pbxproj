@@ -112,8 +112,6 @@
 		BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB333D31CB351FF0074EACD /* MarginsAdjustingView.swift */; };
 		BBE51C831CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
 		BBE51C841CB737C1006638B8 /* ControlsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */; };
-		BBE51C851CB737C1006638B8 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C821CB737C1006638B8 /* DataSource.swift */; };
-		BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C821CB737C1006638B8 /* DataSource.swift */; };
 		BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */; };
 		BBE51C8D1CB737FE006638B8 /* CALayer+Revert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */; };
 		BBE51C8E1CB737FE006638B8 /* ExampleAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */; };
@@ -134,20 +132,12 @@
 		BBE51CA81CB7384D006638B8 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9D1CB7384D006638B8 /* Static.swift */; };
 		BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
 		BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */; };
-		BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
-		BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAC1CB73898006638B8 /* Collectable.swift */; };
-		BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
-		BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */; };
-		BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
-		BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */; };
 		BBE51CBB1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
 		BBE51CBC1CB73898006638B8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CAF1CB73898006638B8 /* Country.swift */; };
 		BBE51CBF1CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
 		BBE51CC01CB73898006638B8 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB21CB73898006638B8 /* HomeItem.swift */; };
 		BBE51CC11CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
 		BBE51CC21CB73898006638B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB31CB73898006638B8 /* Item.swift */; };
-		BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
-		BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CB41CB73898006638B8 /* Requirement.swift */; };
 		BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
 		BBE51CD51CB73929006638B8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC51CB73929006638B8 /* AlertViewController.swift */; };
 		BBE51CD61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */; };
@@ -202,14 +192,18 @@
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
 		DD124B8F24E6661000CF6272 /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
-		DD48652624E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
-		DD48652724E2444300A21F7A /* NewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* NewDataSource.swift */; };
+		DD48652624E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
+		DD48652724E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
 		DD48652924E25C0B00A21F7A /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
 		DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */; };
 		DD8ECA4024EA4C56002E414E /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
 		DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
+		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
+		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
+		DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
+		DDF45F6F24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
 		FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA15D27D22BB5915008A344E /* BrokenConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */; };
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
@@ -335,7 +329,6 @@
 		BBE51C761CB7351B006638B8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		BBE51C771CB7351B006638B8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
 		BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDataSource.swift; sourceTree = "<group>"; };
-		BBE51C821CB737C1006638B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		BBE51C881CB737FE006638B8 /* CALayer+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Revert.swift"; path = "Shared/Sources/CALayer+Revert.swift"; sourceTree = SOURCE_ROOT; };
 		BBE51C891CB737FE006638B8 /* ExampleAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAlerts.swift; path = Shared/Sources/ExampleAlerts.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C8B1CB737FE006638B8 /* UIStoryboardSegue+Revert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboardSegue+Revert.swift"; path = "Shared/Sources/UIStoryboardSegue+Revert.swift"; sourceTree = SOURCE_ROOT; };
@@ -346,15 +339,11 @@
 		BBE51C9C1CB7384D006638B8 /* SplitViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewControllerDelegate.swift; path = Shared/Sources/SplitViewControllerDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C9D1CB7384D006638B8 /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Static.swift; path = Shared/Sources/Static.swift; sourceTree = SOURCE_ROOT; };
 		BBE51C9E1CB7384D006638B8 /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiers.swift; path = Shared/Sources/StoryboardIdentifiers.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAC1CB73898006638B8 /* Collectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collectable.swift; path = Shared/Sources/Collectable.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableCollection.swift; path = Shared/Sources/CollectableCollection.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectableGroup.swift; path = Shared/Sources/CollectableGroup.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CAF1CB73898006638B8 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Shared/Sources/Country.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CB01CB73898006638B8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Shared/Sources/Cube.h; sourceTree = SOURCE_ROOT; };
 		BBE51CB11CB73898006638B8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Shared/Sources/Cube.m; sourceTree = SOURCE_ROOT; };
 		BBE51CB21CB73898006638B8 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItem.swift; path = Shared/Sources/HomeItem.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CB31CB73898006638B8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Shared/Sources/Item.swift; sourceTree = SOURCE_ROOT; };
-		BBE51CB41CB73898006638B8 /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requirement.swift; path = Shared/Sources/Requirement.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC51CB73929006638B8 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Shared/Sources/AlertViewController.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC61CB73929006638B8 /* AnchorPointBoundsChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorPointBoundsChangeViewController.swift; path = Shared/Sources/AnchorPointBoundsChangeViewController.swift; sourceTree = SOURCE_ROOT; };
 		BBE51CC71CB73929006638B8 /* AutoLayoutMarginsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutMarginsViewController.swift; path = Shared/Sources/AutoLayoutMarginsViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -384,10 +373,12 @@
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DD124B8D24E6661000CF6272 /* RevertSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertSection.swift; sourceTree = "<group>"; };
-		DD48652524E2444300A21F7A /* NewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataSource.swift; sourceTree = "<group>"; };
+		DD48652524E2444300A21F7A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
+		DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationItem.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
 		FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectViewController.swift; path = ../../Revert/Sources/VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -779,8 +770,7 @@
 			isa = PBXGroup;
 			children = (
 				BBE51C811CB737C1006638B8 /* ControlsDataSource.swift */,
-				BBE51C821CB737C1006638B8 /* DataSource.swift */,
-				DD48652524E2444300A21F7A /* NewDataSource.swift */,
+				DD48652524E2444300A21F7A /* DataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -822,17 +812,15 @@
 			children = (
 				BBE51CB01CB73898006638B8 /* Cube.h */,
 				BBE51CB11CB73898006638B8 /* Cube.m */,
-				BBE51CAC1CB73898006638B8 /* Collectable.swift */,
-				BBE51CAD1CB73898006638B8 /* CollectableCollection.swift */,
-				BBE51CAE1CB73898006638B8 /* CollectableGroup.swift */,
+				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
+				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
 				BBE51CAF1CB73898006638B8 /* Country.swift */,
 				BBE51CB21CB73898006638B8 /* HomeItem.swift */,
 				DD48652824E25C0B00A21F7A /* HomeSection.swift */,
 				BBE51CB31CB73898006638B8 /* Item.swift */,
-				BBE51CB41CB73898006638B8 /* Requirement.swift */,
+				DDF45F6A24F3452700CC3844 /* ItemSection.swift */,
+				DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */,
 				DD124B8D24E6661000CF6272 /* RevertSection.swift */,
-				B3681C3B24EBB43B00FB88D4 /* ColourSection.swift */,
-				B3681C3D24EBB45700FB88D4 /* ColourItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1081,23 +1069,19 @@
 				BBE51D091CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
 				BBE51CEC1CB73929006638B8 /* StressTestViewController.swift in Sources */,
-				BBE51CB51CB73898006638B8 /* Collectable.swift in Sources */,
 				BBE51CE01CB73929006638B8 /* MapViewController.swift in Sources */,
 				BBE51CF41CB73955006638B8 /* CollectionViewController.swift in Sources */,
 				BBE51CDA1CB73929006638B8 /* AutoResizingMaskViewController.swift in Sources */,
-				BBE51C851CB737C1006638B8 /* DataSource.swift in Sources */,
 				BBE51C9F1CB7384D006638B8 /* HairlineConstraint.swift in Sources */,
 				B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */,
 				BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */,
 				BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
-				BBE51CC31CB73898006638B8 /* Requirement.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
 				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				B3681C3C24EBB43B00FB88D4 /* ColourSection.swift in Sources */,
 				BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */,
 				BBE51CE41CB73929006638B8 /* RevertViewController.swift in Sources */,
 				BBE51CE61CB73929006638B8 /* ScrollViewController.swift in Sources */,
-				BBE51CB71CB73898006638B8 /* CollectableCollection.swift in Sources */,
 				BBE51D051CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
 				BBE51C961CB73818006638B8 /* AdaptiveCollectionViewFlowLayout.swift in Sources */,
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
@@ -1117,7 +1101,7 @@
 				DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */,
 				9AFD02691B0094DE00ACE85D /* InfoViewController.swift in Sources */,
 				DD8ECA4024EA4C56002E414E /* HomeSection.swift in Sources */,
-				DD48652624E2444300A21F7A /* NewDataSource.swift in Sources */,
+				DD48652624E2444300A21F7A /* DataSource.swift in Sources */,
 				7D3647051E518C70001D36C4 /* AutoLayoutGuidesViewController.swift in Sources */,
 				BBE51D0F1CB73996006638B8 /* LayerPropertiesCells.swift in Sources */,
 				BBE51CC11CB73898006638B8 /* Item.swift in Sources */,
@@ -1125,16 +1109,17 @@
 				BBE51D031CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51CEA1CB73929006638B8 /* StackViewController.swift in Sources */,
 				B3681C3E24EBB45700FB88D4 /* ColourItem.swift in Sources */,
+				DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */,
 				9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */,
 				BBE51CF61CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CD81CB73929006638B8 /* AutoLayoutMarginsViewController.swift in Sources */,
 				BBE51CA11CB7384D006638B8 /* RevealOpenGLCube.swift in Sources */,
 				FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */,
-				BBE51CB91CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51CA91CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				FA15D27C22BB590D008A344E /* BrokenConstraintsViewController.swift in Sources */,
 				9ABEBA111AD4AC1400E3D998 /* AppDelegate.swift in Sources */,
 				B5DCC9F21BBCF36F004EA327 /* SafariViewController.swift in Sources */,
+				DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */,
 				BBE51D0B1CB73996006638B8 /* DeepView.swift in Sources */,
 				B55841191BD496AB009725C5 /* NSBundle+Revert.swift in Sources */,
 				BBE51CE21CB73929006638B8 /* OpenGLViewController.swift in Sources */,
@@ -1158,7 +1143,7 @@
 				BBE51CEF1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
 				BBE51CE91CB73929006638B8 /* SpriteKitViewController.swift in Sources */,
 				BB9F76901CB61F57006EA285 /* RevertSplitViewController.swift in Sources */,
-				BBE51CB81CB73898006638B8 /* CollectableCollection.swift in Sources */,
+				DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */,
 				BBE51D041CB73996006638B8 /* AlignmentInsetView.swift in Sources */,
 				BBE51D0E1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CF11CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
@@ -1191,21 +1176,18 @@
 				BBE51CF71CB73955006638B8 /* CountriesViewController.swift in Sources */,
 				BBE51CAA1CB7384D006638B8 /* StoryboardIdentifiers.swift in Sources */,
 				BBE51CC21CB73898006638B8 /* Item.swift in Sources */,
-				DD48652724E2444300A21F7A /* NewDataSource.swift in Sources */,
+				DD48652724E2444300A21F7A /* DataSource.swift in Sources */,
 				BBE51CE31CB73929006638B8 /* OpenGLViewController.swift in Sources */,
-				BBE51CBA1CB73898006638B8 /* CollectableGroup.swift in Sources */,
 				BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D121CB73996006638B8 /* LayerViews.swift in Sources */,
+				DDF45F6F24F36DED00CC3844 /* MapLocationItem.swift in Sources */,
 				BB735B421C9FCC590092FA6F /* AppDelegate.swift in Sources */,
-				BBE51CB61CB73898006638B8 /* Collectable.swift in Sources */,
 				BB3F8B521D338C7F0092E374 /* UITableView+tvOSInsets.swift in Sources */,
 				BBB333D51CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				BBE51C8F1CB737FE006638B8 /* ExampleAlerts.swift in Sources */,
 				BB66CC041CB74CEF00954AD1 /* SearchViewController.swift in Sources */,
 				BBE51D0C1CB73996006638B8 /* DeepView.swift in Sources */,
 				BBE51D061CB73996006638B8 /* AutoResizingMaskViewSource.swift in Sources */,
-				BBE51C861CB737C1006638B8 /* DataSource.swift in Sources */,
-				BBE51CC41CB73898006638B8 /* Requirement.swift in Sources */,
 				DD48652D24E2754D00A21F7A /* CollectionDataSource.swift in Sources */,
 				FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */,
 				BBE51CF51CB73955006638B8 /* CollectionViewController.swift in Sources */,
