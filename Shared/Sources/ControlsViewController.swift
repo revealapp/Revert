@@ -32,7 +32,7 @@ final class ControlsViewController: RevertCollectionViewController {
   // MARK: Private
 
   #if os(iOS)
-    fileprivate let keyboardHandler = KeyboardHandler()
+    private let keyboardHandler = KeyboardHandler()
   #endif
 
   private var dataSource: ControlsDataSource?
@@ -42,7 +42,7 @@ final class ControlsViewController: RevertCollectionViewController {
 
   extension ControlsViewController {
 
-    fileprivate func setupKeyboardHandler() {
+    private func setupKeyboardHandler() {
       // iOS 9 UICollectionViewControllers kinda handle the keyboard by themselves
       // The behaviour is not perfect, but there is no way to opt-out
       if NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_4 {

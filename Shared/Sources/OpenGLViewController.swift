@@ -53,7 +53,7 @@ final class OpenGLViewController: RevertGLKViewController {
     return self.view as! GLKView
   }
 
-  fileprivate func toggleState() {
+  private func toggleState() {
     self.isPaused = self.isPaused == false
   }
 }

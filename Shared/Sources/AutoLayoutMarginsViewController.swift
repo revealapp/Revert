@@ -33,7 +33,7 @@ final class AutoLayoutMarginsViewController: RevertViewController, MarginsAdjust
 
   private var lastUpdateSquaresWidthSize: CGSize?
 
-  @IBOutlet fileprivate var marginsAdjustingView: MarginsAdjustingView!
+  @IBOutlet private var marginsAdjustingView: MarginsAdjustingView!
   @IBOutlet private var centerViewWidthConstraint: NSLayoutConstraint!
   @IBOutlet private var containerViewBottomConstraint: NSLayoutConstraint!
   @IBOutlet private var centerView: UIView!

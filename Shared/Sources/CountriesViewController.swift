@@ -4,8 +4,8 @@
 import UIKit
 
 final class CountriesViewController: RevertTableViewController {
-  fileprivate let dataSource: DataSource<CountrySection, BasicCell>
-  fileprivate var refreshTimer: Timer?
+  private let dataSource: DataSource<CountrySection, BasicCell>
+  private var refreshTimer: Timer?
 
   required init?(coder aDecoder: NSCoder) {
     self.dataSource = DataSource(
@@ -28,7 +28,7 @@ final class CountriesViewController: RevertTableViewController {
     #endif
   }
 
-  fileprivate static func footerLabelWithText(_ text: String?) -> UILabel {
+  private static func footerLabelWithText(_ text: String?) -> UILabel {
     let label = UILabel()
     label.backgroundColor = UIColor.white
     label.text = text
@@ -85,7 +85,7 @@ private extension CountriesViewController {
 
   extension CountriesViewController {
 
-    fileprivate func setupRefreshControl() {
+    private func setupRefreshControl() {
       self.refreshControl = UIRefreshControl()
       self.refreshControl?.addTarget(self, action: #selector(self.tableViewPulledToRefresh(_:)), for: .valueChanged)
     }

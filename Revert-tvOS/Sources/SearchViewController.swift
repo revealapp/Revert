@@ -39,7 +39,7 @@ final class SearchViewController: UICollectionViewController {
   private let dataSource: CollectionDataSource<HomeSection, HomeCollectionCell>
   private let sections: [HomeSection] = RevertItems.home.data()
 
-  fileprivate var searchText: String? {
+  private var searchText: String? {
     didSet {
       guard self.searchText != oldValue else {
         // We don't want to keep reloading content if the search text has not changed.

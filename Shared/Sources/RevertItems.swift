@@ -60,10 +60,10 @@ enum RevertItems: String {
 
 extension RevertItems {
   #if os(iOS)
-    fileprivate static let platformSuffix = "_iOS"
+    private static let platformSuffix = "_iOS"
   #endif
 
   #if os(tvOS)
-    fileprivate static let platformSuffix = "_tvOS"
+    private static let platformSuffix = "_tvOS"
   #endif
 }
