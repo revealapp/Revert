@@ -35,7 +35,37 @@ final class ControlsViewController: RevertCollectionViewController {
     private let keyboardHandler = KeyboardHandler()
   #endif
 
+  private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
+}
+
+extension ControlsViewController {
+
+  @available(iOS 13.0, *)
+  override func collectionView(_ collectionView: UICollectionView,
+                               contextMenuConfigurationForItemAt indexPath: IndexPath,
+                               point: CGPoint) -> UIContextMenuConfiguration? {
+    guard collection?[indexPath].cellIdentifier == "ContextMenuCell" else {
+      return nil
+    }
+
+    return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { _ in
+      let deleteCancel = UIAction(title: "Cancel", image: UIImage(systemName: "xmark")) { _ in }
+      let deleteConfirmation = UIAction(title: "Delete",
+                                        image: UIImage(systemName: "checkmark"),
+                                        attributes: .destructive) { _ in }
+      let delete = UIMenu(title: "Delete",
+                          image: UIImage(systemName: "trash"),
+                          options: .destructive,
+                          children: [deleteCancel, deleteConfirmation])
+
+      let rename = UIAction(title: "Rename", image: UIImage(systemName: "square.and.pencil")) { _ in }
+      let edit = UIMenu(title: "Edit...", options: .displayInline, children: [rename, delete])
+      let share = UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up")) { _ in }
+
+      return UIMenu(title: "Context Menu Button", children: [share, edit])
+    }
+  }
 }
 
 #if os(iOS)
