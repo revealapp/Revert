@@ -29,7 +29,7 @@ class CollectionViewCell: UICollectionViewCell {
 
   // MARK: Private
 
-  @IBOutlet fileprivate(set) weak var titleLabel: UILabel!
+  @IBOutlet private(set) weak var titleLabel: UILabel!
   @IBOutlet private(set) weak var subheadLabel: UILabel!
 
   #if os(tvOS)

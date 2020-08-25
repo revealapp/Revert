@@ -74,7 +74,7 @@ final class WebViewController: RevertViewController {
     self.topConstraint = topConstraint
   }
 
-  fileprivate func showFailAlert() {
+  private func showFailAlert() {
     let alertViewController = UIAlertController(
       title: NSLocalizedString("Error", comment: "Alert title on content failed loading"),
       message: NSLocalizedString("Failed to load content. Make sure you're connected to the internet and try again.", comment: "Alert message on content failed loading"),

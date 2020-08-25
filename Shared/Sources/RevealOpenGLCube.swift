@@ -48,10 +48,10 @@ final class RevealOpenGLCube {
 
   // MARK: Private
 
-  fileprivate var vertexBuffer: GLuint = 0
-  fileprivate var indexBuffer: GLuint = 0
-  fileprivate var vertexArray: GLuint = 0
-  fileprivate let effect = GLKBaseEffect()
+  private var vertexBuffer: GLuint = 0
+  private var indexBuffer: GLuint = 0
+  private var vertexArray: GLuint = 0
+  private let effect = GLKBaseEffect()
   private var rotation: Float = 0
   private var computedModelViewMatrix: GLKMatrix4 {
     var matrix = GLKMatrix4MakeTranslation(0, 0, -6)
