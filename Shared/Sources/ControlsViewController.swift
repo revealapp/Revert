@@ -35,7 +35,6 @@ final class ControlsViewController: RevertCollectionViewController {
     private let keyboardHandler = KeyboardHandler()
   #endif
 
-  private var collection: CollectableCollection<Item>?
   private var dataSource: ControlsDataSource?
 }
 
@@ -45,7 +44,7 @@ extension ControlsViewController {
   override func collectionView(_ collectionView: UICollectionView,
                                contextMenuConfigurationForItemAt indexPath: IndexPath,
                                point: CGPoint) -> UIContextMenuConfiguration? {
-    guard collection?[indexPath].cellIdentifier == "ContextMenuCell" else {
+    guard dataSource?[indexPath].cellIdentifier == "ContextMenuCell" else {
       return nil
     }
 
