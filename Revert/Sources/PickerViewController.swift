@@ -4,7 +4,27 @@
 import UIKit
 
 final class PickerViewController: RevertViewController {
+
+  @IBOutlet var inlineDatePicker: UIDatePicker!
+  @IBOutlet var wheelDatePicker: UIDatePicker!
+
+  @IBOutlet var iOS14Container: UIView!
+  @IBOutlet var normalContainer: UIView!
+
+  override func loadView() {
+    super.loadView()
+
+    if #available(iOS 14.0, *) {
+      self.view = iOS14Container
+      inlineDatePicker.preferredDatePickerStyle = .inline
+      wheelDatePicker.preferredDatePickerStyle = .wheels
+    } else {
+      self.view = normalContainer
+    }
+  }
+
   private let sections: [CountrySection] = RevertItems.capitalCities.data()
+
 }
 
 // MARK: - UIPickerViewDataSource
