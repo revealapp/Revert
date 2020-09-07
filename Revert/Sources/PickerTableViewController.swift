@@ -6,7 +6,7 @@ final class PickerTableViewController: UITableViewController {
   private let sections: [CountrySection] = RevertItems.capitalCities.data()
   private let datePickerCellIdentifier = "DatePickerCell"
 
-  private enum Section: Int {
+  private enum Section: Int, CaseIterable {
     case datePicker = 0
     case other = 1
   }
@@ -18,7 +18,7 @@ final class PickerTableViewController: UITableViewController {
   }
 
   override func numberOfSections(in tableView: UITableView) -> Int {
-    return 2
+    return Section.allCases.count
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
