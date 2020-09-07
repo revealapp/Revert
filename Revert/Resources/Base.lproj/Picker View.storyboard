@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="3250" y="-947"/>
         </scene>
-        <!--PIcker View-->
+        <!--Picker view-->
         <scene sceneID="IAC-p1-ceI">
             <objects>
-                <tableViewController id="x00-Gr-dUg" customClass="PickerTableViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="x00-Gr-dUg" userLabel="Picker view" customClass="PickerTableViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="NgC-6F-FAo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
                             <outlet property="delegate" destination="x00-Gr-dUg" id="Ydq-ti-Zun"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="PIcker View" id="NqV-5S-e2X">
+                    <navigationItem key="navigationItem" title="Picker View" id="NqV-5S-e2X">
                         <barButtonItem key="rightBarButtonItem" image="info_icon" id="KPJ-vK-CT0">
                             <connections>
                                 <segue destination="ZGJ-xR-PKb" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="Ddd-Hw-ivu"/>
