@@ -6,6 +6,9 @@ final class PickerTableViewController: UITableViewController {
   private let sections: [CountrySection] = RevertItems.capitalCities.data()
   private let datePickerCellIdentifier = "DatePickerCell"
 
+  @available(iOS 14, *)
+  var datePickerStyles: [UIDatePickerStyle] { [.compact, .inline, .wheels] }
+
   private enum Section: Int, CaseIterable {
     case datePicker = 0
     case other = 1
@@ -23,7 +26,7 @@ final class PickerTableViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if #available(iOS 14.0, *) {
-      return section == Section.datePicker.rawValue ? 3 : 1
+      return section == Section.datePicker.rawValue ? datePickerStyles.count : 1
     }
     return 1
   }
@@ -38,8 +41,7 @@ final class PickerTableViewController: UITableViewController {
       fatalError("Expecting to dequeue a \(DatePickerTableViewCell.self) from the table view")
     }
 
-    if #available(iOS 14.0 , *) {
-      let datePickerStyles: [UIDatePickerStyle] = [.compact, .inline, .wheels]
+    if #available(iOS 14.0, *) {
       cell.datePicker.preferredDatePickerStyle = datePickerStyles[indexPath.row]
     }
 
