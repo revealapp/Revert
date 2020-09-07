@@ -36,7 +36,7 @@ final class PickerTableViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if #available(iOS 14.0, *) {
-      return pickerSections[section] == .datePicker ? datePickerStyles.count : 1
+      return self.pickerSections[section] == .datePicker ? self.datePickerStyles.count : 1
     }
     return 1
   }
@@ -45,12 +45,12 @@ final class PickerTableViewController: UITableViewController {
 
     switch pickerSections[indexPath.section] {
     case .datePicker:
-      guard let cell = tableView.dequeueReusableCell(withIdentifier: datePickerCellIdentifier) as? DatePickerTableViewCell else {
+      guard let cell = tableView.dequeueReusableCell(withIdentifier: self.datePickerCellIdentifier) as? DatePickerTableViewCell else {
         fatalError("Expecting to dequeue a \(DatePickerTableViewCell.self) from the table view")
       }
 
       if #available(iOS 14.0, *) {
-        cell.datePicker.preferredDatePickerStyle = datePickerStyles[indexPath.row]
+        cell.datePicker.preferredDatePickerStyle = self.datePickerStyles[indexPath.row]
       }
 
       return cell
@@ -60,7 +60,7 @@ final class PickerTableViewController: UITableViewController {
 
       return cell
     case .colorPicker:
-      let cell = UITableViewCell(style: .subtitle, reuseIdentifier: tableViewCellIdentifier)
+      let cell = UITableViewCell(style: .subtitle, reuseIdentifier: self.tableViewCellIdentifier)
       cell.textLabel?.text = "Color Picker"
       cell.detailTextLabel?.text = "Tap here to launch the new color picker from iOS 14"
 
@@ -73,7 +73,7 @@ final class PickerTableViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    guard pickerSections[indexPath.section] == .colorPicker else {
+    guard self.pickerSections[indexPath.section] == .colorPicker else {
       return
     }
 
