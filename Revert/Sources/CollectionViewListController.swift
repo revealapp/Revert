@@ -88,7 +88,7 @@ fileprivate extension Country {
   static var countryCapitals: [String] {
     if #available(iOS 14.0, *) {
       let countrySection: [CountrySection] = RevertItems.capitalCities.data()
-      let capitals = countrySection.first?.rows.compactMap { $0.capital }
+      let capitals = countrySection.first?.rows.compactMap { $0.name }
 
       return capitals ?? [String]()
     }
