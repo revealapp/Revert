@@ -1,26 +1,31 @@
 // Copyright © 2020 Itty Bitty Apps. All rights reserved.
 
 import UIKit
+import PhotosUI
 
 final class PickerTableViewController: UITableViewController {
   private enum Section: CaseIterable {
     case datePicker
-    case colorPicker
+    case iOS14Picker
     case other
   }
 
   private let sections: [CountrySection] = RevertItems.capitalCities.data()
   private let datePickerCellIdentifier = "DatePickerCell"
   private let tableViewCellIdentifier = "UITableViewCell"
+  private let tableViewCelllabels: [(title: String, subtitle: String)] = [
+    (title: "Color Picker", subtitle: "Tap here to launch the new color picker from iOS 14"),
+    (title: "Photo Picker", subtitle: "Tap here to launch the new photo picker from iOS 14"),
+  ]
 
   private var pickerSections: [Section] {
     if #available(iOS 14.0, *) {
-      return [.datePicker, .colorPicker, .other]
+      return [.datePicker, .iOS14Picker, .other]
     }
     return [.datePicker, .other]
   }
 
-  @available(iOS 14, *)
+  @available(iOS 14.0, *)
   var datePickerStyles: [UIDatePickerStyle] { [.compact, .inline, .wheels] }
 
   override func viewDidLoad() {
@@ -36,7 +41,14 @@ final class PickerTableViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if #available(iOS 14.0, *) {
-      return self.pickerSections[section] == .datePicker ? self.datePickerStyles.count : 1
+      switch pickerSections[section] {
+      case .datePicker:
+        return self.datePickerStyles.count
+      case .iOS14Picker:
+        return tableViewCelllabels.count
+      default:
+        return 1
+      }
     }
     return 1
   }
@@ -59,10 +71,11 @@ final class PickerTableViewController: UITableViewController {
       let cell = tableView.dequeueReusableCell(withIdentifier: identifier)!
 
       return cell
-    case .colorPicker:
+    case .iOS14Picker:
       let cell = UITableViewCell(style: .subtitle, reuseIdentifier: self.tableViewCellIdentifier)
-      cell.textLabel?.text = "Color Picker"
-      cell.detailTextLabel?.text = "Tap here to launch the new color picker from iOS 14"
+
+      cell.textLabel?.text = tableViewCelllabels[indexPath.row].title
+      cell.detailTextLabel?.text = tableViewCelllabels[indexPath.row].subtitle
 
       if #available(iOS 14.0, *) {
         cell.detailTextLabel?.textColor = .secondaryLabel
@@ -73,14 +86,24 @@ final class PickerTableViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    guard self.pickerSections[indexPath.section] == .colorPicker else {
+    guard self.pickerSections[indexPath.section] == .iOS14Picker else {
       return
     }
 
     if #available(iOS 14.0, *) {
-      let colorPickerController = UIColorPickerViewController()
+      let controller: UIViewController
 
-      self.navigationController?.present(colorPickerController, animated: true, completion: nil)
+      if indexPath.row == 1 {
+        var configuration = PHPickerConfiguration()
+        configuration.selectionLimit = 3
+        let photoPicker = PHPickerViewController(configuration: configuration)
+        photoPicker.delegate = self
+        controller = photoPicker
+      } else {
+        controller = UIColorPickerViewController()
+      }
+
+      self.navigationController?.present(controller, animated: true, completion: nil)
     }
 
     self.tableView.deselectRow(at: indexPath, animated: true)
@@ -104,5 +127,13 @@ extension PickerTableViewController: UIPickerViewDelegate {
 
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return self.sections.first?.rows[row].name
+  }
+}
+
+// MARK: - PHPickerViewControllerDelegate
+@available(iOS 14.0, *)
+extension PickerTableViewController: PHPickerViewControllerDelegate {
+  func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+    dismiss(animated: true, completion: nil)
   }
 }
