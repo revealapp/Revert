@@ -70,7 +70,6 @@
 		90E99D2F1F5D293E00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
 		90E99D301F5D293F00053684 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9021D9701F5D010800A6A93E /* Localizable.stringsdict */; };
 		9A0416AE1B02E5B900477E60 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0416AD1B02E5B900477E60 /* VolumeView.swift */; };
-		9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */; };
 		9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */; };
 		9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */; };
 		9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */; };
@@ -192,6 +191,9 @@
 		BBE51D161CB73996006638B8 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D021CB73996006638B8 /* TableViewCells.swift */; };
 		BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE51D181CB73A4A006638B8 /* HomeViewController.swift */; };
 		DD124B8F24E6661000CF6272 /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
+		DD313C552505BF2500889505 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD313C542505BF2500889505 /* PickerTableViewController.swift */; };
+		DD313C582505E7F800889505 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */; };
+		DD313C592505E7F800889505 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */; };
 		DD48652624E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
 		DD48652724E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
 		DD48652924E25C0B00A21F7A /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
@@ -200,6 +202,9 @@
 		DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
+		DDC06FB5250777E100DC3E2F /* CollectionViewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */; };
+		DDC06FB72507875600DC3E2F /* Collection View List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC06FB62507875600DC3E2F /* Collection View List.storyboard */; };
+		DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */; };
 		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
@@ -273,7 +278,6 @@
 		9A0416AD1B02E5B900477E60 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 		9A0416C01B02EA7F00477E60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1742381B09CCA100BEDFAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSerializableViewController.swift; sourceTree = "<group>"; };
@@ -373,10 +377,16 @@
 		BBE51D181CB73A4A006638B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BBE51D1A1CB73C4B006638B8 /* Revert-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Revert-Bridging-Header.h"; path = "Shared/Sources/Revert-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DD124B8D24E6661000CF6272 /* RevertSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertSection.swift; sourceTree = "<group>"; };
+		DD313C542505BF2500889505 /* PickerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
+		DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = ../Resources/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
 		DD48652524E2444300A21F7A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewListController.swift; sourceTree = "<group>"; };
+		DDC06FB62507875600DC3E2F /* Collection View List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Collection View List.storyboard"; sourceTree = "<group>"; };
+		DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewListCell.swift; sourceTree = "<group>"; };
 		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
 		DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationItem.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
@@ -446,6 +456,8 @@
 				90125D652301166F003363CA /* Visual Effect View.storyboard */,
 				90125DA623011C60003363CA /* Web View.storyboard */,
 				B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */,
+				DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */,
+				DDC06FB62507875600DC3E2F /* Collection View List.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -516,7 +528,9 @@
 		9A9F599D1AD4B33C00A8CB4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
+				DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -551,9 +565,10 @@
 				9AFD02681B0094DE00ACE85D /* InfoViewController.swift */,
 				9A2C23FA1AEDF6A3007B17CE /* ModalViewController.swift */,
 				9A2C24011AEE01EF007B17CE /* NotSerializableViewController.swift */,
-				9A1B1ABB1ADCE3A10016B793 /* PickerViewController.swift */,
+				DD313C542505BF2500889505 /* PickerTableViewController.swift */,
 				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
+				DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -960,12 +975,14 @@
 				90125D82230119F9003363CA /* Super Deep.storyboard in Resources */,
 				90125D6A2301176B003363CA /* Broken Constraints.storyboard in Resources */,
 				90125DBA23011D45003363CA /* Safari.storyboard in Resources */,
+				DDC06FB72507875600DC3E2F /* Collection View List.storyboard in Resources */,
 				90125DB123011CCD003363CA /* Controls.storyboard in Resources */,
 				90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */,
 				90125DA523011C38003363CA /* Scroll View.storyboard in Resources */,
 				90125DA823011C60003363CA /* Web View.storyboard in Resources */,
 				B3681C3824EB94F600FB88D4 /* Dynamic Colours.storyboard in Resources */,
 				90125DB423011CF1003363CA /* Stack View.storyboard in Resources */,
+				DD313C592505E7F800889505 /* DatePickerTableViewCell.xib in Resources */,
 				90125D8D23011AB2003363CA /* Arranged Views.storyboard in Resources */,
 				90125D6D230117ED003363CA /* Stress Test.storyboard in Resources */,
 				90125DBD23011D6B003363CA /* Auto Layout Guides.storyboard in Resources */,
@@ -1064,7 +1081,6 @@
 				9A2C24021AEE01EF007B17CE /* NotSerializableViewController.swift in Sources */,
 				BBE51CA51CB7384D006638B8 /* SplitViewControllerDelegate.swift in Sources */,
 				BBE51D191CB73A4A006638B8 /* HomeViewController.swift in Sources */,
-				9A1B1ABC1ADCE3A10016B793 /* PickerViewController.swift in Sources */,
 				BBE51D131CB73996006638B8 /* MapAnnotationView.swift in Sources */,
 				BBE51D091CB73996006638B8 /* CustomIntrinsicContentSizeView.swift in Sources */,
 				9A87FA761ADC91B800290F7A /* KeyboardHandler.swift in Sources */,
@@ -1076,7 +1092,9 @@
 				B3681C3A24EB962000FB88D4 /* DynamicColourViewController.swift in Sources */,
 				BBE51CA31CB7384D006638B8 /* RevertItems.swift in Sources */,
 				BBE51CF01CB73929006638B8 /* TransformViewsViewController.swift in Sources */,
+				DD313C582505E7F800889505 /* DatePickerTableViewCell.swift in Sources */,
 				9AE252511B18211A002B596C /* InfoBuilder.swift in Sources */,
+				DD313C552505BF2500889505 /* PickerTableViewController.swift in Sources */,
 				BBB333D41CB351FF0074EACD /* MarginsAdjustingView.swift in Sources */,
 				B3681C3C24EBB43B00FB88D4 /* ColourSection.swift in Sources */,
 				BB9F76861CB61F0E006EA285 /* ExampleLegacyAlerts.swift in Sources */,
@@ -1087,6 +1105,7 @@
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
 				BBE51CEE1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
 				BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */,
+				DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */,
 				BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CA71CB7384D006638B8 /* Static.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
@@ -1096,6 +1115,7 @@
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
 				BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */,
 				BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
+				DDC06FB5250777E100DC3E2F /* CollectionViewListController.swift in Sources */,
 				BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */,
 				DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */,

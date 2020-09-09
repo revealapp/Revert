@@ -112,7 +112,7 @@ extension RevertItems {
         fixedSection
       ]
     } else {
-      return [ColourSection(title: "Dynamic Colours Only Available in iOS 13 and above", rows: [])]
+      return [ColourSection(title: "Dynamic Colours only available in iOS 13 and above", rows: [])]
     }
   }
 
