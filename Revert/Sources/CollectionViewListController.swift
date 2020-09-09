@@ -63,7 +63,7 @@ private extension CollectionViewListController {
   func applySnapshot() {
     var snapshot = NSDiffableDataSourceSnapshot<Section, Country>()
     snapshot.appendSections(Section.allCases)
-    snapshot.appendItems(countries)
+    snapshot.appendItems(countries, toSection: .countries)
     dataSource.apply(snapshot, animatingDifferences: false)
   }
 
