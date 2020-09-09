@@ -4,7 +4,7 @@ import UIKit
 
 final class CollectionViewListController: RevertCollectionViewController {
   fileprivate enum Section: CaseIterable {
-    case capitals
+    case countries
   }
 
   fileprivate let countries = Country.countries
