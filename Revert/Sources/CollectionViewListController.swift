@@ -7,27 +7,27 @@ final class CollectionViewListController: RevertCollectionViewController {
     case capitals
   }
 
-  fileprivate let capitals = Country.countryCapitals
+  fileprivate let countries = Country.countries
 
   @available(iOS 14.0, *)
-  fileprivate lazy var dataSource: UICollectionViewDiffableDataSource<Section, String> = {
-    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, String> { cell, indexPath, capital in
+  fileprivate lazy var dataSource: UICollectionViewDiffableDataSource<Section, Country> = {
+    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Country> { cell, indexPath, country in
       var content = cell.defaultContentConfiguration()
-      content.text = capital
+      content.text = country.name
+      content.secondaryText = country.capital
 
       cell.contentConfiguration = content
     }
 
-    return UICollectionViewDiffableDataSource<Section, String>(collectionView: collectionView) { (collectionView, indexPath, country) -> UICollectionViewCell? in
+    return UICollectionViewDiffableDataSource<Section, Country>(collectionView: collectionView) { (collectionView, indexPath, country) -> UICollectionViewCell? in
       collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: country)
     }
   }()
 
   override func viewDidLoad() {
     if #available(iOS 14.0, *) {
-      setup()
-      createLayout()
-      applySnapshot(animatingDifferences: true)
+      configureLayout()
+      applySnapshot()
     }
   }
 }
@@ -39,14 +39,14 @@ extension CollectionViewListController: UICollectionViewDelegateFlowLayout {
   }
 
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return capitals.count
+    return self.countries.count
   }
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewListCell", for: indexPath) as? CollectionViewListCell else {
       fatalError("Expecting to dequeue a \(CollectionViewListCell.self) from the collection view")
     }
-    cell.label.text = capitals[indexPath.row]
+    cell.label.text = countries[indexPath.row].name
 
     return cell
   }
@@ -60,39 +60,30 @@ extension CollectionViewListController: UICollectionViewDelegateFlowLayout {
 // MARK: - iOS 14 configuration
 @available(iOS 14.0, *)
 private extension CollectionViewListController {
-  var config: UICollectionLayoutListConfiguration {
-    return UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+  func applySnapshot() {
+    var snapshot = NSDiffableDataSourceSnapshot<Section, Country>()
+    snapshot.appendSections(Section.allCases)
+    snapshot.appendItems(countries)
+    dataSource.apply(snapshot, animatingDifferences: false)
   }
 
-  func setup() {
+  func configureLayout() {
+    var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+    config.backgroundColor = .systemGroupedBackground
     collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.list(using: config)
-
-  }
-
-  func applySnapshot(animatingDifferences: Bool = true) {
-      var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
-      snapshot.appendSections(Section.allCases)
-      snapshot.appendItems(capitals)
-      dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
-  }
-
-  func createLayout() {
-      var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
-      config.backgroundColor = .systemGroupedBackground
-      collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.list(using: config)
   }
 }
 
 fileprivate extension Country {
 
-  static var countryCapitals: [String] {
+  static var countries: [Country] {
     if #available(iOS 14.0, *) {
       let countrySection: [CountrySection] = RevertItems.capitalCities.data()
-      let capitals = countrySection.first?.rows.compactMap { $0.name }
+      let countries = countrySection.first?.rows.compactMap { $0 }
 
-      return capitals ?? [String]()
+      return countries ?? [Country]()
     }
 
-    return ["Collection View List only available in iOS 14 and above"]
+    return [Country(name: "Collection View List only available in iOS 14 and above", capital: nil)]
   }
 }
