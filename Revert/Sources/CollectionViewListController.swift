@@ -11,7 +11,7 @@ final class CollectionViewListController: RevertCollectionViewController {
 
   @available(iOS 14.0, *)
   fileprivate lazy var dataSource: UICollectionViewDiffableDataSource<Section, Country> = {
-    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Country> { cell, indexPath, country in
+    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Country> { cell, _, country in
       var content = cell.defaultContentConfiguration()
       content.text = country.name
       content.secondaryText = country.capital
@@ -55,7 +55,6 @@ extension CollectionViewListController: UICollectionViewDelegateFlowLayout {
     return CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 2)
   }
 }
-
 
 // MARK: - iOS 14 configuration
 @available(iOS 14.0, *)
