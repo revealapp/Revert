@@ -3,7 +3,7 @@
 
 import Foundation
 
-struct Country: Decodable {
+struct Country: Decodable, Hashable {
   let name: String
   let capital: String?
 }

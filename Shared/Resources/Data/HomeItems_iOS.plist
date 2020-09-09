@@ -31,6 +31,18 @@
 			</dict>
 			<dict>
 				<key>title</key>
+				<string>Collection View List</string>
+				<key>iconName</key>
+				<string>icon_CollectionView</string>
+				<key>segueIdentifier</key>
+				<string>ShowCollectionViewListControllerSegue</string>
+				<key>infoFilename</key>
+				<string>collection_view_list</string>
+				<key>isPush</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>title</key>
 				<string>Scroll View</string>
 				<key>iconName</key>
 				<string>icon_ScrollView</string>
@@ -57,25 +69,25 @@
 			</dict>
 		</array>
 	</dict>
-    <dict>
-        <key>rows</key>
-        <array>
-            <dict>
-                <key>resourceFilename</key>
-                <string>ViewItems</string>
-                <key>title</key>
-                <string>Dynamic Colours</string>
-                <key>iconName</key>
-                <string>icon_dynamicColors</string>
-                <key>segueIdentifier</key>
-                <string>ShowDynamicColoursViewControllerSegue</string>
-                <key>infoFilename</key>
-                <string>dynamic_colours</string>
-                <key>isPush</key>
-                <false/>
-            </dict>
-        </array>
-    </dict>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>resourceFilename</key>
+				<string>ViewItems</string>
+				<key>title</key>
+				<string>Dynamic Colours</string>
+				<key>iconName</key>
+				<string>icon_dynamicColors</string>
+				<key>segueIdentifier</key>
+				<string>ShowDynamicColoursViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>dynamic_colours</string>
+				<key>isPush</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<dict>
 		<key>rows</key>
 		<array>

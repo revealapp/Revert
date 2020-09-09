@@ -202,6 +202,9 @@
 		DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD124B8D24E6661000CF6272 /* RevertSection.swift */; };
 		DDABB37924DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
 		DDABB37A24DB81D8008B2ECE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDABB37824DB81D8008B2ECE /* Colors.xcassets */; };
+		DDC06FB5250777E100DC3E2F /* CollectionViewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */; };
+		DDC06FB72507875600DC3E2F /* Collection View List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC06FB62507875600DC3E2F /* Collection View List.storyboard */; };
+		DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */; };
 		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
@@ -381,6 +384,9 @@
 		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		DDABB37824DB81D8008B2ECE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewListController.swift; sourceTree = "<group>"; };
+		DDC06FB62507875600DC3E2F /* Collection View List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Collection View List.storyboard"; sourceTree = "<group>"; };
+		DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewListCell.swift; sourceTree = "<group>"; };
 		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
 		DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationItem.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
@@ -451,6 +457,7 @@
 				90125DA623011C60003363CA /* Web View.storyboard */,
 				B3681C3724EB94F600FB88D4 /* Dynamic Colours.storyboard */,
 				DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */,
+				DDC06FB62507875600DC3E2F /* Collection View List.storyboard */,
 			);
 			name = "Storyboards & XIBs";
 			sourceTree = "<group>";
@@ -523,6 +530,7 @@
 			children = (
 				DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */,
 				9A0416AD1B02E5B900477E60 /* VolumeView.swift */,
+				DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -560,6 +568,7 @@
 				DD313C542505BF2500889505 /* PickerTableViewController.swift */,
 				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
+				DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -966,6 +975,7 @@
 				90125D82230119F9003363CA /* Super Deep.storyboard in Resources */,
 				90125D6A2301176B003363CA /* Broken Constraints.storyboard in Resources */,
 				90125DBA23011D45003363CA /* Safari.storyboard in Resources */,
+				DDC06FB72507875600DC3E2F /* Collection View List.storyboard in Resources */,
 				90125DB123011CCD003363CA /* Controls.storyboard in Resources */,
 				90125D7C2301198A003363CA /* Bounds Change and Anchor Point.storyboard in Resources */,
 				90125DA523011C38003363CA /* Scroll View.storyboard in Resources */,
@@ -1095,6 +1105,7 @@
 				9AFAB7481B0DB3C00009707A /* DualRowBasicCollectionViewFlowLayout.swift in Sources */,
 				BBE51CEE1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
 				BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */,
+				DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */,
 				BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CA71CB7384D006638B8 /* Static.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
@@ -1104,6 +1115,7 @@
 				9A2C23FB1AEDF6A3007B17CE /* ModalViewController.swift in Sources */,
 				BBE51CD41CB73929006638B8 /* AlertViewController.swift in Sources */,
 				BBE51C8C1CB737FE006638B8 /* CALayer+Revert.swift in Sources */,
+				DDC06FB5250777E100DC3E2F /* CollectionViewListController.swift in Sources */,
 				BBE51D151CB73996006638B8 /* TableViewCells.swift in Sources */,
 				BBE51D071CB73996006638B8 /* CollectionViewCells.swift in Sources */,
 				DD8ECA4124EA4C85002E414E /* RevertSection.swift in Sources */,

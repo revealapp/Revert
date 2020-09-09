@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -98,6 +98,7 @@
                         <segue destination="poD-ER-UJd" kind="showDetail" identifier="ShowVisualEffectViewControllerSegue" id="Hmd-mY-QNq"/>
                         <segue destination="qKZ-D1-bJF" kind="presentation" identifier="ShowModalViewController" id="fgR-Dv-Ign"/>
                         <segue destination="O2L-aW-VNp" kind="showDetail" identifier="ShowDynamicColoursViewControllerSegue" id="Cip-ef-xkJ"/>
+                        <segue destination="RsL-4O-6Uc" kind="showDetail" identifier="ShowCollectionViewListControllerSegue" id="JAG-Et-v44"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-SA-MFh" sceneMemberID="firstResponder"/>
@@ -264,6 +265,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cub-Zr-c9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1637" y="-2088"/>
+        </scene>
+        <!--Collection View List-->
+        <scene sceneID="Urm-Gm-2xn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection View List" id="RsL-4O-6Uc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjM-M2-7yc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="-2003"/>
         </scene>
         <!--CollectionViewController-->
         <scene sceneID="D8o-mu-Ayn">
