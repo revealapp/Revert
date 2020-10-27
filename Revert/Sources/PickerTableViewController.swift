@@ -3,7 +3,7 @@
 import UIKit
 import PhotosUI
 
-final class PickerTableViewController: UITableViewController {
+final class PickerTableViewController: RevertTableViewController {
   private enum Section: CaseIterable {
     case datePicker
     case iOS14Picker
