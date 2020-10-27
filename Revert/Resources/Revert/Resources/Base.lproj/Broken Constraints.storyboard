@@ -201,12 +201,15 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Broken Constraints" id="9hM-MV-zCg">
-                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="fX9-N4-AGC"/>
+                        <barButtonItem key="rightBarButtonItem" image="info_icon" id="fX9-N4-AGC">
+                            <connections>
+                                <segue destination="xQz-eH-GT4" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="bhO-Ep-wW2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="blueViewWidth" destination="3vX-7P-7sm" id="K3C-5Y-S75"/>
-                        <segue destination="xQz-eH-GT4" kind="presentation" identifier="ShowInfoViewControllerSegue" modalPresentationStyle="formSheet" id="8B8-Wf-ScU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63g-KY-VRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,8 +217,8 @@
             <point key="canvasLocation" x="2440.8000000000002" y="-7591.7541229385315"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="info_icon" width="22" height="22"/>
     </resources>
-    <color key="tintColor" red="0.18354308605194092" green="0.60257476568222046" blue="0.92873233556747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
