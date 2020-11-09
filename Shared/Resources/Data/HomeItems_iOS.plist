@@ -92,6 +92,18 @@
 		<key>rows</key>
 		<array>
 			<dict>
+				<key>title</key>
+				<string>Visual Effect View</string>
+				<key>iconName</key>
+				<string>icon_VisualEffectView</string>
+				<key>segueIdentifier</key>
+				<string>ShowVisualEffectViewControllerSegue</string>
+				<key>infoFilename</key>
+				<string>visual_effect_view</string>
+				<key>isPush</key>
+				<false/>
+			</dict>
+			<dict>
 				<key>resourceFilename</key>
 				<string>ViewItems</string>
 				<key>title</key>
@@ -157,13 +169,13 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Visual Effect View</string>
+				<string>App Extension</string>
 				<key>iconName</key>
 				<string>icon_VisualEffectView</string>
 				<key>segueIdentifier</key>
-				<string>ShowVisualEffectViewControllerSegue</string>
+				<string>ShowAppExtensionViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>visual_effect_view</string>
+				<string></string>
 				<key>isPush</key>
 				<false/>
 			</dict>
