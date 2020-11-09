@@ -175,7 +175,7 @@
 				<key>segueIdentifier</key>
 				<string>ShowAppExtensionViewControllerSegue</string>
 				<key>infoFilename</key>
-				<string>visual_effect_view</string>
+				<string></string>
 				<key>isPush</key>
 				<false/>
 			</dict>

@@ -33,9 +33,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the share button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rk-py-lEU">
-                                <rect key="frame" x="84" y="458.5" width="246" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Activity App Extension " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rk-py-lEU">
+                                <rect key="frame" x="8" y="458.5" width="398" height="33.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIA-hD-h0l">
+                                <rect key="frame" x="8" y="508" width="398" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,7 +49,12 @@
                         <viewLayoutGuide key="safeArea" id="khB-pa-XQT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qIA-hD-h0l" firstAttribute="trailing" secondItem="3Rk-py-lEU" secondAttribute="trailing" id="42C-Ft-weG"/>
+                            <constraint firstItem="qIA-hD-h0l" firstAttribute="top" secondItem="3Rk-py-lEU" secondAttribute="bottom" constant="16" id="5GB-US-ovR"/>
+                            <constraint firstAttribute="trailing" secondItem="3Rk-py-lEU" secondAttribute="trailing" constant="8" id="J9X-4x-fAF"/>
                             <constraint firstItem="3Rk-py-lEU" firstAttribute="centerY" secondItem="khB-pa-XQT" secondAttribute="centerY" id="McQ-NH-y7f"/>
+                            <constraint firstItem="qIA-hD-h0l" firstAttribute="leading" secondItem="3Rk-py-lEU" secondAttribute="leading" id="bKk-x4-IN6"/>
+                            <constraint firstItem="3Rk-py-lEU" firstAttribute="leading" secondItem="331-6c-7iK" secondAttribute="leading" constant="8" id="kMW-en-jFd"/>
                             <constraint firstItem="3Rk-py-lEU" firstAttribute="centerX" secondItem="khB-pa-XQT" secondAttribute="centerX" id="ma0-BW-2mq"/>
                         </constraints>
                     </view>
@@ -54,6 +65,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="qIA-hD-h0l" id="4Sg-bz-ePv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8C8-vn-6vR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
