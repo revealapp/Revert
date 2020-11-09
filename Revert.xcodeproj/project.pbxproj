@@ -194,6 +194,10 @@
 		DD313C552505BF2500889505 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD313C542505BF2500889505 /* PickerTableViewController.swift */; };
 		DD313C582505E7F800889505 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */; };
 		DD313C592505E7F800889505 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */; };
+		DD3C0E162558F41F009C6C7D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C0E152558F41F009C6C7D /* Media.xcassets */; };
+		DD3C0E182558F41F009C6C7D /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C0E172558F41F009C6C7D /* ActionViewController.swift */; };
+		DD3C0E1B2558F41F009C6C7D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C0E192558F41F009C6C7D /* MainInterface.storyboard */; };
+		DD3C0E1F2558F41F009C6C7D /* Revert-ActivityExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD3C0E132558F41F009C6C7D /* Revert-ActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD48652624E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
 		DD48652724E2444300A21F7A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652524E2444300A21F7A /* DataSource.swift */; };
 		DD48652924E25C0B00A21F7A /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48652824E25C0B00A21F7A /* HomeSection.swift */; };
@@ -206,6 +210,7 @@
 		DDC06FB72507875600DC3E2F /* Collection View List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC06FB62507875600DC3E2F /* Collection View List.storyboard */; };
 		DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */; };
 		DDE45B0E25550E7200B482F8 /* App Extension.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE45B0D25550E7200B482F8 /* App Extension.storyboard */; };
+		DDE45B1A255512E700B482F8 /* AppExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE45B19255512E700B482F8 /* AppExtensionViewController.swift */; };
 		DDF45F6B24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6C24F3452700CC3844 /* ItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6A24F3452700CC3844 /* ItemSection.swift */; };
 		DDF45F6E24F36DED00CC3844 /* MapLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */; };
@@ -215,6 +220,30 @@
 		FA65014122B0C209005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 		FA65014222B0C264005B2ED1 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65014022B0C209005B2ED1 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD3C0E1D2558F41F009C6C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A6850B01AD4A20E00ACCE29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3C0E122558F41F009C6C7D;
+			remoteInfo = "Revert-ActivityExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD3C0E202558F41F009C6C7D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD3C0E1F2558F41F009C6C7D /* Revert-ActivityExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D3647041E518C70001D36C4 /* AutoLayoutGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLayoutGuidesViewController.swift; path = Shared/Sources/AutoLayoutGuidesViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -381,6 +410,11 @@
 		DD313C542505BF2500889505 /* PickerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
 		DD313C562505E7F800889505 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = ../Resources/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		DD313C572505E7F800889505 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		DD3C0E132558F41F009C6C7D /* Revert-ActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Revert-ActivityExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3C0E152558F41F009C6C7D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		DD3C0E172558F41F009C6C7D /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		DD3C0E1A2558F41F009C6C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DD3C0E1C2558F41F009C6C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD48652524E2444300A21F7A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		DD48652824E25C0B00A21F7A /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		DD48652C24E2754D00A21F7A /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
@@ -389,6 +423,7 @@
 		DDC06FB62507875600DC3E2F /* Collection View List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Collection View List.storyboard"; sourceTree = "<group>"; };
 		DDC06FB82507885C00DC3E2F /* CollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewListCell.swift; sourceTree = "<group>"; };
 		DDE45B0D25550E7200B482F8 /* App Extension.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "App Extension.storyboard"; sourceTree = "<group>"; };
+		DDE45B19255512E700B482F8 /* AppExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensionViewController.swift; sourceTree = "<group>"; };
 		DDF45F6A24F3452700CC3844 /* ItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSection.swift; sourceTree = "<group>"; };
 		DDF45F6D24F36DED00CC3844 /* MapLocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationItem.swift; sourceTree = "<group>"; };
 		FA15D27B22BB590D008A344E /* BrokenConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenConstraintsViewController.swift; sourceTree = "<group>"; };
@@ -404,6 +439,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB2720491C9B8E44002E53EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3C0E102558F41F009C6C7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,6 +524,7 @@
 				BB27204D1C9B8E44002E53EE /* Revert-tvOS */,
 				9A2F94701B140B0E007E51B1 /* Scripts */,
 				BB2720BD1C9F8DAE002E53EE /* Shared */,
+				DD3C0E142558F41F009C6C7D /* Revert-ActivityExtension */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -492,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6850B81AD4A20E00ACCE29 /* Revert-iOS.app */,
+				DD3C0E132558F41F009C6C7D /* Revert-ActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -572,6 +616,7 @@
 				B5DCC9F11BBCF36F004EA327 /* SafariViewController.swift */,
 				9A1B1ABD1ADCE9D90016B793 /* WebViewController.swift */,
 				DDC06FB4250777E100DC3E2F /* CollectionViewListController.swift */,
+				DDE45B19255512E700B482F8 /* AppExtensionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -870,6 +915,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DD3C0E142558F41F009C6C7D /* Revert-ActivityExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C0E152558F41F009C6C7D /* Media.xcassets */,
+				DD3C0E172558F41F009C6C7D /* ActionViewController.swift */,
+				DD3C0E192558F41F009C6C7D /* MainInterface.storyboard */,
+				DD3C0E1C2558F41F009C6C7D /* Info.plist */,
+			);
+			path = "Revert-ActivityExtension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -881,10 +937,12 @@
 				9A6850B41AD4A20E00ACCE29 /* Sources */,
 				9A6850B51AD4A20E00ACCE29 /* Frameworks */,
 				9A6850B61AD4A20E00ACCE29 /* Resources */,
+				DD3C0E202558F41F009C6C7D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD3C0E1E2558F41F009C6C7D /* PBXTargetDependency */,
 			);
 			name = "Revert-iOS";
 			productName = Revert;
@@ -909,13 +967,30 @@
 			productReference = BB27204C1C9B8E44002E53EE /* Revert-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DD3C0E122558F41F009C6C7D /* Revert-ActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3C0E232558F41F009C6C7D /* Build configuration list for PBXNativeTarget "Revert-ActivityExtension" */;
+			buildPhases = (
+				DD3C0E0F2558F41F009C6C7D /* Sources */,
+				DD3C0E102558F41F009C6C7D /* Frameworks */,
+				DD3C0E112558F41F009C6C7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Revert-ActivityExtension";
+			productName = "Revert-ActivityExtension";
+			productReference = DD3C0E132558F41F009C6C7D /* Revert-ActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9A6850B01AD4A20E00ACCE29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Itty Bitty Apps";
 				TargetAttributes = {
@@ -926,6 +1001,9 @@
 					BB27204B1C9B8E44002E53EE = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
+					};
+					DD3C0E122558F41F009C6C7D = {
+						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
@@ -944,6 +1022,7 @@
 			targets = (
 				9A6850B71AD4A20E00ACCE29 /* Revert-iOS */,
 				BB27204B1C9B8E44002E53EE /* Revert-tvOS */,
+				DD3C0E122558F41F009C6C7D /* Revert-ActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1040,6 +1119,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD3C0E112558F41F009C6C7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3C0E162558F41F009C6C7D /* Media.xcassets in Resources */,
+				DD3C0E1B2558F41F009C6C7D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1110,6 +1198,7 @@
 				BBE51CEE1CB73929006638B8 /* TransformLayersViewController.swift in Sources */,
 				BBE51CDC1CB73929006638B8 /* ControlsViewController.swift in Sources */,
 				DDC06FB92507885C00DC3E2F /* CollectionViewListCell.swift in Sources */,
+				DDE45B1A255512E700B482F8 /* AppExtensionViewController.swift in Sources */,
 				BBE51D0D1CB73996006638B8 /* HairlineBorderView.swift in Sources */,
 				BBE51CA71CB7384D006638B8 /* Static.swift in Sources */,
 				9A1B1ABE1ADCE9D90016B793 /* WebViewController.swift in Sources */,
@@ -1218,7 +1307,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD3C0E0F2558F41F009C6C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3C0E182558F41F009C6C7D /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD3C0E1E2558F41F009C6C7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3C0E122558F41F009C6C7D /* Revert-ActivityExtension */;
+			targetProxy = DD3C0E1D2558F41F009C6C7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		90125D652301166F003363CA /* Visual Effect View.storyboard */ = {
@@ -1725,6 +1830,14 @@
 			name = StackView.xib;
 			sourceTree = "<group>";
 		};
+		DD3C0E192558F41F009C6C7D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD3C0E1A2558F41F009C6C7D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1746,6 +1859,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E71BD67B17001A439D /* Revert-iOS-Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 			};
 			name = Debug;
 		};
@@ -1753,6 +1867,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A9BD1E81BD67B17001A439D /* Revert-iOS-Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 			};
 			name = Release;
 		};
@@ -1767,6 +1882,146 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB92F13F1C9FBC7B00ECD9CB /* Revert-tvOS-Release.xcconfig */;
 			buildSettings = {
+			};
+			name = Release;
+		};
+		DD3C0E212558F41F009C6C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Revert-ActivityExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ittybittyapps.Revert-iOS.Revert-ActivityExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD3C0E222558F41F009C6C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Revert-ActivityExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ittybittyapps.Revert-iOS.Revert-ActivityExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1796,6 +2051,15 @@
 			buildConfigurations = (
 				BB2ED9DB1C9FB8F8002BFD74 /* Debug */,
 				BB2ED9DC1C9FB8F8002BFD74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3C0E232558F41F009C6C7D /* Build configuration list for PBXNativeTarget "Revert-ActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3C0E212558F41F009C6C7D /* Debug */,
+				DD3C0E222558F41F009C6C7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

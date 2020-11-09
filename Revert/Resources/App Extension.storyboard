@@ -28,7 +28,7 @@
         <!--App Extension -->
         <scene sceneID="dAM-X4-5ou">
             <objects>
-                <viewController id="pXS-tv-pu6" sceneMemberID="viewController">
+                <viewController id="pXS-tv-pu6" customClass="AppExtensionViewController" customModule="Revert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="331-6c-7iK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="App Extension " id="Rqh-Cz-Lp0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="SXI-RT-bj8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="SXI-RT-bj8">
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="pXS-tv-pu6" id="j1S-lk-xd3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8C8-vn-6vR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
