@@ -28,6 +28,28 @@ final class CollectionViewListController: RevertCollectionViewController {
     if #available(iOS 14.0, *) {
       configureLayout()
       applySnapshot()
+      configureRefreshControl()
+    }
+  }
+
+  @available(iOS 13.0, *)
+  func configureRefreshControl () {
+    // Add the refresh control to your UIScrollView object.
+    collectionView.refreshControl = UIRefreshControl()
+    collectionView.refreshControl?.addTarget(
+      self, action:
+      #selector(handleRefreshControl),
+      for: .valueChanged
+    )
+  }
+
+  @available(iOS 13.0, *)
+  @objc func handleRefreshControl() {
+    Task {
+      try? await Task.sleep(nanoseconds: 3_000_000_000)
+      await MainActor.run {
+        self.collectionView.refreshControl?.endRefreshing()
+      }
     }
   }
 }
